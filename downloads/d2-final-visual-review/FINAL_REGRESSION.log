@@ -1,0 +1,10 @@
+PASS GEP: 84/84 surfaces unchanged, changed frames []
+PASS PIN: 57/80 surfaces unchanged, changed frames [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63]
+PASS PIN: all ten peak quaternions retained, all ten peak angular steps reduced, no return past neutral
+PASS PIN_RIG_REGRESSION: 25/25
+PASS PATCHED_D1_RETAINED: 13/13
+PASS original: 0 overlaps across 51 times, 22 distal hand and 21 visible clothing meshes
+PASS revised: 0 overlaps across 51 times, 22 distal hand and 21 visible clothing meshes
+PASS original and revised MP4 SHA, 164 decoded frames, replacements at movie frames 124–147
+D2 original SHA: 1b6f4ada8c18331df7fcbbcf66ac68e05aa9793ac6d3990e0ac8ec8a3c36bfb5
+D2 review SHA: 1482b1aa0a7d8a0cb70bb641f94bb510e59e35a60c463fb9325f1c8b06392855
