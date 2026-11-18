@@ -1,0 +1,93 @@
+{
+  "baseline_commit": "8de93451972d406b6d1f824222dc18db0bd73fb0",
+  "f93_far_hand_visible_fraction": [
+    0.23855755894590847,
+    0.8688981868898187
+  ],
+  "f93_visible_hand_px_before_after": [
+    [
+      172,
+      703
+    ],
+    [
+      623,
+      691
+    ]
+  ],
+  "f93_silhouette_gap_px": 18.35755975068582,
+  "knee_before": {
+    "max_deg_per_frame": 24.29000000000002,
+    "max_change_in_deg_per_frame": 24.30000000000004,
+    "anchor_deg": {
+      "125": 179.92,
+      "128": 179.93,
+      "129": 155.64,
+      "130": 137.52
+    }
+  },
+  "knee_after": {
+    "max_deg_per_frame": 8.170000000000002,
+    "max_change_in_deg_per_frame": 2.319999999999979,
+    "anchor_deg": {
+      "125": 166.0,
+      "128": 151.7,
+      "129": 145.83,
+      "130": 140.0
+    }
+  },
+  "hand_gap_mm_left_right": {
+    "93": [
+      0.6015712120652772,
+      0.6016179852625925
+    ],
+    "94": [
+      0.6018034227810443,
+      0.6015124364087132
+    ],
+    "95": [
+      0.601919548564922,
+      0.6017348257372213
+    ]
+  },
+  "hand_slip_mm": {
+    "L": 0.00026919066463320144,
+    "R": 0.0002194367431011987
+  },
+  "planted_foot_slip_mm": {
+    "L": 0.00011920928955078125,
+    "R": 9.930136612989092e-13
+  },
+  "triangle_overlap_frames": [],
+  "smallest_table_gap_m": [
+    0.0005125898331530543,
+    129,
+    "D2 PIN | Right boot / outsole.002"
+  ],
+  "transform_max_delta": {
+    "geppetto": 0.0,
+    "camera": 0.0,
+    "gaze_hold": 2.384185791015625e-07,
+    "all_untouched": 5.364418029785156e-07,
+    "last_hold_pose_drift": 0.0006956309080123901
+  },
+  "segment_length_full_ranges_m": {
+    "L_upper_arm": [
+      4.273346660144117e-07,
+      3.919612627800717e-07
+    ],
+    "L_thigh": [
+      1.7796968360128673e-06,
+      1.4915511148655414e-05
+    ],
+    "R_upper_arm": [
+      4.523523605970414e-07,
+      3.6041646886419976e-07
+    ],
+    "R_thigh": [
+      4.6593683347695425e-06,
+      1.6828095821652678e-05
+    ]
+  },
+  "final_boot_hull_margin_m": 0.1531952451238383,
+  "mass_proxy_peak_frame_step_m_at_transition": 0.011668652570699142
+}

@@ -1,0 +1,121 @@
+polish2.log
+Info: Saved "D3_C07_WAKEUP_POLISHED.blend"
+Blender 4.3.2
+Read blend: "/workspace/scratch/s01-d3/delivery/D3_C07_WAKEUP.blend"
+
+Blender quit
+
+elbow.log
+Window 97 106 swivel -2.8647889756541165
+Window 119 133 swivel -14.32394487827058
+Info: Saved "D3_C07_WAKEUP_POLISHED.blend"
+Blender 4.3.2
+Read blend: "/workspace/scratch/c07-polish/build/v2/pre.blend"
+
+Blender quit
+
+softbalance.log
+Info: Saved "D3_C07_WAKEUP_POLISHED.blend"
+Blender 4.3.2
+Read blend: "/workspace/scratch/c07-polish/build/v2/forearm-clear.blend"
+
+Blender quit
+
+tail-overlap.log
+checked 38 542 hit frames []
+Blender 4.3.2
+Read blend: "/workspace/scratch/c07-polish/delivery/D3_C07_WAKEUP_POLISHED.blend"
+
+Blender quit
+
+tail-contact.log
+25 [[-1.89, 0.83, 1.52], [-1.93, 0.9, 1.75]] {'hand.L': np.float64(0.001), 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.001), 'sole.R': np.float64(0.001)}
+33 [[-1.89, 0.83, 1.53], [-1.93, 0.9, 1.75]] {'hand.L': np.float64(0.001), 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.001), 'sole.R': np.float64(0.001)}
+41 [[-1.89, 0.83, 1.53], [-1.93, 0.9, 1.75]] {'hand.L': np.float64(0.001), 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.001), 'sole.R': np.float64(0.001)}
+49 [[-1.89, 0.83, 1.53], [-1.93, 0.9, 1.76]] {'hand.L': np.float64(0.001), 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.001), 'sole.R': np.float64(0.001)}
+57 [[-1.89, 0.83, 1.54], [-1.93, 0.9, 1.76]] {'hand.L': np.float64(0.002), 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.01), 'sole.R': np.float64(0.001)}
+65 [[-1.89, 0.83, 1.54], [-1.93, 0.9, 1.76]] {'hand.L': np.float64(0.002), 'sole.L': np.float64(0.001), 'hand.R': None, 'sole.R': np.float64(0.001)}
+73 [[-1.89, 0.83, 1.54], [-1.93, 0.9, 1.76]] {'hand.L': np.float64(0.015), 'sole.L': np.float64(0.002), 'hand.R': None, 'sole.R': np.float64(0.001)}
+81 [[-1.89, 0.82, 1.55], [-1.93, 0.9, 1.77]] {'hand.L': np.float64(0.077), 'sole.L': np.float64(0.04), 'hand.R': np.float64(0.004), 'sole.R': np.float64(0.001)}
+89 [[-1.92, 0.84, 1.57], [-1.92, 0.91, 1.79]] {'hand.L': np.float64(0.087), 'sole.L': np.float64(0.07), 'hand.R': np.float64(0.001), 'sole.R': np.float64(0.007)}
+97 [[-1.96, 0.88, 1.61], [-1.9, 0.94, 1.84]] {'hand.L': np.float64(0.015), 'sole.L': np.float64(0.16), 'hand.R': np.float64(0.001), 'sole.R': np.float64(0.025)}
+105 [[-1.98, 0.95, 1.7], [-1.85, 0.95, 1.9]] {'hand.L': np.float64(0.074), 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.026), 'sole.R': np.float64(0.05)}
+113 [[-1.97, 1.02, 1.86], [-1.8, 0.96, 2.01]] {'hand.L': np.float64(0.355), 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.075), 'sole.R': np.float64(0.043)}
+121 [[-1.94, 1.06, 2.0], [-1.75, 0.96, 2.09]] {'hand.L': np.float64(0.488), 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.199), 'sole.R': np.float64(0.029)}
+129 [[-1.88, 1.07, 2.06], [-1.69, 0.94, 2.1]] {'hand.L': np.float64(0.463), 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.295), 'sole.R': np.float64(0.001)}
+137 [[-1.78, 1.09, 2.12], [-1.58, 0.95, 2.14]] {'hand.L': np.float64(0.427), 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.396), 'sole.R': np.float64(0.002)}
+145 [[-1.72, 1.11, 2.15], [-1.53, 0.97, 2.17]] {'hand.L': np.float64(0.474), 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.4), 'sole.R': np.float64(0.001)}
+153 [[-1.71, 1.11, 2.17], [-1.52, 0.98, 2.19]] {'hand.L': None, 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.419), 'sole.R': np.float64(0.001)}
+161 [[-1.7, 1.12, 2.22], [-1.5, 0.99, 2.24]] {'hand.L': None, 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.502), 'sole.R': np.float64(0.001)}
+169 [[-1.69, 1.13, 2.27], [-1.49, 1.0, 2.29]] {'hand.L': np.float64(0.545), 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.605), 'sole.R': np.float64(0.001)}
+177 [[-1.68, 1.13, 2.3], [-1.48, 1.0, 2.32]] {'hand.L': np.float64(0.541), 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.673), 'sole.R': np.float64(0.001)}
+185 [[-1.68, 1.13, 2.3], [-1.48, 1.0, 2.32]] {'hand.L': np.float64(0.539), 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.671), 'sole.R': np.float64(0.001)}
+193 [[-1.68, 1.13, 2.3], [-1.48, 1.0, 2.31]] {'hand.L': np.float64(0.537), 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.645), 'sole.R': np.float64(0.001)}
+201 [[-1.68, 1.13, 2.3], [-1.48, 1.0, 2.31]] {'hand.L': np.float64(0.536), 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.644), 'sole.R': np.float64(0.001)}
+209 [[-1.68, 1.13, 2.3], [-1.48, 1.0, 2.31]] {'hand.L': np.float64(0.536), 'sole.L': np.float64(0.001), 'hand.R': np.float64(0.644), 'sole.R': np.float64(0.001)}
+Blender 4.3.2
+Read blend: "/workspace/scratch/c07-polish/delivery/D3_C07_WAKEUP_POLISHED.blend"
+
+Blender quit
+
+tail-joints.log
+{'L_upper_arm': [4.273346660144117e-07, 3.919612627800717e-07], 'L_thigh': [1.7796968360128673e-06, 1.4915511148655414e-05], 'R_upper_arm': [4.523523605970414e-07, 3.6041646886419976e-07], 'R_thigh': [4.6593683347695425e-06, 1.6828095821652678e-05]}
+[{'frame': 105, 'L_upper_arm_angle_deg': np.float64(122.36), 'L_thigh_angle_deg': np.float64(63.63), 'R_upper_arm_angle_deg': np.float64(97.4), 'R_thigh_angle_deg': np.float64(179.92)}, {'frame': 145, 'L_upper_arm_angle_deg': np.float64(133.85), 'L_thigh_angle_deg': np.float64(86.2), 'R_upper_arm_angle_deg': np.float64(179.92), 'R_thigh_angle_deg': np.float64(88.82)}, {'frame': 178, 'L_upper_arm_angle_deg': np.float64(123.2), 'L_thigh_angle_deg': np.float64(164.64), 'R_upper_arm_angle_deg': np.float64(125.81), 'R_thigh_angle_deg': np.float64(162.7)}, {'frame': 216, 'L_upper_arm_angle_deg': np.float64(125.89), 'L_thigh_angle_deg': np.float64(158.4), 'R_upper_arm_angle_deg': np.float64(127.59), 'R_thigh_angle_deg': np.float64(157.15)}]
+Blender 4.3.2
+Read blend: "/workspace/scratch/c07-polish/delivery/D3_C07_WAKEUP_POLISHED.blend"
+
+Blender quit
+
+tail-clearance.log
+Lowest [(np.float64(0.0005125898331530543), 129, 'D2 PIN | Right boot / outsole.002'), (np.float64(0.000599511059183433), 141, 'D2 PIN | Right boot / outsole.002'), (np.float64(0.0005995110591974218), 142, 'D2 PIN | Right boot / outsole.002'), (np.float64(0.0005995110591974218), 143, 'D2 PIN | Right boot / outsole.002'), (np.float64(0.0005995110591974218), 144, 'D2 PIN | Right boot / outsole.002'), (np.float64(0.0005995110591974218), 145, 'D2 PIN | Right boot / outsole.002'), (np.float64(0.0005995110591974218), 146, 'D2 PIN | Right boot / outsole.002'), (np.float64(0.0005995110591974218), 147, 'D2 PIN | Right boot / outsole.002'), (np.float64(0.0005995110591974218), 148, 'D2 PIN | Right boot / outsole.002'), (np.float64(0.0005995110591974218), 149, 'D2 PIN | Right boot / outsole.002'), (np.float64(0.0005995110591974218), 150, 'D2 PIN | Right boot / outsole.002'), (np.float64(0.0005995110591974218), 151, 'D2 PIN | Right boot / outsole.002'), (np.float64(0.0005995110591974218), 152, 'D2 PIN | Right boot / outsole.002'), (np.float64(0.0005995110591974218), 153, 'D2 PIN | Right boot / outsole.002'), (np.float64(0.0005995110591974218), 154, 'D2 PIN | Right boot / outsole.002')]
+Blender 4.3.2
+Read blend: "/workspace/scratch/c07-polish/delivery/D3_C07_WAKEUP_POLISHED.blend"
+
+Blender quit
+
+visibility-before.log
+[{'frame': 90, 'left_visible_px': 167, 'right_visible_px': 702, 'left_unoccluded_fraction': 0.23356643356643356, 'right_unoccluded_fraction': 0.9176470588235294, 'minimum_silhouette_gap_px': 37.12142238654117}, {'frame': 91, 'left_visible_px': 172, 'right_visible_px': 704, 'left_unoccluded_fraction': 0.2398884239888424, 'right_unoccluded_fraction': 0.9202614379084967, 'minimum_silhouette_gap_px': 36.235341863986875}, {'frame': 92, 'left_visible_px': 161, 'right_visible_px': 702, 'left_unoccluded_fraction': 0.22330097087378642, 'right_unoccluded_fraction': 0.9176470588235294, 'minimum_silhouette_gap_px': 36.71511950137164}, {'frame': 93, 'left_visible_px': 172, 'right_visible_px': 703, 'left_unoccluded_fraction': 0.23855755894590847, 'right_unoccluded_fraction': 0.918954248366013, 'minimum_silhouette_gap_px': 35.35533905932738}, {'frame': 94, 'left_visible_px': 172, 'right_visible_px': 704, 'left_unoccluded_fraction': 0.23855755894590847, 'right_unoccluded_fraction': 0.9202614379084967, 'minimum_silhouette_gap_px': 35.35533905932738}, {'frame': 95, 'left_visible_px': 178, 'right_visible_px': 707, 'left_unoccluded_fraction': 0.24687933425797504, 'right_unoccluded_fraction': 0.9241830065359478, 'minimum_silhouette_gap_px': 35.35533905932738}, {'frame': 96, 'left_visible_px': 188, 'right_visible_px': 708, 'left_unoccluded_fraction': 0.2655367231638418, 'right_unoccluded_fraction': 0.9254901960784314, 'minimum_silhouette_gap_px': 34.88552708502482}, {'frame': 97, 'left_visible_px': 198, 'right_visible_px': 708, 'left_unoccluded_fraction': 0.2776998597475456, 'right_unoccluded_fraction': 0.9254901960784314, 'minimum_silhouette_gap_px': 35.77708763999664}]
+Blender 4.3.2
+Read blend: "/workspace/scratch/s01-d3/delivery/D3_C07_WAKEUP.blend"
+
+Blender quit
+
+visibility2.log
+[{'frame': 90, 'left_visible_px': 623, 'right_visible_px': 692, 'left_unoccluded_fraction': 0.8725490196078431, 'right_unoccluded_fraction': 0.9045751633986928, 'minimum_silhouette_gap_px': 19.697715603592208}, {'frame': 91, 'left_visible_px': 631, 'right_visible_px': 691, 'left_unoccluded_fraction': 0.8727524204702628, 'right_unoccluded_fraction': 0.9032679738562092, 'minimum_silhouette_gap_px': 19.235384061671343}, {'frame': 92, 'left_visible_px': 623, 'right_visible_px': 690, 'left_unoccluded_fraction': 0.8713286713286713, 'right_unoccluded_fraction': 0.9019607843137255, 'minimum_silhouette_gap_px': 18.788294228055936}, {'frame': 93, 'left_visible_px': 623, 'right_visible_px': 691, 'left_unoccluded_fraction': 0.8688981868898187, 'right_unoccluded_fraction': 0.9032679738562092, 'minimum_silhouette_gap_px': 18.35755975068582}, {'frame': 94, 'left_visible_px': 622, 'right_visible_px': 693, 'left_unoccluded_fraction': 0.8675034867503487, 'right_unoccluded_fraction': 0.9058823529411765, 'minimum_silhouette_gap_px': 18.35755975068582}, {'frame': 95, 'left_visible_px': 616, 'right_visible_px': 694, 'left_unoccluded_fraction': 0.8591352859135286, 'right_unoccluded_fraction': 0.9071895424836601, 'minimum_silhouette_gap_px': 18.35755975068582}, {'frame': 96, 'left_visible_px': 607, 'right_visible_px': 695, 'left_unoccluded_fraction': 0.8501400560224089, 'right_unoccluded_fraction': 0.9084967320261438, 'minimum_silhouette_gap_px': 18.788294228055936}, {'frame': 97, 'left_visible_px': 601, 'right_visible_px': 697, 'left_unoccluded_fraction': 0.8441011235955056, 'right_unoccluded_fraction': 0.9111111111111111, 'minimum_silhouette_gap_px': 19.235384061671343}]
+Blender 4.3.2
+Read blend: "/workspace/scratch/c07-polish/delivery/D3_C07_WAKEUP_POLISHED.blend"
+
+Blender quit
+
+locks-original.log
+original 1 216 24 [('IMAGE', 1, 25), ('SCENE', 25, 217)]
+Blender 4.3.2
+Read blend: "/workspace/scratch/s01-d3/delivery/D3_C07_WAKEUP.blend"
+
+Blender quit
+
+tail-locks.log
+polished 1 216 24 [('IMAGE', 1, 25), ('SCENE', 25, 217)]
+Blender 4.3.2
+Read blend: "/workspace/scratch/c07-polish/delivery/D3_C07_WAKEUP_POLISHED.blend"
+
+Blender quit
+
+tail-balance.log
+14 {'frame': 216, 'volume_proxy_xyz': [-1.592990850041711, 1.0502215846766003, 2.296935408039432], 'margin_to_boot_hull_m': 0.1531952451238383}
+Blender 4.3.2
+Read blend: "/workspace/scratch/c07-polish/delivery/D3_C07_WAKEUP_POLISHED.blend"
+
+Blender quit
+
+master-check.log
+1 master vs shot RGB MAE and max 0.0 0
+93 master vs shot RGB MAE and max 3.2552083333333335e-06 1
+195 master vs shot RGB MAE and max 4.701967592592593e-06 1
+
+play.log
+
+Playback completed at 24 fps: delivery/C07_3p5_5p8_COMPARE.mp4
+
+Playback completed at 24 fps: delivery/D3_C07_WAKEUP_POLISHED.mp4
+
