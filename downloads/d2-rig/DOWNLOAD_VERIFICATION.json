@@ -1,0 +1,132 @@
+{
+  "published_content_commit": "21708d153b17b684155e2312c790140dc67c2e75",
+  "main": "971d1774d8c5db692b516466b397d138f84337aa",
+  "anonymous_downloads": {
+    "S01_D1_D2_RIG_REVIEW.zip": {
+      "url": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/raw/refs/heads/s01/d2-rig-review/downloads/d2-rig/S01_D1_D2_RIG_REVIEW.zip",
+      "file_page": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/blob/s01/d2-rig-review/downloads/d2-rig/S01_D1_D2_RIG_REVIEW.zip",
+      "http": "200",
+      "file_page_http": "200",
+      "bytes": 80340884,
+      "sha256": "d3a70e300b861b6da124feb0d0a63f8020160d3929c3215a2e5e043ebe136d33"
+    },
+    "D2_RIG_TEST.mp4": {
+      "url": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/raw/refs/heads/s01/d2-rig-review/downloads/d2-rig/D2_RIG_TEST.mp4",
+      "file_page": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/blob/s01/d2-rig-review/downloads/d2-rig/D2_RIG_TEST.mp4",
+      "http": "200",
+      "file_page_http": "200",
+      "bytes": 1429895,
+      "sha256": "6cc15eccc3159fa8cfc0d109efd15bee92e2aae97975e37c7a4fa16800972519"
+    },
+    "D2_WORKSHOP_REACTIONS.png": {
+      "url": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/raw/refs/heads/s01/d2-rig-review/downloads/d2-rig/D2_WORKSHOP_REACTIONS.png",
+      "file_page": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/blob/s01/d2-rig-review/downloads/d2-rig/D2_WORKSHOP_REACTIONS.png",
+      "http": "200",
+      "file_page_http": "200",
+      "bytes": 1882161,
+      "sha256": "942439f77e93cba16cc13964b4e4245e2d730b557ac8394574ce104c14768b7f"
+    },
+    "D2_C05_HAND_DETAIL.png": {
+      "url": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/raw/refs/heads/s01/d2-rig-review/downloads/d2-rig/D2_C05_HAND_DETAIL.png",
+      "file_page": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/blob/s01/d2-rig-review/downloads/d2-rig/D2_C05_HAND_DETAIL.png",
+      "http": "200",
+      "file_page_http": "200",
+      "bytes": 582624,
+      "sha256": "58b90b81fd0f164c3fc76217e5bfbd61e29e3edc81de42ec69e7eb0c481b3af5"
+    },
+    "D2_MOTION_CONTACT_SHEET.png": {
+      "url": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/raw/refs/heads/s01/d2-rig-review/downloads/d2-rig/D2_MOTION_CONTACT_SHEET.png",
+      "file_page": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/blob/s01/d2-rig-review/downloads/d2-rig/D2_MOTION_CONTACT_SHEET.png",
+      "http": "200",
+      "file_page_http": "200",
+      "bytes": 1258835,
+      "sha256": "385fabd50945f6a15f32501b54ddccc05a23bc96cfbf56949e5f6ee9a04f7902"
+    },
+    "D1_C06_B_BEFORE_AFTER.png": {
+      "url": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/raw/refs/heads/s01/d2-rig-review/downloads/d2-rig/D1_C06_B_BEFORE_AFTER.png",
+      "file_page": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/blob/s01/d2-rig-review/downloads/d2-rig/D1_C06_B_BEFORE_AFTER.png",
+      "http": "200",
+      "file_page_http": "200",
+      "bytes": 1937418,
+      "sha256": "d5063f010bf35c29d6ab182078c4aa33908da964260556cfb9d206798dca223d"
+    },
+    "D1_C07_JOY_BEFORE_AFTER.png": {
+      "url": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/raw/refs/heads/s01/d2-rig-review/downloads/d2-rig/D1_C07_JOY_BEFORE_AFTER.png",
+      "file_page": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/blob/s01/d2-rig-review/downloads/d2-rig/D1_C07_JOY_BEFORE_AFTER.png",
+      "http": "200",
+      "file_page_http": "200",
+      "bytes": 2022369,
+      "sha256": "5397f2adb50a000b9817e9c0170585fc88a983b257075fd95934c720dd0b8cfa"
+    },
+    "DELIVERY_SHA256.txt": {
+      "url": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/raw/refs/heads/s01/d2-rig-review/downloads/d2-rig/DELIVERY_SHA256.txt",
+      "file_page": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/blob/s01/d2-rig-review/downloads/d2-rig/DELIVERY_SHA256.txt",
+      "http": "200",
+      "file_page_http": "200",
+      "bytes": 962,
+      "sha256": "0892636e1a1e8432e2beaabbddc91a019b8079eb1a41da585949e42c2e6e9310"
+    },
+    "D1_PASS_KO.md": {
+      "url": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/raw/refs/heads/s01/d2-rig-review/downloads/d2-rig/D1_PASS_KO.md",
+      "file_page": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/blob/s01/d2-rig-review/downloads/d2-rig/D1_PASS_KO.md",
+      "http": "200",
+      "file_page_http": "200",
+      "bytes": 3316,
+      "sha256": "dec47d7b9f566928428e3de126697e4dd3737598c552a76501a4e4fda56d58c8"
+    },
+    "D2_RIG_QA_KO.md": {
+      "url": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/raw/refs/heads/s01/d2-rig-review/downloads/d2-rig/D2_RIG_QA_KO.md",
+      "file_page": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/blob/s01/d2-rig-review/downloads/d2-rig/D2_RIG_QA_KO.md",
+      "http": "200",
+      "file_page_http": "200",
+      "bytes": 4178,
+      "sha256": "6fd15f547c21849ac33476742155dd2c608630f440901938a79b5cb0a1aefcb5"
+    }
+  },
+  "downloaded_zip": {
+    "zip_bytes": 80340884,
+    "zip_sha256": "d3a70e300b861b6da124feb0d0a63f8020160d3929c3215a2e5e043ebe136d33",
+    "members": 103,
+    "payloads": 102,
+    "crc_sha": "PASS",
+    "native_sha": "1b6f4ada8c18331df7fcbbcf66ac68e05aa9793ac6d3990e0ac8ec8a3c36bfb5"
+  },
+  "downloaded_native_blend": {
+    "result": "PASS",
+    "blender": "4.3.2",
+    "scenes": [
+      "C05_END_HOLD",
+      "C06_A",
+      "C06_B",
+      "C07_A",
+      "C07_B",
+      "C07_JOY",
+      "D2_GEP_PERFORMANCE",
+      "D2_PIN_CONTROLS"
+    ],
+    "bones": {
+      "GEP_Performance_Rig": 18,
+      "PIN_D2_RIG": 45
+    },
+    "dependency_problems": {
+      "unpacked_file_textures": [],
+      "external_libraries": [],
+      "embedded_script_modules": [],
+      "invalid_or_python_dependent_drivers": []
+    }
+  },
+  "mobile_browser_emulation": {
+    "device": "Pixel 7 viewport, touch and user agent emulation in desktop Chromium",
+    "cloud_tls": "Pinned keys of GitHub hosts preverified by curl using the managed system CA store",
+    "fresh_unsigned_context": true,
+    "file_page": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/blob/s01/d2-rig-review/downloads/d2-rig/S01_D1_D2_RIG_REVIEW.zip",
+    "file_page_http": 200,
+    "method": "File page download button",
+    "suggested_filename": "S01_D1_D2_RIG_REVIEW.zip",
+    "download_bytes": 80340884,
+    "download_sha256": "d3a70e300b861b6da124feb0d0a63f8020160d3929c3215a2e5e043ebe136d33",
+    "sha_match": true,
+    "physical_android": "MOBILE_DOWNLOAD_NOT_RUN"
+  },
+  "physical_android": "MOBILE_DOWNLOAD_NOT_RUN"
+}
