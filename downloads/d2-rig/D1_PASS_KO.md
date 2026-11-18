@@ -14,3 +14,5 @@
 | D3 본편 | NOT_RUN | 잠든 자세에서 기립까지 이어지는 기상 동작은 별도의 제작 단계다. |
 
 정지 파일 SHA-256은 546a6b91790b0b4ef78f7a3697892dffe56cfc38c03d0b3c153c05d9af3d3b09이다. QA/D1_INDEPENDENT_GATE.json, QA/D1_RELEASED_VIEWS.json, QA/JOY_CONTACT_PROOF.json, QA/D1_LOCAL_CORRECTIONS.json 및 QA/SOURCE_GATE.json에 측정 근거가 있다. 검사 수치는 1 Blender 단위 = 1 m인 작업실에서 측정했다.
+
+**D2에서 추가로 확인한 기존 접촉 한계.** 승인 WARM 정지 자세에서 제페토가 내민 팔 일부가 작업대 상판의 3D 표면 안쪽으로 최대 83.94 mm 들어간다. 같은 부위가 피노키오를 받치는 접힌 천과 교차한 경우는 0건이었다. 이 수치는 이번 두 정지 보정 이전부터 있던 제페토 팔의 배치에서 나왔다. 위 PASS는 요청한 두 보정과 기존 정지 장면의 회귀 검사 범위다. D2 시험은 이 팔의 경로를 별도로 보정한 뒤 연속 검사한다.
