@@ -1,0 +1,40 @@
+D3 polished shot: FAIL (user visual review). New tests: USER_REVIEW_REQUIRED. Full new 9s: gated.
+Blender 4.3.2; reopened packed blend; no external file images or libraries. Both previous actions archived. Rest and skin inventories compared equal.
+Per-frame triangle overlap (selected nonadjacent pairs): 610 pairs x 60 frames, 0 hits. Old action: 192 frames, 43 frames with hits.
+Left actual PALM mesh min cloth gap across F18-60 (mm): 0.4491 .. 0.4506 vertices within 2mm: 29.0000 .. 29.0000 /478
+left sole max center drift from F18 (mm): 0.0
+left hand max center drift from F18 (mm): 0.001
+Left maximum target error (mm): 0.0261
+Left max elbow pole projection angle (deg): 0.0046
+Left palm thin-axis angle from horizontal (deg): 48.9613 .. 48.9613
+Right actual PALM mesh min cloth gap across F18-60 (mm): 0.4267 .. 0.4554 vertices within 2mm: 12.0000 .. 12.0000 /478
+right sole max center drift from F18 (mm): 0.0
+right hand max center drift from F18 (mm): 0.0171
+Right maximum target error (mm): 0.0391
+Right max elbow pole projection angle (deg): 0.0116
+Right palm thin-axis angle from horizontal (deg): 10.8775 .. 10.8775
+PIN.L max world orientation step per frame, upper arm / forearm / hand / thigh / shin / foot (deg): [1.4, 1.113, 0.0, 0.456, 0.577, 0.0]
+PIN.R max world orientation step per frame, upper arm / forearm / hand / thigh / shin / foot (deg): [1.356, 0.683, 0.0, 0.578, 0.656, 0.0]
+GEP.L max world orientation step per frame, upper arm / forearm / hand / thigh / shin / foot (deg): [0.679, 0.958, 0.958, 0.0, 0.0, 0.0]
+GEP.R max world orientation step per frame, upper arm / forearm / hand / thigh / shin / foot (deg): [0.565, 0.772, 0.591, 0.0, 0.0, 0.0]
+Shorts-cloth min gap F18-60 (mm): 0.6043 .. 0.9238
+14-part volume-weighted center displacement F1 to F60 (world mm): [5.53, 93.66, 31.6] (geometric proxy, not contact forces)
+GEP right wrist F15 to F34 world displacement (mm): 68.65
+GEP hand, forearm, sleeve vs 4 workshop surfaces: no triangle intersections across all 48 reaction frames.
+FAILED_ACTION_THREE_VIEW_AUDIT.mp4 1320 x 700 24/1 fps 192 frames, 8.000000 s, all presentation timestamps and strict decode PASS
+GEP_REACTION.mp4 1280 x 720 24/1 fps 48 frames, 2.000000 s, all presentation timestamps and strict decode PASS
+GEP_REACTION_3V.mp4 1320 x 320 24/1 fps 48 frames, 2.000000 s, all presentation timestamps and strict decode PASS
+NEW_THREE_VIEW_AUDIT.mp4 1320 x 700 24/1 fps 60 frames, 2.500000 s, all presentation timestamps and strict decode PASS
+PIN_SUPPORT_3Q.mp4 440 x 320 24/1 fps 60 frames, 2.500000 s, all presentation timestamps and strict decode PASS
+PIN_SUPPORT_3Q_MATERIAL.mp4 800 x 600 24/1 fps 60 frames, 2.500000 s, all presentation timestamps and strict decode PASS
+PIN_SUPPORT_FRONT.mp4 440 x 320 24/1 fps 60 frames, 2.500000 s, all presentation timestamps and strict decode PASS
+PIN_SUPPORT_MAIN_B.mp4 1280 x 720 24/1 fps 60 frames, 2.500000 s, all presentation timestamps and strict decode PASS
+PIN_SUPPORT_SIDE.mp4 440 x 320 24/1 fps 60 frames, 2.500000 s, all presentation timestamps and strict decode PASS
+PIN_SUPPORT_SIDE_MATERIAL.mp4 800 x 600 24/1 fps 60 frames, 2.500000 s, all presentation timestamps and strict decode PASS
+Original SHA-256 verified D3_C07_WAKEUP_POLISHED.blend 43223ffb517aae017f154d5a7af91bbe3b9872ee57033b727ae0769d88683e44
+Original SHA-256 verified D3_C07_WAKEUP_POLISHED.mp4 c2a1c5fea039031118d3769d778485e2b26c233edfb8e195d3888282ae90f6b7
+SOURCE BASE: 26cee92c22c81740e55170295fa5b3faaf7b87b0
+PIN_SUPPORT_MAIN_B 24 fps playback completed (software SDL).
+PIN_SUPPORT_SIDE_MATERIAL 24 fps playback completed (software SDL).
+PIN_SUPPORT_3Q_MATERIAL 24 fps playback completed (software SDL).
+GEP_REACTION 24 fps playback completed (software SDL).
