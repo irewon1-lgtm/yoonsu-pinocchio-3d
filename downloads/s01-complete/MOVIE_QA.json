@@ -1,0 +1,330 @@
+{
+  "movie": "S01_COMPLETE_MOVIE_1080P.mp4",
+  "sha256": "f56a00df94390ae68a6c414ac756a160566d29ae2028fa7afe500040a4f6bdd7",
+  "fps": 24,
+  "frames": 2622,
+  "width": 1920,
+  "height": 1080,
+  "duration_seconds": 109.25,
+  "codec": "h264",
+  "audio_codec": "aac",
+  "chapters": 9,
+  "cuts": [
+    {
+      "cut": 1,
+      "frames": 356,
+      "min_luma": 36.32,
+      "largest_mean_frame_change": 56.522
+    },
+    {
+      "cut": 2,
+      "frames": 338,
+      "min_luma": 101.51,
+      "largest_mean_frame_change": 46.421
+    },
+    {
+      "cut": 3,
+      "frames": 365,
+      "min_luma": 81.07,
+      "largest_mean_frame_change": 60.224
+    },
+    {
+      "cut": 4,
+      "frames": 265,
+      "min_luma": 114.83,
+      "largest_mean_frame_change": 51.387
+    },
+    {
+      "cut": 5,
+      "frames": 151,
+      "min_luma": 107.69,
+      "largest_mean_frame_change": 58.544
+    },
+    {
+      "cut": 6,
+      "frames": 119,
+      "min_luma": 106.8,
+      "largest_mean_frame_change": 48.131
+    },
+    {
+      "cut": 7,
+      "frames": 473,
+      "min_luma": 101.94,
+      "largest_mean_frame_change": 47.407
+    },
+    {
+      "cut": 8,
+      "frames": 336,
+      "min_luma": 101.98,
+      "largest_mean_frame_change": 50.139
+    },
+    {
+      "cut": 9,
+      "frames": 219,
+      "min_luma": 43.05,
+      "largest_mean_frame_change": 49.521
+    }
+  ],
+  "original_to_final_mix": [
+    {
+      "id": "S01-U001",
+      "correlation": 0.999679,
+      "start_and_tail_correlation": [
+        0.999785,
+        0.999873
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 24.83
+    },
+    {
+      "id": "S01-U002",
+      "correlation": 0.999191,
+      "start_and_tail_correlation": [
+        0.999696,
+        0.99894
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 25.2
+    },
+    {
+      "id": "S01-U003",
+      "correlation": 0.999489,
+      "start_and_tail_correlation": [
+        0.999738,
+        0.99982
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 27.67
+    },
+    {
+      "id": "S01-U004",
+      "correlation": 0.999917,
+      "start_and_tail_correlation": [
+        0.999915,
+        0.999579
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 25.14
+    },
+    {
+      "id": "S01-U005",
+      "correlation": 0.999951,
+      "start_and_tail_correlation": [
+        0.999983,
+        0.999704
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 27.86
+    },
+    {
+      "id": "S01-U006",
+      "correlation": 0.999951,
+      "start_and_tail_correlation": [
+        0.999913,
+        0.999608
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 20.21
+    },
+    {
+      "id": "S01-U007",
+      "correlation": 0.99945,
+      "start_and_tail_correlation": [
+        0.999888,
+        0.999878
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 25.29
+    },
+    {
+      "id": "S01-U008",
+      "correlation": 0.99986,
+      "start_and_tail_correlation": [
+        0.99994,
+        0.999986
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 27.97
+    },
+    {
+      "id": "S01-U009",
+      "correlation": 0.999903,
+      "start_and_tail_correlation": [
+        0.999985,
+        0.999618
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 27.12
+    },
+    {
+      "id": "S01-U010",
+      "correlation": 0.999853,
+      "start_and_tail_correlation": [
+        0.999992,
+        0.999157
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 36.75
+    },
+    {
+      "id": "S01-U011",
+      "correlation": 0.999973,
+      "start_and_tail_correlation": [
+        0.999956,
+        0.997896
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 20.51
+    },
+    {
+      "id": "S01-U012",
+      "correlation": 0.999971,
+      "start_and_tail_correlation": [
+        0.999152,
+        0.999101
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 22.92
+    },
+    {
+      "id": "S01-U013",
+      "correlation": 0.999904,
+      "start_and_tail_correlation": [
+        0.999968,
+        0.999841
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 22.85
+    },
+    {
+      "id": "S01-U014",
+      "correlation": 0.999976,
+      "start_and_tail_correlation": [
+        0.999993,
+        0.999423
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 23.43
+    },
+    {
+      "id": "S01-U015",
+      "correlation": 0.999866,
+      "start_and_tail_correlation": [
+        0.999978,
+        0.999648
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 24.23
+    },
+    {
+      "id": "S01-U016",
+      "correlation": 0.999765,
+      "start_and_tail_correlation": [
+        0.999989,
+        0.999511
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 22.59
+    },
+    {
+      "id": "S01-U017",
+      "correlation": 0.999981,
+      "start_and_tail_correlation": [
+        0.999976,
+        0.999962
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 21.54
+    },
+    {
+      "id": "S01-U018",
+      "correlation": 0.999962,
+      "start_and_tail_correlation": [
+        0.999867,
+        0.998024
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 28.28
+    },
+    {
+      "id": "S01-U019",
+      "correlation": 0.999975,
+      "start_and_tail_correlation": [
+        0.999662,
+        0.999965
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 19.86
+    },
+    {
+      "id": "S01-U020",
+      "correlation": 0.999946,
+      "start_and_tail_correlation": [
+        0.999897,
+        0.996287
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 24.15
+    },
+    {
+      "id": "S01-U021",
+      "correlation": 0.999878,
+      "start_and_tail_correlation": [
+        0.999807,
+        0.999982
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 25.63
+    },
+    {
+      "id": "S01-U022",
+      "correlation": 0.999817,
+      "start_and_tail_correlation": [
+        0.999993,
+        0.999214
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 25.61
+    },
+    {
+      "id": "S01-U023",
+      "correlation": 0.999982,
+      "start_and_tail_correlation": [
+        0.999937,
+        0.997283
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 22.72
+    },
+    {
+      "id": "S01-U024",
+      "correlation": 0.999837,
+      "start_and_tail_correlation": [
+        0.999989,
+        0.99965
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 23.15
+    },
+    {
+      "id": "S01-U025",
+      "correlation": 0.999671,
+      "start_and_tail_correlation": [
+        0.999713,
+        0.999928
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 24.83
+    },
+    {
+      "id": "S01-U026",
+      "correlation": 0.99959,
+      "start_and_tail_correlation": [
+        0.999617,
+        0.999839
+      ],
+      "lag_ms": 0.0,
+      "voice_over_bed_db": 24.53
+    }
+  ]
+}

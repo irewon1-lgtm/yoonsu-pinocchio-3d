@@ -1,0 +1,427 @@
+{
+  "fps": 24,
+  "frames": 2622,
+  "cuts": [
+    {
+      "cut": 1,
+      "start": 0,
+      "end": 356
+    },
+    {
+      "cut": 2,
+      "start": 356,
+      "end": 694
+    },
+    {
+      "cut": 3,
+      "start": 694,
+      "end": 1059
+    },
+    {
+      "cut": 4,
+      "start": 1059,
+      "end": 1324
+    },
+    {
+      "cut": 5,
+      "start": 1324,
+      "end": 1475
+    },
+    {
+      "cut": 6,
+      "start": 1475,
+      "end": 1594
+    },
+    {
+      "cut": 7,
+      "start": 1594,
+      "end": 2067
+    },
+    {
+      "cut": 8,
+      "start": 2067,
+      "end": 2403
+    },
+    {
+      "cut": 9,
+      "start": 2403,
+      "end": 2622
+    }
+  ],
+  "cues": [
+    {
+      "id": "S01-U001",
+      "cut": 1,
+      "speaker": "내레이션",
+      "text": "Once upon a time, in a small village, there lived a kind old man named Geppetto.",
+      "frame": 49,
+      "start": 2.0416666666666665,
+      "end": 7.401666666666667,
+      "duration": 5.36,
+      "original_sha256": "f4c7c786ee4997cafe9925a7dc2d39e7a9c2500f834db6837e5c297efc2aaa0b",
+      "decoded_sha256": "ca5bc010abcf866d8e3bdefc20c26a296e5111f2f22758cbc70326b11bae5fda"
+    },
+    {
+      "id": "S01-U002",
+      "cut": 1,
+      "speaker": "내레이션",
+      "text": "He loved making wooden toys.",
+      "frame": 189,
+      "start": 7.875,
+      "end": 9.995000000000001,
+      "duration": 2.12,
+      "original_sha256": "51a3be8fc1a2b083de49504c148c12a5ebbf33312e223dec3b192d3938857549",
+      "decoded_sha256": "748b58a680ed51bcd0e88bdd60f000cd8ed58612c563bc23583f931a9b8aac37"
+    },
+    {
+      "id": "S01-U003",
+      "cut": 1,
+      "speaker": "내레이션",
+      "text": "But sometimes, his little house felt very quiet.",
+      "frame": 251,
+      "start": 10.458333333333334,
+      "end": 14.258333333333333,
+      "duration": 3.8,
+      "original_sha256": "495622ac5825e655dc87d372dbc1055b40d5fd75040d44081e7a190056909591",
+      "decoded_sha256": "ee04c890439e27c8ebf65fb81c8ab47af7d883e9a340d0d9aa744a84ff72ff98"
+    },
+    {
+      "id": "S01-U004",
+      "cut": 2,
+      "speaker": "제페토",
+      "text": "Look at you, little wooden boy!",
+      "frame": 370,
+      "start": 15.416666666666666,
+      "end": 17.616666666666667,
+      "duration": 2.2,
+      "original_sha256": "cc9f35628a8f758025bc3dc32a24c3b6857634a675c3dd5e2eb8930b473bed23",
+      "decoded_sha256": "0af1029be0987bfa9fade12c22dd32bef449d72c443aa2876fb0617d3a5ab12e"
+    },
+    {
+      "id": "S01-U005",
+      "cut": 2,
+      "speaker": "제페토",
+      "text": "You have two arms, two legs, and a funny little nose.",
+      "frame": 434,
+      "start": 18.083333333333332,
+      "end": 22.80333333333333,
+      "duration": 4.72,
+      "original_sha256": "21ee3f1207a7ccc29e57f9e1e2091a89d4c8e9584ada2b3baaee0f627a66fbc4",
+      "decoded_sha256": "b11cc0158a98ca2b14c6d889c709242799974842fd68d3b20c5da2ee29065958"
+    },
+    {
+      "id": "S01-U006",
+      "cut": 2,
+      "speaker": "제페토",
+      "text": "I'll call you Pinocchio.",
+      "frame": 559,
+      "start": 23.291666666666668,
+      "end": 25.41166666666667,
+      "duration": 2.12,
+      "original_sha256": "e50f0469563eac6463bd9de10621dd80964d68d3c5cb2f2fbe1649a8518a1d9c",
+      "decoded_sha256": "7b682eb3eeb9ab1d9e6f2007ca467683f759bc19d248978a14bc9c8b06759f2a"
+    },
+    {
+      "id": "S01-U007",
+      "cut": 3,
+      "speaker": "내레이션",
+      "text": "That night, a beautiful blue light floated through the window.",
+      "frame": 713,
+      "start": 29.708333333333332,
+      "end": 33.02833333333333,
+      "duration": 3.32,
+      "original_sha256": "e1961e320ce74892fb3a87f21b744b2780cbc98918c7d98637ab2799e45961f6",
+      "decoded_sha256": "855421e8fa12645cf94eae0fd7a93ea19bfc8fcea62517252cec240edc40d467"
+    },
+    {
+      "id": "S01-U008",
+      "cut": 3,
+      "speaker": "파란 요정",
+      "text": "Good evening, Geppetto.",
+      "frame": 804,
+      "start": 33.5,
+      "end": 35.08,
+      "duration": 1.58,
+      "original_sha256": "2f0b62ca58620a40d896eb75ba6387bd8107413c76ed990f747c2f61e49bfe7e",
+      "decoded_sha256": "a4b9fbd4f9e05dc1aae6b9abb2c897a3ce98b9920be3ee78ead8385ce4aa1c76"
+    },
+    {
+      "id": "S01-U009",
+      "cut": 3,
+      "speaker": "파란 요정",
+      "text": "You made this little boy with so much love.",
+      "frame": 927,
+      "start": 38.625,
+      "end": 41.565,
+      "duration": 2.94,
+      "original_sha256": "cc9f65c5aba42e43067cfdb0a70318fccee227b87f273b8fcb68e6475f84c31b",
+      "decoded_sha256": "b67a5a8f1e929b420044274a14917419e25abb84c651a6f338679b4865b873f9"
+    },
+    {
+      "id": "S01-U010",
+      "cut": 3,
+      "speaker": "파란 요정",
+      "text": "Let me give him a little magic.",
+      "frame": 1009,
+      "start": 42.041666666666664,
+      "end": 43.781666666666666,
+      "duration": 1.74,
+      "original_sha256": "0a9dfbd6b85e123e26b86ab0ec73665482e3b8d6c0fe088b7c88d987a05d5cd3",
+      "decoded_sha256": "4dd5aaefd35f3677572083e9d2882c5a12b35f05f72171c765c1dfb5ebe16ad6"
+    },
+    {
+      "id": "S01-U011",
+      "cut": 4,
+      "speaker": "제페토",
+      "text": "Oh! A real fairy?",
+      "frame": 1071,
+      "start": 44.625,
+      "end": 46.745,
+      "duration": 2.12,
+      "original_sha256": "34099ba8adb1958cd0194400571554930290f8c109a26b6cd9e506c3c3ac4ab2",
+      "decoded_sha256": "6dbc51fc80fde8244c39becf4d01abaee01c56bf3e58b8aa87beefa7ee96dccb"
+    },
+    {
+      "id": "S01-U012",
+      "cut": 4,
+      "speaker": "제페토",
+      "text": "Can he really come alive?",
+      "frame": 1133,
+      "start": 47.208333333333336,
+      "end": 49.76833333333334,
+      "duration": 2.56,
+      "original_sha256": "5d9ec5ebd7a519f6d9b3ab117ff92abf7fd6c588893ed50bbcdd6d563012e349",
+      "decoded_sha256": "171104fa6fec7e6ac68b945989257b81ae4d540074335981126383db83926691"
+    },
+    {
+      "id": "S01-U013",
+      "cut": 4,
+      "speaker": "파란 요정",
+      "text": "Watch closely.",
+      "frame": 1206,
+      "start": 50.25,
+      "end": 51.63,
+      "duration": 1.38,
+      "original_sha256": "ead70aaf6b0f813dcd8b63f2ec1de7394048506a50a3db434000098221005781",
+      "decoded_sha256": "fdc0b6a6973282b9390cdbe88bcd0e13ef911c9571ba90305333685f31d52cb2"
+    },
+    {
+      "id": "S01-U014",
+      "cut": 5,
+      "speaker": "제페토",
+      "text": "Wait! Did his fingers move?",
+      "frame": 1339,
+      "start": 55.791666666666664,
+      "end": 58.111666666666665,
+      "duration": 2.32,
+      "original_sha256": "eb16a5b7b4c69fe73b763c67681f8fa2db9f2ca468e7f68a09c3931108df972e",
+      "decoded_sha256": "ec39cfafa56e4fddec52ed070eb8ab29bec3545e16d593347f8bc208e622cce1"
+    },
+    {
+      "id": "S01-U015",
+      "cut": 5,
+      "speaker": "제페토",
+      "text": "Yoonsu, look at his hands!",
+      "frame": 1406,
+      "start": 58.583333333333336,
+      "end": 61.02333333333333,
+      "duration": 2.44,
+      "original_sha256": "aa0d5e657e06b8e35cf839742b1577116fb2668c8a3b888c0c89a3fd0a23cbc6",
+      "decoded_sha256": "0550716a8ba55b9bd6841aab78cf8087ad7fb7bb8ece84f78a4194139c09df97"
+    },
+    {
+      "id": "S01-U016",
+      "cut": 6,
+      "speaker": "제페토",
+      "text": "What is happening?",
+      "frame": 1483,
+      "start": 61.791666666666664,
+      "end": 63.151666666666664,
+      "duration": 1.36,
+      "original_sha256": "b71ca19e5686d5baccb837a1b37ad15ea040724b9f23cf7404dbb9aa3561b661",
+      "decoded_sha256": "d8b40a1cea68c75c19eb33a87122db6e8f75c9d34cd93302db5bb2671d5309cc"
+    },
+    {
+      "id": "S01-U017",
+      "cut": 7,
+      "speaker": "피노키오",
+      "text": "Oh!",
+      "frame": 1804,
+      "start": 75.16666666666667,
+      "end": 75.96666666666667,
+      "duration": 0.8,
+      "original_sha256": "858a91e422e53afc648ec8952c909c0d5c1b82b58196309e7fb81afd437699b2",
+      "decoded_sha256": "1c185fb0112756e3f0f3bafeffae306b345f5e9cbc90974aa67ee8d2abddf00d"
+    },
+    {
+      "id": "S01-U018",
+      "cut": 7,
+      "speaker": "피노키오",
+      "text": "I can move!",
+      "frame": 1835,
+      "start": 76.45833333333333,
+      "end": 77.57833333333333,
+      "duration": 1.12,
+      "original_sha256": "dad2c85979b59156d7be6db85fdb2b7f01f37822a555568ea7de59a376e5a6b6",
+      "decoded_sha256": "7f8c347761d76a306cd8d7b0823fb86111a703a44f81b5e75ac28408b0b2bf49"
+    },
+    {
+      "id": "S01-U019",
+      "cut": 7,
+      "speaker": "피노키오",
+      "text": "I can see you!",
+      "frame": 1873,
+      "start": 78.04166666666667,
+      "end": 79.24166666666667,
+      "duration": 1.2,
+      "original_sha256": "dbb3c570d61783ec9729df0a85669a0a63500027879e6f030c124fe9a8b0f080",
+      "decoded_sha256": "46f03d83b43e6dac3735d2e669027d1cb31bc76ea33b6baa5b619c066a553d71"
+    },
+    {
+      "id": "S01-U020",
+      "cut": 7,
+      "speaker": "제페토",
+      "text": "Pinocchio! You're alive!",
+      "frame": 1913,
+      "start": 79.70833333333333,
+      "end": 82.50833333333333,
+      "duration": 2.8,
+      "original_sha256": "38371aa14ec0bcee0c29a548e164ac6ebc855b3dbd159ea5c301cc45bf159b53",
+      "decoded_sha256": "7b1ec73a66547055f514d3456c8d317807f03448f7c43fce1b7388b7459ea3f4"
+    },
+    {
+      "id": "S01-U021",
+      "cut": 8,
+      "speaker": "파란 요정",
+      "text": "Welcome to the world, Pinocchio.",
+      "frame": 2081,
+      "start": 86.70833333333333,
+      "end": 88.96833333333333,
+      "duration": 2.26,
+      "original_sha256": "faaf040713270ddae71b291342d4a240e1c516004d862eccc27c0c4de4f82a2e",
+      "decoded_sha256": "a438f88b120e83722d0ccd6cea892f4162ef5566f48124c9c08f4a20be0c1477"
+    },
+    {
+      "id": "S01-U022",
+      "cut": 8,
+      "speaker": "파란 요정",
+      "text": "Remember to be kind and tell the truth.",
+      "frame": 2147,
+      "start": 89.45833333333333,
+      "end": 91.95833333333333,
+      "duration": 2.5,
+      "original_sha256": "26bc0696d5c74ee1086dd9648b6fdaa58fec740d7d2a9085983a3c69164459eb",
+      "decoded_sha256": "09e95010eabc843901c4c32958e4f48d13d390391dd7b40488776f9f5851d847"
+    },
+    {
+      "id": "S01-U023",
+      "cut": 8,
+      "speaker": "피노키오",
+      "text": "The truth?",
+      "frame": 2218,
+      "start": 92.41666666666667,
+      "end": 93.33666666666667,
+      "duration": 0.92,
+      "original_sha256": "83d17d8623fcab23aa75a709083de545897f9fd6a3335160c6b79e275486bd23",
+      "decoded_sha256": "4ede167da8db10ea217ef34da71ec5b4f500269f0894f63fb40c494117e284fd"
+    },
+    {
+      "id": "S01-U024",
+      "cut": 8,
+      "speaker": "파란 요정",
+      "text": "Yes. The truth is very important.",
+      "frame": 2252,
+      "start": 93.83333333333333,
+      "end": 96.53333333333333,
+      "duration": 2.7,
+      "original_sha256": "e75a140b0a775ac122ad45b77b9755749173584e390eb52b1d00b0f3ba358d0c",
+      "decoded_sha256": "01635e506bd1e8ce62e0f3d7b6f85c74a956394e803a8511148b8cfb248544ba"
+    },
+    {
+      "id": "S01-U025",
+      "cut": 9,
+      "speaker": "내레이션",
+      "text": "The little wooden boy had so much to learn.",
+      "frame": 2421,
+      "start": 100.875,
+      "end": 103.555,
+      "duration": 2.68,
+      "original_sha256": "3432b185812aee6e232426eccef9f228aee74d7f73e37e1e1d3f718eb8bae60a",
+      "decoded_sha256": "003fcf7aaf0f90425f2629b7b6c4b0e0ab0e5ccdcfd4f21a5bb0d2d137f10141"
+    },
+    {
+      "id": "S01-U026",
+      "cut": 9,
+      "speaker": "내레이션",
+      "text": "And his adventure was just beginning.",
+      "frame": 2497,
+      "start": 104.04166666666667,
+      "end": 106.12166666666667,
+      "duration": 2.08,
+      "original_sha256": "40e83988a7bbb9f1847ee6de4bfd45f8efc74966c8bafd1b9f9d94c6dffc4d76",
+      "decoded_sha256": "995cae5bdcc5971d1689eb8436404180d5c51ebe87b7cbe765222c0319874f53"
+    }
+  ],
+  "events": [
+    {
+      "id": "X01",
+      "cut": 2,
+      "after": "S01-U006",
+      "frame": 612,
+      "time": 25.5,
+      "prompt": "Tap Pinocchio.",
+      "seconds": 3,
+      "required": false
+    },
+    {
+      "id": "X02",
+      "cut": 3,
+      "after": "S01-U008",
+      "frame": 844,
+      "time": 35.166666666666664,
+      "prompt": "Hello, Blue Fairy!",
+      "seconds": 3,
+      "required": false
+    },
+    {
+      "id": "X03",
+      "cut": 4,
+      "after": "S01-U013",
+      "frame": 1242,
+      "time": 51.75,
+      "prompt": "Touch the magic light.",
+      "seconds": 3,
+      "required": false
+    },
+    {
+      "id": "I01",
+      "cut": 6,
+      "after": "S01-U016",
+      "frame": 1518,
+      "time": 63.25,
+      "prompt": "He is moving!",
+      "seconds": 3,
+      "required": true
+    },
+    {
+      "id": "X04",
+      "cut": 7,
+      "after": "S01-U020",
+      "frame": 1983,
+      "time": 82.625,
+      "prompt": "Hello, my friend!",
+      "seconds": 3,
+      "required": false
+    },
+    {
+      "id": "X05",
+      "cut": 8,
+      "after": "S01-U024",
+      "frame": 2319,
+      "time": 96.625,
+      "prompt": "Tell the truth!",
+      "seconds": 3,
+      "required": false
+    }
+  ]
+}

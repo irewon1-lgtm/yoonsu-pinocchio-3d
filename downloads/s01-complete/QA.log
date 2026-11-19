@@ -1,0 +1,13 @@
+full ['pause preserves picture and original MP3 clocks', 'optional timeout suspends on pause', 'required wait persists beyond timeout and blocks forward chapter navigation', 'all 26 original MP3 ended once in sequence', 'all five optional waits auto-resume', 'double tap releases I01 once', 'offline document made zero external requests', 'browser script exceptions zero']
+vad ['audio-activity fixture released I01 and microphone tracks stopped', 'restart clears generation and required response', 'offline document made zero external requests', 'browser script exceptions zero']
+mobile ['390px mobile viewport has no horizontal overflow', 'both object/light touch prompts resumed the movie', 'offline document made zero external requests', 'browser script exceptions zero']
+EDITOR QA 9 contiguous picture strips, 26 approved voices, score and foley, 26 caption strips, 54 beat and 6 event markers. Relative media paths resolved: 28
+Blender 4.3.2
+Read blend: "/workspace/scratch/s01-film/build/studio/S01_EDITOR.blend"
+
+Blender quit
+Final MP4 SHA-256 f56a00df94390ae68a6c414ac756a160566d29ae2028fa7afe500040a4f6bdd7
+1920 1080 24 fps 2622 frames 109.25 s 9 chapters
+26 decoded audio comparisons. Lowest waveform correlation 0.999191 minimum voice over bed dB 19.86
+C07 frame count 214 nonadjacent pairs per frame 610 frames with intersections []
+See SCREENING_KO.md for shot review, exceptions and test scope. Final viewer approval pending.
