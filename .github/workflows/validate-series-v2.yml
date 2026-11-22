@@ -1,0 +1,23 @@
+name: Validate Pinocchio V2 planning
+on:
+  push:
+    branches:
+      - s01/full-story-production
+    paths:
+      - "AGENTS.md"
+      - "docs/series_v2/**"
+      - "scripts/validate_series_v2.py"
+      - ".github/workflows/validate-series-v2.yml"
+  pull_request:
+    paths:
+      - "AGENTS.md"
+      - "docs/series_v2/**"
+      - "scripts/validate_series_v2.py"
+      - ".github/workflows/validate-series-v2.yml"
+jobs:
+  docs-and-source-integrity:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate scene policy and locked originals
+        run: python3 scripts/validate_series_v2.py

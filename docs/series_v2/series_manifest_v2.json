@@ -1,0 +1,198 @@
+{
+  "project": "윤수 피노키오 3D — PINOCCHIO: THE PROMISE OF TRUTH",
+  "version": "2.0",
+  "date_kst": "2026-11-23",
+  "status": "SPEC_READY_NOT_PRODUCTION_COMPLETE",
+  "branch": "s01/full-story-production",
+  "entire_story_scene_count": 12,
+  "canonical_sources": {
+    "story_master": {
+      "path": "docs/series_v2/sources/01_STORY_MASTER_V1_1.md",
+      "sha256": "eb5ca04f5e4302d4a71726f1a24b6cead5cec682b96baee600f6eef8ee951d3e",
+      "status": "LOCKED_ORIGINAL"
+    },
+    "storyboard": {
+      "path": "docs/series_v2/sources/01_STEP2_PRODUCTION_STORYBOARD_SPEC.md",
+      "sha256": "b5ff72a4e6d889006eacc669a7c15c68a739ca1805117b8c79d79d4ab5181610",
+      "status": "LOCKED_ORIGINAL"
+    }
+  },
+  "baseline": {
+    "cuts": 138,
+    "voiced_lines_documented": 358,
+    "legacy_global_interactions": 21
+  },
+  "s01": {
+    "status": "FROZEN_EXEMPT_NO_REWORK",
+    "delivered_movie": "downloads/s01-complete/S01_COMPLETE_MOVIE_1080P.mp4",
+    "movie_seconds_reported": 109.25,
+    "movie_sha256_reported": "f56a00df94390ae68a6c414ac756a160566d29ae2028fa7afe500040a4f6bdd7",
+    "human_visual_approval_not_asserted": true
+  },
+  "policy": {
+    "applies_to": "S02-S12",
+    "min_narrative_seconds_excluding_waits": 360,
+    "interaction_target_per_scene_including_existing": 10,
+    "target_total_interactions_s02_s12": 110,
+    "retained_original_interactions_s02_s12": 20,
+    "planned_new_interactions_s02_s12": 90,
+    "story_method": "EXPAND_SCENE_BY_SCENE_ON_LOCKED_V1_1",
+    "input_method": "VOICE_ACTIVITY_OR_PARENT_TOUCH_NO_STT_SCORING",
+    "visual_method": "NATURAL_3D_PERFORMANCE"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "title": "할아버지의 작은 작업실",
+      "baseline_cuts": 9,
+      "legacy_ids": [
+        "I01"
+      ],
+      "progress": "FROZEN_EXEMPT_NO_REWORK",
+      "min_narrative_seconds": null,
+      "target_interactions": null,
+      "expanded_script_approved": false
+    },
+    {
+      "id": "S02",
+      "title": "피노키오의 첫 친구",
+      "baseline_cuts": 7,
+      "legacy_ids": [
+        "I02"
+      ],
+      "progress": "NOT_RUN",
+      "min_narrative_seconds": 360,
+      "target_interactions": 10,
+      "expanded_script_approved": false
+    },
+    {
+      "id": "S03",
+      "title": "빨간 모자는 어디에?",
+      "baseline_cuts": 9,
+      "legacy_ids": [
+        "I03",
+        "I04"
+      ],
+      "progress": "NOT_RUN",
+      "min_narrative_seconds": 360,
+      "target_interactions": 10,
+      "expanded_script_approved": false
+    },
+    {
+      "id": "S04",
+      "title": "학교로 가는 길",
+      "baseline_cuts": 14,
+      "legacy_ids": [
+        "I05",
+        "I06",
+        "I07"
+      ],
+      "progress": "NOT_RUN",
+      "min_narrative_seconds": 360,
+      "target_interactions": 10,
+      "expanded_script_approved": false
+    },
+    {
+      "id": "S05",
+      "title": "어디선가 들려오는 음악",
+      "baseline_cuts": 9,
+      "legacy_ids": [
+        "I08",
+        "I09"
+      ],
+      "progress": "NOT_RUN",
+      "min_narrative_seconds": 360,
+      "target_interactions": 10,
+      "expanded_script_approved": false
+    },
+    {
+      "id": "S06",
+      "title": "신나는 인형극",
+      "baseline_cuts": 12,
+      "legacy_ids": [
+        "I10",
+        "I11"
+      ],
+      "progress": "NOT_RUN",
+      "min_narrative_seconds": 360,
+      "target_interactions": 10,
+      "expanded_script_approved": false
+    },
+    {
+      "id": "S07",
+      "title": "학교가 끝나버렸어",
+      "baseline_cuts": 10,
+      "legacy_ids": [
+        "I12",
+        "I13"
+      ],
+      "progress": "NOT_RUN",
+      "min_narrative_seconds": 360,
+      "target_interactions": 10,
+      "expanded_script_approved": false
+    },
+    {
+      "id": "S08",
+      "title": "할아버지가 기다리는 집",
+      "baseline_cuts": 7,
+      "legacy_ids": [],
+      "progress": "NOT_RUN",
+      "min_narrative_seconds": 360,
+      "target_interactions": 10,
+      "expanded_script_approved": false
+    },
+    {
+      "id": "S09",
+      "title": "거짓말과 길어지는 코",
+      "baseline_cuts": 12,
+      "legacy_ids": [
+        "I14",
+        "I15"
+      ],
+      "progress": "NOT_RUN",
+      "min_narrative_seconds": 360,
+      "target_interactions": 10,
+      "expanded_script_approved": false
+    },
+    {
+      "id": "S10",
+      "title": "요정과 진실의 약속",
+      "baseline_cuts": 17,
+      "legacy_ids": [
+        "I16",
+        "I17",
+        "I18"
+      ],
+      "progress": "NOT_RUN",
+      "min_narrative_seconds": 360,
+      "target_interactions": 10,
+      "expanded_script_approved": false
+    },
+    {
+      "id": "S11",
+      "title": "이번에는 진짜 학교로",
+      "baseline_cuts": 13,
+      "legacy_ids": [
+        "I19",
+        "I20"
+      ],
+      "progress": "NOT_RUN",
+      "min_narrative_seconds": 360,
+      "target_interactions": 10,
+      "expanded_script_approved": false
+    },
+    {
+      "id": "S12",
+      "title": "친구를 구한 진짜 아이",
+      "baseline_cuts": 19,
+      "legacy_ids": [
+        "I21"
+      ],
+      "progress": "NOT_RUN",
+      "min_narrative_seconds": 360,
+      "target_interactions": 10,
+      "expanded_script_approved": false
+    }
+  ],
+  "next_scene": "S02"
+}
