@@ -60,10 +60,17 @@
       "legacy_ids": [
         "I02"
       ],
-      "progress": "NOT_RUN",
+      "progress": "DESIGN_COMPLETE_REVIEW_REQUIRED",
       "min_narrative_seconds": 360,
       "target_interactions": 10,
-      "expanded_script_approved": false
+      "expanded_script_approved": false,
+      "design_owner": "ChatGPT",
+      "design_doc": "scenes/S02/script_v2_draft.md",
+      "design_runtime_target_seconds": 443,
+      "design_shot_count": 50,
+      "design_original_dialogue_count": 21,
+      "design_new_dialogue_count": 81,
+      "design_interactions": 10
     },
     {
       "id": "S03",

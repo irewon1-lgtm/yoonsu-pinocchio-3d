@@ -1,4 +1,4 @@
-name: Validate Pinocchio V2 planning
+name: Validate Pinocchio V2 planning and S02 design
 on:
   push:
     branches:
@@ -6,18 +6,24 @@ on:
     paths:
       - "AGENTS.md"
       - "docs/series_v2/**"
+      - "scenes/S02/**"
       - "scripts/validate_series_v2.py"
+      - "scripts/validate_s02_design.py"
       - ".github/workflows/validate-series-v2.yml"
   pull_request:
     paths:
       - "AGENTS.md"
       - "docs/series_v2/**"
+      - "scenes/S02/**"
       - "scripts/validate_series_v2.py"
+      - "scripts/validate_s02_design.py"
       - ".github/workflows/validate-series-v2.yml"
 jobs:
-  docs-and-source-integrity:
+  validate:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
-      - name: Validate scene policy and locked originals
+      - name: Verify V1.1 sources and series rules
         run: python3 scripts/validate_series_v2.py
+      - name: Verify ChatGPT S02 screenplay integrity
+        run: python3 scripts/validate_s02_design.py

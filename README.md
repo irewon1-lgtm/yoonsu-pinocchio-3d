@@ -17,3 +17,6 @@ python3 scripts/validate_series_v2.py
 - 다음 작업: `docs/series_v2/S02_DEVELOPMENT_BRIEF.md`
 
 **S01은 변경 없이 패스. S02부터 장면당 실제 서사 6분 이상, 윤수 참여 총 10회**를 기준으로 기존 이야기 위에 확장한다. V2.0 정책 작성 자체는 S02~S12 영상 완성을 의미하지 않는다.
+
+## S02 직접 작성 설계
+[7분 23초, 윤수 10회, 50컷 상세 대본](scenes/S02/script_v2_draft.md) · [구조화 설계](scenes/S02/scene_design_v2.json). S02 신규 창작은 ChatGPT가 작성하며 Codex는 승인 후 제작·검증합니다.

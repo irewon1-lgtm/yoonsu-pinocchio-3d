@@ -7,8 +7,8 @@
 3. **S02~S12 장면별 각각 실제 본편 ≥360초 + 윤수 참여 총 10회.** 원본 I02~I21을 각 장면 10회에 포함. 총 110회/새로운 90회.
 4. 아이의 영어 이해를 전제하지 않고 화면 행동→짧은 영어 반복→터치/발화. STT 정확도·발음 채점 금지.
 5. 실제 3D 캐릭터의 감정·표정·자율 동작·발 접지·물체 접촉을 구현. 정지 그림/카메라 이동/반복으로 6분을 채우지 않는다.
-6. 장면별 상세 각본은 승인받은 뒤 제작한다. 일반 구현·테스트·결함 수정은 자동 진행하되, 새 이야기/외형/교육 방식 변경은 `REVIEW_REQUIRED`.
-7. 다음 작업은 **S02 G0/G1**. `docs/series_v2/CODEX_HANDOFF.md`를 읽고 `python3 scripts/validate_series_v2.py`를 실행한다.
+6. **시리즈 상세 설계(대사·참여 이벤트·3D 연기·카메라)는 ChatGPT가 수행한다. Codex는 자체 대본 작성·살붙이기·추가 교육 이벤트 창작을 하지 않는다.** S02 설계는 `scenes/S02/script_v2_draft.md`와 `scene_design_v2.json`에 작성되어 있으며, 사용자가 승인하기 전 `REVIEW_REQUIRED`다. 승인 이후 Codex는 설계 내용을 변경하지 않고 기술 구현·검증만 한다.
+7. 다음 작업은 **S02 G1 작성이 아닌 사용자 검토 대기**다. 기술·자료 검사는 `python3 scripts/validate_series_v2.py` 및 `python3 scripts/validate_s02_design.py`. 사용자 승인 전 G2 이후의 제작 시작 금지.
 8. QA는 `PASS/FAIL/NOT_RUN/REVIEW_REQUIRED/BLOCKED_RESOURCE`를 실제 파일·로그·재생 근거 기준으로 표시한다.
 
 ---
