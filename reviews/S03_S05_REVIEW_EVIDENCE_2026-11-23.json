@@ -1,0 +1,2773 @@
+{
+  "title": "3·4·5화 종합 검토 — 1~5화 연결성 포함",
+  "generated_at_kst": "2026-11-23T10:58:57.277469+09:00",
+  "scope": "REVIEW_ONLY_S03_S04_S05_WITH_S01_S02_ACCEPTED_COMPLETE",
+  "review_complete": true,
+  "production_ready": false,
+  "source_scenes_modified": false,
+  "s01_s02_retested_or_modified": false,
+  "reviewed_source": {
+    "reviewed_repository": "irewon1-lgtm/yoonsu-pinocchio-3d",
+    "reviewed_branch": "s01/full-story-production",
+    "reviewed_commit": "756c936e22468b708f4201a6d5e29a7d59fb15fb",
+    "reviewed_tree_sha": "b30930fec222d280db04e278cbb8509fc49107d8",
+    "local_input_blob_hashes": {
+      "README.md": "4ab8e0e3f2886016e1f545446fcc76a81ab367d1",
+      "AGENTS.md": "5aedcecd926553ec84d3d8e1623e19e463f804f1",
+      "scripts/s03_approved_voice_tts.py": "2a3cb7d1a4c8fea3d52cdd6b3ce016266e31ce41",
+      "scripts/validate_s05_design.py": "0160b319a61cd7eb2163054ca2d4ba44b2344428",
+      "scripts/validate_s03_design.py": "1cfa3b930c65a4362b903d9b609c8a36899a251f",
+      "scripts/s05_voice_preflight.py": "bd6a2f70f477177cca9486c385d1d1035e4d9c79",
+      "scripts/validate_series_v2.py": "e37603e903857ba9d5a16678ca9507a2fd199f72",
+      "scripts/s02_approved_voice_tts.py": "c7cdbb7a25231946bceafddd06fe7af45d41bbe4",
+      "scripts/validate_s04_design.py": "79f1886132006dc8ada6a366739bfbb0a674279a",
+      "scripts/s04_approved_voice_tts.py": "c759f679c71825a0964fb0e45cb3edad566a0446",
+      "scripts/validate_s02_design.py": "af6a245e0bf2764cefeacefb441af996f9d020d8",
+      "scripts/validate_story_continuity.py": "1c31e6cb03582073d78281ab975b35c049ca0803",
+      "scenes/S03/script_v2_draft.md": "d4ee8caadbf964c4c9595da1253805f4867c1473",
+      "scenes/S03/scene_design_v2.json": "8adc3249a75887cdb0c3d4b7b9d01cc81a8b9456",
+      "scenes/S03/source_delta.md": "8cb11a62f1d74f887e236ec8d817c1eafee39053",
+      "scenes/S03/QA_G0_G1.md": "5a80c05d8bc6dd22944ab9190dd53fa0a10d7bd7",
+      "scenes/S03/interaction_map_v2.json": "731f1c6c43f4a74322cb7ce566f75c464c5ef33c",
+      "scenes/S02/script_v2_draft.md": "e0251ab4b2c3d00bc4ee04f6154de5e556501d83",
+      "scenes/S02/scene_design_v2.json": "012602800904af2b2de52d368404b6d1b7cc9215",
+      "scenes/S02/interaction_map_v2.json": "987ac4ec20ae3c1a8aa1f049f83bd476bf5a46b5",
+      "scenes/S05/script_v2_draft.md": "0501fae66048599913fbc206d3452b2f48c491e5",
+      "scenes/S05/scene_design_v2.json": "212c9f95614ac04e394d1cbbc9a3352533461eaf",
+      "scenes/S05/source_delta.md": "e616f625d8f3419d76869da53df501ef4e655ce9",
+      "scenes/S05/QA_G0_G1.md": "9e1e1b6e1bca385024b83cfa7187e32b44ff5e12",
+      "scenes/S05/voice_preflight_report.json": "01a6b98d3d174b9673462043d85b55e777388f34",
+      "scenes/S05/validation_report.json": "0c5869bdd33cf8c84f736a8ea864d92d59697108",
+      "scenes/S05/interaction_map_v2.json": "3769d94dd3f1dd21a03f0ec15e1016bed5f07b99",
+      "scenes/S04/script_v2_draft.md": "e67d4bd74bae4817a05d2da7b431716994c1c812",
+      "scenes/S04/scene_design_v2.json": "801ce5daad39bf68dba986138f5a4becad8accdc",
+      "scenes/S04/source_delta.md": "f7531327d75d163c6dc7d21420f0fd5007f5f74f",
+      "scenes/S04/QA_G0_G1.md": "294da9d99eba0e78a654b00e9bb20cee9f70d294",
+      "scenes/S04/interaction_map_v2.json": "9683a584378b2d270c82b11a0e6137c132522a56",
+      "assets/voice_refs/v6/narrator_V6_APPROVED.mp3": "1c26edaff3f4ac14898ae9873c45833e70239d87",
+      "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3": "3b46a58a88e200677e3adeb4dc723918dc3b9f00",
+      "assets/voice_refs/v6/pinocchio_V6_APPROVED.mp3": "b02288c3371a8211ceb5f48fd7af9a5efba96637",
+      "assets/voice_refs/v6/blue_fairy_V6_APPROVED.mp3": "ce649d773efa34646c7798929fd105453d686b0f",
+      "assets/voice_refs/v6/VOICE_REFERENCES.json": "dc78ba0b8a2663d6451805170e79090d0c689580",
+      "docs/series_v2/S05_ENGINE_HANDOFF.md": "2d2b79ea86cb8ac81c214dd3f9f09702003222eb",
+      "docs/series_v2/CODEX_HANDOFF.md": "0d45209bff53a991ed647c3b3e78f0cd462deaaa",
+      "docs/series_v2/series_manifest_v2.json": "7ecaf8aeba5ca1f91ab4a33fb292694eb93dc863",
+      "docs/series_v2/S03_ENGINE_HANDOFF.md": "82490c9247c63ee10e8243d7f60c44308dd48604",
+      "docs/series_v2/PRODUCTION_PRD_V2_0.md": "ecfc55163b844e151e7f360be6431370ad26a0a7",
+      "docs/series_v2/VALIDATION.md": "ec901a81e3008c73df5dec961e13ea07559bde22",
+      "docs/series_v2/STORY_CONTINUITY_S01_S12.json": "9b78abb3b167b16d4dd8fe339748a5ec5758dc5d",
+      "docs/series_v2/STORY_CONTINUITY_S01_S12.md": "0dad188e4c983202f8ae43ca29b53590e61da689",
+      "docs/series_v2/S04_ENGINE_HANDOFF.md": "62df6ff3883c2fb8cc9ca45bb3e44c140a7e3637",
+      "docs/series_v2/sources/01_STEP2_PRODUCTION_STORYBOARD_SPEC.md": "5cf1b9fb6431164c68af9d41ec873f06ab4a4665",
+      "docs/series_v2/sources/01_STORY_MASTER_V1_1.md": "3fecda9e2798130b65f0329ddd47fe17b129adf7",
+      ".github/workflows/validate-series-v2.yml": "100d70d5408c534fe708b369b1152debc640aa5a"
+    },
+    "input_match": {
+      "local_files": 49,
+      "matched": 49,
+      "mismatches": [],
+      "remote_blobs": 145,
+      "remote_tree_truncated": false
+    },
+    "available_production_artifacts_under_reviewed_scene_directories": [],
+    "prior_ci": {
+      "run_id": 45095870931,
+      "head_sha": "756c936e22468b708f4201a6d5e29a7d59fb15fb",
+      "head_matches_reviewed_commit": true,
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/irewon1-lgtm/yoonsu-pinocchio-3d/actions/runs/45095870931",
+      "executed_before_this_review": true,
+      "reused_not_rerun": true,
+      "jobs": [
+        {
+          "id": 137435422846,
+          "status": "completed",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Validate immutable V1.1 and series policy",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Validate S02 authored 50-cut screenplay",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Validate S03 authored 50-cut screenplay",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Validate S04 authored 50-cut screenplay and 10 interactions",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify voice reference MP3 S02",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify voice reference MP3 S03",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify voice references and blocked Cricket voice S04",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Validate S05 screenplay and external interaction pauses",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Validate all 11 boundaries in one 12-scene story",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify S05 reference voices and report blocked Cricket",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "report": {
+    "path": "reviews/S03_S05_REVIEW_2026-11-23.md",
+    "sha256": "459a08872ca5266bbd613251f3c5ca820ad197cd39ee57485015ffebdaaeda64"
+  },
+  "verdict": {
+    "series_causal_flow": "COHERENT_IN_PROVIDED_STORY_AND_DESIGN_CONTEXT",
+    "S01": "ACCEPTED_COMPLETE_OUT_OF_REVIEW_SCOPE",
+    "S02": "ACCEPTED_COMPLETE_OUT_OF_REVIEW_SCOPE",
+    "S03": "REVISION_REQUIRED",
+    "S04": "REVISION_REQUIRED",
+    "S05": "HANDOFF_AND_LEARNING_PATH_REVIEW_REQUIRED"
+  },
+  "deduplication": {
+    "confirmed_items": 9,
+    "risk_groups": 10,
+    "wait_findings_combined": [
+      "S03-F02",
+      "S04-F02"
+    ],
+    "same_book_findings_combined": [
+      "S03-F06",
+      "S05-F03"
+    ],
+    "minor_action_differences_not_equated_with_plot_failure": [
+      "F04",
+      "F08"
+    ]
+  },
+  "audit_plan_and_results": {
+    "scope": "REVIEW_ONLY_S03_S04_S05_WITH_S01_S02_ACCEPTED_COMPLETE",
+    "base_commit": "756c936e22468b708f4201a6d5e29a7d59fb15fb",
+    "do_not_retest_or_edit": [
+      "S01",
+      "S02"
+    ],
+    "production_files_read_only": true,
+    "steps": [
+      {
+        "id": "A0",
+        "method": "Compare local input blob hashes to current remote tree; compare prior CI run to exact commit",
+        "pass": "Exact review inputs and actual prior structural-test evidence identified",
+        "result": "PASS",
+        "result_reason": "49 input blob hashes match the reviewed remote revision; exact prior CI result retrieved."
+      },
+      {
+        "id": "A1",
+        "method": "Read full S03/S04/S05 MD, JSON and interaction maps against locked sources",
+        "pass": "No unaddressed contradictions in canonical text/order, reveal timing, action sequencing or character/prop continuity",
+        "result": "FAIL_FINDINGS_RECORDED",
+        "result_reason": "Canonical speech is preserved, but action/dialogue sequencing conflicts and action-order differences were confirmed."
+      },
+      {
+        "id": "A2",
+        "method": "Independent probe of timing, WAIT counting, cue length, canonical resumes and schemas",
+        "pass": "No mismatches; estimates clearly distinguished from measured audio",
+        "result": "FAIL_FINDINGS_RECORDED",
+        "result_reason": "WAIT accounting and one four-word cue violate the stated design conditions; actual audio duration remains unmeasured."
+      },
+      {
+        "id": "A3",
+        "method": "Read S01/S02 endpoint context only and all adjacent transitions through S05; check S06 entry as a handoff",
+        "pass": "State and narrative cause continue without hidden resets",
+        "result": "FAIL_HANDOFF_WORDING_WITH_STAGING_RISKS",
+        "result_reason": "Broad causal flow is coherent; schoolbook history wording conflicts and some physical transitions need staging."
+      },
+      {
+        "id": "A4",
+        "method": "Inspect prior validator coverage with isolated fault probes where needed",
+        "pass": "Reported automated scope matches actual assertions; uncovered failures labelled",
+        "result": "PASS_COVERAGE_AUDIT_ONLY",
+        "result_reason": "Read actual validator assertions; existing S04 validator returns success despite confirmed issues. No unnecessary mutation probes or S01/S02 reruns."
+      },
+      {
+        "id": "A5",
+        "method": "Consolidate confirmed defects, risks and unverified production separately into a review report",
+        "pass": "Every material finding has exact file/beat/shot or dialogue evidence and minimum correction",
+        "result": "PASS_REPORT_COMPLETED",
+        "result_reason": "Evidence, confirmed findings, risks and production NOT_RUN are separately documented; source files unchanged."
+      }
+    ],
+    "production_video_audio_device": "NOT_RUN_UNLESS_ARTIFACTS_ACTUALLY_FOUND",
+    "report_completion": "Review can complete with FAIL findings; do not call flawed scenes production PASS"
+  },
+  "confirmed_findings": [
+    {
+      "id": "F01",
+      "priority": "HIGH",
+      "classification": "CONFIRMED_SCHEDULE_CONFLICT",
+      "title": "3화 종결 컷의 대사 시간 집중",
+      "source_finding_ids": [
+        "S03-F01"
+      ],
+      "evidence_records": [
+        {
+          "id": "S03-F01",
+          "severity": "high",
+          "certainty": "CONFIRMED",
+          "title": "마지막 약속과 내레이션 57단어가 10초 샷에 몰림",
+          "evidence": [
+            {
+              "path": "scenes/S03/script_v2_draft.md",
+              "identifier": "B10-C05 / 446–456s",
+              "quote": "원본 등교·귀가 약속/대답과 내레이션을 순서대로 낭독"
+            },
+            {
+              "path": "scenes/S03/scene_design_v2.json",
+              "identifier": "B10 dialogue ORIGINAL source_index 19–22 and intervening NEW lines",
+              "quote": "Listen carefully, Pinocchio. / Go to school and come home before supper. / ... / With his red hat and little schoolbag, Pinocchio was ready for his first adventure outside."
+            },
+            {
+              "path": "scenes/S03/script_v2_draft.md",
+              "identifier": "B08-C05 / 353–361s",
+              "quote": "원본 Now I'm ready! / Almost. Don't forget your schoolbag. 재생"
+            }
+          ],
+          "why": "B10-C05가 원본19부터22까지를 담당하므로 그 사이의 신규4줄도 같은 순서로 이 구간에 들어가야 한다. 원본4줄은29단어, 신규4줄을 포함한8줄은57단어다.10초이면342wpm으로, 화자전환·가슴에손얹기·고개끄덕임의 여유가 전혀 없다. B08-C05도 원본17부터 나머지 대사30단어를8초에 배정(225wpm). B06-C05는28단어/9초(약186.7wpm). 전체 평균 분량보다 끝샷에 집중된 배정 문제다.",
+          "impact": "약속을 이해하고 감정적으로 받아들여야 할 핵심 장면이 가장 빨라지거나, 구현자가 원본/신규 대사를 누락·겹쳐 읽거나 타임라인을 넘겨야 한다. 실제 오디오 길이는 아직 측정되지 않았다.",
+          "minfix": "원본 대사·화자·순서는 그대로 두고 신규 대사를 간결하게 정리하거나 앞뒤 행동 컷에 명시 배정한다. 최종 음성을 기준으로 끝샷을 연장하고 전체 타임코드를 다시 산정한다. 실제 발화와 행동을 겹칠 수 있는 범위도 문장별로 지정한다.",
+          "testsMissed": "validate_s03_design.py는 총456초/샷합산/원본문자열만 검사한다. 대사별 샷 배정, 발화 길이, 화자전환, 후속 신규대사를 포함한 종결샷의 낭독 가능 시간은 검사하지 않는다.",
+          "boundary": "CONFIRMED는 설계상 시간배정 충돌을 뜻한다. 렌더/오디오가 이미 실패했다는 판정은 아니다."
+        }
+      ],
+      "fix_applied": false
+    },
+    {
+      "id": "F02",
+      "priority": "HIGH",
+      "classification": "CONFIRMED_ACCOUNTING_CONFLICT",
+      "title": "3·4화 WAIT 제외 선언과 시간표 합산 충돌",
+      "source_finding_ids": [
+        "S03-F02",
+        "S04-F02"
+      ],
+      "evidence_records": [
+        {
+          "id": "S03-F02",
+          "severity": "medium",
+          "certainty": "CONFIRMED",
+          "title": "WAIT 제외 선언과 본편 시간 합산이 충돌",
+          "evidence": [
+            {
+              "path": "scenes/S03/scene_design_v2.json",
+              "identifier": "metadata",
+              "quote": "\"duration_target_seconds\": 456, \"wait_excluded\": true"
+            },
+            {
+              "path": "scenes/S03/scene_design_v2.json",
+              "identifier": "B06-C03 / 240–250s",
+              "quote": "원본 I03 종료 발화 후 모자 끝의 위치를 정확히 고정한다. 제페토 손을 의자 쪽으로 뻗지 않고 기다린다."
+            },
+            {
+              "path": "scenes/S03/scene_design_v2.json",
+              "identifier": "B08-C03 / 332–342s",
+              "quote": "모자 반대로 든 상태 고정. I04 목소리 안내 후 반응/피노키오 자율 머리 동작은 잠시 대기."
+            },
+            {
+              "path": "scenes/S03/scene_design_v2.json",
+              "identifier": "B10-C03 / 424–434s",
+              "quote": "매듭이 완성되기 전 상태에서 두 배우 동작 미세 호흡만."
+            }
+          ],
+          "why": "50개샷의 시간합은456초이며 WAIT 전용으로 명명된 위3개샷30초도 포함한다. B06과B10의20초는 질문종료뒤기다림/미세호흡만으로 서술되어 있다. B08의10초는 안내음성과 대기를 분리하지 않았다. 다른 C03에는 시범/질문도 있으므로 모든 C03의92초를 통째로 대기라고 빼서는 안 된다.",
+          "impact": "456초를 WAIT 제외 본편 길이로 단정할 수 없다. 순수 대기·예시음성을 제외해도360초를 넘는지는 전체 실제 음성·행동 편집을 통해 확인해야 한다. 현재 자료만으로360초 미달이라고 단정할 근거도 없다.",
+          "minfix": "질문·행동의 본편 시간과 입력대기의 정지점/힌트 재생을 별도로 기록하고, WAIT 전용 구간은 본편 샷합산에서 제외한다. 남은 서사 시간과 마지막 대사의 재배정을 함께 산정한다.",
+          "testsMissed": "validator는 wait_excluded=true와 end_seconds=456이라는 메타데이터 및 산술합만 검사하며 WAIT로 서술된 샷의 시간을 제외하거나 정지/재개 시계를 검증하지 않는다.",
+          "boundary": "합산충돌은확정. 무대기실제본편시간/최종MP4길이는NOT_RUN."
+        },
+        {
+          "id": "S04-F02",
+          "classification": "CONFIRMED",
+          "severity": "high",
+          "title": "WAIT 제외 479초 선언과 고정 WAIT 컷의 본편 합산이 충돌한다",
+          "evidence": [
+            {
+              "path": "scenes/S04/script_v2_draft.md",
+              "lines": "7,28–30",
+              "quote": "479초 ... WAIT·반복·메뉴 제외 / 합계479초 / WAIT 및 힌트 반복시간은 합계에서 제외"
+            },
+            {
+              "path": "scenes/S04/script_v2_draft.md",
+              "lines": "132–136",
+              "beat": "B02",
+              "shot": "B02-C03",
+              "time_seconds": [
+                65,
+                74
+              ],
+              "quote": "질문 종료 후 대문 완전 닫힘·피노키오 출발 전 자세로 고정"
+            },
+            {
+              "path": "scenes/S04/script_v2_draft.md",
+              "lines": "527–531",
+              "beat": "B09",
+              "shot": "B09-C03",
+              "time_seconds": [
+                394,
+                404
+              ],
+              "quote": "B09-C02 질문 종료→WAIT / B09-C03 무릎 반쯤 굽힌 상태 ... 대기 중 뛰지 않음"
+            },
+            {
+              "path": "scripts/validate_s04_design.py",
+              "lines": "27–33",
+              "quote": "duration_target_seconds==479 and wait_excluded is True; shot duration을 phase 구분 없이 합산"
+            }
+          ],
+          "confirmed_static_wait_seconds": 19,
+          "consequence": "최소 두 컷 9+10=19초가 질문 종료 이후의 정지 대기를 서사 타임라인 안에 배정한다. 따라서 479초가 비대기 서사라는 설계 주장은 현재 자료로 성립하지 않는다.",
+          "minimum_fix": "질문 종료 경계에 외부 pause를 두고 WAIT/예시음성은 본편 시계 밖으로 옮긴다. 나머지 질문+WAIT 혼합 컷도 오디오 종료 경계와 서사 부분을 구분해 실제 비대기 합계를 다시 낸다. 부족한 분량은 필요한 실제 사건/연기로만 확보한다.",
+          "ci_miss": "wait_excluded bool만 검사하므로 본편 start/end 구간 안의 순수 대기를 검출하지 않는다.",
+          "limitation": "나머지 WAIT 표기 컷은 질문/준비 동작과 혼합되어 전부 제외할 수 없다. 479에서 WAIT 표기 컷 전체를 빼는 계산은 하지 않았으며, 이 문제만으로 최종 ≥360초 미달을 단정하지 않는다."
+        }
+      ],
+      "fix_applied": false
+    },
+    {
+      "id": "F03",
+      "priority": "MEDIUM",
+      "classification": "CONFIRMED_ACTION_DIALOGUE_CONFLICT",
+      "title": "책을 넣은 뒤 넣겠다고 말함",
+      "source_finding_ids": [
+        "S03-F03"
+      ],
+      "evidence_records": [
+        {
+          "id": "S03-F03",
+          "severity": "medium",
+          "certainty": "CONFIRMED",
+          "title": "책을 이미 넣은 뒤 넣겠다는 후속 대사가 재생됨",
+          "evidence": [
+            {
+              "path": "scenes/S03/interaction_map_v2.json",
+              "identifier": "S03-P07 react",
+              "quote": "가방 열기→제페토 책 넣기→피노키오가 책 있는지 확인."
+            },
+            {
+              "path": "scenes/S03/interaction_map_v2.json",
+              "identifier": "S03-P07 resume",
+              "quote": "It's open!"
+            },
+            {
+              "path": "scenes/S03/scene_design_v2.json",
+              "identifier": "B09 dialogue after S03-P07",
+              "quote": "Now I can put the book in."
+            },
+            {
+              "path": "scenes/S03/scene_design_v2.json",
+              "identifier": "B09-C04 / 387–397s",
+              "quote": "가방 뚜껑 열림→제페토가 오른손으로 책 잡아 올림→가방 안쪽에 내려 놓기"
+            }
+          ],
+          "why": "공통계약은 REACT 완료→RESUME이다. 반응에 책 넣기와 확인까지 포함되어 있는데 이후 제페토가 이제 넣을 수 있다고 미래 동작을 말한다. 그 다음 The book fits!가 이어져 같은 행동이 다시 일어나야 할 것처럼 들린다.",
+          "impact": "아이에게 보이는 행동과 영어의 시점이 맞지 않고, 구현자가 책을 두 번 넣거나 반응의 순서를 바꿀 위험이 생긴다.",
+          "minfix": "책넣기 전에 해당 신규대사를 발화하도록 S03-P07 반응을 가방열기와 책넣기로 나누거나, 신규후속대사를 이미 들어간 상태를 설명하도록 최소 수정한다. 제페토가 책을 넣는 원본 주체와1회이동은 유지한다.",
+          "testsMissed": "prompt/resume문자열의 일치만으로는 반응 이후 대사의 시제와 완료된 소품상태를 검증할 수 없다. 현 validator는 이 반응내용과 후속대사의 의미를 검사하지 않는다."
+        }
+      ],
+      "fix_applied": false
+    },
+    {
+      "id": "F04",
+      "priority": "MEDIUM",
+      "classification": "CONFIRMED_CANONICAL_ACTION_DIFFERENCE",
+      "title": "귀뚜라미 첫 점프와 인사 순서 변경",
+      "source_finding_ids": [
+        "S04-F01"
+      ],
+      "evidence_records": [
+        {
+          "id": "S04-F01",
+          "classification": "CONFIRMED",
+          "severity": "medium",
+          "title": "귀뚜라미의 첫 점프와 인사 순서가 원본에서 바뀌었다",
+          "evidence": [
+            {
+              "path": "docs/series_v2/sources/01_STORY_MASTER_V1_1.md",
+              "lines": "395–405",
+              "quote": "작은 귀뚜라미가 나뭇잎에서 뛰어내린다. → Good morning, Pinocchio! → A talking cricket?"
+            },
+            {
+              "path": "scenes/S04/script_v2_draft.md",
+              "lines": "270–288,299–305",
+              "beat": "B05",
+              "shots": "B05-C01(186–194), B05-C03(203–212), B05-C04(212–223)",
+              "quote": "귀뚜라미가 실제 잎자루 위에서 ... 인사 / Can you come down here? / I can hop, but this leaf is high. / P04 뒤 잎 밀기→포물선 점프→바닥 착지"
+            },
+            {
+              "path": "scenes/S04/scene_design_v2.json",
+              "lines": "464–561",
+              "json_pointer": "/scenes/4"
+            }
+          ],
+          "consequence": "문자열 32개가 그대로여도 '스스로 내려와 인사하며 길을 알려 주는 첫 등장'이 '잎 위에서 인사하고 내려오는 데 윤수 도움을 받는 등장'으로 달라졌다. 원본 사건 순서 보존이라고 단정할 수 없다.",
+          "minimum_fix": "원본 잎→땅 점프를 U015 인사 이전으로 복원하고, P04 신규 도움 동작은 이미 지면에 있는 귀뚜라미의 별도 작은 동작으로 설계한다. 원본 문구를 고치지 않는다.",
+          "ci_miss": "validator는 ORIGINAL 대사 화자/문구/순서만 대조하고 master의 [애니메이션]을 읽지 않는다.",
+          "limitation": "변경된 설계 순서는 확정이나 실제 영화에서 잘못 렌더되었다는 뜻은 아니다."
+        }
+      ],
+      "fix_applied": false
+    },
+    {
+      "id": "F05",
+      "priority": "MEDIUM",
+      "classification": "CONFIRMED_CANONICAL_GATE_DIFFERENCE",
+      "title": "I07의 점프 준비를 입력 전 수행",
+      "source_finding_ids": [
+        "S04-F03"
+      ],
+      "evidence_records": [
+        {
+          "id": "S04-F03",
+          "classification": "CONFIRMED",
+          "severity": "medium",
+          "title": "I07에서 원본의 입력 후 준비 자세가 입력 전으로 당겨졌다",
+          "evidence": [
+            {
+              "path": "docs/series_v2/sources/01_STEP2_PRODUCTION_STORYBOARD_SPEC.md",
+              "lines": "97,298–304",
+              "shot": "S04-C12/I07 WAIT",
+              "quote": "점프 준비 전, 물웅덩이는 그대로 고정 / REACT 준비→점프→공중 이동→착지→균형 회복"
+            },
+            {
+              "path": "docs/series_v2/sources/01_STORY_MASTER_V1_1.md",
+              "lines": "457–459",
+              "quote": "발화 직후: 피노키오가 무릎을 굽히고 물웅덩이를 뛰어넘음"
+            },
+            {
+              "path": "scenes/S04/script_v2_draft.md",
+              "lines": "527–539",
+              "shots": "B09-C02/B09-C03",
+              "quote": "피노키오가 준비하다 멈추고 ... WAIT / 무릎 반쯤 굽힌 상태"
+            },
+            {
+              "path": "scenes/S04/interaction_map_v2.json",
+              "lines": "179–187",
+              "quote": "wait: ... 피노키오 무릎 굽힘 준비 상태 / react: 무릎 굽힘→도약"
+            }
+          ],
+          "consequence": "I07 본 점프/건너기는 여전히 입력 뒤에 있지만, 원본에서 입력 뒤에 시작해야 하는 준비 동작은 앞당겨져 WAIT/REACT 경계가 달라졌다.",
+          "minimum_fix": "입력 전 시범은 귀뚜라미 또는 그림이 맡고 피노키오는 마른 땅에 두 발을 댄 미준비 상태로 둔다. 피노키오의 무릎 굽힘은 I07 입력 뒤 한 번만 시작한다.",
+          "ci_miss": "I07 ID 존재와 대사 순서만 검사하고 legacy WAIT의 신체 상태를 비교하지 않는다."
+        }
+      ],
+      "fix_applied": false
+    },
+    {
+      "id": "F06",
+      "priority": "MEDIUM",
+      "classification": "CONFIRMED_RULE_VIOLATION",
+      "title": "목표 발화 4단어",
+      "source_finding_ids": [
+        "S04-F04"
+      ],
+      "evidence_records": [
+        {
+          "id": "S04-F04",
+          "classification": "CONFIRMED",
+          "severity": "medium",
+          "title": "S04-P02 목표 발화가 3단어 규칙을 벗어난다",
+          "evidence": [
+            {
+              "path": "docs/series_v2/sources/01_STORY_MASTER_V1_1.md",
+              "lines": "7,1630",
+              "quote": "윤수 목표 발화는 매번 3단어 / 윤수의 목표 문장은 모두 세 단어"
+            },
+            {
+              "path": "scenes/S04/interaction_map_v2.json",
+              "lines": "65–73",
+              "event": "S04-P02",
+              "quote": "Look at the flower!"
+            },
+            {
+              "path": "scenes/S04/script_v2_draft.md",
+              "lines": "172",
+              "event": "S04-P02"
+            }
+          ],
+          "consequence": "'Look / at / the / flower'는 4단어다. 나머지 9개 cue는 모두 3단어이며 이 cue만 예외가 명시되지 않았다.",
+          "minimum_fix": "신규 cue만 자연스러운 3단어인 'Watch the flower!' 등으로 변경하고 MD/JSON/map/예시 음성을 동일하게 맞춘다. 원본 I05/I06/I07 cue는 유지한다.",
+          "ci_miss": "cue 텍스트/단어수를 검사하는 assertion이 없다."
+        }
+      ],
+      "fix_applied": false
+    },
+    {
+      "id": "F07",
+      "priority": "MEDIUM",
+      "classification": "CONFIRMED_ACTION_DIALOGUE_CONFLICT",
+      "title": "표지판 옆에 머문다는 말과 이동 불일치",
+      "source_finding_ids": [
+        "S04-F05"
+      ],
+      "evidence_records": [
+        {
+          "id": "S04-F05",
+          "classification": "CONFIRMED",
+          "severity": "medium",
+          "title": "학교 표지판 옆에 머무르겠다는 새 대사가 이동 행동과 맞지 않는다",
+          "evidence": [
+            {
+              "path": "scenes/S04/script_v2_draft.md",
+              "lines": "339–360",
+              "beat": "B06",
+              "quote": "Keep walking. → I'll stay beside the school sign. → Good. One careful step at a time. / B06-C04 귀뚜라미가 왼쪽 길로 뛰고 피노키오가 ... 걸음"
+            },
+            {
+              "path": "scenes/S04/script_v2_draft.md",
+              "lines": "378–384",
+              "beat": "B07",
+              "quote": "B06에서 선택한 학교 왼쪽 길 / Pinocchio followed the little road."
+            }
+          ],
+          "consequence": "'stay beside the school sign'은 고정된 표지판 옆에 머문다는 뜻이라, 표지판을 떠나 학교 길로 계속 이동하는 장면 및 'Follow that sign!'의 교육 의미와 어긋난다.",
+          "minimum_fix": "신규 한 문장만 'I'll follow the school path.'처럼 실제 이동 의미로 바꾼다.",
+          "ci_miss": "NEW 대사는 개수만 세며 의미/행동 일치를 검사하지 않는다."
+        }
+      ],
+      "fix_applied": false
+    },
+    {
+      "id": "F08",
+      "priority": "LOW",
+      "classification": "CONFIRMED_MINOR_CANONICAL_ACTION_DIFFERENCE",
+      "title": "개구리 첫 점프 시점 변경",
+      "source_finding_ids": [
+        "S04-F06"
+      ],
+      "evidence_records": [
+        {
+          "id": "S04-F06",
+          "classification": "CONFIRMED",
+          "severity": "low",
+          "title": "원본 개구리의 첫 점프도 U024 뒤로 이동했다",
+          "evidence": [
+            {
+              "path": "docs/series_v2/sources/01_STORY_MASTER_V1_1.md",
+              "lines": "435–443",
+              "quote": "웅덩이 등장 → 개구리 한 마리가 물웅덩이 옆에서 뛰어오른다 → Oh no! My new shoes!"
+            },
+            {
+              "path": "scenes/S04/script_v2_draft.md",
+              "lines": "441–476",
+              "beat": "B08",
+              "shot": "B08-C04",
+              "quote": "U024 Oh no! My new shoes! → What is the frog going to do? → S04-P06 → 개구리 작은 15cm 점프"
+            }
+          ],
+          "consequence": "원본 자율 행동의 시점이 신규 참여 후로 바뀐 것은 확인된다. 주요 줄거리 파괴보다 작은 원본 연출 차이이며, 귀뚜라미 등장 순서와 같은 수준으로 과장할 필요는 없다.",
+          "minimum_fix": "원본 행동 시점을 보존하는 최소 재배치 또는 변경 의도의 명시적 검토가 필요하다. 대사 32개 보존만으로 행동까지 원본 그대로라고 표시하지 않는다.",
+          "ci_miss": "원본 [화면]의 행동 순서를 파싱하지 않는다."
+        }
+      ],
+      "fix_applied": false
+    },
+    {
+      "id": "F09",
+      "priority": "LOW",
+      "classification": "CONFIRMED_HANDOFF_WORDING_CONFLICT",
+      "title": "같은 책을 펼친 이력과 미개봉 인계 불일치",
+      "source_finding_ids": [
+        "S03-F06",
+        "S05-F03"
+      ],
+      "evidence_records": [
+        {
+          "id": "S03-F06",
+          "severity": "low",
+          "certainty": "CONFIRMED",
+          "title": "같은 학교책을 아침에 펼쳤는데 후속 인계문서는 미개봉 책이라고 부름",
+          "evidence": [
+            {
+              "path": "scenes/S03/scene_design_v2.json",
+              "identifier": "B01 continuity",
+              "quote": "원본 학교 책은 탁자 위에 있으며 가방은 아직 빈 상태."
+            },
+            {
+              "path": "scenes/S03/scene_design_v2.json",
+              "identifier": "B01-C02",
+              "quote": "제페토가 탁자 위 학교 그림책을 피노키오 눈높이로 열어 보인다."
+            },
+            {
+              "path": "scenes/S03/scene_design_v2.json",
+              "identifier": "B01-C04",
+              "quote": "피노키오가 책장 한 장을 잡고 넘기며"
+            },
+            {
+              "path": "scenes/S03/scene_design_v2.json",
+              "identifier": "B09 dialogue NEW",
+              "quote": "It's the book we looked at."
+            },
+            {
+              "path": "docs/series_v2/S05_ENGINE_HANDOFF.md",
+              "identifier": "scene handoff S05→S06",
+              "quote": "미개봉 책"
+            },
+            {
+              "path": "docs/series_v2/STORY_CONTINUITY_S01_S12.md",
+              "identifier": "S05→S06 props table",
+              "quote": "읽지 않은 책은 안에 있음"
+            }
+          ],
+          "why": "B09가 B01에서본책과같다고명시하므로 미개봉이라는절대표현은맞지않는다. 그림을본것과글을읽은것은다르므로 읽지않았다는표현까지명백한사실오류로단정하지않는다. 원본S09 I forgot to open it는학교경험을묻는문맥이어서전편서사를파괴하는모순으로과장하지않는다.",
+          "impact": "후속제작에서 학교에가서책을쓰지않았다는단서와 책을한번도펼치지않았다는소품상태를 혼동할수있다.",
+          "minfix": "같은책을유지하고 인계문서의표현을 학교에서사용하지않은책 또는 가방에넣은뒤꺼내지않은책으로통일한다. 별도새책이나원본대사수정은필요하지않다.",
+          "testsMissed": "S03에서책을연사실과S05이후의 미개봉/미사용 용어를교차비교하는검사가없다.",
+          "merge_note": "S05검토자의동일발견과합쳐중복집계하지말것."
+        },
+        {
+          "id": "S05-F03",
+          "severity": "LOW",
+          "classification": "CONFIRMED",
+          "title": "인계 문서의 미개봉 책 상태가 S03의 같은 책 펼침과 불일치",
+          "locations": [
+            {
+              "path": "docs/series_v2/S05_ENGINE_HANDOFF.md",
+              "ids": [
+                "장면 인계 S05→S06"
+              ],
+              "quote": "몸 앞으로 옮긴 가방·미개봉 책·곁의 귀뚜라미"
+            },
+            {
+              "path": "docs/series_v2/STORY_CONTINUITY_S01_S12.json",
+              "ids": [
+                "local_handoffs.S04_S05.state_lock.schoolbook_opened",
+                "local_handoffs.S05_S06.state_lock.schoolbook_opened"
+              ],
+              "quote": "\"schoolbook_opened\": false"
+            },
+            {
+              "path": "scenes/S03/scene_design_v2.json",
+              "ids": [
+                "B01-C02",
+                "B01-C04",
+                "B09 dialogue"
+              ],
+              "quote": "제페토가 탁자 위 학교 그림책을 피노키오 눈높이로 열어 보인다. / 피노키오가 책장 한 장을 잡고 넘기며 / “It's the book we looked at.”"
+            }
+          ],
+          "why": "같은 학교책은 S03에서 이미 펼치고 페이지를 넘겼다. 따라서 한 번도 개봉하지 않았다는 상태 표기는 맞지 않는다. S05 내에서는 책을 꺼내거나 펼치지 않아 자체 동작은 일관된다. S09의 “Oh... I forgot to open it.”도 학교에서 안 펼쳤다는 맥락으로 유지 가능하므로 전체 서사 붕괴로 확대할 문제는 아니다.",
+          "minimal_fix": "인계 상태를 “S03에서 함께 본 뒤 가방에 넣었고, 등교 길에서는 꺼내지 않았으며 학교 수업에 사용하지 않은 책”으로 정밀화한다. opened 필드는 현재 펼침 여부인지 누적 이력인지 정의를 붙인다. S03/S05 본편을 재집필할 필요는 없다."
+        }
+      ],
+      "fix_applied": false
+    }
+  ],
+  "risks": [
+    {
+      "id": "R01",
+      "sources": [
+        "S03-F04"
+      ],
+      "title": "빨간 단서의 움직임과 인물 인지",
+      "classification": "RISK_OR_UNRESOLVED_STAGING_NOT_CONFIRMED_FAILURE",
+      "evidence_records": [
+        {
+          "id": "S03-F04",
+          "severity": "medium",
+          "certainty": "RISK",
+          "title": "고정된 빨간 단서에 움직였다는 대사가 붙어 배우의 인지가 모호함",
+          "evidence": [
+            {
+              "path": "scenes/S03/scene_design_v2.json",
+              "identifier": "B05 dialogue NEW",
+              "quote": "Did something red move down there?"
+            },
+            {
+              "path": "scenes/S03/scene_design_v2.json",
+              "identifier": "B05-C05",
+              "quote": "의자 밑 빨간 실루엣이 관객에게 잘 보이되 인물은 아직 눈치채지 못함."
+            },
+            {
+              "path": "scenes/S03/script_v2_draft.md",
+              "identifier": "B06 continuity",
+              "quote": "I03 질문 전까지 모자는 의자 아래 고정"
+            }
+          ],
+          "why": "피노키오가 빨간 무언가와 아래쪽을 알아차렸다고 말하지만 샷은 인물이 아직 눈치채지 못하고 모자도 고정되어 있다고 지시한다. 실제모자발견이나 의자밑정답선공개로 확정할 수는 없으나, 움직임의 원인과 피노키오가 어디까지 아는지 해석이 갈린다.",
+          "impact": "I03에서 윤수가 찾아주는 보상이 약해지거나, 구현자가 고정해야할모자를 움직이는 단서로 오해할 수 있다.",
+          "minfix": "고정된모자/인물미발견 계약을 유지하면서 해당 신규대사를 위치를 모르는 탐색말로 정리한다. 붉은것을잠깐본설정이 의도라면 무엇을봤는지와 아직모자로알아보지못함을 행동에 명시한다.",
+          "testsMissed": "검사기는 모자위치/배우지식상태와 신규대사의 의미를 대조하지 않는다."
+        }
+      ],
+      "fix_applied": false
+    },
+    {
+      "id": "R02",
+      "sources": [
+        "S03-F05"
+      ],
+      "title": "가방 착용 및 출구 이동",
+      "classification": "RISK_OR_UNRESOLVED_STAGING_NOT_CONFIRMED_FAILURE",
+      "evidence_records": [
+        {
+          "id": "S03-F05",
+          "severity": "medium",
+          "certainty": "RISK",
+          "title": "가방을 메고 집 앞까지 이동하는 연결 행동이 상세샷에서 비어 있음",
+          "evidence": [
+            {
+              "path": "scenes/S03/scene_design_v2.json",
+              "identifier": "B10-C01",
+              "quote": "피노키오는 양손으로 가방을 지지."
+            },
+            {
+              "path": "scenes/S03/scene_design_v2.json",
+              "identifier": "B10-C04",
+              "quote": "피노키오가 모자와 가방을 하나씩 확인하면서 기쁨."
+            },
+            {
+              "path": "scenes/S03/scene_design_v2.json",
+              "identifier": "B10-C05",
+              "quote": "마지막 작업실 문은 닫혀 있고 다음 S04 연결 가능."
+            },
+            {
+              "path": "scenes/S04/script_v2_draft.md",
+              "identifier": "B01-C01",
+              "quote": "대문은 닫혀 있고 둘이 안쪽에서 바깥을 바라본다."
+            },
+            {
+              "path": "scenes/S04/script_v2_draft.md",
+              "identifier": "B01-C04",
+              "quote": "가방은 매달린 상태 유지."
+            },
+            {
+              "path": "docs/series_v2/STORY_CONTINUITY_S01_S12.json",
+              "identifier": "transitions S03_S04 carry",
+              "quote": "제페토와 함께 출구로 이동"
+            }
+          ],
+          "why": "S03에서는 탁자/양손지지/끈결속까지 기록하지만 어깨로메는동작과 실내탁자→출구의구체샷이 없다. 상위연결문서는 출구이동을요구하고 S04는 매달린가방을이어받는다. 정상적인장면전환으로생략할수도있으나 현재상세50컷에는연결동작의주체와시간이없다.",
+          "impact": "가방이 손/탁자에서 어깨로 순간이동하거나 실내문과 집앞대문을 혼동할 위험이 있다. 실제렌더결함은아직관찰하지않았다.",
+          "minfix": "원본마지막내레이션동안 피노키오가가방을메고 제페토와실내출구쪽으로이동하는 짧은행동을 할당하거나, S04 첫컷에서 이미메고도착하는연결동작을 명시한다. 집앞나무대문은I05까지닫힘을유지한다.",
+          "testsMissed": "연속성문서는 상태를설명하지만 상세샷에서 가방의지지점/착용/이동을 추적하는검사는없다."
+        }
+      ],
+      "fix_applied": false
+    },
+    {
+      "id": "R03",
+      "sources": [
+        "S04-R01"
+      ],
+      "title": "I06 전 학교 정답 단서",
+      "classification": "RISK_OR_UNRESOLVED_STAGING_NOT_CONFIRMED_FAILURE",
+      "evidence_records": [
+        {
+          "id": "S04-R01",
+          "classification": "RISK",
+          "severity": "medium",
+          "title": "I06 전 학교 표지판을 이미 식별해 질문과 발견 반응이 형식적으로 보일 수 있다",
+          "evidence": [
+            {
+              "path": "scenes/S04/script_v2_draft.md",
+              "lines": "329–339",
+              "beat": "B06",
+              "quote": "One has a school, and one has trees. → Yoonsu, which way should I go? → I06 → That's the school!"
+            },
+            {
+              "path": "scenes/S04/script_v2_draft.md",
+              "lines": "354",
+              "shot": "B06-C01",
+              "quote": "귀뚜라미가 학교 쪽으로 손짓하지만 피노키오 선택 전"
+            },
+            {
+              "path": "scenes/S04/interaction_map_v2.json",
+              "lines": "127–129",
+              "quote": "demo: 영어 문장 예시만 ... 아직 학교 길 확정 행동 금지 / react: 학교 픽토그램 빛남"
+            }
+          ],
+          "consequence": "실제 걸음은 입력 뒤라 legacy 이동 gate는 지켜진다. 그러나 피노키오가 이미 학교 그림을 말하고 귀뚜라미도 정답 방향을 가리켜, 윤수가 무엇을 새로 도와준 것인지 약해질 수 있다.",
+          "minimum_fix": "입력 전에는 두 그림을 비교하는 시범에 머물고 학교라는 식별과 특정 방향 지시는 입력 후 U020과 함께 확정하도록 신규 대사·손짓만 조정한다.",
+          "ci_miss": "인물의 지식 상태와 시각적 정답 선공개를 검사하지 않는다.",
+          "limitation": "영어 초보를 위한 안내 힌트로 의도했을 가능성이 있어 원본 이동 사건의 확정 위반으로 분류하지 않았다."
+        }
+      ],
+      "fix_applied": false
+    },
+    {
+      "id": "R04",
+      "sources": [
+        "S04-R02"
+      ],
+      "title": "이미 아는 결과를 다시 발견하는 반복",
+      "additional_record": {
+        "severity": "low",
+        "certainty": "RISK",
+        "identifier": "B03/S03-P03",
+        "observation": "Your head is still bare./Bare? Oh,no hat!로이미아는결과를참여뒤 Nothing on my head!로다시발견한다. 몸말익히기라는교육효과는있으므로오류로단정하지않지만 모자찾기로넘어가는속도를느리게할수있다. 신규대사중복을줄일우선후보."
+      },
+      "classification": "RISK_OR_UNRESOLVED_STAGING_NOT_CONFIRMED_FAILURE",
+      "evidence_records": [
+        {
+          "id": "S04-R02",
+          "classification": "RISK",
+          "severity": "low",
+          "title": "B10의 학교 재발견은 인물의 선행 발화 때문에 참여 보상이 반복으로 보일 수 있다",
+          "evidence": [
+            {
+              "path": "scenes/S04/script_v2_draft.md",
+              "lines": "559–569",
+              "beat": "B10",
+              "event": "S04-P07",
+              "quote": "The school is getting closer! / I can see the tall little bell. → help us look far ahead! → There it is! Our school!"
+            },
+            {
+              "path": "scenes/S04/script_v2_draft.md",
+              "lines": "56–66",
+              "beat": "B01",
+              "event": "S04-P01",
+              "quote": "where is the school? → Look over there! → A little roof! I can see it!"
+            }
+          ],
+          "consequence": "B01과 B10의 학교 찾기는 출발 목표와 진행 확인이라는 다른 기능을 가질 수 있다. 다만 B10에서는 학교/종을 이미 봤다는 말 뒤에 다시 발견해 윤수 참여 결과가 약해질 위험이 있다.",
+          "minimum_fix": "B10 입력 전 확정 관찰 문장을 짐작 수준으로 두거나, 참여 뒤 실제로 처음 보이는 구체적 변화가 있도록 조정한다.",
+          "ci_miss": "열 개 이벤트의 의미 중복/지식 선행은 검사하지 않는다.",
+          "limitation": "반복 자체를 오류로 보지 않았으며 연출 취향과 교육용 반복의 허용 범위를 검토해야 한다."
+        }
+      ],
+      "fix_applied": false
+    },
+    {
+      "id": "R05",
+      "sources": [
+        "S04-R03"
+      ],
+      "title": "귀뚜라미의 물웅덩이 통과 경로",
+      "classification": "RISK_OR_UNRESOLVED_STAGING_NOT_CONFIRMED_FAILURE",
+      "evidence_records": [
+        {
+          "id": "S04-R03",
+          "classification": "RISK",
+          "severity": "low",
+          "title": "귀뚜라미가 물웅덩이를 건너는 실제 동선은 구현 전에 확정해야 한다",
+          "evidence": [
+            {
+              "path": "scenes/S04/script_v2_draft.md",
+              "lines": "496,529,533,551",
+              "shots": "B09-C03→B09-C05→B10",
+              "quote": "귀뚜라미는 옆에서 보고 있으며 이후 따라감 / 귀뚜라미 위치 고정 / 귀뚜라미가 피노키오 쪽으로 다가오고 / 귀뚜라미는 땅에서 따라옴"
+            },
+            {
+              "path": "scenes/S05/scene_design_v2.json",
+              "json_pointer": "/scenes/0/continuity",
+              "quote": "귀뚜라미는 피노키오 옆 땅"
+            }
+          ],
+          "consequence": "도착 상태는 일관되지만, 피노키오가 건너는 동안 반대편에 남아 있는 귀뚜라미의 건너기 경로가 '다가온다'에만 포함돼 있다. 컷 구현에서 순간이동으로 보일 위험이 남는다.",
+          "minimum_fix": "B09-C05 내 짧은 지면 점프 또는 마른 가장자리 이동 중 하나를 명시해 물 접촉 없이 함께 도착하게 한다.",
+          "ci_miss": "3D 좌표·이동 경로·접지 프레임 검사가 없다.",
+          "limitation": "'이후 따라감'이라는 의도는 있으므로 확정 순간이동 오류라고 하지는 않는다."
+        }
+      ],
+      "fix_applied": false
+    },
+    {
+      "id": "R06",
+      "sources": [
+        "S04-R04"
+      ],
+      "title": "학교 왼쪽 길과 후반 화면 축",
+      "classification": "RISK_OR_UNRESOLVED_STAGING_NOT_CONFIRMED_FAILURE",
+      "evidence_records": [
+        {
+          "id": "S04-R04",
+          "classification": "RISK",
+          "severity": "low",
+          "title": "갈림길 왼쪽 진입과 후반 오른쪽 진행을 잇는 화면 축은 실제 콘티에서 확인해야 한다",
+          "evidence": [
+            {
+              "path": "scenes/S04/script_v2_draft.md",
+              "lines": "211,240,325,360,380",
+              "quote": "학교 왼쪽/숲 오른쪽 고정; B06-C04 왼쪽 길로 이동; B07 학교 왼쪽 길"
+            },
+            {
+              "path": "scenes/S04/script_v2_draft.md",
+              "lines": "582",
+              "shot": "B10-C01",
+              "quote": "WS TRACK 오른쪽"
+            },
+            {
+              "path": "docs/series_v2/STORY_CONTINUITY_S01_S12.json",
+              "json_pointer": "/transitions/S04_S05/carry",
+              "quote": "같은 길과 오른쪽 진행 방향"
+            }
+          ],
+          "consequence": "학교를 왼쪽에 둔 것 자체는 원본 master 위반이 아니다. 원본은 어느 한쪽이라고만 한다. 후반 오른쪽 화면 진행으로 바뀔 때 경로 굽음/카메라 축 전환이 명료해야 한다.",
+          "minimum_fix": "B06→B07에서 전진 방향과 카메라 축 관계를 한 번 확립하고 B10→S05는 그 축을 유지한다.",
+          "ci_miss": "camera/acting은 자유 텍스트라 공간 축과 월드 좌표의 정합성을 검사하지 않는다.",
+          "limitation": "카메라 TRACK_RIGHT가 곧 캐릭터의 잘못된 우회전을 의미하지 않으므로 확정 좌우 오류로 분류하지 않는다."
+        }
+      ],
+      "fix_applied": false
+    },
+    {
+      "id": "R07",
+      "sources": [
+        "S05-F01"
+      ],
+      "title": "3~5화 초보자의 정상 첫 참여에서 목표 표현 예시",
+      "classification": "RISK_OR_UNRESOLVED_STAGING_NOT_CONFIRMED_FAILURE",
+      "evidence_records": [
+        {
+          "id": "S05-F01",
+          "severity": "MEDIUM",
+          "classification": "RISK",
+          "title": "신규 8개 목표 표현이 처음 참여하기 전 정상 음성 경로에 없음",
+          "fact_status": "CONFIRMED: all eight exact cue strings are absent from S05 main dialogue and appear as optional example_text after no response; educational impact is RISK, not a proven learning failure.",
+          "locations": [
+            {
+              "path": "scenes/S05/interaction_map_v2.json",
+              "ids": [
+                "rules.model_example_after_no_response_seconds",
+                "S05-P01",
+                "S05-P02",
+                "S05-P03",
+                "S05-P04",
+                "S05-P05",
+                "S05-P06",
+                "S05-P07",
+                "S05-P08"
+              ],
+              "quote": "\"model_example_after_no_response_seconds\": 5; \"model_example_is_optional_and_excluded\": true; \"example_text\": \"Cup your ears!\""
+            },
+            {
+              "path": "scenes/S05/script_v2_draft.md",
+              "ids": [
+                "B01-C03",
+                "S05-N003",
+                "S05-N005"
+              ],
+              "quote": "“Bring your hands up.” / “Yoonsu, how can I listen better?”"
+            },
+            {
+              "path": "docs/series_v2/PRODUCTION_PRD_V2_0.md",
+              "ids": [
+                "4. 윤수 교육 설계"
+              ],
+              "quote": "화면 속 행동을 먼저 보여주고 짧은 영어를 연결하며 터치·따라 하기부터 시작한다."
+            }
+          ],
+          "why": "행동 준비와 동의어/추상 질문만 보고 아직 듣지 않은 Cup/Duck/Let them through 등의 표현을 처음부터 따라 말하기는 어렵다. VAD·보호자 터치로 진행할 수 있으므로 진행 불가능이나 정답 강제는 아니며, 보조 예시를 선택하면 해결할 수 있다. 그러나 정상 첫 참여가 학습한 짧은 표현의 반복이 아니라 무반응 뒤의 선택형 도움에 의존한다.",
+          "minimal_fix": "신규 참여는 본편 내 짧은 시범 대사에 목표 3단어를 직접 연결하거나, 초보용 첫 회 경로에서 외부 대기 시작 직후 모델 음성을 먼저 들려준 뒤 마이크를 켜도록 명시한다. I08/I09 원본 질문·공개·첫 재개 대사 순서는 유지한다."
+        }
+      ],
+      "fix_applied": false
+    },
+    {
+      "id": "R08",
+      "sources": [
+        "S05-F02"
+      ],
+      "title": "S06 첫 인형 시선 대상 인계",
+      "classification": "RISK_OR_UNRESOLVED_STAGING_NOT_CONFIRMED_FAILURE",
+      "evidence_records": [
+        {
+          "id": "S05-F02",
+          "severity": "MEDIUM",
+          "classification": "RISK",
+          "title": "S06 첫 세 번째 대사의 시선 대상인 인형 위치가 인계되지 않음",
+          "locations": [
+            {
+              "path": "scenes/S05/script_v2_draft.md",
+              "ids": [
+                "B06-C05"
+              ],
+              "quote": "맛보기 인형은 앞턱 옆 가림판으로 물러나며 본커튼은 열리지 않는다."
+            },
+            {
+              "path": "scenes/S05/script_v2_draft.md",
+              "ids": [
+                "B10-C05"
+              ],
+              "quote": "본무대 커튼은 닫힌 채, 조명 점등·밧줄 당기기·핍 소개는 없다."
+            },
+            {
+              "path": "docs/series_v2/sources/01_STORY_MASTER_V1_1.md",
+              "ids": [
+                "S06-U003",
+                "S06-U006~U012"
+              ],
+              "quote": "“Look at all those puppets!” / “The curtain is stuck!”"
+            },
+            {
+              "path": "docs/series_v2/STORY_CONTINUITY_S01_S12.json",
+              "ids": [
+                "local_handoffs.S05_S06",
+                "scenes[S06].entry_state"
+              ],
+              "quote": "\"main_curtain\": \"CLOSED\"; 등장인물/소품 인계에 노출된 맛보기 인형 위치가 없음"
+            }
+          ],
+          "why": "S05에 보였던 두 인형은 가림판 쪽으로 물러나고 S06 I10 전까지 본커튼이 닫혀 있다. 현재 인계만 그대로 구현하면 S06-U003이 가리킬 여러 인형이 보이지 않을 수 있다. 아직 S06 상세 콘티가 없어 실제 화면 모순은 확정할 수 없다.",
+          "minimal_fix": "이름 없는 두 인형이 앞턱/측면의 보이는 대기 위치에 S06-U003까지 남아 있음을 인계에 명시하거나 S06 초두 그 대사의 시선 대상을 별도로 지정한다. 핍 소개·본커튼 개방·본공연은 계속 S06 I10 이후에 둔다."
+        }
+      ],
+      "fix_applied": false
+    },
+    {
+      "id": "R09",
+      "sources": [
+        "S05-F04"
+      ],
+      "title": "관객 통과 후 가능 표현 시점",
+      "classification": "RISK_OR_UNRESOLVED_STAGING_NOT_CONFIRMED_FAILURE",
+      "evidence_records": [
+        {
+          "id": "S05-F04",
+          "severity": "LOW",
+          "classification": "RISK",
+          "title": "관객 통과 완료 뒤 허용 표현이 나와 반응 대사 타이밍이 둔해질 수 있음",
+          "locations": [
+            {
+              "path": "docs/series_v2/S05_ENGINE_HANDOFF.md",
+              "ids": [
+                "본편 시계와 입력 처리 5"
+              ],
+              "quote": "C04의 반응을 마친 뒤 지정 대사를 재개"
+            },
+            {
+              "path": "scenes/S05/interaction_map_v2.json",
+              "ids": [
+                "S05-P06.react"
+              ],
+              "quote": "작은 관객 둘이 차례로 지나감→피노키오가 마지막 관객을 눈으로 확인."
+            },
+            {
+              "path": "scenes/S05/script_v2_draft.md",
+              "ids": [
+                "B08-C04",
+                "S05-N051",
+                "S05-N052"
+              ],
+              "quote": "“There they go.” / “Now they can pass.”"
+            }
+          ],
+          "why": "반응 계약을 엄격하게 적용하면 두 관객이 이미 통과하고 확인까지 끝난 뒤 “Now they can pass.”가 나온다. 통로가 열렸다는 능력/가능 상태를 말하는 해석은 성립하므로 확정 논리 오류는 아니지만, 장면 결과를 확인하는 대사로서는 시점이 늦어 보일 수 있다.",
+          "minimal_fix": "전역 반응 후 발화 규칙을 유지하려면 N052를 “You made room for them.” 같은 결과 확인으로 바꾸는 소규모 검토가 가능하다. 현 대사를 유지한다면 통로가 열린 이후 관객이 아직 지나가는 중에 들리도록 연출 계약을 명확히 해야 한다."
+        }
+      ],
+      "fix_applied": false
+    },
+    {
+      "id": "R10",
+      "sources": [],
+      "title": "귀뚜라미의 잎 시범 높이",
+      "additional_record": {
+        "topic": "귀뚜라미 잎 시범 높이",
+        "classification": "UNVERIFIED",
+        "conclusion": "B05-C01은 피노키오 얼굴 높이 잎, S05-P04 demo는 지면의 귀뚜라미가 잎 아래를 받치는 동작이다. 별도의 낮은 잎인지 실제 치수가 없어 오류 단정 불가. 콘티에서 낮은 시범용 잎 또는 비접촉 몸짓을 지정하면 해결."
+      },
+      "classification": "RISK_OR_UNRESOLVED_STAGING_NOT_CONFIRMED_FAILURE",
+      "evidence_records": [],
+      "fix_applied": false
+    }
+  ],
+  "independent_static_probe": {
+    "reviewed_commit": "756c936e22468b708f4201a6d5e29a7d59fb15fb",
+    "executed_utc": "2026-11-23T01:50:51.688764+00:00",
+    "scope": "INDEPENDENT_STATIC_PROBE_ONLY; NO S01/S02 RETEST",
+    "scenes": [
+      {
+        "scene": "S03",
+        "original_lines": 22,
+        "new_lines": 92,
+        "speech_lines": 114,
+        "shots": 50,
+        "duration_plan_seconds": 456,
+        "canonical_speakers_text_order_pass": true,
+        "positive_and_contiguous_shots": true,
+        "shots_with_explicit_dialogue_ids": 0,
+        "events": [
+          {
+            "id": "S03-P01",
+            "cue": "Turn the page!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": true,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          },
+          {
+            "id": "S03-P02",
+            "cue": "Put it here!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          },
+          {
+            "id": "S03-P03",
+            "cue": "Touch your head!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": true,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          },
+          {
+            "id": "S03-P04",
+            "cue": "Open the drawer!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          },
+          {
+            "id": "S03-P05",
+            "cue": "Lift the book!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": true,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          },
+          {
+            "id": "I03",
+            "cue": "Under the chair!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          },
+          {
+            "id": "S03-P06",
+            "cue": "Hold it up!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          },
+          {
+            "id": "I04",
+            "cue": "Put it on!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          },
+          {
+            "id": "S03-P07",
+            "cue": "Open the bag!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          },
+          {
+            "id": "S03-P08",
+            "cue": "Tie the strap!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          }
+        ],
+        "explicit_wait_cameras": [
+          {
+            "id": "B06-C03",
+            "start": 240,
+            "end": 250,
+            "duration": 10,
+            "acting": "원본 I03 종료 발화 후 모자 끝의 위치를 정확히 고정한다. 제페토 손을 의자 쪽으로 뻗지 않고 기다린다."
+          },
+          {
+            "id": "B07-C03",
+            "start": 288,
+            "end": 297,
+            "duration": 9,
+            "acting": "모자를 배 높이에서 두 손으로 들고 위로 들어 올리는 시범 후 질문, WAIT."
+          },
+          {
+            "id": "B08-C03",
+            "start": 332,
+            "end": 342,
+            "duration": 10,
+            "acting": "모자 반대로 든 상태 고정. I04 목소리 안내 후 반응/피노키오 자율 머리 동작은 잠시 대기."
+          },
+          {
+            "id": "B09-C03",
+            "start": 378,
+            "end": 387,
+            "duration": 9,
+            "acting": "제페토 손이 가방 플랩 가장자리를 잡고 질문 뒤 멈춤. 아직 책은 탁자에 그대로."
+          },
+          {
+            "id": "B10-C03",
+            "start": 424,
+            "end": 434,
+            "duration": 10,
+            "acting": "매듭이 완성되기 전 상태에서 두 배우 동작 미세 호흡만. 반응 중 원본 대사로 넘어가지 않음."
+          }
+        ],
+        "facts_not_proven": [
+          "actual speech duration",
+          "actual narrative duration excluding waits",
+          "3D acting/contact",
+          "device VAD/touch"
+        ]
+      },
+      {
+        "scene": "S04",
+        "original_lines": 32,
+        "new_lines": 77,
+        "speech_lines": 109,
+        "shots": 50,
+        "duration_plan_seconds": 479,
+        "canonical_speakers_text_order_pass": true,
+        "positive_and_contiguous_shots": true,
+        "shots_with_explicit_dialogue_ids": 0,
+        "events": [
+          {
+            "id": "S04-P01",
+            "cue": "Look over there!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          },
+          {
+            "id": "I05",
+            "cue": "Go to school!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          },
+          {
+            "id": "S04-P02",
+            "cue": "Look at the flower!",
+            "cue_word_count": 4,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          },
+          {
+            "id": "S04-P03",
+            "cue": "Stop and look!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": true,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          },
+          {
+            "id": "S04-P04",
+            "cue": "Hop down, cricket!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          },
+          {
+            "id": "I06",
+            "cue": "Follow that sign!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          },
+          {
+            "id": "S04-P05",
+            "cue": "Hold your bag!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          },
+          {
+            "id": "S04-P06",
+            "cue": "Watch the frog!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": true,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          },
+          {
+            "id": "I07",
+            "cue": "Jump over it!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          },
+          {
+            "id": "S04-P07",
+            "cue": "Look far ahead!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": true,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": null
+          }
+        ],
+        "explicit_wait_cameras": [
+          {
+            "id": "B02-C03",
+            "start": 65,
+            "end": 74,
+            "duration": 9,
+            "acting": "질문 종료 후 대문 완전 닫힘·피노키오 출발 전 자세로 고정, 보호자 터치 안내 활성."
+          },
+          {
+            "id": "B03-C03",
+            "start": 110,
+            "end": 119,
+            "duration": 9,
+            "acting": "피노키오가 꽃에 가까이 손을 가져가되 꽃을 꺾지 않고 제페토 없는 상황에서 윤수에게 요청, 질문 종료 후 WAIT."
+          },
+          {
+            "id": "B04-C03",
+            "start": 157,
+            "end": 166,
+            "duration": 9,
+            "acting": "피노키오 한 발이 갈림길 시작선에 머문 채 표지판 두 개를 정면에서 바라봄. 질문 종료→정지/관찰 참여."
+          },
+          {
+            "id": "B05-C03",
+            "start": 203,
+            "end": 212,
+            "duration": 9,
+            "acting": "귀뚜라미가 나뭇잎 가장자리에 뒷다리를 굽히고 착지 위치를 바라보며 질문 종료 후 WAIT."
+          },
+          {
+            "id": "B06-C02",
+            "start": 241,
+            "end": 251,
+            "duration": 10,
+            "acting": "피노키오가 정중앙에 서서 어느 방향도 걷지 않고 질문을 마친다. 두 표지판 위치·색상 잠금."
+          },
+          {
+            "id": "B07-C03",
+            "start": 298,
+            "end": 308,
+            "duration": 10,
+            "acting": "귀뚜라미가 가방끈을 가리키고 피노키오는 아직 손을 어깨로 올리는 중, 질문 끝나면 동작 대기."
+          },
+          {
+            "id": "B08-C03",
+            "start": 346,
+            "end": 355,
+            "duration": 9,
+            "acting": "개구리가 작은 바닥에서 뒷다리를 굽히며 예비 움직임만, 귀뚜라미가 관찰 요청 후 WAIT."
+          },
+          {
+            "id": "B09-C03",
+            "start": 394,
+            "end": 404,
+            "duration": 10,
+            "acting": "피노키오 두 발이 마른 쪽에 붙어 있고 무릎 반쯤 굽힌 상태, 구름 반사 유지. 대기 중 뛰지 않음."
+          },
+          {
+            "id": "B10-C03",
+            "start": 446,
+            "end": 456,
+            "duration": 10,
+            "acting": "귀뚜라미가 먼 학교 방향을 몸으로 가리키고 피노키오가 찾으려다 멈춤. 질문 종료 후 WAIT."
+          }
+        ],
+        "facts_not_proven": [
+          "actual speech duration",
+          "actual narrative duration excluding waits",
+          "3D acting/contact",
+          "device VAD/touch"
+        ]
+      },
+      {
+        "scene": "S05",
+        "original_lines": 18,
+        "new_lines": 69,
+        "speech_lines": 87,
+        "shots": 50,
+        "duration_plan_seconds": 432,
+        "canonical_speakers_text_order_pass": true,
+        "positive_and_contiguous_shots": true,
+        "shots_with_explicit_dialogue_ids": 50,
+        "events": [
+          {
+            "id": "S05-P01",
+            "cue": "Cup your ears!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": 23
+          },
+          {
+            "id": "I08",
+            "cue": "I hear music!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": 64
+          },
+          {
+            "id": "S05-P02",
+            "cue": "Point to school!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": 109
+          },
+          {
+            "id": "S05-P03",
+            "cue": "Duck your head!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": 150
+          },
+          {
+            "id": "S05-P04",
+            "cue": "Move the leaves!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": 192
+          },
+          {
+            "id": "I09",
+            "cue": "Look over there!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": 237
+          },
+          {
+            "id": "S05-P05",
+            "cue": "Touch your bag!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": 284
+          },
+          {
+            "id": "S05-P06",
+            "cue": "Let them through!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": 327
+          },
+          {
+            "id": "S05-P07",
+            "cue": "Move your bag!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": 369
+          },
+          {
+            "id": "S05-P08",
+            "cue": "Step back, please!",
+            "cue_word_count": 3,
+            "prompt_speaker_and_text_match": true,
+            "resume_text_match": true,
+            "exact_cue_in_preceding_beat_speech": false,
+            "optional_example_after_seconds": 5,
+            "question_end_boundary_seconds": 411
+          }
+        ],
+        "explicit_wait_cameras": [],
+        "facts_not_proven": [
+          "actual speech duration",
+          "actual narrative duration excluding waits",
+          "3D acting/contact",
+          "device VAD/touch"
+        ]
+      }
+    ],
+    "totals": {
+      "scenes_reviewed": 3,
+      "shots": 150,
+      "original_lines": 72,
+      "new_lines": 238,
+      "speech_lines": 310,
+      "events": 30
+    }
+  },
+  "document_sync_probe": {
+    "scope": [
+      "S03",
+      "S04",
+      "S05"
+    ],
+    "mode": "READ_ONLY_DOCUMENT_SYNC_CHECK",
+    "source_root": "/workspace/scratch/4851b214300f/repo",
+    "source_ref_provided_by_parent": "756c936e22468b708f4201a6d5e29a7d59fb15fb",
+    "method": {
+      "description": "Parse every explicitly labelled original/new spoken line and every interaction marker in Markdown; compare each beat and the global sequence against structured scene_design_v2.json. Parse all 50 shot records and compare exact shot IDs, integer start/end seconds, camera text, and acting text. Compare each event cue/prompt/resume against interaction_map_v2.json plus the adjacent JSON/MD speech anchors.",
+      "speaker_and_text_comparison": "Exact Unicode content including case, punctuation and contractions. Only Markdown wrappers, surrounding curly quote delimiters, and outer whitespace are removed. No synonym mapping or punctuation/case normalization.",
+      "sequence_comparison": "Original and NEW speech plus INTERACTION markers are compared in their full interleaved sequence within each beat; beat order is compared independently.",
+      "format_specific_parse": {
+        "S03": "[V1.1 원본 #NN] / [V2 신규] speaker lines; inline Bxx-Cxx time/duration/camera — acting rows; [윤수 참여] cue rows; prompt inferred from immediate preceding labelled spoken line; explicit 후속 대사 compared independently.",
+        "S04": "[ORIGINAL S04-UNNN] / [NEW] speaker lines; inline Bxx-Cxx time (duration), camera: acting rows; [INTERACTION] cue rows; explicit 윤수 질문 and REACT 완료 후 대사 compared independently.",
+        "S05": "S05-UNNN / S05-NNN spoken bullets under shot headings; shot heading plus 카메라 and 3D 행동·연출 lines; 참여 cue headings; prompt inferred from immediate preceding labelled speech and checked using question_dialogue_id; explicit 첫 재개 발화 text/id compared independently."
+      },
+      "parse_coverage_guard": "Count candidate dialogue/shot/event labels independently from the full extraction regex. Record every unmatched candidate, duplicate ID, missing field, unexpected beat or count mismatch. No PASS if coverage is uncertain.",
+      "extra_checks": "Compare shot dialogue_ids against Markdown placement for S05 only (S03/S04 lack per-shot dialogue assignments); compare event immediate predecessor speaker and immediate successor text, event indexes/beat IDs, original source indexes, and scene beat timing/title when extractable.",
+      "nonclaims": "This checks agreement between documents. Shared narrative contradictions, actual speech duration, rendered action, runtime behavior, and educational adequacy are outside this PASS scope.",
+      "no_existing_validator": "No repository validator was executed for this check.",
+      "s01_s02": "No S01/S02 files were opened or validated by this checker.",
+      "checker_path": "/workspace/scratch/4851b214300f/audit_document_sync_check.py"
+    },
+    "source_hashes_before": {
+      "scenes/S03/script_v2_draft.md": "cf88cd9a4257f5b62cc5a552be1d81551ddafde15bf509d9ae63ef107384eb50",
+      "scenes/S03/scene_design_v2.json": "90682c1563ace76f72809129e1b58eb52944984a86333052353ce1d5f8f6d56f",
+      "scenes/S03/interaction_map_v2.json": "301c5e997e99a58265457f4f1120ea1b736a8aa1aa453689d9fe2e22d58652a5",
+      "scenes/S04/script_v2_draft.md": "85b4f0b803203e1bc73b1af3a5876d151f436952ae3878bc55de76debc9da857",
+      "scenes/S04/scene_design_v2.json": "d2e3d8892fc8cc1c0ec1b7d47e02c2c7480f625bea150928ec28cb60f14b6440",
+      "scenes/S04/interaction_map_v2.json": "a3e11b0627f71a1abe77ec92785c83a1cf3a0ae9bed878a2a3023119700050fb",
+      "scenes/S05/script_v2_draft.md": "b5c12676aa88272df9cde63ecff97f36fa80a6b8db03020acd85a99c6db85760",
+      "scenes/S05/scene_design_v2.json": "d3ef0c7608dc3a4f2a455db84568a57eb80205051ebf0aefada24d7141c58b91",
+      "scenes/S05/interaction_map_v2.json": "b25c2c1bc4314b19f5f13e9818948ba8ff822512532ca19884df3ea0b00eb3ee"
+    },
+    "scenes": {
+      "S03": {
+        "status": "PASS_DOCUMENT_SYNC_ONLY",
+        "files": {
+          "markdown": "scenes/S03/script_v2_draft.md",
+          "scene_design": "scenes/S03/scene_design_v2.json",
+          "interaction_map": "scenes/S03/interaction_map_v2.json"
+        },
+        "counts": {
+          "beats": 10,
+          "spoken_lines": 114,
+          "original_spoken_lines": 22,
+          "new_spoken_lines": 92,
+          "interleaved_flow_records": 124,
+          "shots": 50,
+          "events": 10,
+          "comparisons": 613
+        },
+        "parse_coverage": {
+          "candidate_counts": {
+            "dialogue": 114,
+            "shot": 50,
+            "event": 10
+          },
+          "parsed_counts": {
+            "dialogue": 114,
+            "shot": 50,
+            "event": 10
+          },
+          "uncertainties": []
+        },
+        "checks": {
+          "all_spoken_speakers_text_and_order": true,
+          "all_shot_ids_times_camera_and_acting": true,
+          "all_event_cues_prompts_and_resumes": true,
+          "s05_per_shot_dialogue_ids": "NOT_APPLICABLE_NO_EXPLICIT_ASSIGNMENT_IN_EITHER_DOCUMENT",
+          "all_original_and_new_dialogue_included": true
+        },
+        "sequence_digests": {
+          "markdown_dialogue": "36aba6b2536fab461209678c093a60aed0ac0fc06563dc369bef9b516dd0bede",
+          "json_dialogue": "36aba6b2536fab461209678c093a60aed0ac0fc06563dc369bef9b516dd0bede",
+          "markdown_shots": "5150e23de999f914b16a813657052b236bdf138551310b925bbe9d9df9facf5d",
+          "json_shots": "5150e23de999f914b16a813657052b236bdf138551310b925bbe9d9df9facf5d"
+        },
+        "event_evidence": [
+          {
+            "id": "S03-P01",
+            "beat": "B01",
+            "cue": "Turn the page!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "제페토",
+                "prompt": "Yoonsu, help us turn the page!",
+                "resume_speaker": "피노키오",
+                "resume": "Oh! Look at the paint and paper!"
+              },
+              "json": {
+                "prompt_speaker": "제페토",
+                "prompt": "Yoonsu, help us turn the page!",
+                "resume_speaker": "피노키오",
+                "resume": "Oh! Look at the paint and paper!"
+              }
+            },
+            "explicit_resume": "Oh! Look at the paint and paper!",
+            "explicit_prompt": null,
+            "markdown_line": 61
+          },
+          {
+            "id": "S03-P02",
+            "beat": "B02",
+            "cue": "Put it here!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "제페토",
+                "prompt": "Yoonsu, shall we help with the last block?",
+                "resume_speaker": "피노키오",
+                "resume": "It stands! I can show my new friends."
+              },
+              "json": {
+                "prompt_speaker": "제페토",
+                "prompt": "Yoonsu, shall we help with the last block?",
+                "resume_speaker": "피노키오",
+                "resume": "It stands! I can show my new friends."
+              }
+            },
+            "explicit_resume": "It stands! I can show my new friends.",
+            "explicit_prompt": null,
+            "markdown_line": 113
+          },
+          {
+            "id": "S03-P03",
+            "beat": "B03",
+            "cue": "Touch your head!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, can you help me check?",
+                "resume_speaker": "피노키오",
+                "resume": "Nothing on my head!"
+              },
+              "json": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, can you help me check?",
+                "resume_speaker": "피노키오",
+                "resume": "Nothing on my head!"
+              }
+            },
+            "explicit_resume": "Nothing on my head!",
+            "explicit_prompt": null,
+            "markdown_line": 171
+          },
+          {
+            "id": "S03-P04",
+            "beat": "B04",
+            "cue": "Open the drawer!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, help me open it!",
+                "resume_speaker": "피노키오",
+                "resume": "A wooden spoon and some string!"
+              },
+              "json": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, help me open it!",
+                "resume_speaker": "피노키오",
+                "resume": "A wooden spoon and some string!"
+              }
+            },
+            "explicit_resume": "A wooden spoon and some string!",
+            "explicit_prompt": null,
+            "markdown_line": 221
+          },
+          {
+            "id": "S03-P05",
+            "beat": "B05",
+            "cue": "Lift the book!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, can you help me look underneath?",
+                "resume_speaker": "피노키오",
+                "resume": "Not under the book!"
+              },
+              "json": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, can you help me look underneath?",
+                "resume_speaker": "피노키오",
+                "resume": "Not under the book!"
+              }
+            },
+            "explicit_resume": "Not under the book!",
+            "explicit_prompt": null,
+            "markdown_line": 275
+          },
+          {
+            "id": "I03",
+            "beat": "B06",
+            "cue": "Under the chair!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "제페토",
+                "prompt": "Yoonsu, where is Pinocchio's hat?",
+                "resume_speaker": "제페토",
+                "resume": "Ah! Here it is!"
+              },
+              "json": {
+                "prompt_speaker": "제페토",
+                "prompt": "Yoonsu, where is Pinocchio's hat?",
+                "resume_speaker": "제페토",
+                "resume": "Ah! Here it is!"
+              }
+            },
+            "explicit_resume": "Ah! Here it is!",
+            "explicit_prompt": null,
+            "markdown_line": 325
+          },
+          {
+            "id": "S03-P06",
+            "beat": "B07",
+            "cue": "Hold it up!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, can you help me lift it?",
+                "resume_speaker": "피노키오",
+                "resume": "Oh! It's upside down!"
+              },
+              "json": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, can you help me lift it?",
+                "resume_speaker": "피노키오",
+                "resume": "Oh! It's upside down!"
+              }
+            },
+            "explicit_resume": "Oh! It's upside down!",
+            "explicit_prompt": null,
+            "markdown_line": 379
+          },
+          {
+            "id": "I04",
+            "beat": "B08",
+            "cue": "Put it on!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, what should I do with my hat?",
+                "resume_speaker": "피노키오",
+                "resume": "Now I'm ready!"
+              },
+              "json": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, what should I do with my hat?",
+                "resume_speaker": "피노키오",
+                "resume": "Now I'm ready!"
+              }
+            },
+            "explicit_resume": "Now I'm ready!",
+            "explicit_prompt": null,
+            "markdown_line": 429
+          },
+          {
+            "id": "S03-P07",
+            "beat": "B09",
+            "cue": "Open the bag!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "제페토",
+                "prompt": "Yoonsu, help me open the schoolbag!",
+                "resume_speaker": "피노키오",
+                "resume": "It's open!"
+              },
+              "json": {
+                "prompt_speaker": "제페토",
+                "prompt": "Yoonsu, help me open the schoolbag!",
+                "resume_speaker": "피노키오",
+                "resume": "It's open!"
+              }
+            },
+            "explicit_resume": "It's open!",
+            "explicit_prompt": null,
+            "markdown_line": 483
+          },
+          {
+            "id": "S03-P08",
+            "beat": "B10",
+            "cue": "Tie the strap!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "제페토",
+                "prompt": "Yoonsu, help us tie the bag!",
+                "resume_speaker": "피노키오",
+                "resume": "Now the book is safe!"
+              },
+              "json": {
+                "prompt_speaker": "제페토",
+                "prompt": "Yoonsu, help us tie the bag!",
+                "resume_speaker": "피노키오",
+                "resume": "Now the book is safe!"
+              }
+            },
+            "explicit_resume": "Now the book is safe!",
+            "explicit_prompt": null,
+            "markdown_line": 535
+          }
+        ],
+        "mismatches": [],
+        "limitations": [
+          "S03/S04 contain beat-level dialogue lists rather than per-shot speech assignments; this check does not invent a timing assignment."
+        ]
+      },
+      "S04": {
+        "status": "PASS_DOCUMENT_SYNC_ONLY",
+        "files": {
+          "markdown": "scenes/S04/script_v2_draft.md",
+          "scene_design": "scenes/S04/scene_design_v2.json",
+          "interaction_map": "scenes/S04/interaction_map_v2.json"
+        },
+        "counts": {
+          "beats": 10,
+          "spoken_lines": 109,
+          "original_spoken_lines": 32,
+          "new_spoken_lines": 77,
+          "interleaved_flow_records": 119,
+          "shots": 50,
+          "events": 10,
+          "comparisons": 618
+        },
+        "parse_coverage": {
+          "candidate_counts": {
+            "dialogue": 109,
+            "shot": 50,
+            "event": 10
+          },
+          "parsed_counts": {
+            "dialogue": 109,
+            "shot": 50,
+            "event": 10
+          },
+          "uncertainties": []
+        },
+        "checks": {
+          "all_spoken_speakers_text_and_order": true,
+          "all_shot_ids_times_camera_and_acting": true,
+          "all_event_cues_prompts_and_resumes": true,
+          "s05_per_shot_dialogue_ids": "NOT_APPLICABLE_NO_EXPLICIT_ASSIGNMENT_IN_EITHER_DOCUMENT",
+          "all_original_and_new_dialogue_included": true
+        },
+        "sequence_digests": {
+          "markdown_dialogue": "6dec4af97d9ffd02761023c86650316914b1a864cd1173ede7b16dba3e12f51d",
+          "json_dialogue": "6dec4af97d9ffd02761023c86650316914b1a864cd1173ede7b16dba3e12f51d",
+          "markdown_shots": "c7c127ac65bacd62b205bfb53e59e3077f64dd15710fba2594a34da7d1ac6640",
+          "json_shots": "c7c127ac65bacd62b205bfb53e59e3077f64dd15710fba2594a34da7d1ac6640"
+        },
+        "event_evidence": [
+          {
+            "id": "S04-P01",
+            "beat": "B01",
+            "cue": "Look over there!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "제페토",
+                "prompt": "Yoonsu, help Pinocchio see the school!",
+                "resume_speaker": "피노키오",
+                "resume": "A little roof! I can see it!"
+              },
+              "json": {
+                "prompt_speaker": "제페토",
+                "prompt": "Yoonsu, help Pinocchio see the school!",
+                "resume_speaker": "피노키오",
+                "resume": "A little roof! I can see it!"
+              }
+            },
+            "explicit_resume": "A little roof! I can see it!",
+            "explicit_prompt": "Yoonsu, help Pinocchio see the school!",
+            "markdown_line": 62
+          },
+          {
+            "id": "I05",
+            "beat": "B02",
+            "cue": "Go to school!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "제페토",
+                "prompt": "Yoonsu, where should Pinocchio go today?",
+                "resume_speaker": "피노키오",
+                "resume": "Goodbye, Grandpa!"
+              },
+              "json": {
+                "prompt_speaker": "제페토",
+                "prompt": "Yoonsu, where should Pinocchio go today?",
+                "resume_speaker": "피노키오",
+                "resume": "Goodbye, Grandpa!"
+              }
+            },
+            "explicit_resume": "Goodbye, Grandpa!",
+            "explicit_prompt": "Yoonsu, where should Pinocchio go today?",
+            "markdown_line": 117
+          },
+          {
+            "id": "S04-P02",
+            "beat": "B03",
+            "cue": "Look at the flower!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, can you help me look closer?",
+                "resume_speaker": "피노키오",
+                "resume": "It's beautiful and so small!"
+              },
+              "json": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, can you help me look closer?",
+                "resume_speaker": "피노키오",
+                "resume": "It's beautiful and so small!"
+              }
+            },
+            "explicit_resume": "It's beautiful and so small!",
+            "explicit_prompt": "Yoonsu, can you help me look closer?",
+            "markdown_line": 172
+          },
+          {
+            "id": "S04-P03",
+            "beat": "B04",
+            "cue": "Stop and look!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, help me stop and look!",
+                "resume_speaker": "피노키오",
+                "resume": "I can see two different signs."
+              },
+              "json": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, help me stop and look!",
+                "resume_speaker": "피노키오",
+                "resume": "I can see two different signs."
+              }
+            },
+            "explicit_resume": "I can see two different signs.",
+            "explicit_prompt": "Yoonsu, help me stop and look!",
+            "markdown_line": 229
+          },
+          {
+            "id": "S04-P04",
+            "beat": "B05",
+            "cue": "Hop down, cricket!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "귀뚜라미",
+                "prompt": "Yoonsu, help me hop to the ground!",
+                "resume_speaker": "피노키오",
+                "resume": "Wow! You jumped so far!"
+              },
+              "json": {
+                "prompt_speaker": "귀뚜라미",
+                "prompt": "Yoonsu, help me hop to the ground!",
+                "resume_speaker": "피노키오",
+                "resume": "Wow! You jumped so far!"
+              }
+            },
+            "explicit_resume": "Wow! You jumped so far!",
+            "explicit_prompt": "Yoonsu, help me hop to the ground!",
+            "markdown_line": 288
+          },
+          {
+            "id": "I06",
+            "beat": "B06",
+            "cue": "Follow that sign!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, which way should I go?",
+                "resume_speaker": "피노키오",
+                "resume": "That's the school!"
+              },
+              "json": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, which way should I go?",
+                "resume_speaker": "피노키오",
+                "resume": "That's the school!"
+              }
+            },
+            "explicit_resume": "That's the school!",
+            "explicit_prompt": "Yoonsu, which way should I go?",
+            "markdown_line": 337
+          },
+          {
+            "id": "S04-P05",
+            "beat": "B07",
+            "cue": "Hold your bag!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "귀뚜라미",
+                "prompt": "Yoonsu, help him keep the bag close!",
+                "resume_speaker": "피노키오",
+                "resume": "My bag is safe!"
+              },
+              "json": {
+                "prompt_speaker": "귀뚜라미",
+                "prompt": "Yoonsu, help him keep the bag close!",
+                "resume_speaker": "피노키오",
+                "resume": "My bag is safe!"
+              }
+            },
+            "explicit_resume": "My bag is safe!",
+            "explicit_prompt": "Yoonsu, help him keep the bag close!",
+            "markdown_line": 396
+          },
+          {
+            "id": "S04-P06",
+            "beat": "B08",
+            "cue": "Watch the frog!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "귀뚜라미",
+                "prompt": "Yoonsu, let's watch the frog!",
+                "resume_speaker": "피노키오",
+                "resume": "He can hop!"
+              },
+              "json": {
+                "prompt_speaker": "귀뚜라미",
+                "prompt": "Yoonsu, let's watch the frog!",
+                "resume_speaker": "피노키오",
+                "resume": "He can hop!"
+              }
+            },
+            "explicit_resume": "He can hop!",
+            "explicit_prompt": "Yoonsu, let's watch the frog!",
+            "markdown_line": 455
+          },
+          {
+            "id": "I07",
+            "beat": "B09",
+            "cue": "Jump over it!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, how can I cross this puddle?",
+                "resume_speaker": "피노키오",
+                "resume": "I did it!"
+              },
+              "json": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, how can I cross this puddle?",
+                "resume_speaker": "피노키오",
+                "resume": "I did it!"
+              }
+            },
+            "explicit_resume": "I did it!",
+            "explicit_prompt": "Yoonsu, how can I cross this puddle?",
+            "markdown_line": 510
+          },
+          {
+            "id": "S04-P07",
+            "beat": "B10",
+            "cue": "Look far ahead!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "귀뚜라미",
+                "prompt": "Yoonsu, help us look far ahead!",
+                "resume_speaker": "피노키오",
+                "resume": "There it is! Our school!"
+              },
+              "json": {
+                "prompt_speaker": "귀뚜라미",
+                "prompt": "Yoonsu, help us look far ahead!",
+                "resume_speaker": "피노키오",
+                "resume": "There it is! Our school!"
+              }
+            },
+            "explicit_resume": "There it is! Our school!",
+            "explicit_prompt": "Yoonsu, help us look far ahead!",
+            "markdown_line": 567
+          }
+        ],
+        "mismatches": [],
+        "limitations": [
+          "S03/S04 contain beat-level dialogue lists rather than per-shot speech assignments; this check does not invent a timing assignment."
+        ]
+      },
+      "S05": {
+        "status": "PASS_DOCUMENT_SYNC_ONLY",
+        "files": {
+          "markdown": "scenes/S05/script_v2_draft.md",
+          "scene_design": "scenes/S05/scene_design_v2.json",
+          "interaction_map": "scenes/S05/interaction_map_v2.json"
+        },
+        "counts": {
+          "beats": 10,
+          "spoken_lines": 87,
+          "original_spoken_lines": 18,
+          "new_spoken_lines": 69,
+          "interleaved_flow_records": 97,
+          "shots": 50,
+          "events": 10,
+          "comparisons": 713
+        },
+        "parse_coverage": {
+          "candidate_counts": {
+            "dialogue": 87,
+            "shot": 50,
+            "event": 10
+          },
+          "parsed_counts": {
+            "dialogue": 87,
+            "shot": 50,
+            "event": 10
+          },
+          "uncertainties": []
+        },
+        "checks": {
+          "all_spoken_speakers_text_and_order": true,
+          "all_shot_ids_times_camera_and_acting": true,
+          "all_event_cues_prompts_and_resumes": true,
+          "s05_per_shot_dialogue_ids": "CHECKED",
+          "all_original_and_new_dialogue_included": true
+        },
+        "sequence_digests": {
+          "markdown_dialogue": "9ee6d7f2ff7a4308bf1f0813cdf7b5666b8a24a2824c10122f54cc08dec77dc8",
+          "json_dialogue": "9ee6d7f2ff7a4308bf1f0813cdf7b5666b8a24a2824c10122f54cc08dec77dc8",
+          "markdown_shots": "2b1efe3d685ef6ba151b886db7b4736c0aa1e6f28670ef49a2cd427d06063db3",
+          "json_shots": "2b1efe3d685ef6ba151b886db7b4736c0aa1e6f28670ef49a2cd427d06063db3"
+        },
+        "event_evidence": [
+          {
+            "id": "S05-P01",
+            "beat": "B01",
+            "cue": "Cup your ears!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, how can I listen better?",
+                "resume_speaker": "피노키오",
+                "resume": "Now I can hear better."
+              },
+              "json": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, how can I listen better?",
+                "resume_speaker": "피노키오",
+                "resume": "Now I can hear better."
+              }
+            },
+            "explicit_resume": "Now I can hear better.",
+            "explicit_prompt": null,
+            "markdown_line": 78
+          },
+          {
+            "id": "I08",
+            "beat": "B02",
+            "cue": "I hear music!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "귀뚜라미",
+                "prompt": "What do you hear?",
+                "resume_speaker": "귀뚜라미",
+                "resume": "It's coming from the village square."
+              },
+              "json": {
+                "prompt_speaker": "귀뚜라미",
+                "prompt": "What do you hear?",
+                "resume_speaker": "귀뚜라미",
+                "resume": "It's coming from the village square."
+              }
+            },
+            "explicit_resume": "It's coming from the village square.",
+            "explicit_prompt": null,
+            "markdown_line": 135
+          },
+          {
+            "id": "S05-P02",
+            "beat": "B03",
+            "cue": "Point to school!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "귀뚜라미",
+                "prompt": "Yoonsu, where is our school?",
+                "resume_speaker": "피노키오",
+                "resume": "There! Beside the tall bell."
+              },
+              "json": {
+                "prompt_speaker": "귀뚜라미",
+                "prompt": "Yoonsu, where is our school?",
+                "resume_speaker": "피노키오",
+                "resume": "There! Beside the tall bell."
+              }
+            },
+            "explicit_resume": "There! Beside the tall bell.",
+            "explicit_prompt": null,
+            "markdown_line": 192
+          },
+          {
+            "id": "S05-P03",
+            "beat": "B04",
+            "cue": "Duck your head!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, how can I go under?",
+                "resume_speaker": "피노키오",
+                "resume": "My hat stayed on!"
+              },
+              "json": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, how can I go under?",
+                "resume_speaker": "피노키오",
+                "resume": "My hat stayed on!"
+              }
+            },
+            "explicit_resume": "My hat stayed on!",
+            "explicit_prompt": null,
+            "markdown_line": 250
+          },
+          {
+            "id": "S05-P04",
+            "beat": "B05",
+            "cue": "Move the leaves!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, can you help with these leaves?",
+                "resume_speaker": "피노키오",
+                "resume": "Now my face is clear."
+              },
+              "json": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, can you help with these leaves?",
+                "resume_speaker": "피노키오",
+                "resume": "Now my face is clear."
+              }
+            },
+            "explicit_resume": "Now my face is clear.",
+            "explicit_prompt": null,
+            "markdown_line": 307
+          },
+          {
+            "id": "I09",
+            "beat": "B06",
+            "cue": "Look over there!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "귀뚜라미",
+                "prompt": "Yoonsu, where should Pinocchio look?",
+                "resume_speaker": "피노키오",
+                "resume": "Wow! A puppet show!"
+              },
+              "json": {
+                "prompt_speaker": "귀뚜라미",
+                "prompt": "Yoonsu, where should Pinocchio look?",
+                "resume_speaker": "피노키오",
+                "resume": "Wow! A puppet show!"
+              }
+            },
+            "explicit_resume": "Wow! A puppet show!",
+            "explicit_prompt": null,
+            "markdown_line": 364
+          },
+          {
+            "id": "S05-P05",
+            "beat": "B07",
+            "cue": "Touch your bag!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "귀뚜라미",
+                "prompt": "Yoonsu, can you help him remember?",
+                "resume_speaker": "피노키오",
+                "resume": "My book is still here."
+              },
+              "json": {
+                "prompt_speaker": "귀뚜라미",
+                "prompt": "Yoonsu, can you help him remember?",
+                "resume_speaker": "피노키오",
+                "resume": "My book is still here."
+              }
+            },
+            "explicit_resume": "My book is still here.",
+            "explicit_prompt": null,
+            "markdown_line": 422
+          },
+          {
+            "id": "S05-P06",
+            "beat": "B08",
+            "cue": "Let them through!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, how can I make room?",
+                "resume_speaker": "피노키오",
+                "resume": "There they go."
+              },
+              "json": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, how can I make room?",
+                "resume_speaker": "피노키오",
+                "resume": "There they go."
+              }
+            },
+            "explicit_resume": "There they go.",
+            "explicit_prompt": null,
+            "markdown_line": 480
+          },
+          {
+            "id": "S05-P07",
+            "beat": "B09",
+            "cue": "Move your bag!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, can you help me move it?",
+                "resume_speaker": "피노키오",
+                "resume": "There. Right in front of me."
+              },
+              "json": {
+                "prompt_speaker": "피노키오",
+                "prompt": "Yoonsu, can you help me move it?",
+                "resume_speaker": "피노키오",
+                "resume": "There. Right in front of me."
+              }
+            },
+            "explicit_resume": "There. Right in front of me.",
+            "explicit_prompt": null,
+            "markdown_line": 538
+          },
+          {
+            "id": "S05-P08",
+            "beat": "B10",
+            "cue": "Step back, please!",
+            "anchors": {
+              "markdown": {
+                "prompt_speaker": "귀뚜라미",
+                "prompt": "Yoonsu, can you help him step back?",
+                "resume_speaker": "피노키오",
+                "resume": "Now there is room."
+              },
+              "json": {
+                "prompt_speaker": "귀뚜라미",
+                "prompt": "Yoonsu, can you help him step back?",
+                "resume_speaker": "피노키오",
+                "resume": "Now there is room."
+              }
+            },
+            "explicit_resume": "Now there is room.",
+            "explicit_prompt": null,
+            "markdown_line": 596
+          }
+        ],
+        "mismatches": [],
+        "limitations": []
+      }
+    },
+    "findings": [],
+    "source_hashes_after": {
+      "scenes/S03/script_v2_draft.md": "cf88cd9a4257f5b62cc5a552be1d81551ddafde15bf509d9ae63ef107384eb50",
+      "scenes/S03/scene_design_v2.json": "90682c1563ace76f72809129e1b58eb52944984a86333052353ce1d5f8f6d56f",
+      "scenes/S03/interaction_map_v2.json": "301c5e997e99a58265457f4f1120ea1b736a8aa1aa453689d9fe2e22d58652a5",
+      "scenes/S04/script_v2_draft.md": "85b4f0b803203e1bc73b1af3a5876d151f436952ae3878bc55de76debc9da857",
+      "scenes/S04/scene_design_v2.json": "d2e3d8892fc8cc1c0ec1b7d47e02c2c7480f625bea150928ec28cb60f14b6440",
+      "scenes/S04/interaction_map_v2.json": "a3e11b0627f71a1abe77ec92785c83a1cf3a0ae9bed878a2a3023119700050fb",
+      "scenes/S05/script_v2_draft.md": "b5c12676aa88272df9cde63ecff97f36fa80a6b8db03020acd85a99c6db85760",
+      "scenes/S05/scene_design_v2.json": "d3ef0c7608dc3a4f2a455db84568a57eb80205051ebf0aefada24d7141c58b91",
+      "scenes/S05/interaction_map_v2.json": "b25c2c1bc4314b19f5f13e9818948ba8ff822512532ca19884df3ea0b00eb3ee"
+    },
+    "production_files_unchanged": true,
+    "totals": {
+      "beats": 30,
+      "spoken_lines": 310,
+      "original_spoken_lines": 72,
+      "new_spoken_lines": 238,
+      "interleaved_flow_records": 340,
+      "shots": 150,
+      "events": 30,
+      "comparisons": 1944
+    },
+    "status": "PASS_DOCUMENT_SYNC_ONLY",
+    "independent_s04_event_review": {
+      "reviewer": "/root/audit_s05_and_flow/check_s04_event_sync",
+      "status": "PASS_DOCUMENT_SYNC_ONLY",
+      "events": 10,
+      "field_comparisons": 100,
+      "mismatches": 0,
+      "parse_uncertainties": 0,
+      "scope": "Independent direct parsing of S04 MD event header, explicit prompt/resume, scene marker predecessor/successor and map speaker/cue/index/beat."
+    },
+    "checker_sha256": "b83d92be0f064e0f110beb35d69f52fccedb3432668007154bc26fb0c6ece252",
+    "supplementary_quote_coverage": {
+      "method": "Scan all detailed beat-body lines containing English in smart quotes and standalone ASCII/smart quoted English lines; confirm each is a parsed main dialogue, cue event, or explicit resume, rather than silently ignoring an unlabeled utterance. S04 unquoted explicit prompt/resume fields are already covered by the main parser.",
+      "scenes": {
+        "S03": {
+          "quoted_english_lines_in_detailed_beats": 134,
+          "unaccounted_quoted_utterance_lines": []
+        },
+        "S04": {
+          "quoted_english_lines_in_detailed_beats": 119,
+          "unaccounted_quoted_utterance_lines": []
+        },
+        "S05": {
+          "quoted_english_lines_in_detailed_beats": 107,
+          "unaccounted_quoted_utterance_lines": []
+        }
+      },
+      "status": "PASS_COVERAGE"
+    }
+  },
+  "s04_validator_execution": {
+    "command": "python3 scripts/validate_s04_design.py",
+    "working_directory": "repository root",
+    "exit_code": 0,
+    "status": "DESIGN_ONLY_PASS",
+    "stdout_stderr": "PASS V1.1 S04 32 speech lines present\nPASS S02 JSON schema backward-compatible\nPASS S03 JSON schema backward-compatible\nPASS correct S04 / S02 contract\nPASS 10 story beats\nPASS 479s target no gaps\nPASS wait excluded from planned duration\nPASS beat timeline contiguous\nPASS 50 unique camera/acting shots\nPASS 5 shots/beat and timings add up\nPASS positive shot durations\nPASS all 32 original lines speaker/text/order preserved\nPASS source indexing unchanged 1..32\nPASS source count metadata\nPASS 77 new lines metadata\nPASS exactly 10 events preserving I05/I06/I07\nPASS three original, seven new\nPASS interaction map matches authored screenplay\nPASS VAD/tap accessible once-only interactions\nPASS no user approval inferred\nPASS new Cricket speaker flagged as unapproved\nPASS all 32 source lines printed in screenplay\nPASS S04 manifest matches draft\nDESIGN_ONLY_PASS: actual S04 rendering/voice/child testing NOT_RUN, Cricket voice BLOCKED_RESOURCE\n",
+    "coverage_note": "Only the assertions printed in this log are validator results. Prompt/resume adjacency, cue word count and shot adjacency were checked separately by the new audit."
+  },
+  "speech_window_evidence": [
+    {
+      "beat": "B06",
+      "shot": "B06-C05",
+      "seconds": 9,
+      "first_source_index": 12,
+      "all_lines": [
+        {
+          "kind": "ORIGINAL",
+          "source_index": 12,
+          "speaker": "제페토",
+          "text": "Ah! Here it is!"
+        },
+        {
+          "kind": "ORIGINAL",
+          "source_index": 13,
+          "speaker": "피노키오",
+          "text": "My red hat!"
+        },
+        {
+          "kind": "NEW",
+          "speaker": "피노키오",
+          "text": "It's bright red!"
+        },
+        {
+          "kind": "NEW",
+          "speaker": "제페토",
+          "text": "It was under this chair the whole time."
+        },
+        {
+          "kind": "NEW",
+          "speaker": "피노키오",
+          "text": "I can see it now."
+        },
+        {
+          "kind": "NEW",
+          "speaker": "제페토",
+          "text": "Thank you for helping, Yoonsu."
+        }
+      ],
+      "line_count": 6,
+      "word_count": 28,
+      "words_per_minute_required": 186.66666666666666,
+      "original_word_count": 7,
+      "audio_duration_measurement": "NOT_RUN"
+    },
+    {
+      "beat": "B08",
+      "shot": "B08-C05",
+      "seconds": 8,
+      "first_source_index": 17,
+      "all_lines": [
+        {
+          "kind": "ORIGINAL",
+          "source_index": 17,
+          "speaker": "피노키오",
+          "text": "Now I'm ready!"
+        },
+        {
+          "kind": "ORIGINAL",
+          "source_index": 18,
+          "speaker": "제페토",
+          "text": "Almost. Don't forget your schoolbag."
+        },
+        {
+          "kind": "NEW",
+          "speaker": "피노키오",
+          "text": "My hat is ready, but my bag is not."
+        },
+        {
+          "kind": "NEW",
+          "speaker": "제페토",
+          "text": "Let's get the book and pack it."
+        },
+        {
+          "kind": "NEW",
+          "speaker": "피노키오",
+          "text": "I will keep my hat on."
+        }
+      ],
+      "line_count": 5,
+      "word_count": 30,
+      "words_per_minute_required": 225.0,
+      "original_word_count": 8,
+      "audio_duration_measurement": "NOT_RUN"
+    },
+    {
+      "beat": "B10",
+      "shot": "B10-C05",
+      "seconds": 10,
+      "first_source_index": 19,
+      "all_lines": [
+        {
+          "kind": "ORIGINAL",
+          "source_index": 19,
+          "speaker": "제페토",
+          "text": "Listen carefully, Pinocchio."
+        },
+        {
+          "kind": "ORIGINAL",
+          "source_index": 20,
+          "speaker": "제페토",
+          "text": "Go to school and come home before supper."
+        },
+        {
+          "kind": "NEW",
+          "speaker": "피노키오",
+          "text": "Before supper. I will remember."
+        },
+        {
+          "kind": "NEW",
+          "speaker": "제페토",
+          "text": "I will be waiting for you at home."
+        },
+        {
+          "kind": "ORIGINAL",
+          "source_index": 21,
+          "speaker": "피노키오",
+          "text": "I will, Grandpa!"
+        },
+        {
+          "kind": "NEW",
+          "speaker": "피노키오",
+          "text": "I want to learn so many things!"
+        },
+        {
+          "kind": "NEW",
+          "speaker": "제페토",
+          "text": "I am proud of your brave little heart."
+        },
+        {
+          "kind": "ORIGINAL",
+          "source_index": 22,
+          "speaker": "내레이션",
+          "text": "With his red hat and little schoolbag, Pinocchio was ready for his first adventure outside."
+        }
+      ],
+      "line_count": 8,
+      "word_count": 57,
+      "words_per_minute_required": 342.0,
+      "original_word_count": 29,
+      "audio_duration_measurement": "NOT_RUN"
+    }
+  ],
+  "s03_original_18_to_22_mapping": [
+    {
+      "source_index": 18,
+      "source_id": "S03-U018",
+      "beat": "B08",
+      "shot": "B08-C05",
+      "shot_start_seconds": 353,
+      "shot_end_seconds": 361,
+      "shot_duration_seconds": 8,
+      "speaker": "제페토",
+      "text": "Almost. Don't forget your schoolbag.",
+      "word_count": 5,
+      "mapping_basis": "샷 acting가 원본 재개문장 또는 약속/대답/내레이션을 이 C05에 배정함"
+    },
+    {
+      "source_index": 19,
+      "source_id": "S03-U019",
+      "beat": "B10",
+      "shot": "B10-C05",
+      "shot_start_seconds": 446,
+      "shot_end_seconds": 456,
+      "shot_duration_seconds": 10,
+      "speaker": "제페토",
+      "text": "Listen carefully, Pinocchio.",
+      "word_count": 3,
+      "mapping_basis": "샷 acting가 원본 재개문장 또는 약속/대답/내레이션을 이 C05에 배정함"
+    },
+    {
+      "source_index": 20,
+      "source_id": "S03-U020",
+      "beat": "B10",
+      "shot": "B10-C05",
+      "shot_start_seconds": 446,
+      "shot_end_seconds": 456,
+      "shot_duration_seconds": 10,
+      "speaker": "제페토",
+      "text": "Go to school and come home before supper.",
+      "word_count": 8,
+      "mapping_basis": "샷 acting가 원본 재개문장 또는 약속/대답/내레이션을 이 C05에 배정함"
+    },
+    {
+      "source_index": 21,
+      "source_id": "S03-U021",
+      "beat": "B10",
+      "shot": "B10-C05",
+      "shot_start_seconds": 446,
+      "shot_end_seconds": 456,
+      "shot_duration_seconds": 10,
+      "speaker": "피노키오",
+      "text": "I will, Grandpa!",
+      "word_count": 3,
+      "mapping_basis": "샷 acting가 원본 재개문장 또는 약속/대답/내레이션을 이 C05에 배정함"
+    },
+    {
+      "source_index": 22,
+      "source_id": "S03-U022",
+      "beat": "B10",
+      "shot": "B10-C05",
+      "shot_start_seconds": 446,
+      "shot_end_seconds": 456,
+      "shot_duration_seconds": 10,
+      "speaker": "내레이션",
+      "text": "With his red hat and little schoolbag, Pinocchio was ready for his first adventure outside.",
+      "word_count": 15,
+      "mapping_basis": "샷 acting가 원본 재개문장 또는 약속/대답/내레이션을 이 C05에 배정함"
+    }
+  ],
+  "s05_review_judgments_not_promoted_to_errors": [
+    {
+      "topic": "마지막 130초 B08~B10 반복",
+      "conclusion": "No confirmed filler. 통로 양보→옆 가방 정리→무대와 거리 확보는 서로 다른 결과다. N054의 열린 학교길, N063의 떠날 기회, U017의 자율적 체류 선택이 현재 대본에 있어 후반 서사 기여가 있다. 실제 리듬은 음성·애니매틱 UNVERIFIED."
+    },
+    {
+      "topic": "B08 관객 뒤→B10 무대 앞 공간",
+      "conclusion": "B08-C05의 앞쪽 자리 모습을 따라 피노키오도 관객 가장자리에 선다는 문장이 전진을 포함할 수 있으므로 순간이동 확정 불가. G2에서 이동 궤적 확인."
+    },
+    {
+      "topic": "귀뚜라미 잎 시범 높이",
+      "classification": "UNVERIFIED",
+      "conclusion": "B05-C01은 피노키오 얼굴 높이 잎, S05-P04 demo는 지면의 귀뚜라미가 잎 아래를 받치는 동작이다. 별도의 낮은 잎인지 실제 치수가 없어 오류 단정 불가. 콘티에서 낮은 시범용 잎 또는 비접촉 몸짓을 지정하면 해결."
+    },
+    {
+      "topic": "영어 표현 소규모 다듬기",
+      "conclusion": "S04 tall little bell / S05 Beside the tall bell은 화면의 종탑과 맞춰 bell tower로 정밀화할 수 있고 Now my face is clear도 더 구체적인 표현을 쓸 수 있으나, 문법 오류나 핵심 서사 문제로 별도 승격하지 않음."
+    }
+  ],
+  "root_adjudication": [
+    "WAIT counting: S03 has 20 seconds clearly described as post-question waiting plus a mixed 10-second guide/wait shot. S04 has 19 clearly described seconds. Do not subtract all WAIT-labelled cuts.",
+    "Timing densities derive from shot descriptions and preserved dialogue order. They are not measured synthesized audio speeds.",
+    "S03/S04 have no per-line dialogue_ids on shots; S05 has all 87 lines explicitly assigned across 50 shots.",
+    "schoolbook_opened false may mean current state; the confirmed problem is unqualified history/wording, especially the explicit 미개봉 phrase. S09 is not declared contradictory.",
+    "S05 N052 Now they can pass is a risk only: an open-passage capability interpretation remains possible.",
+    "A school path on the left and later rightward screen travel are not automatically contradictory. Camera axis and path geometry are unverified.",
+    "The separate document-sync PASS means files agree, not that their shared contents are correct.",
+    "No actual S01/S02 production gate was rerun. The reviewed existing S04 validator reads S02 schema as input but does not execute the S02 validator.",
+    "The exact-cue exposure counts concern only the preceding main dialogue within each beat. S03/S04 also mention separate target/model audio in interaction directions; its playback placement remains to be specified or verified."
+  ],
+  "production_unverified": [
+    "Final narrative runtime excluding WAIT, replay and optional examples",
+    "Generated voice duration, actor turn-taking, lip sync and emotional pacing",
+    "Actual 3D prop contacts, rigging, foot grounding, trajectories and occlusion",
+    "Runtime VAD, parent tap, once-only reaction and microphone isolation",
+    "Rendered/audio match at S04-S05 and S05-S06 boundaries",
+    "Execution on the actual S02 base engine",
+    "Child comprehension and engagement"
+  ],
+  "voice_resource_status": {
+    "cricket": "BLOCKED_RESOURCE_IN_REVIEWED_REFERENCE_FILES",
+    "S05_story_lines_affected": 39,
+    "S05_optional_example_lines_affected": 5,
+    "voice_synthesis": "NOT_RUN"
+  },
+  "final_input_preservation_check": {
+    "files_checked": 49,
+    "modified_files": [],
+    "status": "PASS_SOURCE_FILES_UNCHANGED"
+  },
+  "report_editorial_review": {
+    "status": "COMPLETED",
+    "reviewer": "independent S03 reviewer",
+    "confirmed_count_reviewed": 9,
+    "risk_group_count_reviewed": 10,
+    "corrections_applied": [
+      "Narrowed old S03/S04 validator coverage to event ID/count/order",
+      "Clarified separate model-audio directions are not counted in main-dialogue cue exposure",
+      "Clarified same-book wording"
+    ],
+    "source_production_files_modified": false
+  }
+}
