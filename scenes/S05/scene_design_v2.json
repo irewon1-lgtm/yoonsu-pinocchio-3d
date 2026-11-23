@@ -1,0 +1,1461 @@
+{
+  "scene": "S05",
+  "version": "2.0",
+  "designer": "ChatGPT",
+  "stage": "G1_DESIGN_COMPLETE_REVIEW_REQUIRED",
+  "duration_target_seconds": 432,
+  "wait_excluded": true,
+  "original_dialogue_count": 18,
+  "new_dialogue_count": 69,
+  "target_fps": 24,
+  "base_engine_scene": "S02",
+  "base_engine_contract": "scenes/S02/scene_design_v2.json",
+  "base_engine_implementation": "NOT_FOUND_IN_GITHUB_BRANCH",
+  "previous_scene_continuity": "scenes/S04/scene_design_v2.json",
+  "next_scene_continuity": "docs/series_v2/sources/01_STORY_MASTER_V1_1.md#장면-6-신나는-인형극",
+  "series_continuity_contract": "docs/series_v2/STORY_CONTINUITY_S01_S12.json",
+  "approved_voice_registry": "assets/voice_refs/v6/VOICE_REFERENCES.json",
+  "unapproved_voice_speakers": [
+    "귀뚜라미"
+  ],
+  "timing_contract": {
+    "clock": "NARRATIVE_CLOCK_PLUS_EXTERNAL_PAUSES",
+    "narrative_seconds": 432,
+    "narrative_frames_at_24fps": 10368,
+    "external_wait_seconds_counted": 0,
+    "pause_location": "C03_END_AFTER_QUESTION_AUDIO_ENDED",
+    "resume_location": "C04_REACTION_THEN_DESIGNATED_DIALOGUE",
+    "question_audio_and_visual_demo_are_narrative": true,
+    "optional_model_examples_counted": false,
+    "replays_counted": false,
+    "actual_audio_timing": "NOT_RUN",
+    "actual_mp4_duration": "NOT_RUN",
+    "rendered_boundary_test": "NOT_RUN",
+    "retiming_rule": "실제 음성 길이와 연기 확인 후 필요하면 컷을 늘리되 대사 순서·참여 경계·서사 360초 이상을 보존. 단축/반복으로 길이를 맞추지 않는다."
+  },
+  "continuity_contract": {
+    "entry": {
+      "from_scene": "S04",
+      "from_shot": "B10-C05",
+      "location": "학교로 가는 같은 길, 물웅덩이를 건넌 쪽",
+      "time": "첫 등교일 아침, 시간 점프 없음",
+      "characters": "피노키오와 귀뚜라미, 귀뚜라미는 땅",
+      "props": "빨간 모자 착용, 책이 든 책가방, 마른 신발, 정상 길이 코",
+      "sound": "S04의 미확인 소리를 끊지 않고 받음, 같은 모티프를 I08에서 음악으로 확인",
+      "first_dialogue_id": "S05-U001",
+      "first_dialogue_text": "Cricket, what's that sound?"
+    },
+    "exit": {
+      "to_scene": "S06",
+      "to_source_opening": "마을 광장, 동물 관객, 마라의 북과 첫 인사",
+      "location": "빨간 천막 무대 앞 안전한 자리, 학교로 되돌아갈 통로 열림",
+      "time": "아침 유지, 긴 시간 경과는 S06 본공연에서만",
+      "characters": "피노키오·옆 땅의 귀뚜라미·무언 동물 관객·무대 왼쪽 마라",
+      "props": "모자 착용, 책이 든 가방을 몸 앞에서 끈 유지, 마른 신발, 정상 코",
+      "curtain": "CLOSED_UNTIL_S06_I10",
+      "pip": "NOT_INTRODUCED_UNTIL_S06",
+      "sound": "같은 북 모티프 L-cut→S06 마라 첫 인사; S05 마지막 대사 재생/재요약 없음",
+      "last_dialogue_id": "S05-U018",
+      "last_dialogue_text": "But sometimes, one little minute can turn into a very long time.",
+      "next_first_speaker": "마라",
+      "next_first_dialogue": "Welcome, everyone!"
+    },
+    "reveal_gates": {
+      "music_identified_at": "I08",
+      "tent_front_and_moving_puppets_revealed_at": "I09",
+      "before_I09": "색색의 천·리본/붉은 모서리는 가능. 큰 나무 줄기가 무대와 천막 전면을 계속 가림.",
+      "moving_puppets": "I09에서 이름 없는 무대 인형 둘이 닫힌 본커튼 앞턱에서 잠깐 몸을 움직이고 옆 가림판으로 물러남. 본공연/핍 소개 아님."
+    },
+    "causal_chain": [
+      "S03 학교 약속과 책",
+      "S04 학교를 향한 실제 이동",
+      "S05 음악 호기심과 목적을 알고도 잠깐 머무는 선택",
+      "S06 공연과 도움에 몰입하여 오래 머묾",
+      "S07 늦은 등교",
+      "S08~S10 걱정·거짓말·고백·화해",
+      "S11 약속을 행동으로 지킴",
+      "S12 친구를 도와 진짜 아이로 성장"
+    ],
+    "child_is_not_responsible_for_detour": true,
+    "script_review": "REVIEW_REQUIRED",
+    "rendered_continuity": "NOT_RUN"
+  },
+  "scenes": [
+    {
+      "id": "B01",
+      "title": "소리 쪽으로 기울어지는 귀",
+      "start_seconds": 0,
+      "end_seconds": 40,
+      "goal": "4화의 미확인 소리를 같은 자리에서 받아, 걸음 소리를 멈추고 듣는 몸짓을 익힌다. 음악의 근원은 아직 가려 둔다.",
+      "continuity": "S04 B10-C05와 동일한 아침·길·진행 방향. 모자 착용, 책이 든 가방, 마른 신발, 정상 길이 코. 귀뚜라미는 피노키오 옆 땅. 먼 학교 지붕은 배경에 남긴다.",
+      "dialogue": [
+        {
+          "kind": "ORIGINAL",
+          "dialogue_id": "S05-U001",
+          "source_index": 1,
+          "speaker": "피노키오",
+          "text": "Cricket, what's that sound?"
+        },
+        {
+          "kind": "ORIGINAL",
+          "dialogue_id": "S05-U002",
+          "source_index": 2,
+          "speaker": "귀뚜라미",
+          "text": "Listen carefully."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N001",
+          "new_index": 1,
+          "speaker": "피노키오",
+          "text": "My feet are noisy."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N002",
+          "new_index": 2,
+          "speaker": "귀뚜라미",
+          "text": "Then let them rest."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N003",
+          "new_index": 3,
+          "speaker": "귀뚜라미",
+          "text": "Bring your hands up."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N004",
+          "new_index": 4,
+          "speaker": "피노키오",
+          "text": "Like this?"
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N005",
+          "new_index": 5,
+          "speaker": "피노키오",
+          "text": "Yoonsu, how can I listen better?"
+        },
+        {
+          "kind": "INTERACTION",
+          "id": "S05-P01"
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N006",
+          "new_index": 6,
+          "speaker": "피노키오",
+          "text": "Now I can hear better."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N007",
+          "new_index": 7,
+          "speaker": "귀뚜라미",
+          "text": "Keep your eyes on the path."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N008",
+          "new_index": 8,
+          "speaker": "피노키오",
+          "text": "It's beyond those leaves."
+        }
+      ],
+      "shots": [
+        {
+          "id": "B01-C01",
+          "start_seconds": 0,
+          "end_seconds": 7,
+          "camera": "WS 35mm · S04 마지막 프레임에서 연속",
+          "acting": "S04의 귀 기울이던 움직임을 이어 피노키오의 들린 발이 땅에 닿고 가방이 한 번 가라앉는다. 카메라는 같은 축을 유지한다. 미확인 소리만 이어 받고 전화 내레이션을 반복하지 않는다.",
+          "dialogue_ids": [
+            "S05-U001",
+            "S05-U002"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B01-C02",
+          "start_seconds": 7,
+          "end_seconds": 14,
+          "camera": "MS 50mm · 발에서 얼굴로 틸트",
+          "acting": "피노키오가 자신의 나무 신발을 내려다보고 두 발을 가지런히 멈춘다. 귀뚜라미도 두 걸음으로 다가와 고개를 기울인다. 눈·호흡·가방의 잔운동은 캐릭터 연기이며 대기 루프가 아니다.",
+          "dialogue_ids": [
+            "S05-N001",
+            "S05-N002"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B01-C03",
+          "start_seconds": 14,
+          "end_seconds": 23,
+          "camera": "CU 65mm · 손과 귀, 질문",
+          "acting": "피노키오가 한 손을 귀 옆까지 올렸다 방향을 확인한다. 귀뚜라미의 앞다리 시범을 보고 반대 손도 준비한다. 마지막 질문 오디오가 끝나는 23초 경계에서만 외부 참여 대기로 전환한다.",
+          "dialogue_ids": [
+            "S05-N003",
+            "S05-N004",
+            "S05-N005"
+          ],
+          "phase": "PROMPT",
+          "external_pause_after_event": "S05-P01"
+        },
+        {
+          "id": "B01-C04",
+          "start_seconds": 23,
+          "end_seconds": 33,
+          "camera": "CU→MS 50mm · 손 모으기 반응",
+          "acting": "응답 또는 터치 후 양손을 귀 뒤에 모으고, 팔꿈치·어깨를 자연스럽게 내리면서 상체를 아주 조금 기울인다. 눈동자는 잎 사이를 찾되 소리의 정체는 단정하지 않는다.",
+          "dialogue_ids": [
+            "S05-N006",
+            "S05-N007"
+          ],
+          "phase": "REACT"
+        },
+        {
+          "id": "B01-C05",
+          "start_seconds": 33,
+          "end_seconds": 40,
+          "camera": "OTS 40mm · 잎 너머의 빛",
+          "acting": "피노키오의 시선이 잎에 걸린 작은 천 조각을 따라간다. 가려진 붉은 색의 단편만 허용하며, 악기·무대·인형은 보이지 않는다. 다음 비트에 쓸 북과 피리 모티프가 바람 너머로 들린다.",
+          "dialogue_ids": [
+            "S05-N008"
+          ],
+          "phase": "NARRATIVE"
+        }
+      ],
+      "interaction_id": "S05-P01"
+    },
+    {
+      "id": "B02",
+      "title": "작은 북과 피리 소리",
+      "start_seconds": 40,
+      "end_seconds": 84,
+      "goal": "원본 I08을 보존해 막연한 소리를 음악으로 알아듣는 순간을 만든다. 듣기 결과가 다음 선택의 원인이 된다.",
+      "continuity": "B01 위치 그대로. I08 전까지 천막 전체·무대·악기 연주자는 미공개. 음악은 학교 종소리와 확실히 다른 음색이고, 완주 시간과 무관하게 동일한 짧은 모티프만 사용.",
+      "dialogue": [
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N009",
+          "new_index": 9,
+          "speaker": "피노키오",
+          "text": "A tiny tap... and a high sound."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N010",
+          "new_index": 10,
+          "speaker": "귀뚜라미",
+          "text": "Close your eyes for a moment."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N011",
+          "new_index": 11,
+          "speaker": "피노키오",
+          "text": "There it is again."
+        },
+        {
+          "kind": "ORIGINAL",
+          "dialogue_id": "S05-U003",
+          "source_index": 3,
+          "speaker": "귀뚜라미",
+          "text": "Yoonsu, can you hear it too?"
+        },
+        {
+          "kind": "ORIGINAL",
+          "dialogue_id": "S05-U004",
+          "source_index": 4,
+          "speaker": "귀뚜라미",
+          "text": "What do you hear?"
+        },
+        {
+          "kind": "INTERACTION",
+          "id": "I08"
+        },
+        {
+          "kind": "ORIGINAL",
+          "dialogue_id": "S05-U005",
+          "source_index": 5,
+          "speaker": "귀뚜라미",
+          "text": "It's coming from the village square."
+        },
+        {
+          "kind": "ORIGINAL",
+          "dialogue_id": "S05-U006",
+          "source_index": 6,
+          "speaker": "피노키오",
+          "text": "Music! I love music!"
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N012",
+          "new_index": 12,
+          "speaker": "피노키오",
+          "text": "I can feel it in my feet."
+        }
+      ],
+      "shots": [
+        {
+          "id": "B02-C01",
+          "start_seconds": 40,
+          "end_seconds": 47,
+          "camera": "MS 50mm · 청각에 대한 얼굴 반응",
+          "acting": "낮은 북 한 번에 피노키오 눈썹이 들리고 높은 피리 한 구절에 시선이 옆으로 움직인다. 손과 고개가 다른 박자로 과장되게 흔들리지 않도록 실제 듣는 반응을 준다.",
+          "dialogue_ids": [
+            "S05-N009"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B02-C02",
+          "start_seconds": 47,
+          "end_seconds": 54,
+          "camera": "TWO SHOT 40mm · 대사 뒤 짧은 음악 구간",
+          "acting": "귀뚜라미의 시범을 본 피노키오가 잠깐 눈을 감았다 다시 뜬다. 두 대사 뒤 북·피리만 들리는 3초를 확보한다. 이 구간은 최초 음악을 알아듣는 일회성 서사이며 반복해서 길이를 늘리지 않는다.",
+          "dialogue_ids": [
+            "S05-N010",
+            "S05-N011"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B02-C03",
+          "start_seconds": 54,
+          "end_seconds": 64,
+          "camera": "MS 50mm · 귀뚜라미 질문",
+          "acting": "귀뚜라미가 윤수 쪽으로 몸을 돌린 후 소리 쪽을 다시 본다. 피노키오는 입을 다물고 듣는다. 원본 U003, U004를 순서대로 발화하고 U004 종료 64초에서 외부 대기.",
+          "dialogue_ids": [
+            "S05-U003",
+            "S05-U004"
+          ],
+          "phase": "PROMPT",
+          "external_pause_after_event": "I08"
+        },
+        {
+          "id": "B02-C04",
+          "start_seconds": 64,
+          "end_seconds": 76,
+          "camera": "REACT 50mm · 귀뚜라미→피노키오→잎",
+          "acting": "정해진 순서로 귀뚜라미가 먼저 귀를 기울이고, 피노키오가 고개를 돌리고, 길가 잎이 움직인다. 근원이 같은 모티프의 믹스만 또렷해진다. 반응 직후 첫 발화는 원본 U005이며 U006이 뒤따른다.",
+          "dialogue_ids": [
+            "S05-U005",
+            "S05-U006"
+          ],
+          "phase": "REACT"
+        },
+        {
+          "id": "B02-C05",
+          "start_seconds": 76,
+          "end_seconds": 84,
+          "camera": "LOW MS 40mm · 들썩이는 발과 학교 방향",
+          "acting": "피노키오가 발끝으로 박자를 한 번 짚었다가 체중을 다시 두 발에 싣는다. 귀뚜라미가 음악 방향과 별개인 학교 길 쪽으로 시선을 준다. 첫 충동과 아직 남은 목적을 한 화면에 둔다.",
+          "dialogue_ids": [
+            "S05-N012"
+          ],
+          "phase": "NARRATIVE"
+        }
+      ],
+      "interaction_id": "I08"
+    },
+    {
+      "id": "B03",
+      "title": "알고 있는 학교 길",
+      "start_seconds": 84,
+      "end_seconds": 126,
+      "goal": "학교가 목적지라는 사실을 다시 눈에 보이게 한 뒤 피노키오 스스로 잠깐 보겠다고 결정한다. 윤수에게 잘못된 길을 고르게 하지 않는다.",
+      "continuity": "학교 지붕은 S04에서 본 같은 위치. 가방 속 책은 S03에서 제페토가 넣은 그 책. 음악의 근원은 아직 가려져 있고 돌아갈 길도 열려 있다.",
+      "dialogue": [
+        {
+          "kind": "ORIGINAL",
+          "dialogue_id": "S05-U007",
+          "source_index": 7,
+          "speaker": "귀뚜라미",
+          "text": "But school is waiting."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N013",
+          "new_index": 13,
+          "speaker": "피노키오",
+          "text": "I can still see the roof."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N014",
+          "new_index": 14,
+          "speaker": "귀뚜라미",
+          "text": "Your book is for that school."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N015",
+          "new_index": 15,
+          "speaker": "피노키오",
+          "text": "Grandpa put it here."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N016",
+          "new_index": 16,
+          "speaker": "귀뚜라미",
+          "text": "Yoonsu, where is our school?"
+        },
+        {
+          "kind": "INTERACTION",
+          "id": "S05-P02"
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N017",
+          "new_index": 17,
+          "speaker": "피노키오",
+          "text": "There! Beside the tall bell."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N018",
+          "new_index": 18,
+          "speaker": "귀뚜라미",
+          "text": "That's our way."
+        },
+        {
+          "kind": "ORIGINAL",
+          "dialogue_id": "S05-U008",
+          "source_index": 8,
+          "speaker": "피노키오",
+          "text": "Just one little look!"
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N019",
+          "new_index": 19,
+          "speaker": "귀뚜라미",
+          "text": "We must not stay."
+        }
+      ],
+      "shots": [
+        {
+          "id": "B03-C01",
+          "start_seconds": 84,
+          "end_seconds": 92,
+          "camera": "TWO SHOT 40mm · 귀뚜라미의 제동",
+          "acting": "귀뚜라미가 학교 쪽으로 한 걸음 내딛고 원본 U007을 말한다. 피노키오가 그의 시선을 따라 먼 지붕을 찾는다. 음악은 작아져 대사가 또렷하다.",
+          "dialogue_ids": [
+            "S05-U007",
+            "S05-N013"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B03-C02",
+          "start_seconds": 92,
+          "end_seconds": 101,
+          "camera": "MS 55mm · 가방과 먼 지붕",
+          "acting": "귀뚜라미가 가방을 가리키자 피노키오가 끈 위에 손을 얹는다. S03 기억을 별도 회상 화면으로 반복하지 않고 현재의 소품 접촉으로 연결한다.",
+          "dialogue_ids": [
+            "S05-N014",
+            "S05-N015"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B03-C03",
+          "start_seconds": 101,
+          "end_seconds": 109,
+          "camera": "OTS 45mm · 학교를 가리킬 준비",
+          "acting": "학교 건물이 같은 지평선에 있는 구도. 귀뚜라미의 가리키는 몸짓을 보고 피노키오가 팔꿈치를 들지만 아직 손끝을 정렬하지 않는다. 질문 종료 109초에서 외부 대기.",
+          "dialogue_ids": [
+            "S05-N016"
+          ],
+          "phase": "PROMPT",
+          "external_pause_after_event": "S05-P02"
+        },
+        {
+          "id": "B03-C04",
+          "start_seconds": 109,
+          "end_seconds": 119,
+          "camera": "MS 50mm · 방향 재확인",
+          "acting": "피노키오가 손끝→눈→몸을 같은 학교 방향으로 맞춘다. 카메라가 학교를 새로 생성하지 않고 기존 지붕을 함께 담아 공간 관계를 유지한다.",
+          "dialogue_ids": [
+            "S05-N017",
+            "S05-N018"
+          ],
+          "phase": "REACT"
+        },
+        {
+          "id": "B03-C05",
+          "start_seconds": 119,
+          "end_seconds": 126,
+          "camera": "PROFILE 40mm · 자율적인 작은 우회",
+          "acting": "학교를 가리키던 손을 내린 피노키오가 다시 음악 쪽으로 고개를 돌리고 U008을 말한다. 귀뚜라미의 걱정스러운 눈을 본 뒤 스스로 길가 나무 쪽 첫발을 내딛는다. 윤수의 참여가 우회를 명령하지 않는다.",
+          "dialogue_ids": [
+            "S05-U008",
+            "S05-N019"
+          ],
+          "phase": "NARRATIVE"
+        }
+      ],
+      "interaction_id": "S05-P02"
+    },
+    {
+      "id": "B04",
+      "title": "낮은 가지 아래로",
+      "start_seconds": 126,
+      "end_seconds": 168,
+      "goal": "음악을 향한 작은 우회가 실제 몸의 이동으로 보이게 한다. 낮은 가지 아래를 지나며 모자와 책가방을 스스로 지킨다.",
+      "continuity": "B03에서 내딛은 발을 이어 기존 길가 나무로 이동. 학교 길에서 숲으로 장소가 갑자기 바뀌지 않는다. 귀뚜라미는 같은 옆길로 동행하며 우회를 권하지 않는다.",
+      "dialogue": [
+        {
+          "kind": "ORIGINAL",
+          "dialogue_id": "S05-U009",
+          "source_index": 9,
+          "speaker": "내레이션",
+          "text": "Pinocchio followed the sound."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N020",
+          "new_index": 20,
+          "speaker": "귀뚜라미",
+          "text": "Careful, that branch is low."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N021",
+          "new_index": 21,
+          "speaker": "피노키오",
+          "text": "It almost brushed my hat."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N022",
+          "new_index": 22,
+          "speaker": "귀뚜라미",
+          "text": "Bend your knees like this."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N023",
+          "new_index": 23,
+          "speaker": "피노키오",
+          "text": "Yoonsu, how can I go under?"
+        },
+        {
+          "kind": "INTERACTION",
+          "id": "S05-P03"
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N024",
+          "new_index": 24,
+          "speaker": "피노키오",
+          "text": "My hat stayed on!"
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N025",
+          "new_index": 25,
+          "speaker": "귀뚜라미",
+          "text": "You kept your hat safe."
+        },
+        {
+          "kind": "ORIGINAL",
+          "dialogue_id": "S05-U010",
+          "source_index": 10,
+          "speaker": "내레이션",
+          "text": "A bright red tent was hiding behind a big tree."
+        }
+      ],
+      "shots": [
+        {
+          "id": "B04-C01",
+          "start_seconds": 126,
+          "end_seconds": 134,
+          "camera": "TRACK 35mm · 발과 길의 연결",
+          "acting": "원본 U009에 맞춰 피노키오가 기존 길의 가장자리를 따라 나무에 접근한다. 귀뚜라미가 낮은 가지를 발견해 가리키고 피노키오가 앞발을 줄인다.",
+          "dialogue_ids": [
+            "S05-U009",
+            "S05-N020"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B04-C02",
+          "start_seconds": 134,
+          "end_seconds": 142,
+          "camera": "MS 50mm · 모자와 가지의 거리",
+          "acting": "피노키오가 모자 챙을 올려다보고 손을 가볍게 댄다. 귀뚜라미는 몸을 낮춘 채 앞을 살핀다. 접촉 직전 멈추는 동작이므로 가지 관통과 모자 순간이동은 없다.",
+          "dialogue_ids": [
+            "S05-N021"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B04-C03",
+          "start_seconds": 142,
+          "end_seconds": 150,
+          "camera": "THREE QUARTER 45mm · 무릎 시범과 질문",
+          "acting": "귀뚜라미의 몸 낮추기와 피노키오 무릎 준비를 같은 화면에 둔다. 질문이 끝나는 150초 경계에서 외부 대기한다. 이 8초는 시범과 발화 분량이다.",
+          "dialogue_ids": [
+            "S05-N022",
+            "S05-N023"
+          ],
+          "phase": "PROMPT",
+          "external_pause_after_event": "S05-P03"
+        },
+        {
+          "id": "B04-C04",
+          "start_seconds": 150,
+          "end_seconds": 160,
+          "camera": "SIDE MS 40mm · 체중 이동과 통과",
+          "acting": "두 발이 동시에 미끄러지지 않도록 한 발 지지→반대 발 이동을 지킨다. 무릎·골반·등이 함께 낮아지고 모자는 머리에 붙어 이동한다. 가방이 가지를 지나간 뒤 일어선다.",
+          "dialogue_ids": [
+            "S05-N024",
+            "S05-N025"
+          ],
+          "phase": "REACT"
+        },
+        {
+          "id": "B04-C05",
+          "start_seconds": 160,
+          "end_seconds": 168,
+          "camera": "WIDE 35mm · 큰 나무와 붉은 조각",
+          "acting": "피노키오가 서며 큰 줄기 뒤 붉은 천의 모서리를 발견한다. 원본 U010이 천막을 설명해도 전면·무대·인형은 아직 가린다. 낮은 가지는 뒤에 남아 실제 이동을 증명한다.",
+          "dialogue_ids": [
+            "S05-U010"
+          ],
+          "phase": "NARRATIVE"
+        }
+      ],
+      "interaction_id": "S05-P03"
+    },
+    {
+      "id": "B05",
+      "title": "얼굴에 닿는 잎을 살며시",
+      "start_seconds": 168,
+      "end_seconds": 210,
+      "goal": "세게 잡아당기지 않고 얼굴 옆 잎을 옮겨 지나갈 작은 공간을 만든다. 천막을 가린 주된 장애물은 큰 나무 줄기로 계속 남긴다.",
+      "continuity": "같은 나무의 통로 옆 잎만 접촉한다. 큰 줄기와 천막의 가림 관계는 I09 전까지 유지. 잎과 가지를 떼어 기념품으로 가져가지 않는다.",
+      "dialogue": [
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N026",
+          "new_index": 26,
+          "speaker": "피노키오",
+          "text": "These leaves brush my face."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N027",
+          "new_index": 27,
+          "speaker": "귀뚜라미",
+          "text": "Don't pull them off."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N028",
+          "new_index": 28,
+          "speaker": "피노키오",
+          "text": "I'll use an open hand."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N029",
+          "new_index": 29,
+          "speaker": "귀뚜라미",
+          "text": "Gently, like this."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N030",
+          "new_index": 30,
+          "speaker": "피노키오",
+          "text": "Yoonsu, can you help with these leaves?"
+        },
+        {
+          "kind": "INTERACTION",
+          "id": "S05-P04"
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N031",
+          "new_index": 31,
+          "speaker": "피노키오",
+          "text": "Now my face is clear."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N032",
+          "new_index": 32,
+          "speaker": "귀뚜라미",
+          "text": "The leaves are safe."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N033",
+          "new_index": 33,
+          "speaker": "피노키오",
+          "text": "That big trunk still blocks my view."
+        }
+      ],
+      "shots": [
+        {
+          "id": "B05-C01",
+          "start_seconds": 168,
+          "end_seconds": 176,
+          "camera": "CU 65mm · 눈앞의 잎",
+          "acting": "피노키오가 얼굴에 닿은 잎 때문에 한 번 눈을 깜박이고 손가락을 오므리려 한다. 귀뚜라미가 손을 펴는 몸짓으로 급한 잡아당김을 멈추게 한다.",
+          "dialogue_ids": [
+            "S05-N026",
+            "S05-N027"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B05-C02",
+          "start_seconds": 176,
+          "end_seconds": 184,
+          "camera": "INSERT 60mm · 펴진 손바닥",
+          "acting": "피노키오가 손가락을 하나씩 펴며 잎의 넓은 면을 확인한다. 귀뚜라미의 작은 시범과 손바닥 크기를 비교해 부드러운 접촉의 의미를 먼저 보여준다.",
+          "dialogue_ids": [
+            "S05-N028",
+            "S05-N029"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B05-C03",
+          "start_seconds": 184,
+          "end_seconds": 192,
+          "camera": "MS 50mm · 접촉 직전 질문",
+          "acting": "손바닥이 잎의 옆에 준비되고 피노키오가 윤수 쪽을 본다. 바람과 잎의 물리는 부드럽게 이어지며, 질문 종료 192초 경계에서 외부 대기를 시작한다.",
+          "dialogue_ids": [
+            "S05-N030"
+          ],
+          "phase": "PROMPT",
+          "external_pause_after_event": "S05-P04"
+        },
+        {
+          "id": "B05-C04",
+          "start_seconds": 192,
+          "end_seconds": 202,
+          "camera": "SIDE MS 45mm · 조심스러운 접촉",
+          "acting": "손바닥 접촉점에 맞춰 잎이 옆으로 움직이고 피노키오가 한 걸음 통과한다. 손이 먼저 관통하지 않도록 손→잎→몸 이동 순서를 보인다. 몸이 지난 뒤 천천히 놓는다.",
+          "dialogue_ids": [
+            "S05-N031",
+            "S05-N032"
+          ],
+          "phase": "REACT"
+        },
+        {
+          "id": "B05-C05",
+          "start_seconds": 202,
+          "end_seconds": 210,
+          "camera": "OTS 40mm · 여전히 가려진 전면",
+          "acting": "돌아간 잎 너머로 붉은 모서리만 보인다. 피노키오가 큰 줄기의 왼쪽과 오른쪽을 번갈아 보지만 카메라는 무대 전면을 공개하지 않는다. I09의 공간 발견을 남긴다.",
+          "dialogue_ids": [
+            "S05-N033"
+          ],
+          "phase": "NARRATIVE"
+        }
+      ],
+      "interaction_id": "S05-P04"
+    },
+    {
+      "id": "B06",
+      "title": "나무 뒤의 빨간 천막",
+      "start_seconds": 210,
+      "end_seconds": 258,
+      "goal": "원본 I09로 소리의 근원을 최초로 공개한다. 인형극에 끌리는 이유는 자신과 닮은 나무 인형의 움직임이다.",
+      "continuity": "I09 직전까지 큰 나무가 전면을 가림. 반응 후에는 천막 앞과 동물 관객, 닫힌 본무대 커튼이 보임. 이름 없는 인형 둘의 앞턱 맛보기만 허용하고 핍은 소개하지 않는다.",
+      "dialogue": [
+        {
+          "kind": "ORIGINAL",
+          "dialogue_id": "S05-U011",
+          "source_index": 11,
+          "speaker": "피노키오",
+          "text": "I can hear the music, but where is it coming from?"
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N034",
+          "new_index": 34,
+          "speaker": "피노키오",
+          "text": "I can see a red corner."
+        },
+        {
+          "kind": "ORIGINAL",
+          "dialogue_id": "S05-U012",
+          "source_index": 12,
+          "speaker": "귀뚜라미",
+          "text": "Yoonsu can see the square."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N035",
+          "new_index": 35,
+          "speaker": "귀뚜라미",
+          "text": "You can look around this side."
+        },
+        {
+          "kind": "ORIGINAL",
+          "dialogue_id": "S05-U013",
+          "source_index": 13,
+          "speaker": "귀뚜라미",
+          "text": "Yoonsu, where should Pinocchio look?"
+        },
+        {
+          "kind": "INTERACTION",
+          "id": "I09"
+        },
+        {
+          "kind": "ORIGINAL",
+          "dialogue_id": "S05-U014",
+          "source_index": 14,
+          "speaker": "피노키오",
+          "text": "Wow! A puppet show!"
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N036",
+          "new_index": 36,
+          "speaker": "피노키오",
+          "text": "Little wooden dancers!"
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N037",
+          "new_index": 37,
+          "speaker": "피노키오",
+          "text": "Their arms move like mine."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N038",
+          "new_index": 38,
+          "speaker": "귀뚜라미",
+          "text": "And yours can carry a schoolbook."
+        }
+      ],
+      "shots": [
+        {
+          "id": "B06-C01",
+          "start_seconds": 210,
+          "end_seconds": 219,
+          "camera": "MS 50mm · 보이지만 찾지 못하는 얼굴",
+          "acting": "피노키오가 나무 양쪽을 번갈아 보다 U011을 말한다. 붉은 천 한 귀퉁이와 음악만 단서로 남긴다. 가방과 신발의 이전 상태는 그대로 이어진다.",
+          "dialogue_ids": [
+            "S05-U011",
+            "S05-N034"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B06-C02",
+          "start_seconds": 219,
+          "end_seconds": 228,
+          "camera": "TWO SHOT 45mm · 관객의 시야 설명",
+          "acting": "귀뚜라미가 윤수 쪽을 보고 원본 U012를 말한 뒤 나무 옆으로 몸을 낮춰 방향만 가리킨다. 카메라는 시범을 보여줘도 가림을 넘지 않는다.",
+          "dialogue_ids": [
+            "S05-U012",
+            "S05-N035"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B06-C03",
+          "start_seconds": 228,
+          "end_seconds": 237,
+          "camera": "MS 50mm · 마지막 가려진 시야",
+          "acting": "피노키오는 아직 줄기를 보고 있고 귀뚜라미는 나무 옆을 가리킨다. 원본 U013이 마지막 발화. 237초 경계에서 외부 대기로 전환한다.",
+          "dialogue_ids": [
+            "S05-U013"
+          ],
+          "phase": "PROMPT",
+          "external_pause_after_event": "I09"
+        },
+        {
+          "id": "B06-C04",
+          "start_seconds": 237,
+          "end_seconds": 249,
+          "camera": "PAN RIGHT 35mm · 첫 전면 공개",
+          "acting": "응답 후 카메라가 먼저 오른쪽으로 팬하고 큰 나무가 화면 옆으로 빠지며 빨간 천막이 나타난다. 이어 피노키오 두 눈이 커진다. 닫힌 본무대 커튼 앞턱에서 이름 없는 작은 인형 둘이 팔과 몸을 두어 번 흔든다. 원본 U014가 첫 재개 발화.",
+          "dialogue_ids": [
+            "S05-U014",
+            "S05-N036"
+          ],
+          "phase": "REACT"
+        },
+        {
+          "id": "B06-C05",
+          "start_seconds": 249,
+          "end_seconds": 258,
+          "camera": "OVER SHOULDER 45mm · 닮은 팔과 책가방",
+          "acting": "피노키오가 자신의 팔꿈치를 한 번 굽혀 인형과 비교하고 웃는다. 귀뚜라미는 그의 가방 쪽을 본다. 맛보기 인형은 앞턱 옆 가림판으로 물러나며 본커튼은 열리지 않는다. 이 순간 핍의 이름·얼굴 소개, 커튼 고장, 본공연은 없다.",
+          "dialogue_ids": [
+            "S05-N037",
+            "S05-N038"
+          ],
+          "phase": "NARRATIVE"
+        }
+      ],
+      "interaction_id": "I09"
+    },
+    {
+      "id": "B07",
+      "title": "손끝에 남아 있는 약속",
+      "start_seconds": 258,
+      "end_seconds": 302,
+      "goal": "원본 약속 경고를 추상적인 말로만 두지 않고 가방 속 책의 감촉과 연결한다. 피노키오는 목적을 몰라서가 아니라 알고도 망설인다.",
+      "continuity": "학교와 연결된 책·제페토의 약속은 S03에서 이어온 정보. 가방을 열거나 책을 꺼내지 않는다. 아직 본공연 시작 전이며 학교로 돌아갈 통로는 열려 있다.",
+      "dialogue": [
+        {
+          "kind": "ORIGINAL",
+          "dialogue_id": "S05-U015",
+          "source_index": 15,
+          "speaker": "귀뚜라미",
+          "text": "Pinocchio, remember your promise."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N039",
+          "new_index": 39,
+          "speaker": "피노키오",
+          "text": "Grandpa packed my book."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N040",
+          "new_index": 40,
+          "speaker": "귀뚜라미",
+          "text": "Feel it through your bag."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N041",
+          "new_index": 41,
+          "speaker": "피노키오",
+          "text": "I can see its corners."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N042",
+          "new_index": 42,
+          "speaker": "귀뚜라미",
+          "text": "Yoonsu, can you help him remember?"
+        },
+        {
+          "kind": "INTERACTION",
+          "id": "S05-P05"
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N043",
+          "new_index": 43,
+          "speaker": "피노키오",
+          "text": "My book is still here."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N044",
+          "new_index": 44,
+          "speaker": "귀뚜라미",
+          "text": "So is your promise."
+        },
+        {
+          "kind": "ORIGINAL",
+          "dialogue_id": "S05-U016",
+          "source_index": 16,
+          "speaker": "피노키오",
+          "text": "I know, I know."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N045",
+          "new_index": 45,
+          "speaker": "피노키오",
+          "text": "The show hasn't started yet."
+        }
+      ],
+      "shots": [
+        {
+          "id": "B07-C01",
+          "start_seconds": 258,
+          "end_seconds": 266,
+          "camera": "MS 50mm · 경고와 시선 이동",
+          "acting": "귀뚜라미가 피노키오 가까이 와 U015를 말한다. 피노키오의 웃음이 작아지고 무대에서 가방으로 시선이 내려간다. 비난하거나 무섭게 몰아붙이지 않는다.",
+          "dialogue_ids": [
+            "S05-U015",
+            "S05-N039"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B07-C02",
+          "start_seconds": 266,
+          "end_seconds": 275,
+          "camera": "INSERT 60mm · 책이 있는 가방",
+          "acting": "가방 천에 비치는 네모난 책 윤곽을 보여준다. 피노키오가 손가락으로 공중에서 네모를 짚어보고, 귀뚜라미가 손을 댈 위치를 시범한다.",
+          "dialogue_ids": [
+            "S05-N040",
+            "S05-N041"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B07-C03",
+          "start_seconds": 275,
+          "end_seconds": 284,
+          "camera": "TWO SHOT 50mm · 기억을 돕는 질문",
+          "acting": "피노키오 손이 가방 옆에서 준비되고 귀뚜라미가 윤수 쪽으로 몸을 돌린다. 마지막 질문 종료 284초에서 외부 대기. 가방에 손이 닿는 본반응은 다음 컷.",
+          "dialogue_ids": [
+            "S05-N042"
+          ],
+          "phase": "PROMPT",
+          "external_pause_after_event": "S05-P05"
+        },
+        {
+          "id": "B07-C04",
+          "start_seconds": 284,
+          "end_seconds": 294,
+          "camera": "CU→MS 55mm · 소품과 마음",
+          "acting": "손바닥이 가방에 닿고 손끝이 책 모서리를 짚는다. 피노키오 눈이 학교 방향을 향하며 어깨가 조금 내려간다. 물체 접촉과 표정 변화가 동시에 읽히게 한다.",
+          "dialogue_ids": [
+            "S05-N043",
+            "S05-N044"
+          ],
+          "phase": "REACT"
+        },
+        {
+          "id": "B07-C05",
+          "start_seconds": 294,
+          "end_seconds": 302,
+          "camera": "PROFILE 45mm · 기억하지만 머무는 얼굴",
+          "acting": "피노키오가 U016을 말하고 다시 닫힌 무대 커튼을 본다. 무대가 아직 시작 전이라는 사실을 머물 이유로 삼는 표정. 귀뚜라미는 가방과 피노키오를 조용히 번갈아 본다.",
+          "dialogue_ids": [
+            "S05-U016",
+            "S05-N045"
+          ],
+          "phase": "NARRATIVE"
+        }
+      ],
+      "interaction_id": "S05-P05"
+    },
+    {
+      "id": "B08",
+      "title": "작은 관객이 지나갈 자리",
+      "start_seconds": 302,
+      "end_seconds": 344,
+      "goal": "광장 관객에게 접근하는 동선을 실제로 보여 주고, 자신의 발이 통로를 막고 있음을 알아차려 자리를 양보한다.",
+      "continuity": "천막 발견 위치에서 동물 관객 뒤쪽까지 짧게 이동. 새 동물은 원본 S06의 무언 관객 일부이며 이름·대사·별도 이야기 없음. 학교 길은 뒤로 이어짐.",
+      "dialogue": [
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N046",
+          "new_index": 46,
+          "speaker": "피노키오",
+          "text": "Oh! More little visitors."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N047",
+          "new_index": 47,
+          "speaker": "귀뚜라미",
+          "text": "They're trying to get past."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N048",
+          "new_index": 48,
+          "speaker": "피노키오",
+          "text": "My feet are in their way."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N049",
+          "new_index": 49,
+          "speaker": "귀뚜라미",
+          "text": "Leave them a little path."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N050",
+          "new_index": 50,
+          "speaker": "피노키오",
+          "text": "Yoonsu, how can I make room?"
+        },
+        {
+          "kind": "INTERACTION",
+          "id": "S05-P06"
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N051",
+          "new_index": 51,
+          "speaker": "피노키오",
+          "text": "There they go."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N052",
+          "new_index": 52,
+          "speaker": "귀뚜라미",
+          "text": "Now they can pass."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N053",
+          "new_index": 53,
+          "speaker": "피노키오",
+          "text": "They found their places."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N054",
+          "new_index": 54,
+          "speaker": "귀뚜라미",
+          "text": "Our road is still behind us."
+        }
+      ],
+      "shots": [
+        {
+          "id": "B08-C01",
+          "start_seconds": 302,
+          "end_seconds": 310,
+          "camera": "WIDE 35mm · 관객 뒤 접근",
+          "acting": "피노키오가 천막 쪽으로 몇 걸음 다가오다 작은 동물 관객 둘을 알아본다. 귀뚜라미가 피노키오 발과 관객 사이 위치를 살핀다. 무대와 학교길의 방향은 바뀌지 않는다.",
+          "dialogue_ids": [
+            "S05-N046",
+            "S05-N047"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B08-C02",
+          "start_seconds": 310,
+          "end_seconds": 318,
+          "camera": "LOW MS 45mm · 발과 통로",
+          "acting": "피노키오가 자기 발이 빈 통로에 놓인 것을 보고 발끝을 안으로 돌린다. 귀뚜라미가 한쪽으로 몸을 비켜 빈 공간을 시범한다. 동물들은 자연스럽게 발을 멈춘다.",
+          "dialogue_ids": [
+            "S05-N048",
+            "S05-N049"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B08-C03",
+          "start_seconds": 318,
+          "end_seconds": 327,
+          "camera": "MS 50mm · 자리를 양보할 준비",
+          "acting": "피노키오가 지나갈 방향을 보고 한쪽 발을 가볍게 뗄 준비를 한다. 마지막 질문 종료 327초에서만 외부 대기한다.",
+          "dialogue_ids": [
+            "S05-N050"
+          ],
+          "phase": "PROMPT",
+          "external_pause_after_event": "S05-P06"
+        },
+        {
+          "id": "B08-C04",
+          "start_seconds": 327,
+          "end_seconds": 337,
+          "camera": "WIDE 40mm · 실제 통과",
+          "acting": "피노키오가 옆으로 한 걸음 옮기고 손바닥으로 통로를 안내한다. 작은 관객 둘은 차례로 지나며 피노키오는 시선으로 확인한다. 다리·꼬리·가방이 관통하지 않도록 서로 다른 동선을 준다.",
+          "dialogue_ids": [
+            "S05-N051",
+            "S05-N052"
+          ],
+          "phase": "REACT"
+        },
+        {
+          "id": "B08-C05",
+          "start_seconds": 337,
+          "end_seconds": 344,
+          "camera": "TRACK 40mm · 자리 찾은 관객",
+          "acting": "지나간 작은 관객이 앞쪽 자리에 멈추는 모습을 따라 피노키오도 관객 가장자리에 선다. 통로가 트이며 같은 무대 왼쪽에서 북을 든 마라의 위치가 온전히 보인다. 마라는 말하지 않는다. 귀뚜라미가 뒤의 학교길을 돌아보고 피노키오의 퇴로가 열려 있음을 확인한다.",
+          "dialogue_ids": [
+            "S05-N053",
+            "S05-N054"
+          ],
+          "phase": "NARRATIVE"
+        }
+      ],
+      "interaction_id": "S05-P06"
+    },
+    {
+      "id": "B09",
+      "title": "책가방도 함께 자리를 잡기",
+      "start_seconds": 344,
+      "end_seconds": 386,
+      "goal": "새 공간에 들어왔어도 책을 잃거나 두고 가지 않는 연속성을 보장한다. 옆으로 튀어나온 가방을 몸 앞으로 옮겨 주변 관객을 배려한다.",
+      "continuity": "B08의 관객 가장자리. 끈은 어깨에 걸린 채 가방만 몸 앞쪽으로 회전. 책은 안에 그대로, 떨어지는 물건 없음. 관객은 무언 반응만 한다.",
+      "dialogue": [
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N055",
+          "new_index": 55,
+          "speaker": "피노키오",
+          "text": "My bag is sticking out."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N056",
+          "new_index": 56,
+          "speaker": "귀뚜라미",
+          "text": "It needs a safer place."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N057",
+          "new_index": 57,
+          "speaker": "피노키오",
+          "text": "I can bring it round."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N058",
+          "new_index": 58,
+          "speaker": "귀뚜라미",
+          "text": "Keep the strap on."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N059",
+          "new_index": 59,
+          "speaker": "피노키오",
+          "text": "Yoonsu, can you help me move it?"
+        },
+        {
+          "kind": "INTERACTION",
+          "id": "S05-P07"
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N060",
+          "new_index": 60,
+          "speaker": "피노키오",
+          "text": "There. Right in front of me."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N061",
+          "new_index": 61,
+          "speaker": "귀뚜라미",
+          "text": "And your book stays inside."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N062",
+          "new_index": 62,
+          "speaker": "피노키오",
+          "text": "Everyone has room now."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N063",
+          "new_index": 63,
+          "speaker": "귀뚜라미",
+          "text": "You still have time to leave."
+        }
+      ],
+      "shots": [
+        {
+          "id": "B09-C01",
+          "start_seconds": 344,
+          "end_seconds": 352,
+          "camera": "MS 50mm · 가방과 관객의 간격",
+          "acting": "피노키오가 몸을 돌릴 때 가방이 옆으로 튀어나오는 것을 보고 즉시 멈춘다. 가까운 작은 관객은 고개만 돌린다. 실제로 치거나 다치게 하는 장면은 없다.",
+          "dialogue_ids": [
+            "S05-N055",
+            "S05-N056"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B09-C02",
+          "start_seconds": 352,
+          "end_seconds": 360,
+          "camera": "INSERT 60mm · 끈을 잡을 위치",
+          "acting": "피노키오가 끈을 눈으로 따라 어깨와 가방의 연결을 확인한다. 귀뚜라미는 몸 앞 빈 공간을 가리키고 피노키오는 양손을 나누어 준비한다.",
+          "dialogue_ids": [
+            "S05-N057",
+            "S05-N058"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B09-C03",
+          "start_seconds": 360,
+          "end_seconds": 369,
+          "camera": "MS 50mm · 이동 직전 질문",
+          "acting": "어깨 끈은 유지하고 손은 끈과 가방 옆에 준비한다. 마지막 질문 종료 369초에서 외부 대기하며 다음 컷에서만 가방 이동.",
+          "dialogue_ids": [
+            "S05-N059"
+          ],
+          "phase": "PROMPT",
+          "external_pause_after_event": "S05-P07"
+        },
+        {
+          "id": "B09-C04",
+          "start_seconds": 369,
+          "end_seconds": 379,
+          "camera": "THREE QUARTER 45mm · 가방 이동 반응",
+          "acting": "한 손은 끈을 고정하고 반대 손은 가방을 몸 앞에 천천히 돌린다. 가방 바닥이 옷을 통과하지 않게 몸과의 간격을 유지하고 손이 닿은 지점에 맞춰 움직인다.",
+          "dialogue_ids": [
+            "S05-N060",
+            "S05-N061"
+          ],
+          "phase": "REACT"
+        },
+        {
+          "id": "B09-C05",
+          "start_seconds": 379,
+          "end_seconds": 386,
+          "camera": "TWO SHOT 45mm · 여유와 선택",
+          "acting": "피노키오가 옆 관객과의 틈을 확인하고 미소 짓는다. 귀뚜라미가 학교 길 쪽으로 몸을 반쯤 돌리고 피노키오도 잠깐 그쪽으로 몸과 체중을 옮긴다. 가방을 정리했으니 떠날 수 있지만, 다시 들리는 북에 눈이 무대로 돌아간다. 두 방향 사이의 망설임을 한 번의 자율 동작으로 보인다.",
+          "dialogue_ids": [
+            "S05-N062",
+            "S05-N063"
+          ],
+          "phase": "NARRATIVE"
+        }
+      ],
+      "interaction_id": "S05-P07"
+    },
+    {
+      "id": "B10",
+      "title": "한 발 뒤에서 시작을 기다리다",
+      "start_seconds": 386,
+      "end_seconds": 432,
+      "goal": "피노키오의 잠깐 보겠다는 원본 결정을 끝에 고정한다. 학교 약속을 아는 채 머무는 선택이 6화의 오래 머무름으로 이어지게 한다.",
+      "continuity": "동물 관객 앞쪽의 안전한 빈자리. 모자 착용·정상 코·마른 신발, 책이 든 가방은 몸 앞에서 끈 유지. 귀뚜라미는 바로 옆 땅. 마라는 무대 왼쪽에서 북만 치며 아직 말하지 않는다.",
+      "dialogue": [
+        {
+          "kind": "ORIGINAL",
+          "dialogue_id": "S05-U017",
+          "source_index": 17,
+          "speaker": "피노키오",
+          "text": "I'll only watch for a minute."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N064",
+          "new_index": 64,
+          "speaker": "귀뚜라미",
+          "text": "The stage is close. Keep some space."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N065",
+          "new_index": 65,
+          "speaker": "피노키오",
+          "text": "My toes are near the edge."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N066",
+          "new_index": 66,
+          "speaker": "귀뚜라미",
+          "text": "This spot is far enough."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N067",
+          "new_index": 67,
+          "speaker": "귀뚜라미",
+          "text": "Yoonsu, can you help him step back?"
+        },
+        {
+          "kind": "INTERACTION",
+          "id": "S05-P08"
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N068",
+          "new_index": 68,
+          "speaker": "피노키오",
+          "text": "Now there is room."
+        },
+        {
+          "kind": "NEW",
+          "dialogue_id": "S05-N069",
+          "new_index": 69,
+          "speaker": "귀뚜라미",
+          "text": "I'm staying beside you."
+        },
+        {
+          "kind": "ORIGINAL",
+          "dialogue_id": "S05-U018",
+          "source_index": 18,
+          "speaker": "내레이션",
+          "text": "But sometimes, one little minute can turn into a very long time."
+        }
+      ],
+      "shots": [
+        {
+          "id": "B10-C01",
+          "start_seconds": 386,
+          "end_seconds": 394,
+          "camera": "MS 50mm · 스스로 정한 한 분",
+          "acting": "피노키오가 막힌 것 없는 학교 쪽 통로를 돌아본 뒤, 나가려던 발을 멈추고 원본 U017로 스스로 머무는 결정을 말한다. 귀뚜라미는 동의하는 끄덕임 없이 안전한 거리를 가리킨다. 무대에 오르거나 공연 참여를 약속하지 않는다.",
+          "dialogue_ids": [
+            "S05-U017",
+            "S05-N064"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B10-C02",
+          "start_seconds": 394,
+          "end_seconds": 403,
+          "camera": "LOW MS 40mm · 무대 앞 거리",
+          "acting": "피노키오가 발끝과 무대 사이를 내려다보고, 귀뚜라미가 바닥에서 한 걸음 뒤로 이동한다. 바닥은 평평하며 위험한 낭떠러지나 새 장애물을 만들지 않는다.",
+          "dialogue_ids": [
+            "S05-N065",
+            "S05-N066"
+          ],
+          "phase": "NARRATIVE"
+        },
+        {
+          "id": "B10-C03",
+          "start_seconds": 403,
+          "end_seconds": 411,
+          "camera": "TWO SHOT 45mm · 마지막 질문",
+          "acting": "귀뚜라미가 뒤쪽 빈자리를 가리키고 피노키오는 옮길 발에 체중을 준비한다. 질문 종료 411초에서 외부 대기. 화면의 기다림은 432초 본편 시간에 넣지 않는다.",
+          "dialogue_ids": [
+            "S05-N067"
+          ],
+          "phase": "PROMPT",
+          "external_pause_after_event": "S05-P08"
+        },
+        {
+          "id": "B10-C04",
+          "start_seconds": 411,
+          "end_seconds": 423,
+          "camera": "WIDE 40mm · 최종 자리 맞춤",
+          "acting": "피노키오가 두 발을 순서대로 뒤로 옮기고 가방을 몸 앞에서 안정시킨다. 귀뚜라미가 그의 옆으로 와 선다. 관객·무대·열린 학교길의 공간 관계를 한 화면에 남긴다.",
+          "dialogue_ids": [
+            "S05-N068",
+            "S05-N069"
+          ],
+          "phase": "REACT"
+        },
+        {
+          "id": "B10-C05",
+          "start_seconds": 423,
+          "end_seconds": 432,
+          "camera": "WIDE 35mm · S06 첫 구도로 인계",
+          "acting": "원본 U018만 마지막 음성으로 들린다. 피노키오의 흥분과 귀뚜라미의 걱정을 함께 담고, 무대 왼쪽 마라가 같은 북 모티프를 친다. 본무대 커튼은 닫힌 채, 조명 점등·밧줄 당기기·핍 소개는 없다. 아침 햇빛을 유지하고 북소리를 끊지 않은 채 S06의 마라 첫 인사로 이어진다.",
+          "dialogue_ids": [
+            "S05-U018"
+          ],
+          "phase": "NARRATIVE"
+        }
+      ],
+      "interaction_id": "S05-P08"
+    }
+  ]
+}

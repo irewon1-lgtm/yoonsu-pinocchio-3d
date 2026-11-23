@@ -28,3 +28,11 @@ python3 scripts/validate_series_v2.py
 
 ## S04 ChatGPT 상세 설계 (S02/S03 베이스)
 [7분 59초·50컷·윤수 참여 10회 전체 대본](scenes/S04/script_v2_draft.md) · [JSON 제작 정본](scenes/S04/scene_design_v2.json) · [베이스 엔진 인계](docs/series_v2/S04_ENGINE_HANDOFF.md). 기존 대사 32문장 보존, 신규 77문장. 신규 귀뚜라미 성우는 미승인/음성 생성 차단. 실제 S02 렌더러는 확인되지 않아 설계 데이터 구조만 계승.
+
+## S05 및 12장면 연속성 설계
+
+[5화 전체 대본](scenes/S05/script_v2_draft.md) · [12장면 연결표](docs/series_v2/STORY_CONTINUITY_S01_S12.md) · [5화 구현 인계](docs/series_v2/S05_ENGINE_HANDOFF.md) · [검증 기록](scenes/S05/QA_G0_G1.md)
+
+5화는 7분 12초 목표·50컷·윤수 참여 10회로 설계했다. 4화의 낯선 소리 → 5화의 음악과 천막 발견 → 6화의 닫힌 커튼 앞 대기로 연결하며, 원본 18개 대사와 I08·I09를 보존한다. 12장면 전체 11개 경계의 시간·소품·목적·행동을 연결 문서에 기록했다.
+
+**상태: G1 상세 설계 REVIEW_REQUIRED.** 432초는 계획이며 실제 영상 길이가 아니다. S05 영상·음성 합성·장치 QA는 NOT_RUN, 귀뚜라미 승인 음성은 BLOCKED_RESOURCE. 기존 S01~S04와 정본은 보존한다.

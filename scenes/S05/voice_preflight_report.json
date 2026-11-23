@@ -1,0 +1,846 @@
+{
+  "scene": "S05",
+  "audit_scope": "REFERENCE_FILES_AND_CAST_ASSIGNMENTS_ONLY",
+  "reference_integrity": "PASS",
+  "story_dialogue_count": 87,
+  "optional_example_count": 10,
+  "story_speaker_counts": {
+    "피노키오": 45,
+    "귀뚜라미": 39,
+    "내레이션": 3
+  },
+  "optional_example_speaker_counts": {
+    "피노키오": 5,
+    "귀뚜라미": 5
+  },
+  "blocked_speakers": [
+    "귀뚜라미"
+  ],
+  "full_scene_voice_gate": "BLOCKED_RESOURCE",
+  "audio_synthesis": "NOT_RUN",
+  "audio_duration_and_lipsync": "NOT_RUN",
+  "references": [
+    {
+      "slug": "narrator",
+      "path": "assets/voice_refs/v6/narrator_V6_APPROVED.mp3",
+      "sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+      "status": "PASS"
+    },
+    {
+      "slug": "pinocchio",
+      "path": "assets/voice_refs/v6/pinocchio_V6_APPROVED.mp3",
+      "sha256": "a32569705a717ac92c8ecbe1c515b9e31e389f508164458ed22a06adcbba0b3d",
+      "status": "PASS"
+    },
+    {
+      "slug": "geppetto",
+      "path": "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3",
+      "sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+      "status": "PASS"
+    },
+    {
+      "slug": "blue_fairy",
+      "path": "assets/voice_refs/v6/blue_fairy_V6_APPROVED.mp3",
+      "sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+      "status": "PASS"
+    }
+  ],
+  "voice_assignments": [
+    {
+      "id": "S05-U001",
+      "speaker": "피노키오",
+      "text": "Cricket, what's that sound?",
+      "kind": "ORIGINAL",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-U002",
+      "speaker": "귀뚜라미",
+      "text": "Listen carefully.",
+      "kind": "ORIGINAL",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N001",
+      "speaker": "피노키오",
+      "text": "My feet are noisy.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N002",
+      "speaker": "귀뚜라미",
+      "text": "Then let them rest.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N003",
+      "speaker": "귀뚜라미",
+      "text": "Bring your hands up.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N004",
+      "speaker": "피노키오",
+      "text": "Like this?",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N005",
+      "speaker": "피노키오",
+      "text": "Yoonsu, how can I listen better?",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N006",
+      "speaker": "피노키오",
+      "text": "Now I can hear better.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N007",
+      "speaker": "귀뚜라미",
+      "text": "Keep your eyes on the path.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N008",
+      "speaker": "피노키오",
+      "text": "It's beyond those leaves.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N009",
+      "speaker": "피노키오",
+      "text": "A tiny tap... and a high sound.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N010",
+      "speaker": "귀뚜라미",
+      "text": "Close your eyes for a moment.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N011",
+      "speaker": "피노키오",
+      "text": "There it is again.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-U003",
+      "speaker": "귀뚜라미",
+      "text": "Yoonsu, can you hear it too?",
+      "kind": "ORIGINAL",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-U004",
+      "speaker": "귀뚜라미",
+      "text": "What do you hear?",
+      "kind": "ORIGINAL",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-U005",
+      "speaker": "귀뚜라미",
+      "text": "It's coming from the village square.",
+      "kind": "ORIGINAL",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-U006",
+      "speaker": "피노키오",
+      "text": "Music! I love music!",
+      "kind": "ORIGINAL",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N012",
+      "speaker": "피노키오",
+      "text": "I can feel it in my feet.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-U007",
+      "speaker": "귀뚜라미",
+      "text": "But school is waiting.",
+      "kind": "ORIGINAL",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N013",
+      "speaker": "피노키오",
+      "text": "I can still see the roof.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N014",
+      "speaker": "귀뚜라미",
+      "text": "Your book is for that school.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N015",
+      "speaker": "피노키오",
+      "text": "Grandpa put it here.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N016",
+      "speaker": "귀뚜라미",
+      "text": "Yoonsu, where is our school?",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N017",
+      "speaker": "피노키오",
+      "text": "There! Beside the tall bell.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N018",
+      "speaker": "귀뚜라미",
+      "text": "That's our way.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-U008",
+      "speaker": "피노키오",
+      "text": "Just one little look!",
+      "kind": "ORIGINAL",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N019",
+      "speaker": "귀뚜라미",
+      "text": "We must not stay.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-U009",
+      "speaker": "내레이션",
+      "text": "Pinocchio followed the sound.",
+      "kind": "ORIGINAL",
+      "reference_slug": "narrator",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N020",
+      "speaker": "귀뚜라미",
+      "text": "Careful, that branch is low.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N021",
+      "speaker": "피노키오",
+      "text": "It almost brushed my hat.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N022",
+      "speaker": "귀뚜라미",
+      "text": "Bend your knees like this.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N023",
+      "speaker": "피노키오",
+      "text": "Yoonsu, how can I go under?",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N024",
+      "speaker": "피노키오",
+      "text": "My hat stayed on!",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N025",
+      "speaker": "귀뚜라미",
+      "text": "You kept your hat safe.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-U010",
+      "speaker": "내레이션",
+      "text": "A bright red tent was hiding behind a big tree.",
+      "kind": "ORIGINAL",
+      "reference_slug": "narrator",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N026",
+      "speaker": "피노키오",
+      "text": "These leaves brush my face.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N027",
+      "speaker": "귀뚜라미",
+      "text": "Don't pull them off.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N028",
+      "speaker": "피노키오",
+      "text": "I'll use an open hand.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N029",
+      "speaker": "귀뚜라미",
+      "text": "Gently, like this.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N030",
+      "speaker": "피노키오",
+      "text": "Yoonsu, can you help with these leaves?",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N031",
+      "speaker": "피노키오",
+      "text": "Now my face is clear.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N032",
+      "speaker": "귀뚜라미",
+      "text": "The leaves are safe.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N033",
+      "speaker": "피노키오",
+      "text": "That big trunk still blocks my view.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-U011",
+      "speaker": "피노키오",
+      "text": "I can hear the music, but where is it coming from?",
+      "kind": "ORIGINAL",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N034",
+      "speaker": "피노키오",
+      "text": "I can see a red corner.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-U012",
+      "speaker": "귀뚜라미",
+      "text": "Yoonsu can see the square.",
+      "kind": "ORIGINAL",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N035",
+      "speaker": "귀뚜라미",
+      "text": "You can look around this side.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-U013",
+      "speaker": "귀뚜라미",
+      "text": "Yoonsu, where should Pinocchio look?",
+      "kind": "ORIGINAL",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-U014",
+      "speaker": "피노키오",
+      "text": "Wow! A puppet show!",
+      "kind": "ORIGINAL",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N036",
+      "speaker": "피노키오",
+      "text": "Little wooden dancers!",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N037",
+      "speaker": "피노키오",
+      "text": "Their arms move like mine.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N038",
+      "speaker": "귀뚜라미",
+      "text": "And yours can carry a schoolbook.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-U015",
+      "speaker": "귀뚜라미",
+      "text": "Pinocchio, remember your promise.",
+      "kind": "ORIGINAL",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N039",
+      "speaker": "피노키오",
+      "text": "Grandpa packed my book.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N040",
+      "speaker": "귀뚜라미",
+      "text": "Feel it through your bag.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N041",
+      "speaker": "피노키오",
+      "text": "I can see its corners.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N042",
+      "speaker": "귀뚜라미",
+      "text": "Yoonsu, can you help him remember?",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N043",
+      "speaker": "피노키오",
+      "text": "My book is still here.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N044",
+      "speaker": "귀뚜라미",
+      "text": "So is your promise.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-U016",
+      "speaker": "피노키오",
+      "text": "I know, I know.",
+      "kind": "ORIGINAL",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N045",
+      "speaker": "피노키오",
+      "text": "The show hasn't started yet.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N046",
+      "speaker": "피노키오",
+      "text": "Oh! More little visitors.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N047",
+      "speaker": "귀뚜라미",
+      "text": "They're trying to get past.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N048",
+      "speaker": "피노키오",
+      "text": "My feet are in their way.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N049",
+      "speaker": "귀뚜라미",
+      "text": "Leave them a little path.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N050",
+      "speaker": "피노키오",
+      "text": "Yoonsu, how can I make room?",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N051",
+      "speaker": "피노키오",
+      "text": "There they go.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N052",
+      "speaker": "귀뚜라미",
+      "text": "Now they can pass.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N053",
+      "speaker": "피노키오",
+      "text": "They found their places.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N054",
+      "speaker": "귀뚜라미",
+      "text": "Our road is still behind us.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N055",
+      "speaker": "피노키오",
+      "text": "My bag is sticking out.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N056",
+      "speaker": "귀뚜라미",
+      "text": "It needs a safer place.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N057",
+      "speaker": "피노키오",
+      "text": "I can bring it round.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N058",
+      "speaker": "귀뚜라미",
+      "text": "Keep the strap on.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N059",
+      "speaker": "피노키오",
+      "text": "Yoonsu, can you help me move it?",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N060",
+      "speaker": "피노키오",
+      "text": "There. Right in front of me.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N061",
+      "speaker": "귀뚜라미",
+      "text": "And your book stays inside.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N062",
+      "speaker": "피노키오",
+      "text": "Everyone has room now.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N063",
+      "speaker": "귀뚜라미",
+      "text": "You still have time to leave.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-U017",
+      "speaker": "피노키오",
+      "text": "I'll only watch for a minute.",
+      "kind": "ORIGINAL",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N064",
+      "speaker": "귀뚜라미",
+      "text": "The stage is close. Keep some space.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N065",
+      "speaker": "피노키오",
+      "text": "My toes are near the edge.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N066",
+      "speaker": "귀뚜라미",
+      "text": "This spot is far enough.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N067",
+      "speaker": "귀뚜라미",
+      "text": "Yoonsu, can you help him step back?",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-N068",
+      "speaker": "피노키오",
+      "text": "Now there is room.",
+      "kind": "NEW",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-N069",
+      "speaker": "귀뚜라미",
+      "text": "I'm staying beside you.",
+      "kind": "NEW",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-U018",
+      "speaker": "내레이션",
+      "text": "But sometimes, one little minute can turn into a very long time.",
+      "kind": "ORIGINAL",
+      "reference_slug": "narrator",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-P01-EXAMPLE",
+      "speaker": "피노키오",
+      "text": "Cup your ears!",
+      "kind": "OPTIONAL_EXAMPLE",
+      "narrative_duration_counted": false,
+      "microphone_enabled_during_playback": false,
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "I08-EXAMPLE",
+      "speaker": "귀뚜라미",
+      "text": "I hear music!",
+      "kind": "OPTIONAL_EXAMPLE",
+      "narrative_duration_counted": false,
+      "microphone_enabled_during_playback": false,
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-P02-EXAMPLE",
+      "speaker": "귀뚜라미",
+      "text": "Point to school!",
+      "kind": "OPTIONAL_EXAMPLE",
+      "narrative_duration_counted": false,
+      "microphone_enabled_during_playback": false,
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-P03-EXAMPLE",
+      "speaker": "피노키오",
+      "text": "Duck your head!",
+      "kind": "OPTIONAL_EXAMPLE",
+      "narrative_duration_counted": false,
+      "microphone_enabled_during_playback": false,
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-P04-EXAMPLE",
+      "speaker": "피노키오",
+      "text": "Move the leaves!",
+      "kind": "OPTIONAL_EXAMPLE",
+      "narrative_duration_counted": false,
+      "microphone_enabled_during_playback": false,
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "I09-EXAMPLE",
+      "speaker": "귀뚜라미",
+      "text": "Look over there!",
+      "kind": "OPTIONAL_EXAMPLE",
+      "narrative_duration_counted": false,
+      "microphone_enabled_during_playback": false,
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-P05-EXAMPLE",
+      "speaker": "귀뚜라미",
+      "text": "Touch your bag!",
+      "kind": "OPTIONAL_EXAMPLE",
+      "narrative_duration_counted": false,
+      "microphone_enabled_during_playback": false,
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    },
+    {
+      "id": "S05-P06-EXAMPLE",
+      "speaker": "피노키오",
+      "text": "Let them through!",
+      "kind": "OPTIONAL_EXAMPLE",
+      "narrative_duration_counted": false,
+      "microphone_enabled_during_playback": false,
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-P07-EXAMPLE",
+      "speaker": "피노키오",
+      "text": "Move your bag!",
+      "kind": "OPTIONAL_EXAMPLE",
+      "narrative_duration_counted": false,
+      "microphone_enabled_during_playback": false,
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_AUDIO_NOT_RUN"
+    },
+    {
+      "id": "S05-P08-EXAMPLE",
+      "speaker": "귀뚜라미",
+      "text": "Step back, please!",
+      "kind": "OPTIONAL_EXAMPLE",
+      "narrative_duration_counted": false,
+      "microphone_enabled_during_playback": false,
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE"
+    }
+  ]
+}

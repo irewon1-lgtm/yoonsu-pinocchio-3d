@@ -47,3 +47,11 @@ python3 scripts/validate_s02_design.py
 - **귀뚜라미 승인 성우가 미확보:** `BLOCKED_RESOURCE`. 기존 승인 성우로 바꾸지 말고 다른 캐릭터의 소리 합성과 캐릭터/카메라 연기 작업만 계속 가능(각 장면 G1 사용자 승인 이후).
 - 검증 명령: `python3 scripts/validate_s04_design.py` 및 `python3 scripts/s04_approved_voice_tts.py` (기본 실행은 합성 없음).
 - **S02, S03, S04 상세 신규 대본은 모두 REVIEW_REQUIRED.** 사용자 승인 전 G2 이상 제작을 자동으로 완료 처리하지 않는다.
+
+## S05 — 4화의 음악에서 6화의 인형극으로 이어지는 상세 설계
+
+- 정본 설계: [S05 전체 대본](../../scenes/S05/script_v2_draft.md), [구조화 설계](../../scenes/S05/scene_design_v2.json), [10회 참여](../../scenes/S05/interaction_map_v2.json), [S05 구현 인계](S05_ENGINE_HANDOFF.md).
+- 432초 목표 / 50컷 / 원본 18줄 보존 / 원본 I08·I09 + 신규 8회. 모든 발화는 한 개의 컷에 배정된다. WAIT·예시 재생은 컷 사이 본편 시계 밖이며 분량에 넣지 않는다.
+- [12장면 연결표](STORY_CONTINUITY_S01_S12.md)와 [구조화 연결 계약](STORY_CONTINUITY_S01_S12.json)을 함께 읽는다. 4화 마지막 미확인 소리·소품·동작을 그대로 받아 시작하고, 6화 첫 북소리와 닫힌 본무대 커튼에 이어진다. 6화의 커튼 개방·핍 소개·구조를 5화에서 먼저 실행하지 않는다.
+- `python3 scripts/validate_s05_design.py`, `python3 scripts/validate_story_continuity.py`, `python3 scripts/s05_voice_preflight.py`를 실행한다. 첫 두 명령은 설계 자료 검증이며 마지막 명령은 승인 참조 음성과 캐스트 배정 검사다. 실제 음성 합성은 하지 않는다. `--require-ready`에서는 귀뚜라미 승인 음성 미확보로 종료 코드 2를 반환한다.
+- S02 기반은 **설계 데이터 계약**이다. 실제 실행 엔진·S05 영상·음성·장치 작동은 NOT_RUN. S02~S05는 모두 G1 REVIEW_REQUIRED. 이 연결 설계는 G1 이후 승인 절차를 대체하지 않는다.

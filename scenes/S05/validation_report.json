@@ -1,0 +1,230 @@
+{
+  "scope": "G1_AUTHORED_DATA_AND_REFERENCE_CHECKS_NOT_PRODUCTION_QA",
+  "base_commit": "fbf9f4deb576d5d7871d4260ec303c16d954cdb1",
+  "recorded_utc": "2026-11-23T01:38:30.704104+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "system": "Linux"
+  },
+  "design_data_checks": "PASS",
+  "script_creative_approval": "REVIEW_REQUIRED",
+  "full_scene_voice_gate": "BLOCKED_RESOURCE",
+  "actual_audio_synthesis": "NOT_RUN",
+  "actual_mp4_duration": "NOT_RUN",
+  "rendered_continuity": "NOT_RUN",
+  "device_vad_touch": "NOT_RUN",
+  "independent_editorial_review": {
+    "scope": "READING_DESIGN_AGAINST_CANONICAL_S05_S06_AND_12_SCENE_CONTRACT",
+    "result": "FIVE_NEW_LINES_AND_THREE_ACTING_NOTES_REVISED",
+    "production_pass_claimed": false
+  },
+  "input_sha256": {
+    ".github/workflows/validate-series-v2.yml": "97486024c3484c8fd51ab61d4e2a725800dd9c752996b2cb53db33faf7dda709",
+    "AGENTS.md": "8a7c14dc0e8aebdefb029520d061ad9b34cbd6a0e7b3691c7467540cdf5e0a8f",
+    "README.md": "141e7c8a622c72e81388694ba4f06123568912dbcbce9b4153fefb2ca0edb064",
+    "assets/voice_refs/v6/VOICE_REFERENCES.json": "fc6a0c516226f2eeede59a561e42195bb75df6c1d2279bef1124c3c9cf3d9e5f",
+    "assets/voice_refs/v6/blue_fairy_V6_APPROVED.mp3": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+    "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+    "assets/voice_refs/v6/narrator_V6_APPROVED.mp3": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+    "assets/voice_refs/v6/pinocchio_V6_APPROVED.mp3": "a32569705a717ac92c8ecbe1c515b9e31e389f508164458ed22a06adcbba0b3d",
+    "docs/series_v2/CODEX_HANDOFF.md": "c8d7b38e81f2dd089de8f9b2a364b4c075569f1f6c0885033df8945a0f42eed0",
+    "docs/series_v2/PRODUCTION_PRD_V2_0.md": "111699314e5cb6fe516bc6630bf00d8eb6b49c4397cd58e90dc84284fec6c2bb",
+    "docs/series_v2/S05_ENGINE_HANDOFF.md": "9452395fd442b08a5c9359cc94a1cefe285238f93a42b89c0aadd0307de752ac",
+    "docs/series_v2/STORY_CONTINUITY_S01_S12.json": "a9f0da01a6d6e72f07e44e8f79e57b1ed4e2ef51bf71381d46a04adcb9790b5c",
+    "docs/series_v2/STORY_CONTINUITY_S01_S12.md": "7ecea693c38346f2eb85cb6d0d4c3db5522947281ec44c0fbe0c9337ee70b45a",
+    "docs/series_v2/VALIDATION.md": "dbdcf0c6ff64f147024127b4acf51302a5cd70f4c3cf76be0921a3ad1f7f04d9",
+    "docs/series_v2/series_manifest_v2.json": "602ee952be6c41faa756c5c42fba260b8374c6116eb114001df1bb7f225c8e73",
+    "docs/series_v2/sources/01_STEP2_PRODUCTION_STORYBOARD_SPEC.md": "b5ff72a4e6d889006eacc669a7c15c68a739ca1805117b8c79d79d4ab5181610",
+    "docs/series_v2/sources/01_STORY_MASTER_V1_1.md": "eb5ca04f5e4302d4a71726f1a24b6cead5cec682b96baee600f6eef8ee951d3e",
+    "scenes/S02/interaction_map_v2.json": "d2bad5a21c30d31f0364258c2a63d85ffc5244bb2db17114806fdce590e5fec6",
+    "scenes/S02/scene_design_v2.json": "4d711e1b924b36a0eb97fd95faf075f9574d4bf5e9644379f83d372503a9c2ad",
+    "scenes/S02/script_v2_draft.md": "adda38827fe487ff2925c289d14104c7c8ce6afad1cfbe9efdc2cc7ba78642b5",
+    "scenes/S03/interaction_map_v2.json": "301c5e997e99a58265457f4f1120ea1b736a8aa1aa453689d9fe2e22d58652a5",
+    "scenes/S03/scene_design_v2.json": "90682c1563ace76f72809129e1b58eb52944984a86333052353ce1d5f8f6d56f",
+    "scenes/S03/script_v2_draft.md": "cf88cd9a4257f5b62cc5a552be1d81551ddafde15bf509d9ae63ef107384eb50",
+    "scenes/S04/interaction_map_v2.json": "a3e11b0627f71a1abe77ec92785c83a1cf3a0ae9bed878a2a3023119700050fb",
+    "scenes/S04/scene_design_v2.json": "d2e3d8892fc8cc1c0ec1b7d47e02c2c7480f625bea150928ec28cb60f14b6440",
+    "scenes/S05/interaction_map_v2.json": "b25c2c1bc4314b19f5f13e9818948ba8ff822512532ca19884df3ea0b00eb3ee",
+    "scenes/S05/scene_design_v2.json": "d3ef0c7608dc3a4f2a455db84568a57eb80205051ebf0aefada24d7141c58b91",
+    "scenes/S05/script_v2_draft.md": "b5c12676aa88272df9cde63ecff97f36fa80a6b8db03020acd85a99c6db85760",
+    "scenes/S05/source_delta.md": "d3f17868b3ea95e8d8ead8c7a2805e19a57b2c279bf110b13560e7e1323f6778",
+    "scenes/S05/voice_preflight_report.json": "794093d609a335c6a0a4baf9c527ab2630630eec247d590b3cb6ee347ea9d025",
+    "scripts/s02_approved_voice_tts.py": "7247790748ee1484a735add5cfb75ac9ce424f07779a36ba5da72ab63b628aaa",
+    "scripts/s03_approved_voice_tts.py": "84d0ded7f201f1d15e1aa7b8754adbef6300c2b18f27f58c2f59950c3ed731b0",
+    "scripts/s04_approved_voice_tts.py": "79ab44e3caea7ef1edf57eac5602c388dbe3cee7cf6601b3241e5df0bdda249e",
+    "scripts/s05_voice_preflight.py": "4fb760fd5a4df2bbc2898b422ca1b677a7bd049044d17c0ff6713f48ff934128",
+    "scripts/validate_s02_design.py": "eb4578e0aaf59e1fbbcadb2305b4760ce1cf2b153020c4b90eb44d5eaa538090",
+    "scripts/validate_s03_design.py": "5563699874b9faaec89a8df8cffca8eaf70944701632c2afc35b720821e90e11",
+    "scripts/validate_s04_design.py": "08ff27c6d68d0d99cfb560f11ae4161e13836ea12982b2b83fe6139ad7b0335e",
+    "scripts/validate_s05_design.py": "ee798f4bfec0e73ef56687e944e95f3c4cdaac7d5c179cc804bafe47a093114a",
+    "scripts/validate_series_v2.py": "e0b805b34f3f781d0d5d6cd75606c4c4cba1ddc85da89e066888a29d83e7e109",
+    "scripts/validate_story_continuity.py": "96226b24e9c81fa192951fcf22d68f5c35ef7f75f9e7cdc5b1fb50b512eeee54",
+    "scenes/S04/script_v2_draft.md": "85b4f0b803203e1bc73b1af3a5876d151f436952ae3878bc55de76debc9da857"
+  },
+  "checks": [
+    {
+      "check": "immutable_sources_and_series",
+      "command": [
+        "python3",
+        "scripts/validate_series_v2.py"
+      ],
+      "started_utc": "2026-11-23T01:38:12.895272+00:00",
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "result": "PASS",
+      "stdout": "PASS: manifest version 2.0\nPASS: story_master source exists\nPASS: story_master immutable\nPASS: story_master original SHA256\nPASS: storyboard source exists\nPASS: storyboard immutable\nPASS: storyboard original SHA256\nPASS: V1.1 12 scene titles\nPASS: original 21 voice events\nPASS: storyboard 12 sections\nPASS: scene ordering S01-S12\nPASS: original scene names unchanged\nPASS: 138 original storyboard cuts\nPASS: all 21 legacy IDs retained once\nPASS: S01 exempt and frozen\nPASS: S02-S12 exactly 10 target events each\nPASS: S02-S12 each 360+ narrative seconds\nPASS: 110 target interactions\nPASS: 20 original events included in 110\nPASS: 90 net new interactions\nPASS: production not falsely marked complete\nPASS: planning/source integrity only; no new video or expanded script approved.\n",
+      "stderr": ""
+    },
+    {
+      "check": "s02_design_regression",
+      "command": [
+        "python3",
+        "scripts/validate_s02_design.py"
+      ],
+      "started_utc": "2026-11-23T01:38:12.895606+00:00",
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "result": "PASS",
+      "stdout": "PASS: 21 source lines\nPASS: 10 scene beats\nPASS: 443s target timeline\nPASS: planned >=360 seconds excluding wait\nPASS: continuous timeline\nPASS: shot sum per beat\nPASS: 50 shots\nPASS: original wording/speaker/order unchanged\nPASS: 81 new dialogue lines\nPASS: 9 new interactions + original I02\nPASS: interaction map matches script\nPASS: approval not misrepresented\nPASS: all source lines appear in screenplay\nDesign validation PASS; actual video and human approval NOT_RUN\n",
+      "stderr": ""
+    },
+    {
+      "check": "s03_design_regression",
+      "command": [
+        "python3",
+        "scripts/validate_s03_design.py"
+      ],
+      "started_utc": "2026-11-23T01:38:12.895790+00:00",
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "result": "PASS",
+      "stdout": "PASS: V1.1 S03 22 original lines\nPASS: S02 scene-design schema superset\nPASS: 10 story beats\nPASS: target 456 seconds\nPASS: non-wait runtime target >=360s\nPASS: no timing gaps\nPASS: 50 acting/camera shots\nPASS: shot spans add up\nPASS: original wording, speaker, relative order unchanged\nPASS: source indexes 1..22 preserved\nPASS: original metadata consistent\nPASS: added-line count consistent\nPASS: eight new and two legacy interactions in plot order\nPASS: 10 consistent WAIT/REACT events\nPASS: child accessibility and once-only reactions\nPASS: original I03/I04 not replaced\nPASS: unapproved script not marked production-ready\nPASS: all 22 originals printed in script\nPASS: S02 engine contract reference preserved\nDESIGN PASS only; 3D runtime, voice, rendered duration and child use NOT_RUN\n",
+      "stderr": ""
+    },
+    {
+      "check": "s04_design_regression",
+      "command": [
+        "python3",
+        "scripts/validate_s04_design.py"
+      ],
+      "started_utc": "2026-11-23T01:38:30.703979+00:00",
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "result": "PASS",
+      "stdout": "PASS V1.1 S04 32 speech lines present\nPASS S02 JSON schema backward-compatible\nPASS S03 JSON schema backward-compatible\nPASS correct S04 / S02 contract\nPASS 10 story beats\nPASS 479s target no gaps\nPASS wait excluded from planned duration\nPASS beat timeline contiguous\nPASS 50 unique camera/acting shots\nPASS 5 shots/beat and timings add up\nPASS positive shot durations\nPASS all 32 original lines speaker/text/order preserved\nPASS source indexing unchanged 1..32\nPASS source count metadata\nPASS 77 new lines metadata\nPASS exactly 10 events preserving I05/I06/I07\nPASS three original, seven new\nPASS interaction map matches authored screenplay\nPASS VAD/tap accessible once-only interactions\nPASS no user approval inferred\nPASS new Cricket speaker flagged as unapproved\nPASS all 32 source lines printed in screenplay\nPASS S04 manifest matches draft\nDESIGN_ONLY_PASS: actual S04 rendering/voice/child testing NOT_RUN, Cricket voice BLOCKED_RESOURCE\n",
+      "stderr": "",
+      "prior_attempts": [
+        {
+          "check": "s04_design_regression",
+          "command": [
+            "python3",
+            "scripts/validate_s04_design.py"
+          ],
+          "started_utc": "2026-11-23T01:38:12.896302+00:00",
+          "expected_exit_code": 0,
+          "exit_code": 1,
+          "result": "FAIL",
+          "stdout": "PASS V1.1 S04 32 speech lines present\nPASS S02 JSON schema backward-compatible\nPASS S03 JSON schema backward-compatible\nPASS correct S04 / S02 contract\nPASS 10 story beats\nPASS 479s target no gaps\nPASS wait excluded from planned duration\nPASS beat timeline contiguous\nPASS 50 unique camera/acting shots\nPASS 5 shots/beat and timings add up\nPASS positive shot durations\nPASS all 32 original lines speaker/text/order preserved\nPASS source indexing unchanged 1..32\nPASS source count metadata\nPASS 77 new lines metadata\nPASS exactly 10 events preserving I05/I06/I07\nPASS three original, seven new\nPASS interaction map matches authored screenplay\nPASS VAD/tap accessible once-only interactions\nPASS no user approval inferred\nPASS new Cricket speaker flagged as unapproved\n",
+          "stderr": "FAIL: [Errno 2] No such file or directory: '/workspace/scratch/4851b214300f/repo/scenes/S04/script_v2_draft.md'\n"
+        }
+      ],
+      "resolution": "Materialized missing unchanged S04 screenplay from the locked base commit; no source/code/expected criteria changed."
+    },
+    {
+      "check": "s02_voice_references",
+      "command": [
+        "python3",
+        "scripts/s02_approved_voice_tts.py"
+      ],
+      "started_utc": "2026-11-23T01:38:12.919907+00:00",
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "result": "PASS",
+      "stdout": "VOICE_REF_PASS narrator A /workspace/scratch/4851b214300f/repo/assets/voice_refs/v6/narrator_V6_APPROVED.mp3\nVOICE_REF_PASS pinocchio A /workspace/scratch/4851b214300f/repo/assets/voice_refs/v6/pinocchio_V6_APPROVED.mp3\nVOICE_REF_PASS geppetto A /workspace/scratch/4851b214300f/repo/assets/voice_refs/v6/geppetto_V6_APPROVED.mp3\nVOICE_REF_PASS blue_fairy C /workspace/scratch/4851b214300f/repo/assets/voice_refs/v6/blue_fairy_V6_APPROVED.mp3\nS02 voiced screenplay lines 102\nDRY RUN: no voice generated. To render samples use --synthesize --limit 3\n",
+      "stderr": ""
+    },
+    {
+      "check": "s03_voice_references",
+      "command": [
+        "python3",
+        "scripts/s03_approved_voice_tts.py"
+      ],
+      "started_utc": "2026-11-23T01:38:12.934435+00:00",
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "result": "PASS",
+      "stdout": "VOICE_REF_PASS narrator A /workspace/scratch/4851b214300f/repo/assets/voice_refs/v6/narrator_V6_APPROVED.mp3\nVOICE_REF_PASS pinocchio A /workspace/scratch/4851b214300f/repo/assets/voice_refs/v6/pinocchio_V6_APPROVED.mp3\nVOICE_REF_PASS geppetto A /workspace/scratch/4851b214300f/repo/assets/voice_refs/v6/geppetto_V6_APPROVED.mp3\nVOICE_REF_PASS blue_fairy C /workspace/scratch/4851b214300f/repo/assets/voice_refs/v6/blue_fairy_V6_APPROVED.mp3\nS03 voiced screenplay lines 114\nDRY RUN: no voice generated. To render samples use --synthesize --limit 3\n",
+      "stderr": ""
+    },
+    {
+      "check": "s04_voice_references",
+      "command": [
+        "python3",
+        "scripts/s04_approved_voice_tts.py"
+      ],
+      "started_utc": "2026-11-23T01:38:12.942261+00:00",
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "result": "PASS",
+      "stdout": "APPROVED_VOICE_REF_PASS narrator /workspace/scratch/4851b214300f/repo/assets/voice_refs/v6/narrator_V6_APPROVED.mp3\nAPPROVED_VOICE_REF_PASS pinocchio /workspace/scratch/4851b214300f/repo/assets/voice_refs/v6/pinocchio_V6_APPROVED.mp3\nAPPROVED_VOICE_REF_PASS geppetto /workspace/scratch/4851b214300f/repo/assets/voice_refs/v6/geppetto_V6_APPROVED.mp3\nAPPROVED_VOICE_REF_PASS blue_fairy /workspace/scratch/4851b214300f/repo/assets/voice_refs/v6/blue_fairy_V6_APPROVED.mp3\nS04_TTS_PREFLIGHT: all dialogue lines 109 known cast 82\nBLOCKED_RESOURCE: 귀뚜라미 voice reference not approved; lines 27\nDo not use any existing approved speaker as a replacement for Cricket.\nDRY_RUN_PASS_FOR_REFERENCES_ONLY: no audio synthesized; full S04 voice gate BLOCKED_RESOURCE\n",
+      "stderr": ""
+    },
+    {
+      "check": "s05_design_and_four_mutations",
+      "command": [
+        "python3",
+        "scripts/validate_s05_design.py",
+        "--self-test"
+      ],
+      "started_utc": "2026-11-23T01:38:12.943682+00:00",
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "result": "PASS",
+      "stdout": "PASS: locked source SHA256: docs/series_v2/sources/01_STORY_MASTER_V1_1.md\nPASS: locked source SHA256: docs/series_v2/sources/01_STEP2_PRODUCTION_STORYBOARD_SPEC.md\nPASS: canonical S05 contains 18 spoken lines\nPASS: S02 root field coverage (data only; not an engine test)\nPASS: S04 root field coverage (data only; not an engine test)\nPASS: S05 uses the S02 data contract\nPASS: runtime engine availability is not overstated\nPASS: screenplay approval is still required\nPASS: 432 narrative seconds planned at 24 fps, excluding pauses\nPASS: S04 predecessor is explicitly referenced\nPASS: S06 successor reference is present for handoff review\nPASS: Cricket remains an unapproved voice resource\nPASS: ten ordered beats B01-B10\nPASS: beat timeline covers 0-432 seconds with no gap or overlap\nPASS: B01 has five uniquely ordered shots\nPASS: B01 shot boundaries are contiguous\nPASS: B01 has positive shot durations\nPASS: B01 has no timed WAIT shot\nPASS: B01 has authored camera and acting notes for every shot\nPASS: B02 has five uniquely ordered shots\nPASS: B02 shot boundaries are contiguous\nPASS: B02 has positive shot durations\nPASS: B02 has no timed WAIT shot\nPASS: B02 has authored camera and acting notes for every shot\nPASS: B03 has five uniquely ordered shots\nPASS: B03 shot boundaries are contiguous\nPASS: B03 has positive shot durations\nPASS: B03 has no timed WAIT shot\nPASS: B03 has authored camera and acting notes for every shot\nPASS: B04 has five uniquely ordered shots\nPASS: B04 shot boundaries are contiguous\nPASS: B04 has positive shot durations\nPASS: B04 has no timed WAIT shot\nPASS: B04 has authored camera and acting notes for every shot\nPASS: B05 has five uniquely ordered shots\nPASS: B05 shot boundaries are contiguous\nPASS: B05 has positive shot durations\nPASS: B05 has no timed WAIT shot\nPASS: B05 has authored camera and acting notes for every shot\nPASS: B06 has five uniquely ordered shots\nPASS: B06 shot boundaries are contiguous\nPASS: B06 has positive shot durations\nPASS: B06 has no timed WAIT shot\nPASS: B06 has authored camera and acting notes for every shot\nPASS: B07 has five uniquely ordered shots\nPASS: B07 shot boundaries are contiguous\nPASS: B07 has positive shot durations\nPASS: B07 has no timed WAIT shot\nPASS: B07 has authored camera and acting notes for every shot\nPASS: B08 has five uniquely ordered shots\nPASS: B08 shot boundaries are contiguous\nPASS: B08 has positive shot durations\nPASS: B08 has no timed WAIT shot\nPASS: B08 has authored camera and acting notes for every shot\nPASS: B09 has five uniquely ordered shots\nPASS: B09 shot boundaries are contiguous\nPASS: B09 has positive shot durations\nPASS: B09 has no timed WAIT shot\nPASS: B09 has authored camera and acting notes for every shot\nPASS: B10 has five uniquely ordered shots\nPASS: B10 shot boundaries are contiguous\nPASS: B10 has positive shot durations\nPASS: B10 has no timed WAIT shot\nPASS: B10 has authored camera and acting notes for every shot\nPASS: 50 unique shots account for the complete narrative target\nPASS: only defined dialogue kinds are used\nPASS: all 18 original speakers, words and relative order are preserved\nPASS: source indices and original dialogue IDs are complete\nPASS: added dialogue IDs are unique and ordered\nPASS: dialogue counts match authored data\nPASS: Mara and Pip's spoken introductions remain in S06\nPASS: S05 starts and ends with its canonical boundary lines\nPASS: every spoken line has a unique dialogue ID\nPASS: every line appears exactly once in chronological shot order\nPASS: authored speech-density ceiling <=165 wpm; maximum=113.3 (not audio measurement)\nPASS: ten unique events: I08/I09 and eight new local IDs\nPASS: interaction totals and review/pause statuses match the brief\nPASS: script, beat and interaction-map event order agree\nPASS: event indices and legacy/new classifications match their IDs\nPASS: accessible VAD/touch contract; no STT or scores; no duplicate participation\nPASS: S05-P01 has one beat and a three-word cue\nPASS: S05-P01 is an external pause, triggered after audio and reacted to once\nPASS: S05-P01 prompt/speaker matches its actual dialogue\nPASS: S05-P01 question/demo -> pause boundary -> react/resume is explicit\nPASS: S05-P01 has exactly one local script marker\nPASS: S05-P01 prompt and resume are immediately adjacent to its marker\nPASS: I08 has one beat and a three-word cue\nPASS: I08 is an external pause, triggered after audio and reacted to once\nPASS: I08 prompt/speaker matches its actual dialogue\nPASS: I08 question/demo -> pause boundary -> react/resume is explicit\nPASS: I08 has exactly one local script marker\nPASS: I08 prompt and resume are immediately adjacent to its marker\nPASS: I08 original cue, question, resume and reaction sequence remain locked\nPASS: S05-P02 has one beat and a three-word cue\nPASS: S05-P02 is an external pause, triggered after audio and reacted to once\nPASS: S05-P02 prompt/speaker matches its actual dialogue\nPASS: S05-P02 question/demo -> pause boundary -> react/resume is explicit\nPASS: S05-P02 has exactly one local script marker\nPASS: S05-P02 prompt and resume are immediately adjacent to its marker\nPASS: S05-P03 has one beat and a three-word cue\nPASS: S05-P03 is an external pause, triggered after audio and reacted to once\nPASS: S05-P03 prompt/speaker matches its actual dialogue\nPASS: S05-P03 question/demo -> pause boundary -> react/resume is explicit\nPASS: S05-P03 has exactly one local script marker\nPASS: S05-P03 prompt and resume are immediately adjacent to its marker\nPASS: S05-P04 has one beat and a three-word cue\nPASS: S05-P04 is an external pause, triggered after audio and reacted to once\nPASS: S05-P04 prompt/speaker matches its actual dialogue\nPASS: S05-P04 question/demo -> pause boundary -> react/resume is explicit\nPASS: S05-P04 has exactly one local script marker\nPASS: S05-P04 prompt and resume are immediately adjacent to its marker\nPASS: I09 has one beat and a three-word cue\nPASS: I09 is an external pause, triggered after audio and reacted to once\nPASS: I09 prompt/speaker matches its actual dialogue\nPASS: I09 question/demo -> pause boundary -> react/resume is explicit\nPASS: I09 has exactly one local script marker\nPASS: I09 prompt and resume are immediately adjacent to its marker\nPASS: I09 original cue, question, resume and reaction sequence remain locked\nPASS: S05-P05 has one beat and a three-word cue\nPASS: S05-P05 is an external pause, triggered after audio and reacted to once\nPASS: S05-P05 prompt/speaker matches its actual dialogue\nPASS: S05-P05 question/demo -> pause boundary -> react/resume is explicit\nPASS: S05-P05 has exactly one local script marker\nPASS: S05-P05 prompt and resume are immediately adjacent to its marker\nPASS: S05-P06 has one beat and a three-word cue\nPASS: S05-P06 is an external pause, triggered after audio and reacted to once\nPASS: S05-P06 prompt/speaker matches its actual dialogue\nPASS: S05-P06 question/demo -> pause boundary -> react/resume is explicit\nPASS: S05-P06 has exactly one local script marker\nPASS: S05-P06 prompt and resume are immediately adjacent to its marker\nPASS: S05-P07 has one beat and a three-word cue\nPASS: S05-P07 is an external pause, triggered after audio and reacted to once\nPASS: S05-P07 prompt/speaker matches its actual dialogue\nPASS: S05-P07 question/demo -> pause boundary -> react/resume is explicit\nPASS: S05-P07 has exactly one local script marker\nPASS: S05-P07 prompt and resume are immediately adjacent to its marker\nPASS: S05-P08 has one beat and a three-word cue\nPASS: S05-P08 is an external pause, triggered after audio and reacted to once\nPASS: S05-P08 prompt/speaker matches its actual dialogue\nPASS: S05-P08 question/demo -> pause boundary -> react/resume is explicit\nPASS: S05-P08 has exactly one local script marker\nPASS: S05-P08 prompt and resume are immediately adjacent to its marker\nPASS: readable screenplay includes all dialogue and all 50 shot IDs\nPASS: S05 manifest matches the review-required draft\nDESIGN_DATA_PASS: structural checks only. Render/audio/device QA NOT_RUN; screenplay REVIEW_REQUIRED; Cricket voice BLOCKED_RESOURCE.\nNEGATIVE_CHECK_PASS: missing original line rejected (all 18 original speakers, words and relative order are preserved)\nNEGATIVE_CHECK_PASS: shot gap rejected (B01 shot boundaries are contiguous)\nNEGATIVE_CHECK_PASS: pause before/after wrong boundary rejected (S05-P01 question/demo -> pause boundary -> react/resume is explicit)\nNEGATIVE_CHECK_PASS: duplicate interaction rejected (script, beat and interaction-map event order agree)\n",
+      "stderr": ""
+    },
+    {
+      "check": "story_continuity_and_four_mutations",
+      "command": [
+        "python3",
+        "scripts/validate_story_continuity.py",
+        "--self-test"
+      ],
+      "started_utc": "2026-11-23T01:38:12.972939+00:00",
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "result": "PASS",
+      "stdout": "PASS: design review and unperformed rendered continuity remain distinct\nPASS: both original source hashes are explicitly locked\nPASS: source bytes match continuity reference: docs/series_v2/sources/01_STORY_MASTER_V1_1.md\nPASS: source bytes match continuity reference: docs/series_v2/sources/01_STEP2_PRODUCTION_STORYBOARD_SPEC.md\nPASS: all twelve scenes occur once in canonical order\nPASS: scene titles agree with the immutable source and manifest\nPASS: S01 has its source heading, day and causal role\nPASS: S01 entry_state describes location, character, prop and intention state\nPASS: S01 exit_state describes location, character, prop and intention state\nPASS: S02 has its source heading, day and causal role\nPASS: S02 entry_state describes location, character, prop and intention state\nPASS: S02 exit_state describes location, character, prop and intention state\nPASS: S03 has its source heading, day and causal role\nPASS: S03 entry_state describes location, character, prop and intention state\nPASS: S03 exit_state describes location, character, prop and intention state\nPASS: S04 has its source heading, day and causal role\nPASS: S04 entry_state describes location, character, prop and intention state\nPASS: S04 exit_state describes location, character, prop and intention state\nPASS: S05 has its source heading, day and causal role\nPASS: S05 entry_state describes location, character, prop and intention state\nPASS: S05 exit_state describes location, character, prop and intention state\nPASS: S06 has its source heading, day and causal role\nPASS: S06 entry_state describes location, character, prop and intention state\nPASS: S06 exit_state describes location, character, prop and intention state\nPASS: S07 has its source heading, day and causal role\nPASS: S07 entry_state describes location, character, prop and intention state\nPASS: S07 exit_state describes location, character, prop and intention state\nPASS: S08 has its source heading, day and causal role\nPASS: S08 entry_state describes location, character, prop and intention state\nPASS: S08 exit_state describes location, character, prop and intention state\nPASS: S09 has its source heading, day and causal role\nPASS: S09 entry_state describes location, character, prop and intention state\nPASS: S09 exit_state describes location, character, prop and intention state\nPASS: S10 has its source heading, day and causal role\nPASS: S10 entry_state describes location, character, prop and intention state\nPASS: S10 exit_state describes location, character, prop and intention state\nPASS: S11 has its source heading, day and causal role\nPASS: S11 entry_state describes location, character, prop and intention state\nPASS: S11 exit_state describes location, character, prop and intention state\nPASS: S12 has its source heading, day and causal role\nPASS: S12 entry_state describes location, character, prop and intention state\nPASS: S12 exit_state describes location, character, prop and intention state\nPASS: first school day and the following morning remain distinct\nPASS: human appearance is reserved for the final S12 exit state\nPASS: eleven unique consecutive transitions connect S01 through S12 without an orphan\nPASS: S01_S02 records causal, state, time, visual and audio handoff requirements\nPASS: S02_S03 records causal, state, time, visual and audio handoff requirements\nPASS: S03_S04 records causal, state, time, visual and audio handoff requirements\nPASS: S04_S05 records causal, state, time, visual and audio handoff requirements\nPASS: S05_S06 records causal, state, time, visual and audio handoff requirements\nPASS: S06_S07 records causal, state, time, visual and audio handoff requirements\nPASS: S07_S08 records causal, state, time, visual and audio handoff requirements\nPASS: S08_S09 records causal, state, time, visual and audio handoff requirements\nPASS: S09_S10 records causal, state, time, visual and audio handoff requirements\nPASS: S10_S11 records causal, state, time, visual and audio handoff requirements\nPASS: S11_S12 records causal, state, time, visual and audio handoff requirements\nPASS: S01 -> S02 preserves body and nose state at the boundary\nPASS: S02 -> S03 preserves body and nose state at the boundary\nPASS: S03 -> S04 preserves body and nose state at the boundary\nPASS: S04 -> S05 preserves body and nose state at the boundary\nPASS: S05 -> S06 preserves body and nose state at the boundary\nPASS: S06 -> S07 preserves body and nose state at the boundary\nPASS: S07 -> S08 preserves body and nose state at the boundary\nPASS: S08 -> S09 preserves body and nose state at the boundary\nPASS: S09 -> S10 preserves body and nose state at the boundary\nPASS: S10 -> S11 preserves body and nose state at the boundary\nPASS: S11 -> S12 preserves body and nose state at the boundary\nPASS: causal motifs have unique IDs\nPASS: PROMISE refers to existing later scenes\nPASS: MUSIC refers to existing later scenes\nPASS: SCHOOLBOOK refers to existing later scenes\nPASS: HELP refers to existing later scenes\nPASS: TRUTH_AND_BLUE_LIGHT refers to existing later scenes\nPASS: HAT_BAG_IDENTITY refers to existing later scenes\nPASS: both immediate S05 handoffs have explicit contracts\nPASS: S04_S05 preserves the exact canonical exit/entry spoken lines\nPASS: S04_S05 is a populated review contract, not a rendered match claim\nPASS: S05_S06 preserves the exact canonical exit/entry spoken lines\nPASS: S05_S06 is a populated review contract, not a rendered match claim\nPASS: boundary shot references point to the authored S04/S05 and canonical S06\nPASS: S05 retains dry shoes, delays the reveal and leaves S06 curtain/Pip/consequence events pending\nPASS: S05's two boundary contracts preserve day, body, nose, hat and schoolbook\nPASS: authored S04/S05 endpoints match the continuity contract\nPASS: S05 canonical entry/exit lines are assigned to the actual boundary shots\nPASS: music and stage discovery each have a distinct legacy gate\nPASS: I08 continuity gate matches the authored interaction\nPASS: I09 continuity gate matches the authored interaction\nPASS: readable continuity document covers all twelve scenes and eleven boundary IDs\nPASS: S01 preservation and unfinished production status remain explicit\nCONTINUITY_DATA_PASS: 12 scenes / 11 links / S04-S05-S06 references. Naturalness REVIEW_REQUIRED; rendered continuity and audio NOT_RUN.\nNEGATIVE_CHECK_PASS: missing S05-S06 link rejected (eleven unique consecutive transitions connect S01 through S12 without an orphan)\nNEGATIVE_CHECK_PASS: reordered transition rejected (eleven unique consecutive transitions connect S01 through S12 without an orphan)\nNEGATIVE_CHECK_PASS: premature curtain opening rejected (S05 retains dry shoes, delays the reveal and leaves S06 curtain/Pip/consequence events pending)\nNEGATIVE_CHECK_PASS: wrong canonical entry line rejected (S04_S05 preserves the exact canonical exit/entry spoken lines)\n",
+      "stderr": ""
+    },
+    {
+      "check": "s05_voice_assignments",
+      "command": [
+        "python3",
+        "scripts/s05_voice_preflight.py",
+        "--json",
+        "scenes/S05/voice_preflight_report.json"
+      ],
+      "started_utc": "2026-11-23T01:38:12.975983+00:00",
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "result": "PASS",
+      "stdout": "REFERENCE_INTEGRITY_PASS: 4 approved MP3 hashes verified\nS05 story dialogue: 87 {'피노키오': 45, '귀뚜라미': 39, '내레이션': 3}\nS05 optional examples outside narrative: 10 {'피노키오': 5, '귀뚜라미': 5}\nFULL_SCENE_VOICE_GATE: BLOCKED_RESOURCE ['귀뚜라미']\nAudio synthesis, measured timing and lipsync: NOT_RUN\nNo substitution by another character's approved voice is permitted.\n",
+      "stderr": ""
+    },
+    {
+      "check": "s05_voice_blocker_enforced",
+      "command": [
+        "python3",
+        "scripts/s05_voice_preflight.py",
+        "--require-ready"
+      ],
+      "started_utc": "2026-11-23T01:38:12.978693+00:00",
+      "expected_exit_code": 2,
+      "exit_code": 2,
+      "result": "PASS",
+      "stdout": "REFERENCE_INTEGRITY_PASS: 4 approved MP3 hashes verified\nS05 story dialogue: 87 {'피노키오': 45, '귀뚜라미': 39, '내레이션': 3}\nS05 optional examples outside narrative: 10 {'피노키오': 5, '귀뚜라미': 5}\nFULL_SCENE_VOICE_GATE: BLOCKED_RESOURCE ['귀뚜라미']\nAudio synthesis, measured timing and lipsync: NOT_RUN\nNo substitution by another character's approved voice is permitted.\n",
+      "stderr": "Production gate blocked: an approved Cricket voice is required.\n"
+    }
+  ]
+}

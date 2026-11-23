@@ -1,4 +1,4 @@
-name: Validate Pinocchio V2 stories S02-S04
+name: Validate Pinocchio V2 stories S02-S05 and 12-scene continuity
 on:
   push:
     branches:
@@ -10,10 +10,14 @@ on:
       - "scenes/S02/**"
       - "scenes/S03/**"
       - "scenes/S04/**"
+      - "scenes/S05/**"
       - "scripts/validate_series_v2.py"
       - "scripts/validate_s02_design.py"
       - "scripts/validate_s03_design.py"
       - "scripts/validate_s04_design.py"
+      - "scripts/validate_s05_design.py"
+      - "scripts/validate_story_continuity.py"
+      - "scripts/s05_voice_preflight.py"
       - "scripts/s02_approved_voice_tts.py"
       - "scripts/s03_approved_voice_tts.py"
       - "scripts/s04_approved_voice_tts.py"
@@ -26,10 +30,14 @@ on:
       - "scenes/S02/**"
       - "scenes/S03/**"
       - "scenes/S04/**"
+      - "scenes/S05/**"
       - "scripts/validate_series_v2.py"
       - "scripts/validate_s02_design.py"
       - "scripts/validate_s03_design.py"
       - "scripts/validate_s04_design.py"
+      - "scripts/validate_s05_design.py"
+      - "scripts/validate_story_continuity.py"
+      - "scripts/s05_voice_preflight.py"
       - "scripts/s02_approved_voice_tts.py"
       - "scripts/s03_approved_voice_tts.py"
       - "scripts/s04_approved_voice_tts.py"
@@ -53,3 +61,9 @@ jobs:
         run: python3 scripts/s03_approved_voice_tts.py
       - name: Verify voice references and blocked Cricket voice S04
         run: python3 scripts/s04_approved_voice_tts.py
+      - name: Validate S05 screenplay and external interaction pauses
+        run: python3 scripts/validate_s05_design.py
+      - name: Validate all 11 boundaries in one 12-scene story
+        run: python3 scripts/validate_story_continuity.py
+      - name: Verify S05 reference voices and report blocked Cricket
+        run: python3 scripts/s05_voice_preflight.py
