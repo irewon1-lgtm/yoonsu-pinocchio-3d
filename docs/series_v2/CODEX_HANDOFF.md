@@ -2,6 +2,10 @@
 
 **S02 상세 제작 설계는 ChatGPT가 직접 작성 완료했습니다.** Codex가 스토리·신규 영어 대사·윤수 참여 횟수나 카메라/동작을 새로 설계해서는 안 됩니다.
 
+## 음성 자료 연결
+- [승인 성우·기준 MP3/WAV·Chatterbox Nano 설정 경로](S02_APPROVED_VOICES.md)를 참고하고, 4개 참조 음원은 사용자 제공 `S02_APPROVED_V6_VOICES_AND_SETTINGS.zip`을 받아 `local_assets/approved_voice_refs/`에 압축 해제한다.
+- GitHub 안에 이미 있는 `downloads/s01-complete/S01_V7_VOICES.zip`은 **기존 26대사 비교용**이지 신규 S02 생성 파일이 아니다. 파일/엔진/설정 누락으로 합성이 불가하면 `BLOCKED_RESOURCE`로 보고하고 임의 성우로 교체하지 말 것.
+
 ## 최신 S02 설계 파일 (읽기 필수)
 - `scenes/S02/script_v2_draft.md` — 7분 23초 목표, 신규 81문장+원본 21문장, 대사/동작·카메라 50컷
 - `scenes/S02/scene_design_v2.json` — 상세 대사·연기·컷 시간표의 기계 판독 설계
