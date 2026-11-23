@@ -209,5 +209,10 @@
       "expanded_script_approved": false
     }
   ],
-  "next_scene": "S03"
+  "next_scene": "S02",
+  "latest_scene_design_completed": "S03",
+  "unapproved_designs": [
+    "S02",
+    "S03"
+  ]
 }
