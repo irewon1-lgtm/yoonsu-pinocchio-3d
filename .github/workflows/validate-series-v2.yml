@@ -6,6 +6,8 @@ on:
     paths:
       - "AGENTS.md"
       - "docs/series_v2/**"
+      - "assets/voice_refs/**"
+      - "scripts/s02_approved_voice_tts.py"
       - "scenes/S02/**"
       - "scripts/validate_series_v2.py"
       - "scripts/validate_s02_design.py"
@@ -14,6 +16,8 @@ on:
     paths:
       - "AGENTS.md"
       - "docs/series_v2/**"
+      - "assets/voice_refs/**"
+      - "scripts/s02_approved_voice_tts.py"
       - "scenes/S02/**"
       - "scripts/validate_series_v2.py"
       - "scripts/validate_s02_design.py"
@@ -27,3 +31,5 @@ jobs:
         run: python3 scripts/validate_series_v2.py
       - name: Verify ChatGPT S02 screenplay integrity
         run: python3 scripts/validate_s02_design.py
+      - name: Verify approved V6 voice MP3s against SHA256 (dry-run)
+        run: python3 scripts/s02_approved_voice_tts.py
