@@ -39,3 +39,11 @@ python3 scripts/validate_s02_design.py
 - Codex는 S03 새 대본 작성 금지. **S03 456초/50컷/10회(원본 I03·I04 포함)** 설계만 구현한다. `python3 scripts/validate_s03_design.py` 를 실행한다.
 - S02 실제 구현 엔진은 현재 브랜치에 없고 설계 데이터만 존재. S02 `scene_design_v2.json` 스키마와 승인 성우·기존 S01 Blender를 참조한다. 엔진 미구현분은 구현 계획으로 보고하되 승인 없는 대사·장면·참여 변경 금지.
 - S02 설계는 여전히 REVIEW_REQUIRED; S01/S02 원본 파일 삭제/수정 금지.
+
+## S04 — ChatGPT 직접 제작 설계 (S02 데이터 엔진 계승)
+- **정본 설계:** `scenes/S04/script_v2_draft.md`(479초 목표·50컷·기존 32문장+신규 77문장) / `scenes/S04/scene_design_v2.json` / `scenes/S04/interaction_map_v2.json`.
+- 원본 I05/I06/I07를 포함해 윤수 참여 10회. 데이터 구조는 S02/S03 호환. 새 이야기 창작은 Codex 업무가 아니며, 설계의 3D 구현·검증만 한다.
+- `docs/series_v2/S04_ENGINE_HANDOFF.md`에서 3화→4화 소품 연속성과 2화 베이스 스키마를 확인. S02 실제 Blender 엔진은 없으므로 `NOT_RUN` 상태 유지.
+- **귀뚜라미 승인 성우가 미확보:** `BLOCKED_RESOURCE`. 기존 승인 성우로 바꾸지 말고 다른 캐릭터의 소리 합성과 캐릭터/카메라 연기 작업만 계속 가능(각 장면 G1 사용자 승인 이후).
+- 검증 명령: `python3 scripts/validate_s04_design.py` 및 `python3 scripts/s04_approved_voice_tts.py` (기본 실행은 합성 없음).
+- **S02, S03, S04 상세 신규 대본은 모두 REVIEW_REQUIRED.** 사용자 승인 전 G2 이상 제작을 자동으로 완료 처리하지 않는다.

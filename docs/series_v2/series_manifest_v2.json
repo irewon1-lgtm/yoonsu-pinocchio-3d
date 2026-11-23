@@ -102,10 +102,19 @@
         "I06",
         "I07"
       ],
-      "progress": "NOT_RUN",
+      "progress": "DESIGN_COMPLETE_REVIEW_REQUIRED",
       "min_narrative_seconds": 360,
       "target_interactions": 10,
-      "expanded_script_approved": false
+      "expanded_script_approved": false,
+      "design_owner": "ChatGPT",
+      "design_doc": "scenes/S04/script_v2_draft.md",
+      "design_runtime_target_seconds": 479,
+      "design_shot_count": 50,
+      "design_original_dialogue_count": 32,
+      "design_new_dialogue_count": 77,
+      "design_interactions": 10,
+      "design_base_engine": "S02_DATA_CONTRACT_ONLY_ENGINE_NOT_FOUND",
+      "new_character_voice_status": "CRICKET_BLOCKED_RESOURCE"
     },
     {
       "id": "S05",
@@ -210,9 +219,10 @@
     }
   ],
   "next_scene": "S02",
-  "latest_scene_design_completed": "S03",
+  "latest_scene_design_completed": "S04",
   "unapproved_designs": [
     "S02",
-    "S03"
+    "S03",
+    "S04"
   ]
 }

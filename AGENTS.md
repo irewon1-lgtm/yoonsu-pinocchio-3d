@@ -7,8 +7,8 @@
 3. **S02~S12 장면별 각각 실제 본편 ≥360초 + 윤수 참여 총 10회.** 원본 I02~I21을 각 장면 10회에 포함. 총 110회/새로운 90회.
 4. 아이의 영어 이해를 전제하지 않고 화면 행동→짧은 영어 반복→터치/발화. STT 정확도·발음 채점 금지.
 5. 실제 3D 캐릭터의 감정·표정·자율 동작·발 접지·물체 접촉을 구현. 정지 그림/카메라 이동/반복으로 6분을 채우지 않는다.
-6. **시리즈 상세 설계(대사·참여 이벤트·3D 연기·카메라)는 ChatGPT가 수행한다. Codex는 자체 대본 작성·살붙이기·추가 교육 이벤트 창작을 하지 않는다.** S02 및 S03 상세 설계는 각각 `scenes/S02/`·`scenes/S03/`에 작성되어 있으며, 사용자 검토 전 둘 다 `REVIEW_REQUIRED`이다. 승인 이후 Codex는 설계 내용을 바꾸지 않고 실제 3D 구현·QA만 한다. S03의 2화 기반은 현재 **S02 JSON/참여 계약·승인 성우 기준**이며 S02 실제 Blender 엔진은 미확인이다.
-7. 제작 순서는 **S02가 먼저**이며 S03 설계도 ChatGPT가 작성 완료한 **검토 대기 초안**이다. 기술·자료 검사는 `python3 scripts/validate_series_v2.py`, `python3 scripts/validate_s02_design.py`, `python3 scripts/validate_s03_design.py`. S01/S02 기존 자산 보호, 사용자 승인 전 각 장면의 G2 이후 제작 시작 금지.
+6. **스토리·대사·윤수 참여·카메라·3D 동작의 설계 책임은 ChatGPT, Codex는 구현·QA만 수행한다.** `scenes/S02/`, `scenes/S03/`, `scenes/S04/`에 각각 작성한 상세 설계를 무단으로 재집필/축약/변경하지 않는다. 세 장면은 사용자 검토 전 `REVIEW_REQUIRED`이고 실제 S02 Blender 실행 엔진은 미확인(구조화 데이터 계약만 호환)이다. S04 신규 귀뚜라미 성우는 승인 음원이 없으므로 `BLOCKED_RESOURCE`, 다른 캐릭터의 목소리로 임시 대체하여 PASS 표시 금지.
+7. 제작 순서는 **S02→S03→S04**. S02/S03/S04의 상세 설계는 작성되었지만 모두 `REVIEW_REQUIRED`이며 영상 제작 완료가 아니다. 기술·자료 검사는 `python3 scripts/validate_series_v2.py`, `python3 scripts/validate_s02_design.py`, `python3 scripts/validate_s03_design.py`, `python3 scripts/validate_s04_design.py`. S01~S03 자산 불변. 각 장면 상세 대본 승인 전 G2+ 제작 착수 금지.
 8. QA는 `PASS/FAIL/NOT_RUN/REVIEW_REQUIRED/BLOCKED_RESOURCE`를 실제 파일·로그·재생 근거 기준으로 표시한다.
 
 ---

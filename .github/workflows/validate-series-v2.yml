@@ -1,4 +1,4 @@
-name: Validate Pinocchio V2 story, voices and S02/S03 design
+name: Validate Pinocchio V2 stories S02-S04
 on:
   push:
     branches:
@@ -9,11 +9,14 @@ on:
       - "assets/voice_refs/**"
       - "scenes/S02/**"
       - "scenes/S03/**"
+      - "scenes/S04/**"
       - "scripts/validate_series_v2.py"
       - "scripts/validate_s02_design.py"
       - "scripts/validate_s03_design.py"
+      - "scripts/validate_s04_design.py"
       - "scripts/s02_approved_voice_tts.py"
       - "scripts/s03_approved_voice_tts.py"
+      - "scripts/s04_approved_voice_tts.py"
       - ".github/workflows/validate-series-v2.yml"
   pull_request:
     paths:
@@ -22,24 +25,31 @@ on:
       - "assets/voice_refs/**"
       - "scenes/S02/**"
       - "scenes/S03/**"
+      - "scenes/S04/**"
       - "scripts/validate_series_v2.py"
       - "scripts/validate_s02_design.py"
       - "scripts/validate_s03_design.py"
+      - "scripts/validate_s04_design.py"
       - "scripts/s02_approved_voice_tts.py"
       - "scripts/s03_approved_voice_tts.py"
+      - "scripts/s04_approved_voice_tts.py"
       - ".github/workflows/validate-series-v2.yml"
 jobs:
   validate:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
-      - name: Verify V1.1 sources and scene policy
+      - name: Validate immutable V1.1 and series policy
         run: python3 scripts/validate_series_v2.py
-      - name: Verify ChatGPT S02 design
+      - name: Validate S02 authored 50-cut screenplay
         run: python3 scripts/validate_s02_design.py
-      - name: Verify ChatGPT S03 design and S02 schema compatibility
+      - name: Validate S03 authored 50-cut screenplay
         run: python3 scripts/validate_s03_design.py
-      - name: Verify approved V6 reference voice MP3s and S02 inputs
+      - name: Validate S04 authored 50-cut screenplay and 10 interactions
+        run: python3 scripts/validate_s04_design.py
+      - name: Verify voice reference MP3 S02
         run: python3 scripts/s02_approved_voice_tts.py
-      - name: Verify approved V6 reference voice MP3s and S03 inputs
+      - name: Verify voice reference MP3 S03
         run: python3 scripts/s03_approved_voice_tts.py
+      - name: Verify voice references and blocked Cricket voice S04
+        run: python3 scripts/s04_approved_voice_tts.py
