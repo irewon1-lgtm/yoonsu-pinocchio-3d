@@ -33,3 +33,9 @@ python3 scripts/validate_s02_design.py
 ## 필수 게이트
 - G0 원본 SHA 확인 → G1 사용자 상세 대본 승인 → G2 카메라 좌표/콘티 → G3 동작 시연 → G4 영상/음성 → G5 기술 QA·시각 검증 → G6 MP4/Blender/타임라인/로그 인계.
 - S01은 기존 완료분 그대로 보호. S03~S12도 각 장면의 상세 설계는 ChatGPT가 작성한 뒤 Codex가 구현한다.
+
+## S03 설계도 ChatGPT가 직접 작성 (2026-11-23)
+- [S03 상세 대본](../../scenes/S03/script_v2_draft.md), [S03 구조화 설계](../../scenes/S03/scene_design_v2.json), [S03 베이스 엔진 호환성](S03_ENGINE_HANDOFF.md).
+- Codex는 S03 새 대본 작성 금지. **S03 456초/50컷/10회(원본 I03·I04 포함)** 설계만 구현한다. `python3 scripts/validate_s03_design.py` 를 실행한다.
+- S02 실제 구현 엔진은 현재 브랜치에 없고 설계 데이터만 존재. S02 `scene_design_v2.json` 스키마와 승인 성우·기존 S01 Blender를 참조한다. 엔진 미구현분은 구현 계획으로 보고하되 승인 없는 대사·장면·참여 변경 금지.
+- S02 설계는 여전히 REVIEW_REQUIRED; S01/S02 원본 파일 삭제/수정 금지.

@@ -22,3 +22,6 @@ python3 scripts/validate_series_v2.py
 [7분 23초, 윤수 10회, 50컷 상세 대본](scenes/S02/script_v2_draft.md) · [구조화 설계](scenes/S02/scene_design_v2.json). S02 신규 창작은 ChatGPT가 작성하며 Codex는 승인 후 제작·검증합니다.
 
 - [S02 승인 성우 기준 음원·재합성 설정 경로](docs/series_v2/S02_APPROVED_VOICES.md) (참조 MP3 4개 GitHub 직접 등록).
+
+## S03 ChatGPT 직접 설계 (S02 베이스)
+[전체 S03 7분 36초/50컷/윤수 10회 상세 대본](scenes/S03/script_v2_draft.md) · [구조화 설계](scenes/S03/scene_design_v2.json) · [S02 엔진 호환 인계](docs/series_v2/S03_ENGINE_HANDOFF.md). S02 실제 3D 렌더러는 아직 확인되지 않아 설계 구조만 재사용하는 상태입니다.

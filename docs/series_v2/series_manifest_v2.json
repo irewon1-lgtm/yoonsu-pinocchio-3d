@@ -80,10 +80,18 @@
         "I03",
         "I04"
       ],
-      "progress": "NOT_RUN",
+      "progress": "DESIGN_COMPLETE_REVIEW_REQUIRED",
       "min_narrative_seconds": 360,
       "target_interactions": 10,
-      "expanded_script_approved": false
+      "expanded_script_approved": false,
+      "design_owner": "ChatGPT",
+      "design_doc": "scenes/S03/script_v2_draft.md",
+      "design_runtime_target_seconds": 456,
+      "design_shot_count": 50,
+      "design_original_dialogue_count": 22,
+      "design_new_dialogue_count": 92,
+      "design_interactions": 10,
+      "design_base_engine": "S02_DATA_CONTRACT_ONLY_ENGINE_NOT_FOUND"
     },
     {
       "id": "S04",
@@ -201,5 +209,5 @@
       "expanded_script_approved": false
     }
   ],
-  "next_scene": "S02"
+  "next_scene": "S03"
 }
