@@ -1,0 +1,383 @@
+{
+  "base_commit": "2ccbdd3b464f8e6fed43a5807c76c7de98464fe0",
+  "checked_at_utc": "2026-11-23T04:02:22.506239+00:00",
+  "materialized_repository_files": {
+    "README.md": {
+      "sha256": "006e52cfde9e4037cc02f29e142c893857fe93c94c35a70373fe582d46b92f6e",
+      "git_blob_sha": "c36d4714d6a5a25ca98485fe8b0959b1f7fa903c"
+    },
+    "AGENTS.md": {
+      "sha256": "f92ddc0be2772330dfc2d9ed046d12998036148dd5512dde4dad8ad2ba6ba200",
+      "git_blob_sha": "e4aeb88f2c2e35bcea850ae9842953046ea087b9"
+    },
+    "scripts/s03_approved_voice_tts.py": {
+      "sha256": "d70d48c3efb11eb2bb44df4bf6d5e15b5c93761cfd8728351de93b77641a1661",
+      "git_blob_sha": "e2ba79012af8670692d71a6e251df6692b0e793a"
+    },
+    "scripts/voice_direction_tools.py": {
+      "sha256": "9846dfeabd32bbd37cbd1c465f8b2a1af4364ded2156670453eb42dcb69ea830",
+      "git_blob_sha": "6dcc7447313f3b537ec0da2756f78b4e52b96088"
+    },
+    "scripts/validate_s05_design.py": {
+      "sha256": "f6fa88d423358f36c4583b76158c96e41ea1c0993d01d3b572035b2b87797fb4",
+      "git_blob_sha": "c5c8955cdeeee6e3ba449b45a51183174f4ff0cd"
+    },
+    "scripts/validate_s03_design.py": {
+      "sha256": "15459e01820d93b307e347da2c1994f87a8d1ecd335bab03a23a592a0c1c1599",
+      "git_blob_sha": "fe9805a7eb32694a3b4b7ac744f12c94a5222a6f"
+    },
+    "scripts/s05_voice_preflight.py": {
+      "sha256": "c1698c7fc20f2b73f7b1f5bd1b23fc98a9dafbc014381dde2a13e0df5ff3d66a",
+      "git_blob_sha": "309befe4665c9b3bde38e395d6681c35cb46486c"
+    },
+    "scripts/validate_series_v2.py": {
+      "sha256": "1e3589a7c5e9d7036846a7fd6537b2b09d7cbe16c54eebc10c6106b69a53e67d",
+      "git_blob_sha": "fde750a77e13890e936da086129e68a671c6c0f3"
+    },
+    "scripts/s02_approved_voice_tts.py": {
+      "sha256": "7247790748ee1484a735add5cfb75ac9ce424f07779a36ba5da72ab63b628aaa",
+      "git_blob_sha": "c7cdbb7a25231946bceafddd06fe7af45d41bbe4"
+    },
+    "scripts/validate_s04_design.py": {
+      "sha256": "0ac2c7860c78f234f910e5c32143828c2528de5b70de673209b67f6cacc4d2f3",
+      "git_blob_sha": "f6fae8a2b53c00a242c6909b980a8c35d40b0fe1"
+    },
+    "scripts/s04_approved_voice_tts.py": {
+      "sha256": "704dcfd359430a6e4274b18ed697b6ad78eb827f46ea8058171348afaac0f3f4",
+      "git_blob_sha": "30536d9e8bd53834cc060ca1adb6e72a4b4bf192"
+    },
+    "scripts/validate_s02_design.py": {
+      "sha256": "eb4578e0aaf59e1fbbcadb2305b4760ce1cf2b153020c4b90eb44d5eaa538090",
+      "git_blob_sha": "af6a245e0bf2764cefeacefb441af996f9d020d8"
+    },
+    "scripts/validate_story_continuity.py": {
+      "sha256": "a99dfeb5ea7dcacd61c903a45af4ca9865920dc4e749d9745d9d4dc066ee31a2",
+      "git_blob_sha": "e490e6a6a508b06e71f224ce0248e67131b36023"
+    },
+    "reviews/S03_S05_REVIEW_2026-11-23.md": {
+      "sha256": "459a08872ca5266bbd613251f3c5ca820ad197cd39ee57485015ffebdaaeda64",
+      "git_blob_sha": "1d683ce8b07c565f668b6438d4281e29ccc22bfc"
+    },
+    "reviews/S03_S05_REVIEW_EVIDENCE_2026-11-23.json": {
+      "sha256": "9d153959609ef0b8125522bbea511d9981680deb647b57b2cd256e1302447f11",
+      "git_blob_sha": "8632dc8761176297abad2fb566fff20ff93e6444"
+    },
+    "downloads/S03_S05_REVISED_VOICE_DIRECTION_PACK.sha256": {
+      "sha256": "4883e7fb3290da4ce61fd4623fc8e98d939b6be121195e34ea47e91d445d90a7",
+      "git_blob_sha": "8931013753728a2c791ffe72ed9fb672947202a4"
+    },
+    "downloads/S03_S05_REVISED_VOICE_DIRECTION_PACK.zip": {
+      "sha256": "f9a03ff082bae05fe380b52b3ca05096a8732552b3ec5a9b22c23b640bdac08d",
+      "git_blob_sha": "7ec40c17d27c6d0b94ff5022ca2de3411f6971d6"
+    },
+    "scenes/S03/script_v2_draft.md": {
+      "sha256": "2a14bd9f7b6b4caba131eb24f5ccc0d05b535eebd0861762a8090f0ad4899438",
+      "git_blob_sha": "5991a5c3cf82fb43b0ea099f8922bd8be33aaaf0"
+    },
+    "scenes/S03/voice_direction_plan.json": {
+      "sha256": "e789fcc7655370064e9278f4d248681945f80cf687734ac69691efea489696c0",
+      "git_blob_sha": "861463789ed388ee998d606435a53fab2066a041"
+    },
+    "scenes/S03/scene_design_v2.json": {
+      "sha256": "8154ae0a51a1ace2019f8cfd16b648bcde0de25768d112bec9c7d88685d6d6f5",
+      "git_blob_sha": "044f1995a8a62263f61a2f8240baffc2b5d0d336"
+    },
+    "scenes/S03/source_delta.md": {
+      "sha256": "a87fae4a4788e51ebf1332acb241a590a11e70672ca16230b7b6124926bb8558",
+      "git_blob_sha": "60990884ed770e5541589c05a6dd67650e50aeea"
+    },
+    "scenes/S03/voice_direction_sheet.csv": {
+      "sha256": "348029c5370db5757d5f8909aa38e2b080ca6b46609b5326202be243b0b926b6",
+      "git_blob_sha": "cb4383dc86579cddc28b0d498fca75a8b6e1fb8c"
+    },
+    "scenes/S03/QA_G0_G1.md": {
+      "sha256": "0674482f4f3bac7b67c3b90b48e852654f6c5fdfacdc2ae75d8bd15b7cf12fef",
+      "git_blob_sha": "e05a0368f3a871908d2d7ecb884e766f8f83a5df"
+    },
+    "scenes/S03/voice_preflight_report.json": {
+      "sha256": "44a3ed326a813965589177bc1f3ece8856a3a5ccc9cc629fc0214cfe0dabcd43",
+      "git_blob_sha": "8cb4d7cee5d77a5d99fcd07dcdd21af720d3fdc2"
+    },
+    "scenes/S03/interaction_map_v2.json": {
+      "sha256": "920dab12f2c249545b29349d07bb4e302f111cdd65442c34e94796914fb6a7a8",
+      "git_blob_sha": "a3eb815ee8210edc525f328a76ffb0c7ebe2a579"
+    },
+    "scenes/S02/script_v2_draft.md": {
+      "sha256": "adda38827fe487ff2925c289d14104c7c8ce6afad1cfbe9efdc2cc7ba78642b5",
+      "git_blob_sha": "e0251ab4b2c3d00bc4ee04f6154de5e556501d83"
+    },
+    "scenes/S02/scene_design_v2.json": {
+      "sha256": "4d711e1b924b36a0eb97fd95faf075f9574d4bf5e9644379f83d372503a9c2ad",
+      "git_blob_sha": "012602800904af2b2de52d368404b6d1b7cc9215"
+    },
+    "scenes/S02/source_delta.md": {
+      "sha256": "359be804fb57c1720fc4b7d2b7e63243400ba4079acabb9e9e39a863acb55cab",
+      "git_blob_sha": "c6138421b8a200ce976f2333c36e3f22a24fbee6"
+    },
+    "scenes/S02/QA_G0_G1.md": {
+      "sha256": "52637a09130ae97d609fdf89a4dce18c19af0295fd401164a0138c87201a39d0",
+      "git_blob_sha": "1dd19028a83e517fb442147084cb4933caae7166"
+    },
+    "scenes/S02/interaction_map_v2.json": {
+      "sha256": "d2bad5a21c30d31f0364258c2a63d85ffc5244bb2db17114806fdce590e5fec6",
+      "git_blob_sha": "987ac4ec20ae3c1a8aa1f049f83bd476bf5a46b5"
+    },
+    "scenes/S05/script_v2_draft.md": {
+      "sha256": "d4e2d5a00ba128966dbb5397078428aa4ee2e4b5778d6f1deb65ef94828093b9",
+      "git_blob_sha": "cb0f22196caf2470ae73d22e19505dba2bc76dbf"
+    },
+    "scenes/S05/voice_direction_plan.json": {
+      "sha256": "5140731b51eea56f34c1629c50e3a6e7e04e0112cb1e3442809e7d6f5efa24ef",
+      "git_blob_sha": "69c4b2fe0d05bd3230ea34e29028b24113865d98"
+    },
+    "scenes/S05/scene_design_v2.json": {
+      "sha256": "2dc910db8cded2e17246c99c6f7d69e3b212c6b8a6ec29d46cf3451e844889b9",
+      "git_blob_sha": "b02dcd72eaa5c080e63d1f0d7af5365a9862a3ff"
+    },
+    "scenes/S05/source_delta.md": {
+      "sha256": "4044621a73594a684dfeb8321aeca5f3c8fb29f8017aa307d7c65a8709328e84",
+      "git_blob_sha": "8cc8dbf0fb717fa1e5acace22863746068393a17"
+    },
+    "scenes/S05/voice_direction_sheet.csv": {
+      "sha256": "3275af971c6ede0a03f7ae84068a0f167f9c384dc2ea1a140e9892b0351de712",
+      "git_blob_sha": "cbeb895529b11c63624e05f6f58dfe8edfc8a625"
+    },
+    "scenes/S05/QA_G0_G1.md": {
+      "sha256": "4d8ad5c8eec335c0f242e123e15690a4a9eec72ed2c44eab46e76f791f90d080",
+      "git_blob_sha": "87e81cbcdacde1e495c98d90c728d2b77cfbe4bb"
+    },
+    "scenes/S05/voice_preflight_report.json": {
+      "sha256": "86360e2e2dcefd05a7fcecd9fd7f3531279856b7a51a0120df9c375417971dd4",
+      "git_blob_sha": "cd3fe994622875b4949ee5e204906d60f6272e6a"
+    },
+    "scenes/S05/validation_report.json": {
+      "sha256": "64037fbe2e1be4f7e0fc8d1606e02ac5972322266c13c33c0cf797f86a690aa1",
+      "git_blob_sha": "0fb4cbccad5e8522448407526bd3bc516677b8fc"
+    },
+    "scenes/S05/interaction_map_v2.json": {
+      "sha256": "8a2645133fecad0f5b4582f9b2cd10e76c82e6dcc5589752b5fffe28a746f757",
+      "git_blob_sha": "8503d8238aef94ccdca0c803c5915e63a18fb6ff"
+    },
+    "scenes/S04/script_v2_draft.md": {
+      "sha256": "702a97f25c7683c7e3d450e41af258de1dcafaa03d67668e5a8538993f8988b9",
+      "git_blob_sha": "c611d6f83374c84f35f31bd3cadb88dd297e0cc0"
+    },
+    "scenes/S04/voice_direction_plan.json": {
+      "sha256": "2356d6568ef2c387e5d7831cad80676d6eeac165d5daebeebefa4f8a1b76f6c8",
+      "git_blob_sha": "43b1edfd3b4d8c328760553b856b0d6f1336dc36"
+    },
+    "scenes/S04/scene_design_v2.json": {
+      "sha256": "e9a9464374fe35d5e5a27ff0d57ccd0833dd555c1e1822dfe0c9b806a71f372e",
+      "git_blob_sha": "ed1aa45de2eb84f1ab16f8dd2fffda205d2eeb39"
+    },
+    "scenes/S04/source_delta.md": {
+      "sha256": "12a97d9a34e681dd30c2eba33918044ee38cb98d4391c160205ced54a31d169f",
+      "git_blob_sha": "88ccc2cb1be691a5e5b932672053e84bc64316ab"
+    },
+    "scenes/S04/voice_direction_sheet.csv": {
+      "sha256": "577c5c4c70c88a6c810ac0ca0a13e3e045f156928522fe891285acee5e12f2d7",
+      "git_blob_sha": "a29839e5e93ab37682ce3944082deef24b2f218f"
+    },
+    "scenes/S04/QA_G0_G1.md": {
+      "sha256": "163465f889271ce1fdb580883a484322d4cef3e8333bf12678298ef1aceb6bfd",
+      "git_blob_sha": "a60a322a486098be529b0a80193ab9165e6c0474"
+    },
+    "scenes/S04/voice_preflight_report.json": {
+      "sha256": "be1da1fedbd3847a41a0f9d52b224a0464ecf2fafeb596a093f0a5c2b03d846a",
+      "git_blob_sha": "b41f5d2e4ff2d3c40c6d852eabce0cb13cc57dbd"
+    },
+    "scenes/S04/interaction_map_v2.json": {
+      "sha256": "d103269d2ac5012648f847f7954559b7f8aa7d27f12d5ebab1cc428734c972c1",
+      "git_blob_sha": "5d0e02399b53100e99399c1e7bb26d5dde19323d"
+    },
+    "assets/voice_refs/v6/narrator_V6_APPROVED.mp3": {
+      "sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+      "git_blob_sha": "1c26edaff3f4ac14898ae9873c45833e70239d87"
+    },
+    "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3": {
+      "sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+      "git_blob_sha": "3b46a58a88e200677e3adeb4dc723918dc3b9f00"
+    },
+    "assets/voice_refs/v6/pinocchio_V6_APPROVED.mp3": {
+      "sha256": "a32569705a717ac92c8ecbe1c515b9e31e389f508164458ed22a06adcbba0b3d",
+      "git_blob_sha": "b02288c3371a8211ceb5f48fd7af9a5efba96637"
+    },
+    "assets/voice_refs/v6/blue_fairy_V6_APPROVED.mp3": {
+      "sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+      "git_blob_sha": "ce649d773efa34646c7798929fd105453d686b0f"
+    },
+    "assets/voice_refs/v6/VOICE_REFERENCES.json": {
+      "sha256": "fc6a0c516226f2eeede59a561e42195bb75df6c1d2279bef1124c3c9cf3d9e5f",
+      "git_blob_sha": "dc78ba0b8a2663d6451805170e79090d0c689580"
+    },
+    "docs/series_v2/S05_ENGINE_HANDOFF.md": {
+      "sha256": "42116a85b99a012476455f1e85986dc8620cc87f144beb694a53679265f62873",
+      "git_blob_sha": "7605e45799f7150d5a80ce907ce2c6088234ae1b"
+    },
+    "docs/series_v2/VOICE_DIRECTION_VALIDATION_2026-11-23.json": {
+      "sha256": "1ab90f41a54403d431011d37dfd41729fdc3ceeeb8c0b67db5e767dec3d943c4",
+      "git_blob_sha": "14001e95271d16f2df389b94c2059827f25cf5d8"
+    },
+    "docs/series_v2/VOICE_PERFORMANCE_BIBLE_V2_1.json": {
+      "sha256": "1376f4b932a23dfdcc46a04b47bdd2e85eb018c4dbf6b1eb56af1e088a94ea05",
+      "git_blob_sha": "b0ff84f440eb32b60cfec58a63a01964482bf1bd"
+    },
+    "docs/series_v2/CODEX_HANDOFF.md": {
+      "sha256": "a3b79b960b286bea8e6ab1e2ebdd0911d1a25ed03cd627524f2987c85a85512f",
+      "git_blob_sha": "94cb14727150896c3a9495fcde2fbb96a29cc039"
+    },
+    "docs/series_v2/S02_APPROVED_VOICES.md": {
+      "sha256": "01752057c2a7af77d00d92a81ff5f8b1428d5d97ecd85db14585ca9e8a202384",
+      "git_blob_sha": "82da441a995d59d37511651214c87445951cb72c"
+    },
+    "docs/series_v2/VOICE_PERFORMANCE_BIBLE_V2_1.md": {
+      "sha256": "bf7f2aa0b80a403a040d719692bf51fbd28b6576325895dbc2db8b3c00489db8",
+      "git_blob_sha": "41e7d22c46ec1251efc03f72bdd6a564978fb164"
+    },
+    "docs/series_v2/series_manifest_v2.json": {
+      "sha256": "60a8209f5d9a3a47d5b966d724ac6b6ebca7455dfec4a271c3ab065501071c08",
+      "git_blob_sha": "767ab9fbb8098edf78977e7125fc0dad52c9546e"
+    },
+    "docs/series_v2/S03_ENGINE_HANDOFF.md": {
+      "sha256": "45b174ba9c4c72e006060412c9e2575e4924351c92fb73fc43699b28e5a69217",
+      "git_blob_sha": "d582a5da0aa0aa43d51067ed45e22fab0d3eceaa"
+    },
+    "docs/series_v2/S02_DEVELOPMENT_BRIEF.md": {
+      "sha256": "419465037fda810f28dde4a0e57d87cf15894b9acf35b3901852ed327512df6e",
+      "git_blob_sha": "948eb0ea41fa54b2e2c06534f29ac619bbdd8933"
+    },
+    "docs/series_v2/PRODUCTION_PRD_V2_0.md": {
+      "sha256": "de79a6428b88c678751097e71e8b6228f57ab959f558d98721a57873d9c5bd35",
+      "git_blob_sha": "6c551d6211a04ab7667f332b339a43c053eb757b"
+    },
+    "docs/series_v2/S03_S05_CORRECTION_EVIDENCE_2026-11-23.json": {
+      "sha256": "5ba3b80ef5c2f1b5665f521d132a6296be3a9aa4690afebf61a992b792b98ce4",
+      "git_blob_sha": "800af1a4c8dde9fe18ce84f12a2798e716f8a81b"
+    },
+    "docs/series_v2/VALIDATION.md": {
+      "sha256": "c99ffef554cc9f24f6d9e4bd156f60473438421e9cbe53297fdbd82ef4dcae56",
+      "git_blob_sha": "59d7ceeb84cf64e7e39918bb568e46ce58b198f1"
+    },
+    "docs/series_v2/STORY_CONTINUITY_S01_S12.json": {
+      "sha256": "70e6a112a80e78c3ed74cbe251ece93d4bed647981d1bfe520b7b6d56020f3b7",
+      "git_blob_sha": "420a03fe4b536dd426ceafd26f3ee9998c1925d1"
+    },
+    "docs/series_v2/S03_S05_CORRECTION_AND_VOICE_REPORT.md": {
+      "sha256": "5dcb0f2897ce83d2ebee700810482c82b9a8b8b335ad4fd080bcb0f41c421fd3",
+      "git_blob_sha": "674d516413d0698c6f2675d69553dd6eba7eb8c2"
+    },
+    "docs/series_v2/CODEX_VOICE_ACTING_HANDOFF.md": {
+      "sha256": "8b1dc058ebf4abb1a33375d34025e4949b1d5be689136eafe5931c5fd59ee42b",
+      "git_blob_sha": "317642738e7bc0c19409077e7dd9abd2e15355fb"
+    },
+    "docs/series_v2/STORY_CONTINUITY_S01_S12.md": {
+      "sha256": "1228d96a0e2b04023add5b2dd0149e835f674d7b144efc2598ba99e15dfe17a2",
+      "git_blob_sha": "1ecc24d9a3c874c19ac1a19a9cd94511452484c5"
+    },
+    "docs/series_v2/S04_ENGINE_HANDOFF.md": {
+      "sha256": "2cd7da91c56cf7752a174a29980a4c80a27b4680cdfdc05112f500595e71726a",
+      "git_blob_sha": "983cf4ec16dcb7fb50d47ab74c54bbb78639e0c3"
+    },
+    "docs/series_v2/sources/01_STEP2_PRODUCTION_STORYBOARD_SPEC.md": {
+      "sha256": "b5ff72a4e6d889006eacc669a7c15c68a739ca1805117b8c79d79d4ab5181610",
+      "git_blob_sha": "5cf1b9fb6431164c68af9d41ec873f06ab4a4665"
+    },
+    "docs/series_v2/sources/01_STORY_MASTER_V1_1.md": {
+      "sha256": "eb5ca04f5e4302d4a71726f1a24b6cead5cec682b96baee600f6eef8ee951d3e",
+      "git_blob_sha": "3fecda9e2798130b65f0329ddd47fe17b129adf7"
+    },
+    "downloads/s01-complete/BEATS_54.tsv": {
+      "sha256": "e5ddf619addab8e000affd3baed28a8b6440b72d479afae7b8e9328941747d1b",
+      "git_blob_sha": "a5a3a21c52d750b9794ce44f32bbaa37737b0ea4"
+    },
+    "downloads/s01-complete/subtitles.en.srt": {
+      "sha256": "a2101cb48eca3004b780bbf34043ab2ca64ee32884426b80f667de6c6d3593e6",
+      "git_blob_sha": "8d00e59a3c573b3313fb559a594756494a6e7079"
+    },
+    "downloads/s01-complete/VOICE_LOCK.tsv": {
+      "sha256": "f4af00e6967f6fceb3cda526887f810cece5c2a963bfd17f5989986a52a61f1a",
+      "git_blob_sha": "7e8d93949aa13d2bd1bbd44e97398d9ff9a33536"
+    },
+    "downloads/s01-complete/MOVIE_QA.json": {
+      "sha256": "495aee60cb50efdc02682387de864b7b07d854042610c6332c2b64c593935e53",
+      "git_blob_sha": "b9b94b7208d6a067a3358cadb28c74ba265024eb"
+    },
+    "downloads/s01-complete/TIMELINE.json": {
+      "sha256": "95ddee5660828ccd227db37a1a9c449b5e69cdc253e31b9f9ab489837c948f5b",
+      "git_blob_sha": "f20b58bdf1322decf3841dafbba59acd735dfd16"
+    },
+    "downloads/s01-complete/SCREENING_KO.md": {
+      "sha256": "29fa79c51383d4bda3eed7d2deb8b92275d2ed4fa9e2d1cf0a7c97b8589ee015",
+      "git_blob_sha": "f94bd3a0841466f732fd9d7d8b4c2cbc12c7036c"
+    },
+    "downloads/s01-complete/START_HERE_KO.md": {
+      "sha256": "e1b527094923a4963e8a26023d4a5221f89c10973b28c3eb01f35bd82d14d775",
+      "git_blob_sha": "b91e1a0f07ca0f7ce9abc6c70438d7b29bd186cd"
+    },
+    ".github/workflows/validate-series-v2.yml": {
+      "sha256": "e7ef7fbaad803fd7e0ab66573944b7c2bcca8ad94463e5df4164096d4b6e8e7a",
+      "git_blob_sha": "f92cd1d5c14b4dc6238fceb90f6b981645985b2d"
+    }
+  },
+  "approved_user_zip": {
+    "name": "S02_APPROVED_V6_VOICES_AND_SETTINGS.zip",
+    "sha256": "eb28c963eb30f693657488c1585c4557c0e8651ede1376cc5d295731de70285d",
+    "content_scope": "Four approved character reference voices and historical synthesis helper; not a final S02 movie",
+    "reference_comparison": [
+      {
+        "speaker": "내레이션",
+        "reference_sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "status": "IDENTICAL_TO_CURRENT_FIXED_REFERENCE"
+      },
+      {
+        "speaker": "피노키오",
+        "reference_sha256": "a32569705a717ac92c8ecbe1c515b9e31e389f508164458ed22a06adcbba0b3d",
+        "status": "IDENTICAL_TO_CURRENT_FIXED_REFERENCE"
+      },
+      {
+        "speaker": "제페토",
+        "reference_sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+        "status": "IDENTICAL_TO_CURRENT_FIXED_REFERENCE"
+      },
+      {
+        "speaker": "파란 요정",
+        "reference_sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "status": "IDENTICAL_TO_CURRENT_FIXED_REFERENCE"
+      }
+    ]
+  },
+  "media_scope": {
+    "S01": "Final timeline/voice lock/beat sheet/subtitles and historical QA read; full HTML source not obtained. No new video viewing/listening/runtime check.",
+    "S02": "Current repository design and user-provided approved reference package reviewed; current final movie/player not obtained; user completion statement preserved"
+  },
+  "required_review_inputs": [
+    "docs/series_v2/sources/01_STORY_MASTER_V1_1.md",
+    "docs/series_v2/sources/01_STEP2_PRODUCTION_STORYBOARD_SPEC.md",
+    "docs/series_v2/VOICE_PERFORMANCE_BIBLE_V2_1.json",
+    "docs/series_v2/VOICE_PERFORMANCE_BIBLE_V2_1.md",
+    "assets/voice_refs/v6/VOICE_REFERENCES.json",
+    "assets/voice_refs/v6/narrator_V6_APPROVED.mp3",
+    "assets/voice_refs/v6/pinocchio_V6_APPROVED.mp3",
+    "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3",
+    "assets/voice_refs/v6/blue_fairy_V6_APPROVED.mp3",
+    "downloads/s01-complete/TIMELINE.json",
+    "downloads/s01-complete/VOICE_LOCK.tsv",
+    "downloads/s01-complete/BEATS_54.tsv",
+    "downloads/s01-complete/subtitles.en.srt",
+    "downloads/s01-complete/MOVIE_QA.json",
+    "downloads/s01-complete/SCREENING_KO.md",
+    "downloads/s01-complete/START_HERE_KO.md",
+    "scenes/S02/scene_design_v2.json",
+    "scenes/S02/interaction_map_v2.json",
+    "scenes/S02/script_v2_draft.md",
+    "scenes/S02/source_delta.md",
+    "scenes/S02/QA_G0_G1.md",
+    "scripts/s02_approved_voice_tts.py",
+    "docs/series_v2/S02_APPROVED_VOICES.md",
+    "docs/series_v2/S02_DEVELOPMENT_BRIEF.md",
+    "docs/series_v2/STORY_CONTINUITY_S01_S12.md",
+    "docs/series_v2/STORY_CONTINUITY_S01_S12.json",
+    "scenes/S03/scene_design_v2.json"
+  ],
+  "standalone_package_policy": "The full 79-file historical baseline is recorded. Required review inputs must be included and hash-checked. Other baseline files are checked if present; absent files are reported as not included, never reverified."
+}

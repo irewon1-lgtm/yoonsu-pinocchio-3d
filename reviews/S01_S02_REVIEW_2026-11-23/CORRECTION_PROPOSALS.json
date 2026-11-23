@@ -1,0 +1,507 @@
+{
+  "base_commit": "2ccbdd3b464f8e6fed43a5807c76c7de98464fe0",
+  "scope": "REVIEW_PROPOSALS_ONLY",
+  "source_changes_applied": false,
+  "count": 12,
+  "default_annotated_jobs": 139,
+  "proposals": [
+    {
+      "id": "C01",
+      "title_ko": "P01을 손 펴기 한 동작과 세 단어 표현으로 맞춤",
+      "status": "PROPOSAL_NOT_APPLIED_TO_COMPLETED_PRODUCT",
+      "reason_ko": "기존 Open, close!는 자연스러운 표현이지만 두 단어다. 단어 수와 동작의 명료성을 함께 보완한다.",
+      "source_anchors": [
+        "scenes/S02/interaction_map_v2.json events[S02-P01]",
+        "scenes/S02/scene_design_v2.json B01.dialogue[6], B01-C02..C04"
+      ],
+      "proposed_changes": [
+        {
+          "target": "S02-P01.cue",
+          "before": "Open, close!",
+          "after": "Open your hand!"
+        },
+        {
+          "target": "S02-N005 / B01.dialogue[6].text and S02-P01.prompt",
+          "before": "Yoonsu, help his little hand wake up!",
+          "after": "Yoonsu, help him open his hand!",
+          "speaker": "제페토"
+        },
+        {
+          "target": "B01-C02/C03",
+          "after": "제페토 자신의 손으로만 완전한 손 펴기 시범. 피노키오는 손을 절반쯤 편 미완성 상태로 대기."
+        },
+        {
+          "target": "S02-P01.react / B01-C04",
+          "after": "입력 후 피노키오가 손바닥을 한 번 완전히 편다. 그 성취가 보인 뒤 별도의 자율 손가락 움직임과 They are dancing!을 연결."
+        }
+      ],
+      "dependencies": [
+        "목표·질문·시범·반응·모델을 함께 바꾸며 기존 본편102개를 몰래 교체하지 않는다.",
+        "기존 N003 Open... close?는 몸을 탐색하는 질문으로 유지할 수 있으나 목표 동작을 미리 완수하지 않는다."
+      ],
+      "original_canonical_dialogue_changed": false,
+      "acting_variants_outside_139_default_jobs": [
+        {
+          "id": "S02-N005-C01",
+          "kind": "PROPOSAL_VARIANT_NOT_IN_BASELINE_JOB_COUNT",
+          "speaker": "제페토",
+          "spoken_text": "Yoonsu, help him open his hand!",
+          "voice_direction": {
+            "profile_id": "GEPPETTO_A",
+            "listener": "윤수/시청자",
+            "intention": "피노키오를 안전하게 돕는 작은 행동을 윤수에게 청한다",
+            "emotion": "재촉하지 않는 기대와 안정",
+            "delivery_ko": "피노키오를 안정적으로 살피면서 잠깐 윤수 쪽으로 눈을 맞춘다. 부탁은 가까이 다정하게, 결과를 이미 요구하는 시험처럼 말하지 않는다. help에는 함께 돕는 뜻을, 마지막 동작에는 눈에 보이는 구체적 목표를 담는다.",
+            "direction_en": "While safely attending to Pinocchio, briefly meet the viewer with a close, affectionate request. Invite shared help and point the last action to the visible task. Do not test, hurry or impersonate the child.",
+            "pace_wpm": 94,
+            "energy": 2,
+            "emphasis": [
+              "help"
+            ],
+            "pause_before_ms": 140,
+            "pause_after_ms": 350,
+            "internal_pauses": [
+              {
+                "after": "Yoonsu,",
+                "ms": 140
+              }
+            ],
+            "avoid": [
+              "시험 문제를 읽는 전달조",
+              "피노키오의 목소리로 대신 읽기",
+              "대사에 없는 이름·웃음 추가"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED"
+          },
+          "scene": "S02",
+          "review_only": true,
+          "synthesis_status": "NOT_RUN",
+          "listening_review": "NOT_RUN",
+          "completed_product_change_applied": false,
+          "approved_reference": {
+            "speaker": "제페토",
+            "approved_candidate": "A",
+            "original_label": "82-year-old grandfather (voice model name not recovered)",
+            "reference_mp3_path": "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3",
+            "sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+            "v7_voice_reference_id": "97884b61a37d580d5dd0b1fed537752bce960f7a73cda3c67b3f57e1767d61c2"
+          },
+          "instruct_prompt_en": "Keep the approved Geppetto A voice identity, with a convincingly elderly grandfather presence. Use a warm low-middle resonance, a little age in the breath and patient thought-sized phrases. Speak to his grandson, not to a microphone. Be clear and affectionate, never a young father, a flat narrator, or a caricatured croak. While safely attending to Pinocchio, briefly meet the viewer with a close, affectionate request. Invite shared help and point the last action to the visible task. Do not test, hurry or impersonate the child. Planned delivery target: about 94 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: help. Planned pause before: 140 ms; after: 350 ms. Internal pause cues: [{\"after\": \"Yoonsu,\", \"ms\": 140}]. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+          "output_path_if_later_generated": "proposed_audio/S02/S02-N005-C01.wav",
+          "output_exists": false
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "title_ko": "첫 친구 소개 전 직접 부탁의 화자를 제페토로 정리",
+      "status": "PROPOSAL_NOT_APPLIED_TO_COMPLETED_PRODUCT",
+      "reason_ko": "피노키오가 앞선 호명에서 이름을 들었을 수 있으므로 이름을 아는 것이 불가능하지는 않다. 다만 B08에서 처음 친구를 발견하는 감정 순서를 보존한다.",
+      "source_anchors": [
+        "scenes/S02/scene_design_v2.json B04.dialogue[4], B04-C03",
+        "scenes/S02/interaction_map_v2.json events[S02-P04]"
+      ],
+      "proposed_changes": [
+        {
+          "target": "S02-N030 / B04.dialogue[4]",
+          "before": {
+            "speaker": "피노키오",
+            "text": "Yoonsu, help me take a step!"
+          },
+          "after": {
+            "speaker": "제페토",
+            "text": "Yoonsu, help him take a step!"
+          }
+        },
+        {
+          "target": "S02-P04.prompt",
+          "before": "Yoonsu, help me take a step!",
+          "after": "Yoonsu, help him take a step!"
+        },
+        {
+          "target": "S02-P04 model profile",
+          "before": "PINOCCHIO_A",
+          "after": "GEPPETTO_A"
+        },
+        {
+          "target": "B04-C03 camera and gaze",
+          "after": "제페토가 피노키오를 지지하고 관객 쪽으로 도움을 청하는 구도가 읽히게 한다. 기존 피노키오 POV를 그대로 둔 채 화자만 교체하지 않는다."
+        }
+      ],
+      "dependencies": [
+        "질문 음원·모델 음색·대사 화자·시선·카메라를 하나의 변경으로 적용.",
+        "기준102개 대본의 N030과 기본 P04모델은 현재 원본 상태다. 적용 시 아래 변형으로 함께 교체."
+      ],
+      "original_canonical_dialogue_changed": false,
+      "acting_variants_outside_139_default_jobs": [
+        {
+          "id": "S02-N030-C02",
+          "kind": "PROPOSAL_VARIANT_NOT_IN_BASELINE_JOB_COUNT",
+          "speaker": "제페토",
+          "spoken_text": "Yoonsu, help him take a step!",
+          "voice_direction": {
+            "profile_id": "GEPPETTO_A",
+            "listener": "윤수/시청자",
+            "intention": "피노키오를 안전하게 돕는 작은 행동을 윤수에게 청한다",
+            "emotion": "재촉하지 않는 기대와 안정",
+            "delivery_ko": "피노키오를 안정적으로 살피면서 잠깐 윤수 쪽으로 눈을 맞춘다. 부탁은 가까이 다정하게, 결과를 이미 요구하는 시험처럼 말하지 않는다. help에는 함께 돕는 뜻을, 마지막 동작에는 눈에 보이는 구체적 목표를 담는다.",
+            "direction_en": "While safely attending to Pinocchio, briefly meet the viewer with a close, affectionate request. Invite shared help and point the last action to the visible task. Do not test, hurry or impersonate the child.",
+            "pace_wpm": 94,
+            "energy": 2,
+            "emphasis": [
+              "help"
+            ],
+            "pause_before_ms": 140,
+            "pause_after_ms": 350,
+            "internal_pauses": [
+              {
+                "after": "Yoonsu,",
+                "ms": 140
+              }
+            ],
+            "avoid": [
+              "시험 문제를 읽는 전달조",
+              "피노키오의 목소리로 대신 읽기",
+              "대사에 없는 이름·웃음 추가"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED"
+          },
+          "scene": "S02",
+          "review_only": true,
+          "synthesis_status": "NOT_RUN",
+          "listening_review": "NOT_RUN",
+          "completed_product_change_applied": false,
+          "approved_reference": {
+            "speaker": "제페토",
+            "approved_candidate": "A",
+            "original_label": "82-year-old grandfather (voice model name not recovered)",
+            "reference_mp3_path": "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3",
+            "sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+            "v7_voice_reference_id": "97884b61a37d580d5dd0b1fed537752bce960f7a73cda3c67b3f57e1767d61c2"
+          },
+          "instruct_prompt_en": "Keep the approved Geppetto A voice identity, with a convincingly elderly grandfather presence. Use a warm low-middle resonance, a little age in the breath and patient thought-sized phrases. Speak to his grandson, not to a microphone. Be clear and affectionate, never a young father, a flat narrator, or a caricatured croak. While safely attending to Pinocchio, briefly meet the viewer with a close, affectionate request. Invite shared help and point the last action to the visible task. Do not test, hurry or impersonate the child. Planned delivery target: about 94 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: help. Planned pause before: 140 ms; after: 350 ms. Internal pause cues: [{\"after\": \"Yoonsu,\", \"ms\": 140}]. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+          "output_path_if_later_generated": "proposed_audio/S02/S02-N030-C02.wav",
+          "output_exists": false
+        },
+        {
+          "id": "S02-P04-EXAMPLE-C02",
+          "kind": "PROPOSAL_VARIANT_NOT_IN_BASELINE_JOB_COUNT",
+          "speaker": "제페토",
+          "spoken_text": "One small step!",
+          "voice_direction": {
+            "profile_id": "GEPPETTO_A",
+            "listener": "윤수/시청자",
+            "intention": "작은 한 걸음의 행동을 자연스럽게 들려준다",
+            "emotion": "조심스러운 격려",
+            "delivery_ko": "발을 옮길 작은 거리를 보여 주며 One small을 한 의미로 잇고 step에 부드럽게 무게를 둔다. 이미 안전을 살피는 제페토의 목소리로 말하며 발화 성공을 시험하지 않는다.",
+            "direction_en": "Model one small safe step as a single gentle phrase. Link One small and place a little warm weight on step. Keep the approved grandfather identity, calm support and natural melody; never impersonate the child.",
+            "pace_wpm": 94,
+            "energy": 2,
+            "emphasis": [
+              "small",
+              "step"
+            ],
+            "pause_before_ms": 140,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "시험 문제를 읽는 전달조",
+              "피노키오의 목소리로 대신 읽기",
+              "대사에 없는 이름·웃음 추가"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED"
+          },
+          "scene": "S02",
+          "review_only": true,
+          "synthesis_status": "NOT_RUN",
+          "listening_review": "NOT_RUN",
+          "completed_product_change_applied": false,
+          "approved_reference": {
+            "speaker": "제페토",
+            "approved_candidate": "A",
+            "original_label": "82-year-old grandfather (voice model name not recovered)",
+            "reference_mp3_path": "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3",
+            "sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+            "v7_voice_reference_id": "97884b61a37d580d5dd0b1fed537752bce960f7a73cda3c67b3f57e1767d61c2"
+          },
+          "instruct_prompt_en": "Keep the approved Geppetto A voice identity, with a convincingly elderly grandfather presence. Use a warm low-middle resonance, a little age in the breath and patient thought-sized phrases. Speak to his grandson, not to a microphone. Be clear and affectionate, never a young father, a flat narrator, or a caricatured croak. Model one small safe step as a single gentle phrase. Link One small and place a little warm weight on step. Keep the approved grandfather identity, calm support and natural melody; never impersonate the child. Planned delivery target: about 94 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: small, step. Planned pause before: 140 ms; after: 350 ms. Internal pause cues: []. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+          "output_path_if_later_generated": "proposed_audio/S02/S02-P04-EXAMPLE-C02.wav",
+          "output_exists": false
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "title_ko": "첫 모델과 입력의 순서를 분리",
+      "status": "PROPOSAL_NOT_APPLIED_TO_COMPLETED_PRODUCT",
+      "reason_ko": "현재 자료에 모델 종료와 마이크 개방의 경계가 충분히 명시돼 있지 않다. 실제 플레이어 결함으로 재현한 것은 아니다.",
+      "source_anchors": [
+        "downloads/s01-complete/TIMELINE.json events[I01]",
+        "scenes/S02/interaction_map_v2.json events[*].trigger"
+      ],
+      "proposed_changes": [
+        {
+          "target": "I01 and S02 all10 gates",
+          "after": [
+            "question_audio_end",
+            "pause_story_clock",
+            "microphone_OFF",
+            "external_model_once",
+            "model_audio_end",
+            "enable_input",
+            "child_spoken_attempt_OR_guardian_tap",
+            "react_once",
+            "resume_followup_dialogue"
+          ]
+        },
+        {
+          "target": "learner evaluation",
+          "after": "정확한 문장·발음 채점 없음. 모델 음성은 윤수 입력으로 집계하지 않음. 몸짓의 자동 인식은 구현되어 있다고 가정하지 않으며 필요 시 보호자 터치."
+        },
+        {
+          "target": "timeout",
+          "after": "힌트/다시 듣기/보호자 진행 안내. 필수 관문은 시간 초과를 발화 성공으로 바꾸지 않음. 보호자 터치는 모델을 중단하고 진행할 수 있음."
+        }
+      ],
+      "dependencies": [
+        "기존 본편시간과 모델·입력 시간을 분리한다.",
+        "기본모델11개는 전부 신규 제작 제안이며 실제 생성된 음원이 아니다."
+      ],
+      "original_canonical_dialogue_changed": false
+    },
+    {
+      "id": "C04",
+      "title_ko": "I02 모델 10초를 본편 회계에서 분리",
+      "status": "PROPOSAL_NOT_APPLIED_TO_COMPLETED_PRODUCT",
+      "reason_ko": "B10-C02의 390–400초 모델 시범이 현재443초 설계 안에 들어 있다.",
+      "source_anchors": [
+        "scenes/S02/scene_design_v2.json B10-C02"
+      ],
+      "proposed_changes": [
+        {
+          "target": "story duration accounting",
+          "before": 443,
+          "after_if_only_existing_model_ten_seconds_removed": 433,
+          "unit": "seconds",
+          "status": "ARITHMETIC_ONLY_NOT_FINAL_RETIMED_MOVIE"
+        },
+        {
+          "target": "B10-C02",
+          "after": "질문 뒤 외부 학습 시계의 모델 표시/재생 상태로 분리. 모델 종료 뒤 입력을 받고 기존 C03의 첫 인사 반응으로 이어진다."
+        }
+      ],
+      "dependencies": [
+        "최종 WAV·컷 배정 후 전체 길이를 다시 계산.433초를 실측 러닝타임으로 보고하지 않는다.",
+        "50컷 유지 조건이 필요하면 모델 컷 삭제만으로 끝내지 말고 실제 서사 컷으로 재배정한다."
+      ],
+      "original_canonical_dialogue_changed": false
+    },
+    {
+      "id": "C05",
+      "title_ko": "1화의 터치와 선택 발화를 분리",
+      "status": "PROPOSAL_NOT_APPLIED_TO_COMPLETED_PRODUCT",
+      "reason_ko": "1화는 필수I01 한 곳과 선택X01~X05다. 터치 안내의 단어 수를 필수 발화 오류로 세면 안 된다.",
+      "source_anchors": [
+        "downloads/s01-complete/TIMELINE.json events[X01..X05]"
+      ],
+      "proposed_changes": [
+        {
+          "target": "event schema",
+          "after": [
+            "interaction_type",
+            "ui_instruction",
+            "target_spoken_text",
+            "required",
+            "completion_reason"
+          ]
+        },
+        {
+          "target": "X01/X03",
+          "after": "선택 터치 안내 유지, target_spoken_text=null. 발화 모델 개수에 합산하지 않음."
+        },
+        {
+          "target": "X02/X05",
+          "after": "선택적 듣기·인사·익숙해지기. 3초 자동 진행은 OPTIONAL_CONTINUE/SKIPPED로 기록하고 발화 성공으로 기록하지 않음."
+        },
+        {
+          "target": "X05",
+          "after": "Tell the truth!의 추상적 의미 이해·정확 발음을 통과 조건으로 삼지 않음."
+        }
+      ],
+      "dependencies": [],
+      "original_canonical_dialogue_changed": false
+    },
+    {
+      "id": "C06",
+      "title_ko": "1화 선택 인사와 2화 첫 인사의 역할을 나눔",
+      "status": "PROPOSAL_NOT_APPLIED_TO_COMPLETED_PRODUCT",
+      "reason_ko": "Hello,my friend 선택 카드가 2화의 첫 친구 사건을 미리 끝내지 않도록 한다.",
+      "source_anchors": [
+        "downloads/s01-complete/TIMELINE.json events[X04]",
+        "docs/series_v2/sources/01_STORY_MASTER_V1_1.md 장면2 I02"
+      ],
+      "proposed_changes": [
+        {
+          "target": "X04",
+          "before": "Hello, my friend!",
+          "after": "비언어 축하 선택 활동; 목표 발화 없음; 응답 없이 자동 진행 가능."
+        },
+        {
+          "target": "if old optional phrase retained",
+          "after": "본편 밖 연습으로만 두고 피노키오의 윤수 이름 호명·관객 답변·첫 손 흔들기 반응을 추가하지 않음."
+        }
+      ],
+      "dependencies": [],
+      "original_canonical_dialogue_changed": false
+    },
+    {
+      "id": "C07",
+      "title_ko": "첫걸음의 성취와 즉각적인 안심을 먼저 보여줌",
+      "status": "PROPOSAL_NOT_APPLIED_TO_COMPLETED_PRODUCT",
+      "reason_ko": "One small step! 뒤 바로 넘어짐만 보이면 윤수의 답이 실패 원인처럼 읽힐 수 있다. 기존 위로 대사는 이미 존재한다.",
+      "source_anchors": [
+        "scenes/S02/scene_design_v2.json B04-C04/C05, B05-C01..C05",
+        "scenes/S02/interaction_map_v2.json events[S02-P04,S02-P05]"
+      ],
+      "proposed_changes": [
+        {
+          "target": "P04 reaction",
+          "after": "왼발의 작은 첫 보폭과 접지 성공을 분명히 보여줌→부드러운 균형 상실→미리 보인 쿠션에 안전 착지→원본 Oops!→즉각적인 안전 확인과 기존 위로."
+        },
+        {
+          "target": "P05 care",
+          "after": "제페토의 관심·표정·몸을 낮추는 지지는 자동. 추가 손잡기 반응만 발화 시도 또는 보호자 터치와 연결. 위로나 안전을 정답 보상으로 보류하지 않음."
+        }
+      ],
+      "dependencies": [
+        "기존10참여와 원본 대사 순서 유지. 새 오류음·재발화 강요·필수관문 자동 성공 추가 금지."
+      ],
+      "original_canonical_dialogue_changed": false
+    },
+    {
+      "id": "C08",
+      "title_ko": "서기 전 자세와 밤에서 아침의 위치 인계를 명시",
+      "status": "PROPOSAL_NOT_APPLIED_TO_COMPLETED_PRODUCT",
+      "reason_ko": "S01에서 이미 서봤어도 다음 아침 다시 연습하는 것은 모순이 아니다. S02의 발 지지와 앉음 상태를 분명히 할 필요가 있다.",
+      "source_anchors": [
+        "downloads/s01-complete/BEATS_54.tsv C07..C09",
+        "scenes/S02/scene_design_v2.json B01..B03"
+      ],
+      "proposed_changes": [
+        {
+          "target": "S02 opening",
+          "after": "같은 작업실 아침, 바닥의 낮은 안전한 좌석·쿠션·곁의 제페토를 전경에서 보여줌. 밤사이 이동은 자연스러운 생략으로 읽힘."
+        },
+        {
+          "target": "B01/B02 to B03",
+          "after": "앉아 두 발을 바닥에 둔 상태. P03입력 후에 골반이 올라가고 두 발 지지로 일어섬. 앞 장면에서 완전히 서기를 먼저 끝내지 않음."
+        }
+      ],
+      "dependencies": [],
+      "original_canonical_dialogue_changed": false
+    },
+    {
+      "id": "C09",
+      "title_ko": "태엽 시범과 실제 반응·소품 지지를 연결",
+      "status": "PROPOSAL_NOT_APPLIED_TO_COMPLETED_PRODUCT",
+      "reason_ko": "실제 태엽을 입력 전에 돌리면 반응 원인이 흐려지고, 집은 컷 없이 내려놓으면 손·소품 이력이 끊긴다.",
+      "source_anchors": [
+        "scenes/S02/scene_design_v2.json B07-C03..C05"
+      ],
+      "proposed_changes": [
+        {
+          "target": "B07-C03",
+          "before": "제페토가 태엽 반 바퀴 시범 뒤 질문, WAIT. 새는 아직 소리 없음.",
+          "after": "제페토가 열쇠 옆에서 회전 손짓만 시범. 실제 태엽은 정지하고 새는 선반의 지지를 유지."
+        },
+        {
+          "target": "B07-C04",
+          "after": "입력 후 실제 태엽 회전→새 움직임→세 음의 소리."
+        },
+        {
+          "target": "B07-C05",
+          "before": "피노키오가 새를 원위치에 놓고 제페토/집을 번갈아 바라보며 미소.",
+          "after": "새는 선반 위에 둔 채 피노키오가 손을 거두고 제페토/집을 번갈아 바라보며 미소. 들어 올리는 연출이 필요하면 집기·지지·내려놓기를 모두 명시."
+        }
+      ],
+      "dependencies": [],
+      "original_canonical_dialogue_changed": false
+    },
+    {
+      "id": "C10",
+      "title_ko": "눈맞춤·살짝 내다보기·첫 인사의 단계 구분",
+      "status": "PROPOSAL_NOT_APPLIED_TO_COMPLETED_PRODUCT",
+      "reason_ko": "이미 소개된 친구를 다시 처음 발견하는 듯한 연기와 반복 숨기를 줄인다.",
+      "source_anchors": [
+        "scenes/S02/scene_design_v2.json B08-C04/C05, B09-C04/C05, B10-C03"
+      ],
+      "proposed_changes": [
+        {
+          "target": "P08",
+          "after": "윤수 쪽 방향과 눈맞춤, 이름 소개. 손가락 자랑은 가능하지만 정식 손 흔들기·Hello는 I02에 남김."
+        },
+        {
+          "target": "P09/B09-C05",
+          "after": "얼굴 일부만 내밀어 다시 눈을 맞춘 상태를 유지하고 다음 질문으로 이어감. 완전히 다시 숨었다 나오는 불필요한 반복은 줄임."
+        },
+        {
+          "target": "N068/N074 acting",
+          "after": "새 친구라는 사실을 실감하는 수줍음/숨었다가 다시 눈을 맞춘 안도. 첫 이름 발견을 다시 연기하지 않음. 새 연기 지시에 반영됨."
+        },
+        {
+          "target": "I02",
+          "after": "처음 몸을 충분히 내밀어 앞으로 나오기→첫 손 흔들기→Hello,Yoonsu!와 자기소개."
+        }
+      ],
+      "dependencies": [],
+      "original_canonical_dialogue_changed": false
+    },
+    {
+      "id": "C11",
+      "title_ko": "실제 합성 엔진에 줄별 지시를 연결하고 컷 시간을 다시 확인",
+      "status": "PROPOSAL_NOT_APPLIED_TO_COMPLETED_PRODUCT",
+      "reason_ko": "기존 S02 합성 helper는 text와 참조만 전달하고 새 연기 지시를 받지 않는다. 데이터 작성은 청취 품질이나50컷수용을 증명하지 않는다.",
+      "source_anchors": [
+        "scripts/s02_approved_voice_tts.py model.generate",
+        "scenes/S02/scene_design_v2.json dialogue and shots",
+        "downloads/s01-complete/TIMELINE.json S01-U010/U019/U022"
+      ],
+      "proposed_changes": [
+        {
+          "target": "future engine adapter",
+          "after": "실제 지원 기능을 확인해 고정 참조+문장별 연기 지시를 전달. 지원하지 않는 인수·SSML을 만들지 말고 지시 텍스트를 대사에 붙여 읽지 않음."
+        },
+        {
+          "target": "S02 cut mapping",
+          "after": "모든 본편128개 중 S02의102개를 실제컷에 정확히 한 번 배정. 실제WAV길이·쉼·동작을 측정해 연기 호흡을 확보."
+        },
+        {
+          "target": "S01 old cue slots",
+          "after": "U010/U019/U022 등은 기존 클립길이 기반 빠른 속도 경고이므로 먼저 청취 확인. 필요 시 새음성과 컷을 함께 조정하고109.25초에 강제 압축하지 않음."
+        }
+      ],
+      "dependencies": [],
+      "original_canonical_dialogue_changed": false
+    },
+    {
+      "id": "C12",
+      "title_ko": "1화 입력 해제 뒤 중복 대기 여부 확인",
+      "status": "PROPOSAL_NOT_APPLIED_TO_COMPLETED_PRODUCT",
+      "reason_ko": "I01이벤트63.25초와 C07시작66.416667초 사이에3.166667초가 남는다. 플레이어의 실제seek/resume로직은 확인하지 못했다.",
+      "source_anchors": [
+        "downloads/s01-complete/TIMELINE.json events[I01], C07",
+        "REVIEW_EVIDENCE.json gate_timing_probe"
+      ],
+      "proposed_changes": [
+        {
+          "target": "runtime followup check",
+          "after": "입력 해제→실제 첫 반응까지 중복 WAIT가 없는지 확인. 이미 점프/재개 처리가 있다면 오류로 고치지 않음. 질문과 입력 전 손가락만 움직이는 상태는 보존."
+        }
+      ],
+      "dependencies": [
+        "이는 조건부 점검 항목이며 재현된 플레이어 오류가 아니다."
+      ],
+      "original_canonical_dialogue_changed": false
+    }
+  ]
+}

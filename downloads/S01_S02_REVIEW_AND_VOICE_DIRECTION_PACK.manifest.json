@@ -1,0 +1,200 @@
+{
+  "package": "S01_S02_REVIEW_AND_VOICE_DIRECTION_PACK",
+  "base_commit": "2ccbdd3b464f8e6fed43a5807c76c7de98464fe0",
+  "file_count_excluding_manifest": 48,
+  "files": {
+    "AGENTS.md": {
+      "bytes": 8143,
+      "sha256": "a4b1e04055baaf072094320e4e87b4d5cae799e80c4526e2149b4f335c69f49a"
+    },
+    "assets/voice_refs/v6/VOICE_REFERENCES.json": {
+      "bytes": 2112,
+      "sha256": "fc6a0c516226f2eeede59a561e42195bb75df6c1d2279bef1124c3c9cf3d9e5f"
+    },
+    "assets/voice_refs/v6/blue_fairy_V6_APPROVED.mp3": {
+      "bytes": 98925,
+      "sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b"
+    },
+    "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3": {
+      "bytes": 97485,
+      "sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55"
+    },
+    "assets/voice_refs/v6/narrator_V6_APPROVED.mp3": {
+      "bytes": 112365,
+      "sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf"
+    },
+    "assets/voice_refs/v6/pinocchio_V6_APPROVED.mp3": {
+      "bytes": 62445,
+      "sha256": "a32569705a717ac92c8ecbe1c515b9e31e389f508164458ed22a06adcbba0b3d"
+    },
+    "docs/series_v2/S02_APPROVED_VOICES.md": {
+      "bytes": 3698,
+      "sha256": "01752057c2a7af77d00d92a81ff5f8b1428d5d97ecd85db14585ca9e8a202384"
+    },
+    "docs/series_v2/S02_DEVELOPMENT_BRIEF.md": {
+      "bytes": 985,
+      "sha256": "419465037fda810f28dde4a0e57d87cf15894b9acf35b3901852ed327512df6e"
+    },
+    "docs/series_v2/STORY_CONTINUITY_S01_S12.json": {
+      "bytes": 46529,
+      "sha256": "70e6a112a80e78c3ed74cbe251ece93d4bed647981d1bfe520b7b6d56020f3b7"
+    },
+    "docs/series_v2/STORY_CONTINUITY_S01_S12.md": {
+      "bytes": 20134,
+      "sha256": "1228d96a0e2b04023add5b2dd0149e835f674d7b144efc2598ba99e15dfe17a2"
+    },
+    "docs/series_v2/VOICE_PERFORMANCE_BIBLE_V2_1.json": {
+      "bytes": 24695,
+      "sha256": "1376f4b932a23dfdcc46a04b47bdd2e85eb018c4dbf6b1eb56af1e088a94ea05"
+    },
+    "docs/series_v2/VOICE_PERFORMANCE_BIBLE_V2_1.md": {
+      "bytes": 23266,
+      "sha256": "bf7f2aa0b80a403a040d719692bf51fbd28b6576325895dbc2db8b3c00489db8"
+    },
+    "docs/series_v2/sources/01_STEP2_PRODUCTION_STORYBOARD_SPEC.md": {
+      "bytes": 37270,
+      "sha256": "b5ff72a4e6d889006eacc669a7c15c68a739ca1805117b8c79d79d4ab5181610"
+    },
+    "docs/series_v2/sources/01_STORY_MASTER_V1_1.md": {
+      "bytes": 34256,
+      "sha256": "eb5ca04f5e4302d4a71726f1a24b6cead5cec682b96baee600f6eef8ee951d3e"
+    },
+    "downloads/s01-complete/BEATS_54.tsv": {
+      "bytes": 5832,
+      "sha256": "e5ddf619addab8e000affd3baed28a8b6440b72d479afae7b8e9328941747d1b"
+    },
+    "downloads/s01-complete/MOVIE_QA.json": {
+      "bytes": 6684,
+      "sha256": "495aee60cb50efdc02682387de864b7b07d854042610c6332c2b64c593935e53"
+    },
+    "downloads/s01-complete/SCREENING_KO.md": {
+      "bytes": 5109,
+      "sha256": "29fa79c51383d4bda3eed7d2deb8b92275d2ed4fa9e2d1cf0a7c97b8589ee015"
+    },
+    "downloads/s01-complete/START_HERE_KO.md": {
+      "bytes": 1177,
+      "sha256": "e1b527094923a4963e8a26023d4a5221f89c10973b28c3eb01f35bd82d14d775"
+    },
+    "downloads/s01-complete/TIMELINE.json": {
+      "bytes": 12910,
+      "sha256": "95ddee5660828ccd227db37a1a9c449b5e69cdc253e31b9f9ab489837c948f5b"
+    },
+    "downloads/s01-complete/VOICE_LOCK.tsv": {
+      "bytes": 5448,
+      "sha256": "f4af00e6967f6fceb3cda526887f810cece5c2a963bfd17f5989986a52a61f1a"
+    },
+    "downloads/s01-complete/subtitles.en.srt": {
+      "bytes": 1696,
+      "sha256": "a2101cb48eca3004b780bbf34043ab2ca64ee32884426b80f667de6c6d3593e6"
+    },
+    "reviews/S01_S02_REVIEW_2026-11-23/CODEX_HANDOFF.md": {
+      "bytes": 8172,
+      "sha256": "d6b6e826ff39277b33667d4e43eba84c57686ebd5926e9d958cb9ad97f0418d4"
+    },
+    "reviews/S01_S02_REVIEW_2026-11-23/CORRECTION_PROPOSALS.json": {
+      "bytes": 26767,
+      "sha256": "065f297bbc6d8646360ba54d17c54d3caba230965d813d58f07ee6ee739f2182"
+    },
+    "reviews/S01_S02_REVIEW_2026-11-23/PACKAGE_VALIDATION.json": {
+      "bytes": 3782,
+      "sha256": "8ff2ca67c59c64cbb4422e07bb14445cf1474812f6b33ec2c9066c2364ae332e"
+    },
+    "reviews/S01_S02_REVIEW_2026-11-23/README.md": {
+      "bytes": 19133,
+      "sha256": "75c7ee65ffe8444d30b2ac1b002d6ee1e7999afdbaacc4572b0fb100aeddc6e3"
+    },
+    "reviews/S01_S02_REVIEW_2026-11-23/REVIEW_EVIDENCE.json": {
+      "bytes": 10861,
+      "sha256": "fb780c44fd010acf2ded29602e537b23e844b86a34c193236cc66bbc78f2f559"
+    },
+    "reviews/S01_S02_REVIEW_2026-11-23/S01_ACTING_SCRIPT.md": {
+      "bytes": 30813,
+      "sha256": "742b23a77d96390b1d23178a819797444ac0c78f0fc8f9778718d0f4ae4e5e90"
+    },
+    "reviews/S01_S02_REVIEW_2026-11-23/S01_FINDINGS.json": {
+      "bytes": 22065,
+      "sha256": "7b7bb3314cd4e03f463984aa7b8ce2cf69e173623c4777d230203e21655e719c"
+    },
+    "reviews/S01_S02_REVIEW_2026-11-23/S01_VOICE_DIRECTION_PLAN.json": {
+      "bytes": 116645,
+      "sha256": "419a94bdaaa6f0fd424728b4f47fd66251053ccf251d236e759b818e9e02c0d8"
+    },
+    "reviews/S01_S02_REVIEW_2026-11-23/S01_VOICE_DIRECTION_SHEET.csv": {
+      "bytes": 21337,
+      "sha256": "e972f0b186b3c002f92b0e04c0d1615eb911fbdbe4d0da54bec083bd2af083fd"
+    },
+    "reviews/S01_S02_REVIEW_2026-11-23/S02_ACTING_SCRIPT.md": {
+      "bytes": 103294,
+      "sha256": "245d762e8bc00961e940f5d02e146fb558888f0dc92fde860ddd0b82e36d9417"
+    },
+    "reviews/S01_S02_REVIEW_2026-11-23/S02_FINDINGS.json": {
+      "bytes": 20499,
+      "sha256": "5671b537f5f4fc10e4bdf3f9f712d13b679faf3ff302ef7c94ee7837171e7794"
+    },
+    "reviews/S01_S02_REVIEW_2026-11-23/S02_VOICE_DIRECTION_PLAN.json": {
+      "bytes": 372295,
+      "sha256": "35cdc430688a55e2b7945c990e9c033fe815891f52373721cf76ff9ccb95a9dd"
+    },
+    "reviews/S01_S02_REVIEW_2026-11-23/S02_VOICE_DIRECTION_SHEET.csv": {
+      "bytes": 84330,
+      "sha256": "936fe59667d6d4c264d736414f41009df7998b35946fd52edea045575f0764e8"
+    },
+    "reviews/S01_S02_REVIEW_2026-11-23/SOURCE_PROVENANCE.json": {
+      "bytes": 19147,
+      "sha256": "d59fd2db462f63cbe15f71b4783afc9851bb84d79fe2a16193a5c162c13d2e1d"
+    },
+    "reviews/S01_S02_REVIEW_2026-11-23/VALIDATION.json": {
+      "bytes": 1127,
+      "sha256": "ecb482a968fc0ca9e45ab9abdeb2d2953e75e28f91081090894d24a49570011b"
+    },
+    "reviews/S01_S02_REVIEW_2026-11-23/VALIDATION_EXECUTION_LOG.json": {
+      "bytes": 1453,
+      "sha256": "8fde0148f1a0922ecd4e7b7f63b6a41019be267bb1321bc272c401ec7dc824e6"
+    },
+    "reviews/S01_S02_REVIEW_2026-11-23/YOONSU_SPEAKING_POINTS.json": {
+      "bytes": 40592,
+      "sha256": "03b534bbccf667ba32621648ab2982a394d01a0fd8f9baccb17364a564163879"
+    },
+    "reviews/S01_S02_REVIEW_2026-11-23/YOONSU_SPEAKING_POINTS.md": {
+      "bytes": 31313,
+      "sha256": "eab379e133337a4419d8343ee45e1dc9bade85f626363aed94aededcb86caf0b"
+    },
+    "scenes/S02/QA_G0_G1.md": {
+      "bytes": 697,
+      "sha256": "52637a09130ae97d609fdf89a4dce18c19af0295fd401164a0138c87201a39d0"
+    },
+    "scenes/S02/interaction_map_v2.json": {
+      "bytes": 5925,
+      "sha256": "d2bad5a21c30d31f0364258c2a63d85ffc5244bb2db17114806fdce590e5fec6"
+    },
+    "scenes/S02/scene_design_v2.json": {
+      "bytes": 31499,
+      "sha256": "4d711e1b924b36a0eb97fd95faf075f9574d4bf5e9644379f83d372503a9c2ad"
+    },
+    "scenes/S02/script_v2_draft.md": {
+      "bytes": 23702,
+      "sha256": "adda38827fe487ff2925c289d14104c7c8ce6afad1cfbe9efdc2cc7ba78642b5"
+    },
+    "scenes/S02/source_delta.md": {
+      "bytes": 1694,
+      "sha256": "359be804fb57c1720fc4b7d2b7e63243400ba4079acabb9e9e39a863acb55cab"
+    },
+    "scenes/S03/scene_design_v2.json": {
+      "bytes": 230800,
+      "sha256": "8154ae0a51a1ace2019f8cfd16b648bcde0de25768d112bec9c7d88685d6d6f5"
+    },
+    "scripts/s01_s02_review_tools.py": {
+      "bytes": 11779,
+      "sha256": "ac76d17b2c6ba7cb59ea21f1faecd93c7ac522d55292ff475cc4bd3e7554efa1"
+    },
+    "scripts/s02_approved_voice_tts.py": {
+      "bytes": 3078,
+      "sha256": "7247790748ee1484a735add5cfb75ac9ce424f07779a36ba5da72ab63b628aaa"
+    },
+    "START_HERE_KO.md": {
+      "bytes": 1119,
+      "sha256": "014942fee7eb18f9111cbf93e57b86a0ecf0638a211394e05067001ffac5840b"
+    }
+  },
+  "full_movie_or_new_synthesized_audio_included": false
+}

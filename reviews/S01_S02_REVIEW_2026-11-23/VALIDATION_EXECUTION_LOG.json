@@ -1,0 +1,9 @@
+[
+  {
+    "attempt": 1,
+    "command": "python scripts/s01_s02_review_tools.py build --report reviews/S01_S02_REVIEW_2026-11-23/VALIDATION.json",
+    "exit_code": 0,
+    "stdout": "{\n  \"scope\": \"S01_S02_REVIEW_SIDECARS_ONLY\",\n  \"results\": [\n    {\n      \"scene\": \"S01\",\n      \"baseline_story_lines_preserved\": 26,\n      \"canonical_lines_preserved\": 26,\n      \"authored_model_examples\": 1,\n      \"distinct_english_line_directions\": 26,\n      \"status\": \"PASS_REVIEW_DATA_AND_DIRECTIONS_ONLY\",\n      \"new_audio_listening\": \"NOT_RUN\",\n      \"existing_media_retest\": \"NOT_RUN\"\n    },\n    {\n      \"scene\": \"S02\",\n      \"baseline_story_lines_preserved\": 102,\n      \"canonical_lines_preserved\": 21,\n      \"authored_model_examples\": 10,\n      \"distinct_english_line_directions\": 102,\n      \"status\": \"PASS_REVIEW_DATA_AND_DIRECTIONS_ONLY\",\n      \"new_audio_listening\": \"NOT_RUN\",\n      \"existing_media_retest\": \"NOT_RUN\"\n    }\n  ],\n  \"speech_points_reviewed\": 16,\n  \"unchanged_existing_files\": 78,\n  \"required_review_inputs_verified\": 27,\n  \"baseline_files_not_included_in_this_copy\": [],\n  \"model_examples_proposed_not_existing_audio\": 11,\n  \"source_text_correction_proposals_applied\": false,\n  \"new_synthesis\": \"NOT_RUN\",\n  \"new_audio_listening\": \"NOT_RUN\",\n  \"html_runtime\": \"NOT_RUN\",\n  \"child_trial\": \"NOT_RUN\"\n}\n\n",
+    "stderr": ""
+  }
+]

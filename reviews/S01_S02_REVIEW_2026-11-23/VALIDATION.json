@@ -1,0 +1,35 @@
+{
+  "scope": "S01_S02_REVIEW_SIDECARS_ONLY",
+  "results": [
+    {
+      "scene": "S01",
+      "baseline_story_lines_preserved": 26,
+      "canonical_lines_preserved": 26,
+      "authored_model_examples": 1,
+      "distinct_english_line_directions": 26,
+      "status": "PASS_REVIEW_DATA_AND_DIRECTIONS_ONLY",
+      "new_audio_listening": "NOT_RUN",
+      "existing_media_retest": "NOT_RUN"
+    },
+    {
+      "scene": "S02",
+      "baseline_story_lines_preserved": 102,
+      "canonical_lines_preserved": 21,
+      "authored_model_examples": 10,
+      "distinct_english_line_directions": 102,
+      "status": "PASS_REVIEW_DATA_AND_DIRECTIONS_ONLY",
+      "new_audio_listening": "NOT_RUN",
+      "existing_media_retest": "NOT_RUN"
+    }
+  ],
+  "speech_points_reviewed": 16,
+  "unchanged_existing_files": 78,
+  "required_review_inputs_verified": 27,
+  "baseline_files_not_included_in_this_copy": [],
+  "model_examples_proposed_not_existing_audio": 11,
+  "source_text_correction_proposals_applied": false,
+  "new_synthesis": "NOT_RUN",
+  "new_audio_listening": "NOT_RUN",
+  "html_runtime": "NOT_RUN",
+  "child_trial": "NOT_RUN"
+}

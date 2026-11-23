@@ -1,0 +1,230 @@
+{
+  "base_commit": "2ccbdd3b464f8e6fed43a5807c76c7de98464fe0",
+  "date": "2026-11-23",
+  "scope": "REVIEW_DATA_AND_DIRECTIONS_ONLY",
+  "review_plan": {
+    "base_commit": "2ccbdd3b464f8e6fed43a5807c76c7de98464fe0",
+    "authorization": "User now explicitly requests S01/S02 review, per-line acting and Yoonsu speech-point suitability; supersedes prior exclusion for review scope only.",
+    "preserved": "Completed original audio/video, canonical scripts and prior S03-S05 artifacts remain unchanged.",
+    "deliverable": "Separate review and annotated baseline voice directions; exact proposed textual/interaction corrections kept separate, no completed-product overwrite.",
+    "steps": [
+      {
+        "id": "inputs",
+        "method": "Read exact source version, S01 final metadata and provided approved voice ZIP; compare baseline hashes",
+        "pass": "All used artifacts identified; missing rendered-media evidence reported separately"
+      },
+      {
+        "id": "review",
+        "method": "Independent S01 story/voice, S02 story/voice and all16 learning-point review",
+        "pass": "Each finding exact source anchor, confidence and minimal recommendation; 26+102 baseline lines annotated; all16 actual points classified"
+      },
+      {
+        "id": "integrate",
+        "method": "Consolidate findings and proposals, generate Korean reading scripts and machine-readable voice plans/CSV; retain locked refs",
+        "pass": "128 unchanged baseline spoken texts, consistent approved4 profiles, explicit examples and recommended-change statuses"
+      },
+      {
+        "id": "validate",
+        "method": "Run targeted coverage/source/word-count/synchronization checks on new sidecars; no synthesis/rerender",
+        "pass": "All required new data checks pass; never claim audio or player functionality verified without execution"
+      },
+      {
+        "id": "deliver",
+        "method": "Package and publish only authorized sidecars/instructions with branch lease, verify blob hashes",
+        "pass": "Durable identical complete package available; original production inputs unmodified"
+      }
+    ],
+    "not_run": [
+      "new_audio_synthesis",
+      "new_movie_render",
+      "new_human_listening",
+      "new_child_trial"
+    ],
+    "unknown": [
+      "Yoonsu age and current English proficiency",
+      "current final S02 rendered media not yet located"
+    ]
+  },
+  "independent_reviews": [
+    "S01 story and26 directions",
+    "S02 story and102 directions",
+    "All16 Yoonsu participation points"
+  ],
+  "root_line_review": "All128 Korean and English line directions were read; S01-U025 departure timing and S02-N070 reassurance wording were refined. N030 editorial note moved outside acting text.",
+  "root_refinement": [
+    {
+      "id": "S01-U025",
+      "before": "요정이 떠나고 남은 두 사람을 바라보며 little wooden boy를 따뜻하게 건넨다. so much to learn은 부족함을 지적하지 않고 앞으로 만날 일들에 대한 기대를 남긴다.",
+      "after": "요정이 떠나는 모습과 곁에 남은 두 사람을 함께 바라보며 little wooden boy를 따뜻하게 건넨다. so much to learn은 부족함을 지적하지 않고 앞으로 만날 일들에 대한 기대를 남긴다.",
+      "reason": "Fairy departure is occurring during U025, not already fully complete at line start; align Korean direction with English and C09 beat timing.",
+      "spoken_text_unchanged": true
+    }
+  ],
+  "gate_timing_probe": {
+    "existing_timeline_events": [
+      {
+        "event_id": "X01",
+        "after_cue": "S01-U006",
+        "event_seconds": 25.5,
+        "after_cue_end": 25.41166666666667,
+        "margin_seconds": 0.088333,
+        "data_order": "AFTER_QUESTION_OR_CUE_END",
+        "runtime_microphone_status": "NOT_VERIFIED"
+      },
+      {
+        "event_id": "X02",
+        "after_cue": "S01-U008",
+        "event_seconds": 35.166666666666664,
+        "after_cue_end": 35.08,
+        "margin_seconds": 0.086667,
+        "data_order": "AFTER_QUESTION_OR_CUE_END",
+        "runtime_microphone_status": "NOT_VERIFIED"
+      },
+      {
+        "event_id": "X03",
+        "after_cue": "S01-U013",
+        "event_seconds": 51.75,
+        "after_cue_end": 51.63,
+        "margin_seconds": 0.12,
+        "data_order": "AFTER_QUESTION_OR_CUE_END",
+        "runtime_microphone_status": "NOT_VERIFIED"
+      },
+      {
+        "event_id": "I01",
+        "after_cue": "S01-U016",
+        "event_seconds": 63.25,
+        "after_cue_end": 63.151666666666664,
+        "margin_seconds": 0.098333,
+        "data_order": "AFTER_QUESTION_OR_CUE_END",
+        "runtime_microphone_status": "NOT_VERIFIED"
+      },
+      {
+        "event_id": "X04",
+        "after_cue": "S01-U020",
+        "event_seconds": 82.625,
+        "after_cue_end": 82.50833333333333,
+        "margin_seconds": 0.116667,
+        "data_order": "AFTER_QUESTION_OR_CUE_END",
+        "runtime_microphone_status": "NOT_VERIFIED"
+      },
+      {
+        "event_id": "X05",
+        "after_cue": "S01-U024",
+        "event_seconds": 96.625,
+        "after_cue_end": 96.53333333333333,
+        "margin_seconds": 0.091667,
+        "data_order": "AFTER_QUESTION_OR_CUE_END",
+        "runtime_microphone_status": "NOT_VERIFIED"
+      }
+    ],
+    "i01_remaining_movie_hold_seconds": 3.166667,
+    "c07_start_seconds": 66.41666666666667,
+    "inference_limit": "If player only resumes from event time, this remaining film hold would precede visible C07 reaction. Actual seek/resume logic was not inspected; this is a conditional review item, not a reproduced runtime bug.",
+    "recommendation": "Define input release to first reaction with no duplicated wait; any seek must retain the question and pre-wakeup finger-only state."
+  },
+  "consolidation_decisions": [
+    "P01 Open your hand! as final proposal with one opening action",
+    "P04 baseline voice retained; Geppetto variant conditional on N030 change",
+    "P05 count/gate preserved, immediate safety and reassurance autonomous",
+    "S01 optional5 points are not5 additional mandatory spoken goals"
+  ],
+  "script_review_fixes": [
+    "Validate exact model event/cue maps, not counts alone",
+    "Standalone required-source subset mandatory; full baseline checked when present"
+  ],
+  "static_validation": {
+    "scope": "S01_S02_REVIEW_SIDECARS_ONLY",
+    "results": [
+      {
+        "scene": "S01",
+        "baseline_story_lines_preserved": 26,
+        "canonical_lines_preserved": 26,
+        "authored_model_examples": 1,
+        "distinct_english_line_directions": 26,
+        "status": "PASS_REVIEW_DATA_AND_DIRECTIONS_ONLY",
+        "new_audio_listening": "NOT_RUN",
+        "existing_media_retest": "NOT_RUN"
+      },
+      {
+        "scene": "S02",
+        "baseline_story_lines_preserved": 102,
+        "canonical_lines_preserved": 21,
+        "authored_model_examples": 10,
+        "distinct_english_line_directions": 102,
+        "status": "PASS_REVIEW_DATA_AND_DIRECTIONS_ONLY",
+        "new_audio_listening": "NOT_RUN",
+        "existing_media_retest": "NOT_RUN"
+      }
+    ],
+    "speech_points_reviewed": 16,
+    "unchanged_existing_files": 78,
+    "required_review_inputs_verified": 27,
+    "baseline_files_not_included_in_this_copy": [],
+    "model_examples_proposed_not_existing_audio": 11,
+    "source_text_correction_proposals_applied": false,
+    "new_synthesis": "NOT_RUN",
+    "new_audio_listening": "NOT_RUN",
+    "html_runtime": "NOT_RUN",
+    "child_trial": "NOT_RUN"
+  },
+  "new_audio_synthesis": "NOT_RUN",
+  "new_audio_listening": "NOT_RUN",
+  "new_video_viewing": "NOT_RUN",
+  "player_runtime": "NOT_RUN",
+  "child_trial": "NOT_RUN",
+  "known_limits": [
+    "Yoonsu actual age and English level unknown",
+    "Current S01 HTML source was not obtained",
+    "Current final S02 rendered movie/audio was not obtained; user completion statement preserved",
+    "Historical QA is attributed as historical, not newly executed",
+    "New WPM/pause settings are artistic targets, not measured durations"
+  ],
+  "external_sources": [
+    {
+      "id": "BC_START_HOME",
+      "title": "How to start teaching kids English at home",
+      "publisher": "British Council / LearnEnglish Kids",
+      "url": "https://learnenglishkids.britishcouncil.org/parents/helping-your-child/how-start-teaching-kids-english-home",
+      "access_date": "2026-11-23",
+      "supports_ko": "아이의 흥미에 맞는 짧고 다양한 활동, 실제 물건·그림·행동과 언어의 연결, 스스로 말할 준비가 되기 전 여러 번 듣는 반복을 권한다.",
+      "application_ko": "이번 설계에서는 먼저 화면 뜻을 보여주고 짧은 모델을 들려주며, 몸짓·터치 참여도 허용하는 근거로만 사용한다."
+    },
+    {
+      "id": "BC_SPEAK_HOME",
+      "title": "Speaking English at home",
+      "publisher": "British Council / LearnEnglish Kids",
+      "url": "https://learnenglishkids.britishcouncil.org/parents/helping-your-child/speaking-english-home",
+      "access_date": "2026-11-23",
+      "supports_ko": "뜻을 돕는 표정·몸짓·눈맞춤, 자연스러운 억양을 유지한 느린 말과 강조, 아이가 생각하고 응답할 여유를 권한다.",
+      "application_ko": "모델을 단어마다 동일 간격으로 끊는 낭독으로 만들지 않으며, 쉬운 실제 동작과 대상을 연결한다."
+    },
+    {
+      "id": "BC_LEARN_ANOTHER",
+      "title": "How young children learn English as another language",
+      "publisher": "British Council / LearnEnglish Kids",
+      "url": "https://learnenglishkids.britishcouncil.org/parents/helping-your-child/how-young-children-learn-english-another-language",
+      "access_date": "2026-11-23",
+      "supports_ko": "아직 말하지 않는 시기에는 반복 대화를 강요하지 않고, 짧은 통째 표현과 맥락을 제공하며, 실수를 지적하기보다 자연스럽게 바른 표현을 다시 들려주는 방법을 제시한다.",
+      "application_ko": "원본 세 단어 목표는 제작 기준으로 유지하되 실제 진행은 정확한 복창이나 발음 점수에 묶지 않는다."
+    }
+  ],
+  "final_independent_consistency_review": {
+    "method": "Read-only targeted review of README, handoff, proposals and both final plans",
+    "outcome": "No blocking inconsistency found",
+    "checks": [
+      "P01 single hand-opening cue/action",
+      "P04 baseline vs conditional Geppetto variant",
+      "model/input/guardian semantics",
+      "128 story vs11 model vs16 reviewed points",
+      "NOT_RUN labels for actual audio/media/runtime"
+    ],
+    "test_execution": false
+  },
+  "standalone_package_validation": {
+    "exit_code": 0,
+    "source_inputs_verified": 27,
+    "baseline_files_not_included": 51,
+    "package_crc_and_member_hashes": "PASS",
+    "evidence_file": "PACKAGE_VALIDATION.json"
+  }
+}

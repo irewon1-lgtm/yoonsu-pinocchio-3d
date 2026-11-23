@@ -1,0 +1,404 @@
+{
+  "scene": "S01",
+  "base_commit": "2ccbdd3b464f8e6fed43a5807c76c7de98464fe0",
+  "scope": "Current completed S01 source metadata and canonical text review; per-line acting sidecar. No completed media modification.",
+  "review_status": "STATIC_REVIEW_AND_DIRECTION_AUTHORING_COMPLETE",
+  "overall_story_assessment": "읽은 정본/타임라인/54비트 자료에서 26개 발화의 문구·화자·순서와 손가락→입력→깨어남→교훈→아침의 큰 흐름은 맞는다. 이번에 확인한 주요 보완점은 참여 역할·초보자 예시·첫 인사 인계·선택활동의 시간과 연기 타이밍이다.",
+  "source_sha256": {
+    "downloads/s01-complete/TIMELINE.json": "95ddee5660828ccd227db37a1a9c449b5e69cdc253e31b9f9ab489837c948f5b",
+    "downloads/s01-complete/VOICE_LOCK.tsv": "f4af00e6967f6fceb3cda526887f810cece5c2a963bfd17f5989986a52a61f1a",
+    "downloads/s01-complete/BEATS_54.tsv": "e5ddf619addab8e000affd3baed28a8b6440b72d479afae7b8e9328941747d1b",
+    "downloads/s01-complete/SCREENING_KO.md": "29fa79c51383d4bda3eed7d2deb8b92275d2ed4fa9e2d1cf0a7c97b8589ee015",
+    "downloads/s01-complete/MOVIE_QA.json": "495aee60cb50efdc02682387de864b7b07d854042610c6332c2b64c593935e53",
+    "docs/series_v2/sources/01_STORY_MASTER_V1_1.md": "eb5ca04f5e4302d4a71726f1a24b6cead5cec682b96baee600f6eef8ee951d3e",
+    "docs/series_v2/sources/01_STEP2_PRODUCTION_STORYBOARD_SPEC.md": "b5ff72a4e6d889006eacc669a7c15c68a739ca1805117b8c79d79d4ab5181610"
+  },
+  "findings": [
+    {
+      "id": "S01-R01",
+      "severity": "high",
+      "classification": "design_risk",
+      "title": "첫 필수 발화의 모델 예시 전달 경로가 현재 자료에 명시되지 않음",
+      "observed": "I01은 What is happening? 종료 뒤 He is moving!을 목표로 기다리지만, 현재 TIMELINE/VOICE_LOCK의 26개 확정 발화에는 목표 문장 예시가 없다. SCREENING은 VAD/직접 응답을 기록하나 첫 모델 재생과 예시 동안 마이크 OFF를 명시하지 않는다.",
+      "evidence": [
+        {
+          "path": "downloads/s01-complete/TIMELINE.json",
+          "anchor": "events[I01]",
+          "detail": "63.25초, after S01-U016, prompt He is moving!"
+        },
+        {
+          "path": "downloads/s01-complete/VOICE_LOCK.tsv",
+          "anchor": "S01-U001..S01-U026",
+          "detail": "26개 확정 발화; He is moving! 예시 발화 없음"
+        },
+        {
+          "path": "downloads/s01-complete/SCREENING_KO.md",
+          "anchor": "음성·참여",
+          "detail": "U016 뒤 발화 존재 또는 직접 응답 대기"
+        }
+      ],
+      "inference_limit": "HTML 소스를 직접 확보하지 못했으므로 실제 플레이어에 예시가 전혀 없다고 확정하지 않는다. 확인된 문제는 현재 제작 계약에 경로가 보장되지 않았다는 것이다.",
+      "recommendation": "기존 질문과 목표는 유지. 질문 끝→본편 시계 정지→제페토 A가 He is moving!을 한 번 시범(마이크 OFF)→예시 종료→아이 발화 또는 보호자 터치→C07 반응 한 번으로 명시. 예시는 본편 대사·윤수 답변과 분리한다.",
+      "suggested_new_job": "I01-EXAMPLE",
+      "completed_asset_patch_applied": false
+    },
+    {
+      "id": "S01-R02",
+      "severity": "medium",
+      "classification": "design_risk",
+      "title": "선택 활동의 3초 자동 진행을 발화 성공으로 취급하면 안 됨",
+      "observed": "X01~X05는 각각 seconds=3, required=false이며 SCREENING은 약 3초 후 자동 진행한다고 기록한다. 아이가 알아듣고 따라 말할 충분한 기회인지와 무관하게 종료될 수 있다.",
+      "evidence": [
+        {
+          "path": "downloads/s01-complete/TIMELINE.json",
+          "anchor": "events[X01,X02,X03,X04,X05]",
+          "detail": "각 seconds 3 / required false"
+        },
+        {
+          "path": "downloads/s01-complete/SCREENING_KO.md",
+          "anchor": "음성·참여",
+          "detail": "X01·X02·X03·X04·X05는 약 3초 후 자동 진행"
+        }
+      ],
+      "inference_limit": "선택 활동의 자동 진행 자체가 기능 오류라는 뜻은 아니다. 실제 아동 반응시간은 측정하지 않았다.",
+      "recommendation": "기본은 선택적 터치·함께 보기로 구분하고 필수 발화 횟수에 넣지 않는다. 발화 연습으로 제공할 때는 외부 모델 후 아이에게 시간을 주며, 자동 진행은 SKIPPED/OPTIONAL_CONTINUE로 기록하고 성공 판정으로 바꾸지 않는다.",
+      "completed_asset_patch_applied": false
+    },
+    {
+      "id": "S01-R03",
+      "severity": "medium",
+      "classification": "confirmed_source_issue",
+      "title": "하나의 prompt 필드에 터치 지시와 목표 발화가 섞여 있어 역할 구분이 필요함",
+      "observed": "X01 Tap Pinocchio.는 2단어 터치 지시, X03 Touch the magic light.는 4단어 터치 지시다. 나머지 선택 문구와 I01은 3단어 발화 형태다. 현재 이벤트 필드에는 별도 interaction_type/target_spoken_text가 없어 prompt를 모두 목표 발화로 읽는 구현이 가능하다.",
+      "evidence": [
+        {
+          "path": "downloads/s01-complete/TIMELINE.json",
+          "anchor": "events",
+          "detail": "X01/X03 포함 모든 이벤트가 같은 prompt 키 사용"
+        }
+      ],
+      "inference_limit": "X01/X03을 선택 터치 UI로 사용한다면 그 자체로 세 단어 조건 위반은 아니다. 필수 발화 문장으로 계산하거나 합성할 때 혼동이 발생한다.",
+      "recommendation": "interaction_type과 ui_instruction, target_spoken_text, required를 분리. X01/X03은 터치 지시로 유지하거나 발화 목표로 의도적으로 바꾸는 경우에만 별도 세 단어 문장을 설계한다. 기존 정본 I01 한 개를 임의로 여섯 필수 발화로 늘리지 않는다.",
+      "completed_asset_patch_applied": false
+    },
+    {
+      "id": "S01-R04",
+      "severity": "medium",
+      "classification": "design_risk",
+      "title": "선택 인사가 2화의 첫 친구·첫 인사를 앞당길 수 있음",
+      "observed": "X04 Hello, my friend!가 S01-U020 뒤 82.625초에 있다. S02 원본에서는 윤수 이름 소개→수줍음→I02 첫 인사→Hello, Yoonsu!가 별도의 첫 친구 사건이다.",
+      "evidence": [
+        {
+          "path": "downloads/s01-complete/TIMELINE.json",
+          "anchor": "events[X04]",
+          "detail": "after S01-U020, time 82.625, prompt Hello, my friend!"
+        },
+        {
+          "path": "docs/series_v2/sources/01_STORY_MASTER_V1_1.md",
+          "anchor": "장면 2 / I02",
+          "detail": "His name is Yoonsu. → 첫 인사 → Hello, Yoonsu!"
+        }
+      ],
+      "inference_limit": "현재 S01 자료에 피노키오가 X04를 듣고 윤수에게 직접 응답했다고 명시돼 있지는 않다. 실제 영상의 시선·반응은 새로 확인하지 않았다.",
+      "recommendation": "권장: X04를 비언어 축하 선택활동으로 바꾸고 2화의 첫 인사를 남긴다. 그대로 두면 외부 따라 말하기로 명시하고 피노키오의 관객 인사·이름 인지·답변을 붙이지 않는다. 가능한 대안 모델은 Clap your hands!이나 필수 발화로 추가하지 않는다.",
+      "completed_asset_patch_applied": false
+    },
+    {
+      "id": "S01-R05",
+      "severity": "medium",
+      "classification": "design_risk",
+      "title": "Tell the truth!를 초보자의 이해 확인 문제로 쓰기에는 추상적임",
+      "observed": "피노키오 자신도 S01-U023 The truth?로 되묻고, 바로 다음에는 중요하다는 말만 듣는다. X05 Tell the truth!는 문법상 자연스럽고 세 단어지만 아직 진실/거짓의 구체적 사례를 경험하기 전이다.",
+      "evidence": [
+        {
+          "path": "downloads/s01-complete/TIMELINE.json",
+          "anchor": "S01-U022..U024, events[X05]",
+          "detail": "truth 소개와 되물음 뒤 96.625초 Tell the truth!"
+        },
+        {
+          "path": "docs/series_v2/sources/01_STORY_MASTER_V1_1.md",
+          "anchor": "장면 9~10",
+          "detail": "구체적 거짓말과 사실 고백은 후속 사건"
+        }
+      ],
+      "inference_limit": "아동의 실제 이해도·발음 능력은 측정하지 않았다. 이는 대본의 정보 제공 순서에 따른 편집 판단이다.",
+      "recommendation": "요정의 원본 교훈 대사는 유지하고 따뜻한 약속으로 연기한다. X05는 선택적 익숙해지기 표현으로 두되 뜻 이해·정확 발음을 통과 조건으로 삼지 않는다. 구체적 진실 선택 확인은 후반 이야기의 실제 사건과 연결한다.",
+      "completed_asset_patch_applied": false
+    },
+    {
+      "id": "S01-R06",
+      "severity": "medium",
+      "classification": "design_risk",
+      "title": "일부 기존 발화는 목표 연기를 넣기 전에 속도와 호흡을 청취 확인해야 함",
+      "observed": "현재 타임라인의 단어 수/클립 길이 계산에서 U010은 7단어/1.74초=약241.4wpm, U019는 4단어/1.20초=200wpm, U022는 8단어/2.50초=192wpm이다.",
+      "evidence": [
+        {
+          "path": "downloads/s01-complete/TIMELINE.json",
+          "anchor": "S01-U010",
+          "detail": "Let me give him a little magic. / duration 1.74"
+        },
+        {
+          "path": "downloads/s01-complete/TIMELINE.json",
+          "anchor": "S01-U019",
+          "detail": "I can see you! / duration 1.20"
+        },
+        {
+          "path": "downloads/s01-complete/TIMELINE.json",
+          "anchor": "S01-U022",
+          "detail": "Remember to be kind and tell the truth. / duration 2.50"
+        }
+      ],
+      "inference_limit": "클립 길이 기반 참고값이며 유성구간 속도·자연스러움·명료도를 직접 들은 평가가 아니다. 빠른 계산값만으로 기존 승인 오디오를 실패 처리하지 않는다.",
+      "recommendation": "참조 음색은 유지하고 특히 U010/U019/U022의 짧은 호흡과 의미 단위를 실제로 들어 본다. 재합성이 필요하면 개별 연기 지시와 실제 WAV 길이에 맞춰 해당 컷을 조정한다. 새 지시를 기존 109.25초 슬롯에 과속으로 맞추지 않는다.",
+      "completed_asset_patch_applied": false
+    },
+    {
+      "id": "S01-R07",
+      "severity": "low",
+      "classification": "design_risk",
+      "title": "작업대에서 바닥으로의 다음 화 위치 인계를 분명히 할 필요",
+      "observed": "S01 C07은 작업대를 손으로 지지하며 일어서고, C08은 C07 위치를 유지한다. C09에서 밤이 아침으로 바뀐 뒤 S02에는 바닥·쿠션과 서기 연습이 나온다.",
+      "evidence": [
+        {
+          "path": "downloads/s01-complete/BEATS_54.tsv",
+          "anchor": "C07-P07..P10 / C08-P06 / C09-P04..P05",
+          "detail": "작업대 지지→서기→위치 유지→아침 전환"
+        },
+        {
+          "path": "scenes/S02/scene_design_v2.json",
+          "anchor": "B01..B03",
+          "detail": "손·발·바닥 및 앉은 자리에서 서기"
+        }
+      ],
+      "inference_limit": "밤→아침 생략이 있으므로 공간 변경 자체를 순간이동 오류로 확정하지 않는다. S01에서 이미 섰어도 다음 날 다시 연습하는 것은 모순이 아니다.",
+      "recommendation": "S02 첫 전경에 바닥의 낮은 앉은자리·쿠션·제페토 도움을 명확히 보여 주고 같은 작업실 아침임을 이어받는다. S01 완료본을 다시 만들 필요는 없다.",
+      "completed_asset_patch_applied": false
+    }
+  ],
+  "interaction_inventory": {
+    "canonical_required_speech": 1,
+    "optional_existing_activities": 5,
+    "total_existing_points": 6,
+    "must_not_report_six_required_speech_successes": true,
+    "events": [
+      {
+        "id": "X01",
+        "source_time_seconds": 25.5,
+        "source_after": "S01-U006",
+        "source_required": false,
+        "source_timeout_seconds": 3,
+        "role_review": "OPTIONAL_TOUCH",
+        "source_prompt": "Tap Pinocchio.",
+        "source_word_count": 2,
+        "recommended_target_or_ui_instruction": "Tap Pinocchio.",
+        "verdict": "터치 지시로 유지",
+        "language_and_context_reason": "이름 붙인 인형을 화면에서 찾는 행동과 맞는다. 2단어이지만 터치 UI이므로 필수 세 단어 발화로 세지 않으면 문제 없다.",
+        "recommended_delivery_and_response": "텍스트를 못 읽어도 대상을 알 수 있도록 인형의 위치와 터치 표식을 분명히 한다. 몸/눈이 살아나는 효과는 여기서 실행하지 않는다.",
+        "applied_to_completed_player": false
+      },
+      {
+        "id": "X02",
+        "source_time_seconds": 35.166666666666664,
+        "source_after": "S01-U008",
+        "source_required": false,
+        "source_timeout_seconds": 3,
+        "role_review": "OPTIONAL_GREETING",
+        "source_prompt": "Hello, Blue Fairy!",
+        "source_word_count": 3,
+        "recommended_target_or_ui_instruction": "Hello, Blue Fairy!",
+        "verdict": "선택적 따라 말하기로 조건부 유지",
+        "language_and_context_reason": "인사 장면과 문법·세 단어 형태가 맞는다. Blue Fairy라는 이름은 처음 듣는 아이에게 음성 예시가 있어야 따라 하기 쉽다.",
+        "recommended_delivery_and_response": "기존 인사 흐름을 끊지 않는 외부 예시로 안내하고, 3초 자동 진행을 발화 성공으로 기록하지 않는다.",
+        "applied_to_completed_player": false
+      },
+      {
+        "id": "X03",
+        "source_time_seconds": 51.75,
+        "source_after": "S01-U013",
+        "source_required": false,
+        "source_timeout_seconds": 3,
+        "role_review": "OPTIONAL_TOUCH",
+        "source_prompt": "Touch the magic light.",
+        "source_word_count": 4,
+        "recommended_target_or_ui_instruction": "Touch the magic light.",
+        "verdict": "터치 지시로 유지",
+        "language_and_context_reason": "보이는 빛을 가리키는 행동은 적절하다. 4단어 UI 문구를 목표 세 단어 발화로 혼용하지 않는다.",
+        "recommended_delivery_and_response": "손끝 빛의 도착은 이미 앞에서 진행되므로 터치가 생명 탄생을 일으킨 것처럼 보상하지 않는다. 터치 활동이라면 작은 시각 피드백만 사용한다.",
+        "applied_to_completed_player": false
+      },
+      {
+        "id": "I01",
+        "source_time_seconds": 63.25,
+        "source_after": "S01-U016",
+        "source_required": true,
+        "source_timeout_seconds": 3,
+        "role_review": "REQUIRED_CANONICAL_SPEECH",
+        "source_prompt": "He is moving!",
+        "source_word_count": 3,
+        "recommended_target_or_ui_instruction": "He is moving!",
+        "verdict": "핵심 목표 유지 + 첫 예시 경로 보완",
+        "language_and_context_reason": "남자아이인 피노키오를 he로 가리키며 이미 보인 작은 손가락 움직임을 표현하는 자연스러운 세 단어다. 무엇이 일어나는지 묻는 질문과도 맞는다.",
+        "recommended_delivery_and_response": "움직이는 손가락을 가까이 보여 주고 제페토 A 예시를 외부에서 한 번 들려준다. 예시 중 마이크 OFF, 예시 끝 뒤 입력. 완벽한 문장·발음을 요구하지 않고 보호자 터치도 허용한다. 이후 눈→목→팔→일어서기 1회.",
+        "applied_to_completed_player": false
+      },
+      {
+        "id": "X04",
+        "source_time_seconds": 82.625,
+        "source_after": "S01-U020",
+        "source_required": false,
+        "source_timeout_seconds": 3,
+        "role_review": "OPTIONAL_GREETING",
+        "source_prompt": "Hello, my friend!",
+        "source_word_count": 3,
+        "recommended_target_or_ui_instruction": "Hello, my friend!",
+        "verdict": "비언어 축하 활동으로 전환 권고",
+        "language_and_context_reason": "영어 자체는 자연스럽고 짧지만 2화의 첫 친구/첫 인사를 앞당길 수 있다.",
+        "recommended_delivery_and_response": "기본 권고는 발화 목표에서 제외한 선택 축하. 발화형을 남긴다면 Clap your hands! 같은 자기 행동 문장을 후보로 두고 새 필수 포인트로 추가하지 않는다.",
+        "applied_to_completed_player": false
+      },
+      {
+        "id": "X05",
+        "source_time_seconds": 96.625,
+        "source_after": "S01-U024",
+        "source_required": false,
+        "source_timeout_seconds": 3,
+        "role_review": "OPTIONAL_PHRASE_FAMILIARIZATION",
+        "source_prompt": "Tell the truth!",
+        "source_word_count": 3,
+        "recommended_target_or_ui_instruction": "Tell the truth!",
+        "verdict": "선택적 익숙해지기로 제한",
+        "language_and_context_reason": "세 단어의 자연스러운 명령문이지만 의미는 추상적이다. 아이가 아직 truth의 구체적 사례를 보지 않았다.",
+        "recommended_delivery_and_response": "요정의 친절한 어조로 표현만 들려줄 수 있다. 단어 뜻 이해나 정확 발음을 시험하지 않고, 구체적인 정직 행동은 후반 사건에서 다룬다.",
+        "applied_to_completed_player": false
+      }
+    ]
+  },
+  "verified_static_checks": [
+    {
+      "check": "Canonical 26 lines equal timeline text/speaker/order",
+      "result": "PASS",
+      "executed_this_turn": true
+    },
+    {
+      "check": "New sidecar preserves 26 IDs and spoken text",
+      "result": "PASS",
+      "executed_this_turn": true
+    },
+    {
+      "check": "26 distinct authored KO/EN directions; emphasis/internal-pause anchors exist",
+      "result": "PASS",
+      "executed_this_turn": true
+    },
+    {
+      "check": "I01 proposed model exact three words",
+      "result": "PASS",
+      "executed_this_turn": true
+    }
+  ],
+  "positive_continuity_observations": [
+    {
+      "anchor": "C05→C06→C07",
+      "observation": "자료상 입력 전에는 손가락의 미세 움직임만, 눈·몸통은 정지. 입력 후 C07에서 눈·고개·팔·기립 순서. 실제 새 영상 재생으로 검증한 것은 아님."
+    },
+    {
+      "anchor": "C09→S02 entry",
+      "observation": "밤에서 아침으로 시간 전환이 있어 다음 날 몸 연습으로 이어지는 기본 구조는 자연스럽다."
+    },
+    {
+      "anchor": "S01-U019",
+      "observation": "I can see you!의 상대는 제페토로 연기 지시. 윤수 첫 인사를 선점하지 않음."
+    },
+    {
+      "anchor": "S01-U022..U024",
+      "observation": "truth는 이제 배우는 기준으로 전달. S12 변신이나 S09 코 성장 등 후속 사건을 앞당기지 않음."
+    }
+  ],
+  "pace_screening": [
+    {
+      "id": "S01-U001",
+      "text": "Once upon a time, in a small village, there lived a kind old man named Geppetto.",
+      "metadata_wpm": 179.1,
+      "new_acting_target_wpm": 112,
+      "metadata_seconds": 5.36,
+      "new_planned_voice_seconds": 9.411,
+      "assessment": "LISTEN_AND_RETIME_IF_REGENERATED_NOT_AUDIO_FAILURE"
+    },
+    {
+      "id": "S01-U007",
+      "text": "That night, a beautiful blue light floated through the window.",
+      "metadata_wpm": 180.7,
+      "new_acting_target_wpm": 110,
+      "metadata_seconds": 3.32,
+      "new_planned_voice_seconds": 6.185,
+      "assessment": "LISTEN_AND_RETIME_IF_REGENERATED_NOT_AUDIO_FAILURE"
+    },
+    {
+      "id": "S01-U009",
+      "text": "You made this little boy with so much love.",
+      "metadata_wpm": 183.7,
+      "new_acting_target_wpm": 96,
+      "metadata_seconds": 2.94,
+      "new_planned_voice_seconds": 6.215,
+      "assessment": "LISTEN_AND_RETIME_IF_REGENERATED_NOT_AUDIO_FAILURE"
+    },
+    {
+      "id": "S01-U010",
+      "text": "Let me give him a little magic.",
+      "metadata_wpm": 241.4,
+      "new_acting_target_wpm": 95,
+      "metadata_seconds": 1.74,
+      "new_planned_voice_seconds": 5.021,
+      "assessment": "LISTEN_AND_RETIME_IF_REGENERATED_NOT_AUDIO_FAILURE"
+    },
+    {
+      "id": "S01-U019",
+      "text": "I can see you!",
+      "metadata_wpm": 200.0,
+      "new_acting_target_wpm": 106,
+      "metadata_seconds": 1.2,
+      "new_planned_voice_seconds": 2.794,
+      "assessment": "LISTEN_AND_RETIME_IF_REGENERATED_NOT_AUDIO_FAILURE"
+    },
+    {
+      "id": "S01-U022",
+      "text": "Remember to be kind and tell the truth.",
+      "metadata_wpm": 192.0,
+      "new_acting_target_wpm": 92,
+      "metadata_seconds": 2.5,
+      "new_planned_voice_seconds": 6.067,
+      "assessment": "LISTEN_AND_RETIME_IF_REGENERATED_NOT_AUDIO_FAILURE"
+    },
+    {
+      "id": "S01-U025",
+      "text": "The little wooden boy had so much to learn.",
+      "metadata_wpm": 201.5,
+      "new_acting_target_wpm": 108,
+      "metadata_seconds": 2.68,
+      "new_planned_voice_seconds": 5.6,
+      "assessment": "LISTEN_AND_RETIME_IF_REGENERATED_NOT_AUDIO_FAILURE"
+    },
+    {
+      "id": "S01-U026",
+      "text": "And his adventure was just beginning.",
+      "metadata_wpm": 173.1,
+      "new_acting_target_wpm": 110,
+      "metadata_seconds": 2.08,
+      "new_planned_voice_seconds": 3.923,
+      "assessment": "LISTEN_AND_RETIME_IF_REGENERATED_NOT_AUDIO_FAILURE"
+    }
+  ],
+  "limitations": {
+    "html_source_this_turn": "BLOCKED_ACCESS",
+    "html_execution_this_turn": "NOT_RUN",
+    "audio_listening_this_turn": "NOT_RUN",
+    "video_frame_review_this_turn": "NOT_RUN",
+    "child_understanding_or_pronunciation_test": "NOT_RUN",
+    "old_movie_qa": "READ_AS_HISTORICAL_EVIDENCE_NOT_REEXECUTED",
+    "reason": "GitHub player content retrieval unavailable; current review uses exact-commit timeline/voice/beat/review metadata. Do not present old software replay or correlations as new listening evidence."
+  },
+  "completed_assets_modified": false,
+  "new_files": [
+    "s01_review_voice_authoring.json",
+    "s01_review_findings.json"
+  ]
+}

@@ -1,0 +1,2073 @@
+{
+  "schema_version": "1.0",
+  "scene": "S01",
+  "date": "2026-11-23",
+  "base_commit": "2ccbdd3b464f8e6fed43a5807c76c7de98464fe0",
+  "scope": "REVIEW_SIDECAR_PRESERVED_BASELINE_WITH_SEPARATE_PROPOSALS",
+  "completed_product_changed": false,
+  "new_audio_synthesis": "NOT_RUN",
+  "new_audio_listening": "NOT_RUN",
+  "story_line_count": 26,
+  "canonical_line_count": 26,
+  "existing_new_line_count": 0,
+  "external_model_example_count": 1,
+  "source_timing_policy": "Existing metadata only. Planned WPM and pauses are artistic targets; actual WAV length, cut packing and rendered result have not been verified.",
+  "source_clock_seconds": 109.25,
+  "source_clock_basis": "EXISTING_FINAL_TIMELINE_METADATA",
+  "story_jobs": [
+    {
+      "id": "S01-U001",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "내레이션",
+      "spoken_text": "Once upon a time, in a small village, there lived a kind old man named Geppetto.",
+      "cut": "S01-C01",
+      "source_timing": {
+        "start_seconds": 2.0416666666666665,
+        "end_seconds": 7.401666666666667,
+        "duration_seconds": 5.36,
+        "frame": 49,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 16,
+        "words_per_minute_from_metadata": 179.1
+      },
+      "source_original_sha256": "f4c7c786ee4997cafe9925a7dc2d39e7a9c2500f834db6837e5c297efc2aaa0b",
+      "voice_direction": {
+        "profile_id": "NARRATOR_A",
+        "listener": "윤수/시청자",
+        "intention": "작업실과 제페토를 처음 만나는 아이에게 이야기를 열어 준다",
+        "emotion": "차분한 환대와 애정",
+        "delivery_ko": "작업실을 함께 바라보며 천천히 이야기 문을 연다. small village는 공간을 그려 주고 kind old man에는 온기를, Geppetto에는 인물을 소개하는 작은 미소를 담는다.",
+        "direction_en": "Invite one child into the small village as you watch the workshop. Warm kind old man and gently introduce Geppetto; let the opening feel discovered rather than ceremonially recited.",
+        "pace_wpm": 112,
+        "energy": 2,
+        "emphasis": [
+          "small village",
+          "kind old man",
+          "Geppetto"
+        ],
+        "pause_before_ms": 180,
+        "pause_after_ms": 420,
+        "internal_pauses": [
+          {
+            "after": "small village,",
+            "ms": 240
+          }
+        ],
+        "avoid": [
+          "동화책 제목을 선언하듯 장중하게 읽기",
+          "고유명사를 급하게 삼키기"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 9.411,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 1,
+      "context_before": null,
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U002",
+        "text": "He loved making wooden toys."
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "내레이션",
+        "approved_candidate": "A",
+        "original_label": "am_fenrir",
+        "reference_mp3_path": "assets/voice_refs/v6/narrator_V6_APPROVED.mp3",
+        "sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "v7_voice_reference_id": "d38f0b8b8d9b5b0413eae736633354b35fe421cdf4922e9c434d418492daa32c"
+      },
+      "instruct_prompt_en": "Keep the approved narrator A identity. Tell the story warmly to one child while watching the action unfold. Shape each sentence around a new thought and the visual event. Use gentle variation and meaningful pauses, not metronomic audiobook cadence or the voices of the characters. Invite one child into the small village as you watch the workshop. Warm kind old man and gently introduce Geppetto; let the opening feel discovered rather than ceremonially recited. Planned delivery target: about 112 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: small village, kind old man, Geppetto. Planned pause before: 180 ms; after: 420 ms. Internal pause cues: [{\"after\": \"small village,\", \"ms\": 240}]. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U001.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U002",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "내레이션",
+      "spoken_text": "He loved making wooden toys.",
+      "cut": "S01-C01",
+      "source_timing": {
+        "start_seconds": 7.875,
+        "end_seconds": 9.995000000000001,
+        "duration_seconds": 2.12,
+        "frame": 189,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 5,
+        "words_per_minute_from_metadata": 141.5
+      },
+      "source_original_sha256": "51a3be8fc1a2b083de49504c148c12a5ebbf33312e223dec3b192d3938857549",
+      "voice_direction": {
+        "profile_id": "NARRATOR_A",
+        "listener": "윤수/시청자",
+        "intention": "제페토가 손으로 만드는 일을 좋아한다는 마음을 보여 준다",
+        "emotion": "일상의 작은 뿌듯함",
+        "delivery_ko": "조각하는 손에서 완성 장난감으로 시선을 따라간다. loved에 작은 미소를 얹고 wooden toys를 한 덩어리로 편안히 마친다.",
+        "direction_en": "Follow the working hands toward the toys. Put a small fond smile on loved, then settle wooden toys as one easy thought.",
+        "pace_wpm": 108,
+        "energy": 2,
+        "emphasis": [
+          "loved",
+          "wooden toys"
+        ],
+        "pause_before_ms": 120,
+        "pause_after_ms": 350,
+        "internal_pauses": [],
+        "avoid": [
+          "만드는 방법을 가르치는 설명조",
+          "매 단어를 같은 세기로 찍기"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 3.248,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 2,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U001",
+        "text": "Once upon a time, in a small village, there lived a kind old man named Geppetto."
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U003",
+        "text": "But sometimes, his little house felt very quiet."
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "내레이션",
+        "approved_candidate": "A",
+        "original_label": "am_fenrir",
+        "reference_mp3_path": "assets/voice_refs/v6/narrator_V6_APPROVED.mp3",
+        "sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "v7_voice_reference_id": "d38f0b8b8d9b5b0413eae736633354b35fe421cdf4922e9c434d418492daa32c"
+      },
+      "instruct_prompt_en": "Keep the approved narrator A identity. Tell the story warmly to one child while watching the action unfold. Shape each sentence around a new thought and the visual event. Use gentle variation and meaningful pauses, not metronomic audiobook cadence or the voices of the characters. Follow the working hands toward the toys. Put a small fond smile on loved, then settle wooden toys as one easy thought. Planned delivery target: about 108 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: loved, wooden toys. Planned pause before: 120 ms; after: 350 ms. Internal pause cues: []. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U002.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U003",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "내레이션",
+      "spoken_text": "But sometimes, his little house felt very quiet.",
+      "cut": "S01-C01",
+      "source_timing": {
+        "start_seconds": 10.458333333333334,
+        "end_seconds": 14.258333333333333,
+        "duration_seconds": 3.8,
+        "frame": 251,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 8,
+        "words_per_minute_from_metadata": 126.3
+      },
+      "source_original_sha256": "495622ac5825e655dc87d372dbc1055b40d5fd75040d44081e7a190056909591",
+      "voice_direction": {
+        "profile_id": "NARRATOR_A",
+        "listener": "윤수/시청자",
+        "intention": "장난감이 많아도 사람의 온기가 그리운 순간을 전한다",
+        "emotion": "부드러운 외로움",
+        "delivery_ko": "But sometimes에서 생각을 살짝 바꾼다. 빈 문과 의자를 함께 바라보듯 little house를 따뜻하게 두고 very quiet에서 음량과 속도를 조금 낮춘다. 슬픈 울음이나 불길한 속삭임으로 바꾸지 않는다.",
+        "direction_en": "Make a gentle turn at But sometimes. Keep affection for the little house, then soften very quiet while noticing the empty chair; this is loneliness without fear or melodrama.",
+        "pace_wpm": 104,
+        "energy": 2,
+        "emphasis": [
+          "sometimes",
+          "very quiet"
+        ],
+        "pause_before_ms": 160,
+        "pause_after_ms": 480,
+        "internal_pauses": [
+          {
+            "after": "But sometimes,",
+            "ms": 220
+          }
+        ],
+        "avoid": [
+          "외로움을 우는 연기로 과장하기",
+          "불길한 저음"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 5.475,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 3,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U002",
+        "text": "He loved making wooden toys."
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U004",
+        "text": "Look at you, little wooden boy!"
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "내레이션",
+        "approved_candidate": "A",
+        "original_label": "am_fenrir",
+        "reference_mp3_path": "assets/voice_refs/v6/narrator_V6_APPROVED.mp3",
+        "sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "v7_voice_reference_id": "d38f0b8b8d9b5b0413eae736633354b35fe421cdf4922e9c434d418492daa32c"
+      },
+      "instruct_prompt_en": "Keep the approved narrator A identity. Tell the story warmly to one child while watching the action unfold. Shape each sentence around a new thought and the visual event. Use gentle variation and meaningful pauses, not metronomic audiobook cadence or the voices of the characters. Make a gentle turn at But sometimes. Keep affection for the little house, then soften very quiet while noticing the empty chair; this is loneliness without fear or melodrama. Planned delivery target: about 104 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: sometimes, very quiet. Planned pause before: 160 ms; after: 480 ms. Internal pause cues: [{\"after\": \"But sometimes,\", \"ms\": 220}]. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U003.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U004",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "제페토",
+      "spoken_text": "Look at you, little wooden boy!",
+      "cut": "S01-C02",
+      "source_timing": {
+        "start_seconds": 15.416666666666666,
+        "end_seconds": 17.616666666666667,
+        "duration_seconds": 2.2,
+        "frame": 370,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 6,
+        "words_per_minute_from_metadata": 163.6
+      },
+      "source_original_sha256": "cc9f35628a8f758025bc3dc32a24c3b6857634a675c3dd5e2eb8930b473bed23",
+      "voice_direction": {
+        "profile_id": "GEPPETTO_A",
+        "listener": "아직 움직이지 않는 나무 인형",
+        "intention": "완성한 인형을 눈높이에서 애정으로 바라본다",
+        "emotion": "자랑스러운 다정함",
+        "delivery_ko": "아직 대답하지 않는 인형에게 가까이 말을 건넨다. Look at you는 발견하듯 밝히고 little wooden boy는 노년의 따뜻한 숨으로 감싼다. 인형을 들어 올리는 힘 때문에 목소리를 밀어붙이지 않는다.",
+        "direction_en": "Speak closely to the still-unmoving puppet in your hands. Let Look at you brighten with pride, then cradle little wooden boy in an elderly grandfather warmth.",
+        "pace_wpm": 94,
+        "energy": 3,
+        "emphasis": [
+          "Look at you",
+          "little wooden boy"
+        ],
+        "pause_before_ms": 140,
+        "pause_after_ms": 380,
+        "internal_pauses": [
+          {
+            "after": "you,",
+            "ms": 160
+          }
+        ],
+        "avoid": [
+          "살아 있는 아이에게 대답을 요구하는 말투",
+          "젊은 성우의 광고 미소"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 4.51,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 4,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U003",
+        "text": "But sometimes, his little house felt very quiet."
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U005",
+        "text": "You have two arms, two legs, and a funny little nose."
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "제페토",
+        "approved_candidate": "A",
+        "original_label": "82-year-old grandfather (voice model name not recovered)",
+        "reference_mp3_path": "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3",
+        "sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+        "v7_voice_reference_id": "97884b61a37d580d5dd0b1fed537752bce960f7a73cda3c67b3f57e1767d61c2"
+      },
+      "instruct_prompt_en": "Keep the approved Geppetto A voice identity, with a convincingly elderly grandfather presence. Use a warm low-middle resonance, a little age in the breath and patient thought-sized phrases. Speak to his grandson, not to a microphone. Be clear and affectionate, never a young father, a flat narrator, or a caricatured croak. Speak closely to the still-unmoving puppet in your hands. Let Look at you brighten with pride, then cradle little wooden boy in an elderly grandfather warmth. Planned delivery target: about 94 words per minute, energy 3/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: Look at you, little wooden boy. Planned pause before: 140 ms; after: 380 ms. Internal pause cues: [{\"after\": \"you,\", \"ms\": 160}]. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U004.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U005",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "제페토",
+      "spoken_text": "You have two arms, two legs, and a funny little nose.",
+      "cut": "S01-C02",
+      "source_timing": {
+        "start_seconds": 18.083333333333332,
+        "end_seconds": 22.80333333333333,
+        "duration_seconds": 4.72,
+        "frame": 434,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 11,
+        "words_per_minute_from_metadata": 139.8
+      },
+      "source_original_sha256": "21ee3f1207a7ccc29e57f9e1e2091a89d4c8e9584ada2b3baaee0f627a66fbc4",
+      "voice_direction": {
+        "profile_id": "GEPPETTO_A",
+        "listener": "아직 움직이지 않는 나무 인형",
+        "intention": "인형의 몸을 하나씩 살피며 애정을 표현한다",
+        "emotion": "장난기 섞인 만족",
+        "delivery_ko": "two arms와 two legs를 몸을 살펴보는 두 생각으로 나눈다. funny little nose에서는 놀림 대신 작게 웃는 기운을 준다. 코를 가리키더라도 길어진 코를 보듯 놀라지 않는다.",
+        "direction_en": "Notice the arms, then the legs, as separate affectionate discoveries. Give funny little nose a tiny amused warmth, never ridicule and never a reaction to a growing nose.",
+        "pace_wpm": 94,
+        "energy": 2,
+        "emphasis": [
+          "two arms",
+          "two legs",
+          "funny little nose"
+        ],
+        "pause_before_ms": 120,
+        "pause_after_ms": 400,
+        "internal_pauses": [
+          {
+            "after": "two arms,",
+            "ms": 180
+          },
+          {
+            "after": "two legs,",
+            "ms": 180
+          }
+        ],
+        "avoid": [
+          "몸 부위 목록을 수업처럼 낭독",
+          "코를 조롱하거나 거짓말을 암시"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 7.901,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 5,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U004",
+        "text": "Look at you, little wooden boy!"
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U006",
+        "text": "I'll call you Pinocchio."
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "제페토",
+        "approved_candidate": "A",
+        "original_label": "82-year-old grandfather (voice model name not recovered)",
+        "reference_mp3_path": "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3",
+        "sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+        "v7_voice_reference_id": "97884b61a37d580d5dd0b1fed537752bce960f7a73cda3c67b3f57e1767d61c2"
+      },
+      "instruct_prompt_en": "Keep the approved Geppetto A voice identity, with a convincingly elderly grandfather presence. Use a warm low-middle resonance, a little age in the breath and patient thought-sized phrases. Speak to his grandson, not to a microphone. Be clear and affectionate, never a young father, a flat narrator, or a caricatured croak. Notice the arms, then the legs, as separate affectionate discoveries. Give funny little nose a tiny amused warmth, never ridicule and never a reaction to a growing nose. Planned delivery target: about 94 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: two arms, two legs, funny little nose. Planned pause before: 120 ms; after: 400 ms. Internal pause cues: [{\"after\": \"two arms,\", \"ms\": 180}, {\"after\": \"two legs,\", \"ms\": 180}]. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U005.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U006",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "제페토",
+      "spoken_text": "I'll call you Pinocchio.",
+      "cut": "S01-C02",
+      "source_timing": {
+        "start_seconds": 23.291666666666668,
+        "end_seconds": 25.41166666666667,
+        "duration_seconds": 2.12,
+        "frame": 559,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 4,
+        "words_per_minute_from_metadata": 113.2
+      },
+      "source_original_sha256": "e50f0469563eac6463bd9de10621dd80964d68d3c5cb2f2fbe1649a8518a1d9c",
+      "voice_direction": {
+        "profile_id": "GEPPETTO_A",
+        "listener": "아직 움직이지 않는 나무 인형",
+        "intention": "인형에게 이름을 주며 가족처럼 받아들인다",
+        "emotion": "조용한 결심과 애정",
+        "delivery_ko": "이름을 떠올린 듯 잠깐 마음을 모은 뒤 말한다. call you는 편하게 이어 주고 Pinocchio는 처음 부르는 소중한 이름으로 또렷하게 남긴다. 손으로 안전하게 내려놓는 연기와 호흡을 맞춘다.",
+        "direction_en": "Choose the name with quiet affection. Flow through call you, then let Pinocchio be the first tender naming of someone precious while you settle him safely.",
+        "pace_wpm": 91,
+        "energy": 2,
+        "emphasis": [
+          "Pinocchio"
+        ],
+        "pause_before_ms": 220,
+        "pause_after_ms": 520,
+        "internal_pauses": [],
+        "avoid": [
+          "작명 발표처럼 크게 선언",
+          "이름 끝을 기계적으로 과장"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 3.377,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 6,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U005",
+        "text": "You have two arms, two legs, and a funny little nose."
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U007",
+        "text": "That night, a beautiful blue light floated through the window."
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "제페토",
+        "approved_candidate": "A",
+        "original_label": "82-year-old grandfather (voice model name not recovered)",
+        "reference_mp3_path": "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3",
+        "sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+        "v7_voice_reference_id": "97884b61a37d580d5dd0b1fed537752bce960f7a73cda3c67b3f57e1767d61c2"
+      },
+      "instruct_prompt_en": "Keep the approved Geppetto A voice identity, with a convincingly elderly grandfather presence. Use a warm low-middle resonance, a little age in the breath and patient thought-sized phrases. Speak to his grandson, not to a microphone. Be clear and affectionate, never a young father, a flat narrator, or a caricatured croak. Choose the name with quiet affection. Flow through call you, then let Pinocchio be the first tender naming of someone precious while you settle him safely. Planned delivery target: about 91 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: Pinocchio. Planned pause before: 220 ms; after: 520 ms. Internal pause cues: []. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U006.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U007",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "내레이션",
+      "spoken_text": "That night, a beautiful blue light floated through the window.",
+      "cut": "S01-C03",
+      "source_timing": {
+        "start_seconds": 29.708333333333332,
+        "end_seconds": 33.02833333333333,
+        "duration_seconds": 3.32,
+        "frame": 713,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 10,
+        "words_per_minute_from_metadata": 180.7
+      },
+      "source_original_sha256": "e1961e320ce74892fb3a87f21b744b2780cbc98918c7d98637ab2799e45961f6",
+      "voice_direction": {
+        "profile_id": "NARRATOR_A",
+        "listener": "윤수/시청자",
+        "intention": "푸른빛이 다가오며 평범한 밤의 흐름이 바뀌는 것을 알린다",
+        "emotion": "차분한 신비와 호기심",
+        "delivery_ko": "That night 뒤에 작은 공간을 둔다. beautiful blue light에서 색이 조금 밝아지고 floated through the window는 빛의 부드러운 움직임을 따라 이어 간다. 위험한 침입처럼 긴장시키지 않는다.",
+        "direction_en": "Open a small space after That night. Brighten the blue light with wonder and let floated through the window travel smoothly with it; no ominous intruder tone.",
+        "pace_wpm": 110,
+        "energy": 2,
+        "emphasis": [
+          "beautiful blue light",
+          "floated"
+        ],
+        "pause_before_ms": 150,
+        "pause_after_ms": 380,
+        "internal_pauses": [
+          {
+            "after": "That night,",
+            "ms": 200
+          }
+        ],
+        "avoid": [
+          "예고편 같은 공포 분위기",
+          "매 단어를 길게 늘이기"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 6.185,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 7,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U006",
+        "text": "I'll call you Pinocchio."
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U008",
+        "text": "Good evening, Geppetto."
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "내레이션",
+        "approved_candidate": "A",
+        "original_label": "am_fenrir",
+        "reference_mp3_path": "assets/voice_refs/v6/narrator_V6_APPROVED.mp3",
+        "sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "v7_voice_reference_id": "d38f0b8b8d9b5b0413eae736633354b35fe421cdf4922e9c434d418492daa32c"
+      },
+      "instruct_prompt_en": "Keep the approved narrator A identity. Tell the story warmly to one child while watching the action unfold. Shape each sentence around a new thought and the visual event. Use gentle variation and meaningful pauses, not metronomic audiobook cadence or the voices of the characters. Open a small space after That night. Brighten the blue light with wonder and let floated through the window travel smoothly with it; no ominous intruder tone. Planned delivery target: about 110 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: beautiful blue light, floated. Planned pause before: 150 ms; after: 380 ms. Internal pause cues: [{\"after\": \"That night,\", \"ms\": 200}]. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U007.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U008",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "파란 요정",
+      "spoken_text": "Good evening, Geppetto.",
+      "cut": "S01-C03",
+      "source_timing": {
+        "start_seconds": 33.5,
+        "end_seconds": 35.08,
+        "duration_seconds": 1.58,
+        "frame": 804,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 3,
+        "words_per_minute_from_metadata": 113.9
+      },
+      "source_original_sha256": "2f0b62ca58620a40d896eb75ba6387bd8107413c76ed990f747c2f61e49bfe7e",
+      "voice_direction": {
+        "profile_id": "BLUE_FAIRY_C",
+        "listener": "제페토",
+        "intention": "놀란 제페토를 먼저 편안하게 맞이한다",
+        "emotion": "예의 있는 따뜻함",
+        "delivery_ko": "요정이 제페토의 얼굴을 확인하며 가까이 인사한다. Good evening은 맑게 연결하고 Geppetto에서 상대에게 시선이 닿는 부드러운 미소를 준다.",
+        "direction_en": "Greet Geppetto as you meet his eyes and put him at ease. Keep Good evening clear and joined, then warm his name with a small personal smile.",
+        "pace_wpm": 96,
+        "energy": 2,
+        "emphasis": [
+          "Geppetto"
+        ],
+        "pause_before_ms": 150,
+        "pause_after_ms": 400,
+        "internal_pauses": [
+          {
+            "after": "evening,",
+            "ms": 140
+          }
+        ],
+        "avoid": [
+          "멀리 울리는 신의 음성",
+          "대사를 가리는 속삭임"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 2.565,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 8,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U007",
+        "text": "That night, a beautiful blue light floated through the window."
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U009",
+        "text": "You made this little boy with so much love."
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "파란 요정",
+        "approved_candidate": "C",
+        "original_label": "af_kore",
+        "reference_mp3_path": "assets/voice_refs/v6/blue_fairy_V6_APPROVED.mp3",
+        "sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "v7_voice_reference_id": "72b38e466ccb3c7daebb67beaed156d71f554c41c2f5fe458e53dcbbe9405f8c"
+      },
+      "instruct_prompt_en": "Keep the exact approved Blue Fairy C identity. Use a clear, graceful adult feminine tone, gentle assurance and warm attention to the listener. Magical means poised and kind, not breathy, echo-heavy, hypnotic or emotionally distant. Greet Geppetto as you meet his eyes and put him at ease. Keep Good evening clear and joined, then warm his name with a small personal smile. Planned delivery target: about 96 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: Geppetto. Planned pause before: 150 ms; after: 400 ms. Internal pause cues: [{\"after\": \"evening,\", \"ms\": 140}]. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U008.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U009",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "파란 요정",
+      "spoken_text": "You made this little boy with so much love.",
+      "cut": "S01-C03",
+      "source_timing": {
+        "start_seconds": 38.625,
+        "end_seconds": 41.565,
+        "duration_seconds": 2.94,
+        "frame": 927,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 9,
+        "words_per_minute_from_metadata": 183.7
+      },
+      "source_original_sha256": "cc9f65c5aba42e43067cfdb0a70318fccee227b87f273b8fcb68e6475f84c31b",
+      "voice_direction": {
+        "profile_id": "BLUE_FAIRY_C",
+        "listener": "제페토",
+        "intention": "인형에 담긴 제페토의 사랑을 알아본다",
+        "emotion": "존중과 감사",
+        "delivery_ko": "this little boy를 말할 때 인형을 잠깐 바라보고 다시 제페토와 눈을 맞춘다. so much love를 진심으로 인정하되 감상적인 울음으로 밀어붙이지 않는다.",
+        "direction_en": "Look briefly toward the puppet, then back to his maker. Recognize so much love with sincere respect, not flattery or sentimental tears.",
+        "pace_wpm": 96,
+        "energy": 2,
+        "emphasis": [
+          "this little boy",
+          "so much love"
+        ],
+        "pause_before_ms": 170,
+        "pause_after_ms": 420,
+        "internal_pauses": [],
+        "avoid": [
+          "상장을 읽듯 평가하는 말투",
+          "인형이 이미 살아난 것처럼 축하"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 6.215,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 9,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U008",
+        "text": "Good evening, Geppetto."
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U010",
+        "text": "Let me give him a little magic."
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "파란 요정",
+        "approved_candidate": "C",
+        "original_label": "af_kore",
+        "reference_mp3_path": "assets/voice_refs/v6/blue_fairy_V6_APPROVED.mp3",
+        "sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "v7_voice_reference_id": "72b38e466ccb3c7daebb67beaed156d71f554c41c2f5fe458e53dcbbe9405f8c"
+      },
+      "instruct_prompt_en": "Keep the exact approved Blue Fairy C identity. Use a clear, graceful adult feminine tone, gentle assurance and warm attention to the listener. Magical means poised and kind, not breathy, echo-heavy, hypnotic or emotionally distant. Look briefly toward the puppet, then back to his maker. Recognize so much love with sincere respect, not flattery or sentimental tears. Planned delivery target: about 96 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: this little boy, so much love. Planned pause before: 170 ms; after: 420 ms. Internal pause cues: []. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U009.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U010",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "파란 요정",
+      "spoken_text": "Let me give him a little magic.",
+      "cut": "S01-C03",
+      "source_timing": {
+        "start_seconds": 42.041666666666664,
+        "end_seconds": 43.781666666666666,
+        "duration_seconds": 1.74,
+        "frame": 1009,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 7,
+        "words_per_minute_from_metadata": 241.4
+      },
+      "source_original_sha256": "0a9dfbd6b85e123e26b86ab0ec73665482e3b8d6c0fe088b7c88d987a05d5cd3",
+      "voice_direction": {
+        "profile_id": "BLUE_FAIRY_C",
+        "listener": "제페토",
+        "intention": "조용한 확신으로 마법의 선물을 제안한다",
+        "emotion": "따뜻한 설렘과 확신",
+        "delivery_ko": "Let me는 안심시키듯 시작한다. a little magic에는 작은 선물을 꺼내는 기쁨을 담되 주문을 외우듯 끊어 말하지 않는다. 아직 손가락·몸이 움직인 결과를 먼저 축하하지 않는다.",
+        "direction_en": "Offer the gift with quiet confidence. Let a little magic carry a small delighted promise rather than the cadence of a spell; the movement has not happened yet.",
+        "pace_wpm": 95,
+        "energy": 2,
+        "emphasis": [
+          "a little magic"
+        ],
+        "pause_before_ms": 150,
+        "pause_after_ms": 450,
+        "internal_pauses": [],
+        "avoid": [
+          "마법 주문처럼 과장된 강세",
+          "기존 1.74초에 맞추려고 서두르기"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 5.021,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 10,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U009",
+        "text": "You made this little boy with so much love."
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U011",
+        "text": "Oh! A real fairy?"
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "파란 요정",
+        "approved_candidate": "C",
+        "original_label": "af_kore",
+        "reference_mp3_path": "assets/voice_refs/v6/blue_fairy_V6_APPROVED.mp3",
+        "sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "v7_voice_reference_id": "72b38e466ccb3c7daebb67beaed156d71f554c41c2f5fe458e53dcbbe9405f8c"
+      },
+      "instruct_prompt_en": "Keep the exact approved Blue Fairy C identity. Use a clear, graceful adult feminine tone, gentle assurance and warm attention to the listener. Magical means poised and kind, not breathy, echo-heavy, hypnotic or emotionally distant. Offer the gift with quiet confidence. Let a little magic carry a small delighted promise rather than the cadence of a spell; the movement has not happened yet. Planned delivery target: about 95 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: a little magic. Planned pause before: 150 ms; after: 450 ms. Internal pause cues: []. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U010.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U011",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "제페토",
+      "spoken_text": "Oh! A real fairy?",
+      "cut": "S01-C04",
+      "source_timing": {
+        "start_seconds": 44.625,
+        "end_seconds": 46.745,
+        "duration_seconds": 2.12,
+        "frame": 1071,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 4,
+        "words_per_minute_from_metadata": 113.2
+      },
+      "source_original_sha256": "34099ba8adb1958cd0194400571554930290f8c109a26b6cd9e506c3c3ac4ab2",
+      "voice_direction": {
+        "profile_id": "GEPPETTO_A",
+        "listener": "파란 요정",
+        "intention": "눈앞의 존재가 진짜 요정인지 확인한다",
+        "emotion": "놀람에서 조심스러운 확인",
+        "delivery_ko": "Oh!는 눈앞에서 실제로 놀란 짧은 반응이다. 반 박자 뒤 A real fairy?로 요정을 다시 보며 묻는다. 겁먹은 비명이나 관객에게 설명하는 소리가 되지 않게 한다.",
+        "direction_en": "Let Oh be a brief real surprise, then look at her again and ask A real fairy with cautious amazement. You are checking what you see, not explaining the scene.",
+        "pace_wpm": 96,
+        "energy": 3,
+        "emphasis": [
+          "real fairy"
+        ],
+        "pause_before_ms": 100,
+        "pause_after_ms": 350,
+        "internal_pauses": [
+          {
+            "after": "Oh!",
+            "ms": 220
+          }
+        ],
+        "avoid": [
+          "추가 헉 소리 삽입",
+          "목을 긁는 노인 흉내"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 3.17,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 11,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U010",
+        "text": "Let me give him a little magic."
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U012",
+        "text": "Can he really come alive?"
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "제페토",
+        "approved_candidate": "A",
+        "original_label": "82-year-old grandfather (voice model name not recovered)",
+        "reference_mp3_path": "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3",
+        "sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+        "v7_voice_reference_id": "97884b61a37d580d5dd0b1fed537752bce960f7a73cda3c67b3f57e1767d61c2"
+      },
+      "instruct_prompt_en": "Keep the approved Geppetto A voice identity, with a convincingly elderly grandfather presence. Use a warm low-middle resonance, a little age in the breath and patient thought-sized phrases. Speak to his grandson, not to a microphone. Be clear and affectionate, never a young father, a flat narrator, or a caricatured croak. Let Oh be a brief real surprise, then look at her again and ask A real fairy with cautious amazement. You are checking what you see, not explaining the scene. Planned delivery target: about 96 words per minute, energy 3/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: real fairy. Planned pause before: 100 ms; after: 350 ms. Internal pause cues: [{\"after\": \"Oh!\", \"ms\": 220}]. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U011.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U012",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "제페토",
+      "spoken_text": "Can he really come alive?",
+      "cut": "S01-C04",
+      "source_timing": {
+        "start_seconds": 47.208333333333336,
+        "end_seconds": 49.76833333333334,
+        "duration_seconds": 2.56,
+        "frame": 1133,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 5,
+        "words_per_minute_from_metadata": 117.2
+      },
+      "source_original_sha256": "5d9ec5ebd7a519f6d9b3ab117ff92abf7fd6c588893ed50bbcdd6d563012e349",
+      "voice_direction": {
+        "profile_id": "GEPPETTO_A",
+        "listener": "파란 요정",
+        "intention": "인형이 살아날 수 있다는 희망을 조심스럽게 확인한다",
+        "emotion": "믿고 싶은 기대",
+        "delivery_ko": "요정과 인형 사이로 시선을 옮기며 묻는다. really에 믿기 어려운 마음을, come alive에는 작게 커지는 희망을 담는다. 질문 끝을 시험 보듯 날카롭게 올리지 않는다.",
+        "direction_en": "Look between the Fairy and the puppet. Put a little disbelief into really and let hope grow toward come alive; ask for reassurance without a sharp interrogation.",
+        "pace_wpm": 91,
+        "energy": 2,
+        "emphasis": [
+          "really",
+          "come alive"
+        ],
+        "pause_before_ms": 180,
+        "pause_after_ms": 450,
+        "internal_pauses": [],
+        "avoid": [
+          "큰 소리로 정답을 요구",
+          "이미 살아났다는 확정적인 기쁨"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 3.927,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 12,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U011",
+        "text": "Oh! A real fairy?"
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U013",
+        "text": "Watch closely."
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "제페토",
+        "approved_candidate": "A",
+        "original_label": "82-year-old grandfather (voice model name not recovered)",
+        "reference_mp3_path": "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3",
+        "sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+        "v7_voice_reference_id": "97884b61a37d580d5dd0b1fed537752bce960f7a73cda3c67b3f57e1767d61c2"
+      },
+      "instruct_prompt_en": "Keep the approved Geppetto A voice identity, with a convincingly elderly grandfather presence. Use a warm low-middle resonance, a little age in the breath and patient thought-sized phrases. Speak to his grandson, not to a microphone. Be clear and affectionate, never a young father, a flat narrator, or a caricatured croak. Look between the Fairy and the puppet. Put a little disbelief into really and let hope grow toward come alive; ask for reassurance without a sharp interrogation. Planned delivery target: about 91 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: really, come alive. Planned pause before: 180 ms; after: 450 ms. Internal pause cues: []. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U012.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U013",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "파란 요정",
+      "spoken_text": "Watch closely.",
+      "cut": "S01-C04",
+      "source_timing": {
+        "start_seconds": 50.25,
+        "end_seconds": 51.63,
+        "duration_seconds": 1.38,
+        "frame": 1206,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 2,
+        "words_per_minute_from_metadata": 87.0
+      },
+      "source_original_sha256": "ead70aaf6b0f813dcd8b63f2ec1de7394048506a50a3db434000098221005781",
+      "voice_direction": {
+        "profile_id": "BLUE_FAIRY_C",
+        "listener": "제페토",
+        "intention": "다가올 작은 변화를 놓치지 않도록 시선을 모은다",
+        "emotion": "차분한 집중",
+        "delivery_ko": "소리를 높이지 않고 가까이 관심을 모은다. Watch는 명확하게, closely는 살짝 부드럽게 내려 손끝과 인형으로 주의를 안내한다.",
+        "direction_en": "Gather his attention with calm closeness. Make Watch clear, then gently settle closely as your gesture guides him to the hand and puppet.",
+        "pace_wpm": 93,
+        "energy": 2,
+        "emphasis": [
+          "closely"
+        ],
+        "pause_before_ms": 180,
+        "pause_after_ms": 380,
+        "internal_pauses": [],
+        "avoid": [
+          "명령조로 호통",
+          "불길한 마법 속삭임"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 1.85,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 13,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U012",
+        "text": "Can he really come alive?"
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U014",
+        "text": "Wait! Did his fingers move?"
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "파란 요정",
+        "approved_candidate": "C",
+        "original_label": "af_kore",
+        "reference_mp3_path": "assets/voice_refs/v6/blue_fairy_V6_APPROVED.mp3",
+        "sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "v7_voice_reference_id": "72b38e466ccb3c7daebb67beaed156d71f554c41c2f5fe458e53dcbbe9405f8c"
+      },
+      "instruct_prompt_en": "Keep the exact approved Blue Fairy C identity. Use a clear, graceful adult feminine tone, gentle assurance and warm attention to the listener. Magical means poised and kind, not breathy, echo-heavy, hypnotic or emotionally distant. Gather his attention with calm closeness. Make Watch clear, then gently settle closely as your gesture guides him to the hand and puppet. Planned delivery target: about 93 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: closely. Planned pause before: 180 ms; after: 380 ms. Internal pause cues: []. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U013.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U014",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "제페토",
+      "spoken_text": "Wait! Did his fingers move?",
+      "cut": "S01-C05",
+      "source_timing": {
+        "start_seconds": 55.791666666666664,
+        "end_seconds": 58.111666666666665,
+        "duration_seconds": 2.32,
+        "frame": 1339,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 5,
+        "words_per_minute_from_metadata": 129.3
+      },
+      "source_original_sha256": "eb16a5b7b4c69fe73b763c67681f8fa2db9f2ca468e7f68a09c3931108df972e",
+      "voice_direction": {
+        "profile_id": "GEPPETTO_A",
+        "listener": "파란 요정, 곁의 윤수/시청자",
+        "intention": "방금 본 작은 손가락 움직임을 확인한다",
+        "emotion": "놀람에서 확인하려는 호기심",
+        "delivery_ko": "Wait!에서 방금 본 것에 생각이 멈춘다. 손가락을 다시 보며 Did his fingers move?를 작고 빠른 의문으로 잇되 몸 전체가 이미 움직인 듯 환호하지 않는다.",
+        "direction_en": "Catch the tiny finger movement with Wait, then look back to verify it. Ask about the fingers in alert wonder; save the full joy for after he wakes.",
+        "pace_wpm": 97,
+        "energy": 3,
+        "emphasis": [
+          "Wait",
+          "fingers",
+          "move"
+        ],
+        "pause_before_ms": 90,
+        "pause_after_ms": 350,
+        "internal_pauses": [
+          {
+            "after": "Wait!",
+            "ms": 170
+          }
+        ],
+        "avoid": [
+          "눈뜨기·일어서기 성공을 미리 축하",
+          "질문을 심문처럼 끊기"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 3.703,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 14,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U013",
+        "text": "Watch closely."
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U015",
+        "text": "Yoonsu, look at his hands!"
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "제페토",
+        "approved_candidate": "A",
+        "original_label": "82-year-old grandfather (voice model name not recovered)",
+        "reference_mp3_path": "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3",
+        "sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+        "v7_voice_reference_id": "97884b61a37d580d5dd0b1fed537752bce960f7a73cda3c67b3f57e1767d61c2"
+      },
+      "instruct_prompt_en": "Keep the approved Geppetto A voice identity, with a convincingly elderly grandfather presence. Use a warm low-middle resonance, a little age in the breath and patient thought-sized phrases. Speak to his grandson, not to a microphone. Be clear and affectionate, never a young father, a flat narrator, or a caricatured croak. Catch the tiny finger movement with Wait, then look back to verify it. Ask about the fingers in alert wonder; save the full joy for after he wakes. Planned delivery target: about 97 words per minute, energy 3/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: Wait, fingers, move. Planned pause before: 90 ms; after: 350 ms. Internal pause cues: [{\"after\": \"Wait!\", \"ms\": 170}]. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U014.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U015",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "제페토",
+      "spoken_text": "Yoonsu, look at his hands!",
+      "cut": "S01-C05",
+      "source_timing": {
+        "start_seconds": 58.583333333333336,
+        "end_seconds": 61.02333333333333,
+        "duration_seconds": 2.44,
+        "frame": 1406,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 5,
+        "words_per_minute_from_metadata": 123.0
+      },
+      "source_original_sha256": "aa0d5e657e06b8e35cf839742b1577116fb2668c8a3b888c0c89a3fd0a23cbc6",
+      "voice_direction": {
+        "profile_id": "GEPPETTO_A",
+        "listener": "윤수/시청자",
+        "intention": "아이와 함께 손가락의 작은 변화를 바라본다",
+        "emotion": "함께 발견하는 기대",
+        "delivery_ko": "Yoonsu는 아이의 주의를 다정하게 부르는 호명이다. look at his hands는 손을 가리키며 한 호흡으로 이어 준다. 가르치는 선생님의 명령보다 같이 보자는 초대가 들려야 한다.",
+        "direction_en": "Call Yoonsu warmly to share your discovery. Join look at his hands while pointing to the fingers, inviting the child to look with you rather than giving a classroom command.",
+        "pace_wpm": 95,
+        "energy": 3,
+        "emphasis": [
+          "Yoonsu",
+          "hands"
+        ],
+        "pause_before_ms": 120,
+        "pause_after_ms": 380,
+        "internal_pauses": [
+          {
+            "after": "Yoonsu,",
+            "ms": 150
+          }
+        ],
+        "avoid": [
+          "모든 단어를 따로 강조",
+          "영어 이해를 재촉하는 지시"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 3.808,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 15,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U014",
+        "text": "Wait! Did his fingers move?"
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U016",
+        "text": "What is happening?"
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "제페토",
+        "approved_candidate": "A",
+        "original_label": "82-year-old grandfather (voice model name not recovered)",
+        "reference_mp3_path": "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3",
+        "sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+        "v7_voice_reference_id": "97884b61a37d580d5dd0b1fed537752bce960f7a73cda3c67b3f57e1767d61c2"
+      },
+      "instruct_prompt_en": "Keep the approved Geppetto A voice identity, with a convincingly elderly grandfather presence. Use a warm low-middle resonance, a little age in the breath and patient thought-sized phrases. Speak to his grandson, not to a microphone. Be clear and affectionate, never a young father, a flat narrator, or a caricatured croak. Call Yoonsu warmly to share your discovery. Join look at his hands while pointing to the fingers, inviting the child to look with you rather than giving a classroom command. Planned delivery target: about 95 words per minute, energy 3/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: Yoonsu, hands. Planned pause before: 120 ms; after: 380 ms. Internal pause cues: [{\"after\": \"Yoonsu,\", \"ms\": 150}]. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U015.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U016",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "제페토",
+      "spoken_text": "What is happening?",
+      "cut": "S01-C06",
+      "source_timing": {
+        "start_seconds": 61.791666666666664,
+        "end_seconds": 63.151666666666664,
+        "duration_seconds": 1.36,
+        "frame": 1483,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 3,
+        "words_per_minute_from_metadata": 132.4
+      },
+      "source_original_sha256": "b71ca19e5686d5baccb837a1b37ad15ea040724b9f23cf7404dbb9aa3561b661",
+      "voice_direction": {
+        "profile_id": "GEPPETTO_A",
+        "listener": "윤수/시청자",
+        "intention": "보이는 작은 움직임을 아이가 말해 볼 공간을 연다",
+        "emotion": "진짜 궁금함과 기다림",
+        "delivery_ko": "제페토도 놀라고 궁금한 상태로 묻는다. happening에서 부드럽게 끝을 올린 뒤 아이가 생각할 자리를 남긴다. 정답을 이미 아는 시험 문제처럼 묻거나 곧바로 스스로 답하지 않는다.",
+        "direction_en": "Ask from your own real wonder, leaving a gentle upward turn on happening. Open space for the child to answer; do not perform a quizmaster or answer yourself inside the story.",
+        "pace_wpm": 91,
+        "energy": 2,
+        "emphasis": [
+          "happening"
+        ],
+        "pause_before_ms": 160,
+        "pause_after_ms": 450,
+        "internal_pauses": [],
+        "avoid": [
+          "정답을 재촉하는 시험 말투",
+          "질문 뒤에 추가 설명 붙이기"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 2.588,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 16,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U015",
+        "text": "Yoonsu, look at his hands!"
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U017",
+        "text": "Oh!"
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "제페토",
+        "approved_candidate": "A",
+        "original_label": "82-year-old grandfather (voice model name not recovered)",
+        "reference_mp3_path": "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3",
+        "sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+        "v7_voice_reference_id": "97884b61a37d580d5dd0b1fed537752bce960f7a73cda3c67b3f57e1767d61c2"
+      },
+      "instruct_prompt_en": "Keep the approved Geppetto A voice identity, with a convincingly elderly grandfather presence. Use a warm low-middle resonance, a little age in the breath and patient thought-sized phrases. Speak to his grandson, not to a microphone. Be clear and affectionate, never a young father, a flat narrator, or a caricatured croak. Ask from your own real wonder, leaving a gentle upward turn on happening. Open space for the child to answer; do not perform a quizmaster or answer yourself inside the story. Planned delivery target: about 91 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: happening. Planned pause before: 160 ms; after: 450 ms. Internal pause cues: []. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U016.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U017",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "피노키오",
+      "spoken_text": "Oh!",
+      "cut": "S01-C07",
+      "source_timing": {
+        "start_seconds": 75.16666666666667,
+        "end_seconds": 75.96666666666667,
+        "duration_seconds": 0.8,
+        "frame": 1804,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 1,
+        "words_per_minute_from_metadata": 75.0
+      },
+      "source_original_sha256": "858a91e422e53afc648ec8952c909c0d5c1b82b58196309e7fb81afd437699b2",
+      "voice_direction": {
+        "profile_id": "PINOCCHIO_A",
+        "listener": "자기 자신과 눈앞의 제페토",
+        "intention": "깨어나 처음 느끼는 감각에 반응한다",
+        "emotion": "작은 놀람과 탄생의 경이",
+        "delivery_ko": "눈을 뜨고 몸을 세운 뒤 처음 자기 소리를 발견한 반응이다. Oh!를 짧고 살아 있는 놀람으로 내되 비명·웃음·추가 단어를 붙이지 않는다.",
+        "direction_en": "After the wake-up and standing action, discover your own voice in one small Oh. Make it alive and amazed, not a scream, giggle or added exclamation.",
+        "pace_wpm": 100,
+        "energy": 3,
+        "emphasis": [
+          "Oh"
+        ],
+        "pause_before_ms": 120,
+        "pause_after_ms": 420,
+        "internal_pauses": [],
+        "avoid": [
+          "기계가 켜지는 로봇 음성",
+          "원문에 없는 웃음·감탄사"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 1.14,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 17,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U016",
+        "text": "What is happening?"
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U018",
+        "text": "I can move!"
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "피노키오",
+        "approved_candidate": "A",
+        "original_label": "8-year-old bright boy (voice model name not recovered)",
+        "reference_mp3_path": "assets/voice_refs/v6/pinocchio_V6_APPROVED.mp3",
+        "sha256": "a32569705a717ac92c8ecbe1c515b9e31e389f508164458ed22a06adcbba0b3d",
+        "v7_voice_reference_id": "7cc295611dbd96a7d60573ed4ae6b233ff13d170f6baea1958329b845eedf703"
+      },
+      "instruct_prompt_en": "Keep the exact approved Pinocchio A voice identity: a bright young boy. Play a child responding to something happening in front of him, with genuine curiosity, brief thought changes and a warm connection to his partner. Never read like an adult narrator; never make him a squeaky baby. After the wake-up and standing action, discover your own voice in one small Oh. Make it alive and amazed, not a scream, giggle or added exclamation. Planned delivery target: about 100 words per minute, energy 3/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: Oh. Planned pause before: 120 ms; after: 420 ms. Internal pause cues: []. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U017.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U018",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "피노키오",
+      "spoken_text": "I can move!",
+      "cut": "S01-C07",
+      "source_timing": {
+        "start_seconds": 76.45833333333333,
+        "end_seconds": 77.57833333333333,
+        "duration_seconds": 1.12,
+        "frame": 1835,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 3,
+        "words_per_minute_from_metadata": 160.7
+      },
+      "source_original_sha256": "dad2c85979b59156d7be6db85fdb2b7f01f37822a555568ea7de59a376e5a6b6",
+      "voice_direction": {
+        "profile_id": "PINOCCHIO_A",
+        "listener": "제페토",
+        "intention": "자기 몸이 움직인다는 놀라움을 할아버지에게 전한다",
+        "emotion": "막 생겨난 기쁨",
+        "delivery_ko": "자기 손을 보고 확인한 뒤 제페토를 바라본다. I can에서 가능하다는 발견이 생기고 move에서 소리가 밝아진다. 완벽한 문장을 발표하는 어린이처럼 읽지 않는다.",
+        "direction_en": "Check your own hands, then share the discovery with Geppetto. Let the possibility appear in I can and brighten move with new joy, not a rehearsed school recital.",
+        "pace_wpm": 108,
+        "energy": 3,
+        "emphasis": [
+          "can",
+          "move"
+        ],
+        "pause_before_ms": 110,
+        "pause_after_ms": 350,
+        "internal_pauses": [],
+        "avoid": [
+          "모든 음절을 또박또박 분리",
+          "처음부터 끝까지 같은 고함"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 2.127,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 18,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U017",
+        "text": "Oh!"
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U019",
+        "text": "I can see you!"
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "피노키오",
+        "approved_candidate": "A",
+        "original_label": "8-year-old bright boy (voice model name not recovered)",
+        "reference_mp3_path": "assets/voice_refs/v6/pinocchio_V6_APPROVED.mp3",
+        "sha256": "a32569705a717ac92c8ecbe1c515b9e31e389f508164458ed22a06adcbba0b3d",
+        "v7_voice_reference_id": "7cc295611dbd96a7d60573ed4ae6b233ff13d170f6baea1958329b845eedf703"
+      },
+      "instruct_prompt_en": "Keep the exact approved Pinocchio A voice identity: a bright young boy. Play a child responding to something happening in front of him, with genuine curiosity, brief thought changes and a warm connection to his partner. Never read like an adult narrator; never make him a squeaky baby. Check your own hands, then share the discovery with Geppetto. Let the possibility appear in I can and brighten move with new joy, not a rehearsed school recital. Planned delivery target: about 108 words per minute, energy 3/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: can, move. Planned pause before: 110 ms; after: 350 ms. Internal pause cues: []. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U018.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U019",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "피노키오",
+      "spoken_text": "I can see you!",
+      "cut": "S01-C07",
+      "source_timing": {
+        "start_seconds": 78.04166666666667,
+        "end_seconds": 79.24166666666667,
+        "duration_seconds": 1.2,
+        "frame": 1873,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 4,
+        "words_per_minute_from_metadata": 200.0
+      },
+      "source_original_sha256": "dbb3c570d61783ec9729df0a85669a0a63500027879e6f030c124fe9a8b0f080",
+      "voice_direction": {
+        "profile_id": "PINOCCHIO_A",
+        "listener": "제페토",
+        "intention": "처음으로 할아버지 얼굴을 알아보며 연결된다",
+        "emotion": "호기심에서 반가움",
+        "delivery_ko": "시선이 손에서 제페토 얼굴에 닿는 순간 말을 건넨다. see보다 you에 따뜻한 발견을 두고 상대와 연결된 기쁨으로 마친다. 이때 관객 윤수에게 먼저 인사하는 말로 바꾸지 않는다.",
+        "direction_en": "Let your eyes arrive on Geppetto from your own hands. Warm you as the person you can now see; this first connection is with him, not a greeting to the audience.",
+        "pace_wpm": 106,
+        "energy": 3,
+        "emphasis": [
+          "see",
+          "you"
+        ],
+        "pause_before_ms": 130,
+        "pause_after_ms": 400,
+        "internal_pauses": [],
+        "avoid": [
+          "카메라를 향한 관객 인사로 처리",
+          "상대를 보지 않는 책 읽기"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 2.794,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 19,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U018",
+        "text": "I can move!"
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U020",
+        "text": "Pinocchio! You're alive!"
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "피노키오",
+        "approved_candidate": "A",
+        "original_label": "8-year-old bright boy (voice model name not recovered)",
+        "reference_mp3_path": "assets/voice_refs/v6/pinocchio_V6_APPROVED.mp3",
+        "sha256": "a32569705a717ac92c8ecbe1c515b9e31e389f508164458ed22a06adcbba0b3d",
+        "v7_voice_reference_id": "7cc295611dbd96a7d60573ed4ae6b233ff13d170f6baea1958329b845eedf703"
+      },
+      "instruct_prompt_en": "Keep the exact approved Pinocchio A voice identity: a bright young boy. Play a child responding to something happening in front of him, with genuine curiosity, brief thought changes and a warm connection to his partner. Never read like an adult narrator; never make him a squeaky baby. Let your eyes arrive on Geppetto from your own hands. Warm you as the person you can now see; this first connection is with him, not a greeting to the audience. Planned delivery target: about 106 words per minute, energy 3/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: see, you. Planned pause before: 130 ms; after: 400 ms. Internal pause cues: []. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U019.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U020",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "제페토",
+      "spoken_text": "Pinocchio! You're alive!",
+      "cut": "S01-C07",
+      "source_timing": {
+        "start_seconds": 79.70833333333333,
+        "end_seconds": 82.50833333333333,
+        "duration_seconds": 2.8,
+        "frame": 1913,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 3,
+        "words_per_minute_from_metadata": 64.3
+      },
+      "source_original_sha256": "38371aa14ec0bcee0c29a548e164ac6ebc855b3dbd159ea5c301cc45bf159b53",
+      "voice_direction": {
+        "profile_id": "GEPPETTO_A",
+        "listener": "피노키오",
+        "intention": "인형이 살아났음을 믿고 기쁨을 직접 전한다",
+        "emotion": "벅찬 기쁨과 애정",
+        "delivery_ko": "Pinocchio!를 눈을 맞추며 부르고 짧게 숨을 고른다. You’re alive!는 실제 확인된 기쁨으로 넓히되 목을 조이는 고함으로 만들지 않는다. 가까이 다가가는 움직임과 따뜻한 호흡을 맞춘다.",
+        "direction_en": "Call Pinocchio to meet his eyes, take one small emotional beat, then let You're alive open into joyful relief. Move toward him with warmth rather than shouting at a microphone.",
+        "pace_wpm": 96,
+        "energy": 4,
+        "emphasis": [
+          "Pinocchio",
+          "alive"
+        ],
+        "pause_before_ms": 120,
+        "pause_after_ms": 500,
+        "internal_pauses": [
+          {
+            "after": "Pinocchio!",
+            "ms": 230
+          }
+        ],
+        "avoid": [
+          "노년 음색이 사라지는 젊은 고함",
+          "추가 울음·웃음 삽입"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 2.725,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 20,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U019",
+        "text": "I can see you!"
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U021",
+        "text": "Welcome to the world, Pinocchio."
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "제페토",
+        "approved_candidate": "A",
+        "original_label": "82-year-old grandfather (voice model name not recovered)",
+        "reference_mp3_path": "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3",
+        "sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+        "v7_voice_reference_id": "97884b61a37d580d5dd0b1fed537752bce960f7a73cda3c67b3f57e1767d61c2"
+      },
+      "instruct_prompt_en": "Keep the approved Geppetto A voice identity, with a convincingly elderly grandfather presence. Use a warm low-middle resonance, a little age in the breath and patient thought-sized phrases. Speak to his grandson, not to a microphone. Be clear and affectionate, never a young father, a flat narrator, or a caricatured croak. Call Pinocchio to meet his eyes, take one small emotional beat, then let You're alive open into joyful relief. Move toward him with warmth rather than shouting at a microphone. Planned delivery target: about 96 words per minute, energy 4/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: Pinocchio, alive. Planned pause before: 120 ms; after: 500 ms. Internal pause cues: [{\"after\": \"Pinocchio!\", \"ms\": 230}]. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U020.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U021",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "파란 요정",
+      "spoken_text": "Welcome to the world, Pinocchio.",
+      "cut": "S01-C08",
+      "source_timing": {
+        "start_seconds": 86.70833333333333,
+        "end_seconds": 88.96833333333333,
+        "duration_seconds": 2.26,
+        "frame": 2081,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 5,
+        "words_per_minute_from_metadata": 132.7
+      },
+      "source_original_sha256": "faaf040713270ddae71b291342d4a240e1c516004d862eccc27c0c4de4f82a2e",
+      "voice_direction": {
+        "profile_id": "BLUE_FAIRY_C",
+        "listener": "피노키오",
+        "intention": "새로 깨어난 아이를 따뜻하게 맞아 준다",
+        "emotion": "환영과 안정감",
+        "delivery_ko": "들뜬 두 사람 곁으로 내려와 차분히 눈을 맞춘다. Welcome to the world는 부드럽게 연결하고 Pinocchio를 이제 만난 아이의 이름으로 다정하게 마친다.",
+        "direction_en": "Come close to the newly awake child and welcome him with steady warmth. Flow through Welcome to the world, then make his name personal and kind.",
+        "pace_wpm": 94,
+        "energy": 2,
+        "emphasis": [
+          "Welcome",
+          "Pinocchio"
+        ],
+        "pause_before_ms": 180,
+        "pause_after_ms": 420,
+        "internal_pauses": [
+          {
+            "after": "world,",
+            "ms": 160
+          }
+        ],
+        "avoid": [
+          "대규모 행사의 환영 방송",
+          "제페토의 기쁨보다 더 크게 경쟁"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 3.951,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 21,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U020",
+        "text": "Pinocchio! You're alive!"
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U022",
+        "text": "Remember to be kind and tell the truth."
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "파란 요정",
+        "approved_candidate": "C",
+        "original_label": "af_kore",
+        "reference_mp3_path": "assets/voice_refs/v6/blue_fairy_V6_APPROVED.mp3",
+        "sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "v7_voice_reference_id": "72b38e466ccb3c7daebb67beaed156d71f554c41c2f5fe458e53dcbbe9405f8c"
+      },
+      "instruct_prompt_en": "Keep the exact approved Blue Fairy C identity. Use a clear, graceful adult feminine tone, gentle assurance and warm attention to the listener. Magical means poised and kind, not breathy, echo-heavy, hypnotic or emotionally distant. Come close to the newly awake child and welcome him with steady warmth. Flow through Welcome to the world, then make his name personal and kind. Planned delivery target: about 94 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: Welcome, Pinocchio. Planned pause before: 180 ms; after: 420 ms. Internal pause cues: [{\"after\": \"world,\", \"ms\": 160}]. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U021.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U022",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "파란 요정",
+      "spoken_text": "Remember to be kind and tell the truth.",
+      "cut": "S01-C08",
+      "source_timing": {
+        "start_seconds": 89.45833333333333,
+        "end_seconds": 91.95833333333333,
+        "duration_seconds": 2.5,
+        "frame": 2147,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 8,
+        "words_per_minute_from_metadata": 192.0
+      },
+      "source_original_sha256": "26bc0696d5c74ee1086dd9648b6fdaa58fec740d7d2a9085983a3c69164459eb",
+      "voice_direction": {
+        "profile_id": "BLUE_FAIRY_C",
+        "listener": "피노키오",
+        "intention": "앞으로 배워 갈 친절과 진실의 기준을 다정하게 알려 준다",
+        "emotion": "부드러운 진지함",
+        "delivery_ko": "be kind와 tell the truth를 두 생각으로 들려준다. 핵심 단어는 분명히 하되 잘못한 아이를 훈계하는 어조를 쓰지 않는다. 아직 개념을 모르는 아이에게 작은 약속의 씨앗을 건네는 말이다.",
+        "direction_en": "Offer be kind and tell the truth as two gentle guiding thoughts. Be clear without scolding; he is just beginning to learn these ideas, not being judged for a mistake.",
+        "pace_wpm": 92,
+        "energy": 2,
+        "emphasis": [
+          "be kind",
+          "tell the truth"
+        ],
+        "pause_before_ms": 180,
+        "pause_after_ms": 450,
+        "internal_pauses": [
+          {
+            "after": "kind",
+            "ms": 220
+          }
+        ],
+        "avoid": [
+          "교훈을 엄하게 외우게 하는 말투",
+          "벌을 암시하는 낮은 경고"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 6.067,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 22,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U021",
+        "text": "Welcome to the world, Pinocchio."
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U023",
+        "text": "The truth?"
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "파란 요정",
+        "approved_candidate": "C",
+        "original_label": "af_kore",
+        "reference_mp3_path": "assets/voice_refs/v6/blue_fairy_V6_APPROVED.mp3",
+        "sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "v7_voice_reference_id": "72b38e466ccb3c7daebb67beaed156d71f554c41c2f5fe458e53dcbbe9405f8c"
+      },
+      "instruct_prompt_en": "Keep the exact approved Blue Fairy C identity. Use a clear, graceful adult feminine tone, gentle assurance and warm attention to the listener. Magical means poised and kind, not breathy, echo-heavy, hypnotic or emotionally distant. Offer be kind and tell the truth as two gentle guiding thoughts. Be clear without scolding; he is just beginning to learn these ideas, not being judged for a mistake. Planned delivery target: about 92 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: be kind, tell the truth. Planned pause before: 180 ms; after: 450 ms. Internal pause cues: [{\"after\": \"kind\", \"ms\": 220}]. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U022.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U023",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "피노키오",
+      "spoken_text": "The truth?",
+      "cut": "S01-C08",
+      "source_timing": {
+        "start_seconds": 92.41666666666667,
+        "end_seconds": 93.33666666666667,
+        "duration_seconds": 0.92,
+        "frame": 2218,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 2,
+        "words_per_minute_from_metadata": 130.4
+      },
+      "source_original_sha256": "83d17d8623fcab23aa75a709083de545897f9fd6a3335160c6b79e275486bd23",
+      "voice_direction": {
+        "profile_id": "PINOCCHIO_A",
+        "listener": "파란 요정",
+        "intention": "처음 들은 추상적인 말을 이해하려고 되묻는다",
+        "emotion": "순수한 궁금함",
+        "delivery_ko": "요정의 눈을 보며 고개가 조금 기운다. The truth?는 낯선 단어를 되받는 짧은 질문으로, 반항하거나 이미 잘못한 것을 숨기는 말투가 아니다.",
+        "direction_en": "Look to the Fairy and repeat the unfamiliar idea with a small curious tilt. Ask The truth as a new thought, with no defensiveness, guilt or knowing sarcasm.",
+        "pace_wpm": 101,
+        "energy": 2,
+        "emphasis": [
+          "truth"
+        ],
+        "pause_before_ms": 140,
+        "pause_after_ms": 400,
+        "internal_pauses": [],
+        "avoid": [
+          "비꼬거나 방어적으로 되묻기",
+          "단어 뜻을 이미 아는 선언"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 1.728,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 23,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U022",
+        "text": "Remember to be kind and tell the truth."
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U024",
+        "text": "Yes. The truth is very important."
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "피노키오",
+        "approved_candidate": "A",
+        "original_label": "8-year-old bright boy (voice model name not recovered)",
+        "reference_mp3_path": "assets/voice_refs/v6/pinocchio_V6_APPROVED.mp3",
+        "sha256": "a32569705a717ac92c8ecbe1c515b9e31e389f508164458ed22a06adcbba0b3d",
+        "v7_voice_reference_id": "7cc295611dbd96a7d60573ed4ae6b233ff13d170f6baea1958329b845eedf703"
+      },
+      "instruct_prompt_en": "Keep the exact approved Pinocchio A voice identity: a bright young boy. Play a child responding to something happening in front of him, with genuine curiosity, brief thought changes and a warm connection to his partner. Never read like an adult narrator; never make him a squeaky baby. Look to the Fairy and repeat the unfamiliar idea with a small curious tilt. Ask The truth as a new thought, with no defensiveness, guilt or knowing sarcasm. Planned delivery target: about 101 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: truth. Planned pause before: 140 ms; after: 400 ms. Internal pause cues: []. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U023.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U024",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "파란 요정",
+      "spoken_text": "Yes. The truth is very important.",
+      "cut": "S01-C08",
+      "source_timing": {
+        "start_seconds": 93.83333333333333,
+        "end_seconds": 96.53333333333333,
+        "duration_seconds": 2.7,
+        "frame": 2252,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 6,
+        "words_per_minute_from_metadata": 133.3
+      },
+      "source_original_sha256": "e75a140b0a775ac122ad45b77b9755749173584e390eb52b1d00b0f3ba358d0c",
+      "voice_direction": {
+        "profile_id": "BLUE_FAIRY_C",
+        "listener": "피노키오",
+        "intention": "아이의 질문을 받아 진실의 중요성을 차분히 남긴다",
+        "emotion": "인내심 있는 확신",
+        "delivery_ko": "Yes.에서 질문을 받아 주고 작은 쉼을 둔다. very important는 힘으로 누르지 말고 확신 있게 안정시킨다. 아이가 단어 뜻을 완전히 이해했다고 가정하지 않는다.",
+        "direction_en": "Receive his question warmly with Yes and a small pause. Give very important quiet assurance without pressure; leave room for him to learn what truth means later.",
+        "pace_wpm": 93,
+        "energy": 2,
+        "emphasis": [
+          "truth",
+          "very important"
+        ],
+        "pause_before_ms": 160,
+        "pause_after_ms": 500,
+        "internal_pauses": [
+          {
+            "after": "Yes.",
+            "ms": 220
+          }
+        ],
+        "avoid": [
+          "정답을 외우게 하는 교사 톤",
+          "신비로운 속삭임으로 명료도 희생"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 4.751,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 24,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U023",
+        "text": "The truth?"
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U025",
+        "text": "The little wooden boy had so much to learn."
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "파란 요정",
+        "approved_candidate": "C",
+        "original_label": "af_kore",
+        "reference_mp3_path": "assets/voice_refs/v6/blue_fairy_V6_APPROVED.mp3",
+        "sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "v7_voice_reference_id": "72b38e466ccb3c7daebb67beaed156d71f554c41c2f5fe458e53dcbbe9405f8c"
+      },
+      "instruct_prompt_en": "Keep the exact approved Blue Fairy C identity. Use a clear, graceful adult feminine tone, gentle assurance and warm attention to the listener. Magical means poised and kind, not breathy, echo-heavy, hypnotic or emotionally distant. Receive his question warmly with Yes and a small pause. Give very important quiet assurance without pressure; leave room for him to learn what truth means later. Planned delivery target: about 93 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: truth, very important. Planned pause before: 160 ms; after: 500 ms. Internal pause cues: [{\"after\": \"Yes.\", \"ms\": 220}]. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U024.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U025",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "내레이션",
+      "spoken_text": "The little wooden boy had so much to learn.",
+      "cut": "S01-C09",
+      "source_timing": {
+        "start_seconds": 100.875,
+        "end_seconds": 103.555,
+        "duration_seconds": 2.68,
+        "frame": 2421,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 9,
+        "words_per_minute_from_metadata": 201.5
+      },
+      "source_original_sha256": "3432b185812aee6e232426eccef9f228aee74d7f73e37e1e1d3f718eb8bae60a",
+      "voice_direction": {
+        "profile_id": "NARRATOR_A",
+        "listener": "윤수/시청자",
+        "intention": "피노키오의 배움이 이제 시작이라는 마음을 전한다",
+        "emotion": "애정 어린 기대",
+        "delivery_ko": "요정이 떠나는 모습과 곁에 남은 두 사람을 함께 바라보며 little wooden boy를 따뜻하게 건넨다. so much to learn은 부족함을 지적하지 않고 앞으로 만날 일들에 대한 기대를 남긴다.",
+        "direction_en": "Watch the Fairy leave and keep affection for the little wooden boy. Make so much to learn an open promise of discovery, never a criticism of what he cannot do.",
+        "pace_wpm": 108,
+        "energy": 2,
+        "emphasis": [
+          "little wooden boy",
+          "so much to learn"
+        ],
+        "pause_before_ms": 180,
+        "pause_after_ms": 420,
+        "internal_pauses": [],
+        "avoid": [
+          "교훈 요약처럼 딱딱하게 끝내기",
+          "아이의 무지를 평가하는 말투"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 5.6,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 25,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U024",
+        "text": "Yes. The truth is very important."
+      },
+      "context_after": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U026",
+        "text": "And his adventure was just beginning."
+      },
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "내레이션",
+        "approved_candidate": "A",
+        "original_label": "am_fenrir",
+        "reference_mp3_path": "assets/voice_refs/v6/narrator_V6_APPROVED.mp3",
+        "sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "v7_voice_reference_id": "d38f0b8b8d9b5b0413eae736633354b35fe421cdf4922e9c434d418492daa32c"
+      },
+      "instruct_prompt_en": "Keep the approved narrator A identity. Tell the story warmly to one child while watching the action unfold. Shape each sentence around a new thought and the visual event. Use gentle variation and meaningful pauses, not metronomic audiobook cadence or the voices of the characters. Watch the Fairy leave and keep affection for the little wooden boy. Make so much to learn an open promise of discovery, never a criticism of what he cannot do. Planned delivery target: about 108 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: little wooden boy, so much to learn. Planned pause before: 180 ms; after: 420 ms. Internal pause cues: []. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U025.wav",
+      "output_exists": false
+    },
+    {
+      "id": "S01-U026",
+      "kind": "ORIGINAL",
+      "scene": "S01",
+      "speaker": "내레이션",
+      "spoken_text": "And his adventure was just beginning.",
+      "cut": "S01-C09",
+      "source_timing": {
+        "start_seconds": 104.04166666666667,
+        "end_seconds": 106.12166666666667,
+        "duration_seconds": 2.08,
+        "frame": 2497,
+        "basis": "EXISTING_TIMELINE_METADATA_NOT_REMEASURED_THIS_TURN",
+        "duration_includes_existing_file_silence": "UNKNOWN",
+        "token_count": 6,
+        "words_per_minute_from_metadata": 173.1
+      },
+      "source_original_sha256": "40e83988a7bbb9f1847ee6de4bfd45f8efc74966c8bafd1b9f9d94c6dffc4d76",
+      "voice_direction": {
+        "profile_id": "NARRATOR_A",
+        "listener": "윤수/시청자",
+        "intention": "밤에서 아침으로 이어지는 다음 화의 시작을 연다",
+        "emotion": "따뜻하게 커지는 기대",
+        "delivery_ko": "And로 앞 문장을 이어받고 adventure에서 생각이 앞으로 나간다. just beginning은 끝맺음의 무거운 낙하 대신 새로운 아침으로 열어 둔다.",
+        "direction_en": "Carry the previous thought forward with And. Let adventure look ahead and leave just beginning open toward the morning, not a heavy final moral or grand finale.",
+        "pace_wpm": 110,
+        "energy": 2,
+        "emphasis": [
+          "adventure",
+          "just beginning"
+        ],
+        "pause_before_ms": 150,
+        "pause_after_ms": 500,
+        "internal_pauses": [],
+        "avoid": [
+          "시리즈가 끝나는 최종 엔딩조",
+          "과도하게 장엄한 예고편 음성"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "planned_voice_seconds_including_target_pauses": 3.923,
+      "planned_timing_note": "Existing edited movie timing is preserved. New acting targets are not validated against existing cue slots; retiming/listening is required if audio is later regenerated.",
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "source_order": 26,
+      "context_before": {
+        "usage": "DO_NOT_SPEAK",
+        "id": "S01-U025",
+        "text": "The little wooden boy had so much to learn."
+      },
+      "context_after": null,
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "내레이션",
+        "approved_candidate": "A",
+        "original_label": "am_fenrir",
+        "reference_mp3_path": "assets/voice_refs/v6/narrator_V6_APPROVED.mp3",
+        "sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "v7_voice_reference_id": "d38f0b8b8d9b5b0413eae736633354b35fe421cdf4922e9c434d418492daa32c"
+      },
+      "instruct_prompt_en": "Keep the approved narrator A identity. Tell the story warmly to one child while watching the action unfold. Shape each sentence around a new thought and the visual event. Use gentle variation and meaningful pauses, not metronomic audiobook cadence or the voices of the characters. Carry the previous thought forward with And. Let adventure look ahead and leave just beginning open toward the morning, not a heavy final moral or grand finale. Planned delivery target: about 110 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: adventure, just beginning. Planned pause before: 150 ms; after: 500 ms. Internal pause cues: []. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/S01-U026.wav",
+      "output_exists": false
+    }
+  ],
+  "model_jobs": [
+    {
+      "id": "I01-EXAMPLE",
+      "kind": "MODEL_EXTERNAL_PROPOSED",
+      "scene": "S01",
+      "event_id": "I01",
+      "speaker": "제페토",
+      "spoken_text": "He is moving!",
+      "cut": "OUTSIDE_NARRATIVE_CLOCK_AFTER_S01_U016",
+      "source_timing": {
+        "basis": "NEW_PROPOSED_MODEL_NOT_PRESENT_IN_26_LOCKED_CUES",
+        "start_seconds": null,
+        "end_seconds": null,
+        "duration_seconds": null
+      },
+      "voice_direction": {
+        "profile_id": "GEPPETTO_A",
+        "listener": "윤수/시청자",
+        "intention": "손가락의 움직임을 표현하는 짧은 문장을 한 번 들려준다",
+        "emotion": "함께 발견하는 작은 기쁨",
+        "delivery_ko": "같은 제페토 음색으로 손가락을 가리키며 He is를 자연스럽게 연결하고 moving에 작은 발견을 담는다. 세 단어를 따로 시험하듯 끊지 않는다. 본편 정지 뒤 예시로만 들려주고 아이의 답변을 대신한 것으로 처리하지 않는다.",
+        "direction_en": "In the same approved Geppetto voice, offer one short model while pointing to the fingers. Join He is naturally and gently brighten moving. Do not spell, chant or pretend to be the child; this is a model outside the story clock, never the child's recorded answer.",
+        "pace_wpm": 94,
+        "energy": 2,
+        "emphasis": [
+          "moving"
+        ],
+        "pause_before_ms": 150,
+        "pause_after_ms": 350,
+        "internal_pauses": [],
+        "avoid": [
+          "세 단어를 로봇처럼 끊기",
+          "윤수의 실제 목소리를 흉내 내기",
+          "예시 음성을 입력 성공으로 처리"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED"
+      },
+      "microphone_during_playback": "OFF",
+      "listen_open_after_model_end": true,
+      "new_output_is_proposal_not_existing_audio": true,
+      "synthesis_status": "NOT_RUN",
+      "listening_review": "NOT_RUN",
+      "baseline_cue_text": "He is moving!",
+      "model_audio_outside_story_clock": true,
+      "model_is_yoonsu_answer": false,
+      "proposal_dependency_note": "완성본에 추가된 음성이 아니다. 질문 뒤 본편을 정지한 외부 모델 경로를 구현할 때만 별도 생성한다. 모델 재생 중 마이크를 끄고 모델 종료 뒤 입력을 연다.",
+      "review_only": true,
+      "completed_product_change_applied": false,
+      "approved_reference": {
+        "speaker": "제페토",
+        "approved_candidate": "A",
+        "original_label": "82-year-old grandfather (voice model name not recovered)",
+        "reference_mp3_path": "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3",
+        "sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+        "v7_voice_reference_id": "97884b61a37d580d5dd0b1fed537752bce960f7a73cda3c67b3f57e1767d61c2"
+      },
+      "instruct_prompt_en": "Keep the approved Geppetto A voice identity, with a convincingly elderly grandfather presence. Use a warm low-middle resonance, a little age in the breath and patient thought-sized phrases. Speak to his grandson, not to a microphone. Be clear and affectionate, never a young father, a flat narrator, or a caricatured croak. In the same approved Geppetto voice, offer one short model while pointing to the fingers. Join He is naturally and gently brighten moving. Do not spell, chant or pretend to be the child; this is a model outside the story clock, never the child's recorded answer. Planned delivery target: about 94 words per minute, energy 2/5. These are artistic targets, not measured audio or guaranteed engine parameters. Meaningful emphasis: moving. Planned pause before: 150 ms; after: 350 ms. Internal pause cues: []. Speak only spoken_text exactly; never read these instructions, speaker names, labels, or context.",
+      "output_path_if_later_generated": "proposed_audio/S01/I01-EXAMPLE.wav",
+      "output_exists": false
+    }
+  ],
+  "optional_activity_inventory": [
+    {
+      "scene": "S01",
+      "event_id": "X01",
+      "existing_phrase": "Tap Pinocchio.",
+      "existing_word_count": 2,
+      "meaning_ko": "피노키오를 톡 눌러 봐.",
+      "recommendation_status": "TOUCH_ONLY",
+      "recommended_phrase": null,
+      "recommended_word_count": null,
+      "current_role": "TIMELINE required=false인 선택 UI 안내. 필수 학습 발화가 아님.",
+      "recipient_and_referent": "앱이 윤수/보호자에게 화면의 피노키오를 누르도록 안내. 피노키오는 아직 살아나기 전.",
+      "visible_action_and_meaning": "방금 제페토가 이름을 붙인 인형을 시각적으로 짚는 활동. 이름과 대상 연결에는 맞음.",
+      "request_response_fit": "Tap은 터치 행동을 요청하므로 음성을 요구하면 입력 방식과 문구가 달라짐.",
+      "language_load": "두 단어지만 Pinocchio라는 긴 이름이 포함됨. 단어 수만으로 쉬운 발화라고 볼 수 없음. 이 UI는 세 단어 발화 규칙의 대상에서 제외.",
+      "preinput_and_postinput_rule": "터치는 외부 UI 선택 표시만 바꾼다. 눈·팔다리·몸통을 깨우는 반응을 먼저 재생하지 않는다.",
+      "support_without_scoring": "손가락 아이콘·짧은 한국어 안내·보호자 터치. 발화를 요청하거나 발음 성공을 기다리지 않음.",
+      "minimal_recommendation": "현재 영어 UI를 유지할 수 있으나 TOUCH_ONLY와 자동 진행을 명시. 말하기 과제 수에 합산하지 않는다.",
+      "source_anchors": [
+        "downloads/s01-complete/TIMELINE.json events[X01], after=S01-U006, time=25.5, seconds=3, required=false",
+        "downloads/s01-complete/SCREENING_KO.md 음성·참여"
+      ],
+      "status": "REVIEW_RECOMMENDATION_NOT_APPLIED_TO_COMPLETED_PRODUCT",
+      "time_seconds": 25.5,
+      "source_required": false,
+      "learner_model_required": false
+    },
+    {
+      "scene": "S01",
+      "event_id": "X02",
+      "existing_phrase": "Hello, Blue Fairy!",
+      "existing_word_count": 3,
+      "meaning_ko": "안녕, 파란 요정님!",
+      "recommendation_status": "OPTIONAL",
+      "recommended_phrase": "Hello, Blue Fairy!",
+      "recommended_word_count": 3,
+      "current_role": "required=false인 선택 인사 연습. 원본 이야기의 필수 사건을 여는 발화가 아님.",
+      "recipient_and_referent": "윤수가 화면에 들어온 파란 요정에게 인사. 파란 요정 자신의 본편 대사와 구분.",
+      "visible_action_and_meaning": "요정의 등장과 이름/인사를 연결하므로 상황에는 적절함.",
+      "request_response_fit": "인사로 자연스럽고 문법 문제 없음. 본편 요정 대사 Good evening, Geppetto.와 학습자의 인사가 다른 대화 상대를 가진다는 점을 UI로 분리.",
+      "language_load": "세 단어지만 Blue Fairy가 처음 듣는 호칭이고 Fairy의 소리가 낯설 수 있음. 정확한 이름을 모두 말해야 성공하는 과제로 만들지 않음.",
+      "preinput_and_postinput_rule": "3초 자동 진행은 선택 카드의 유지시간이며 영어를 3초 안에 정확히 말해야 한다는 제한이 아님. 다음 본편 음성과 선택 모델이 겹치지 않는지는 별도 플레이어 확인 필요.",
+      "support_without_scoring": "Hello만 말하기, 손 흔들기, 보호자 터치, 그냥 보기 모두 허용. 모델을 추가한다면 전체 문장을 먼저 자연스럽게 들려주고 재청취 때 Hello / Blue Fairy로 뜻을 나눔.",
+      "minimal_recommendation": "선택으로 유지. 피노키오가 윤수에게 답하거나 윤수 이름을 인지하는 새 본편 대사는 추가하지 않는다.",
+      "source_anchors": [
+        "downloads/s01-complete/TIMELINE.json events[X02], after=S01-U008, time=35.1666666667, required=false",
+        "docs/series_v2/sources/01_STORY_MASTER_V1_1.md 장면1 요정 등장"
+      ],
+      "status": "REVIEW_RECOMMENDATION_NOT_APPLIED_TO_COMPLETED_PRODUCT",
+      "time_seconds": 35.1666666667,
+      "source_required": false,
+      "learner_model_required": false
+    },
+    {
+      "scene": "S01",
+      "event_id": "X03",
+      "existing_phrase": "Touch the magic light.",
+      "existing_word_count": 4,
+      "meaning_ko": "마법빛을 톡 눌러 봐.",
+      "recommendation_status": "TOUCH_ONLY",
+      "recommended_phrase": null,
+      "recommended_word_count": null,
+      "current_role": "required=false인 선택 터치 UI.",
+      "recipient_and_referent": "윤수/보호자가 화면의 빛을 누르는 동작. 요정의 마법과 아이의 UI 입력을 분리.",
+      "visible_action_and_meaning": "빛이 이미 나타난 화면에서 대상 찾기는 가능. 마법의 시작 원인을 다시 만드는 참여로 쓰면 기존 사건 순서와 어긋남.",
+      "request_response_fit": "Touch라는 요청에 터치로 반응하는 것은 적절. 네 단어라는 사실은 현재의 선택 터치 안내를 세 단어 학습 목표 위반으로 만들지 않음.",
+      "language_load": "magic이라는 새 단어·추상적 대상과 touch를 한꺼번에 말하게 하기보다 보이는 빛을 짚는 수용 활동에 적합.",
+      "preinput_and_postinput_rule": "선택 UI는 비서사적 하이라이트만. I01 전에는 손가락의 미세 움직임을 넘어 눈뜨기·몸통 기립을 재생하지 않음.",
+      "support_without_scoring": "빛 테두리·손가락 아이콘·짧은 한국어 보조. 발화를 기다리지 않음.",
+      "minimal_recommendation": "TOUCH_ONLY로 유지하고 음성 작업표에서는 기본 발화 모델 수에 넣지 않는다.",
+      "source_anchors": [
+        "downloads/s01-complete/TIMELINE.json events[X03], after=S01-U013, time=51.75, required=false",
+        "downloads/s01-complete/SCREENING_KO.md C04 마법은 선택 참여 전에 진행"
+      ],
+      "status": "REVIEW_RECOMMENDATION_NOT_APPLIED_TO_COMPLETED_PRODUCT",
+      "time_seconds": 51.75,
+      "source_required": false,
+      "learner_model_required": false
+    },
+    {
+      "scene": "S01",
+      "event_id": "X04",
+      "existing_phrase": "Hello, my friend!",
+      "existing_word_count": 3,
+      "meaning_ko": "안녕, 내 친구!",
+      "recommendation_status": "TOUCH_ONLY",
+      "recommended_phrase": null,
+      "recommended_word_count": null,
+      "current_role": "required=false인 선택 인사 카드. 원본 S01의 필수 대사·이벤트가 아님.",
+      "recipient_and_referent": "깨어난 피노키오에게 윤수가 인사하는 것으로 읽히는 UI.",
+      "visible_action_and_meaning": "기쁨을 표현하기에는 맞지만 S02의 첫 친구 발견·수줍음·첫 인사 이전에 같은 관계를 선언함.",
+      "request_response_fit": "문장 자체는 자연스럽고 세 단어. 문제는 문법보다 회차별 첫 만남 역할의 중복.",
+      "language_load": "Hello는 친숙해도 my friend가 관계를 이미 확정하는 의미. S02 첫 만남을 살리려면 반복 인사를 기본 학습 목표로 삼지 않는 편이 깔끔함.",
+      "preinput_and_postinput_rule": "이미 생명을 얻은 결과를 외부 UI로 축하할 뿐, 피노키오의 윤수 인지·손 흔들기·관객 인사·이름 부르기를 새로 추가하지 않음.",
+      "support_without_scoring": "비언어 축하 아이콘 누르기/그냥 보기. 응답하지 않아도 자동 진행.",
+      "minimal_recommendation": "첫 인사 발화는 S02 I02에 남기고 X04는 반짝이·축하 터치 같은 비언어 선택 활동으로 전환 권고. 기존 Hello를 유지하면 명시적으로 본편 밖 연습이며 등장인물 응답 없는 것으로 제한.",
+      "source_anchors": [
+        "downloads/s01-complete/TIMELINE.json events[X04], after=S01-U020, time=82.625, required=false",
+        "docs/series_v2/sources/01_STORY_MASTER_V1_1.md 장면2 첫 인사 I02"
+      ],
+      "status": "REVIEW_RECOMMENDATION_NOT_APPLIED_TO_COMPLETED_PRODUCT",
+      "time_seconds": 82.625,
+      "source_required": false,
+      "learner_model_required": false,
+      "recommended_ui_label_ko": "깨어난 피노키오를 축하해요",
+      "evidence_class": "DESIGN_RISK_NOT_CONFIRMED_CHARACTER_RESPONSE"
+    },
+    {
+      "scene": "S01",
+      "event_id": "X05",
+      "existing_phrase": "Tell the truth!",
+      "existing_word_count": 3,
+      "meaning_ko": "사실대로 말해!",
+      "recommendation_status": "OPTIONAL",
+      "recommended_phrase": "Tell the truth!",
+      "recommended_word_count": 3,
+      "current_role": "required=false인 선택 카드. 요정의 가치 안내 뒤 제시되는 외부 표현.",
+      "recipient_and_referent": "윤수가 피노키오에게 건네는 당부로 해석 가능. 아이 자신의 잘못을 검사하는 말이 아님.",
+      "visible_action_and_meaning": "원본 요정이 truth의 중요성을 말하지만 아직 거짓말/고백의 구체적 대비 사건은 없음.",
+      "request_response_fit": "문장 자체는 자연스럽고 세 단어. 눈에 보이는 단일 동작을 시키는 다른 포인트와 달리 추상적 의미를 요구함.",
+      "language_load": "truth라는 개념과 말소리가 동시에 새로울 수 있음. 세 단어라는 이유로 I01과 같은 난이도라고 판단하지 않음. 윤수의 실제 수준은 미확인.",
+      "preinput_and_postinput_rule": "이 단계에서 정직함의 정답·거짓말 여부를 채점하지 않음. 새로운 변신·코 변화·벌을 연결하지 않음.",
+      "support_without_scoring": "초회에는 듣기·끄덕임·그냥 보기로 충분. 필요한 경우 보호자가 한 번 짧게 뜻을 돕고, 후반 거짓말/고백 사건에서 같은 표현의 뜻을 다시 확인.",
+      "minimal_recommendation": "필수 발화로 승격하지 않고 선택 듣기/따라말하기로 유지. 강한 훈계조 대신 다정한 당부로 연기. 본편 원본 요정 문구는 보존.",
+      "source_anchors": [
+        "downloads/s01-complete/TIMELINE.json events[X05], after=S01-U024, time=96.625, required=false",
+        "docs/series_v2/sources/01_STORY_MASTER_V1_1.md 장면1 truth 대화 및 후반 거짓말/고백 사건"
+      ],
+      "status": "REVIEW_RECOMMENDATION_NOT_APPLIED_TO_COMPLETED_PRODUCT",
+      "time_seconds": 96.625,
+      "source_required": false,
+      "learner_model_required": false
+    }
+  ],
+  "model_policy": {
+    "model_is_child_answer": false,
+    "exact_word_scoring": false,
+    "required_gates_do_not_auto_pass_on_timeout": true,
+    "guardian_tap_can_continue": true,
+    "gestures_not_automatically_detected": true
+  },
+  "correction_proposals": "CORRECTION_PROPOSALS.json",
+  "engine_binding": "Instruction text is a handoff contract, not a claim that the historical engine supports these parameters."
+}

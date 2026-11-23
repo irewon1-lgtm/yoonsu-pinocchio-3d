@@ -1,0 +1,356 @@
+{
+  "scene": "S02",
+  "base_commit": "2ccbdd3b464f8e6fed43a5807c76c7de98464fe0",
+  "scope": "CURRENT_REPOSITORY_DESIGN_AND_CODE_REVIEW_NOT_COMPLETED_MEDIA_REPLAY",
+  "source_hashes": {
+    "scenes/S02/scene_design_v2.json": "4d711e1b924b36a0eb97fd95faf075f9574d4bf5e9644379f83d372503a9c2ad",
+    "scenes/S02/interaction_map_v2.json": "d2bad5a21c30d31f0364258c2a63d85ffc5244bb2db17114806fdce590e5fec6",
+    "docs/series_v2/VOICE_PERFORMANCE_BIBLE_V2_1.json": "1376f4b932a23dfdcc46a04b47bdd2e85eb018c4dbf6b1eb56af1e088a94ea05",
+    "assets/voice_refs/v6/VOICE_REFERENCES.json": "fc6a0c516226f2eeede59a561e42195bb75df6c1d2279bef1124c3c9cf3d9e5f",
+    "docs/series_v2/sources/01_STORY_MASTER_V1_1.md": "eb5ca04f5e4302d4a71726f1a24b6cead5cec682b96baee600f6eef8ee951d3e",
+    "docs/series_v2/sources/01_STEP2_PRODUCTION_STORYBOARD_SPEC.md": "b5ff72a4e6d889006eacc669a7c15c68a739ca1805117b8c79d79d4ab5181610"
+  },
+  "user_completed_episode_status_preserved": true,
+  "complete_s02_video_or_audio_examined": false,
+  "actual_listening": "NOT_RUN",
+  "findings": [
+    {
+      "id": "S02-F01",
+      "severity": "medium",
+      "classification": "CONFIRMED_SOURCE_CONDITION_MISMATCH",
+      "title": "P01 목표는 두 단어",
+      "evidence": [
+        {
+          "path": "scenes/S02/interaction_map_v2.json",
+          "anchor": "S02-P01.cue",
+          "quote": "Open, close!"
+        },
+        {
+          "path": "docs/series_v2/sources/01_STORY_MASTER_V1_1.md",
+          "anchor": "난이도",
+          "quote": "윤수 목표 발화는 매번 3단어"
+        }
+      ],
+      "analysis": "Open, close! 자체는 손동작을 나타내는 자연스러운 짧은 표현이다. 문법 오류가 아니라 현재 세 단어 목표와의 불일치다.",
+      "recommendation": "최종 권고는 Open your hand!이다. 손 펴기 한 동작으로 목표를 좁히고 제페토 자신의 손 시범, 질문, 입력 뒤 피노키오의 완전한 손 펴기를 함께 맞춘다. 기존 목표·완료본에는 아직 적용하지 않았다.",
+      "applied_to_baseline": false
+    },
+    {
+      "id": "S02-F02",
+      "severity": "high",
+      "classification": "CONFIRMED_TIMELINE_ACCOUNTING_ISSUE",
+      "title": "I02 모델 예시 10초가 본편 계획에 포함됨",
+      "evidence": [
+        {
+          "path": "scenes/S02/scene_design_v2.json",
+          "anchor": "B10-C02 390–400 seconds",
+          "quote": "I02 원본 목표 영어를 천천히 시범, 질문 음성 끝난 뒤 WAIT. 응답 대기는 본편 443초 제외."
+        }
+      ],
+      "analysis": "B10-C02의 10초가 전체 0–443초 연속 컷에 포함되어 있고 설명의 중심은 목표 예시다. 응답 대기 제외 표기만으로 예시까지 본편 밖이 되지는 않는다. 해당 10초만 제외하면 명목 본편은 433초라서 360초 미달이라는 결론은 아니다. 실제 완성 MP4 길이는 이 설계만으로 판단하지 않았다.",
+      "recommendation": "U015 질문 종료에서 본편 시계를 정지하고 모델 예시를 별도 재생한 뒤 마이크를 열며 입력 후 C03 반응으로 재개한다. 모델 10초를 본편 길이에서 분리해 타임라인과 QA를 함께 다시 계산한다.",
+      "applied_to_baseline": false
+    },
+    {
+      "id": "S02-F03",
+      "severity": "high",
+      "classification": "CONFIRMED_MISSING_DIRECTION_AND_CUT_CONTRACT",
+      "title": "102개 대사별 컷·음성 배정이 없음",
+      "evidence": [
+        {
+          "path": "scenes/S02/scene_design_v2.json",
+          "anchor": "all 102 spoken dialogue records and 50 shots",
+          "observation_not_verbatim_quote": "Existing spoken rows contain kind/speaker/text/source_index, while shot rows contain id/start_seconds/end_seconds/camera/acting. No dialogue_ids assignment or per-line voice_direction is present."
+        }
+      ],
+      "analysis": "전체 길이와 컷 합계는 있어도 어떤 대사가 어느 컷에 들어가는지 기계적으로 검증할 수 없다. 원본/신규 발화의 순서 보존은 이와 별개의 성질이다.",
+      "recommendation": "이번 sidecar에서 102줄의 고유 ID와 연기 지시를 제공했다. 실제 적용 단계에서는 각 줄을 컷에 한 번 배정하고 합성 WAV 길이·쉼·동작을 재계산한다. 본 검토에서는 50컷의 음성 수용을 PASS라고 주장하지 않는다.",
+      "applied_to_baseline": false,
+      "provided_in_review_sidecar": true
+    },
+    {
+      "id": "S02-F04",
+      "severity": "high",
+      "classification": "CONFIRMED_OLD_SYNTHESIS_INPUT_GAP",
+      "title": "기존 S02 합성 호출은 문장별 연기를 받지 않음",
+      "evidence": [
+        {
+          "path": "scripts/s02_approved_voice_tts.py",
+          "anchor": "model.generate call",
+          "quote": "pcm=model.generate(text,audio_prompt_path=str(cache/f\"{slug}.wav\"))"
+        }
+      ],
+      "analysis": "현재 코드가 전달하는 것은 대사와 음색 참조다. 이 관측으로 실제 완성 음원이 모두 평평하다고 단정하지는 않지만 새 연기 지시가 이 호출로 전달되지 않는다는 점은 확인된다.",
+      "recommendation": "현재 엔진의 실제 지원 기능을 확인한 어댑터에 sidecar 연기 지시를 매핑한다. 지시문을 발화 텍스트 앞에 붙여 읽거나 지원하지 않는 인수를 지어내지 않는다. 기존 S02 완성 파일은 보존한다.",
+      "applied_to_baseline": false
+    },
+    {
+      "id": "S02-F05",
+      "severity": "medium",
+      "classification": "CONFIRMED_LEARNING_PROTOCOL_GAP_RELATIVE_TO_CURRENT_STANDARD",
+      "title": "첫 외부 모델과 마이크 개방 순서가 구조화되지 않음",
+      "evidence": [
+        {
+          "path": "scenes/S02/interaction_map_v2.json",
+          "anchor": "all ten event trigger fields",
+          "quote": "QUESTION_AUDIO_ENDED_THEN_VAD_OR_PARENT_TAP"
+        },
+        {
+          "path": "scenes/S02/scene_design_v2.json",
+          "anchor": "B01-C03 through B09-C03",
+          "observation_not_verbatim_quote": "시범 / 질문 종료 후 WAIT; examples have no separate model audio IDs or model-ended trigger."
+        }
+      ],
+      "analysis": "몸짓 시범은 있으나 1–9번은 목표 구절을 첫 입력 전에 별도 음성으로 한 번 들려준다는 계약이 없고, 10번 예시는 본편 컷 안에 놓였다. 일부 목표는 앞 대사에 비슷한 표현으로 등장하므로 전혀 들어 보지 못한다고 일괄 단정하지 않는다.",
+      "recommendation": "10개 모두 질문 종료→본편 정지→캐릭터의 모델 예시(마이크 OFF)→모델 종료→VAD/보호자 터치→반응 1회로 구조화한다. 정확한 단어 채점은 하지 않고 모델 음성의 자기 입력을 막는다.",
+      "applied_to_baseline": false
+    },
+    {
+      "id": "S02-R01",
+      "severity": "medium",
+      "classification": "CONFIRMED_STRUCTURE_WITH_INTERPRETIVE_CONTINUITY_RISK",
+      "title": "첫 친구 소개 전에 피노키오가 윤수에게 직접 부탁함",
+      "evidence": [
+        {
+          "path": "scenes/S02/scene_design_v2.json",
+          "anchor": "B04 / S02-N030",
+          "quote": "피노키오: Yoonsu, help me take a step!"
+        },
+        {
+          "path": "scenes/S02/scene_design_v2.json",
+          "anchor": "B08 / S02-U010–U013",
+          "quote": "We have a little friend watching our story. / A friend? / His name is Yoonsu."
+        }
+      ],
+      "analysis": "제페토가 B01부터 윤수 이름을 부르므로 피노키오가 이름을 들었을 가능성은 있다. 논리적으로 이름을 알 수 없다는 결함이 아니라 B08의 첫 소개·친구 찾기 연출이 약해지는 구성 문제다.",
+      "recommendation": "NEW N030을 제페토의 Yoonsu, help him take a step!로 바꾸는 최소 제안을 분리했다. 원본21줄과 B08 소개는 보존하고 맵의 prompt/화자/모델도 함께 맞춘다.",
+      "applied_to_baseline": false
+    },
+    {
+      "id": "S02-R02",
+      "severity": "medium",
+      "classification": "DESIGN_RISK_CHILD_ACTION_AND_RESULT_ASSOCIATION",
+      "title": "발화 직후 넘어짐이 실패 보상으로 읽힐 수 있음",
+      "evidence": [
+        {
+          "path": "scenes/S02/interaction_map_v2.json",
+          "anchor": "S02-P04.react",
+          "quote": "첫발→균형 상실→실제 쿠션에 앉기→원본 Oops!"
+        }
+      ],
+      "analysis": "One small step!는 자연스러운 세 단어 표현이며 요청한 첫걸음도 실제로 실행된다. 다만 바로 넘어지는 결과만 강조되면 아이가 자기 발화가 틀렸다고 느낄 수 있는 연출 위험이다.",
+      "recommendation": "작은 첫 보폭의 접지 성공을 먼저 분명히 보여 준 다음 원본의 쿠션 착지를 부드럽게 이어 간다. 즉시 제페토의 안심 표정·안전 확인, 기존 cushion caught you와 brave first step을 연결하고 오류음·재발화 강요를 금지한다.",
+      "applied_to_baseline": false
+    },
+    {
+      "id": "S02-R03",
+      "severity": "medium",
+      "classification": "DESIGN_RISK_COMFORT_HELD_BEHIND_INPUT",
+      "title": "넘어진 뒤 손잡기·위로가 별도 응답에 걸림",
+      "evidence": [
+        {
+          "path": "scenes/S02/scene_design_v2.json",
+          "anchor": "B04-C04 / B05-C03 / B05-C05",
+          "observation_not_verbatim_quote": "151–161s cushion landing; 184–193s 손이 닿기 직전 질문; 203–210s 원본 Don’t worry...를 손을 잡은 상태에서 전달."
+        }
+      ],
+      "analysis": "B04의 cushion caught you·brave first step이 이미 일부 안심을 제공하므로 그동안 아무 위로도 없다고 할 수는 없다. 그러나 손을 요청한 뒤 접촉을 입력까지 보류하고 원본 위로를 뒤 컷에 두는 구조는 도움을 답변 보상처럼 보이게 할 수 있다.",
+      "recommendation": "낙상 직후 안전 확인과 정서적 지지는 입력과 무관하게 즉시 제공한다. P05의 추가 손잡기는 기존 참여 횟수를 유지하며 발화 시도 또는 보호자 터치 뒤 실행한다. 응답을 하지 않았다고 잘못이라고 말하거나 위로를 미루지 않는다. 시간 초과 자동 성공을 새로 추가하지 않는다.",
+      "applied_to_baseline": false
+    },
+    {
+      "id": "S02-R04",
+      "severity": "medium",
+      "classification": "DESIGN_STATE_AMBIGUITY",
+      "title": "앉음·발 지지 상태의 인계가 덜 명확함",
+      "evidence": [
+        {
+          "path": "scenes/S02/scene_design_v2.json",
+          "anchor": "B02-C04 / B02-C05 / B03-C01",
+          "observation_not_verbatim_quote": "발바닥은 접지 유지 / 안전하게 서는 자세를 본다 / 앉은 자리에서 손을 짚고 두 발을 딛는다."
+        }
+      ],
+      "analysis": "앉아서 두 발을 바닥에 놓을 수 있으므로 물리적 모순이 확정된 것은 아니다. B02 말미 문구가 이미 서 있는 것으로 구현될 여지가 있어 B03 첫 일어서기가 중복될 수 있다.",
+      "recommendation": "B01–B02는 낮은 안전한 좌석에 앉아 두 발을 바닥에 둔 상태라고 시작·종료에 명시한다. B03-C04까지 골반 상승을 미루고 접촉·지지점을 컷마다 인계한다.",
+      "applied_to_baseline": false
+    },
+    {
+      "id": "S02-R05",
+      "severity": "medium",
+      "classification": "DESIGN_OBJECT_CONTACT_AND_GATE_AMBIGUITY",
+      "title": "나무 새 시범과 집어 들기·내려놓기 인계가 모호함",
+      "evidence": [
+        {
+          "path": "scenes/S02/scene_design_v2.json",
+          "anchor": "B07-C03.acting",
+          "quote": "제페토가 태엽 반 바퀴 시범 뒤 질문, WAIT. 새는 아직 소리 없음."
+        },
+        {
+          "path": "scenes/S02/scene_design_v2.json",
+          "anchor": "B07-C05.acting",
+          "quote": "피노키오가 새를 원위치에 놓고 제페토/집을 번갈아 바라보며 미소."
+        }
+      ],
+      "analysis": "입력 전 이미 같은 태엽을 반 바퀴 돌리고 입력 후 다시 돌린다. 또 마지막에는 피노키오가 새를 내려놓지만 앞 컷에는 누가 언제 집어 받쳤는지 명시되지 않았다. 재감기 시범 자체가 불가능한 것은 아니나 물체 지지와 첫 소리의 원인이 불명확하다.",
+      "recommendation": "시범은 별도 손 회전 제스처로 하고 실제 태엽 회전·새의 소리는 입력 뒤로 고정한다. 새는 선반 위 지지를 계속 유지하거나 집기·양손 지지·다시 놓기 순서를 명확히 작성한다.",
+      "applied_to_baseline": false
+    },
+    {
+      "id": "S02-R06",
+      "severity": "low",
+      "classification": "DESIGN_REPEATED_DISCOVERY_RISK",
+      "title": "친구와 눈맞춤 뒤 다시 첫 발견처럼 말할 수 있음",
+      "evidence": [
+        {
+          "path": "scenes/S02/scene_design_v2.json",
+          "anchor": "B08-C04–C05 / B09 S02-N074",
+          "observation_not_verbatim_quote": "카메라와 눈 맞춤...손가락을 친구에게 보여주고 미소 / Oh! There you are!"
+        }
+      ],
+      "analysis": "숨었다가 다시 얼굴을 내미는 행동은 성립한다. 문제는 N074를 첫 친구 발견의 큰 놀람으로 연기하면 이미 눈을 맞춘 사실을 지우게 되는 점이다.",
+      "recommendation": "N068은 대면의 의미를 실감해 수줍어지는 순간, N074는 숨었다가 다시 눈맞춤을 얻는 작은 안도로 연기한다. 이번 sidecar에 반영했고 실제 화면·음성 결과는 확인하지 않았다.",
+      "applied_to_baseline": false,
+      "provided_in_review_sidecar": true
+    },
+    {
+      "id": "S02-R07",
+      "severity": "medium",
+      "classification": "LEARNING_TARGET_LOAD_AND_REFERENCE_RISK",
+      "title": "세 단어라도 이름·동사·지시 대상의 부담이 다름",
+      "evidence": [
+        {
+          "path": "scenes/S02/interaction_map_v2.json",
+          "anchor": "S02-P02/P05/P07/P09/I02 cues",
+          "quote": "Wiggle your toes! / Hold his hand! / Turn the key! / Peek out, please! / Hello, little Pinocchio!"
+        }
+      ],
+      "analysis": "Wiggle·Peek 같은 덜 익숙한 동사, his의 대상, 태엽 key의 지시 대상, 긴 고유명사 Pinocchio는 단어 수와 별도로 모델·그림의 지원이 필요하다. 실제 윤수의 수행 자료가 없어 발화 성공률이나 나이별 능력은 판정하지 않았다.",
+      "recommendation": "목표 세 단어는 예시로 유지하되 그림·몸짓과 한 구절 모델을 제공하고 짧은 Hello, 이름 일부, 자발적 소리·보호자 터치도 진행을 막지 않게 한다. 완전한 문장 재현을 정답 조건으로 삼지 않는다.",
+      "applied_to_baseline": false
+    },
+    {
+      "id": "S02-R08",
+      "severity": "low",
+      "classification": "PACING_AND_CONTINUING_STORY_RISK",
+      "title": "7분 넘게 매 비트 입력이 반복되어 대화가 끊길 수 있음",
+      "evidence": [
+        {
+          "path": "scenes/S02/scene_design_v2.json",
+          "anchor": "B01–B10 / S02-N080",
+          "observation_not_verbatim_quote": "10 beats, each containing one interaction; Will you come back to our story?"
+        }
+      ],
+      "analysis": "10개 포인트가 모두 같게 질문→정지→칭찬으로 연기되면 서사보다 연습 순서가 앞설 수 있다. 10회 자체는 기존 조건이므로 임의 감축하지 않는다. 마지막 come back도 같은 아침 S03으로 이어질 때 긴 작별처럼 들리면 흐름이 끊긴다.",
+      "recommendation": "몸 발견·균형·안심·집·친구라는 각 목적을 구분하고 참여 전후 인물의 자율 반응을 유지한다. N080/N081과 마지막 내레이션은 열린 기대감으로 마쳐 S03 준비 장면으로 이어지게 한다.",
+      "applied_to_baseline": false,
+      "provided_in_review_sidecar": true
+    }
+  ],
+  "learning_points": [
+    {
+      "id": "S02-P01",
+      "current_cue": "Open, close!",
+      "word_count": 2,
+      "prompt": "Yoonsu, help his little hand wake up!",
+      "wait": "손을 절반쯤 편 상태, 눈깜박임만",
+      "react": "엄지→검지→중지 굽힘·펴기; 피노키오가 손을 보고 미소",
+      "review_recommendation": "Open your hand!"
+    },
+    {
+      "id": "S02-P02",
+      "current_cue": "Wiggle your toes!",
+      "word_count": 3,
+      "prompt": "Yoonsu, help us wiggle his toes!",
+      "wait": "발바닥 고정, 발가락 정지",
+      "react": "발가락 순차 굽힘→간지럼 표정→바닥에 안정적인 접지",
+      "review_recommendation": "Wiggle your toes!"
+    },
+    {
+      "id": "S02-P03",
+      "current_cue": "Stand up tall!",
+      "word_count": 3,
+      "prompt": "Yoonsu, can you help him stand?",
+      "wait": "무릎 굽힌 준비 자세, 발바닥 바닥 고정",
+      "react": "양발 지지로 일어서기·상체 균형·기쁜 표정",
+      "review_recommendation": "Stand up tall!"
+    },
+    {
+      "id": "S02-P04",
+      "current_cue": "One small step!",
+      "word_count": 3,
+      "prompt": "Yoonsu, help me take a step!",
+      "wait": "왼발 들어 첫발 직전, 쿠션 아직 움직이지 않음",
+      "react": "첫발→균형 상실→실제 쿠션에 앉기→원본 Oops!",
+      "review_recommendation": "One small step!"
+    },
+    {
+      "id": "S02-P05",
+      "current_cue": "Hold his hand!",
+      "word_count": 3,
+      "prompt": "Of course. Yoonsu, can we help him?",
+      "wait": "손이 닿기 직전, 둘의 시선 교환",
+      "react": "제페토와 피노키오가 손을 잡고 위로 대사로 이어짐",
+      "review_recommendation": "Hold his hand!"
+    },
+    {
+      "id": "S02-P06",
+      "current_cue": "Try once more!",
+      "word_count": 3,
+      "prompt": "Yoonsu, let's help him try again!",
+      "wait": "두 발 고정·몸 숙인 준비 자세",
+      "react": "스스로 일어나 2초 균형·제페토 격려",
+      "review_recommendation": "Try once more!"
+    },
+    {
+      "id": "S02-P07",
+      "current_cue": "Turn the key!",
+      "word_count": 3,
+      "prompt": "Yoonsu, help us turn the little key!",
+      "wait": "태엽을 잡은 채 정지, 새는 조용함",
+      "react": "태엽 회전→새 고개 움직임→울음소리→피노키오의 기쁨",
+      "review_recommendation": "Turn the key!"
+    },
+    {
+      "id": "S02-P08",
+      "current_cue": "Look this way!",
+      "word_count": 3,
+      "prompt": "Yoonsu, help him look this way.",
+      "wait": "피노키오가 창문을 보는 상태, 고개 반쯤 돌아감",
+      "react": "관객을 향해 머리·몸을 돌려 눈 맞춤, 제페토가 원본 이름 소개",
+      "review_recommendation": "Look this way!"
+    },
+    {
+      "id": "S02-P09",
+      "current_cue": "Peek out, please!",
+      "word_count": 3,
+      "prompt": "Yoonsu, help him peek out!",
+      "wait": "제페토 뒤에서 눈만 잠깐 보임",
+      "react": "얼굴을 조금씩 내밀기→카메라 확인→수줍은 미소",
+      "review_recommendation": "Peek out, please!"
+    },
+    {
+      "id": "I02",
+      "current_cue": "Hello, little Pinocchio!",
+      "word_count": 3,
+      "prompt": "Yoonsu, how should we say hello to our new friend?",
+      "wait": "피노키오가 제페토 뒤에서 얼굴만 내밀고 기다림",
+      "react": "피노키오 앞으로 나옴→카메라에 첫 손 흔들기→제페토 옆 이동",
+      "review_recommendation": "Hello, little Pinocchio!"
+    }
+  ],
+  "test_scope": "Only read-only source consistency and authored sidecar completeness/anchors. No S02 production validator, synthesis, render, or player execution.",
+  "verification": {
+    "executed_utc": "2026-11-23T04:07:46.285894+00:00",
+    "story_lines": 102,
+    "original": 21,
+    "new": 81,
+    "models": 10,
+    "english_direction_uniqueness": 102,
+    "source_text_and_speaker_order": "EXACT_MATCH",
+    "all_direction_emphasis_and_pause_anchors": "EXACT_SUBSTRINGS",
+    "source_files_changed": false,
+    "actual_audio_listening": "NOT_RUN"
+  },
+  "proposals_applied_to_existing_source": false,
+  "root_consolidation": "P01 final recommendation is Open your hand! with one-action contract. P05 count/input contract is preserved while immediate safety and reassurance are autonomous."
+}
