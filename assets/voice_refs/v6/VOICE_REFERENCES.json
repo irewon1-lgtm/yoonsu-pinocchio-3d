@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "purpose": "S02-S12 fixed synthetic character voices, sourced from previously user-approved V6 reference MP3 embedded in V7 review HTML",
+  "source_html": "PINOCCHIO_S01_V7_APPROVED_A_C_A_A.html (ChatGPT Library)",
+  "s01_v7_engine": "Chatterbox-Nano 110M",
+  "s01_v7_engine_model_revision": "UNKNOWN",
+  "s01_v7_sampling_seed": "UNKNOWN",
+  "comment": "v7_voice_reference_id is metadata and DOES NOT equal mp3 SHA256",
+  "voices": {
+    "narrator": {
+      "speaker": "내레이션",
+      "approved_candidate": "A",
+      "original_label": "am_fenrir",
+      "reference_mp3_path": "assets/voice_refs/v6/narrator_V6_APPROVED.mp3",
+      "sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+      "v7_voice_reference_id": "d38f0b8b8d9b5b0413eae736633354b35fe421cdf4922e9c434d418492daa32c"
+    },
+    "pinocchio": {
+      "speaker": "피노키오",
+      "approved_candidate": "A",
+      "original_label": "8-year-old bright boy (voice model name not recovered)",
+      "reference_mp3_path": "assets/voice_refs/v6/pinocchio_V6_APPROVED.mp3",
+      "sha256": "a32569705a717ac92c8ecbe1c515b9e31e389f508164458ed22a06adcbba0b3d",
+      "v7_voice_reference_id": "7cc295611dbd96a7d60573ed4ae6b233ff13d170f6baea1958329b845eedf703"
+    },
+    "geppetto": {
+      "speaker": "제페토",
+      "approved_candidate": "A",
+      "original_label": "82-year-old grandfather (voice model name not recovered)",
+      "reference_mp3_path": "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3",
+      "sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+      "v7_voice_reference_id": "97884b61a37d580d5dd0b1fed537752bce960f7a73cda3c67b3f57e1767d61c2"
+    },
+    "blue_fairy": {
+      "speaker": "파란 요정",
+      "approved_candidate": "C",
+      "original_label": "af_kore",
+      "reference_mp3_path": "assets/voice_refs/v6/blue_fairy_V6_APPROVED.mp3",
+      "sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+      "v7_voice_reference_id": "72b38e466ccb3c7daebb67beaed156d71f554c41c2f5fe458e53dcbbe9405f8c"
+    }
+  }
+}
