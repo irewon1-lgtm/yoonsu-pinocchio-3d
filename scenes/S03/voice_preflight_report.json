@@ -1,0 +1,1269 @@
+{
+  "scene": "S03",
+  "audit_scope": "LOCKED_REFERENCES_AND_PER_LINE_DIRECTION_EXPORT_ONLY",
+  "reference_integrity": "PASS",
+  "direction_export_integrity": "PASS",
+  "story_dialogue_count": 114,
+  "model_example_count": 10,
+  "first_pass_model_examples_required": 10,
+  "optional_example_count": 0,
+  "example_replays_optional": true,
+  "story_speaker_counts": {
+    "제페토": 54,
+    "피노키오": 59,
+    "내레이션": 1
+  },
+  "model_example_speaker_counts": {
+    "제페토": 5,
+    "피노키오": 5
+  },
+  "blocked_speakers": [],
+  "full_scene_voice_gate": "REFERENCE_READY_AUDIO_NOT_RUN",
+  "audio_synthesis": "NOT_RUN",
+  "audio_duration_and_lipsync": "NOT_RUN",
+  "direction_adapter_application": "NOT_RUN",
+  "listening_review": "NOT_RUN",
+  "voice_plan": "scenes/S03/voice_direction_plan.json",
+  "voice_assignments": [
+    {
+      "id": "S03-U001",
+      "speaker": "제페토",
+      "text": "Today is your first day at school!",
+      "kind": "ORIGINAL",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U002",
+      "speaker": "피노키오",
+      "text": "School?",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U003",
+      "speaker": "제페토",
+      "text": "Yes! You'll meet new friends.",
+      "kind": "ORIGINAL",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U004",
+      "speaker": "제페토",
+      "text": "And you'll learn many wonderful things.",
+      "kind": "ORIGINAL",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N001",
+      "speaker": "피노키오",
+      "text": "New friends? What do they look like?",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N002",
+      "speaker": "제페토",
+      "text": "Look at this little picture book.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N003",
+      "speaker": "피노키오",
+      "text": "There are children at a table!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N004",
+      "speaker": "제페토",
+      "text": "Yes. They are learning together.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N005",
+      "speaker": "피노키오",
+      "text": "Can I see the next picture?",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N006",
+      "speaker": "제페토",
+      "text": "Yoonsu, help us turn the page!",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N007",
+      "speaker": "피노키오",
+      "text": "Oh! Look at the paint and paper!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N008",
+      "speaker": "제페토",
+      "text": "That's something you can learn at school.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-P01-EXAMPLE",
+      "speaker": "제페토",
+      "text": "Turn the page!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N009",
+      "speaker": "피노키오",
+      "text": "Grandpa, what can friends do?",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N010",
+      "speaker": "제페토",
+      "text": "They can play and help each other.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N011",
+      "speaker": "피노키오",
+      "text": "I want to build something.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N012",
+      "speaker": "제페토",
+      "text": "Here are three little wooden blocks.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N013",
+      "speaker": "피노키오",
+      "text": "One here. One more here.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N014",
+      "speaker": "제페토",
+      "text": "Put the big one at the bottom.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N015",
+      "speaker": "피노키오",
+      "text": "This tall block is wobbly.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N016",
+      "speaker": "제페토",
+      "text": "Yoonsu, shall we help with the last block?",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N017",
+      "speaker": "피노키오",
+      "text": "It stands! I can show my new friends.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N018",
+      "speaker": "제페토",
+      "text": "Your tower is strong.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N019",
+      "speaker": "피노키오",
+      "text": "I will be kind to my friends.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N020",
+      "speaker": "제페토",
+      "text": "That's a wonderful start.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-P02-EXAMPLE",
+      "speaker": "제페토",
+      "text": "Put it here!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U005",
+      "speaker": "피노키오",
+      "text": "That sounds exciting!",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U006",
+      "speaker": "피노키오",
+      "text": "Can I wear my new hat?",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U007",
+      "speaker": "제페토",
+      "text": "Of course.",
+      "kind": "ORIGINAL",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U008",
+      "speaker": "제페토",
+      "text": "Now, where did I put that red hat?",
+      "kind": "ORIGINAL",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N021",
+      "speaker": "피노키오",
+      "text": "A red hat! I love red.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N022",
+      "speaker": "제페토",
+      "text": "Show me where your hat will go.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N023",
+      "speaker": "피노키오",
+      "text": "Right up here on top?",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N024",
+      "speaker": "제페토",
+      "text": "Touch your head and see.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N025",
+      "speaker": "피노키오",
+      "text": "Yoonsu, can you help me check?",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N026",
+      "speaker": "피노키오",
+      "text": "Nothing on my head!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N027",
+      "speaker": "제페토",
+      "text": "Let's look for your hat together.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N028",
+      "speaker": "피노키오",
+      "text": "I'll look carefully!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-P03-EXAMPLE",
+      "speaker": "피노키오",
+      "text": "Touch your head!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N029",
+      "speaker": "제페토",
+      "text": "I remember putting things in this drawer.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N030",
+      "speaker": "피노키오",
+      "text": "Maybe the hat is inside!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N031",
+      "speaker": "제페토",
+      "text": "Let's pull it slowly.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N032",
+      "speaker": "피노키오",
+      "text": "It's a little heavy.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N033",
+      "speaker": "제페토",
+      "text": "Put your hands on the handle.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N034",
+      "speaker": "피노키오",
+      "text": "Yoonsu, help me open it!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N035",
+      "speaker": "피노키오",
+      "text": "A wooden spoon and some string!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N036",
+      "speaker": "제페토",
+      "text": "Hmm, but no red hat.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U009",
+      "speaker": "피노키오",
+      "text": "It's not here!",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N037",
+      "speaker": "피노키오",
+      "text": "Maybe we need to look somewhere else.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N038",
+      "speaker": "제페토",
+      "text": "Let's put these things back.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-P04-EXAMPLE",
+      "speaker": "피노키오",
+      "text": "Open the drawer!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N039",
+      "speaker": "피노키오",
+      "text": "What about the table?",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N040",
+      "speaker": "제페토",
+      "text": "Look at the book.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N041",
+      "speaker": "피노키오",
+      "text": "Maybe my hat is hiding under it.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N042",
+      "speaker": "제페토",
+      "text": "Lift the book, but keep it safe.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N043",
+      "speaker": "피노키오",
+      "text": "It's our school book.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N044",
+      "speaker": "피노키오",
+      "text": "Yoonsu, can you help me look underneath?",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N045",
+      "speaker": "피노키오",
+      "text": "Not under the book!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N046",
+      "speaker": "제페토",
+      "text": "You're looking very carefully.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N047",
+      "speaker": "피노키오",
+      "text": "Where should we look next?",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N048",
+      "speaker": "제페토",
+      "text": "Let's look around the whole room.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N049",
+      "speaker": "피노키오",
+      "text": "I want to find my hat!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-P05-EXAMPLE",
+      "speaker": "피노키오",
+      "text": "Lift the book!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N050",
+      "speaker": "제페토",
+      "text": "We checked the drawer and the table.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N051",
+      "speaker": "피노키오",
+      "text": "Where else can it be?",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U010",
+      "speaker": "제페토",
+      "text": "Hmm. Yoonsu can see the whole room.",
+      "kind": "ORIGINAL",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U011",
+      "speaker": "제페토",
+      "text": "Yoonsu, where is Pinocchio's hat?",
+      "kind": "ORIGINAL",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U012",
+      "speaker": "제페토",
+      "text": "Ah! Here it is!",
+      "kind": "ORIGINAL",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U013",
+      "speaker": "피노키오",
+      "text": "My red hat!",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N052",
+      "speaker": "피노키오",
+      "text": "It's bright red!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N053",
+      "speaker": "제페토",
+      "text": "It was under this chair the whole time.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N054",
+      "speaker": "피노키오",
+      "text": "I can see it now.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N055",
+      "speaker": "제페토",
+      "text": "Thank you for helping, Yoonsu.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "I03-EXAMPLE",
+      "speaker": "제페토",
+      "text": "Under the chair!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N056",
+      "speaker": "피노키오",
+      "text": "It's softer than my wooden head.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N057",
+      "speaker": "제페토",
+      "text": "It has a little brim.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N058",
+      "speaker": "피노키오",
+      "text": "Which way is the top?",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N059",
+      "speaker": "제페토",
+      "text": "First, hold it high where we can see it.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N060",
+      "speaker": "피노키오",
+      "text": "Yoonsu, can you help me lift it?",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N061",
+      "speaker": "피노키오",
+      "text": "Oh! It's upside down!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N062",
+      "speaker": "제페토",
+      "text": "I can see your funny hat.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U014",
+      "speaker": "피노키오",
+      "text": "Grandpa, this is tricky.",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U015",
+      "speaker": "제페토",
+      "text": "You're still learning.",
+      "kind": "ORIGINAL",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N063",
+      "speaker": "피노키오",
+      "text": "I don't want to drop it.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N064",
+      "speaker": "제페토",
+      "text": "Then let's go slowly.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-P06-EXAMPLE",
+      "speaker": "피노키오",
+      "text": "Hold it up!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N065",
+      "speaker": "피노키오",
+      "text": "It's still not sitting on my head.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N066",
+      "speaker": "제페토",
+      "text": "You can turn it around.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U016",
+      "speaker": "피노키오",
+      "text": "Yoonsu, what should I do with my hat?",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U017",
+      "speaker": "피노키오",
+      "text": "Now I'm ready!",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U018",
+      "speaker": "제페토",
+      "text": "Almost. Don't forget your schoolbag.",
+      "kind": "ORIGINAL",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N067",
+      "speaker": "피노키오",
+      "text": "My hat is ready, but my bag is not.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N068",
+      "speaker": "제페토",
+      "text": "Let's get the book and pack it.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N069",
+      "speaker": "피노키오",
+      "text": "I will keep my hat on.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "I04-EXAMPLE",
+      "speaker": "피노키오",
+      "text": "Put it on!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N070",
+      "speaker": "피노키오",
+      "text": "My schoolbag is empty!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N071",
+      "speaker": "제페토",
+      "text": "We must put your book inside.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N072",
+      "speaker": "피노키오",
+      "text": "It's the book we looked at.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N073",
+      "speaker": "제페토",
+      "text": "Yes. It's coming with you.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N074",
+      "speaker": "피노키오",
+      "text": "Can we open this flap?",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N075",
+      "speaker": "제페토",
+      "text": "Yoonsu, help me open the schoolbag!",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N076",
+      "speaker": "피노키오",
+      "text": "It's open!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N077",
+      "speaker": "제페토",
+      "text": "Your book is inside the bag.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N078",
+      "speaker": "피노키오",
+      "text": "The book fits!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N079",
+      "speaker": "제페토",
+      "text": "Keep it flat and safe.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N080",
+      "speaker": "피노키오",
+      "text": "What about the straps?",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-P07-EXAMPLE",
+      "speaker": "제페토",
+      "text": "Open the bag!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N081",
+      "speaker": "피노키오",
+      "text": "Grandpa, the bag is still open.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N082",
+      "speaker": "제페토",
+      "text": "Let's close it and tie the straps.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N083",
+      "speaker": "피노키오",
+      "text": "I can hold the flap.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N084",
+      "speaker": "제페토",
+      "text": "You can help me. Look at this little knot.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N085",
+      "speaker": "제페토",
+      "text": "Yoonsu, help us tie the bag!",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N086",
+      "speaker": "피노키오",
+      "text": "Now the book is safe!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N087",
+      "speaker": "제페토",
+      "text": "Let me check everything.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N088",
+      "speaker": "피노키오",
+      "text": "Red hat, little bag, and my book!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U019",
+      "speaker": "제페토",
+      "text": "Listen carefully, Pinocchio.",
+      "kind": "ORIGINAL",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U020",
+      "speaker": "제페토",
+      "text": "Go to school and come home before supper.",
+      "kind": "ORIGINAL",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N089",
+      "speaker": "피노키오",
+      "text": "Before supper. I will remember.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N090",
+      "speaker": "제페토",
+      "text": "I will be waiting for you at home.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U021",
+      "speaker": "피노키오",
+      "text": "I will, Grandpa!",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N091",
+      "speaker": "피노키오",
+      "text": "I want to learn so many things!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-N092",
+      "speaker": "제페토",
+      "text": "I am proud of your brave little heart.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-U022",
+      "speaker": "내레이션",
+      "text": "With his red hat and little schoolbag, Pinocchio was ready for his first adventure outside.",
+      "kind": "ORIGINAL",
+      "profile_id": "NARRATOR_A",
+      "reference_slug": "narrator",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S03-P08-EXAMPLE",
+      "speaker": "제페토",
+      "text": "Tie the strap!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    }
+  ]
+}

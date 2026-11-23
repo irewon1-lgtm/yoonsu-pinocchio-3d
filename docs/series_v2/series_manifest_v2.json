@@ -60,17 +60,19 @@
       "legacy_ids": [
         "I02"
       ],
-      "progress": "DESIGN_COMPLETE_REVIEW_REQUIRED",
+      "progress": "USER_COMPLETED_PRESERVED",
       "min_narrative_seconds": 360,
       "target_interactions": 10,
-      "expanded_script_approved": false,
+      "expanded_script_approved": true,
       "design_owner": "ChatGPT",
       "design_doc": "scenes/S02/script_v2_draft.md",
       "design_runtime_target_seconds": 443,
       "design_shot_count": 50,
       "design_original_dialogue_count": 21,
       "design_new_dialogue_count": 81,
-      "design_interactions": 10
+      "design_interactions": 10,
+      "completion_basis": "USER_STATEMENT_NO_NEW_RENDER_CLAIM",
+      "current_revision_scope": "EXCLUDED_NO_RETEST"
     },
     {
       "id": "S03",
@@ -86,12 +88,17 @@
       "expanded_script_approved": false,
       "design_owner": "ChatGPT",
       "design_doc": "scenes/S03/script_v2_draft.md",
-      "design_runtime_target_seconds": 456,
+      "design_runtime_target_seconds": 598,
       "design_shot_count": 50,
       "design_original_dialogue_count": 22,
       "design_new_dialogue_count": 92,
       "design_interactions": 10,
-      "design_base_engine": "S02_DATA_CONTRACT_ONLY_ENGINE_NOT_FOUND"
+      "design_base_engine": "S02_DATA_CONTRACT_ONLY_ENGINE_NOT_FOUND",
+      "design_revision": "2.1_VOICE_DIRECTED_CORRECTION",
+      "voice_direction_story_count": 114,
+      "voice_direction_model_example_count": 10,
+      "voice_direction_plan": "scenes/S03/voice_direction_plan.json",
+      "actual_voice_performance": "NOT_RUN"
     },
     {
       "id": "S04",
@@ -108,13 +115,18 @@
       "expanded_script_approved": false,
       "design_owner": "ChatGPT",
       "design_doc": "scenes/S04/script_v2_draft.md",
-      "design_runtime_target_seconds": 479,
+      "design_runtime_target_seconds": 527,
       "design_shot_count": 50,
       "design_original_dialogue_count": 32,
       "design_new_dialogue_count": 77,
       "design_interactions": 10,
       "design_base_engine": "S02_DATA_CONTRACT_ONLY_ENGINE_NOT_FOUND",
-      "new_character_voice_status": "CRICKET_BLOCKED_RESOURCE"
+      "new_character_voice_status": "CRICKET_BLOCKED_RESOURCE",
+      "design_revision": "2.1_VOICE_DIRECTED_CORRECTION",
+      "voice_direction_story_count": 109,
+      "voice_direction_model_example_count": 10,
+      "voice_direction_plan": "scenes/S04/voice_direction_plan.json",
+      "actual_voice_performance": "NOT_RUN"
     },
     {
       "id": "S05",
@@ -130,14 +142,19 @@
       "expanded_script_approved": false,
       "design_owner": "ChatGPT",
       "design_doc": "scenes/S05/script_v2_draft.md",
-      "design_runtime_target_seconds": 432,
+      "design_runtime_target_seconds": 472,
       "design_shot_count": 50,
       "design_original_dialogue_count": 18,
       "design_new_dialogue_count": 69,
       "design_interactions": 10,
       "design_base_engine": "S02_DATA_CONTRACT_ONLY_ENGINE_NOT_FOUND",
       "new_character_voice_status": "CRICKET_BLOCKED_RESOURCE",
-      "continuity_contract": "docs/series_v2/STORY_CONTINUITY_S01_S12.json"
+      "continuity_contract": "docs/series_v2/STORY_CONTINUITY_S01_S12.json",
+      "design_revision": "2.1_VOICE_DIRECTED_CORRECTION",
+      "voice_direction_story_count": 87,
+      "voice_direction_model_example_count": 10,
+      "voice_direction_plan": "scenes/S05/voice_direction_plan.json",
+      "actual_voice_performance": "NOT_RUN"
     },
     {
       "id": "S06",
@@ -228,10 +245,9 @@
       "expanded_script_approved": false
     }
   ],
-  "next_scene": "S02",
+  "next_scene": "S03",
   "latest_scene_design_completed": "S05",
   "unapproved_designs": [
-    "S02",
     "S03",
     "S04",
     "S05"
@@ -242,5 +258,17 @@
     "transition_count": 11,
     "status": "REVIEW_REQUIRED",
     "rendered_continuity": "NOT_RUN"
-  }
+  },
+  "revision": "2.1_VOICE_DIRECTED_CORRECTION",
+  "accepted_completed_scenes": [
+    "S01",
+    "S02"
+  ],
+  "completion_basis": "User explicitly stated S01 and S02 are completed and excluded from this revision.",
+  "voice_performance_bible": "docs/series_v2/VOICE_PERFORMANCE_BIBLE_V2_1.json",
+  "current_revision_scope": [
+    "S03",
+    "S04",
+    "S05"
+  ]
 }

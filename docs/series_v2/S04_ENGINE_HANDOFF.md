@@ -1,27 +1,31 @@
-# S04 제작 인계 — S02/S03 기본 엔진 계승
+# S04 구현 인계 V2.1 — 수정 대본과 음성 연기
 
-### 확인된 원본과 구현 상태
-- `scenes/S02/scene_design_v2.json` · `scenes/S03/scene_design_v2.json`: 24fps, 10개 beat/50샷 설계. **이 두 작품의 실제 3D 렌더러/BLEND/MP4는 현재 브랜치에 발견되지 않음.**
-- `downloads/s01-complete/S01_BLENDER_PROJECT.zip`: 실제 S01의 Blender 소스 참조; 변경 금지, S04 신규 프로젝트에만 복사해서 수정.
-- `assets/voice_refs/v6/`: 내레이터/피노키오/제페토/요정의 확정 기준 MP3. **귀뚜라미 음성 없음**.
-- `scripts/s03_approved_voice_tts.py`: 이전 화 목소리 해시 검증·미리듣기 방식. S04에서도 세 고정 성우는 재사용, 새 귀뚜라미는 승인 전 합성 차단.
+**현재 범위:** 사용자 요청에 따른 오류 수정·각 대사 연기 지시. 실제 영상·음성 제작 완료가 아니다. 1·2화 완료본은 보존한다.
 
-### 베이스 실행 계약(구현 단계 인수)
-1. 같은 구조화 스키마: `scenes/S04/scene_design_v2.json`, 10비트/50샷, 479초 목표/WAIT 제외.
-2. 같은 음성 입력 게이트: 질문 음성 완전히 종료 → VAD 또는 부모 터치 → REACT 단 1회 → 후속 대사.
-3. 같은 캐릭터 기본 리그: S01의 실제 3D 모델 기반, S02 설계의 눈·머리·손·발·걷기 연기 지침을 적용. 실물 S02 캐시가 없다면 S01에서 신규 개발하되 완료됐다고 주장하지 않는다.
-4. 신규 샷의 상태 유지를 위해 모자 머리 착용 / 책가방 끈 결속 / 대문 닫힘→열림 / 2개 표지판 좌우 / 귀뚜라미 잎→바닥 / 물웅덩이 좌표 / 개구리 / 건너편 착지 / S05 진입 소리를 state ledger로 구현.
-5. 귀뚜라미 디자인·연기 제안은 작성했지만 **승인받은 성우가 없으므로 귀뚜라미 음원 제작은 BLOCKED_RESOURCE.** 기존 캐스트 목소리 혼용·대사 제거 금지.
-6. S04의 첫 2비트는 제페토+피노키오, 세 번째/네 번째는 피노키오 혼자, B05부터 귀뚜라미 등장. 제페토가 중간 길에 갑자기 나타나면 FAIL.
-7. 독립 기본 모듈이 없어도 S04 스토리·샷·카메라·상호작용 설계까지 완성했으므로 Codex는 G1 재작성 금지. 사용자 승인 후 구현·QA만 진행.
+## 자료와 수량
 
-### Codex 실행 전 확인
+- [대본](../../scenes/S04/script_v2_draft.md), [설계 JSON](../../scenes/S04/scene_design_v2.json), [참여 맵](../../scenes/S04/interaction_map_v2.json).
+- 10비트·50컷·10참여 / 본편 109발화 / 모델 예시10개 / 계획 527초(8:47). 대기·모델·재시도는 본편 시계 밖. 실측 길이 NOT_RUN.
+- [문장별 제작표](../../scenes/S04/voice_direction_plan.json), [CSV](../../scenes/S04/voice_direction_sheet.csv), [캐릭터 목소리 기준](VOICE_PERFORMANCE_BIBLE_V2_1.md), [Codex 음성 제작 실행 지시](CODEX_VOICE_ACTING_HANDOFF.md).
+
+## 이번 수정의 연출 경계
+
+귀뚜라미 첫 착지는 U015 인사 전. P04는 갈림길 중앙의 단단한 지면 확보이며 I06 전 학교 길을 고르지 않는다. 개구리 최초 점프는 U023 뒤/U024 전, 신규 관찰은 두 번째 작은 점프다. I07 뒤에만 피노키오가 무릎을 굽혀 뛰며 귀뚜라미도 실제로 건너 동행한다. 학교 가지 길→동쪽 본길의 화면 축을 확립한다.
+
+## 구현 계약
+
+1. S02 기본 데이터 필드를 유지한다. 실제 2화 실행 엔진 접근 여부를 이유로 사용자 완료본을 다시 만들지 않는다. 원본·승인 음원은 읽기 전용으로 재사용한다.
+2. 각 컷 `dialogue_ids`를 순서대로 한 번만 재생한다. 문장별 `voice_direction`을 적용하고 영어 `text`만 읽는다. 지시문·화자명·문맥은 발화하지 않는다.
+3. 질문 끝에서 외부 정지 → 첫 모델 예시1회(마이크 OFF) → 예시 끝에서 VAD/보호자 터치 → 반응 완료 → 지정 첫 재개 대사. 부모는 모델을 건너뛰고 진행할 수 있다.
+4. `action_lead_seconds`, 대사·쉼, `between_dialogue_actions`, `action_tail_seconds`로 서사 시간을 나눈다. `before_dialogue_actions`는 lead에 포함하며 다시 더하지 않는다. 실제 음성을 측정한 뒤 필요한 컷만 다시 배정한다.
+5. 승인 음색 정체성을 유지한다. 귀뚜라미 참조는 미확보이며 다른 캐릭터로 대체하지 않는다. 감정 지시가 엔진에 전달되지 않은 text+reference 합성으로 완료 처리하지 않는다.
+6. 360초 이상 본편, 실제 음색·연기·립싱크·접촉·VAD·장면 경계는 실제 제작물로 확인한다. 현재는 NOT_RUN이다.
+
+## 확인 명령
+
 ```bash
-git switch s01/full-story-production
-python3 scripts/validate_series_v2.py
-python3 scripts/validate_s02_design.py
-python3 scripts/validate_s03_design.py
 python3 scripts/validate_s04_design.py
-python3 scripts/s04_approved_voice_tts.py
+python3 scripts/voice_direction_tools.py validate --scenes S04
 ```
-마지막 명령은 합성이 아닌 해시·매핑·캐스트 미확보 확인용이며 귀뚜라미를 자동 합성하지 않는다.
+
+수정·음성 지시의 작성 완료를 최종 음색 승인이나 영상 완성으로 표시하지 않는다.

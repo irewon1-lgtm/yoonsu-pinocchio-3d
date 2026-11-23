@@ -44,8 +44,9 @@ def main() -> None:
     ok(sum(s["target_interactions"] for s in rest) == 110, "110 target interactions")
     ok(sum(len(s["legacy_ids"]) for s in rest) == 20, "20 original events included in 110")
     ok(m["policy"]["planned_new_interactions_s02_s12"] == 90, "90 net new interactions")
-    ok(m["next_scene"] == "S02" and m["status"] == "SPEC_READY_NOT_PRODUCTION_COMPLETE", "production not falsely marked complete")
-    print("PASS: planning/source integrity only; no new video or expanded script approved.")
+    ok(m["next_scene"] == "S03" and m["status"] == "SPEC_READY_NOT_PRODUCTION_COMPLETE", "current S03-S05 revision not falsely marked rendered")
+    ok(m.get("accepted_completed_scenes") == ["S01", "S02"] and m.get("current_revision_scope") == ["S03", "S04", "S05"], "user-completed S01/S02 excluded from current revision")
+    print("PASS: source/policy integrity only; user-completed S01/S02 preserved, revised S03-S05 audio/video NOT_RUN.")
 
 if __name__ == "__main__":
     try:

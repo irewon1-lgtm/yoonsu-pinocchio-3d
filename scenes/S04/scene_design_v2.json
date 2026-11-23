@@ -3,7 +3,7 @@
   "version": "2.0",
   "designer": "ChatGPT",
   "stage": "G1_DESIGN_COMPLETE_REVIEW_REQUIRED",
-  "duration_target_seconds": 479,
+  "duration_target_seconds": 527,
   "wait_excluded": true,
   "original_dialogue_count": 32,
   "new_dialogue_count": 77,
@@ -21,7 +21,7 @@
       "id": "B01",
       "title": "대문 너머 처음 만나는 세상",
       "start_seconds": 0,
-      "end_seconds": 46,
+      "end_seconds": 62,
       "goal": "S03 학교 준비를 끝낸 피노키오가 열린 세상을 처음 바라보지만 아직 대문은 열지 않는다. 멀리 보이는 학교 지붕을 제페토와 함께 찾는다.",
       "continuity": "S03 종료에서 빨간 모자 착용, 가방 안 책 1권, 끈 결속 완료, 대문 닫힘. 제페토는 곁에 있고 귀뚜라미 아직 등장하지 않음.",
       "dialogue": [
@@ -29,50 +29,281 @@
           "kind": "ORIGINAL",
           "source_index": 1,
           "speaker": "제페토",
-          "text": "Here we are."
+          "text": "Here we are.",
+          "dialogue_id": "S04-U001",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "집 앞에 함께 도착했음을 편안하게 알린다",
+            "emotion": "차분한 반가움",
+            "delivery_ko": "낮은 노년의 숨으로 Here를 부드럽게 내고 are에서 안심시키듯 내려놓는다.",
+            "direction_en": "Offer a quiet arrival, with an elderly smile in the low register.",
+            "listener_reaction": "피노키오는 제페토를 보다가 대문 너머로 시선을 옮긴다.",
+            "pace_wpm": 92,
+            "energy": 2,
+            "emphasis": [
+              "Here"
+            ],
+            "pause_before_ms": 100,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "젊은 내레이터처럼 매끈하게 읽거나 과장된 쉰 기침으로 노인을 흉내 내지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "GEPPETTO_A"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 2,
           "speaker": "제페토",
-          "text": "This road will take you to school."
+          "text": "This road will take you to school.",
+          "dialogue_id": "S04-U002",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "집에서 학교로 이어지는 목적을 알려 준다",
+            "emotion": "따뜻한 확신",
+            "delivery_ko": "road를 손짓과 함께 또렷이 짚고 school은 재촉 없이 길게 열어 준다.",
+            "direction_en": "Name the road with calm certainty; let school sound inviting rather than urgent.",
+            "listener_reaction": "피노키오는 가리킨 길을 따라 고개만 돌리고 발은 문 안에 둔다.",
+            "pace_wpm": 95,
+            "energy": 2,
+            "emphasis": [
+              "road",
+              "school"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "젊은 내레이터처럼 매끈하게 읽거나 과장된 쉰 기침으로 노인을 흉내 내지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "GEPPETTO_A"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 3,
           "speaker": "피노키오",
-          "text": "Everything looks so big!"
+          "text": "Everything looks so big!",
+          "dialogue_id": "S04-U003",
+          "voice_direction": {
+            "listener": "제페토",
+            "intention": "처음 본 바깥세상의 크기를 나눈다",
+            "emotion": "놀람에서 경이로",
+            "delivery_ko": "Everything은 숨이 조금 들뜬 채 시작하고 big에서 눈이 커지는 소년의 자연스러운 높낮이를 준다.",
+            "direction_en": "Let the size of the world surprise you; brighten on big without squealing.",
+            "listener_reaction": "제페토는 아이의 시선을 따라가며 눈가로 미소 짓는다.",
+            "pace_wpm": 108,
+            "energy": 4,
+            "emphasis": [
+              "Everything",
+              "big"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 420,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 4,
           "speaker": "제페토",
-          "text": "And everything is new to you."
+          "text": "And everything is new to you.",
+          "dialogue_id": "S04-U004",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "낯선 느낌을 자연스러운 일로 받아 준다",
+            "emotion": "이해와 다정함",
+            "delivery_ko": "And로 아이의 말을 받아 이어 가며 new는 공감하듯 부드럽게, you는 작은 미소로 끝낸다.",
+            "direction_en": "Answer his wonder, gently warming new and you instead of explaining like a teacher.",
+            "listener_reaction": "피노키오는 어깨의 긴장을 풀고 햇빛 쪽으로 고개를 든다.",
+            "pace_wpm": 92,
+            "energy": 2,
+            "emphasis": [
+              "new",
+              "you"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 380,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "젊은 내레이터처럼 매끈하게 읽거나 과장된 쉰 기침으로 노인을 흉내 내지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "GEPPETTO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "The sun is so bright!"
+          "text": "The sun is so bright!",
+          "new_index": 1,
+          "dialogue_id": "S04-N001",
+          "voice_direction": {
+            "listener": "제페토",
+            "intention": "햇빛이 눈에 닿은 감각을 즉석에서 말한다",
+            "emotion": "밝은 감탄",
+            "delivery_ko": "sun에서 눈을 가늘게 뜨는 밝은 색을 주고 bright에서 웃음의 공명만 더한다. 웃음을 별도 발화하지 않는다.",
+            "direction_en": "React to sunlight on your face; smile through bright without adding a laugh.",
+            "listener_reaction": "제페토는 아이가 눈부시지 않도록 손바닥으로 햇빛 방향을 보여 준다.",
+            "pace_wpm": 111,
+            "energy": 3,
+            "emphasis": [
+              "sun",
+              "bright"
+            ],
+            "pause_before_ms": 130,
+            "pause_after_ms": 280,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "제페토",
-          "text": "The world is full of little wonders."
+          "text": "The world is full of little wonders.",
+          "new_index": 2,
+          "dialogue_id": "S04-N002",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "작은 것들을 천천히 보도록 마음을 열어 준다",
+            "emotion": "잔잔한 경이",
+            "delivery_ko": "world를 크게 웅변하지 말고 little wonders를 할아버지가 들려주는 작은 발견처럼 친밀하게 묶는다.",
+            "direction_en": "Make little wonders intimate, as an elderly grandfather sharing a pleasure.",
+            "listener_reaction": "피노키오는 나무와 집을 차례로 보고 더 궁금해한다.",
+            "pace_wpm": 94,
+            "energy": 2,
+            "emphasis": [
+              "little wonders"
+            ],
+            "pause_before_ms": 170,
+            "pause_after_ms": 400,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "젊은 내레이터처럼 매끈하게 읽거나 과장된 쉰 기침으로 노인을 흉내 내지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "GEPPETTO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "I see the trees, but where is the school?"
+          "text": "I see the trees, but where is the school?",
+          "new_index": 3,
+          "dialogue_id": "S04-N003",
+          "voice_direction": {
+            "listener": "제페토",
+            "intention": "나무 뒤에 가려진 학교의 위치를 묻는다",
+            "emotion": "호기심과 가벼운 막막함",
+            "delivery_ko": "trees 뒤에 짧게 멈추고 where부터 진짜 위치를 묻는 상승을 준다. 답을 이미 아는 퀴즈 톤은 피한다.",
+            "direction_en": "Pause after trees, then ask where as a real search, not a staged quiz.",
+            "listener_reaction": "제페토는 아이의 시선 높이를 확인한 뒤 집 너머를 가리킨다.",
+            "pace_wpm": 105,
+            "energy": 3,
+            "emphasis": [
+              "trees",
+              "where",
+              "school"
+            ],
+            "pause_before_ms": 170,
+            "pause_after_ms": 320,
+            "internal_pauses": [
+              {
+                "after": "I see the trees,",
+                "ms": 200
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "제페토",
-          "text": "Look beyond the houses."
+          "text": "Look beyond the houses.",
+          "new_index": 4,
+          "dialogue_id": "S04-N004",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "시선이 닿아야 할 거리를 짧게 안내한다",
+            "emotion": "침착한 도움",
+            "delivery_ko": "Look은 작은 초대, beyond는 한 호흡으로 분명히 말한다. 지붕을 찾았다는 확정 표정은 아직 주지 않는다.",
+            "direction_en": "Give a small directional nudge; keep beyond clear and unhurried.",
+            "listener_reaction": "피노키오는 머리를 반만 들어 집 너머를 찾으려 한다.",
+            "pace_wpm": 90,
+            "energy": 2,
+            "emphasis": [
+              "beyond",
+              "houses"
+            ],
+            "pause_before_ms": 120,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "젊은 내레이터처럼 매끈하게 읽거나 과장된 쉰 기침으로 노인을 흉내 내지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "GEPPETTO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "제페토",
-          "text": "Yoonsu, help Pinocchio see the school!"
+          "text": "Yoonsu, help Pinocchio see the school!",
+          "new_index": 5,
+          "dialogue_id": "S04-N005",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "피노키오의 학교 찾기에 윤수를 초대한다",
+            "emotion": "친근한 부탁",
+            "delivery_ko": "Yoonsu 뒤 호흡을 한 번 두고 help를 다정하게 건넨다. 질문을 끝낸 뒤 답을 재촉하지 않는다.",
+            "direction_en": "Invite Yoonsu warmly; finish the request and leave space without demanding an answer.",
+            "listener_reaction": "피노키오는 나무 쪽을 보는 미완료 자세를 유지한다. 윤수 응답 전 학교 발견을 연기하지 않는다.",
+            "pace_wpm": 92,
+            "energy": 2,
+            "emphasis": [
+              "Yoonsu",
+              "help",
+              "school"
+            ],
+            "pause_before_ms": 170,
+            "pause_after_ms": 450,
+            "internal_pauses": [
+              {
+                "after": "Yoonsu,",
+                "ms": 180
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "젊은 내레이터처럼 매끈하게 읽거나 과장된 쉰 기침으로 노인을 흉내 내지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "GEPPETTO_A"
+          }
         },
         {
           "kind": "INTERACTION",
@@ -81,54 +312,196 @@
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "A little roof! I can see it!"
+          "text": "A little roof! I can see it!",
+          "new_index": 6,
+          "dialogue_id": "S04-N006",
+          "voice_direction": {
+            "listener": "제페토·윤수",
+            "intention": "도움 뒤 처음 찾은 학교 지붕을 나눈다",
+            "emotion": "발견의 기쁨",
+            "delivery_ko": "A little roof는 눈이 멈추는 순간 가볍게 튀고, 짧은 발견 쉼 뒤 I can see it은 확실한 기쁨으로 말한다.",
+            "direction_en": "Let the roof click into view, then confirm it with spontaneous young-boy delight.",
+            "listener_reaction": "제페토는 같은 지붕을 보고 고개를 끄덕인다.",
+            "pace_wpm": 112,
+            "energy": 4,
+            "emphasis": [
+              "little roof",
+              "see it"
+            ],
+            "pause_before_ms": 140,
+            "pause_after_ms": 360,
+            "internal_pauses": [
+              {
+                "after": "A little roof!",
+                "ms": 220
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "제페토",
-          "text": "Yes, it's a long way, but we can begin here."
+          "text": "Yes, it's a long way, but we can begin here.",
+          "new_index": 7,
+          "dialogue_id": "S04-N007",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "긴 길을 지금 시작할 수 있다는 자신감을 준다",
+            "emotion": "안심과 격려",
+            "delivery_ko": "long way에는 현실적인 느림, but 뒤에는 부담을 줄이는 미소를 준다. 웅장한 교훈으로 읽지 않는다.",
+            "direction_en": "Acknowledge the distance, then make beginning here feel manageable and safe.",
+            "listener_reaction": "피노키오는 먼 곳에서 대문 손잡이 쪽으로 시선을 되돌린다.",
+            "pace_wpm": 92,
+            "energy": 2,
+            "emphasis": [
+              "long way",
+              "begin here"
+            ],
+            "pause_before_ms": 180,
+            "pause_after_ms": 360,
+            "internal_pauses": [
+              {
+                "after": "Yes, it's a long way,",
+                "ms": 180
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "젊은 내레이터처럼 매끈하게 읽거나 과장된 쉰 기침으로 노인을 흉내 내지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "GEPPETTO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "My hat and bag are ready."
+          "text": "My hat and bag are ready.",
+          "new_index": 8,
+          "dialogue_id": "S04-N008",
+          "voice_direction": {
+            "listener": "제페토",
+            "intention": "준비한 소품을 확인하며 출발 의지를 보인다",
+            "emotion": "소박한 뿌듯함",
+            "delivery_ko": "hat와 bag을 손으로 확인하는 박자에 맞추고 ready는 아는 척하지 않는 작은 자신감으로 끝낸다.",
+            "direction_en": "Check hat and bag in two light beats; land ready with modest confidence.",
+            "listener_reaction": "제페토는 착용 상태를 확인하며 아이의 다음 말을 기다린다.",
+            "pace_wpm": 108,
+            "energy": 3,
+            "emphasis": [
+              "hat",
+              "bag",
+              "ready"
+            ],
+            "pause_before_ms": 120,
+            "pause_after_ms": 330,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         }
       ],
       "shots": [
         {
           "id": "B01-C01",
           "start_seconds": 0,
-          "end_seconds": 8,
-          "camera": "WS 35mm 집 앞 대문",
-          "acting": "S03 엔딩의 햇빛·목각 질감·의상·가방 상태를 매치 컷. 대문은 닫혀 있고 둘이 안쪽에서 바깥을 바라본다."
+          "camera": "WS→TWO 35/50mm 집 앞 닫힌 대문",
+          "acting": "S03에서 이미 맨 가방과 쓴 모자를 그대로 받는다. 실내 출구부터 집 앞 마당까지의 짧은 이동은 장면 경계에서 생략하고, 이 컷의 선행 1.5초에 두 사람이 닫힌 나무 대문 안쪽으로 마지막 한 걸음을 옮겨 함께 멈춘다. 작업실 출입문과 집 앞 나무 대문은 서로 다른 문이며 I05 전 나무 대문은 닫혀 있다. 햇살·목각 질감을 매치하고 제페토의 첫 안내와 피노키오의 경이에 서로 시선·눈가 표정으로 반응한다.",
+          "dialogue_ids": [
+            "S04-U001",
+            "S04-U002",
+            "S04-U003",
+            "S04-U004"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 1.5,
+          "action_tail_seconds": 0.5,
+          "end_seconds": 17,
+          "planned_speech_seconds": 14.583,
+          "planned_minimum_seconds": 16.583,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B01-C02",
-          "start_seconds": 8,
-          "end_seconds": 18,
-          "camera": "TWO 50mm 눈높이",
-          "acting": "제페토가 마을의 집과 나무를 차례로 가리키고 피노키오가 실제 눈·고개·몸을 사용해 따라본다."
+          "start_seconds": 17,
+          "camera": "TWO→POV 50/45mm 집 지붕 너머",
+          "acting": "햇빛에 눈을 조금 가늘게 뜨고 나무와 지붕을 구별한다. 제페토는 집 너머로 시선을 올리는 방법만 시범 보인다. 피노키오가 학교 지붕을 특정하는 반응은 아직 하지 않는다.",
+          "dialogue_ids": [
+            "S04-N001",
+            "S04-N002",
+            "S04-N003",
+            "S04-N004"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 1,
+          "end_seconds": 36,
+          "planned_speech_seconds": 17.12,
+          "planned_minimum_seconds": 18.12,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B01-C03",
-          "start_seconds": 18,
-          "end_seconds": 27,
-          "camera": "POV 45mm 창살/대문 틈",
-          "acting": "집 지붕 너머 학교의 작은 실루엣을 먼 배경에 두되 길과 표지판의 방향 선택은 보여주지 않는다. 시범 후 WAIT."
+          "start_seconds": 36,
+          "camera": "MS 50mm 윤수 초대",
+          "acting": "제페토가 윤수 쪽으로 눈을 돌려 질문한다. 피노키오는 나무에 시선을 두고 고개를 반만 든다. 질문 종료 경계에서 본편 시계를 멈추며 학교 발견·대문 개방은 진행하지 않는다.",
+          "dialogue_ids": [
+            "S04-N005"
+          ],
+          "phase": "PROMPT",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 0,
+          "external_pause_after_event": "S04-P01",
+          "end_seconds": 41,
+          "planned_speech_seconds": 4.713,
+          "planned_minimum_seconds": 4.713,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B01-C04",
-          "start_seconds": 27,
-          "end_seconds": 37,
-          "camera": "REACT 70mm 학교 쪽 푸시",
-          "acting": "윤수 반응 후 피노키오가 고개·눈을 들어 작은 학교 지붕을 찾아 시선 고정, 가방은 매달린 상태 유지."
+          "start_seconds": 41,
+          "camera": "REACT 70mm 지붕→피노키오 얼굴",
+          "acting": "입력 뒤 눈→고개 회전→작은 학교 지붕에 시선 고정까지 완료하고 첫 재개 대사를 시작한다. 가방과 발은 제자리이며 아직 출발하지 않는다.",
+          "dialogue_ids": [
+            "S04-N006"
+          ],
+          "phase": "REACT",
+          "action_lead_seconds": 3,
+          "action_tail_seconds": 0.5,
+          "reaction_action_id": "PINOCCHIO_SPOTS_DISTANT_SCHOOL",
+          "reaction_starts_after_event": "S04-P01",
+          "reaction_completed_before_first_dialogue": true,
+          "end_seconds": 49,
+          "planned_speech_seconds": 4.47,
+          "planned_minimum_seconds": 7.97,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B01-C05",
-          "start_seconds": 37,
-          "end_seconds": 46,
-          "camera": "TWO 50mm",
-          "acting": "제페토가 기쁜 표정으로 격려하고 피노키오가 대문 손잡이 쪽을 바라보며 첫 출발을 기다린다."
+          "start_seconds": 49,
+          "camera": "TWO 50mm 대문 안쪽",
+          "acting": "제페토가 먼 길과 출발점을 연결해 격려한다. 피노키오는 말하며 모자와 가방을 한번 확인하고 닫힌 대문 손잡이로 시선을 옮긴다. 이것은 출발 준비 확인이며 대기를 길이로 세지 않는다.",
+          "dialogue_ids": [
+            "S04-N007",
+            "S04-N008"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 1.5,
+          "end_seconds": 62,
+          "planned_speech_seconds": 11.025,
+          "planned_minimum_seconds": 12.525,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         }
       ],
       "interaction_id": "S04-P01"
@@ -136,48 +509,239 @@
     {
       "id": "B02",
       "title": "윤수와 함께 첫 출발",
-      "start_seconds": 46,
-      "end_seconds": 93,
+      "start_seconds": 62,
+      "end_seconds": 116,
       "goal": "V1.1 I05 출발을 그대로 재현. 대문 개방·피노키오의 길 첫걸음·제페토 손 흔들기가 윤수 참여 뒤 발생한다.",
       "continuity": "I05 전까지 대문은 반드시 닫힘. 책·모자·가방은 S03 상태 유지. 제페토는 문 앞에 남고 B03부터 피노키오는 혼자 출발.",
       "dialogue": [
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "Grandpa, my heart is beating fast."
+          "text": "Grandpa, my heart is beating fast.",
+          "new_index": 9,
+          "dialogue_id": "S04-N009",
+          "voice_direction": {
+            "listener": "제페토",
+            "intention": "출발 앞에서 느끼는 두근거림을 털어놓는다",
+            "emotion": "기대 섞인 긴장",
+            "delivery_ko": "Grandpa를 가까이 부른 뒤 heart부터 목소리를 조금 낮춘다. fast는 빨리 읽는 대신 떨림의 색만 준다.",
+            "direction_en": "Confide the quick heartbeat softly; do not race through fast.",
+            "listener_reaction": "제페토는 몸을 숙여 아이의 눈높이에 맞춘다.",
+            "pace_wpm": 101,
+            "energy": 2,
+            "emphasis": [
+              "Grandpa",
+              "heart",
+              "fast"
+            ],
+            "pause_before_ms": 180,
+            "pause_after_ms": 420,
+            "internal_pauses": [
+              {
+                "after": "Grandpa,",
+                "ms": 180
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "제페토",
-          "text": "A little fear is okay."
+          "text": "A little fear is okay.",
+          "new_index": 10,
+          "dialogue_id": "S04-N010",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "무서운 마음을 부끄럽지 않게 받아 준다",
+            "emotion": "단단한 위로",
+            "delivery_ko": "little fear를 작고 자연스러운 것으로 다루고 okay에서 노년의 따뜻한 낮은 공명을 준다.",
+            "direction_en": "Normalize the little fear; make okay grounded and gently reassuring.",
+            "listener_reaction": "피노키오는 제페토의 얼굴을 보고 짧게 숨을 내쉰다.",
+            "pace_wpm": 88,
+            "energy": 2,
+            "emphasis": [
+              "little fear",
+              "okay"
+            ],
+            "pause_before_ms": 180,
+            "pause_after_ms": 430,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "젊은 내레이터처럼 매끈하게 읽거나 과장된 쉰 기침으로 노인을 흉내 내지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "GEPPETTO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "What if I take the wrong step?"
+          "text": "What if I take the wrong step?",
+          "new_index": 11,
+          "dialogue_id": "S04-N011",
+          "voice_direction": {
+            "listener": "제페토",
+            "intention": "잘못 걷거나 길을 틀릴까 걱정한다",
+            "emotion": "조심스러운 불안",
+            "delivery_ko": "What if에 망설임을 싣고 wrong step은 끝까지 묻는다. 울음이나 공포로 키우지 않는다.",
+            "direction_en": "Ask a small worried what-if, keeping it tentative rather than frightened.",
+            "listener_reaction": "제페토는 서두르지 않는 손바닥 동작으로 길을 보게 한다.",
+            "pace_wpm": 101,
+            "energy": 2,
+            "emphasis": [
+              "wrong step"
+            ],
+            "pause_before_ms": 170,
+            "pause_after_ms": 330,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "제페토",
-          "text": "Look ahead and walk slowly."
+          "text": "Look ahead and walk slowly.",
+          "new_index": 12,
+          "dialogue_id": "S04-N012",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "천천히 앞을 보고 걷는 방법을 준다",
+            "emotion": "침착한 격려",
+            "delivery_ko": "Look ahead와 walk slowly를 두 가지 쉬운 동작으로 나누되 명령조로 자르지 않는다.",
+            "direction_en": "Offer two simple actions in one warm breath, emphasizing slowly without scolding.",
+            "listener_reaction": "피노키오는 앞을 보고 두 발을 안정시키지만 대문을 열지 않는다.",
+            "pace_wpm": 90,
+            "energy": 2,
+            "emphasis": [
+              "ahead",
+              "slowly"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 350,
+            "internal_pauses": [
+              {
+                "after": "Look ahead",
+                "ms": 170
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "젊은 내레이터처럼 매끈하게 읽거나 과장된 쉰 기침으로 노인을 흉내 내지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "GEPPETTO_A"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 5,
           "speaker": "피노키오",
-          "text": "Grandpa, what should I do first?"
+          "text": "Grandpa, what should I do first?",
+          "dialogue_id": "S04-U005",
+          "voice_direction": {
+            "listener": "제페토",
+            "intention": "출발의 첫 행동을 묻는다",
+            "emotion": "기대와 의지",
+            "delivery_ko": "Grandpa로 눈을 맞추고 first에서 순서를 확인하는 진짜 질문을 만든다. 앞 걱정보다 조금 밝아진다.",
+            "direction_en": "Turn the worry into a practical question; let first seek a real next step.",
+            "listener_reaction": "제페토는 윤수 쪽으로 시선을 옮기며 동행을 제안한다.",
+            "pace_wpm": 105,
+            "energy": 3,
+            "emphasis": [
+              "Grandpa",
+              "first"
+            ],
+            "pause_before_ms": 170,
+            "pause_after_ms": 350,
+            "internal_pauses": [
+              {
+                "after": "Grandpa,",
+                "ms": 140
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 6,
           "speaker": "제페토",
-          "text": "Let's ask our little friend."
+          "text": "Let's ask our little friend.",
+          "dialogue_id": "S04-U006",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "윤수와 함께 결정하도록 제안한다",
+            "emotion": "다정한 장난기",
+            "delivery_ko": "our little friend를 가까운 친구를 떠올리듯 한 덩어리로 말한다. 과하게 시청자를 떠보지 않는다.",
+            "direction_en": "Include their little friend with a quiet, affectionate spark.",
+            "listener_reaction": "피노키오는 고개를 윤수 쪽으로 돌리고 대문 안에서 기다린다.",
+            "pace_wpm": 93,
+            "energy": 2,
+            "emphasis": [
+              "our little friend"
+            ],
+            "pause_before_ms": 130,
+            "pause_after_ms": 320,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "젊은 내레이터처럼 매끈하게 읽거나 과장된 쉰 기침으로 노인을 흉내 내지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "GEPPETTO_A"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 7,
           "speaker": "제페토",
-          "text": "Yoonsu, where should Pinocchio go today?"
+          "text": "Yoonsu, where should Pinocchio go today?",
+          "dialogue_id": "S04-U007",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "학교로 가자는 출발 신호를 부탁한다",
+            "emotion": "부드러운 초대",
+            "delivery_ko": "Yoonsu 뒤 한 박자 두고 go today를 분명하게 묻는다. 학교 쪽 손짓은 안내일 뿐 문을 열지 않는다.",
+            "direction_en": "Ask where he should go today with a patient grandfatherly invitation.",
+            "listener_reaction": "피노키오는 양발을 문 안에 두고 출발 전 상태를 유지한다.",
+            "pace_wpm": 91,
+            "energy": 2,
+            "emphasis": [
+              "Yoonsu",
+              "go today"
+            ],
+            "pause_before_ms": 170,
+            "pause_after_ms": 450,
+            "internal_pauses": [
+              {
+                "after": "Yoonsu,",
+                "ms": 180
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "젊은 내레이터처럼 매끈하게 읽거나 과장된 쉰 기침으로 노인을 흉내 내지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "GEPPETTO_A"
+          }
         },
         {
           "kind": "INTERACTION",
@@ -187,60 +751,212 @@
           "kind": "ORIGINAL",
           "source_index": 8,
           "speaker": "피노키오",
-          "text": "Goodbye, Grandpa!"
+          "text": "Goodbye, Grandpa!",
+          "dialogue_id": "S04-U008",
+          "voice_direction": {
+            "listener": "제페토",
+            "intention": "첫걸음 뒤 할아버지에게 작별한다",
+            "emotion": "애정과 설렘",
+            "delivery_ko": "몸을 돌아 손을 흔드는 호흡에 Goodbye를 멀리 보내고 Grandpa는 애정 있게 내려놓는다.",
+            "direction_en": "Wave goodbye with bright affection; project gently as the distance begins to grow.",
+            "listener_reaction": "제페토는 문 안에 남아 같은 높이로 손을 흔든다.",
+            "pace_wpm": 107,
+            "energy": 4,
+            "emphasis": [
+              "Goodbye",
+              "Grandpa"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 400,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 9,
           "speaker": "제페토",
-          "text": "Have a lovely day!"
+          "text": "Have a lovely day!",
+          "dialogue_id": "S04-U009",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "아이의 첫 하루를 축복한다",
+            "emotion": "따뜻한 응원",
+            "delivery_ko": "lovely day에 잔잔한 미소를 싣고 노년의 숨결을 유지한다. 젊은 광고 멘트처럼 밝히지 않는다.",
+            "direction_en": "Send him off with an elderly smile and easy warmth, not a polished slogan.",
+            "listener_reaction": "피노키오는 걷는 중 고개만 뒤돌려 기쁜 표정을 보인다.",
+            "pace_wpm": 92,
+            "energy": 3,
+            "emphasis": [
+              "lovely day"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 380,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "젊은 내레이터처럼 매끈하게 읽거나 과장된 쉰 기침으로 노인을 흉내 내지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "GEPPETTO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "I'll keep walking, Grandpa!"
+          "text": "I'll keep walking, Grandpa!",
+          "new_index": 13,
+          "dialogue_id": "S04-N013",
+          "voice_direction": {
+            "listener": "제페토",
+            "intention": "스스로 계속 걸어 보겠다고 알린다",
+            "emotion": "자라나는 자신감",
+            "delivery_ko": "keep walking을 걸음 박자에 맞추고 끝의 Grandpa에는 아직 연결된 애정을 남긴다.",
+            "direction_en": "Promise to keep walking with newly found confidence and lingering affection.",
+            "listener_reaction": "제페토는 손을 가슴 높이로 천천히 내리며 고개를 끄덕인다.",
+            "pace_wpm": 111,
+            "energy": 3,
+            "emphasis": [
+              "keep walking",
+              "Grandpa"
+            ],
+            "pause_before_ms": 130,
+            "pause_after_ms": 300,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "제페토",
-          "text": "And I'll be here when you come home."
+          "text": "And I'll be here when you come home.",
+          "new_index": 14,
+          "dialogue_id": "S04-N014",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "돌아올 집과 기다리는 사람을 확실히 해 준다",
+            "emotion": "안정감과 애정",
+            "delivery_ko": "here를 포근하게 짚고 come home 뒤 충분히 여운을 남긴다. 쓸쓸하거나 작별이 영원한 듯 읽지 않는다.",
+            "direction_en": "Make here a secure home base; leave warmth after come home, without sadness.",
+            "listener_reaction": "피노키오는 앞을 향해 몸을 돌려 학교 길을 계속 걷는다.",
+            "pace_wpm": 90,
+            "energy": 2,
+            "emphasis": [
+              "here",
+              "come home"
+            ],
+            "pause_before_ms": 180,
+            "pause_after_ms": 480,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "젊은 내레이터처럼 매끈하게 읽거나 과장된 쉰 기침으로 노인을 흉내 내지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "GEPPETTO_A"
+          }
         }
       ],
       "shots": [
         {
           "id": "B02-C01",
-          "start_seconds": 46,
-          "end_seconds": 55,
-          "camera": "MS 50mm 문 앞 투샷",
-          "acting": "피노키오가 빨간 모자 챙을 만지고 제페토가 몸을 숙여 눈높이를 맞추며 두려움을 알아차린다."
+          "start_seconds": 62,
+          "camera": "MS 50mm 문 앞 눈높이",
+          "acting": "피노키오의 손이 모자 챙을 만지며 두근거림을 털어놓는다. 제페토가 몸을 숙여 감정을 받아 주고 앞을 천천히 보게 한다. 상대 표정과 손 반응은 각 발화와 동시에 연기한다.",
+          "dialogue_ids": [
+            "S04-N009",
+            "S04-N010",
+            "S04-N011",
+            "S04-N012"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0.5,
+          "action_tail_seconds": 0.5,
+          "end_seconds": 81,
+          "planned_speech_seconds": 17.025,
+          "planned_minimum_seconds": 18.025,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B02-C02",
-          "start_seconds": 55,
-          "end_seconds": 65,
-          "camera": "CU 70mm 문 손잡이",
-          "acting": "제페토가 닫힌 나무 대문과 바깥 학교 방향을 번갈아 가리킨다. 기존 원본 질문을 순서대로 말한다."
+          "start_seconds": 81,
+          "camera": "TWO 50mm 닫힌 문과 두 얼굴",
+          "acting": "피노키오가 첫 행동을 묻고 제페토가 윤수 쪽을 함께 보자고 한다. 제페토의 손은 학교가 있는 바깥 방향만 부드럽게 안내한다. 문과 피노키오 발은 움직이지 않는다.",
+          "dialogue_ids": [
+            "S04-U005",
+            "S04-U006"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 1,
+          "end_seconds": 90,
+          "planned_speech_seconds": 7.764,
+          "planned_minimum_seconds": 8.764,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B02-C03",
-          "start_seconds": 65,
-          "end_seconds": 74,
-          "camera": "WAIT 50mm",
-          "acting": "질문 종료 후 대문 완전 닫힘·피노키오 출발 전 자세로 고정, 보호자 터치 안내 활성."
+          "start_seconds": 90,
+          "camera": "MS 50mm 원본 I05 질문",
+          "acting": "제페토가 원본 질문을 끝까지 말한다. 대문은 완전히 닫혀 있고 피노키오는 양발을 안쪽 땅에 둔다. 마지막 음성 종료 즉시 외부 예시·응답 대기로 전환한다.",
+          "dialogue_ids": [
+            "S04-U007"
+          ],
+          "phase": "PROMPT",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 0,
+          "external_pause_after_event": "I05",
+          "end_seconds": 95,
+          "planned_speech_seconds": 4.756,
+          "planned_minimum_seconds": 4.756,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B02-C04",
-          "start_seconds": 74,
-          "end_seconds": 84,
-          "camera": "REACT WS 트랙 오른쪽",
-          "acting": "대문 회전 개방→피노키오 발을 실제 바닥에 디뎌 첫걸음→제페토에게 몸을 돌려 손을 흔듦, 원본 작별 인사 시작."
+          "start_seconds": 95,
+          "camera": "REACT WS 35mm 오른쪽 첫 출발",
+          "acting": "입력 뒤 대문 회전 개방→발 접지 첫걸음→몸을 제페토 쪽으로 돌려 손 흔들기→제페토 답례 손짓을 4초 lead에 완료한다. 그 뒤 Goodbye, Grandpa!부터 원본 순서로 말한다.",
+          "dialogue_ids": [
+            "S04-U008",
+            "S04-U009"
+          ],
+          "phase": "REACT",
+          "action_lead_seconds": 4,
+          "action_tail_seconds": 0.5,
+          "reaction_action_id": "GATE_OPENS_FIRST_DEPARTURE",
+          "reaction_starts_after_event": "I05",
+          "reaction_completed_before_first_dialogue": true,
+          "end_seconds": 105,
+          "planned_speech_seconds": 4.82,
+          "planned_minimum_seconds": 9.32,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B02-C05",
-          "start_seconds": 84,
-          "end_seconds": 93,
-          "camera": "투샷에서 피노키오 추적",
-          "acting": "제페토는 문 앞에 남아 손을 흔들고 피노키오는 오른쪽으로 걸어나간다. 가방의 흔들림은 걷기 뒤따라 발생."
+          "start_seconds": 105,
+          "camera": "TRACK RIGHT 50mm 멀어지는 거리",
+          "acting": "피노키오는 두 신규 작별 대사 동안 앞쪽으로 걸으며 고개만 제페토에게 돌린다. 제페토는 문 앞에 남고 손을 천천히 내린다. 마지막 1.5초는 피노키오가 몸을 완전히 진행 방향으로 돌리는 연기다.",
+          "dialogue_ids": [
+            "S04-N013",
+            "S04-N014"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 1.5,
+          "end_seconds": 116,
+          "planned_speech_seconds": 8.585,
+          "planned_minimum_seconds": 10.085,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         }
       ],
       "interaction_id": "I05"
@@ -248,8 +964,8 @@
     {
       "id": "B03",
       "title": "꽃길을 걷는 나무 소년",
-      "start_seconds": 93,
-      "end_seconds": 138,
+      "start_seconds": 116,
+      "end_seconds": 162,
       "goal": "원본의 햇살·꽃·나비·작은 집을 구체적인 관찰 경험으로 확장. 꽃을 관찰해도 학교를 향한 이동은 이어진다.",
       "continuity": "제페토는 문 앞 배경으로만 보일 뿐 함께 걷지 않음. 피노키오는 S03 빨간 모자/책 든 가방 계속 유지. 길은 이미 B02에서 열린 대문 바깥.",
       "dialogue": [
@@ -257,33 +973,196 @@
           "kind": "ORIGINAL",
           "source_index": 10,
           "speaker": "내레이션",
-          "text": "Pinocchio walked along the sunny road."
+          "text": "Pinocchio walked along the sunny road.",
+          "dialogue_id": "S04-U010",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "집을 떠나 햇살 든 길로 이어지는 이동을 안내한다",
+            "emotion": "밝고 안정된 관찰",
+            "delivery_ko": "walked along을 실제 발걸음과 자연스럽게 잇고 sunny road는 짧게 따뜻해진다.",
+            "direction_en": "Carry the story onto the sunny road with a grounded, lightly bright narrative voice.",
+            "listener_reaction": "피노키오는 말하지 않고 두 발의 접지와 가방 흔들림으로 이동을 보인다.",
+            "pace_wpm": 110,
+            "energy": 2,
+            "emphasis": [
+              "sunny road"
+            ],
+            "pause_before_ms": 120,
+            "pause_after_ms": 340,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "등장인물의 목소리를 흉내 내거나 모든 문장을 똑같이 낮추지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "NARRATOR_A"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 11,
           "speaker": "내레이션",
-          "text": "He saw flowers, butterflies, and little houses."
+          "text": "He saw flowers, butterflies, and little houses.",
+          "dialogue_id": "S04-U011",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "피노키오가 보는 주변의 작은 풍경을 펼친다",
+            "emotion": "잔잔한 즐거움",
+            "delivery_ko": "flowers와 butterflies는 각각 보이는 순간만 가볍게, little houses는 안정되게 마무리한다.",
+            "direction_en": "Let each detail come into view; avoid turning the list into a sing-song lesson.",
+            "listener_reaction": "피노키오는 꽃, 나비, 집으로 눈동자를 순서대로 옮긴다.",
+            "pace_wpm": 108,
+            "energy": 2,
+            "emphasis": [
+              "flowers",
+              "butterflies",
+              "little houses"
+            ],
+            "pause_before_ms": 130,
+            "pause_after_ms": 350,
+            "internal_pauses": [
+              {
+                "after": "flowers,",
+                "ms": 140
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "등장인물의 목소리를 흉내 내거나 모든 문장을 똑같이 낮추지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "NARRATOR_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "These flowers are so colorful!"
+          "text": "These flowers are so colorful!",
+          "new_index": 15,
+          "dialogue_id": "S04-N015",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "꽃의 색을 발견한 감탄을 나눈다",
+            "emotion": "선명한 호기심",
+            "delivery_ko": "These flowers는 가까이 다가가는 기대, colorful은 눈이 반짝이는 소년의 밝은 공명으로 말한다.",
+            "direction_en": "Notice the colors as a fresh discovery; brighten colorful without exaggerated amazement.",
+            "listener_reaction": "혼자 걷는 피노키오의 시선이 꽃무리 중 한 송이에 멈춘다.",
+            "pace_wpm": 110,
+            "energy": 3,
+            "emphasis": [
+              "flowers",
+              "colorful"
+            ],
+            "pause_before_ms": 130,
+            "pause_after_ms": 300,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "This one is yellow!"
+          "text": "This one is yellow!",
+          "new_index": 16,
+          "dialogue_id": "S04-N016",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "특정한 노란 꽃을 가리킨다",
+            "emotion": "작은 발견의 기쁨",
+            "delivery_ko": "This one에서 손끝의 목표를 분명히 하고 yellow를 자연스러운 관찰로 또렷하게 말한다.",
+            "direction_en": "Point out one particular flower; make yellow clear but conversational.",
+            "listener_reaction": "가리킨 꽃이 프레임에 남고 손은 꽃에 닿지 않는다.",
+            "pace_wpm": 105,
+            "energy": 3,
+            "emphasis": [
+              "This one",
+              "yellow"
+            ],
+            "pause_before_ms": 140,
+            "pause_after_ms": 300,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "Oh, a little flower is bending."
+          "text": "Oh, a little flower is bending.",
+          "new_index": 17,
+          "dialogue_id": "S04-N017",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "바람에 숙여진 꽃을 보고 관심을 갖는다",
+            "emotion": "가벼운 걱정과 호기심",
+            "delivery_ko": "Oh는 숨에 가까운 작은 놀람으로, bending은 위태로운 사고처럼 과장하지 않는다.",
+            "direction_en": "Notice the bending stem with gentle concern, not alarm.",
+            "listener_reaction": "피노키오는 무릎을 조금 낮추지만 아직 꽃 중심까지 들여다보지 않는다.",
+            "pace_wpm": 102,
+            "energy": 2,
+            "emphasis": [
+              "little flower",
+              "bending"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 350,
+            "internal_pauses": [
+              {
+                "after": "Oh,",
+                "ms": 120
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "Yoonsu, can you help me look closer?"
+          "text": "Yoonsu, can you help me look closer?",
+          "new_index": 18,
+          "dialogue_id": "S04-N018",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "꽃을 더 자세히 보는 행동에 도움을 청한다",
+            "emotion": "친근한 기대",
+            "delivery_ko": "can you help me를 한 호흡으로 부드럽게 건네고 closer만 조금 길게 열어 질문을 마친다.",
+            "direction_en": "Invite a closer look with friendly curiosity; leave a clean space after the question.",
+            "listener_reaction": "손은 꽃 밖에서 멈추고 눈높이 낮추기를 끝내지 않는다.",
+            "pace_wpm": 104,
+            "energy": 2,
+            "emphasis": [
+              "Yoonsu",
+              "look closer"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 430,
+            "internal_pauses": [
+              {
+                "after": "Yoonsu,",
+                "ms": 160
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "INTERACTION",
@@ -292,59 +1171,213 @@
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "It's beautiful and so small!"
+          "text": "It's beautiful and so small!",
+          "new_index": 19,
+          "dialogue_id": "S04-N019",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "가까이 본 꽃의 섬세함에 감탄한다",
+            "emotion": "조용한 경이",
+            "delivery_ko": "beautiful은 작은 미소로, so small은 소리를 낮춰 가까운 관찰의 느낌을 준다.",
+            "direction_en": "Let the close view soften the voice; make so small intimate, not babyish.",
+            "listener_reaction": "피노키오는 꽃을 꺾으려던 것이 아닌 열린 손을 천천히 거둔다.",
+            "pace_wpm": 103,
+            "energy": 2,
+            "emphasis": [
+              "beautiful",
+              "so small"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 370,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "I will leave it growing here."
+          "text": "I will leave it growing here.",
+          "new_index": 20,
+          "dialogue_id": "S04-N020",
+          "voice_direction": {
+            "listener": "꽃·윤수",
+            "intention": "꽃이 살아 있도록 그대로 두겠다고 선택한다",
+            "emotion": "소박한 배려",
+            "delivery_ko": "leave it growing을 결심하듯 매끄럽게 잇고 here에서 손을 거두는 동작을 마친다.",
+            "direction_en": "Choose to leave the flower growing with quiet resolve, not a moral lecture.",
+            "listener_reaction": "꽃은 뿌리가 고정된 채 바람에만 움직이고 피노키오는 뒤로 반걸음 물러난다.",
+            "pace_wpm": 104,
+            "energy": 2,
+            "emphasis": [
+              "leave it growing",
+              "here"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 380,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "Goodbye, little flower!"
+          "text": "Goodbye, little flower!",
+          "new_index": 21,
+          "dialogue_id": "S04-N021",
+          "voice_direction": {
+            "listener": "꽃",
+            "intention": "관찰을 마치며 꽃에게 인사한다",
+            "emotion": "다정한 즐거움",
+            "delivery_ko": "Goodbye를 작고 장난스럽게 보내고 little flower는 가까운 친구를 부르는 미소로 마무리한다.",
+            "direction_en": "Give the flower a small affectionate farewell, without adding a giggle.",
+            "listener_reaction": "피노키오는 손가락을 한 번 흔들고 길 쪽으로 몸을 돌린다.",
+            "pace_wpm": 109,
+            "energy": 3,
+            "emphasis": [
+              "Goodbye",
+              "little flower"
+            ],
+            "pause_before_ms": 120,
+            "pause_after_ms": 300,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "The road smells like morning."
+          "text": "The road smells like morning.",
+          "new_index": 22,
+          "dialogue_id": "S04-N022",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "걷는 동안 느끼는 아침 공기를 나눈다",
+            "emotion": "편안한 만족",
+            "delivery_ko": "smells like morning을 서정적인 낭독으로 늘이지 말고 소년이 떠올린 소박한 말처럼 한다.",
+            "direction_en": "Say this as a boy enjoying fresh morning air, not as a poet reciting a line.",
+            "listener_reaction": "피노키오는 조용히 한 번 숨을 들이마시고 발걸음을 이어간다.",
+            "pace_wpm": 104,
+            "energy": 2,
+            "emphasis": [
+              "smells",
+              "morning"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 380,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         }
       ],
       "shots": [
         {
           "id": "B03-C01",
-          "start_seconds": 93,
-          "end_seconds": 101,
-          "camera": "TRACK RIGHT WS 35mm",
-          "acting": "피노키오가 걷는 동안 앞풀·중간 꽃·먼 집의 시차가 다르게 움직인다. 발뒤꿈치 접지와 무릎 반동 구현."
+          "start_seconds": 116,
+          "camera": "TRACK RIGHT WS 35mm 꽃길",
+          "acting": "실제 발 접지·무릎 반동·가방 관성으로 걷는다. 내레이션에 맞춰 앞풀·꽃·나비·먼 집을 깊이별로 보이며 정지 그림의 카메라 이동으로 대신하지 않는다.",
+          "dialogue_ids": [
+            "S04-U010",
+            "S04-U011"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0.5,
+          "action_tail_seconds": 1,
+          "end_seconds": 126,
+          "planned_speech_seconds": 8.242,
+          "planned_minimum_seconds": 9.742,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B03-C02",
-          "start_seconds": 101,
-          "end_seconds": 110,
-          "camera": "MS 50mm 피노키오+노란 꽃",
-          "acting": "피노키오가 노란 꽃을 발견하고 천천히 멈추며 꽃과 눈높이를 맞추기 위해 무릎을 굽힌다."
+          "start_seconds": 126,
+          "camera": "MS 50mm 피노키오와 노란 꽃",
+          "acting": "색깔을 발견하며 걸음을 줄이고 노란 꽃을 손끝으로 가리킨다. 바람에 기운 줄기를 보고 무릎을 조금 낮추는 관찰 시범만 보인다. 꽃 중심을 자세히 보는 최종 시선 고정은 아직 하지 않는다.",
+          "dialogue_ids": [
+            "S04-N015",
+            "S04-N016",
+            "S04-N017"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 1,
+          "end_seconds": 138,
+          "planned_speech_seconds": 10.032,
+          "planned_minimum_seconds": 11.032,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B03-C03",
-          "start_seconds": 110,
-          "end_seconds": 119,
-          "camera": "WAIT CU 꽃·손",
-          "acting": "피노키오가 꽃에 가까이 손을 가져가되 꽃을 꺾지 않고 제페토 없는 상황에서 윤수에게 요청, 질문 종료 후 WAIT."
+          "start_seconds": 138,
+          "camera": "CU 65mm 꽃 가까운 손과 얼굴",
+          "acting": "손은 꽃에 닿지 않고 고개는 절반만 낮춘다. 윤수에게 더 자세히 보는 도움을 부탁하고 마지막 음성 뒤 외부 참여 대기로 전환한다.",
+          "dialogue_ids": [
+            "S04-N018"
+          ],
+          "phase": "PROMPT",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 0,
+          "external_pause_after_event": "S04-P02",
+          "end_seconds": 143,
+          "planned_speech_seconds": 4.788,
+          "planned_minimum_seconds": 4.788,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B03-C04",
-          "start_seconds": 119,
-          "end_seconds": 130,
-          "camera": "REACT 70mm 매크로→얼굴",
-          "acting": "고개 숙이기→꽃잎 관찰→바람에 꽃잎 조금 흔들림→피노키오가 손을 거두고 미소. 꽃 뿌리 고정."
+          "start_seconds": 143,
+          "camera": "REACT 70mm 꽃잎→눈동자",
+          "acting": "입력 뒤 몸을 안전하게 낮추기→꽃잎 결을 바라보기→손을 거두기까지 완료한다. 그 후 아름다움과 꽃을 그대로 두겠다는 말을 한다. 꽃 뿌리는 계속 땅에 고정한다.",
+          "dialogue_ids": [
+            "S04-N019",
+            "S04-N020"
+          ],
+          "phase": "REACT",
+          "action_lead_seconds": 3,
+          "action_tail_seconds": 0.5,
+          "reaction_action_id": "PINOCCHIO_OBSERVES_FLOWER",
+          "reaction_starts_after_event": "S04-P02",
+          "reaction_completed_before_first_dialogue": true,
+          "end_seconds": 154,
+          "planned_speech_seconds": 7.434,
+          "planned_minimum_seconds": 10.934,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B03-C05",
-          "start_seconds": 130,
-          "end_seconds": 138,
-          "camera": "WS 경로 연속",
-          "acting": "피노키오가 다시 걷고 꽃은 뒤편에 그대로 남는다. 길의 지형과 이동 방향 S04 기본 지도와 일치."
+          "start_seconds": 154,
+          "camera": "WS 35mm 경로 복귀",
+          "acting": "꽃에게 작게 손을 흔들며 인사하고 실제 발걸음으로 길에 돌아온다. 아침 공기를 느끼는 한 번의 숨과 학교 방향 전진으로 비트를 마친다.",
+          "dialogue_ids": [
+            "S04-N021",
+            "S04-N022"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 2,
+          "end_seconds": 162,
+          "planned_speech_seconds": 5.486,
+          "planned_minimum_seconds": 7.486,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         }
       ],
       "interaction_id": "S04-P02"
@@ -352,48 +1385,227 @@
     {
       "id": "B04",
       "title": "두 갈래 길 앞의 망설임",
-      "start_seconds": 138,
-      "end_seconds": 186,
+      "start_seconds": 162,
+      "end_seconds": 214,
       "goal": "원본의 학교/숲 갈림길을 실제 공간적 선택으로 보여주지만 정답은 I06에서만 결정하도록 유지한다.",
       "continuity": "길 중앙에서 피노키오가 멈춤. 학교 그림 표지판은 왼쪽 가지, 숲 그림은 오른쪽 가지라는 카메라 기준 고정. B04에서 학교 길 선택·이동 금지.",
       "dialogue": [
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "Two little roads! One to the left, one to the right."
+          "text": "Two little roads! One to the left, one to the right.",
+          "new_index": 23,
+          "dialogue_id": "S04-N023",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "한 길이 둘로 갈라지는 것을 발견한다",
+            "emotion": "놀람과 호기심",
+            "delivery_ko": "Two little roads에서 멈칫하고 left와 right는 실제 양쪽 시선 이동에 따라 분명히 나눈다.",
+            "direction_en": "Discover the split; place left and right on the two visible branches.",
+            "listener_reaction": "피노키오는 어느 가지에도 들어가지 않고 갈림길 중앙에 멈춘다.",
+            "pace_wpm": 108,
+            "energy": 3,
+            "emphasis": [
+              "Two",
+              "left",
+              "right"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 350,
+            "internal_pauses": [
+              {
+                "after": "Two little roads!",
+                "ms": 180
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 12,
           "speaker": "내레이션",
-          "text": "Then he came to two different paths."
+          "text": "Then he came to two different paths.",
+          "dialogue_id": "S04-U012",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "두 갈래 길에 이른 사건을 원본대로 이어 준다",
+            "emotion": "관찰에서 약한 긴장으로",
+            "delivery_ko": "Then은 새 장소 전환을 작게 열고 different paths에 두 선택이 생긴 긴장을 살짝 준다.",
+            "direction_en": "Mark the new fork with a slight sense of choice, without ominous narration.",
+            "listener_reaction": "피노키오는 표지판들을 바라보며 가방끈을 가볍게 잡는다.",
+            "pace_wpm": 108,
+            "energy": 2,
+            "emphasis": [
+              "two different paths"
+            ],
+            "pause_before_ms": 140,
+            "pause_after_ms": 360,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "등장인물의 목소리를 흉내 내거나 모든 문장을 똑같이 낮추지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "NARRATOR_A"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 13,
           "speaker": "피노키오",
-          "text": "Oh dear!"
+          "text": "Oh dear!",
+          "dialogue_id": "S04-U013",
+          "voice_direction": {
+            "listener": "자신·윤수",
+            "intention": "어느 길인지 모르는 순간의 당혹감을 드러낸다",
+            "emotion": "작은 난감함",
+            "delivery_ko": "Oh는 짧은 숨, dear는 힘을 빼고 낮춰 걱정을 작게 보여 준다.",
+            "direction_en": "Let out a small puzzled oh dear, never a dramatic sigh.",
+            "listener_reaction": "피노키오는 두 눈썹을 조금 모으고 고개를 갸웃한다.",
+            "pace_wpm": 97,
+            "energy": 2,
+            "emphasis": [
+              "Oh dear"
+            ],
+            "pause_before_ms": 140,
+            "pause_after_ms": 360,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 14,
           "speaker": "피노키오",
-          "text": "Which way should I go?"
+          "text": "Which way should I go?",
+          "dialogue_id": "S04-U014",
+          "voice_direction": {
+            "listener": "자신·윤수",
+            "intention": "두 길 중 어느 쪽인지 진짜로 묻는다",
+            "emotion": "혼란과 도움의 기대",
+            "delivery_ko": "Which way에 상승을 주고 go는 답이 아직 없는 열린 질문으로 끝낸다.",
+            "direction_en": "Ask the direction honestly; keep the uncertainty open at go.",
+            "listener_reaction": "두 표지판은 동시에 보이고 몸은 어느 한쪽으로 기울지 않는다.",
+            "pace_wpm": 102,
+            "energy": 2,
+            "emphasis": [
+              "Which way"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 360,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "I don't want to get lost."
+          "text": "I don't want to get lost.",
+          "new_index": 24,
+          "dialogue_id": "S04-N024",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "길을 잃지 않으려는 마음을 말한다",
+            "emotion": "조심스러운 걱정",
+            "delivery_ko": "get lost를 속삭이는 공포가 아니라 어린아이가 조심하는 낮은 말투로 마무리한다.",
+            "direction_en": "Share a modest worry about getting lost, keeping the tone safe and grounded.",
+            "listener_reaction": "피노키오는 앞으로 내딛으려던 발의 힘을 늦춘다.",
+            "pace_wpm": 101,
+            "energy": 2,
+            "emphasis": [
+              "get lost"
+            ],
+            "pause_before_ms": 170,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "These pictures must mean something."
+          "text": "These pictures must mean something.",
+          "new_index": 25,
+          "dialogue_id": "S04-N025",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "표지판 그림에 뜻이 있음을 추측한다",
+            "emotion": "호기심으로 돌아오는 생각",
+            "delivery_ko": "pictures를 눈으로 좇고 must mean something에는 확정되지 않은 추측의 가벼운 상승을 준다.",
+            "direction_en": "Think aloud about the pictures; sound curious, not as though the answer is known.",
+            "listener_reaction": "피노키오는 두 그림을 차례로 보지만 학교나 숲이라고 식별하지 않는다.",
+            "pace_wpm": 104,
+            "energy": 2,
+            "emphasis": [
+              "pictures",
+              "something"
+            ],
+            "pause_before_ms": 130,
+            "pause_after_ms": 330,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "Yoonsu, help me stop and look!"
+          "text": "Yoonsu, help me stop and look!",
+          "new_index": 26,
+          "dialogue_id": "S04-N026",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "무작정 걷는 대신 멈춰 보도록 도움을 청한다",
+            "emotion": "조심스러운 결심",
+            "delivery_ko": "stop과 look를 두 개의 간단한 행동으로 또렷이 연결하고 큰 훈육 명령으로 읽지 않는다.",
+            "direction_en": "Ask for help to stop and look, gently separating the two actions.",
+            "listener_reaction": "피노키오는 발을 옮기려던 미완료 자세로 질문을 끝내고 양쪽 그림을 유지한다.",
+            "pace_wpm": 104,
+            "energy": 2,
+            "emphasis": [
+              "stop",
+              "look"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 430,
+            "internal_pauses": [
+              {
+                "after": "Yoonsu,",
+                "ms": 160
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "INTERACTION",
@@ -402,114 +1614,470 @@
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "I can see two different signs."
+          "text": "I can see two different signs.",
+          "new_index": 27,
+          "dialogue_id": "S04-N027",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "멈춰 비교하니 서로 다른 두 표지가 보인다고 말한다",
+            "emotion": "차분해진 관찰",
+            "delivery_ko": "two different signs를 발견의 과장 없이 안정된 목소리로 짚는다. 아직 그림의 답은 말하지 않는다.",
+            "direction_en": "Confirm that there are two different signs, with calmer focus rather than a final answer.",
+            "listener_reaction": "피노키오는 두 발을 내려 균형을 잡고 두 표지판을 같은 길이만큼 본다.",
+            "pace_wpm": 105,
+            "energy": 2,
+            "emphasis": [
+              "two different signs"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 330,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "I need to know which one says school."
+          "text": "I need to know which one says school.",
+          "new_index": 28,
+          "dialogue_id": "S04-N028",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "학교를 가리키는 쪽은 아직 알아야 한다고 정리한다",
+            "emotion": "집중과 작은 막막함",
+            "delivery_ko": "which one을 분명히 묻는 색으로 남기고 school은 목적을 기억하는 단단함으로 끝낸다.",
+            "direction_en": "Keep the identity unresolved; emphasize which one while holding on to school as the goal.",
+            "listener_reaction": "피노키오는 학교 이름을 입에 올려도 특정 표지판을 손가락으로 고르지 않는다.",
+            "pace_wpm": 104,
+            "energy": 2,
+            "emphasis": [
+              "which one",
+              "school"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "Maybe a friend can help me."
+          "text": "Maybe a friend can help me.",
+          "new_index": 29,
+          "dialogue_id": "S04-N029",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "함께 살펴볼 친구가 있기를 바란다",
+            "emotion": "조용한 기대",
+            "delivery_ko": "Maybe를 희망 섞인 혼잣말로 시작하고 friend는 작은 미소로 밝힌다.",
+            "direction_en": "Offer a hopeful thought about a friend, quietly and without announcing the next character.",
+            "listener_reaction": "말이 끝난 뒤 잎의 바스락거림에 눈과 고개가 위로 향한다.",
+            "pace_wpm": 102,
+            "energy": 2,
+            "emphasis": [
+              "Maybe",
+              "friend"
+            ],
+            "pause_before_ms": 180,
+            "pause_after_ms": 400,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         }
       ],
       "shots": [
         {
           "id": "B04-C01",
-          "start_seconds": 138,
-          "end_seconds": 147,
-          "camera": "WS 28mm 갈림길 지형",
-          "acting": "카메라가 갈림길 전체를 한 프레임에 보여준다. 왼쪽 학교·오른쪽 숲 픽토그램 크기/모양 명료."
+          "start_seconds": 162,
+          "camera": "WS 28mm 진입축 A 갈림길",
+          "acting": "진입로 뒤쪽 3/4 축 A에서 왼쪽 학교 그림 가지와 오른쪽 숲 그림 가지를 동시에 보인다. 피노키오는 두 길을 발견하고 중앙 시작선에서 속도를 줄인다. 내레이션은 그 도착을 이어 설명한다.",
+          "dialogue_ids": [
+            "S04-N023",
+            "S04-U012"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0.5,
+          "action_tail_seconds": 1,
+          "end_seconds": 175,
+          "planned_speech_seconds": 11.19,
+          "planned_minimum_seconds": 12.69,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B04-C02",
-          "start_seconds": 147,
-          "end_seconds": 157,
-          "camera": "MS 50mm 눈높이",
-          "acting": "피노키오가 무작정 걷다 멈추고 'Oh dear'를 말하며 시선이 왼→오를 번갈아 이동. 가방은 어깨에 계속 매여 있음."
+          "start_seconds": 175,
+          "camera": "MS 50mm 피노키오와 두 표지",
+          "acting": "난감함→걱정→그림 탐색으로 얼굴이 바뀐다. 피노키오는 멈추자는 열린 손바닥을 보여 주고 양쪽을 짧게 훑지만 한 발은 더 가려던 미완료 상태다. 학교라는 그림 식별이나 방향 확정은 하지 않는다.",
+          "dialogue_ids": [
+            "S04-U013",
+            "S04-U014",
+            "S04-N024",
+            "S04-N025"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 0.5,
+          "end_seconds": 189,
+          "planned_speech_seconds": 12.617,
+          "planned_minimum_seconds": 13.117,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B04-C03",
-          "start_seconds": 157,
-          "end_seconds": 166,
-          "camera": "WAIT WS 고정",
-          "acting": "피노키오 한 발이 갈림길 시작선에 머문 채 표지판 두 개를 정면에서 바라봄. 질문 종료→정지/관찰 참여."
+          "start_seconds": 189,
+          "camera": "MS 50mm 중앙 관찰 요청",
+          "acting": "중앙 시작선에서 윤수에게 멈춰 비교하도록 도움을 청한다. 두 표지판을 한 프레임에 유지한다. 질문 종료 뒤 입력은 외부 시계에서 받는다.",
+          "dialogue_ids": [
+            "S04-N026"
+          ],
+          "phase": "PROMPT",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 0,
+          "external_pause_after_event": "S04-P03",
+          "end_seconds": 194,
+          "planned_speech_seconds": 4.202,
+          "planned_minimum_seconds": 4.202,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B04-C04",
-          "start_seconds": 166,
-          "end_seconds": 177,
-          "camera": "REACT 측면 돌리",
-          "acting": "한 걸음 앞으로 가려던 발을 제자리에 내려 균형 잡고, 두 표지판을 차례로 조사·고개 갸웃. 어느 길도 선택하지 않음."
+          "start_seconds": 194,
+          "camera": "REACT 측면 40mm 발→얼굴",
+          "acting": "입력 뒤 나가려던 발을 제자리에 내려 양발 균형→몸의 움직임 멎음→두 그림을 같은 길이로 비교한다. 그 후 두 표지가 다르지만 어느 쪽이 학교인지는 더 알아야 한다고 말한다.",
+          "dialogue_ids": [
+            "S04-N027",
+            "S04-N028"
+          ],
+          "phase": "REACT",
+          "action_lead_seconds": 2.5,
+          "action_tail_seconds": 0.5,
+          "reaction_action_id": "PINOCCHIO_STOPS_COMPARES_SIGNS",
+          "reaction_starts_after_event": "S04-P03",
+          "reaction_completed_before_first_dialogue": true,
+          "end_seconds": 207,
+          "planned_speech_seconds": 9.044,
+          "planned_minimum_seconds": 12.044,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B04-C05",
-          "start_seconds": 177,
-          "end_seconds": 186,
-          "camera": "투샷 대신 피노키오+표지판",
-          "acting": "피노키오가 걱정스러워 멈춰 있다 나뭇잎 움직임을 듣고 위를 쳐다보며 귀뚜라미 등장 준비."
+          "start_seconds": 207,
+          "camera": "MS 50mm 피노키오와 표지판 옆 잎",
+          "acting": "친구의 도움이 있기를 바라는 말을 끝낸 뒤 실제 잎 바스락거림에 눈과 고개가 위로 향한다. 귀뚜라미는 아직 인사하지 않는다. 상하 시선 이동이 다음 첫 착지를 예고한다.",
+          "dialogue_ids": [
+            "S04-N029"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 2,
+          "end_seconds": 214,
+          "planned_speech_seconds": 4.109,
+          "planned_minimum_seconds": 6.109,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         }
       ],
       "interaction_id": "S04-P03"
     },
     {
       "id": "B05",
-      "title": "나뭇잎에서 나타난 귀뚜라미",
-      "start_seconds": 186,
-      "end_seconds": 231,
-      "goal": "원본 귀뚜라미의 첫 등장·인사를 유지하고 작은 점프를 통해 피노키오와 친구가 되는 실제 관계 연기를 확보한다.",
-      "continuity": "귀뚜라미는 이 비트에서 처음 등장. 작은 나뭇잎은 갈림길 표지판 바로 옆, 귀뚜라미의 착지 좌표가 자연스럽다. 귀뚜라미 승인 성우는 아직 없음: 신규 음성 생성 BLOCKED_RESOURCE.",
+      "title": "첫 착지와 단단한 땅 위의 친구",
+      "start_seconds": 214,
+      "end_seconds": 265,
+      "goal": "원본의 잎→땅 첫 착지 뒤 인사를 보존한다. 이후 신규 P04는 같은 갈림길 중앙 지면에서 흔들리는 낮은 잎을 피해 안정된 자리를 잡는 도움으로 친구 관계를 만든다.",
+      "continuity": "귀뚜라미는 B05-C01 lead에서 최초 착지 완료 후 U015 인사. P04는 두 발이 지면에 있는 뒤의 별도 균형 사건이며 학교/숲 방향을 선택하지 않는다. 귀뚜라미 승인 성우는 BLOCKED_RESOURCE.",
       "dialogue": [
         {
           "kind": "ORIGINAL",
           "source_index": 15,
           "speaker": "귀뚜라미",
-          "text": "Good morning, Pinocchio!"
+          "text": "Good morning, Pinocchio!",
+          "dialogue_id": "S04-U015",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "땅에 착지한 뒤 새 친구에게 먼저 인사한다",
+            "emotion": "명랑한 자신감",
+            "delivery_ko": "먼저 착지와 균형 회복을 끝낸 뒤 Good morning을 맑게 연다. Pinocchio는 이미 이름을 아는 길동무처럼 반갑게 부른다.",
+            "direction_en": "Finish the landing first, then greet Pinocchio with a clear, lightly confident companion voice.",
+            "listener_reaction": "피노키오는 목소리를 따라 지면의 귀뚜라미를 내려다보고 눈이 커진다.",
+            "pace_wpm": 114,
+            "energy": 3,
+            "emphasis": [
+              "Good morning",
+              "Pinocchio"
+            ],
+            "pause_before_ms": 170,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 16,
           "speaker": "피노키오",
-          "text": "A talking cricket?"
+          "text": "A talking cricket?",
+          "dialogue_id": "S04-U016",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "작은 귀뚜라미가 말을 한다는 놀라움을 확인한다",
+            "emotion": "호기심 섞인 놀람",
+            "delivery_ko": "talking에서 짧게 놀라고 cricket은 실제 대상을 확인하는 상승으로 끝낸다. 비명이나 비웃음으로 읽지 않는다.",
+            "direction_en": "Be surprised that the cricket talks, ending on a curious question rather than a squeal.",
+            "listener_reaction": "귀뚜라미는 몸을 세우고 더듬이를 들어 자기 존재를 친근하게 확인해 준다.",
+            "pace_wpm": 108,
+            "energy": 3,
+            "emphasis": [
+              "talking",
+              "cricket"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 400,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 17,
           "speaker": "귀뚜라미",
-          "text": "Yes! And I know these roads."
+          "text": "Yes! And I know these roads.",
+          "dialogue_id": "S04-U017",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "말할 수 있고 길도 안다는 믿음을 준다",
+            "emotion": "활기 있는 확신",
+            "delivery_ko": "Yes는 짧고 밝게, know these roads는 잘 아는 동네를 말하듯 안정되게 낮춘다.",
+            "direction_en": "Give a bright yes, then settle into the easy confidence of knowing these roads.",
+            "listener_reaction": "피노키오는 놀람을 풀고 귀뚜라미에게 귀를 기울인다.",
+            "pace_wpm": 116,
+            "energy": 3,
+            "emphasis": [
+              "Yes",
+              "know these roads"
+            ],
+            "pause_before_ms": 140,
+            "pause_after_ms": 320,
+            "internal_pauses": [
+              {
+                "after": "Yes!",
+                "ms": 170
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 18,
           "speaker": "귀뚜라미",
-          "text": "Look at the sign."
+          "text": "Look at the sign.",
+          "dialogue_id": "S04-U018",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "표지판이 길 찾기의 단서임을 알린다",
+            "emotion": "간결한 도움",
+            "delivery_ko": "Look는 또박또박하되 윽박지르지 않는다. sign은 두 그림이 든 표지 구조 전체를 가리키며 말한다.",
+            "direction_en": "Point attention to the sign as a shared clue; do not indicate the correct branch yet.",
+            "listener_reaction": "피노키오는 두 표지 그림 전체를 보며 어느 쪽인지 고르지 않는다.",
+            "pace_wpm": 111,
+            "energy": 2,
+            "emphasis": [
+              "sign"
+            ],
+            "pause_before_ms": 130,
+            "pause_after_ms": 320,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "You are so tiny!"
+          "text": "You are so tiny!",
+          "new_index": 30,
+          "dialogue_id": "S04-N030",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "작은 친구의 크기를 호기심으로 관찰한다",
+            "emotion": "친근한 경이",
+            "delivery_ko": "so tiny를 귀엽다고 깎아내리지 않고 실제 크기에 놀라는 가벼운 미소로 말한다.",
+            "direction_en": "Marvel at his small size with friendly respect, never baby-talk or mockery.",
+            "listener_reaction": "귀뚜라미는 피노키오를 위로 훑어보며 장난기 있는 미소를 보인다.",
+            "pace_wpm": 108,
+            "energy": 3,
+            "emphasis": [
+              "so tiny"
+            ],
+            "pause_before_ms": 140,
+            "pause_after_ms": 310,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "And you're a wooden boy!"
+          "text": "And you're a wooden boy!",
+          "new_index": 31,
+          "dialogue_id": "S04-N031",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "서로 다른 모습을 가볍게 받아친다",
+            "emotion": "따뜻한 장난기",
+            "delivery_ko": "And로 앞말을 받아 wooden boy에 웃는 색만 얹는다. 소리 내 웃거나 놀리는 어조는 넣지 않는다.",
+            "direction_en": "Reply with an affectionate little contrast; smile through wooden boy without teasing.",
+            "listener_reaction": "피노키오는 자기 팔을 한번 보고 작게 웃는 표정을 지으며 긴장을 푼다.",
+            "pace_wpm": 117,
+            "energy": 3,
+            "emphasis": [
+              "wooden boy"
+            ],
+            "pause_before_ms": 140,
+            "pause_after_ms": 330,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "Can you come down here?"
+          "text": "That loose leaf is wobbling.",
+          "new_index": 32,
+          "dialogue_id": "S04-N032",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "발밑으로 굴러온 잎의 흔들림을 알려 준다",
+            "emotion": "가벼운 걱정",
+            "delivery_ko": "That loose leaf는 아래를 가리키며 낮추고 wobbling은 흔들리는 움직임에 반응하듯 말한다.",
+            "direction_en": "Notice the loose leaf rocking under one foot; keep the concern small and practical.",
+            "listener_reaction": "귀뚜라미는 발밑을 보고 앞다리를 조금 들어 균형을 확인한다.",
+            "pace_wpm": 104,
+            "energy": 2,
+            "emphasis": [
+              "loose leaf",
+              "wobbling"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 330,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "I can hop, but this leaf is high."
+          "text": "I need a steady place to stand.",
+          "new_index": 33,
+          "dialogue_id": "S04-N033",
+          "voice_direction": {
+            "listener": "피노키오·윤수",
+            "intention": "단단한 자리로 옮길 필요를 말한다",
+            "emotion": "침착한 문제 해결",
+            "delivery_ko": "steady place를 또렷하게 짚되 도움 없이는 못 움직이는 공포로 만들지 않는다. 밝은 중음역을 유지한다.",
+            "direction_en": "Ask for steady footing with practical calm, not helplessness or fear.",
+            "listener_reaction": "피노키오는 갈림길 중앙의 평평한 흙자리를 눈으로 확인하되 학교 방향을 고르지 않는다.",
+            "pace_wpm": 110,
+            "energy": 2,
+            "emphasis": [
+              "steady place",
+              "stand"
+            ],
+            "pause_before_ms": 170,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "Yoonsu, help me hop to the ground!"
+          "text": "Yoonsu, help me stand on firm ground!",
+          "new_index": 34,
+          "dialogue_id": "S04-N034",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "갈림길 중앙에서 안정된 발 디딜 자리를 부탁한다",
+            "emotion": "친근한 부탁",
+            "delivery_ko": "Yoonsu를 부른 뒤 stand on firm ground를 자연스럽게 이어 준다. 길 선택을 요구하는 톤을 넣지 않는다.",
+            "direction_en": "Invite help finding firm ground right here at the junction, with no hint of a route choice.",
+            "listener_reaction": "귀뚜라미는 지면 잎 가장자리에 균형을 유지하고 새 자리로 아직 옮기지 않는다.",
+            "pace_wpm": 109,
+            "energy": 2,
+            "emphasis": [
+              "Yoonsu",
+              "firm ground"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 430,
+            "internal_pauses": [
+              {
+                "after": "Yoonsu,",
+                "ms": 170
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "INTERACTION",
@@ -518,54 +2086,206 @@
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "Wow! You jumped so far!"
+          "text": "There! Now you're standing steady.",
+          "new_index": 35,
+          "dialogue_id": "S04-N035",
+          "voice_direction": {
+            "listener": "귀뚜라미·윤수",
+            "intention": "발이 안정된 결과를 함께 확인한다",
+            "emotion": "안도와 기쁨",
+            "delivery_ko": "There 뒤 작은 발견 쉼을 주고 standing steady는 흔들림이 멎은 것을 실제로 본 확인으로 말한다.",
+            "direction_en": "Notice the stable landing spot with relief; let steady settle in the voice.",
+            "listener_reaction": "귀뚜라미는 다리를 편안히 세우고 더듬이의 긴장을 푼다.",
+            "pace_wpm": 110,
+            "energy": 3,
+            "emphasis": [
+              "There",
+              "standing steady"
+            ],
+            "pause_before_ms": 130,
+            "pause_after_ms": 350,
+            "internal_pauses": [
+              {
+                "after": "There!",
+                "ms": 160
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "Thanks, friends! Let's look at the road."
+          "text": "Thanks, friends! Let's look at the road.",
+          "new_index": 36,
+          "dialogue_id": "S04-N036",
+          "voice_direction": {
+            "listener": "피노키오·윤수",
+            "intention": "도움에 감사하고 길 찾기로 관심을 되돌린다",
+            "emotion": "고마움에서 집중으로",
+            "delivery_ko": "Thanks, friends는 가볍게 따뜻하게, 다음 문장은 잎 문제가 끝난 뒤 둘이 함께 볼 도로로 고개를 돌리며 말한다.",
+            "direction_en": "Thank both friends, then gently bring their attention back to the road.",
+            "listener_reaction": "피노키오는 귀뚜라미와 함께 표지판 전체를 바라본다.",
+            "pace_wpm": 115,
+            "energy": 3,
+            "emphasis": [
+              "Thanks",
+              "friends",
+              "road"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 350,
+            "internal_pauses": [
+              {
+                "after": "Thanks, friends!",
+                "ms": 180
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "I'm glad you're here."
+          "text": "I'm glad you're here.",
+          "new_index": 37,
+          "dialogue_id": "S04-N037",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "혼자가 아니라는 안도감을 짧게 전한다",
+            "emotion": "조용한 친밀감",
+            "delivery_ko": "glad에 소리를 과하게 올리지 않고 here를 가까운 친구에게 말하듯 낮춘다.",
+            "direction_en": "Confide simple relief that he is here, with a small and sincere smile.",
+            "listener_reaction": "귀뚜라미는 눈을 한번 맞춘 뒤 고개를 끄덕이며 같은 중앙 자리에 선다.",
+            "pace_wpm": 102,
+            "energy": 2,
+            "emphasis": [
+              "glad",
+              "here"
+            ],
+            "pause_before_ms": 180,
+            "pause_after_ms": 420,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         }
       ],
       "shots": [
         {
           "id": "B05-C01",
-          "start_seconds": 186,
-          "end_seconds": 194,
-          "camera": "LEAF CU 70mm",
-          "acting": "갈림길 나뭇잎이 흔들리며 귀뚜라미가 실제 잎자루 위에서 무게 중심을 옮기고 인사. 얼굴·몸통 실제 3D 동작."
+          "start_seconds": 214,
+          "camera": "LOW 70mm 잎→중앙 흙바닥→두 얼굴",
+          "acting": "첫 2.5초에 귀뚜라미가 잎에서 자율 도약→갈림길 중앙 흙바닥 착지→균형 회복을 끝낸다. 그 후에만 원본 Good morning, Pinocchio!와 A talking cricket?를 순서대로 말한다. 이 최초 착지는 신규 참여에 잠그지 않는다.",
+          "dialogue_ids": [
+            "S04-U015",
+            "S04-U016"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 2.5,
+          "action_tail_seconds": 0.5,
+          "before_dialogue_actions": [
+            {
+              "action_id": "CRICKET_FIRST_LANDING",
+              "before_dialogue_id": "S04-U015",
+              "seconds": 2.5,
+              "included_in_action_lead_seconds": true,
+              "placement": "CUT_OPENING_LEAD",
+              "description": "잎에서 자율 도약→지면 착지→균형 회복 후 인사"
+            }
+          ],
+          "end_seconds": 222,
+          "planned_speech_seconds": 4.316,
+          "planned_minimum_seconds": 7.316,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B05-C02",
-          "start_seconds": 194,
-          "end_seconds": 203,
-          "camera": "TWO/규모 비교 50mm",
-          "acting": "작은 귀뚜라미와 피노키오를 같은 프레임에. 피노키오가 허리 굽혀 시선 낮추고 자연스럽게 놀람."
+          "start_seconds": 222,
+          "camera": "TWO 50mm 발 옆 작은 길동무",
+          "acting": "귀뚜라미는 지면에서 길을 안다고 말하며 양쪽 그림 전체를 가리킨다. 피노키오는 허리를 굽혀 시선을 맞추고 서로 크기·목각 모습을 다정하게 관찰한다. 특정 학교 가지를 선택하지 않는다.",
+          "dialogue_ids": [
+            "S04-U017",
+            "S04-U018",
+            "S04-N030",
+            "S04-N031"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 0.5,
+          "end_seconds": 235,
+          "planned_speech_seconds": 12.052,
+          "planned_minimum_seconds": 12.552,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B05-C03",
-          "start_seconds": 203,
-          "end_seconds": 212,
-          "camera": "WAIT 잎→땅 지형",
-          "acting": "귀뚜라미가 나뭇잎 가장자리에 뒷다리를 굽히고 착지 위치를 바라보며 질문 종료 후 WAIT."
+          "start_seconds": 235,
+          "camera": "GROUND TWO 65mm 흔들리는 잎과 단단한 자리",
+          "acting": "바람에 굴러온 낮은 마른 잎이 귀뚜라미 한 발 밑에서 흔들린다. 발로 가볍게 눌러 흔들림을 보여 주되 중앙의 단단한 흙자리로 아직 옮기지 않는다. 세 신규 대화와 질문 뒤 본편 밖 예시·응답 대기로 간다.",
+          "dialogue_ids": [
+            "S04-N032",
+            "S04-N033",
+            "S04-N034"
+          ],
+          "phase": "PROMPT",
+          "action_lead_seconds": 1.5,
+          "action_tail_seconds": 0,
+          "external_pause_after_event": "S04-P04",
+          "end_seconds": 249,
+          "planned_speech_seconds": 12.316,
+          "planned_minimum_seconds": 13.816,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B05-C04",
-          "start_seconds": 212,
-          "end_seconds": 223,
-          "camera": "REACT LOW 70mm",
-          "acting": "귀뚜라미 다리 접힘→발로 잎 밀기→포물선 점프→바닥 착지/반동→피노키오의 기쁜 눈동자 반응."
+          "start_seconds": 249,
+          "camera": "REACT LOW 65mm 중앙 흙자리",
+          "acting": "입력 뒤 귀뚜라미가 같은 갈림길 중앙에서 두 작은 지면 걸음으로 잎을 피해 단단한 흙에 선다. 다리 균형과 더듬이 긴장이 안정된 다음 첫 재개 문장을 시작한다. 좌우 길로 뛰거나 다시 잎에서 내려오지 않는다.",
+          "dialogue_ids": [
+            "S04-N035",
+            "S04-N036"
+          ],
+          "phase": "REACT",
+          "action_lead_seconds": 2.5,
+          "action_tail_seconds": 0.5,
+          "reaction_action_id": "CRICKET_CENTRAL_GROUND_BALANCE",
+          "reaction_starts_after_event": "S04-P04",
+          "reaction_completed_before_first_dialogue": true,
+          "end_seconds": 260,
+          "planned_speech_seconds": 7.709,
+          "planned_minimum_seconds": 10.709,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B05-C05",
-          "start_seconds": 223,
-          "end_seconds": 231,
-          "camera": "투샷 50mm",
-          "acting": "귀뚜라미는 피노키오 발 바로 옆에서 표지판을 가리키고 피노키오는 그 말을 듣고 고개를 든다."
+          "start_seconds": 260,
+          "camera": "TWO 50mm 친구의 시선",
+          "acting": "피노키오의 안심에 귀뚜라미가 눈을 맞추고 고개를 끄덕인다. 마지막 1.5초에는 두 인물이 같은 중앙 위치에서 표지판 전체로 시선을 옮긴다. 친구가 생긴 변화가 다음 길 안내의 동기가 된다.",
+          "dialogue_ids": [
+            "S04-N037"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 1.5,
+          "end_seconds": 265,
+          "planned_speech_seconds": 2.953,
+          "planned_minimum_seconds": 4.453,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         }
       ],
       "interaction_id": "S04-P04"
@@ -573,31 +2293,139 @@
     {
       "id": "B06",
       "title": "학교 그림 표지판을 따라",
-      "start_seconds": 231,
-      "end_seconds": 281,
+      "start_seconds": 265,
+      "end_seconds": 310,
       "goal": "원본 I06 길 안내가 진짜 행동을 변화시키는 결정적 지점. 다른 새 상호작용은 길 선택을 선점하지 않는다.",
-      "continuity": "학교 픽토그램은 B04부터 왼쪽, 숲은 오른쪽. I06 입력 전에는 피노키오 진로 선택 없음. 귀뚜라미는 B05에서 갈림길 땅에 착지한 상태.",
+      "continuity": "학교 그림 왼쪽/숲 그림 오른쪽을 축 A에서 유지. I06 전 학교 그림 식별·정답 손짓·이동 없음. 입력 뒤 선택하고 C05 중립 상공으로 학교 가지의 굽음과 축 B 전환을 확립한다.",
       "dialogue": [
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "Look carefully at the pictures."
+          "text": "Look carefully at the pictures.",
+          "new_index": 38,
+          "dialogue_id": "S04-N038",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "두 그림을 차분히 비교하도록 이끈다",
+            "emotion": "집중한 친절",
+            "delivery_ko": "carefully를 급히 밀지 않고 pictures까지 부드럽게 연결한다. 정답 쪽을 손짓으로 찍지 않는다.",
+            "direction_en": "Guide a careful comparison of both pictures, with patient clarity and no premature answer.",
+            "listener_reaction": "피노키오는 두 표지 그림을 차례로 바라본다.",
+            "pace_wpm": 110,
+            "energy": 2,
+            "emphasis": [
+              "carefully",
+              "pictures"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "One has a school, and one has trees."
+          "text": "The pictures look different to me.",
+          "new_index": 39,
+          "dialogue_id": "S04-N039",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "그림이 다르지만 의미를 아직 모른다고 말한다",
+            "emotion": "관찰과 작은 불확실함",
+            "delivery_ko": "different는 확인하되 to me에 아직 해석 중인 소년의 여지를 남긴다.",
+            "direction_en": "Notice the difference between the pictures without naming which one means school.",
+            "listener_reaction": "귀뚜라미는 두 그림을 한꺼번에 보이는 열린 손짓으로 받아 준다.",
+            "pace_wpm": 104,
+            "energy": 2,
+            "emphasis": [
+              "different"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 330,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "Yes. Pictures can guide us."
+          "text": "Yes. Pictures can guide us.",
+          "new_index": 40,
+          "dialogue_id": "S04-N040",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "그림으로 길을 알 수 있다는 원리를 짧게 알려 준다",
+            "emotion": "격려하는 확신",
+            "delivery_ko": "Yes는 아이의 관찰을 인정하고 guide us는 함께 찾아보자는 말처럼 친근하게 끝낸다.",
+            "direction_en": "Affirm the observation, then make guide us a shared invitation rather than a lecture.",
+            "listener_reaction": "피노키오는 특정 길을 고르지 않고 다시 윤수 쪽을 본다.",
+            "pace_wpm": 112,
+            "energy": 2,
+            "emphasis": [
+              "Yes",
+              "guide us"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 360,
+            "internal_pauses": [
+              {
+                "after": "Yes.",
+                "ms": 150
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 19,
           "speaker": "피노키오",
-          "text": "Yoonsu, which way should I go?"
+          "text": "Yoonsu, which way should I go?",
+          "dialogue_id": "S04-U019",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "어느 길을 따라갈지 윤수에게 묻는다",
+            "emotion": "기대와 집중",
+            "delivery_ko": "which way에 초점을 두고 질문 끝은 부드럽게 올린다. 이미 알고 시험하는 말투를 피한다.",
+            "direction_en": "Ask for the direction genuinely, keeping the choice open until Yoonsu responds.",
+            "listener_reaction": "귀뚜라미와 피노키오는 갈림길 중앙에서 두 표지판을 동시에 유지한다.",
+            "pace_wpm": 104,
+            "energy": 2,
+            "emphasis": [
+              "Yoonsu",
+              "which way"
+            ],
+            "pause_before_ms": 170,
+            "pause_after_ms": 430,
+            "internal_pauses": [
+              {
+                "after": "Yoonsu,",
+                "ms": 170
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "INTERACTION",
@@ -607,70 +2435,276 @@
           "kind": "ORIGINAL",
           "source_index": 20,
           "speaker": "피노키오",
-          "text": "That's the school!"
+          "text": "That's the school!",
+          "dialogue_id": "S04-U020",
+          "voice_direction": {
+            "listener": "귀뚜라미·윤수",
+            "intention": "입력 뒤 밝혀진 학교 표지를 알아본다",
+            "emotion": "확실한 발견의 기쁨",
+            "delivery_ko": "학교 그림이 빛나고 동작이 완료된 뒤 That에 발견을, school에 이해의 밝음을 준다.",
+            "direction_en": "Let the answer click after the triggered action; brighten school with recognition.",
+            "listener_reaction": "귀뚜라미는 선택한 학교 길에서 피노키오가 따라온 것을 확인한다.",
+            "pace_wpm": 112,
+            "energy": 3,
+            "emphasis": [
+              "That's",
+              "school"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 21,
           "speaker": "귀뚜라미",
-          "text": "Keep walking."
+          "text": "Keep walking.",
+          "dialogue_id": "S04-U021",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "새로 고른 길에서 걸음을 이어 주게 한다",
+            "emotion": "짧은 격려",
+            "delivery_ko": "Keep는 재촉이 아닌 계속해 보자는 미소로, walking은 가볍게 앞으로 흐르게 말한다.",
+            "direction_en": "Keep the encouragement light and forward-moving, never bark a command.",
+            "listener_reaction": "피노키오는 표지판에 머물지 않고 다음 걸음을 내딛는다.",
+            "pace_wpm": 113,
+            "energy": 2,
+            "emphasis": [
+              "Keep walking"
+            ],
+            "pause_before_ms": 140,
+            "pause_after_ms": 320,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "I'll stay beside the school sign."
+          "text": "I'll follow the school path.",
+          "new_index": 41,
+          "dialogue_id": "S04-N041",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "학교 길을 따라 계속 가겠다고 말한다",
+            "emotion": "안도와 결심",
+            "delivery_ko": "follow를 분명히 하여 표지판 곁에 서 있는 뜻이 되지 않게 하고 path는 걸음과 함께 마무리한다.",
+            "direction_en": "Commit to following the school path with relieved, practical confidence.",
+            "listener_reaction": "귀뚜라미는 같은 길에서 발걸음 방향을 맞춘다.",
+            "pace_wpm": 108,
+            "energy": 3,
+            "emphasis": [
+              "follow",
+              "school path"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 340,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "Good. One careful step at a time."
+          "text": "Good. One careful step at a time.",
+          "new_index": 42,
+          "dialogue_id": "S04-N042",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "서두르지 않는 전진을 격려한다",
+            "emotion": "차분한 동행",
+            "delivery_ko": "Good는 짧게 받고 one careful step은 실제 한 걸음을 세심히 지켜보듯 말한다.",
+            "direction_en": "Approve softly, then encourage one careful step with an older-brother warmth.",
+            "listener_reaction": "피노키오는 속도를 안정시키고 가방이 몸 가까이 흔들리게 둔다.",
+            "pace_wpm": 109,
+            "energy": 2,
+            "emphasis": [
+              "Good",
+              "One careful step"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 350,
+            "internal_pauses": [
+              {
+                "after": "Good.",
+                "ms": 150
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "This way feels right!"
+          "text": "This way feels right!",
+          "new_index": 43,
+          "dialogue_id": "S04-N043",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "길을 고른 뒤 느끼는 안도감을 나눈다",
+            "emotion": "편해진 자신감",
+            "delivery_ko": "This way를 가볍게 앞쪽으로 보내고 right는 승리 선언 대신 마음이 놓이는 미소로 끝낸다.",
+            "direction_en": "Share the relief of a path feeling right, without a triumphant flourish.",
+            "listener_reaction": "귀뚜라미는 피노키오의 표정이 풀린 것을 보고 몸 방향을 나란히 둔다.",
+            "pace_wpm": 110,
+            "energy": 3,
+            "emphasis": [
+              "This way",
+              "right"
+            ],
+            "pause_before_ms": 140,
+            "pause_after_ms": 320,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "Let's go together for a while."
+          "text": "Let's go together for a while.",
+          "new_index": 44,
+          "dialogue_id": "S04-N044",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "당분간 함께 가겠다고 약속한다",
+            "emotion": "친근한 동행",
+            "delivery_ko": "together를 따뜻하게 묶고 for a while은 자연스럽게 여유를 둔다. 교사처럼 통솔하지 않는다.",
+            "direction_en": "Offer companionship for a while, lightly and warmly rather than taking charge.",
+            "listener_reaction": "피노키오는 고개를 끄덕이고 두 인물이 굽은 학교 길을 나란히 간다.",
+            "pace_wpm": 112,
+            "energy": 2,
+            "emphasis": [
+              "together",
+              "for a while"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 390,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         }
       ],
       "shots": [
         {
           "id": "B06-C01",
-          "start_seconds": 231,
-          "end_seconds": 241,
-          "camera": "WS 28mm 양쪽 표지판",
-          "acting": "학교/숲 픽토그램을 동시에 보여주면서 귀뚜라미가 학교 쪽으로 손짓하지만 피노키오 선택 전. 기존 발화 문장 정확히 재생."
+          "start_seconds": 265,
+          "camera": "WS 28mm 축 A 두 그림 동시",
+          "acting": "귀뚜라미가 두 그림을 열린 앞다리로 함께 보여 준다. 피노키오는 그림들이 다르다고만 말한다. 학교 그림 이름·정답 쪽 손짓·선행 걸음은 아직 없다.",
+          "dialogue_ids": [
+            "S04-N038",
+            "S04-N039"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0.5,
+          "action_tail_seconds": 0.5,
+          "end_seconds": 274,
+          "planned_speech_seconds": 7.179,
+          "planned_minimum_seconds": 8.179,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B06-C02",
-          "start_seconds": 241,
-          "end_seconds": 251,
-          "camera": "WAIT 50mm 양방향",
-          "acting": "피노키오가 정중앙에 서서 어느 방향도 걷지 않고 질문을 마친다. 두 표지판 위치·색상 잠금."
+          "start_seconds": 274,
+          "camera": "TWO 50mm 비교 시범",
+          "acting": "귀뚜라미가 양쪽을 번갈아 보는 눈·고개 시범으로 그림이 안내가 될 수 있다고 말한다. 두 가지를 동일하게 취급하며 정답을 선공개하지 않는다.",
+          "dialogue_ids": [
+            "S04-N040"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 1.5,
+          "end_seconds": 279,
+          "planned_speech_seconds": 3.349,
+          "planned_minimum_seconds": 4.849,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B06-C03",
-          "start_seconds": 251,
-          "end_seconds": 261,
-          "camera": "REACT CU 학교 픽토그램",
-          "acting": "입력 완료 후 학교 그림 표지판만 부드럽게 빛나고 5도 흔들림, 숲 쪽은 변화 없음."
+          "start_seconds": 279,
+          "camera": "MS 50mm 원본 I06 질문",
+          "acting": "피노키오가 갈림길 중앙에서 원본 질문을 한다. 양쪽 표지판의 위치·색·밝기는 입력 전까지 같은 상태다. 마지막 음성 뒤 외부 예시와 응답 대기로 넘어간다.",
+          "dialogue_ids": [
+            "S04-U019"
+          ],
+          "phase": "PROMPT",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 0,
+          "external_pause_after_event": "I06",
+          "end_seconds": 284,
+          "planned_speech_seconds": 4.232,
+          "planned_minimum_seconds": 4.232,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B06-C04",
-          "start_seconds": 261,
-          "end_seconds": 273,
-          "camera": "FOLLOW WS 걸음",
-          "acting": "귀뚜라미가 왼쪽 길로 뛰고 피노키오가 그 방향으로 몸을 돌려 걸음. 좌/우 방향 혼동·순간이동 금지."
+          "start_seconds": 284,
+          "camera": "REACT WS 35mm 학교 가지 선택",
+          "acting": "입력 뒤 학교 그림만 빛남→표지판 5도 흔들림→피노키오 고개 회전→귀뚜라미 왼쪽 학교 가지 도약→피노키오 두 걸음 따라가기까지 4초 lead에 완료한다. 이후 원본 발견·격려 대사를 순서대로 시작한다.",
+          "dialogue_ids": [
+            "S04-U020",
+            "S04-U021"
+          ],
+          "phase": "REACT",
+          "action_lead_seconds": 4,
+          "action_tail_seconds": 0.5,
+          "reaction_action_id": "SCHOOL_SIGN_ROUTE_CHOICE",
+          "reaction_starts_after_event": "I06",
+          "reaction_completed_before_first_dialogue": true,
+          "end_seconds": 293,
+          "planned_speech_seconds": 3.629,
+          "planned_minimum_seconds": 8.129,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B06-C05",
-          "start_seconds": 273,
-          "end_seconds": 281,
-          "camera": "MS 두 친구",
-          "acting": "피노키오가 안도하며 웃고 귀뚜라미가 발 옆에서 학교 방향을 계속 보여준다."
+          "start_seconds": 293,
+          "camera": "CRANE 35mm 친구 둘→중립 상공 축 전환",
+          "acting": "이동 대사와 함께 학교 가지의 완만한 굽음을 실제 보행으로 따라간다. 카메라는 중립 상공으로 올라 왼쪽 가지가 동쪽 본길로 이어짐을 한 화면에서 확립하고, 도로 남쪽 축 B로 자연스럽게 내려간다. 이후 전진은 화면 오른쪽이다. 대화 중 표지판 곁에 머물지 않는다.",
+          "dialogue_ids": [
+            "S04-N041",
+            "S04-N042",
+            "S04-N043",
+            "S04-N044"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 2.5,
+          "end_seconds": 310,
+          "planned_speech_seconds": 14.177,
+          "planned_minimum_seconds": 16.677,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         }
       ],
       "interaction_id": "I06"
@@ -678,41 +2712,196 @@
     {
       "id": "B07",
       "title": "바람이 부는 길과 작은 가방",
-      "start_seconds": 281,
-      "end_seconds": 327,
+      "start_seconds": 310,
+      "end_seconds": 361,
       "goal": "원본 '작은 길을 따라 걷는다' 동안 S03에서 챙긴 가방/모자의 연속성을 자연스럽게 보여줌. 실제 바람과 몸의 자동 반응이 있는 여행.",
-      "continuity": "B06에서 선택한 학교 왼쪽 길. 모자는 머리에, 책은 가방 안, 가방끈은 묶임. 바람 때문에 소품이 떨어져 분실되는 사건은 넣지 않음.",
+      "continuity": "I06에서 선택한 왼쪽 학교 가지가 B06-C05의 연속 경로를 통해 동쪽 본길로 굽은 뒤다. 축 B에서는 화면 오른쪽으로 전진. 모자는 머리, 책은 결속된 가방 안, 어깨 운반끈만 미끄러졌다 바로잡는다.",
       "dialogue": [
         {
           "kind": "ORIGINAL",
           "source_index": 22,
           "speaker": "내레이션",
-          "text": "Pinocchio followed the little road."
+          "text": "Pinocchio followed the little road.",
+          "dialogue_id": "S04-U022",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "선택한 학교 길을 계속 걷는 흐름을 이어 준다",
+            "emotion": "안정된 진행",
+            "delivery_ko": "followed와 little road를 사건의 연속으로 자연스럽게 이으며 새 출발처럼 강조하지 않는다.",
+            "direction_en": "Continue the journey along the chosen road, without resetting the scene.",
+            "listener_reaction": "피노키오와 귀뚜라미는 이미 정한 화면 오른쪽 진행을 유지한다.",
+            "pace_wpm": 110,
+            "energy": 2,
+            "emphasis": [
+              "followed",
+              "little road"
+            ],
+            "pause_before_ms": 120,
+            "pause_after_ms": 330,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "등장인물의 목소리를 흉내 내거나 모든 문장을 똑같이 낮추지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "NARRATOR_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "The wind is dancing with the leaves."
+          "text": "The wind is dancing with the leaves.",
+          "new_index": 45,
+          "dialogue_id": "S04-N045",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "흔들리는 잎을 즐겁게 바라본다",
+            "emotion": "편안한 즐거움",
+            "delivery_ko": "wind와 dancing에 가벼운 리듬만 주고 노래처럼 일정한 음정으로 읽지 않는다.",
+            "direction_en": "Enjoy the leaves moving in the wind with a playful, conversational rhythm.",
+            "listener_reaction": "귀뚜라미는 잎에서 피노키오 가방으로 시선을 옮겨 끈 흔들림을 알아차린다.",
+            "pace_wpm": 110,
+            "energy": 3,
+            "emphasis": [
+              "wind",
+              "dancing",
+              "leaves"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 330,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "Hold onto your little bag."
+          "text": "Hold onto your little bag.",
+          "new_index": 46,
+          "dialogue_id": "S04-N046",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "바람에 흔들리는 가방을 챙기도록 알려 준다",
+            "emotion": "실용적인 주의",
+            "delivery_ko": "Hold onto는 걱정으로 높이지 말고 가까운 친구의 짧은 주의로 건넨다.",
+            "direction_en": "Give a calm practical reminder about the bag, without sounding alarmed.",
+            "listener_reaction": "피노키오는 어깨의 가방 움직임을 느끼고 고개를 돌린다.",
+            "pace_wpm": 110,
+            "energy": 2,
+            "emphasis": [
+              "Hold onto",
+              "bag"
+            ],
+            "pause_before_ms": 140,
+            "pause_after_ms": 320,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "It's bouncing on my shoulder!"
+          "text": "It's bouncing on my shoulder!",
+          "new_index": 47,
+          "dialogue_id": "S04-N047",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "가방이 어깨에서 튀는 감각을 말한다",
+            "emotion": "놀람과 관찰",
+            "delivery_ko": "bouncing은 가방이 한 번 튀는 순간 가볍게 튀고 shoulder는 위치를 확인하며 내려놓는다.",
+            "direction_en": "React to one bounce on the shoulder; keep the surprise brief and specific.",
+            "listener_reaction": "귀뚜라미는 가방끈의 미끄러짐을 정확히 바라본다.",
+            "pace_wpm": 108,
+            "energy": 3,
+            "emphasis": [
+              "bouncing",
+              "shoulder"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 320,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "I don't want to lose my schoolbook."
+          "text": "I don't want to lose my schoolbook.",
+          "new_index": 48,
+          "dialogue_id": "S04-N048",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "학교책을 잃고 싶지 않다는 이유를 말한다",
+            "emotion": "작은 걱정과 책임감",
+            "delivery_ko": "lose는 낮게 조심스럽게, schoolbook에는 소중히 챙기려는 마음을 싣는다.",
+            "direction_en": "Let concern settle on losing the schoolbook, without panic or self-pity.",
+            "listener_reaction": "피노키오의 손이 어깨로 올라가지만 끈을 아직 바로잡지 않는다.",
+            "pace_wpm": 103,
+            "energy": 2,
+            "emphasis": [
+              "lose",
+              "schoolbook"
+            ],
+            "pause_before_ms": 170,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "Yoonsu, help him keep the bag close!"
+          "text": "Yoonsu, help him keep the bag close!",
+          "new_index": 49,
+          "dialogue_id": "S04-N049",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "미끄러진 가방을 몸 가까이 잡게 도와 달라고 청한다",
+            "emotion": "친절한 부탁",
+            "delivery_ko": "help him은 윤수를 믿는 말투, keep the bag close는 손짓과 함께 편안하게 이어 준다.",
+            "direction_en": "Invite Yoonsu to help keep the bag close, with clear and friendly intention.",
+            "listener_reaction": "피노키오는 손을 어깨 가까이에 둔 미완료 자세로 질문이 끝날 때까지 기다린다.",
+            "pace_wpm": 109,
+            "energy": 2,
+            "emphasis": [
+              "Yoonsu",
+              "bag close"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 430,
+            "internal_pauses": [
+              {
+                "after": "Yoonsu,",
+                "ms": 160
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "INTERACTION",
@@ -721,64 +2910,248 @@
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "My bag is safe!"
+          "text": "My bag is safe!",
+          "new_index": 50,
+          "dialogue_id": "S04-N050",
+          "voice_direction": {
+            "listener": "귀뚜라미·윤수",
+            "intention": "가방끈을 바로잡은 결과를 확인한다",
+            "emotion": "안도와 뿌듯함",
+            "delivery_ko": "bag은 손으로 잡힌 실물을 확인하고 safe는 숨이 놓이는 밝은 하강으로 말한다.",
+            "direction_en": "Confirm the secured bag with a small relieved smile after the adjustment finishes.",
+            "listener_reaction": "귀뚜라미는 가방이 안정된 것을 보고 앞다리를 내린다.",
+            "pace_wpm": 108,
+            "energy": 3,
+            "emphasis": [
+              "bag",
+              "safe"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "You remembered to be careful."
+          "text": "You remembered to be careful.",
+          "new_index": 51,
+          "dialogue_id": "S04-N051",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "조심히 소품을 챙긴 행동을 인정한다",
+            "emotion": "다정한 인정",
+            "delivery_ko": "remembered는 칭찬 스티커처럼 과장하지 말고 실제 행동을 봤다는 따뜻함으로, careful은 부드럽게 닫는다.",
+            "direction_en": "Acknowledge his care as a friend who noticed it, not as a teacher awarding a mark.",
+            "listener_reaction": "피노키오는 가방을 한번 만져 보고 편안하게 미소 짓는다.",
+            "pace_wpm": 111,
+            "energy": 2,
+            "emphasis": [
+              "remembered",
+              "careful"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 360,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "Grandpa will be happy I kept my things safe."
+          "text": "Grandpa will be happy I kept my things safe.",
+          "new_index": 52,
+          "dialogue_id": "S04-N052",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "물건을 잘 챙긴 일을 할아버지에게 자랑하고 싶어 한다",
+            "emotion": "애정 섞인 뿌듯함",
+            "delivery_ko": "Grandpa에서 얼굴이 밝아지고 kept my things safe는 스스로 해냈다는 작은 자부심으로 잇는다.",
+            "direction_en": "Imagine Grandpa being pleased; keep the pride small, affectionate, and sincere.",
+            "listener_reaction": "귀뚜라미는 피노키오를 바라보며 한 번 고개를 끄덕인다.",
+            "pace_wpm": 108,
+            "energy": 3,
+            "emphasis": [
+              "Grandpa",
+              "kept my things safe"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 350,
+            "internal_pauses": [
+              {
+                "after": "Grandpa will be happy",
+                "ms": 140
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "Now let's walk on."
+          "text": "Now let's walk on.",
+          "new_index": 53,
+          "dialogue_id": "S04-N053",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "가방 정리가 끝났으니 길을 이어 가자고 한다",
+            "emotion": "가벼운 전진 의지",
+            "delivery_ko": "Now는 사건을 닫는 작은 신호, walk on은 발걸음을 재개하는 밝은 연결로 말한다.",
+            "direction_en": "Close the little bag incident and move on with an easy forward invitation.",
+            "listener_reaction": "피노키오는 학교 쪽을 보고 다시 일정하게 걷는다.",
+            "pace_wpm": 114,
+            "energy": 2,
+            "emphasis": [
+              "Now",
+              "walk on"
+            ],
+            "pause_before_ms": 130,
+            "pause_after_ms": 320,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "The road goes a little farther."
+          "text": "The road goes a little farther.",
+          "new_index": 54,
+          "dialogue_id": "S04-N054",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "앞으로 이어지는 길을 관찰한다",
+            "emotion": "기대와 여유",
+            "delivery_ko": "a little farther를 지친 투정이 아니라 길 너머가 궁금한 시선으로 가볍게 늘린다.",
+            "direction_en": "Look ahead with relaxed curiosity, not fatigue about the remaining distance.",
+            "listener_reaction": "귀뚜라미는 길의 낮아지는 지형을 보고 시선을 앞으로 옮긴다.",
+            "pace_wpm": 106,
+            "energy": 2,
+            "emphasis": [
+              "a little farther"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 360,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         }
       ],
       "shots": [
         {
           "id": "B07-C01",
-          "start_seconds": 281,
-          "end_seconds": 289,
-          "camera": "TRACK SIDE 35mm 걷는 길",
-          "acting": "피노키오가 걷고 가방이 골반/어깨와 반대 타이밍으로 흔들림. 꽃과 집의 배경 패럴랙스 자연스럽게 진행."
+          "start_seconds": 310,
+          "camera": "TRACK RIGHT 35mm 도로 남쪽 축 B",
+          "acting": "B06에서 보여 준 굽음 이후 같은 동쪽 길을 화면 오른쪽으로 걷는다. 가방은 어깨·골반 움직임에 뒤따라 흔들리고 잎의 바람은 두 인물 이동과 별개로 반응한다.",
+          "dialogue_ids": [
+            "S04-U022",
+            "S04-N045"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0.5,
+          "action_tail_seconds": 0.5,
+          "end_seconds": 319,
+          "planned_speech_seconds": 7.475,
+          "planned_minimum_seconds": 8.475,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B07-C02",
-          "start_seconds": 289,
-          "end_seconds": 298,
-          "camera": "CLOSE 70mm 모자·끈",
-          "acting": "바람에 모자 챙과 가방 끈이 살짝 흔들리고 피노키오가 놀라 뒤돌아본다. 책은 가방에서 나오지 않음."
+          "start_seconds": 319,
+          "camera": "MS→INSERT 65mm 어깨와 가방",
+          "acting": "귀뚜라미의 주의에 피노키오가 어깨를 내려다본다. 바람에 운반끈만 어깨 끝으로 조금 미끄러지며 가방의 플랩 결속은 계속 닫혀 있고 책은 밖으로 나오지 않는다. 손을 어깨로 가져가는 시범만 시작한다.",
+          "dialogue_ids": [
+            "S04-N046",
+            "S04-N047",
+            "S04-N048"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 1,
+          "end_seconds": 332,
+          "planned_speech_seconds": 11.033,
+          "planned_minimum_seconds": 12.033,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B07-C03",
-          "start_seconds": 298,
-          "end_seconds": 308,
-          "camera": "WAIT MS 어깨",
-          "acting": "귀뚜라미가 가방끈을 가리키고 피노키오는 아직 손을 어깨로 올리는 중, 질문 끝나면 동작 대기."
+          "start_seconds": 332,
+          "camera": "MS 50mm 도움 요청",
+          "acting": "귀뚜라미가 운반끈을 가리키며 윤수에게 부탁한다. 손은 아직 끈을 재배치하지 않았고 모자는 머리에 있다. 질문 종료 뒤 외부 예시·입력으로 전환한다.",
+          "dialogue_ids": [
+            "S04-N049"
+          ],
+          "phase": "PROMPT",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 0,
+          "external_pause_after_event": "S04-P05",
+          "end_seconds": 337,
+          "planned_speech_seconds": 4.603,
+          "planned_minimum_seconds": 4.603,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B07-C04",
-          "start_seconds": 308,
-          "end_seconds": 319,
-          "camera": "REACT 옆모습 50mm",
-          "acting": "가방끈 잡기→무게중심 약간 반대 방향→끈을 어깨 안쪽으로 정리→걷기 재개. 모자/가방 상태 일관됨."
+          "start_seconds": 337,
+          "camera": "REACT SIDE 50mm 끈 정리",
+          "acting": "입력 뒤 손가락으로 운반끈 잡기→몸의 균형 반대쪽 이동→끈을 어깨 안쪽으로 올려 가방 안정까지 완료한다. 그 뒤 안전 확인과 친구의 인정 대사를 주고받는다.",
+          "dialogue_ids": [
+            "S04-N050",
+            "S04-N051"
+          ],
+          "phase": "REACT",
+          "action_lead_seconds": 3,
+          "action_tail_seconds": 0.5,
+          "reaction_action_id": "PINOCCHIO_SECURES_SHOULDER_STRAP",
+          "reaction_starts_after_event": "S04-P05",
+          "reaction_completed_before_first_dialogue": true,
+          "end_seconds": 347,
+          "planned_speech_seconds": 5.955,
+          "planned_minimum_seconds": 9.455,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B07-C05",
-          "start_seconds": 319,
-          "end_seconds": 327,
-          "camera": "WS 35mm 마을길",
-          "acting": "바람이 잦아들고 귀뚜라미가 피노키오 발과 같은 방향으로 뛰며 대화한다."
+          "start_seconds": 347,
+          "camera": "TRACK RIGHT WS 35mm 학교 길",
+          "acting": "책을 잘 챙긴 뿌듯함과 다음 이동 대사를 걸음·시선 교환으로 연기한다. 바람이 잦아들며 가방 흔들림도 줄고 마지막 1.5초에 길이 낮아지는 지형으로 들어선다.",
+          "dialogue_ids": [
+            "S04-N052",
+            "S04-N053",
+            "S04-N054"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 1.5,
+          "end_seconds": 361,
+          "planned_speech_seconds": 12.111,
+          "planned_minimum_seconds": 13.611,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         }
       ],
       "interaction_id": "S04-P05"
@@ -786,47 +3159,239 @@
     {
       "id": "B08",
       "title": "반짝이는 물웅덩이와 개구리",
-      "start_seconds": 327,
-      "end_seconds": 375,
-      "goal": "원본 물웅덩이/개구리 등장으로 새로운 장애를 제시하고, 개구리의 작은 점프로 점프라는 동작의 의미만 보여준다.",
-      "continuity": "학교 길 따라 걷는 중 커다란 물웅덩이에 가로막힘. 반사와 개구리는 실제 위치 고정. 개구리 작은 점프는 본 물웅덩이를 건너는 해결 동작이 아니며 I07 전에 피노키오 점프 금지.",
+      "start_seconds": 361,
+      "end_seconds": 418,
+      "goal": "원본 첫 개구리 자율 점프를 U023 뒤/U024 전에 보존한다. 신규 P06은 같은 쪽 물가의 두 번째 작은 점프와 부드러운 착지를 관찰해 점프 후 완충 의미를 보여 준다.",
+      "continuity": "동일 웅덩이·구름 반사·양쪽 마른 땅. 첫 자율 점프와 신규 두 번째 작은 점프를 구별하며 둘 다 물가 같은 쪽에 남는다. 피노키오는 I07 입력 전까지 자기 무릎을 점프 준비로 굽히지 않는다.",
       "dialogue": [
         {
           "kind": "ORIGINAL",
           "source_index": 23,
           "speaker": "내레이션",
-          "text": "But after a while, a big puddle blocked his way."
+          "text": "But after a while, a big puddle blocked his way.",
+          "dialogue_id": "S04-U023",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "길을 가로막는 새로운 장애를 소개한다",
+            "emotion": "관찰에서 가벼운 난관으로",
+            "delivery_ko": "But after a while 뒤 작은 전환 쉼을 두고 big puddle은 분명히 하되 위험한 위기처럼 낮추지 않는다.",
+            "direction_en": "Reveal the puddle as a manageable obstacle, with a slight narrative turn rather than menace.",
+            "listener_reaction": "피노키오와 귀뚜라미는 마른 앞쪽 땅에 멈춘다. 발화 뒤 개구리의 첫 자율 점프를 본다.",
+            "pace_wpm": 108,
+            "energy": 2,
+            "emphasis": [
+              "big puddle",
+              "blocked his way"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 350,
+            "internal_pauses": [
+              {
+                "after": "But after a while,",
+                "ms": 180
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "등장인물의 목소리를 흉내 내거나 모든 문장을 똑같이 낮추지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "NARRATOR_A"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 24,
           "speaker": "피노키오",
-          "text": "Oh no! My new shoes!"
+          "text": "Oh no! My new shoes!",
+          "dialogue_id": "S04-U024",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "새 신발이 젖을까 즉시 걱정한다",
+            "emotion": "작은 놀람과 아쉬움",
+            "delivery_ko": "Oh no는 짧게, My new shoes는 신발을 내려다보며 아끼는 마음으로 말한다. 발은 아직 마르다.",
+            "direction_en": "React to the risk to the new shoes, not to shoes that are already wet.",
+            "listener_reaction": "귀뚜라미는 피노키오 신발과 건너편 마른 땅을 번갈아 본다.",
+            "pace_wpm": 104,
+            "energy": 3,
+            "emphasis": [
+              "Oh no",
+              "new shoes"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 380,
+            "internal_pauses": [
+              {
+                "after": "Oh no!",
+                "ms": 150
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "Look, the sky is inside the water!"
+          "text": "Look, the sky is inside the water!",
+          "new_index": 55,
+          "dialogue_id": "S04-N055",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "물 속 구름 반사를 발견해 관심을 돌린다",
+            "emotion": "걱정에서 호기심으로",
+            "delivery_ko": "Look에서 고개가 들리고 sky inside the water는 신기한 관찰로 부드럽게 상승한다.",
+            "direction_en": "Let curiosity interrupt the worry as he discovers the sky reflected in the water.",
+            "listener_reaction": "귀뚜라미도 같은 물 표면을 보며 차분히 설명할 준비를 한다.",
+            "pace_wpm": 107,
+            "energy": 3,
+            "emphasis": [
+              "sky",
+              "inside the water"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 340,
+            "internal_pauses": [
+              {
+                "after": "Look,",
+                "ms": 130
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "That's the reflection of the clouds."
+          "text": "That's the reflection of the clouds.",
+          "new_index": 56,
+          "dialogue_id": "S04-N056",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "물에 보이는 것이 구름 반사임을 알려 준다",
+            "emotion": "차분한 설명",
+            "delivery_ko": "reflection을 어렵다고 한 음절씩 쪼개지 말고 clouds까지 이어 자연스럽고 짧게 설명한다.",
+            "direction_en": "Explain the reflected clouds conversationally; do not over-enunciate the long word.",
+            "listener_reaction": "피노키오는 물과 실제 하늘을 한 번씩 보며 둘의 관계를 이해한다.",
+            "pace_wpm": 109,
+            "energy": 2,
+            "emphasis": [
+              "reflection",
+              "clouds"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "And there is a little green frog."
+          "text": "That little frog landed softly.",
+          "new_index": 57,
+          "dialogue_id": "S04-N057",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "방금 본 첫 점프의 착지가 부드러웠음을 말한다",
+            "emotion": "집중한 발견",
+            "delivery_ko": "landed softly는 이미 끝난 동작을 확인하는 과거의 관찰로, softly를 낮고 부드럽게 마무리한다.",
+            "direction_en": "Notice how softly the frog just landed, keeping it a completed observation.",
+            "listener_reaction": "귀뚜라미는 개구리가 있는 같은 쪽 물가를 가리킨다.",
+            "pace_wpm": 104,
+            "energy": 2,
+            "emphasis": [
+              "landed softly"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 330,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "What is the frog going to do?"
+          "text": "Can we see how he lands?",
+          "new_index": 58,
+          "dialogue_id": "S04-N058",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "다음 작은 움직임에서 착지 방법을 더 보고 싶어 한다",
+            "emotion": "진지한 호기심",
+            "delivery_ko": "how he lands에 궁금한 상승을 두어 이미 본 점프를 처음 발견하는 말이 되지 않게 한다.",
+            "direction_en": "Ask to see how he lands next time, as a closer look at something already noticed.",
+            "listener_reaction": "귀뚜라미는 개구리와 피노키오의 시선 높이를 연결하고 피노키오의 발은 곧게 유지한다.",
+            "pace_wpm": 103,
+            "energy": 2,
+            "emphasis": [
+              "how he lands"
+            ],
+            "pause_before_ms": 170,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "Yoonsu, let's watch the frog!"
+          "text": "Yoonsu, let's watch the frog!",
+          "new_index": 59,
+          "dialogue_id": "S04-N059",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "개구리의 다음 작은 착지 동작을 함께 보도록 초대한다",
+            "emotion": "즐거운 관찰 초대",
+            "delivery_ko": "함께 보자는 표현은 가벼운 말투로, frog는 실제 보이는 작은 동물을 분명히 가리킨다.",
+            "direction_en": "Invite a shared look at the frog, with friendly attention rather than a quiz.",
+            "listener_reaction": "개구리는 같은 쪽 물가에서 몸을 세운 채 다음 움직임 시작 전 상태를 유지한다.",
+            "pace_wpm": 110,
+            "energy": 2,
+            "emphasis": [
+              "Yoonsu",
+              "let's watch",
+              "frog"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 430,
+            "internal_pauses": [
+              {
+                "after": "Yoonsu,",
+                "ms": 160
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "INTERACTION",
@@ -835,66 +3400,255 @@
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "He can hop!"
+          "text": "He landed softly!",
+          "new_index": 60,
+          "dialogue_id": "S04-N060",
+          "voice_direction": {
+            "listener": "귀뚜라미·윤수",
+            "intention": "두 번째 작은 점프의 부드러운 착지를 확인한다",
+            "emotion": "이해의 기쁨",
+            "delivery_ko": "landed에 착지가 끝난 박자를 맞추고 softly는 목소리도 부드럽게 내려 새 관찰 결과를 준다.",
+            "direction_en": "Confirm the soft landing after it completes; let the softness color the voice.",
+            "listener_reaction": "귀뚜라미는 개구리 다리의 완충 자세를 가리키며 설명을 이어간다.",
+            "pace_wpm": 108,
+            "energy": 3,
+            "emphasis": [
+              "landed",
+              "softly"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "Watch his knees bend first."
+          "text": "His legs bend when he lands.",
+          "new_index": 61,
+          "dialogue_id": "S04-N061",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "착지 때 다리가 굽혀지는 원리를 알려 준다",
+            "emotion": "간단한 발견 공유",
+            "delivery_ko": "legs bend를 시선이 닿는 다리와 맞추고 when he lands는 방금 본 결과를 설명하는 톤으로 한다.",
+            "direction_en": "Connect the bending legs to the completed landing in one clear, easy explanation.",
+            "listener_reaction": "피노키오는 고개로 이해를 표시하지만 자기 무릎을 점프 준비처럼 굽히지 않는다.",
+            "pace_wpm": 108,
+            "energy": 2,
+            "emphasis": [
+              "legs bend",
+              "lands"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 25,
           "speaker": "귀뚜라미",
-          "text": "There's a way across."
+          "text": "There's a way across.",
+          "dialogue_id": "S04-U025",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "아직 해결 방법이 있다는 안심을 준다",
+            "emotion": "침착한 자신감",
+            "delivery_ko": "way across에 해낼 수 있다는 믿음을 주되 먼저 건너거나 완성된 점프를 보여 주지 않는다.",
+            "direction_en": "Offer confidence that there is a way across, without revealing a completed crossing.",
+            "listener_reaction": "피노키오는 반대편 마른 땅을 보지만 두 발은 현재 쪽에 둔다.",
+            "pace_wpm": 110,
+            "energy": 2,
+            "emphasis": [
+              "way across"
+            ],
+            "pause_before_ms": 170,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 26,
           "speaker": "피노키오",
-          "text": "I don't want wet feet."
+          "text": "I don't want wet feet.",
+          "dialogue_id": "S04-U026",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "여전히 발을 적시고 싶지 않다는 마음을 말한다",
+            "emotion": "조심스러운 저항",
+            "delivery_ko": "원하지 않는다는 말은 짜증 없이 진심으로, wet feet는 자기 신발을 확인하며 조심스럽게 말한다.",
+            "direction_en": "Keep the concern about wet feet sincere and small, without whining.",
+            "listener_reaction": "귀뚜라미는 아이의 걱정을 받아 주며 안전한 착지 땅을 가리킨다.",
+            "pace_wpm": 101,
+            "energy": 2,
+            "emphasis": [
+              "wet feet"
+            ],
+            "pause_before_ms": 180,
+            "pause_after_ms": 370,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "I need to be brave like that frog."
+          "text": "I need to be brave like that frog.",
+          "new_index": 62,
+          "dialogue_id": "S04-N062",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "개구리처럼 도전해 볼 마음을 모은다",
+            "emotion": "걱정에서 결심으로",
+            "delivery_ko": "brave에 힘이 조금 생기지만 like that frog는 자기 다짐으로 작게 끝낸다.",
+            "direction_en": "Let a little resolve grow on brave, while keeping it a private, believable decision.",
+            "listener_reaction": "귀뚜라미는 짧게 고개를 끄덕이고 피노키오는 준비 전 곧은 자세를 유지한다.",
+            "pace_wpm": 103,
+            "energy": 3,
+            "emphasis": [
+              "brave",
+              "that frog"
+            ],
+            "pause_before_ms": 170,
+            "pause_after_ms": 390,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         }
       ],
       "shots": [
         {
           "id": "B08-C01",
-          "start_seconds": 327,
-          "end_seconds": 336,
-          "camera": "WS 28mm 물웅덩이 전체",
-          "acting": "길 전체 폭을 가로막은 웅덩이, 양쪽 건조한 접근·착지 지점과 물반사. 개구리는 물 왼쪽 가장자리에 있음."
+          "start_seconds": 361,
+          "camera": "WS 28mm 물웅덩이·양쪽 마른 땅",
+          "acting": "내레이션으로 웅덩이를 먼저 소개한다. U023이 끝난 뒤 개구리가 물가 같은 쪽에서 첫 자율 작은 점프→착지를 한다. 이는 다음 컷 U024보다 먼저이며 윤수 참여를 기다리지 않는다. 피노키오 신발은 계속 마르다.",
+          "dialogue_ids": [
+            "S04-U023"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0.5,
+          "action_tail_seconds": 0.5,
+          "between_dialogue_actions": [
+            {
+              "action_id": "FROG_FIRST_HOP",
+              "after_dialogue_id": "S04-U023",
+              "before_dialogue_id": "S04-U024",
+              "seconds": 2,
+              "included_in_action_lead_or_tail_seconds": false,
+              "placement": "AFTER_LAST_DIALOGUE_IN_THIS_SHOT_BEFORE_NEXT_SHOT",
+              "next_shot_id": "B08-C02",
+              "description": "첫 자율 작은 점프와 착지. 다음 컷 U024 신발 걱정보다 먼저 완료"
+            }
+          ],
+          "end_seconds": 371,
+          "planned_speech_seconds": 6.236,
+          "planned_minimum_seconds": 9.236,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B08-C02",
-          "start_seconds": 336,
-          "end_seconds": 346,
-          "camera": "POV 35mm 물 반사",
-          "acting": "피노키오가 신발을 살피고 물 속 구름 반사와 개구리로 눈을 옮긴다. 귀뚜라미는 마른 쪽에 서 있음."
+          "start_seconds": 371,
+          "camera": "POV→TWO 45mm 신발·물반사",
+          "acting": "원본 새 신발 걱정 뒤 구름 반사에 시선을 옮긴다. 실제 하늘과 물 표면을 비교하고 방금 첫 점프를 마친 개구리는 같은 쪽 물가의 작은 마른 자리에서 보인다.",
+          "dialogue_ids": [
+            "S04-U024",
+            "S04-N055",
+            "S04-N056"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 1,
+          "end_seconds": 384,
+          "planned_speech_seconds": 11.913,
+          "planned_minimum_seconds": 12.913,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B08-C03",
-          "start_seconds": 346,
-          "end_seconds": 355,
-          "camera": "WAIT 개구리 CU",
-          "acting": "개구리가 작은 바닥에서 뒷다리를 굽히며 예비 움직임만, 귀뚜라미가 관찰 요청 후 WAIT."
+          "start_seconds": 384,
+          "camera": "GROUND CU 65mm 개구리의 착지 자리",
+          "acting": "피노키오는 이미 본 부드러운 착지를 더 자세히 보고 싶다고 한다. 귀뚜라미는 개구리 다리와 마른 착지 지점을 가리킨다. 개구리는 두 번째 움직임을 시작하지 않는다. 질문 종료 후 외부 대기로 간다.",
+          "dialogue_ids": [
+            "S04-N057",
+            "S04-N058",
+            "S04-N059"
+          ],
+          "phase": "PROMPT",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 0,
+          "external_pause_after_event": "S04-P06",
+          "end_seconds": 395,
+          "planned_speech_seconds": 10.857,
+          "planned_minimum_seconds": 10.857,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B08-C04",
-          "start_seconds": 355,
-          "end_seconds": 366,
-          "camera": "REACT 개구리 70mm",
-          "acting": "개구리 작은 15cm 점프→앞발 지면 접촉→물결 한 번→피노키오·귀뚜라미 시선 따라감. 이 점프는 웅덩이를 건너지 않음."
+          "start_seconds": 395,
+          "camera": "REACT 70mm 두 번째 작은 점프·완충",
+          "acting": "입력 뒤 개구리가 같은 쪽 물가에서 두 번째 10cm 작은 점프→앞발 접촉→뒷다리 완충→몸 안정까지 3초에 완료한다. 이 동작은 웅덩이를 건너지 않는다. 이후 새 관찰 결과와 설명을 말한다. 피노키오는 고개만 끄덕이고 무릎 준비는 하지 않는다.",
+          "dialogue_ids": [
+            "S04-N060",
+            "S04-N061"
+          ],
+          "phase": "REACT",
+          "action_lead_seconds": 3,
+          "action_tail_seconds": 0.5,
+          "reaction_action_id": "FROG_SECOND_SMALL_HOP_SOFT_LANDING",
+          "reaction_starts_after_event": "S04-P06",
+          "reaction_completed_before_first_dialogue": true,
+          "end_seconds": 405,
+          "planned_speech_seconds": 6.01,
+          "planned_minimum_seconds": 9.51,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B08-C05",
-          "start_seconds": 366,
-          "end_seconds": 375,
-          "camera": "MS 피노키오+귀뚜라미",
-          "acting": "원본 'There's a way across.' 및 'I don't want wet feet.' 실제 대화가 이어지고 피노키오가 웅덩이와 자기 발을 번갈아 봄."
+          "start_seconds": 405,
+          "camera": "TWO 50mm 걱정에서 결심으로",
+          "acting": "원본 길이 있다는 말과 젖기 싫다는 말이 이어진다. 마지막 다짐 동안 피노키오는 마른 신발과 반대편 땅을 번갈아 보고 곧게 선다. 귀뚜라미는 걱정을 받아 주는 시선만 보낸다.",
+          "dialogue_ids": [
+            "S04-U025",
+            "S04-U026",
+            "S04-N062"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 1,
+          "end_seconds": 418,
+          "planned_speech_seconds": 11.442,
+          "planned_minimum_seconds": 12.442,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         }
       ],
       "interaction_id": "S04-P06"
@@ -902,36 +3656,170 @@
     {
       "id": "B09",
       "title": "물웅덩이를 뛰어넘는 첫 도전",
-      "start_seconds": 375,
-      "end_seconds": 425,
+      "start_seconds": 418,
+      "end_seconds": 471,
       "goal": "원본 I07 물웅덩이 점프를 3D 동작의 중심으로 제작. 준비→중심 이동→도약→안전 착지→균형 회복을 끊기지 않게 연기한다.",
-      "continuity": "웅덩이는 B08 지형 그대로. 피노키오는 반대편으로 처음 이동하는 시점이며 착지 전까지 물에 닿지 않음. 귀뚜라미는 옆에서 보고 있으며 이후 따라감.",
+      "continuity": "B08과 동일 지형. 피노키오는 I07 입력 전 UPRIGHT_FEET_ON_DRY_GROUND이며 입력 뒤 처음 준비·점프한다. 귀뚜라미는 B09-C04까지 출발 쪽, B09-C05 lead의 별도 연속 도약으로 같은 반대편 마른 땅에 합류한다.",
       "dialogue": [
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "Look at the dry ground on the other side."
+          "text": "Look at the dry ground on the other side.",
+          "new_index": 63,
+          "dialogue_id": "S04-N063",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "안전하게 디딜 반대편 땅을 보게 한다",
+            "emotion": "침착한 도움",
+            "delivery_ko": "dry ground를 또렷하게 짚고 other side는 거리만 안내한다. 높고 급한 경고음은 쓰지 않는다.",
+            "direction_en": "Direct attention to the dry ground with calm precision, not urgent warning.",
+            "listener_reaction": "피노키오는 발을 움직이지 않고 시선만 건너편으로 옮긴다.",
+            "pace_wpm": 110,
+            "energy": 2,
+            "emphasis": [
+              "dry ground",
+              "other side"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "It seems very far!"
+          "text": "It seems very far!",
+          "new_index": 64,
+          "dialogue_id": "S04-N064",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "자신의 눈높이에서 느끼는 거리를 말한다",
+            "emotion": "작은 망설임",
+            "delivery_ko": "seems에는 주관적인 걱정의 색, very far에는 숨을 조금 줄여 거리를 실감하게 한다.",
+            "direction_en": "Let the gap seem large from his point of view, without turning it into terror.",
+            "listener_reaction": "귀뚜라미는 아이의 얼굴을 보고 자기 다리로 작은 시범을 준비한다.",
+            "pace_wpm": 99,
+            "energy": 2,
+            "emphasis": [
+              "very far"
+            ],
+            "pause_before_ms": 180,
+            "pause_after_ms": 380,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "Bend your knees, then push the ground."
+          "text": "Bend your knees, then push the ground.",
+          "new_index": 65,
+          "dialogue_id": "S04-N065",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "점프 동작의 순서를 말로 설명한다",
+            "emotion": "명료한 격려",
+            "delivery_ko": "Bend your knees와 then push를 짧게 나누되 훈련 교관처럼 끊지 않는다. 시범은 귀뚜라미 자신만 한다.",
+            "direction_en": "Explain the two actions clearly while demonstrating with the cricket body only.",
+            "listener_reaction": "피노키오는 곧게 서서 보기만 하며 입력 전에 무릎을 굽히지 않는다.",
+            "pace_wpm": 109,
+            "energy": 2,
+            "emphasis": [
+              "Bend your knees",
+              "push the ground"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 350,
+            "internal_pauses": [
+              {
+                "after": "Bend your knees,",
+                "ms": 190
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "My wooden legs feel strong."
+          "text": "My wooden legs feel strong.",
+          "new_index": 66,
+          "dialogue_id": "S04-N066",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "아직 서 있는 자세에서 자기 다리 힘을 믿어 본다",
+            "emotion": "조용한 자신감",
+            "delivery_ko": "wooden legs는 자기 몸을 확인하는 느낌으로, strong은 과장된 힘자랑보다 작은 확신으로 낮춘다.",
+            "direction_en": "Find quiet confidence in the wooden legs while standing upright, without boasting.",
+            "listener_reaction": "귀뚜라미는 피노키오의 곧은 자세를 보고 윤수에게 묻도록 기다린다.",
+            "pace_wpm": 104,
+            "energy": 2,
+            "emphasis": [
+              "wooden legs",
+              "strong"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 27,
           "speaker": "피노키오",
-          "text": "Yoonsu, how can I cross this puddle?"
+          "text": "Yoonsu, how can I cross this puddle?",
+          "dialogue_id": "S04-U027",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "건너기 시작을 윤수에게 부탁한다",
+            "emotion": "조심스러운 기대",
+            "delivery_ko": "how can I cross를 진심으로 묻고 puddle은 현재 앞에 있는 물을 내려다보며 끝낸다.",
+            "direction_en": "Ask for help to cross with hopeful caution, keeping the body unprepared until the response.",
+            "listener_reaction": "두 발과 무릎은 정상 선 자세로 유지되고 귀뚜라미도 건너기를 선행하지 않는다.",
+            "pace_wpm": 103,
+            "energy": 2,
+            "emphasis": [
+              "Yoonsu",
+              "cross",
+              "puddle"
+            ],
+            "pause_before_ms": 180,
+            "pause_after_ms": 450,
+            "internal_pauses": [
+              {
+                "after": "Yoonsu,",
+                "ms": 170
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "INTERACTION",
@@ -941,65 +3829,251 @@
           "kind": "ORIGINAL",
           "source_index": 28,
           "speaker": "피노키오",
-          "text": "I did it!"
+          "text": "I did it!",
+          "dialogue_id": "S04-U028",
+          "voice_direction": {
+            "listener": "귀뚜라미·윤수",
+            "intention": "착지와 균형 회복 뒤 성공을 깨닫는다",
+            "emotion": "놀라운 기쁨",
+            "delivery_ko": "완충과 2초 균형 회복이 끝난 뒤 숨을 자연스럽게 풀며 did it을 소년답게 밝힌다. 소리 지르지 않는다.",
+            "direction_en": "After the stable landing, release the held breath into delighted surprise without shouting.",
+            "listener_reaction": "귀뚜라미는 원래 쪽에서 피노키오의 안전한 착지를 보고 몸을 세운다.",
+            "pace_wpm": 111,
+            "energy": 4,
+            "emphasis": [
+              "did it"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 430,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 29,
           "speaker": "귀뚜라미",
-          "text": "Those are some strong wooden legs!"
+          "text": "Those are some strong wooden legs!",
+          "dialogue_id": "S04-U029",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "목각 다리의 힘을 따뜻하게 칭찬한다",
+            "emotion": "감탄과 다정한 인정",
+            "delivery_ko": "strong wooden legs에 웃는 공명을 주고 some은 가볍게 살린다. 건너편에 닿도록만 투사하고 고함치지 않는다.",
+            "direction_en": "Admire the strong wooden legs with a warm smile, projecting across the puddle without shouting.",
+            "listener_reaction": "피노키오는 자기 다리를 보고 뿌듯하게 웃으며 귀뚜라미가 따라올 쪽에 자리를 비운다.",
+            "pace_wpm": 113,
+            "energy": 3,
+            "emphasis": [
+              "strong wooden legs"
+            ],
+            "pause_before_ms": 170,
+            "pause_after_ms": 390,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "I didn't get wet!"
+          "text": "I didn't get wet!",
+          "new_index": 67,
+          "dialogue_id": "S04-N067",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "마른 신발이라는 성공 결과를 확인한다",
+            "emotion": "안도와 즐거움",
+            "delivery_ko": "젖지 않았다는 말은 신발 바닥을 확인한 뒤 분명한 안도로 말한다. 이미 젖었다는 흉내는 넣지 않는다.",
+            "direction_en": "Check the dry soles, then say this with genuine relief and a small smile.",
+            "listener_reaction": "이미 따라 건너온 귀뚜라미도 물에 닿지 않은 신발을 본다.",
+            "pace_wpm": 108,
+            "energy": 3,
+            "emphasis": [
+              "didn't get wet"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "You jumped and found your balance."
+          "text": "You jumped and found your balance.",
+          "new_index": 68,
+          "dialogue_id": "S04-N068",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "점프뿐 아니라 균형 회복까지 잘했다고 말한다",
+            "emotion": "차분한 인정",
+            "delivery_ko": "jumped보다 found your balance에 약간 더 무게를 두어 안정된 착지를 칭찬한다.",
+            "direction_en": "Praise the recovered balance as well as the jump, with clear older-brother warmth.",
+            "listener_reaction": "피노키오는 두 발에 체중을 안정적으로 두고 고개를 끄덕인다.",
+            "pace_wpm": 110,
+            "energy": 2,
+            "emphasis": [
+              "found your balance"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "Thank you for helping me!"
+          "text": "Thank you for helping me!",
+          "new_index": 69,
+          "dialogue_id": "S04-N069",
+          "voice_direction": {
+            "listener": "귀뚜라미·윤수",
+            "intention": "도움을 받은 고마움을 전한다",
+            "emotion": "진심 어린 친밀감",
+            "delivery_ko": "Thank you는 상대를 보고 편안하게, helping me는 힘을 빼고 따뜻하게 내려놓는다.",
+            "direction_en": "Thank both companions sincerely, softening helping me rather than delivering a formal lesson.",
+            "listener_reaction": "귀뚜라미는 가볍게 고개를 숙인 뒤 학교 방향으로 몸을 돌린다.",
+            "pace_wpm": 103,
+            "energy": 2,
+            "emphasis": [
+              "Thank you",
+              "helping me"
+            ],
+            "pause_before_ms": 180,
+            "pause_after_ms": 430,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         }
       ],
       "shots": [
         {
           "id": "B09-C01",
-          "start_seconds": 375,
-          "end_seconds": 384,
-          "camera": "WS 28mm 양쪽 접지",
-          "acting": "물웅덩이 전체 및 피노키오의 출발점·도착점이 같은 좌표계로 보임. 소리·표정·무릎 준비."
+          "start_seconds": 418,
+          "camera": "WS 28mm 출발·착지 같은 좌표계",
+          "acting": "학교 길을 가로지르는 동일 웅덩이와 양쪽 마른 접근점을 한 프레임에 보인다. 귀뚜라미가 반대편 마른 땅을 알려 주고 피노키오는 거리만 관찰한다. 두 발과 무릎은 정상 선 자세다.",
+          "dialogue_ids": [
+            "S04-N063",
+            "S04-N064"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0.5,
+          "action_tail_seconds": 0.5,
+          "end_seconds": 428,
+          "planned_speech_seconds": 8.393,
+          "planned_minimum_seconds": 9.393,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B09-C02",
-          "start_seconds": 384,
-          "end_seconds": 394,
-          "camera": "CU 70mm 신발/무릎",
-          "acting": "제페토가 없는 장면이라 귀뚜라미가 다리 굽힘 시범, 피노키오가 준비하다 멈추고 원본 질문 종료→WAIT."
+          "start_seconds": 428,
+          "camera": "CU→TWO 65mm 귀뚜라미 다리 시범",
+          "acting": "귀뚜라미만 자기 뒷다리를 굽혔다 펴며 동작을 시범 보인다. 피노키오는 곧게 서서 보고 손으로 자기 허벅지 옆면을 가볍게 확인한다. 피노키오 무릎 굽힘·체중 후방 축적·도약 준비는 입력 전 금지다.",
+          "dialogue_ids": [
+            "S04-N065",
+            "S04-N066"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 1.5,
+          "end_seconds": 438,
+          "planned_speech_seconds": 7.948,
+          "planned_minimum_seconds": 9.448,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B09-C03",
-          "start_seconds": 394,
-          "end_seconds": 404,
-          "camera": "WAIT 35mm 3/4",
-          "acting": "피노키오 두 발이 마른 쪽에 붙어 있고 무릎 반쯤 굽힌 상태, 구름 반사 유지. 대기 중 뛰지 않음."
+          "start_seconds": 438,
+          "camera": "MS 50mm 원본 I07 질문",
+          "acting": "피노키오는 양발을 마른 땅에 두고 정상 선 자세로 질문을 끝낸다. 굽힌 무릎이나 점프 준비 자세를 만들지 않는다. 구름 반사와 귀뚜라미 출발 쪽 위치를 유지한 채 외부 예시·응답 대기로 전환한다.",
+          "dialogue_ids": [
+            "S04-U027"
+          ],
+          "phase": "PROMPT",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 0,
+          "external_pause_after_event": "I07",
+          "end_seconds": 443,
+          "planned_speech_seconds": 4.878,
+          "planned_minimum_seconds": 4.878,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B09-C04",
-          "start_seconds": 404,
-          "end_seconds": 416,
-          "camera": "REACT 전신 SIDE 연속",
-          "acting": "무릎 굽힘→후방 체중 축적→발바닥 밀기→공중 자연 관성/팔 스윙→건너편 마른 땅에 양발 순차 착지→무릎 완충→2초 안정. 원본 I did it! 이어짐."
+          "start_seconds": 443,
+          "camera": "REACT 전신 SIDE 35mm 연속 점프",
+          "acting": "I07 입력 후 처음으로 피노키오 무릎 굽힘→후방 체중 축적→발바닥 밀기→공중 팔·다리 관성→건너편 마른 땅 착지→무릎 완충→2초 균형 회복을 6초 lead에 완료한다. 그 뒤 I did it!와 목각 다리 칭찬을 순서대로 시작한다. 귀뚜라미는 아직 원래 쪽에서 말한다.",
+          "dialogue_ids": [
+            "S04-U028",
+            "S04-U029"
+          ],
+          "phase": "REACT",
+          "action_lead_seconds": 6,
+          "action_tail_seconds": 0.5,
+          "reaction_action_id": "PINOCCHIO_PUDDLE_JUMP",
+          "reaction_starts_after_event": "I07",
+          "reaction_completed_before_first_dialogue": true,
+          "initial_pose": "UPRIGHT_FEET_ON_DRY_GROUND",
+          "knee_bend_starts_after_event": "I07",
+          "dry_landing": true,
+          "end_seconds": 456,
+          "planned_speech_seconds": 5.957,
+          "planned_minimum_seconds": 12.457,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B09-C05",
-          "start_seconds": 416,
-          "end_seconds": 425,
-          "camera": "MS 친구 둘",
-          "acting": "귀뚜라미가 피노키오 쪽으로 다가오고 피노키오가 신발 바닥을 살펴본 뒤 원본 목각 다리 대사에 기뻐한다."
+          "start_seconds": 456,
+          "camera": "WS→MS 40mm 귀뚜라미 통과와 신발 확인",
+          "acting": "첫 3초에 귀뚜라미가 같은 출발 마른 땅에서 짧게 몸을 낮춰 한 번의 포물선 도약→같은 반대편 마른 착지→피노키오 발 옆 두 걸음을 실제 연속 동선으로 수행한다. 물에 닿거나 순간이동하지 않는다. 그 뒤 세 대사를 마른 신발 확인·고개 끄덕임·감사 시선으로 주고받는다.",
+          "dialogue_ids": [
+            "S04-N067",
+            "S04-N068",
+            "S04-N069"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 3,
+          "action_tail_seconds": 1,
+          "before_dialogue_actions": [
+            {
+              "action_id": "CRICKET_PUDDLE_CROSSING",
+              "before_dialogue_id": "S04-N067",
+              "seconds": 3,
+              "included_in_action_lead_seconds": true,
+              "placement": "CUT_OPENING_LEAD",
+              "description": "출발 쪽 마른 지면→연속 포물선 도약→동일 반대편 마른 땅→피노키오 발 옆"
+            }
+          ],
+          "end_seconds": 471,
+          "planned_speech_seconds": 10.028,
+          "planned_minimum_seconds": 14.028,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         }
       ],
       "interaction_id": "I07"
@@ -1007,42 +4081,199 @@
     {
       "id": "B10",
       "title": "멀리 보이는 학교, 그리고 낯선 소리",
-      "start_seconds": 425,
-      "end_seconds": 479,
+      "start_seconds": 471,
+      "end_seconds": 527,
       "goal": "큰 물웅덩이 극복 후 학교에 가까워짐을 보여 주며 S05의 음악 유혹을 위해 새로운 소리를 '미확인' 상태로 마무리. 인형극이나 빨간 천막을 먼저 보여주지 않는다.",
-      "continuity": "B09 물웅덩이 건넌 편. 피노키오 모자·가방·신발 마른 상태, 귀뚜라미는 땅에서 따라옴. 학교는 아직 멀고 S05 최초의 음악 정체를 선점하지 않음.",
+      "continuity": "두 인물 모두 B09-C05에서 반대편 마른 지면에 합류한 뒤 축 B로 오른쪽 전진. 피노키오 신발/모자/가방은 마른 상태. 학교 종탑은 집들에 겹쳐 P07 이후에만 이 시점에서 명확히 식별. 마지막 소리는 근원 미공개로 S05에 연결.",
       "dialogue": [
         {
           "kind": "ORIGINAL",
           "source_index": 30,
           "speaker": "내레이션",
-          "text": "Pinocchio continued down the road."
+          "text": "Pinocchio continued down the road.",
+          "dialogue_id": "S04-U030",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "물웅덩이를 뒤로하고 길을 계속 잇는다",
+            "emotion": "안정된 전진",
+            "delivery_ko": "continued에 사건이 이어짐을 주고 road에서는 발걸음의 리듬을 해치지 않게 자연스럽게 닫는다.",
+            "direction_en": "Resume the journey with easy continuity, letting the footfalls carry the movement.",
+            "listener_reaction": "두 인물은 같은 쪽 길에서 학교 방향으로 나란히 이동한다.",
+            "pace_wpm": 111,
+            "energy": 2,
+            "emphasis": [
+              "continued",
+              "road"
+            ],
+            "pause_before_ms": 120,
+            "pause_after_ms": 330,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "등장인물의 목소리를 흉내 내거나 모든 문장을 똑같이 낮추지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "NARRATOR_A"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 31,
           "speaker": "내레이션",
-          "text": "He was getting closer to school."
+          "text": "He was getting closer to school.",
+          "dialogue_id": "S04-U031",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "목적지까지의 거리가 줄었음을 알려 준다",
+            "emotion": "작은 기대",
+            "delivery_ko": "closer to school은 도착한 듯 환호하지 말고 진행이 잘되고 있다는 따뜻한 전망으로 말한다.",
+            "direction_en": "Let school feel nearer without sounding as though they have arrived.",
+            "listener_reaction": "학교는 집들 뒤에 부분적으로 가려져 피노키오에게 아직 특정 지붕이 확인되지 않는다.",
+            "pace_wpm": 108,
+            "energy": 2,
+            "emphasis": [
+              "closer to school"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "등장인물의 목소리를 흉내 내거나 모든 문장을 똑같이 낮추지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "NARRATOR_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "The school is getting closer!"
+          "text": "The houses are hiding the school.",
+          "new_index": 70,
+          "dialogue_id": "S04-N070",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "집들 때문에 학교 지붕을 다시 찾기 어렵다고 말한다",
+            "emotion": "가벼운 탐색의 난감함",
+            "delivery_ko": "houses와 hiding을 관찰하듯 또렷이 말하고 school은 찾으려는 대상으로 남긴다.",
+            "direction_en": "Notice the houses hiding the school, keeping the location unresolved and the tone light.",
+            "listener_reaction": "귀뚜라미는 같은 방향을 보며 여러 지붕을 비교한다.",
+            "pace_wpm": 105,
+            "energy": 2,
+            "emphasis": [
+              "houses",
+              "hiding",
+              "school"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 330,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "Can you see the roof again?"
+          "text": "Can you find the roof again?",
+          "new_index": 71,
+          "dialogue_id": "S04-N071",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "전에 본 지붕을 이 시점에서 다시 찾아보게 한다",
+            "emotion": "친근한 격려",
+            "delivery_ko": "roof again은 기억을 돕는 부드러운 질문으로 말한다. 이미 정답 위치를 아는 손짓은 하지 않는다.",
+            "direction_en": "Invite him to find the remembered roof again, without supplying its current position.",
+            "listener_reaction": "피노키오는 집 지붕들을 하나씩 확인한다.",
+            "pace_wpm": 110,
+            "energy": 2,
+            "emphasis": [
+              "roof again"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 340,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "I can see the tall little bell."
+          "text": "I can see rooftops, but which one?",
+          "new_index": 72,
+          "dialogue_id": "S04-N072",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "여러 지붕이 겹쳐 아직 학교를 고르지 못했다고 말한다",
+            "emotion": "집중한 궁금함",
+            "delivery_ko": "rooftops 뒤 짧게 멈추고 which one에는 진짜 미확정 질문을 남긴다.",
+            "direction_en": "Separate the many rooftops from the unresolved which one; do not sound as if he has spotted it.",
+            "listener_reaction": "귀뚜라미는 한쪽 정답을 찍지 않고 지평선을 넓게 바라본다.",
+            "pace_wpm": 103,
+            "energy": 2,
+            "emphasis": [
+              "rooftops",
+              "which one"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 350,
+            "internal_pauses": [
+              {
+                "after": "I can see rooftops,",
+                "ms": 180
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "Yoonsu, help us look far ahead!"
+          "text": "Yoonsu, help us look far ahead!",
+          "new_index": 73,
+          "dialogue_id": "S04-N073",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "지붕 사이 먼 학교를 찾는 관찰에 초대한다",
+            "emotion": "밝은 집중",
+            "delivery_ko": "help us는 함께 찾는 부탁으로, far ahead는 거리 방향만 넓게 안내한다.",
+            "direction_en": "Invite Yoonsu to search far ahead with both friends, without announcing the discovery.",
+            "listener_reaction": "피노키오는 찾는 자세로 멈추고 학교 종탑은 아직 집 지붕에 겹쳐 있다.",
+            "pace_wpm": 110,
+            "energy": 2,
+            "emphasis": [
+              "Yoonsu",
+              "far ahead"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 430,
+            "internal_pauses": [
+              {
+                "after": "Yoonsu,",
+                "ms": 160
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "INTERACTION",
@@ -1051,68 +4282,317 @@
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "There it is! Our school!"
+          "text": "There it is! Our school!",
+          "new_index": 74,
+          "dialogue_id": "S04-N074",
+          "voice_direction": {
+            "listener": "귀뚜라미·윤수",
+            "intention": "지붕 사이에서 이제 드러난 학교를 확인한다",
+            "emotion": "재인식의 기쁨",
+            "delivery_ko": "There it is 뒤 작은 발견 쉼을 두고 Our school에는 목적지를 다시 찾은 밝은 소속감을 준다.",
+            "direction_en": "Let recognition arrive after the view clears; warm our school with shared excitement.",
+            "listener_reaction": "귀뚜라미도 같은 종탑을 확인하며 몸을 학교 길 쪽으로 돌린다.",
+            "pace_wpm": 111,
+            "energy": 3,
+            "emphasis": [
+              "There it is",
+              "Our school"
+            ],
+            "pause_before_ms": 160,
+            "pause_after_ms": 370,
+            "internal_pauses": [
+              {
+                "after": "There it is!",
+                "ms": 180
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "귀뚜라미",
-          "text": "Just keep following the road."
+          "text": "Just keep following the road.",
+          "new_index": 75,
+          "dialogue_id": "S04-N075",
+          "voice_direction": {
+            "listener": "피노키오",
+            "intention": "찾은 목적지까지 현재 길을 계속 따르면 된다고 안내한다",
+            "emotion": "안정된 확신",
+            "delivery_ko": "Just keep은 부담을 덜어 주는 말로, following the road는 실제 걸음을 따라 편안히 잇는다.",
+            "direction_en": "Make following the road feel simple and reassuring, not an instruction drill.",
+            "listener_reaction": "피노키오는 목적지를 기억한 채 다시 걸음을 이어 간다.",
+            "pace_wpm": 111,
+            "energy": 2,
+            "emphasis": [
+              "following the road"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "피노키오 음성을 피치 변조하거나 로봇 곤충 효과를 입히지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "CRICKET_DESIGN_V1"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "I'll tell Grandpa about my big jump."
+          "text": "I'll tell Grandpa about my big jump.",
+          "new_index": 76,
+          "dialogue_id": "S04-N076",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "오늘 성공한 점프를 할아버지에게 이야기하고 싶어 한다",
+            "emotion": "기대와 자랑스러움",
+            "delivery_ko": "Grandpa에 애정을, big jump에는 자기에게는 컸던 경험의 뿌듯함을 준다.",
+            "direction_en": "Look forward to telling Grandpa, letting the jump feel big to the boy without boasting.",
+            "listener_reaction": "귀뚜라미는 피노키오의 들뜬 얼굴을 보고 작게 미소 짓는다.",
+            "pace_wpm": 110,
+            "energy": 3,
+            "emphasis": [
+              "Grandpa",
+              "big jump"
+            ],
+            "pause_before_ms": 150,
+            "pause_after_ms": 350,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "NEW",
           "speaker": "피노키오",
-          "text": "I wonder what I'll learn today."
+          "text": "I wonder what I'll learn today.",
+          "new_index": 77,
+          "dialogue_id": "S04-N077",
+          "voice_direction": {
+            "listener": "귀뚜라미",
+            "intention": "학교에서 배울 것을 기대한다",
+            "emotion": "편안한 호기심",
+            "delivery_ko": "I wonder를 실제로 생각하는 가벼운 숨으로 시작하고 learn today는 목적을 잊지 않은 밝음으로 끝낸다.",
+            "direction_en": "Wonder aloud about learning today with open curiosity and no hint of distraction yet.",
+            "listener_reaction": "귀뚜라미는 학교 길 쪽으로 시선을 유지하며 걷는다.",
+            "pace_wpm": 106,
+            "energy": 2,
+            "emphasis": [
+              "learn today"
+            ],
+            "pause_before_ms": 170,
+            "pause_after_ms": 390,
+            "internal_pauses": [],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "성인 낭독자나 과하게 짜낸 아기 목소리로 바꾸지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "PINOCCHIO_A"
+          }
         },
         {
           "kind": "ORIGINAL",
           "source_index": 32,
           "speaker": "내레이션",
-          "text": "But then, he heard a strange and wonderful sound."
+          "text": "But then, he heard a strange and wonderful sound.",
+          "dialogue_id": "S04-U032",
+          "voice_direction": {
+            "listener": "윤수",
+            "intention": "새 소리가 학교 길의 집중을 바꾸는 순간을 연다",
+            "emotion": "평온에서 신비한 호기심으로",
+            "delivery_ko": "But then 뒤 작은 전환 쉼을 주고 strange는 공포 없이 궁금하게, wonderful은 아주 살짝 밝힌다. 소리의 정체는 말하지 않는다.",
+            "direction_en": "Turn toward a mysterious but inviting sound; do not make it frightening or identify the music.",
+            "listener_reaction": "발화 말미 두 인물의 귀와 눈이 같은 소리 방향으로 움직인다. 피노키오의 다음 발이 잠깐 들린 상태로 S05에 인계한다.",
+            "pace_wpm": 104,
+            "energy": 2,
+            "emphasis": [
+              "strange",
+              "wonderful sound"
+            ],
+            "pause_before_ms": 180,
+            "pause_after_ms": 450,
+            "internal_pauses": [
+              {
+                "after": "But then,",
+                "ms": 220
+              }
+            ],
+            "avoid": [
+              "문장 끝을 매번 같은 낭독 하강조로 마무리하지 않음",
+              "등장인물의 목소리를 흉내 내거나 모든 문장을 똑같이 낮추지 않음"
+            ],
+            "timing_basis": "PLANNED_NOT_MEASURED",
+            "profile_id": "NARRATOR_A"
+          }
         }
       ],
       "shots": [
         {
           "id": "B10-C01",
-          "start_seconds": 425,
-          "end_seconds": 435,
-          "camera": "WS TRACK 오른쪽 35mm",
-          "acting": "피노키오와 귀뚜라미가 긴 길을 따라 이동하고 웅덩이는 뒤에 작아진다. 학교의 높은 종탑이 먼 배경에 아주 작게 보임."
+          "start_seconds": 471,
+          "camera": "TRACK RIGHT WS 35mm 축 B 유지",
+          "acting": "웅덩이가 뒤로 작아지고 두 인물이 이미 선택한 동쪽 학교 길을 계속 걷는다. 내레이션은 학교에 가까워짐을 말하지만 현재 시점에서는 집 지붕이 종탑을 겹쳐 가려 특정 지붕을 확정할 수 없다.",
+          "dialogue_ids": [
+            "S04-U030",
+            "S04-U031"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0.5,
+          "action_tail_seconds": 1,
+          "end_seconds": 480,
+          "planned_speech_seconds": 6.986,
+          "planned_minimum_seconds": 8.486,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B10-C02",
-          "start_seconds": 435,
-          "end_seconds": 446,
-          "camera": "MS 50mm 걷기",
-          "acting": "피노키오가 주변의 집과 학교 지붕을 구분하려고 고개를 들어 귀뚜라미와 이야기한다. 발바닥 접지/가방 관성 유지."
+          "start_seconds": 480,
+          "camera": "MS→POV 50mm 겹친 지붕",
+          "acting": "피노키오가 여러 지붕을 찾아보지만 어느 것이 학교인지 아직 모른다. 귀뚜라미는 지평선을 넓게 보는 고개 시범만 보이며 특정 학교 지붕을 지목하지 않는다.",
+          "dialogue_ids": [
+            "S04-N070",
+            "S04-N071",
+            "S04-N072"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 1,
+          "end_seconds": 494,
+          "planned_speech_seconds": 12.439,
+          "planned_minimum_seconds": 13.439,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B10-C03",
-          "start_seconds": 446,
-          "end_seconds": 456,
-          "camera": "WAIT POV 50mm 지평선",
-          "acting": "귀뚜라미가 먼 학교 방향을 몸으로 가리키고 피노키오가 찾으려다 멈춤. 질문 종료 후 WAIT."
+          "start_seconds": 494,
+          "camera": "MS 50mm 먼 곳 관찰 요청",
+          "acting": "윤수에게 먼 곳을 함께 보자고 질문한다. 피노키오의 시선은 겹친 지붕들 사이에 머물고 종탑 식별은 아직 미완료다. 질문 종료 경계에 외부 예시·응답 대기를 둔다.",
+          "dialogue_ids": [
+            "S04-N073"
+          ],
+          "phase": "PROMPT",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 0,
+          "external_pause_after_event": "S04-P07",
+          "end_seconds": 499,
+          "planned_speech_seconds": 4.023,
+          "planned_minimum_seconds": 4.023,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B10-C04",
-          "start_seconds": 456,
-          "end_seconds": 469,
-          "camera": "REACT 70mm 먼 학교 발견",
-          "acting": "눈동자→고개→몸 방향→작게 보이는 학교 종탑에 초점을 맞추는 동작, 피노키오가 웃고 걸음이 씩씩해짐."
+          "start_seconds": 499,
+          "camera": "REACT 65mm 눈·고개·종탑",
+          "acting": "입력 뒤 피노키오가 상체를 조금 옆으로 옮겨 시야 확보→눈과 고개 방향 선택→지붕 사이 처음 명확해진 학교 종탑에 시선 고정까지 완료한다. 그 후 재인식 대사와 길 안내를 말한다. 학교에 도착한 것은 아니다.",
+          "dialogue_ids": [
+            "S04-N074",
+            "S04-N075"
+          ],
+          "phase": "REACT",
+          "action_lead_seconds": 3.5,
+          "action_tail_seconds": 0.5,
+          "reaction_action_id": "PINOCCHIO_IDENTIFIES_SCHOOL_THROUGH_ROOFS",
+          "reaction_starts_after_event": "S04-P07",
+          "reaction_completed_before_first_dialogue": true,
+          "end_seconds": 510,
+          "planned_speech_seconds": 6.615,
+          "planned_minimum_seconds": 10.615,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         },
         {
           "id": "B10-C05",
-          "start_seconds": 469,
-          "end_seconds": 479,
-          "camera": "WIDE 35mm S05 연결",
-          "acting": "원본 내레이션 마지막 'But then, he heard a strange and wonderful sound.'에 맞춰 두 인물이 귀를 기울이는 동작. 소리의 근원/천막/음악 정체는 보여주지 않고 S05 첫 컷으로 넘김."
+          "start_seconds": 510,
+          "camera": "WIDE 35mm 같은 길·S05 연결",
+          "acting": "학교에 배울 기대와 할아버지에게 할 말을 걷는 중 나눈다. 마지막 원본 U032 때만 낯선 소리가 들어오고 눈·귀가 그쪽으로 움직인다. 마지막 2.5초에는 같은 미확인 소리를 이어 받으며 피노키오의 다음 발이 잠깐 들린 미완료 걸음과 귀뚜라미의 지면 위치를 S05-C01에 넘긴다. 천막·악기·무대·음악 정체는 보여주지 않는다.",
+          "dialogue_ids": [
+            "S04-N076",
+            "S04-N077",
+            "S04-U032"
+          ],
+          "phase": "NARRATIVE",
+          "action_lead_seconds": 0,
+          "action_tail_seconds": 2.5,
+          "end_seconds": 527,
+          "planned_speech_seconds": 14.317,
+          "planned_minimum_seconds": 16.817,
+          "timing_basis": "PLANNED_NOT_MEASURED"
         }
       ],
       "interaction_id": "S04-P07"
     }
-  ]
+  ],
+  "revision": "2.1_VOICE_DIRECTED_CORRECTION",
+  "authorization_note": "사용자가 검토 지적의 실제 수정과 모든 발화·예시의 캐릭터 목소리/감정/말투/쉼/속도/상대반응 설계를 요청함. 실제 영상·음성 제작 또는 새 귀뚜라미 성우 승인을 뜻하지 않음.",
+  "voice_direction_count": 109,
+  "model_example_voice_direction_count": 10,
+  "timing_contract": {
+    "clock": "NARRATIVE_CLOCK_PLUS_EXTERNAL_PAUSES",
+    "narrative_seconds": 527,
+    "narrative_frames_at_24fps": 12648,
+    "external_wait_seconds_counted": 0,
+    "pause_location": "C03_END_AFTER_QUESTION_AUDIO_ENDED",
+    "resume_location": "C04_REACTION_THEN_DESIGNATED_DIALOGUE",
+    "question_audio_and_visual_demo_are_narrative": true,
+    "model_examples_counted": false,
+    "replays_counted": false,
+    "actual_audio_timing": "NOT_RUN",
+    "actual_mp4_duration": "NOT_RUN",
+    "rendered_boundary_test": "NOT_RUN",
+    "speech_budget_basis": "WORDS*60/PACE_WPM + BEFORE_AFTER_INTERNAL_PAUSES + ACTION_LEAD + ACTION_TAIL + BETWEEN_DIALOGUE_ACTIONS. BEFORE_DIALOGUE_ACTIONS are included in ACTION_LEAD and are not counted twice.",
+    "retiming_rule": "실제 승인 음성과 연기 측정 후 컷을 필요하면 늘린다. 원문·순서·참여 경계와 대기 제외 최소360초를 보존하며 음성 과속·대기·반복으로 시간을 맞추지 않는다."
+  },
+  "voice_production_status": {
+    "direction": "AUTHORED_REVIEW_REQUIRED",
+    "generated_scene_audio": "NOT_RUN",
+    "listening_test": "NOT_RUN",
+    "lip_sync": "NOT_RUN",
+    "cricket_reference": "BLOCKED_RESOURCE"
+  },
+  "geography_contract": {
+    "fork_view_axis": "A: 진입로 뒤 3/4에서 보이는 학교 그림은 화면 왼쪽, 숲 그림은 오른쪽. I06 전후 선택 완료까지 고정.",
+    "route": "학교 가지는 진입 기준 왼쪽으로 갈라진 뒤 완만히 동쪽 본길로 굽는다. 숲 가지와 재합류하지 않는다.",
+    "axis_bridge_shot": "B06-C05",
+    "axis_bridge": "이동을 멈추지 않고 중립 상공으로 경로 굽음을 보여 준 뒤 도로 남쪽 축 B로 내려온다.",
+    "later_axis": "B07~B10은 동쪽 전진을 화면 오른쪽으로 유지.",
+    "s05_handoff": "S04 B10-C05와 S05 B01-C01은 축 B와 같은 길·같은 아침·같은 미확인 소리를 유지한다.",
+    "school_path_selected_only_after": "I06"
+  },
+  "canonical_action_locks": {
+    "cricket_first_landing": {
+      "shot_id": "B05-C01",
+      "action_id": "CRICKET_FIRST_LANDING",
+      "before_dialogue_id": "S04-U015",
+      "autonomous": true
+    },
+    "frog_first_hop": {
+      "shot_id": "B08-C01",
+      "action_id": "FROG_FIRST_HOP",
+      "after_dialogue_id": "S04-U023",
+      "before_dialogue_id": "S04-U024",
+      "autonomous": true
+    },
+    "puddle_jump": {
+      "event_id": "I07",
+      "reaction_shot_id": "B09-C04",
+      "wait_pose": "UPRIGHT_FEET_ON_DRY_GROUND",
+      "before_input_knee_bend": false
+    },
+    "cricket_puddle_crossing": {
+      "shot_id": "B09-C05",
+      "action_id": "CRICKET_PUDDLE_CROSSING",
+      "dry_landing": true
+    }
+  }
 }

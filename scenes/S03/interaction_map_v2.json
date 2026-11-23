@@ -19,7 +19,15 @@
     "model_example_after_no_response_seconds": 5,
     "parent_tap_alternative": true,
     "sample_speech_while_microphone_disabled": true,
-    "replay_does_not_increment_participation": true
+    "replay_does_not_increment_participation": true,
+    "model_example_policy": "PLAY_ONCE_BEFORE_FIRST_INPUT_EACH_EVENT",
+    "first_model_before_listen": true,
+    "model_example_must_finish_before_rearming_vad": true,
+    "wait_uses_separate_clock": true,
+    "background_audio_must_not_trigger_vad": true,
+    "parent_tap_can_finish_every_event": true,
+    "early_input_during_question_is_ignored": true,
+    "no_response_policy": "After the first model and 5 seconds without response, offer replay or parent tap; replay does not re-trigger the scene."
   },
   "events": [
     {
@@ -28,7 +36,7 @@
       "cue": "Turn the page!",
       "speaker": "제페토",
       "prompt": "Yoonsu, help us turn the page!",
-      "demo": "제페토가 페이지를 절반만 넘기고 손을 멈춰 '넘기기'를 보여준다.",
+      "demo": "제페토가 다음 페이지 모서리를 살짝 들어 넘기는 방향만 보여 준다. 새 그림을 공개하거나 한 장을 끝까지 넘기지 않는다.",
       "wait": "책은 열린 상태, 넘길 페이지 모서리만 살짝 들림; 완전히 넘김 금지.",
       "react": "피노키오 페이지 넘김→그림 변화→피노키오가 그림과 제페토를 번갈아 보며 기뻐함.",
       "resume": "Oh! Look at the paint and paper!",
@@ -37,10 +45,45 @@
       "index": 1,
       "beat": "B01",
       "wait_time_counted": false,
-      "trigger": "QUESTION_AUDIO_ENDED_THEN_VAD_OR_PARENT_TAP",
+      "trigger": "QUESTION_AUDIO_ENDED_THEN_MODEL_EXAMPLE_ENDED_THEN_VAD_OR_PARENT_TAP",
       "react_once": true,
       "scoring": false,
-      "timeout_hint_seconds": 5
+      "timeout_hint_seconds": 5,
+      "question_dialogue_id": "S03-N006",
+      "question_end_boundary_seconds": 46,
+      "resume_dialogue_id": "S03-N007",
+      "react_shot_id": "B01-C04",
+      "demo_shot_id": "B01-C03",
+      "timing_model": "EXTERNAL_PAUSE_AT_NARRATIVE_BOUNDARY",
+      "narrative_wait_seconds": 0,
+      "model_example_first_pass_required": true,
+      "model_example_narrative_counted": false,
+      "parent_tap_can_skip_model_and_react": true,
+      "repeat_example_after_no_response_seconds": 5,
+      "example_text": "Turn the page!",
+      "example_dialogue_id": "S03-P01-EXAMPLE",
+      "model_example_context": "OUT_OF_STORY_GUIDANCE_DOES_NOT_CHANGE_CHARACTER_KNOWLEDGE_OR_TRIGGER_REACTION",
+      "example_voice_direction": {
+        "listener": "윤수 (본편 밖 예시)",
+        "intention": "윤수가 책장 넘기기 표현을 한 번 편하게 따라 듣게 한다",
+        "emotion": "부드러운 초대",
+        "delivery_ko": "Turn the page를 세 낱말이 아닌 한 동작 말로 연결한다. page를 조금 길게 남기되 글자별 발음은 하지 않는다.",
+        "direction_en": "Model Turn the page as one easy invitation matching the lifted page corner; gently lengthen page, never spell or drill the words.",
+        "pace_wpm": 82,
+        "energy": 2,
+        "emphasis": [
+          "Turn",
+          "page"
+        ],
+        "pause_before_ms": 160,
+        "pause_after_ms": 450,
+        "internal_pauses": [],
+        "avoid": [
+          "낱말마다 똑같이 끊는 학습 로봇 억양"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED",
+        "profile_id": "GEPPETTO_A"
+      }
     },
     {
       "id": "S03-P02",
@@ -57,10 +100,44 @@
       "index": 2,
       "beat": "B02",
       "wait_time_counted": false,
-      "trigger": "QUESTION_AUDIO_ENDED_THEN_VAD_OR_PARENT_TAP",
+      "trigger": "QUESTION_AUDIO_ENDED_THEN_MODEL_EXAMPLE_ENDED_THEN_VAD_OR_PARENT_TAP",
       "react_once": true,
       "scoring": false,
-      "timeout_hint_seconds": 5
+      "timeout_hint_seconds": 5,
+      "question_dialogue_id": "S03-N016",
+      "question_end_boundary_seconds": 106,
+      "resume_dialogue_id": "S03-N017",
+      "react_shot_id": "B02-C04",
+      "demo_shot_id": "B02-C03",
+      "timing_model": "EXTERNAL_PAUSE_AT_NARRATIVE_BOUNDARY",
+      "narrative_wait_seconds": 0,
+      "model_example_first_pass_required": true,
+      "model_example_narrative_counted": false,
+      "parent_tap_can_skip_model_and_react": true,
+      "repeat_example_after_no_response_seconds": 5,
+      "example_text": "Put it here!",
+      "example_dialogue_id": "S03-P02-EXAMPLE",
+      "model_example_context": "OUT_OF_STORY_GUIDANCE_DOES_NOT_CHANGE_CHARACTER_KNOWLEDGE_OR_TRIGGER_REACTION",
+      "example_voice_direction": {
+        "listener": "윤수 (본편 밖 예시)",
+        "intention": "마지막 블록을 놓는 위치와 짧은 표현을 연결한다",
+        "emotion": "차분한 자신감",
+        "delivery_ko": "Put it을 부드럽게 붙이고 here에서 보이는 빈자리를 가리키는 색을 낸다. 명령보다 함께 놓자는 권유다.",
+        "direction_en": "Connect Put it smoothly, then give here the clarity of pointing to the open spot; invite participation without commanding it.",
+        "pace_wpm": 80,
+        "energy": 2,
+        "emphasis": [
+          "here"
+        ],
+        "pause_before_ms": 160,
+        "pause_after_ms": 450,
+        "internal_pauses": [],
+        "avoid": [
+          "블록을 빨리 놓으라고 재촉하기"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED",
+        "profile_id": "GEPPETTO_A"
+      }
     },
     {
       "id": "S03-P03",
@@ -70,17 +147,52 @@
       "prompt": "Yoonsu, can you help me check?",
       "demo": "제페토가 자기 머리를 톡톡 가리키고 피노키오도 따라 하려는 동작 시작.",
       "wait": "피노키오 손이 정수리 위 약 5cm 지점에 멈춘 상태.",
-      "react": "머리를 터치→모자가 없음을 발견→놀란 눈→둘러보기.",
+      "react": "정수리를 한 번 살짝 만짐→빈자리를 직접 확인→손을 펴 보임→제페토와 수색 방향으로 시선 이동. 과장된 재발견 놀람은 없음.",
       "resume": "Nothing on my head!",
       "fallback": "머리 아이콘 터치/보호자 진행",
-      "meaning": "소품을 찾을 이유를 실제 움직임으로 설명",
+      "meaning": "머리 위치와 촉감을 직접 확인하는 행동을 영어에 연결하고 모자 수색으로 넘어감",
       "index": 3,
       "beat": "B03",
       "wait_time_counted": false,
-      "trigger": "QUESTION_AUDIO_ENDED_THEN_VAD_OR_PARENT_TAP",
+      "trigger": "QUESTION_AUDIO_ENDED_THEN_MODEL_EXAMPLE_ENDED_THEN_VAD_OR_PARENT_TAP",
       "react_once": true,
       "scoring": false,
-      "timeout_hint_seconds": 5
+      "timeout_hint_seconds": 5,
+      "question_dialogue_id": "S03-N025",
+      "question_end_boundary_seconds": 169,
+      "resume_dialogue_id": "S03-N026",
+      "react_shot_id": "B03-C04",
+      "demo_shot_id": "B03-C03",
+      "timing_model": "EXTERNAL_PAUSE_AT_NARRATIVE_BOUNDARY",
+      "narrative_wait_seconds": 0,
+      "model_example_first_pass_required": true,
+      "model_example_narrative_counted": false,
+      "parent_tap_can_skip_model_and_react": true,
+      "repeat_example_after_no_response_seconds": 5,
+      "example_text": "Touch your head!",
+      "example_dialogue_id": "S03-P03-EXAMPLE",
+      "model_example_context": "OUT_OF_STORY_GUIDANCE_DOES_NOT_CHANGE_CHARACTER_KNOWLEDGE_OR_TRIGGER_REACTION",
+      "example_voice_direction": {
+        "listener": "윤수 (본편 밖 예시)",
+        "intention": "머리 위치를 만지는 몸동작에 영어를 붙여 준다",
+        "emotion": "가까운 장난기",
+        "delivery_ko": "Touch your는 가볍게 이어 주고 head에 작은 밝음을 둔다. 어린아이 목소리를 더 높은 아기 소리로 바꾸지 않는다.",
+        "direction_en": "Offer the head-touch phrase in the same natural young-boy voice; connect Touch your and brighten head slightly, without baby talk.",
+        "pace_wpm": 84,
+        "energy": 2,
+        "emphasis": [
+          "Touch",
+          "head"
+        ],
+        "pause_before_ms": 140,
+        "pause_after_ms": 450,
+        "internal_pauses": [],
+        "avoid": [
+          "승인된 소년 목소리를 아기 소리로 높이기"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED",
+        "profile_id": "PINOCCHIO_A"
+      }
     },
     {
       "id": "S03-P04",
@@ -97,10 +209,45 @@
       "index": 4,
       "beat": "B04",
       "wait_time_counted": false,
-      "trigger": "QUESTION_AUDIO_ENDED_THEN_VAD_OR_PARENT_TAP",
+      "trigger": "QUESTION_AUDIO_ENDED_THEN_MODEL_EXAMPLE_ENDED_THEN_VAD_OR_PARENT_TAP",
       "react_once": true,
       "scoring": false,
-      "timeout_hint_seconds": 5
+      "timeout_hint_seconds": 5,
+      "question_dialogue_id": "S03-N034",
+      "question_end_boundary_seconds": 215,
+      "resume_dialogue_id": "S03-N035",
+      "react_shot_id": "B04-C04",
+      "demo_shot_id": "B04-C02",
+      "timing_model": "EXTERNAL_PAUSE_AT_NARRATIVE_BOUNDARY",
+      "narrative_wait_seconds": 0,
+      "model_example_first_pass_required": true,
+      "model_example_narrative_counted": false,
+      "parent_tap_can_skip_model_and_react": true,
+      "repeat_example_after_no_response_seconds": 5,
+      "example_text": "Open the drawer!",
+      "example_dialogue_id": "S03-P04-EXAMPLE",
+      "model_example_context": "OUT_OF_STORY_GUIDANCE_DOES_NOT_CHANGE_CHARACTER_KNOWLEDGE_OR_TRIGGER_REACTION",
+      "example_voice_direction": {
+        "listener": "윤수 (본편 밖 예시)",
+        "intention": "서랍 손잡이 동작을 여는 표현으로 안내한다",
+        "emotion": "조심스럽고 즐거운 협력",
+        "delivery_ko": "Open은 무거운 손잡이를 천천히 당기듯 부드럽게 시작한다. drawer 끝을 명료하게 두되 크고 힘센 소리로 외치지 않는다.",
+        "direction_en": "Begin Open gently, matching a careful pull of the drawer; keep drawer clear without shouting or straining the voice.",
+        "pace_wpm": 78,
+        "energy": 2,
+        "emphasis": [
+          "Open",
+          "drawer"
+        ],
+        "pause_before_ms": 170,
+        "pause_after_ms": 470,
+        "internal_pauses": [],
+        "avoid": [
+          "힘을 내라는 구호처럼 고함치기"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED",
+        "profile_id": "PINOCCHIO_A"
+      }
     },
     {
       "id": "S03-P05",
@@ -117,10 +264,45 @@
       "index": 5,
       "beat": "B05",
       "wait_time_counted": false,
-      "trigger": "QUESTION_AUDIO_ENDED_THEN_VAD_OR_PARENT_TAP",
+      "trigger": "QUESTION_AUDIO_ENDED_THEN_MODEL_EXAMPLE_ENDED_THEN_VAD_OR_PARENT_TAP",
       "react_once": true,
       "scoring": false,
-      "timeout_hint_seconds": 5
+      "timeout_hint_seconds": 5,
+      "question_dialogue_id": "S03-N044",
+      "question_end_boundary_seconds": 270,
+      "resume_dialogue_id": "S03-N045",
+      "react_shot_id": "B05-C04",
+      "demo_shot_id": "B05-C02",
+      "timing_model": "EXTERNAL_PAUSE_AT_NARRATIVE_BOUNDARY",
+      "narrative_wait_seconds": 0,
+      "model_example_first_pass_required": true,
+      "model_example_narrative_counted": false,
+      "parent_tap_can_skip_model_and_react": true,
+      "repeat_example_after_no_response_seconds": 5,
+      "example_text": "Lift the book!",
+      "example_dialogue_id": "S03-P05-EXAMPLE",
+      "model_example_context": "OUT_OF_STORY_GUIDANCE_DOES_NOT_CHANGE_CHARACTER_KNOWLEDGE_OR_TRIGGER_REACTION",
+      "example_voice_direction": {
+        "listener": "윤수 (본편 밖 예시)",
+        "intention": "책을 들어 보는 표현을 안전한 몸짓과 연결한다",
+        "emotion": "집중하는 호기심",
+        "delivery_ko": "Lift the를 끊지 말고 book을 조심히 받쳐 드는 느낌으로 마친다. 아이가 따라 할 여유를 말 뒤에 남긴다.",
+        "direction_en": "Keep Lift the connected, then support book gently as if lifting it with both hands; leave an inviting silence afterward.",
+        "pace_wpm": 80,
+        "energy": 2,
+        "emphasis": [
+          "Lift",
+          "book"
+        ],
+        "pause_before_ms": 160,
+        "pause_after_ms": 470,
+        "internal_pauses": [],
+        "avoid": [
+          "책을 던지듯 강하게 튀는 끝소리"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED",
+        "profile_id": "PINOCCHIO_A"
+      }
     },
     {
       "id": "I03",
@@ -128,7 +310,7 @@
       "cue": "Under the chair!",
       "speaker": "제페토",
       "prompt": "Yoonsu, where is Pinocchio's hat?",
-      "demo": "원본 시각 단서: 의자 아래 모자 끝만 보임, 사람은 아직 모름. 영어 문장 도움 음성으로 'Under the chair!'를 제공 가능.",
+      "demo": "관객에게만 의자 아래 고정된 빨간 끝이 보인다. 원본 질문 뒤 본편을 멈춘 외부 예시로 Under the chair!를 한 번 제공한다. 배우의 발견·허리 숙이기는 아동 입력이나 보호자 터치 뒤 시작한다.",
       "wait": "모자 의자 밑 고정, 제페토 허리 곧게 편 상태; 음성 종료 후 WAIT.",
       "react": "제페토 허리 숙이기→의자 아래 모자 잡기→피노키오에게 건네기.",
       "resume": "Ah! Here it is!",
@@ -137,10 +319,45 @@
       "index": 6,
       "beat": "B06",
       "wait_time_counted": false,
-      "trigger": "QUESTION_AUDIO_ENDED_THEN_VAD_OR_PARENT_TAP",
+      "trigger": "QUESTION_AUDIO_ENDED_THEN_MODEL_EXAMPLE_ENDED_THEN_VAD_OR_PARENT_TAP",
       "react_once": true,
       "scoring": false,
-      "timeout_hint_seconds": 5
+      "timeout_hint_seconds": 5,
+      "question_dialogue_id": "S03-U011",
+      "question_end_boundary_seconds": 317,
+      "resume_dialogue_id": "S03-U012",
+      "react_shot_id": "B06-C04",
+      "demo_shot_id": "B06-C03",
+      "timing_model": "EXTERNAL_PAUSE_AT_NARRATIVE_BOUNDARY",
+      "narrative_wait_seconds": 0,
+      "model_example_first_pass_required": true,
+      "model_example_narrative_counted": false,
+      "parent_tap_can_skip_model_and_react": true,
+      "repeat_example_after_no_response_seconds": 5,
+      "example_text": "Under the chair!",
+      "example_dialogue_id": "I03-EXAMPLE",
+      "model_example_context": "OUT_OF_STORY_GUIDANCE_DOES_NOT_CHANGE_CHARACTER_KNOWLEDGE_OR_TRIGGER_REACTION",
+      "example_voice_direction": {
+        "listener": "윤수 (본편 밖 예시)",
+        "intention": "관객에게 보이는 위치 표현을 본편 밖에서 한 번 들려준다",
+        "emotion": "차분한 발견 도움",
+        "delivery_ko": "Under the chair는 위치를 보여 주는 예시로 편하게 연결한다. 제페토가 본편 안에서 이미 모자를 찾은 듯한 Ah나 웃음을 추가하지 않는다.",
+        "direction_en": "Model the location phrase outside the story clock, connected and clear; do not perform Geppetto’s in-story discovery or add an Ah.",
+        "pace_wpm": 78,
+        "energy": 2,
+        "emphasis": [
+          "Under",
+          "chair"
+        ],
+        "pause_before_ms": 180,
+        "pause_after_ms": 500,
+        "internal_pauses": [],
+        "avoid": [
+          "예시 때문에 본편 등장인물의 지식이 먼저 바뀐 듯한 발견 연기"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED",
+        "profile_id": "GEPPETTO_A"
+      }
     },
     {
       "id": "S03-P06",
@@ -157,10 +374,44 @@
       "index": 7,
       "beat": "B07",
       "wait_time_counted": false,
-      "trigger": "QUESTION_AUDIO_ENDED_THEN_VAD_OR_PARENT_TAP",
+      "trigger": "QUESTION_AUDIO_ENDED_THEN_MODEL_EXAMPLE_ENDED_THEN_VAD_OR_PARENT_TAP",
       "react_once": true,
       "scoring": false,
-      "timeout_hint_seconds": 5
+      "timeout_hint_seconds": 5,
+      "question_dialogue_id": "S03-N060",
+      "question_end_boundary_seconds": 374,
+      "resume_dialogue_id": "S03-N061",
+      "react_shot_id": "B07-C04",
+      "demo_shot_id": "B07-C02",
+      "timing_model": "EXTERNAL_PAUSE_AT_NARRATIVE_BOUNDARY",
+      "narrative_wait_seconds": 0,
+      "model_example_first_pass_required": true,
+      "model_example_narrative_counted": false,
+      "parent_tap_can_skip_model_and_react": true,
+      "repeat_example_after_no_response_seconds": 5,
+      "example_text": "Hold it up!",
+      "example_dialogue_id": "S03-P06-EXAMPLE",
+      "model_example_context": "OUT_OF_STORY_GUIDANCE_DOES_NOT_CHANGE_CHARACTER_KNOWLEDGE_OR_TRIGGER_REACTION",
+      "example_voice_direction": {
+        "listener": "윤수 (본편 밖 예시)",
+        "intention": "모자를 들어 보이는 동작에 짧은 표현을 붙인다",
+        "emotion": "가벼운 격려",
+        "delivery_ko": "Hold it은 부드럽게 붙이고 up을 손이 올라가는 방향처럼 조금 밝힌다. 모자를 쓰는 결과까지 예고하지 않는다.",
+        "direction_en": "Connect Hold it and lift up lightly with the gesture; model only raising the hat for a look, not wearing it yet.",
+        "pace_wpm": 84,
+        "energy": 2,
+        "emphasis": [
+          "up"
+        ],
+        "pause_before_ms": 150,
+        "pause_after_ms": 450,
+        "internal_pauses": [],
+        "avoid": [
+          "모자 착용 성공까지 미리 환호하기"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED",
+        "profile_id": "PINOCCHIO_A"
+      }
     },
     {
       "id": "I04",
@@ -177,10 +428,44 @@
       "index": 8,
       "beat": "B08",
       "wait_time_counted": false,
-      "trigger": "QUESTION_AUDIO_ENDED_THEN_VAD_OR_PARENT_TAP",
+      "trigger": "QUESTION_AUDIO_ENDED_THEN_MODEL_EXAMPLE_ENDED_THEN_VAD_OR_PARENT_TAP",
       "react_once": true,
       "scoring": false,
-      "timeout_hint_seconds": 5
+      "timeout_hint_seconds": 5,
+      "question_dialogue_id": "S03-U016",
+      "question_end_boundary_seconds": 420,
+      "resume_dialogue_id": "S03-U017",
+      "react_shot_id": "B08-C04",
+      "demo_shot_id": "B08-C02",
+      "timing_model": "EXTERNAL_PAUSE_AT_NARRATIVE_BOUNDARY",
+      "narrative_wait_seconds": 0,
+      "model_example_first_pass_required": true,
+      "model_example_narrative_counted": false,
+      "parent_tap_can_skip_model_and_react": true,
+      "repeat_example_after_no_response_seconds": 5,
+      "example_text": "Put it on!",
+      "example_dialogue_id": "I04-EXAMPLE",
+      "model_example_context": "OUT_OF_STORY_GUIDANCE_DOES_NOT_CHANGE_CHARACTER_KNOWLEDGE_OR_TRIGGER_REACTION",
+      "example_voice_direction": {
+        "listener": "윤수 (본편 밖 예시)",
+        "intention": "모자를 쓰는 원본 세 단어를 부담 없이 들려준다",
+        "emotion": "자신 있게 함께 해보는 마음",
+        "delivery_ko": "Put it on을 한 호흡의 권유로 내고 on에서 편안히 마친다. 정답을 요구하거나 실제 착용 성공을 앞당기는 환호는 없다.",
+        "direction_en": "Model Put it on in one friendly, confident breath outside the story clock; do not demand correctness or celebrate the wearing before input.",
+        "pace_wpm": 82,
+        "energy": 2,
+        "emphasis": [
+          "on"
+        ],
+        "pause_before_ms": 170,
+        "pause_after_ms": 500,
+        "internal_pauses": [],
+        "avoid": [
+          "정답 발음을 재촉하거나 착용 반응을 먼저 연기하기"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED",
+        "profile_id": "PINOCCHIO_A"
+      }
     },
     {
       "id": "S03-P07",
@@ -190,17 +475,52 @@
       "prompt": "Yoonsu, help me open the schoolbag!",
       "demo": "제페토가 가방 뚜껑을 2cm 들었다 내리며 경첩 동작 시범.",
       "wait": "가방 뚜껑 닫힘, 책은 탁자, 제페토 손잡이 접촉.",
-      "react": "가방 열기→제페토 책 넣기→피노키오가 책 있는지 확인.",
+      "react": "가방 플랩 열기→제페토가 같은 책을 한 번 넣어 안착→피노키오가 확인. 이후 후속 대사는 이미 완료된 책 위치를 말함.",
       "resume": "It's open!",
       "fallback": "가방 아이콘 터치/보호자 진행",
       "meaning": "원본 학교 준비 중 책 넣기 과정을 확대",
       "index": 9,
       "beat": "B09",
       "wait_time_counted": false,
-      "trigger": "QUESTION_AUDIO_ENDED_THEN_VAD_OR_PARENT_TAP",
+      "trigger": "QUESTION_AUDIO_ENDED_THEN_MODEL_EXAMPLE_ENDED_THEN_VAD_OR_PARENT_TAP",
       "react_once": true,
       "scoring": false,
-      "timeout_hint_seconds": 5
+      "timeout_hint_seconds": 5,
+      "question_dialogue_id": "S03-N075",
+      "question_end_boundary_seconds": 481,
+      "resume_dialogue_id": "S03-N076",
+      "react_shot_id": "B09-C04",
+      "demo_shot_id": "B09-C03",
+      "timing_model": "EXTERNAL_PAUSE_AT_NARRATIVE_BOUNDARY",
+      "narrative_wait_seconds": 0,
+      "model_example_first_pass_required": true,
+      "model_example_narrative_counted": false,
+      "parent_tap_can_skip_model_and_react": true,
+      "repeat_example_after_no_response_seconds": 5,
+      "example_text": "Open the bag!",
+      "example_dialogue_id": "S03-P07-EXAMPLE",
+      "model_example_context": "OUT_OF_STORY_GUIDANCE_DOES_NOT_CHANGE_CHARACTER_KNOWLEDGE_OR_TRIGGER_REACTION",
+      "example_voice_direction": {
+        "listener": "윤수 (본편 밖 예시)",
+        "intention": "닫힌 가방을 여는 표현을 플랩 동작과 연결한다",
+        "emotion": "다정하고 실용적인 안내",
+        "delivery_ko": "Open the bag을 손자의 눈높이에 맞춘 낮은 할아버지 목소리로 한 번 연결한다. bag에 물건을 가리키는 작은 강세만 둔다.",
+        "direction_en": "Offer Open the bag once in the same warm elderly voice at the child’s level; give bag a small pointing emphasis, not a test accent.",
+        "pace_wpm": 79,
+        "energy": 2,
+        "emphasis": [
+          "Open",
+          "bag"
+        ],
+        "pause_before_ms": 180,
+        "pause_after_ms": 470,
+        "internal_pauses": [],
+        "avoid": [
+          "젊은 교사 목소리로 바뀌거나 세 단어를 채점하기"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED",
+        "profile_id": "GEPPETTO_A"
+      }
     },
     {
       "id": "S03-P08",
@@ -209,7 +529,7 @@
       "speaker": "제페토",
       "prompt": "Yoonsu, help us tie the bag!",
       "demo": "제페토가 매듭의 첫 교차만 시연하고 끈을 잡은 상태로 멈춤.",
-      "wait": "가방 플랩·끈 미결속, 매듭 끈이 풀리지 않게 두 손으로 잡고 대기.",
+      "wait": "피노키오가 닫힌 위치의 플랩을 지지하고 제페토가 결속 끈의 첫 교차만 잡고 있음. 매듭 당김·고정 전이며 이 상태의 예시/입력 대기는 본편 시간 밖.",
       "react": "가방끈 교차→당겨 고정→안전한 책가방 완성→피노키오의 준비 완료 표정.",
       "resume": "Now the book is safe!",
       "fallback": "가방끈 아이콘 터치/보호자 진행",
@@ -217,10 +537,47 @@
       "index": 10,
       "beat": "B10",
       "wait_time_counted": false,
-      "trigger": "QUESTION_AUDIO_ENDED_THEN_VAD_OR_PARENT_TAP",
+      "trigger": "QUESTION_AUDIO_ENDED_THEN_MODEL_EXAMPLE_ENDED_THEN_VAD_OR_PARENT_TAP",
       "react_once": true,
       "scoring": false,
-      "timeout_hint_seconds": 5
+      "timeout_hint_seconds": 5,
+      "question_dialogue_id": "S03-N085",
+      "question_end_boundary_seconds": 534,
+      "resume_dialogue_id": "S03-N086",
+      "react_shot_id": "B10-C04",
+      "demo_shot_id": "B10-C02",
+      "timing_model": "EXTERNAL_PAUSE_AT_NARRATIVE_BOUNDARY",
+      "narrative_wait_seconds": 0,
+      "model_example_first_pass_required": true,
+      "model_example_narrative_counted": false,
+      "parent_tap_can_skip_model_and_react": true,
+      "repeat_example_after_no_response_seconds": 5,
+      "example_text": "Tie the strap!",
+      "example_dialogue_id": "S03-P08-EXAMPLE",
+      "model_example_context": "OUT_OF_STORY_GUIDANCE_DOES_NOT_CHANGE_CHARACTER_KNOWLEDGE_OR_TRIGGER_REACTION",
+      "example_voice_direction": {
+        "listener": "윤수 (본편 밖 예시)",
+        "intention": "가방의 마지막 끈 결속에 쓸 표현을 알려 준다",
+        "emotion": "여유 있게 함께 마무리함",
+        "delivery_ko": "Tie the를 자연스럽게 묶어 말하고 strap은 서두르지 않고 명확히 끝낸다. 동작을 성공시켰다는 말투 대신 시도할 여유를 준다.",
+        "direction_en": "Connect Tie the naturally and finish strap clearly at an unhurried pace; invite the attempt instead of pretending the knot is already finished.",
+        "pace_wpm": 77,
+        "energy": 2,
+        "emphasis": [
+          "Tie",
+          "strap"
+        ],
+        "pause_before_ms": 180,
+        "pause_after_ms": 520,
+        "internal_pauses": [],
+        "avoid": [
+          "매듭이 이미 완성된 듯한 축하 또는 군대식 명령"
+        ],
+        "timing_basis": "PLANNED_NOT_MEASURED",
+        "profile_id": "GEPPETTO_A"
+      }
     }
-  ]
+  ],
+  "version": "2.1",
+  "revision": "2.1_VOICE_DIRECTED_CORRECTION"
 }

@@ -1,0 +1,89 @@
+{
+  "scope": "DIRECTED_DESIGN_AND_JOB_EXPORT_ONLY",
+  "results": [
+    {
+      "scene": "S03",
+      "original_lines": 22,
+      "new_lines": 92,
+      "directed_story_lines": 114,
+      "directed_model_examples": 10,
+      "shots": 50,
+      "narrative_seconds_planned": 598,
+      "largest_planning_budget_fraction": 0.9995,
+      "status": "DIRECTED_DESIGN_PASS_ONLY",
+      "audio_synthesis": "NOT_RUN",
+      "listening_approval": "NOT_RUN"
+    },
+    {
+      "scene": "S04",
+      "original_lines": 32,
+      "new_lines": 77,
+      "directed_story_lines": 109,
+      "directed_model_examples": 10,
+      "shots": 50,
+      "narrative_seconds_planned": 527,
+      "largest_planning_budget_fraction": 0.9962,
+      "status": "DIRECTED_DESIGN_PASS_ONLY",
+      "audio_synthesis": "NOT_RUN",
+      "listening_approval": "NOT_RUN"
+    },
+    {
+      "scene": "S05",
+      "original_lines": 18,
+      "new_lines": 69,
+      "directed_story_lines": 87,
+      "directed_model_examples": 10,
+      "shots": 50,
+      "narrative_seconds_planned": 472,
+      "largest_planning_budget_fraction": 0.9863,
+      "status": "DIRECTED_DESIGN_PASS_ONLY",
+      "audio_synthesis": "NOT_RUN",
+      "listening_approval": "NOT_RUN"
+    }
+  ],
+  "negative_checks": [
+    {
+      "case": "missing per-line direction",
+      "status": "REJECTED_EXPECTED",
+      "reason": "S03-U001 missing voice direction"
+    },
+    {
+      "case": "wrong character identity",
+      "status": "REJECTED_EXPECTED",
+      "reason": "S03-U001 wrong character profile"
+    },
+    {
+      "case": "canonical text polluted by acting note",
+      "status": "REJECTED_EXPECTED",
+      "reason": "Canonical speech changed"
+    },
+    {
+      "case": "narrative WAIT shot",
+      "status": "REJECTED_EXPECTED",
+      "reason": "Pure WAIT must be outside narrative clock"
+    },
+    {
+      "case": "speech overrun hidden in cut",
+      "status": "REJECTED_EXPECTED",
+      "reason": "Speech/action budget exceeds S03/B10-C05: 1035.14>36"
+    },
+    {
+      "case": "four-word learning cue",
+      "status": "REJECTED_EXPECTED",
+      "reason": "Cue must be exactly three words"
+    },
+    {
+      "case": "microphone opens before first model",
+      "status": "REJECTED_EXPECTED",
+      "reason": "Missing beginner/input rule first_model_before_listen"
+    },
+    {
+      "case": "Cricket landing after first greeting",
+      "status": "REJECTED_EXPECTED",
+      "reason": "First Cricket landing must precede greeting"
+    }
+  ],
+  "audio_synthesis": "NOT_RUN",
+  "listening_review": "NOT_RUN",
+  "s05_final_metadata_correction_revalidated": "Removed obsolete 432-second wording in shot acting; no spoken text, timing or direction change; all S05 exports regenerated and verified."
+}

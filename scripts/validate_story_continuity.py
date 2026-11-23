@@ -141,6 +141,16 @@ def validate(root: Path = ROOT, emit=print) -> dict:
           after["from_shot"] == "B10-C05" and after["to_source_shot"] == "S06-C01",
           "boundary shot references point to the authored S04/S05 and canonical S06")
     entry_lock, exit_lock = before["state_lock"], after["state_lock"]
+    check(all(lock.get("schoolbook_currently_open") is False and
+              lock.get("schoolbook_viewed_with_geppetto_in_S03") is True and
+              lock.get("schoolbook_opened_since_packed") is False and
+              lock.get("schoolbook_used_in_class") is False and
+              "schoolbook_opened" not in lock for lock in (entry_lock, exit_lock)),
+          "book's current closed state is distinct from S03 viewing and later nonuse")
+    visible = exit_lock.get("unnamed_puppets", {})
+    check(visible.get("count") == 2 and visible.get("location") == "STAGE_FRONT_RIGHT_VISIBLE_WAITING_AREA" and
+          visible.get("visible_through") == "S06-U003" and visible.get("pip_included") is False and visible.get("speaking") is False,
+          "S06 first puppet observation has two visible unnamed targets without opening the curtain or introducing Pip")
     check(entry_lock["shoes"] == "DRY" and entry_lock["puppet_show_revealed"] is False and
           exit_lock["main_curtain"] == "CLOSED" and exit_lock["pip_introduced"] is False and
           exit_lock["puppet_rescued"] is False and exit_lock["school_missed"] is False and

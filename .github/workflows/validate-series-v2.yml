@@ -1,4 +1,4 @@
-name: Validate Pinocchio V2 stories S02-S05 and 12-scene continuity
+name: Validate directed S03-S05 stories and continuity
 on:
   push:
     branches:
@@ -11,6 +11,7 @@ on:
       - "scenes/S03/**"
       - "scenes/S04/**"
       - "scenes/S05/**"
+      - "scripts/voice_direction_tools.py"
       - "scripts/validate_series_v2.py"
       - "scripts/validate_s02_design.py"
       - "scripts/validate_s03_design.py"
@@ -31,6 +32,7 @@ on:
       - "scenes/S03/**"
       - "scenes/S04/**"
       - "scenes/S05/**"
+      - "scripts/voice_direction_tools.py"
       - "scripts/validate_series_v2.py"
       - "scripts/validate_s02_design.py"
       - "scripts/validate_s03_design.py"
@@ -47,22 +49,43 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Detect whether completed S02 inputs actually changed
+        id: scope
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          python3 - <<'PY_SCOPE'
+          import os, re, subprocess
+          base = os.environ.get("BASE_SHA", "")
+          head = os.environ["GITHUB_SHA"]
+          if base and set(base) != {"0"}:
+              exists = subprocess.run(["git", "cat-file", "-e", base + "^{commit}"], capture_output=True).returncode == 0
+              if not exists:
+                  subprocess.run(["git", "fetch", "--no-tags", "--depth=1", "origin", base], check=True)
+              names = subprocess.check_output(["git", "diff", "--name-only", base, head], text=True).splitlines()
+          else:
+              names = subprocess.check_output(["git", "show", "--format=", "--name-only", head], text=True).splitlines()
+          changed = any(re.match(r"^(scenes/S02/|scripts/(validate_s02_design|s02_approved_voice_tts)\.py$|assets/voice_refs/v6/)", p) for p in names)
+          with open(os.environ["GITHUB_OUTPUT"], "a") as out:
+              out.write("s02_changed=" + str(changed).lower() + "\n")
+          print("S02 inputs changed:", changed, "(unchanged completed episodes are not retested)")
+          PY_SCOPE
       - name: Validate immutable V1.1 and series policy
         run: python3 scripts/validate_series_v2.py
-      - name: Validate S02 authored 50-cut screenplay
+      - name: Validate S02 only when its inputs changed
+        if: steps.scope.outputs.s02_changed == 'true'
         run: python3 scripts/validate_s02_design.py
-      - name: Validate S03 authored 50-cut screenplay
-        run: python3 scripts/validate_s03_design.py
-      - name: Validate S04 authored 50-cut screenplay and 10 interactions
-        run: python3 scripts/validate_s04_design.py
-      - name: Verify voice reference MP3 S02
+      - name: Validate S03-S05 directed dialogue, timing and known defect rejection
+        run: python3 scripts/voice_direction_tools.py self-test --scenes S03 S04 S05
+      - name: Verify S02 voice references only when its inputs changed
+        if: steps.scope.outputs.s02_changed == 'true'
         run: python3 scripts/s02_approved_voice_tts.py
       - name: Verify voice reference MP3 S03
         run: python3 scripts/s03_approved_voice_tts.py
       - name: Verify voice references and blocked Cricket voice S04
         run: python3 scripts/s04_approved_voice_tts.py
-      - name: Validate S05 screenplay and external interaction pauses
-        run: python3 scripts/validate_s05_design.py
       - name: Validate all 11 boundaries in one 12-scene story
         run: python3 scripts/validate_story_continuity.py
       - name: Verify S05 reference voices and report blocked Cricket

@@ -1,48 +1,55 @@
-# S03 V1.1 원본 대조 및 신규 증분
+# S03 원본 보존과 V2.1 수정 내역
 
-**원본 S03 22개 영문 대사 보존:** ChatGPT 설계에서 22/22, 같은 화자·문구·순서. 신규 대사 92개. 신규 윤수 참여 8회 + 기존 I03·I04 2회 = 10회.
+사용자가 검토 지적 수정과 문장별 음성 연기 작성을 요청한 범위다. 정본 두 파일과 1·2화 완료본은 변경하지 않는다. 실제 음성·렌더·립싱크는 NOT_RUN이다.
 
-| V1.1 순번 | 화자 | 원본 영문 |
-|---:|---|---|
-| 1 | 제페토 | Today is your first day at school! |
-| 2 | 피노키오 | School? |
-| 3 | 제페토 | Yes! You'll meet new friends. |
-| 4 | 제페토 | And you'll learn many wonderful things. |
-| 5 | 피노키오 | That sounds exciting! |
-| 6 | 피노키오 | Can I wear my new hat? |
-| 7 | 제페토 | Of course. |
-| 8 | 제페토 | Now, where did I put that red hat? |
-| 9 | 피노키오 | It's not here! |
-| 10 | 제페토 | Hmm. Yoonsu can see the whole room. |
-| 11 | 제페토 | Yoonsu, where is Pinocchio's hat? |
-| 12 | 제페토 | Ah! Here it is! |
-| 13 | 피노키오 | My red hat! |
-| 14 | 피노키오 | Grandpa, this is tricky. |
-| 15 | 제페토 | You're still learning. |
-| 16 | 피노키오 | Yoonsu, what should I do with my hat? |
-| 17 | 피노키오 | Now I'm ready! |
-| 18 | 제페토 | Almost. Don't forget your schoolbag. |
-| 19 | 제페토 | Listen carefully, Pinocchio. |
-| 20 | 제페토 | Go to school and come home before supper. |
-| 21 | 피노키오 | I will, Grandpa! |
-| 22 | 내레이션 | With his red hat and little schoolbag, Pinocchio was ready for his first adventure outside. |
+**수량:** 원본 22 + 신규 92 = 본편 114 발화. 별도 모델 예시10개. 10비트·50컷·10참여. **수정 후 본편 계획 598초(9:58)**, 실측값 아님.
 
-## V2 신규 참여·인과관계
-- **B01 / S03-P01 / 00:00–00:43:** 제페토가 '학교에 간다'는 추상적 이야기를 그림책의 실제 행동으로 보여줌. 영어를 몰라도 그림을 보면 사건을 따라갈 수 있음.
-- **B02 / S03-P02 / 00:43–01:27:** 학교 친구를 상상하며 인형극이 아닌 실제 모방놀이로 인사·나누기 관계를 익힘; S02에서 윤수에게 인사했던 경험을 연결.
-- **B03 / S03-P03 / 01:27–02:11:** 원래 모자 찾기 발단 그대로. 머리 위에 모자가 없다는 신체 단서를 먼저 발견하지만 위치는 아직 말하지 않음.
-- **B04 / S03-P04 / 02:11–02:57:** 수색의 첫 번째 실패. 서랍 레일과 손 접촉, 제페토·피노키오가 스스로 관찰하는 연기를 구현.
-- **B05 / S03-P05 / 02:57–03:41:** 탁자 위의 학교 책을 이용해 두 번째 수색 실패를 구현하되 책의 위치 연속성을 보존. 관객에게 의자 아래 빨간 단서를 조금 더 명확히 보여준다.
-- **B06 / I03 / 03:41–04:31:** V1.1의 I03 모자 위치·문장·반응을 절대 변경하지 않고 첫 번째 큰 서사 보상 제공.
-- **B07 / S03-P06 / 04:31–05:15:** 기존 '모자를 거꾸로 든다'를 실제 3D 오브젝트 회전, 부끄러움과 유머로 확장. I04의 해결을 빼앗지 않음.
-- **B08 / I04 / 05:15–06:01:** V1.1의 I04를 그대로 살려 거꾸로 든 모자를 회전해 정확히 머리에 쓰는 사건. 거울과 표정/자율 기쁨 표현.
-- **B09 / S03-P07 / 06:01–06:45:** 모자 사건에서 가방/책을 챙기는 준비로 자연스럽게 연결. 원본 제페토의 책 넣기 주체를 그대로 유지.
-- **B10 / S03-P08 / 06:45–07:36:** 학교 갈 준비 완료와 '저녁 전에 돌아오라'는 약속을 감정적으로 마무리. S04 집 대문을 열거나 외출을 미리 시작하지 않음.
+## 원본 발화 1:1 매핑
 
-## 기존 사건 잠금 규칙
-- 모자 찾기 I03 이전 붉은 모자 끝은 의자 아래에 있으며, 본편 등장인물은 아직 발견하지 못한다. 원본 I03 → 제페토가 몸을 숙여 꺼내 피노키오에게 전달.
-- I04 전 모자는 거꾸로 머리 위에 든 상태; I04 → 회전·착용·챙 잡기·거울 앞 미소.
-- 원본 S03 마지막에 제페토가 책을 가방에 넣고 끈을 묶으며 등교·귀가 약속을 한다. S04의 대문 열기/밖으로 나가기 사건은 침범하지 않는다.
-- S02의 실제 3D 구현 파일은 브랜치에 확인되지 않아 S02 설계 JSON과 음성/캐릭터 참조만 상속. 3D 구현 PASS는 주장하지 않는다.
+|ID|화자|원본 영어|수정 컷|
+|---|---|---|---|
+|S03-U001|제페토|“Today is your first day at school!”|B01-C01|
+|S03-U002|피노키오|“School?”|B01-C01|
+|S03-U003|제페토|“Yes! You'll meet new friends.”|B01-C01|
+|S03-U004|제페토|“And you'll learn many wonderful things.”|B01-C01|
+|S03-U005|피노키오|“That sounds exciting!”|B03-C01|
+|S03-U006|피노키오|“Can I wear my new hat?”|B03-C01|
+|S03-U007|제페토|“Of course.”|B03-C01|
+|S03-U008|제페토|“Now, where did I put that red hat?”|B03-C01|
+|S03-U009|피노키오|“It's not here!”|B04-C04|
+|S03-U010|제페토|“Hmm. Yoonsu can see the whole room.”|B06-C02|
+|S03-U011|제페토|“Yoonsu, where is Pinocchio's hat?”|B06-C03|
+|S03-U012|제페토|“Ah! Here it is!”|B06-C04|
+|S03-U013|피노키오|“My red hat!”|B06-C04|
+|S03-U014|피노키오|“Grandpa, this is tricky.”|B07-C05|
+|S03-U015|제페토|“You're still learning.”|B07-C05|
+|S03-U016|피노키오|“Yoonsu, what should I do with my hat?”|B08-C03|
+|S03-U017|피노키오|“Now I'm ready!”|B08-C04|
+|S03-U018|제페토|“Almost. Don't forget your schoolbag.”|B08-C04|
+|S03-U019|제페토|“Listen carefully, Pinocchio.”|B10-C04|
+|S03-U020|제페토|“Go to school and come home before supper.”|B10-C04|
+|S03-U021|피노키오|“I will, Grandpa!”|B10-C05|
+|S03-U022|내레이션|“With his red hat and little schoolbag, Pinocchio was ready for his first adventure outside.”|B10-C05|
 
-**승인 범위:** 새 대사·추가 놀이·연출의 최종 확정은 사용자 검토 후. 원본 자료 S01/S02를 덮어쓰지 않는다.
+## 참여10회와 예시
+
+|ID|세 단어 모델|질문 ID|첫 재개 ID|본편 정지 경계|
+|---|---|---|---|---|
+|S03-P01|Turn the page!|S03-N006|S03-N007|46초|
+|S03-P02|Put it here!|S03-N016|S03-N017|106초|
+|S03-P03|Touch your head!|S03-N025|S03-N026|169초|
+|S03-P04|Open the drawer!|S03-N034|S03-N035|215초|
+|S03-P05|Lift the book!|S03-N044|S03-N045|270초|
+|I03|Under the chair!|S03-U011|S03-U012|317초|
+|S03-P06|Hold it up!|S03-N060|S03-N061|374초|
+|I04|Put it on!|S03-U016|S03-U017|420초|
+|S03-P07|Open the bag!|S03-N075|S03-N076|481초|
+|S03-P08|Tie the strap!|S03-N085|S03-N086|534초|
+
+모델 예시는 첫 실행에서 질문 후 외부 시계로 한 번 들려준 뒤 입력을 받는다. 정확한 단어/발음 채점은 하지 않으며 부모 터치로 예시를 생략하고 진행할 수 있다. 예시 재생 중 마이크는 꺼지고 예시·WAIT는 본편 분량에 포함되지 않는다.
+
+## 수정 근거
+
+[기존 검토 보고서](../../reviews/S03_S05_REVIEW_2026-11-23.md)와 [수정·음성 지시 결과](../../docs/series_v2/S03_S05_CORRECTION_AND_VOICE_REPORT.md)를 함께 본다. 원본 대사 문구·화자·상대 순서는 그대로이며 변경된 신규 대사는 수정 기록에 별도로 적는다.
+
+[각 대사의 음성 제작표](voice_direction_plan.json) · [캐릭터 음색 기준](../../docs/series_v2/VOICE_PERFORMANCE_BIBLE_V2_1.md)

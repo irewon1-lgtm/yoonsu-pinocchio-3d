@@ -1,0 +1,1223 @@
+{
+  "scene": "S04",
+  "audit_scope": "LOCKED_REFERENCES_AND_PER_LINE_DIRECTION_EXPORT_ONLY",
+  "reference_integrity": "PASS",
+  "direction_export_integrity": "PASS",
+  "story_dialogue_count": 109,
+  "model_example_count": 10,
+  "first_pass_model_examples_required": 10,
+  "optional_example_count": 0,
+  "example_replays_optional": true,
+  "story_speaker_counts": {
+    "제페토": 13,
+    "피노키오": 61,
+    "내레이션": 8,
+    "귀뚜라미": 27
+  },
+  "model_example_speaker_counts": {
+    "제페토": 2,
+    "피노키오": 4,
+    "귀뚜라미": 4
+  },
+  "blocked_speakers": [
+    "귀뚜라미"
+  ],
+  "full_scene_voice_gate": "BLOCKED_RESOURCE",
+  "audio_synthesis": "NOT_RUN",
+  "audio_duration_and_lipsync": "NOT_RUN",
+  "direction_adapter_application": "NOT_RUN",
+  "listening_review": "NOT_RUN",
+  "voice_plan": "scenes/S04/voice_direction_plan.json",
+  "voice_assignments": [
+    {
+      "id": "S04-U001",
+      "speaker": "제페토",
+      "text": "Here we are.",
+      "kind": "ORIGINAL",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U002",
+      "speaker": "제페토",
+      "text": "This road will take you to school.",
+      "kind": "ORIGINAL",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U003",
+      "speaker": "피노키오",
+      "text": "Everything looks so big!",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U004",
+      "speaker": "제페토",
+      "text": "And everything is new to you.",
+      "kind": "ORIGINAL",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N001",
+      "speaker": "피노키오",
+      "text": "The sun is so bright!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N002",
+      "speaker": "제페토",
+      "text": "The world is full of little wonders.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N003",
+      "speaker": "피노키오",
+      "text": "I see the trees, but where is the school?",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N004",
+      "speaker": "제페토",
+      "text": "Look beyond the houses.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N005",
+      "speaker": "제페토",
+      "text": "Yoonsu, help Pinocchio see the school!",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N006",
+      "speaker": "피노키오",
+      "text": "A little roof! I can see it!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N007",
+      "speaker": "제페토",
+      "text": "Yes, it's a long way, but we can begin here.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N008",
+      "speaker": "피노키오",
+      "text": "My hat and bag are ready.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-P01-EXAMPLE",
+      "speaker": "제페토",
+      "text": "Look over there!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N009",
+      "speaker": "피노키오",
+      "text": "Grandpa, my heart is beating fast.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N010",
+      "speaker": "제페토",
+      "text": "A little fear is okay.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N011",
+      "speaker": "피노키오",
+      "text": "What if I take the wrong step?",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N012",
+      "speaker": "제페토",
+      "text": "Look ahead and walk slowly.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U005",
+      "speaker": "피노키오",
+      "text": "Grandpa, what should I do first?",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U006",
+      "speaker": "제페토",
+      "text": "Let's ask our little friend.",
+      "kind": "ORIGINAL",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U007",
+      "speaker": "제페토",
+      "text": "Yoonsu, where should Pinocchio go today?",
+      "kind": "ORIGINAL",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U008",
+      "speaker": "피노키오",
+      "text": "Goodbye, Grandpa!",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U009",
+      "speaker": "제페토",
+      "text": "Have a lovely day!",
+      "kind": "ORIGINAL",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N013",
+      "speaker": "피노키오",
+      "text": "I'll keep walking, Grandpa!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N014",
+      "speaker": "제페토",
+      "text": "And I'll be here when you come home.",
+      "kind": "NEW",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "I05-EXAMPLE",
+      "speaker": "제페토",
+      "text": "Go to school!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "GEPPETTO_A",
+      "reference_slug": "geppetto",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U010",
+      "speaker": "내레이션",
+      "text": "Pinocchio walked along the sunny road.",
+      "kind": "ORIGINAL",
+      "profile_id": "NARRATOR_A",
+      "reference_slug": "narrator",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U011",
+      "speaker": "내레이션",
+      "text": "He saw flowers, butterflies, and little houses.",
+      "kind": "ORIGINAL",
+      "profile_id": "NARRATOR_A",
+      "reference_slug": "narrator",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N015",
+      "speaker": "피노키오",
+      "text": "These flowers are so colorful!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N016",
+      "speaker": "피노키오",
+      "text": "This one is yellow!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N017",
+      "speaker": "피노키오",
+      "text": "Oh, a little flower is bending.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N018",
+      "speaker": "피노키오",
+      "text": "Yoonsu, can you help me look closer?",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N019",
+      "speaker": "피노키오",
+      "text": "It's beautiful and so small!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N020",
+      "speaker": "피노키오",
+      "text": "I will leave it growing here.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N021",
+      "speaker": "피노키오",
+      "text": "Goodbye, little flower!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N022",
+      "speaker": "피노키오",
+      "text": "The road smells like morning.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-P02-EXAMPLE",
+      "speaker": "피노키오",
+      "text": "Watch the flower!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N023",
+      "speaker": "피노키오",
+      "text": "Two little roads! One to the left, one to the right.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U012",
+      "speaker": "내레이션",
+      "text": "Then he came to two different paths.",
+      "kind": "ORIGINAL",
+      "profile_id": "NARRATOR_A",
+      "reference_slug": "narrator",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U013",
+      "speaker": "피노키오",
+      "text": "Oh dear!",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U014",
+      "speaker": "피노키오",
+      "text": "Which way should I go?",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N024",
+      "speaker": "피노키오",
+      "text": "I don't want to get lost.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N025",
+      "speaker": "피노키오",
+      "text": "These pictures must mean something.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N026",
+      "speaker": "피노키오",
+      "text": "Yoonsu, help me stop and look!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N027",
+      "speaker": "피노키오",
+      "text": "I can see two different signs.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N028",
+      "speaker": "피노키오",
+      "text": "I need to know which one says school.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N029",
+      "speaker": "피노키오",
+      "text": "Maybe a friend can help me.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-P03-EXAMPLE",
+      "speaker": "피노키오",
+      "text": "Stop and look!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U015",
+      "speaker": "귀뚜라미",
+      "text": "Good morning, Pinocchio!",
+      "kind": "ORIGINAL",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U016",
+      "speaker": "피노키오",
+      "text": "A talking cricket?",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U017",
+      "speaker": "귀뚜라미",
+      "text": "Yes! And I know these roads.",
+      "kind": "ORIGINAL",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U018",
+      "speaker": "귀뚜라미",
+      "text": "Look at the sign.",
+      "kind": "ORIGINAL",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N030",
+      "speaker": "피노키오",
+      "text": "You are so tiny!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N031",
+      "speaker": "귀뚜라미",
+      "text": "And you're a wooden boy!",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N032",
+      "speaker": "피노키오",
+      "text": "That loose leaf is wobbling.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N033",
+      "speaker": "귀뚜라미",
+      "text": "I need a steady place to stand.",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N034",
+      "speaker": "귀뚜라미",
+      "text": "Yoonsu, help me stand on firm ground!",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N035",
+      "speaker": "피노키오",
+      "text": "There! Now you're standing steady.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N036",
+      "speaker": "귀뚜라미",
+      "text": "Thanks, friends! Let's look at the road.",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N037",
+      "speaker": "피노키오",
+      "text": "I'm glad you're here.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-P04-EXAMPLE",
+      "speaker": "귀뚜라미",
+      "text": "Find firm ground!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N038",
+      "speaker": "귀뚜라미",
+      "text": "Look carefully at the pictures.",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N039",
+      "speaker": "피노키오",
+      "text": "The pictures look different to me.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N040",
+      "speaker": "귀뚜라미",
+      "text": "Yes. Pictures can guide us.",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U019",
+      "speaker": "피노키오",
+      "text": "Yoonsu, which way should I go?",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U020",
+      "speaker": "피노키오",
+      "text": "That's the school!",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U021",
+      "speaker": "귀뚜라미",
+      "text": "Keep walking.",
+      "kind": "ORIGINAL",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N041",
+      "speaker": "피노키오",
+      "text": "I'll follow the school path.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N042",
+      "speaker": "귀뚜라미",
+      "text": "Good. One careful step at a time.",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N043",
+      "speaker": "피노키오",
+      "text": "This way feels right!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N044",
+      "speaker": "귀뚜라미",
+      "text": "Let's go together for a while.",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "I06-EXAMPLE",
+      "speaker": "피노키오",
+      "text": "Follow that sign!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U022",
+      "speaker": "내레이션",
+      "text": "Pinocchio followed the little road.",
+      "kind": "ORIGINAL",
+      "profile_id": "NARRATOR_A",
+      "reference_slug": "narrator",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N045",
+      "speaker": "피노키오",
+      "text": "The wind is dancing with the leaves.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N046",
+      "speaker": "귀뚜라미",
+      "text": "Hold onto your little bag.",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N047",
+      "speaker": "피노키오",
+      "text": "It's bouncing on my shoulder!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N048",
+      "speaker": "피노키오",
+      "text": "I don't want to lose my schoolbook.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N049",
+      "speaker": "귀뚜라미",
+      "text": "Yoonsu, help him keep the bag close!",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N050",
+      "speaker": "피노키오",
+      "text": "My bag is safe!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N051",
+      "speaker": "귀뚜라미",
+      "text": "You remembered to be careful.",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N052",
+      "speaker": "피노키오",
+      "text": "Grandpa will be happy I kept my things safe.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N053",
+      "speaker": "귀뚜라미",
+      "text": "Now let's walk on.",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N054",
+      "speaker": "피노키오",
+      "text": "The road goes a little farther.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-P05-EXAMPLE",
+      "speaker": "귀뚜라미",
+      "text": "Hold your bag!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U023",
+      "speaker": "내레이션",
+      "text": "But after a while, a big puddle blocked his way.",
+      "kind": "ORIGINAL",
+      "profile_id": "NARRATOR_A",
+      "reference_slug": "narrator",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U024",
+      "speaker": "피노키오",
+      "text": "Oh no! My new shoes!",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N055",
+      "speaker": "피노키오",
+      "text": "Look, the sky is inside the water!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N056",
+      "speaker": "귀뚜라미",
+      "text": "That's the reflection of the clouds.",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N057",
+      "speaker": "피노키오",
+      "text": "That little frog landed softly.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N058",
+      "speaker": "피노키오",
+      "text": "Can we see how he lands?",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N059",
+      "speaker": "귀뚜라미",
+      "text": "Yoonsu, let's watch the frog!",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N060",
+      "speaker": "피노키오",
+      "text": "He landed softly!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N061",
+      "speaker": "귀뚜라미",
+      "text": "His legs bend when he lands.",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U025",
+      "speaker": "귀뚜라미",
+      "text": "There's a way across.",
+      "kind": "ORIGINAL",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U026",
+      "speaker": "피노키오",
+      "text": "I don't want wet feet.",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N062",
+      "speaker": "피노키오",
+      "text": "I need to be brave like that frog.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-P06-EXAMPLE",
+      "speaker": "귀뚜라미",
+      "text": "Watch the frog!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N063",
+      "speaker": "귀뚜라미",
+      "text": "Look at the dry ground on the other side.",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N064",
+      "speaker": "피노키오",
+      "text": "It seems very far!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N065",
+      "speaker": "귀뚜라미",
+      "text": "Bend your knees, then push the ground.",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N066",
+      "speaker": "피노키오",
+      "text": "My wooden legs feel strong.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U027",
+      "speaker": "피노키오",
+      "text": "Yoonsu, how can I cross this puddle?",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U028",
+      "speaker": "피노키오",
+      "text": "I did it!",
+      "kind": "ORIGINAL",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U029",
+      "speaker": "귀뚜라미",
+      "text": "Those are some strong wooden legs!",
+      "kind": "ORIGINAL",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N067",
+      "speaker": "피노키오",
+      "text": "I didn't get wet!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N068",
+      "speaker": "귀뚜라미",
+      "text": "You jumped and found your balance.",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N069",
+      "speaker": "피노키오",
+      "text": "Thank you for helping me!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "I07-EXAMPLE",
+      "speaker": "피노키오",
+      "text": "Jump over it!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U030",
+      "speaker": "내레이션",
+      "text": "Pinocchio continued down the road.",
+      "kind": "ORIGINAL",
+      "profile_id": "NARRATOR_A",
+      "reference_slug": "narrator",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U031",
+      "speaker": "내레이션",
+      "text": "He was getting closer to school.",
+      "kind": "ORIGINAL",
+      "profile_id": "NARRATOR_A",
+      "reference_slug": "narrator",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N070",
+      "speaker": "피노키오",
+      "text": "The houses are hiding the school.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N071",
+      "speaker": "귀뚜라미",
+      "text": "Can you find the roof again?",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N072",
+      "speaker": "피노키오",
+      "text": "I can see rooftops, but which one?",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N073",
+      "speaker": "귀뚜라미",
+      "text": "Yoonsu, help us look far ahead!",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N074",
+      "speaker": "피노키오",
+      "text": "There it is! Our school!",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N075",
+      "speaker": "귀뚜라미",
+      "text": "Just keep following the road.",
+      "kind": "NEW",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N076",
+      "speaker": "피노키오",
+      "text": "I'll tell Grandpa about my big jump.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-N077",
+      "speaker": "피노키오",
+      "text": "I wonder what I'll learn today.",
+      "kind": "NEW",
+      "profile_id": "PINOCCHIO_A",
+      "reference_slug": "pinocchio",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-U032",
+      "speaker": "내레이션",
+      "text": "But then, he heard a strange and wonderful sound.",
+      "kind": "ORIGINAL",
+      "profile_id": "NARRATOR_A",
+      "reference_slug": "narrator",
+      "status": "REFERENCE_READY_ACTING_NOT_YET_GENERATED",
+      "direction_present": true
+    },
+    {
+      "id": "S04-P07-EXAMPLE",
+      "speaker": "귀뚜라미",
+      "text": "Look far ahead!",
+      "kind": "MODEL_EXAMPLE",
+      "profile_id": "CRICKET_DESIGN_V1",
+      "reference_slug": null,
+      "status": "BLOCKED_RESOURCE",
+      "direction_present": true
+    }
+  ]
+}

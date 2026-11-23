@@ -1,0 +1,3700 @@
+{
+  "report_date_seoul": "2026-11-23",
+  "assembled_at_utc": "2026-11-23T03:22:25.721908+00:00",
+  "base_commit": "e160f9bc10c3752706620f331034d40f0639a934",
+  "status": "CORRECTIONS_AND_VOICE_DIRECTIONS_COMPLETE_STATIC_CHECKS_PASS",
+  "scope": "S03_S04_S05_STORY_CORRECTIONS_AND_ALL_LINE_VOICE_DIRECTIONS",
+  "s01_s02": "USER_COMPLETED_PRESERVED_NO_PRODUCTION_RETEST",
+  "plan_written_before_mutations": {
+    "scope": "USER_AUTHORIZED_S03_S04_S05_CORRECTIONS_AND_PER_LINE_VOICE_DIRECTION",
+    "base_commit": "e160f9bc10c3752706620f331034d40f0639a934",
+    "s01_s02": "USER_COMPLETE_PRESERVE_NO_RETEST_NO_REGENERATION",
+    "immutable": [
+      "docs/series_v2/sources/01_STORY_MASTER_V1_1.md",
+      "docs/series_v2/sources/01_STEP2_PRODUCTION_STORYBOARD_SPEC.md",
+      "assets/voice_refs/v6/",
+      "scenes/S02/"
+    ],
+    "steps": [
+      {
+        "id": "R0",
+        "action": "Read current remote head, preserve input snapshot, fix scope and schema",
+        "pass": "Exact source identified and old source/ref files protected"
+      },
+      {
+        "id": "R1",
+        "action": "Correct audited S03/S04/S05 story, action, WAIT and handoff issues",
+        "pass": "9 confirmed items resolved and 10 staging/learning risks addressed in explicit design without changing canonical dialogue"
+      },
+      {
+        "id": "R2",
+        "action": "Author distinct cast profiles and specific direction for every story line and model example",
+        "pass": "All spoken lines and 30 model prompts carry stable cast identity, listener, intent, emotion, delivery, emphasis and pause/rate guidance"
+      },
+      {
+        "id": "R3",
+        "action": "Synchronize readable scripts, JSON, audio job export and Codex handoff",
+        "pass": "Exact text/ID/cast mapping, all 150 cuts mapped, voice instructions separated from spoken text, neutral generation path cannot silently ignore new contract"
+      },
+      {
+        "id": "R4",
+        "action": "Execute affected S03-S05 static/semantic/voice-contract checks and focused regressions",
+        "pass": "New checks detect documented failure classes; old originals/ref bytes and S01/S02 unchanged; actual audio/video left NOT_RUN"
+      },
+      {
+        "id": "R5",
+        "action": "Save reviewed changes with lease protection and provide reusable delivery files",
+        "pass": "Remote files verified, clear handoff, no false production/audio PASS"
+      }
+    ],
+    "not_requested_this_turn": [
+      "actual voice synthesis",
+      "voice identity replacement",
+      "S01/S02 production work",
+      "full animation render"
+    ],
+    "new_cast_handling": "Define profiles for all seven canonical speakers, retain four approved V6 identities, label Cricket/Mara/Pip reference samples pending rather than substituting another actor",
+    "actual_audio_and_video_status": "NOT_RUN"
+  },
+  "summary": {
+    "story_lines": 310,
+    "model_examples": 30,
+    "directed_jobs": 340,
+    "shots": 150,
+    "original_lines_preserved": 72,
+    "speaking_character_profiles": 7,
+    "locked_approved_reference_voices": 4,
+    "pending_reference_voices": [
+      "귀뚜라미",
+      "마라",
+      "핍"
+    ]
+  },
+  "issues": [
+    {
+      "id": "F01",
+      "scene": "S03",
+      "problem": "마지막 10초에 57단어가 몰림",
+      "correction": "약속 안내 U019/U020을 앞 컷에 배치하고 마지막 컷을 36초로 재설계. 가방 착용·눈맞춤·출구 이동을 대사에 연결.",
+      "anchors": [
+        "B10-C04",
+        "B10-C05",
+        "S03-U019",
+        "S03-U020"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    },
+    {
+      "id": "F02",
+      "scene": "S03/S04/S05",
+      "problem": "순수 입력 대기가 본편 분량에 포함됨",
+      "correction": "본편 질문 끝에서 시계를 멈추고 예시·입력·재청취는 외부 시계로 처리. 본편 WAIT 컷을 제거.",
+      "anchors": [
+        "timing_contract",
+        "interaction_map_v2.json"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    },
+    {
+      "id": "F03",
+      "scene": "S03",
+      "problem": "책을 넣은 뒤 넣을 것처럼 말함",
+      "correction": "N077을 완료된 위치 확인 Your book is inside the bag.으로 수정.",
+      "anchors": [
+        "S03-N077"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    },
+    {
+      "id": "F04",
+      "scene": "S04",
+      "problem": "귀뚜라미 착지가 인사보다 늦음",
+      "correction": "첫 착지 동작을 U015 이전에 2.5초 선행 동작으로 고정.",
+      "anchors": [
+        "B05-C01",
+        "S04-U015",
+        "CRICKET_FIRST_LANDING"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    },
+    {
+      "id": "F05",
+      "scene": "S04",
+      "problem": "점프 준비가 입력보다 먼저 시작됨",
+      "correction": "I07 전에는 똑바로 서 있고 입력 뒤 무릎 굽힘과 점프를 한 번 실행.",
+      "anchors": [
+        "I07",
+        "PINOCCHIO_PUDDLE_JUMP"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    },
+    {
+      "id": "F06",
+      "scene": "S04",
+      "problem": "꽃 예시가 세 단어 조건을 위반함",
+      "correction": "P02 예시를 Watch the flower! 세 단어로 맞춤.",
+      "anchors": [
+        "S04-P02"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    },
+    {
+      "id": "F07",
+      "scene": "S04",
+      "problem": "걷는 중 표지 옆에 머물겠다고 말함",
+      "correction": "해당 신규 대사를 I'll follow the school path.로 수정.",
+      "anchors": [
+        "S04 scene_design_v2.json"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    },
+    {
+      "id": "F08",
+      "scene": "S04",
+      "problem": "개구리 첫 점프의 원본 사건 순서가 바뀜",
+      "correction": "U023 뒤 자율 첫 점프, U024 관찰. 이후 P06 두 번째 작은 점프와 I07 피노키오 점프를 분리.",
+      "anchors": [
+        "S04-U023",
+        "S04-U024",
+        "FROG_FIRST_HOP"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    },
+    {
+      "id": "F09",
+      "scene": "S03-S12",
+      "problem": "같은 책을 펼쳐 보았는데 한 번도 안 열었다는 이력",
+      "correction": "S03 제페토와 그림을 봄 → 닫아 가방에 넣음 → 이후 꺼내거나 다시 펼치지 않음 → 아직 수업에는 사용하지 않음으로 구분.",
+      "anchors": [
+        "STORY_CONTINUITY_S01_S12.json"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    },
+    {
+      "id": "R01",
+      "scene": "S03",
+      "problem": "움직이지 않은 모자가 움직였다고 암시",
+      "correction": "N047을 Where should we look next?로 수정하고 관객만 단서를 보도록 유지.",
+      "anchors": [
+        "S03-N047"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    },
+    {
+      "id": "R02",
+      "scene": "S03/S04",
+      "problem": "가방 지지점·실내에서 대문까지의 연결 누락",
+      "correction": "S03 마지막 컷에서 실제 어깨끈 착용과 실내 출구 접근. S04 첫 컷은 생략된 짧은 마당 이동 뒤 마지막 걸음과 닫힌 정원 대문 앞 정지.",
+      "anchors": [
+        "B10-C05",
+        "S04/B01-C01"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    },
+    {
+      "id": "R03",
+      "scene": "S04",
+      "problem": "선택 전에 학교 정답을 공개",
+      "correction": "선택 전에는 비교·탐색만 하고 학교 방향 확인은 참여 후 반응에 둠.",
+      "anchors": [
+        "I06"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    },
+    {
+      "id": "R04",
+      "scene": "S03/S04",
+      "problem": "이미 아는 사실을 반복 발견",
+      "correction": "S03 머리 위치를 먼저 묻고 접촉 결과를 나중에 확인. S04도 준비·관찰·결과 대사를 분리.",
+      "anchors": [
+        "S03-N022",
+        "S03-N023",
+        "S04 scene_design_v2.json"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    },
+    {
+      "id": "R05",
+      "scene": "S04",
+      "problem": "귀뚜라미의 물웅덩이 통과 동선 누락",
+      "correction": "U028/U029 동안 원래 쪽에 있다가 N067 전 선행 동작에서 실제로 건넘.",
+      "anchors": [
+        "B09-C05",
+        "S04-N067"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    },
+    {
+      "id": "R06",
+      "scene": "S04/S05",
+      "problem": "왼쪽 길 선택과 화면 오른쪽 이동의 혼동",
+      "correction": "중립적인 높은 구도에서 학교 쪽 왼쪽 갈래가 동쪽 길로 휘는 지리를 보여준 뒤 화면 오른쪽 진행을 이어감.",
+      "anchors": [
+        "S04/B06-C05",
+        "S04/B07",
+        "S05"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    },
+    {
+      "id": "R07",
+      "scene": "S03/S04/S05",
+      "problem": "초보자가 목표 발화를 듣기 전에 응답해야 함",
+      "correction": "30개 이벤트 모두 질문 종료 → 외부 모델 예시 1회(마이크 OFF) → 예시 끝 뒤 VAD/터치 → 반응. 보호자 즉시 진행과 재청취 유지.",
+      "anchors": [
+        "30 model examples"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    },
+    {
+      "id": "R08",
+      "scene": "S05/S06",
+      "problem": "다음 화의 인형 관찰 대상이 화면에서 사라짐",
+      "correction": "이름 없는 인형 둘을 관객 오른쪽 앞턱의 노출 대기 위치에 두고 S06-U003까지 보이도록 인계. 커튼 닫힘·핍 미소개 유지.",
+      "anchors": [
+        "S05 exit",
+        "S06-U003"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    },
+    {
+      "id": "R09",
+      "scene": "S05",
+      "problem": "이미 통과한 관객을 이제 통과시킬 것처럼 말함",
+      "correction": "N052를 You made room for them.으로 수정해 완료된 결과를 확인.",
+      "anchors": [
+        "S05-N052"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    },
+    {
+      "id": "R10",
+      "scene": "S05",
+      "problem": "귀뚜라미가 닿을 수 없는 높은 잎으로 시범",
+      "correction": "귀뚜라미는 몸높이 이하의 별도 낮은 잎으로 시범. 피노키오 얼굴 높이 잎은 입력 반응 때만 움직임.",
+      "anchors": [
+        "S05 leaf demonstration"
+      ],
+      "status": "DESIGN_CORRECTION_IMPLEMENTED",
+      "rendered_verification": "NOT_RUN"
+    }
+  ],
+  "changed_new_spoken_texts": [
+    {
+      "scene": "S03",
+      "id": "S03-N022",
+      "kind": "NEW",
+      "before": "Your head is still bare.",
+      "after": "Show me where your hat will go."
+    },
+    {
+      "scene": "S03",
+      "id": "S03-N023",
+      "kind": "NEW",
+      "before": "Bare? Oh, no hat!",
+      "after": "Right up here on top?"
+    },
+    {
+      "scene": "S03",
+      "id": "S03-N047",
+      "kind": "NEW",
+      "before": "Did something red move down there?",
+      "after": "Where should we look next?"
+    },
+    {
+      "scene": "S03",
+      "id": "S03-N077",
+      "kind": "NEW",
+      "before": "Now I can put the book in.",
+      "after": "Your book is inside the bag."
+    },
+    {
+      "scene": "S04",
+      "id": "S04-N032",
+      "kind": "NEW",
+      "before": "Can you come down here?",
+      "after": "That loose leaf is wobbling."
+    },
+    {
+      "scene": "S04",
+      "id": "S04-N033",
+      "kind": "NEW",
+      "before": "I can hop, but this leaf is high.",
+      "after": "I need a steady place to stand."
+    },
+    {
+      "scene": "S04",
+      "id": "S04-N034",
+      "kind": "NEW",
+      "before": "Yoonsu, help me hop to the ground!",
+      "after": "Yoonsu, help me stand on firm ground!"
+    },
+    {
+      "scene": "S04",
+      "id": "S04-N035",
+      "kind": "NEW",
+      "before": "Wow! You jumped so far!",
+      "after": "There! Now you're standing steady."
+    },
+    {
+      "scene": "S04",
+      "id": "S04-N039",
+      "kind": "NEW",
+      "before": "One has a school, and one has trees.",
+      "after": "The pictures look different to me."
+    },
+    {
+      "scene": "S04",
+      "id": "S04-N041",
+      "kind": "NEW",
+      "before": "I'll stay beside the school sign.",
+      "after": "I'll follow the school path."
+    },
+    {
+      "scene": "S04",
+      "id": "S04-N057",
+      "kind": "NEW",
+      "before": "And there is a little green frog.",
+      "after": "That little frog landed softly."
+    },
+    {
+      "scene": "S04",
+      "id": "S04-N058",
+      "kind": "NEW",
+      "before": "What is the frog going to do?",
+      "after": "Can we see how he lands?"
+    },
+    {
+      "scene": "S04",
+      "id": "S04-N060",
+      "kind": "NEW",
+      "before": "He can hop!",
+      "after": "He landed softly!"
+    },
+    {
+      "scene": "S04",
+      "id": "S04-N061",
+      "kind": "NEW",
+      "before": "Watch his knees bend first.",
+      "after": "His legs bend when he lands."
+    },
+    {
+      "scene": "S04",
+      "id": "S04-N070",
+      "kind": "NEW",
+      "before": "The school is getting closer!",
+      "after": "The houses are hiding the school."
+    },
+    {
+      "scene": "S04",
+      "id": "S04-N071",
+      "kind": "NEW",
+      "before": "Can you see the roof again?",
+      "after": "Can you find the roof again?"
+    },
+    {
+      "scene": "S04",
+      "id": "S04-N072",
+      "kind": "NEW",
+      "before": "I can see the tall little bell.",
+      "after": "I can see rooftops, but which one?"
+    },
+    {
+      "scene": "S05",
+      "id": "S05-N017",
+      "kind": "NEW",
+      "before": "There! Beside the tall bell.",
+      "after": "There! Beside the bell tower."
+    },
+    {
+      "scene": "S05",
+      "id": "S05-N052",
+      "kind": "NEW",
+      "before": "Now they can pass.",
+      "after": "You made room for them."
+    }
+  ],
+  "scene_results": [
+    {
+      "scene": "S03",
+      "original_lines": 22,
+      "new_lines": 92,
+      "directed_story_lines": 114,
+      "directed_model_examples": 10,
+      "shots": 50,
+      "narrative_seconds_planned": 598,
+      "largest_planning_budget_fraction": 0.9995,
+      "status": "DIRECTED_DESIGN_PASS_ONLY",
+      "audio_synthesis": "NOT_RUN",
+      "listening_approval": "NOT_RUN",
+      "exported_jobs_exact_match": true,
+      "blocked_speakers": [],
+      "full_scene_voice_gate": "REFERENCE_READY_AUDIO_NOT_RUN",
+      "sha256": {
+        "scenes/S03/scene_design_v2.json": "8154ae0a51a1ace2019f8cfd16b648bcde0de25768d112bec9c7d88685d6d6f5",
+        "scenes/S03/interaction_map_v2.json": "920dab12f2c249545b29349d07bb4e302f111cdd65442c34e94796914fb6a7a8",
+        "scenes/S03/script_v2_draft.md": "2a14bd9f7b6b4caba131eb24f5ccc0d05b535eebd0861762a8090f0ad4899438",
+        "scenes/S03/voice_direction_plan.json": "e789fcc7655370064e9278f4d248681945f80cf687734ac69691efea489696c0",
+        "scenes/S03/voice_direction_sheet.csv": "348029c5370db5757d5f8909aa38e2b080ca6b46609b5326202be243b0b926b6",
+        "scenes/S03/voice_preflight_report.json": "44a3ed326a813965589177bc1f3ece8856a3a5ccc9cc629fc0214cfe0dabcd43"
+      }
+    },
+    {
+      "scene": "S04",
+      "original_lines": 32,
+      "new_lines": 77,
+      "directed_story_lines": 109,
+      "directed_model_examples": 10,
+      "shots": 50,
+      "narrative_seconds_planned": 527,
+      "largest_planning_budget_fraction": 0.9962,
+      "status": "DIRECTED_DESIGN_PASS_ONLY",
+      "audio_synthesis": "NOT_RUN",
+      "listening_approval": "NOT_RUN",
+      "exported_jobs_exact_match": true,
+      "blocked_speakers": [
+        "귀뚜라미"
+      ],
+      "full_scene_voice_gate": "BLOCKED_RESOURCE",
+      "sha256": {
+        "scenes/S04/scene_design_v2.json": "e9a9464374fe35d5e5a27ff0d57ccd0833dd555c1e1822dfe0c9b806a71f372e",
+        "scenes/S04/interaction_map_v2.json": "d103269d2ac5012648f847f7954559b7f8aa7d27f12d5ebab1cc428734c972c1",
+        "scenes/S04/script_v2_draft.md": "702a97f25c7683c7e3d450e41af258de1dcafaa03d67668e5a8538993f8988b9",
+        "scenes/S04/voice_direction_plan.json": "2356d6568ef2c387e5d7831cad80676d6eeac165d5daebeebefa4f8a1b76f6c8",
+        "scenes/S04/voice_direction_sheet.csv": "577c5c4c70c88a6c810ac0ca0a13e3e045f156928522fe891285acee5e12f2d7",
+        "scenes/S04/voice_preflight_report.json": "be1da1fedbd3847a41a0f9d52b224a0464ecf2fafeb596a093f0a5c2b03d846a"
+      }
+    },
+    {
+      "scene": "S05",
+      "original_lines": 18,
+      "new_lines": 69,
+      "directed_story_lines": 87,
+      "directed_model_examples": 10,
+      "shots": 50,
+      "narrative_seconds_planned": 472,
+      "largest_planning_budget_fraction": 0.9863,
+      "status": "DIRECTED_DESIGN_PASS_ONLY",
+      "audio_synthesis": "NOT_RUN",
+      "listening_approval": "NOT_RUN",
+      "exported_jobs_exact_match": true,
+      "blocked_speakers": [
+        "귀뚜라미"
+      ],
+      "full_scene_voice_gate": "BLOCKED_RESOURCE",
+      "sha256": {
+        "scenes/S05/scene_design_v2.json": "2dc910db8cded2e17246c99c6f7d69e3b212c6b8a6ec29d46cf3451e844889b9",
+        "scenes/S05/interaction_map_v2.json": "8a2645133fecad0f5b4582f9b2cd10e76c82e6dcc5589752b5fffe28a746f757",
+        "scenes/S05/script_v2_draft.md": "d4e2d5a00ba128966dbb5397078428aa4ee2e4b5778d6f1deb65ef94828093b9",
+        "scenes/S05/voice_direction_plan.json": "5140731b51eea56f34c1629c50e3a6e7e04e0112cb1e3442809e7d6f5efa24ef",
+        "scenes/S05/voice_direction_sheet.csv": "3275af971c6ede0a03f7ae84068a0f167f9c384dc2ea1a140e9892b0351de712",
+        "scenes/S05/voice_preflight_report.json": "86360e2e2dcefd05a7fcecd9fd7f3531279856b7a51a0120df9c375417971dd4"
+      }
+    }
+  ],
+  "protected_materialized_files": [
+    {
+      "path": "scripts/s02_approved_voice_tts.py",
+      "sha256": "7247790748ee1484a735add5cfb75ac9ce424f07779a36ba5da72ab63b628aaa",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "scripts/validate_s02_design.py",
+      "sha256": "eb4578e0aaf59e1fbbcadb2305b4760ce1cf2b153020c4b90eb44d5eaa538090",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "reviews/S03_S05_REVIEW_2026-11-23.md",
+      "sha256": "459a08872ca5266bbd613251f3c5ca820ad197cd39ee57485015ffebdaaeda64",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "reviews/S03_S05_REVIEW_EVIDENCE_2026-11-23.json",
+      "sha256": "9d153959609ef0b8125522bbea511d9981680deb647b57b2cd256e1302447f11",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "scenes/S02/script_v2_draft.md",
+      "sha256": "adda38827fe487ff2925c289d14104c7c8ce6afad1cfbe9efdc2cc7ba78642b5",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "scenes/S02/scene_design_v2.json",
+      "sha256": "4d711e1b924b36a0eb97fd95faf075f9574d4bf5e9644379f83d372503a9c2ad",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "scenes/S02/interaction_map_v2.json",
+      "sha256": "d2bad5a21c30d31f0364258c2a63d85ffc5244bb2db17114806fdce590e5fec6",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "assets/voice_refs/v6/narrator_V6_APPROVED.mp3",
+      "sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "assets/voice_refs/v6/geppetto_V6_APPROVED.mp3",
+      "sha256": "80237e647e1e480987a3cf0a6ac1dc33a3d6b3a40dc62d577f4a0290e338af55",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "assets/voice_refs/v6/pinocchio_V6_APPROVED.mp3",
+      "sha256": "a32569705a717ac92c8ecbe1c515b9e31e389f508164458ed22a06adcbba0b3d",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "assets/voice_refs/v6/blue_fairy_V6_APPROVED.mp3",
+      "sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "assets/voice_refs/v6/VOICE_REFERENCES.json",
+      "sha256": "fc6a0c516226f2eeede59a561e42195bb75df6c1d2279bef1124c3c9cf3d9e5f",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "docs/series_v2/sources/01_STEP2_PRODUCTION_STORYBOARD_SPEC.md",
+      "sha256": "b5ff72a4e6d889006eacc669a7c15c68a739ca1805117b8c79d79d4ab5181610",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "docs/series_v2/sources/01_STORY_MASTER_V1_1.md",
+      "sha256": "eb5ca04f5e4302d4a71726f1a24b6cead5cec682b96baee600f6eef8ee951d3e",
+      "status": "BYTE_IDENTICAL"
+    }
+  ],
+  "legacy_s01_agents_section_byte_equivalent_text": true,
+  "full_remote_tree_protection": "Checked at publication; local snapshot does not contain every original remote asset.",
+  "actual_execution_results": [
+    {
+      "id": "directed_design_and_negative_cases",
+      "command": [
+        "python",
+        "scripts/voice_direction_tools.py",
+        "self-test",
+        "--scenes",
+        "S03",
+        "S04",
+        "S05",
+        "--report",
+        "docs/series_v2/VOICE_DIRECTION_VALIDATION_2026-11-23.json"
+      ],
+      "executed_utc": "2026-11-23T03:15:43.066754+00:00",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS_EXPECTED_RESULT",
+      "elapsed_seconds": 0.255,
+      "log_file": "/workspace/scratch/4851b214300f/revision_test_logs/directed_design_and_negative_cases.log",
+      "stdout": "{\"scene\": \"S03\", \"original_lines\": 22, \"new_lines\": 92, \"directed_story_lines\": 114, \"directed_model_examples\": 10, \"shots\": 50, \"narrative_seconds_planned\": 598, \"largest_planning_budget_fraction\": 0.9995, \"status\": \"DIRECTED_DESIGN_PASS_ONLY\", \"audio_synthesis\": \"NOT_RUN\", \"listening_approval\": \"NOT_RUN\"}\n{\"scene\": \"S04\", \"original_lines\": 32, \"new_lines\": 77, \"directed_story_lines\": 109, \"directed_model_examples\": 10, \"shots\": 50, \"narrative_seconds_planned\": 527, \"largest_planning_budget_fraction\": 0.9962, \"status\": \"DIRECTED_DESIGN_PASS_ONLY\", \"audio_synthesis\": \"NOT_RUN\", \"listening_approval\": \"NOT_RUN\"}\n{\"scene\": \"S05\", \"original_lines\": 18, \"new_lines\": 69, \"directed_story_lines\": 87, \"directed_model_examples\": 10, \"shots\": 50, \"narrative_seconds_planned\": 472, \"largest_planning_budget_fraction\": 0.9863, \"status\": \"DIRECTED_DESIGN_PASS_ONLY\", \"audio_synthesis\": \"NOT_RUN\", \"listening_approval\": \"NOT_RUN\"}\n{\"negative_checks\": [{\"case\": \"missing per-line direction\", \"status\": \"REJECTED_EXPECTED\", \"reason\": \"S03-U001 missing voice direction\"}, {\"case\": \"wrong character identity\", \"status\": \"REJECTED_EXPECTED\", \"reason\": \"S03-U001 wrong character profile\"}, {\"case\": \"canonical text polluted by acting note\", \"status\": \"REJECTED_EXPECTED\", \"reason\": \"Canonical speech changed\"}, {\"case\": \"narrative WAIT shot\", \"status\": \"REJECTED_EXPECTED\", \"reason\": \"Pure WAIT must be outside narrative clock\"}, {\"case\": \"speech overrun hidden in cut\", \"status\": \"REJECTED_EXPECTED\", \"reason\": \"Speech/action budget exceeds S03/B10-C05: 1035.14>36\"}, {\"case\": \"four-word learning cue\", \"status\": \"REJECTED_EXPECTED\", \"reason\": \"Cue must be exactly three words\"}, {\"case\": \"microphone opens before first model\", \"status\": \"REJECTED_EXPECTED\", \"reason\": \"Missing beginner/input rule first_model_before_listen\"}, {\"case\": \"Cricket landing after first greeting\", \"status\": \"REJECTED_EXPECTED\", \"reason\": \"First Cricket landing must precede greeting\"}], \"status\": \"PASS_EXPECTED_REJECTIONS\"}\n",
+      "stderr": ""
+    },
+    {
+      "id": "immutable_source_and_scope_policy",
+      "command": [
+        "python",
+        "scripts/validate_series_v2.py"
+      ],
+      "executed_utc": "2026-11-23T03:15:43.067383+00:00",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS_EXPECTED_RESULT",
+      "elapsed_seconds": 0.045,
+      "log_file": "/workspace/scratch/4851b214300f/revision_test_logs/immutable_source_and_scope_policy.log",
+      "stdout": "PASS: manifest version 2.0\nPASS: story_master source exists\nPASS: story_master immutable\nPASS: story_master original SHA256\nPASS: storyboard source exists\nPASS: storyboard immutable\nPASS: storyboard original SHA256\nPASS: V1.1 12 scene titles\nPASS: original 21 voice events\nPASS: storyboard 12 sections\nPASS: scene ordering S01-S12\nPASS: original scene names unchanged\nPASS: 138 original storyboard cuts\nPASS: all 21 legacy IDs retained once\nPASS: S01 exempt and frozen\nPASS: S02-S12 exactly 10 target events each\nPASS: S02-S12 each 360+ narrative seconds\nPASS: 110 target interactions\nPASS: 20 original events included in 110\nPASS: 90 net new interactions\nPASS: current S03-S05 revision not falsely marked rendered\nPASS: user-completed S01/S02 excluded from current revision\nPASS: source/policy integrity only; user-completed S01/S02 preserved, revised S03-S05 audio/video NOT_RUN.\n",
+      "stderr": ""
+    },
+    {
+      "id": "continuity_and_negative_cases",
+      "command": [
+        "python",
+        "scripts/validate_story_continuity.py",
+        "--self-test"
+      ],
+      "executed_utc": "2026-11-23T03:15:43.067731+00:00",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS_EXPECTED_RESULT",
+      "elapsed_seconds": 0.087,
+      "log_file": "/workspace/scratch/4851b214300f/revision_test_logs/continuity_and_negative_cases.log",
+      "stdout": "PASS: design review and unperformed rendered continuity remain distinct\nPASS: both original source hashes are explicitly locked\nPASS: source bytes match continuity reference: docs/series_v2/sources/01_STORY_MASTER_V1_1.md\nPASS: source bytes match continuity reference: docs/series_v2/sources/01_STEP2_PRODUCTION_STORYBOARD_SPEC.md\nPASS: all twelve scenes occur once in canonical order\nPASS: scene titles agree with the immutable source and manifest\nPASS: S01 has its source heading, day and causal role\nPASS: S01 entry_state describes location, character, prop and intention state\nPASS: S01 exit_state describes location, character, prop and intention state\nPASS: S02 has its source heading, day and causal role\nPASS: S02 entry_state describes location, character, prop and intention state\nPASS: S02 exit_state describes location, character, prop and intention state\nPASS: S03 has its source heading, day and causal role\nPASS: S03 entry_state describes location, character, prop and intention state\nPASS: S03 exit_state describes location, character, prop and intention state\nPASS: S04 has its source heading, day and causal role\nPASS: S04 entry_state describes location, character, prop and intention state\nPASS: S04 exit_state describes location, character, prop and intention state\nPASS: S05 has its source heading, day and causal role\nPASS: S05 entry_state describes location, character, prop and intention state\nPASS: S05 exit_state describes location, character, prop and intention state\nPASS: S06 has its source heading, day and causal role\nPASS: S06 entry_state describes location, character, prop and intention state\nPASS: S06 exit_state describes location, character, prop and intention state\nPASS: S07 has its source heading, day and causal role\nPASS: S07 entry_state describes location, character, prop and intention state\nPASS: S07 exit_state describes location, character, prop and intention state\nPASS: S08 has its source heading, day and causal role\nPASS: S08 entry_state describes location, character, prop and intention state\nPASS: S08 exit_state describes location, character, prop and intention state\nPASS: S09 has its source heading, day and causal role\nPASS: S09 entry_state describes location, character, prop and intention state\nPASS: S09 exit_state describes location, character, prop and intention state\nPASS: S10 has its source heading, day and causal role\nPASS: S10 entry_state describes location, character, prop and intention state\nPASS: S10 exit_state describes location, character, prop and intention state\nPASS: S11 has its source heading, day and causal role\nPASS: S11 entry_state describes location, character, prop and intention state\nPASS: S11 exit_state describes location, character, prop and intention state\nPASS: S12 has its source heading, day and causal role\nPASS: S12 entry_state describes location, character, prop and intention state\nPASS: S12 exit_state describes location, character, prop and intention state\nPASS: first school day and the following morning remain distinct\nPASS: human appearance is reserved for the final S12 exit state\nPASS: eleven unique consecutive transitions connect S01 through S12 without an orphan\nPASS: S01_S02 records causal, state, time, visual and audio handoff requirements\nPASS: S02_S03 records causal, state, time, visual and audio handoff requirements\nPASS: S03_S04 records causal, state, time, visual and audio handoff requirements\nPASS: S04_S05 records causal, state, time, visual and audio handoff requirements\nPASS: S05_S06 records causal, state, time, visual and audio handoff requirements\nPASS: S06_S07 records causal, state, time, visual and audio handoff requirements\nPASS: S07_S08 records causal, state, time, visual and audio handoff requirements\nPASS: S08_S09 records causal, state, time, visual and audio handoff requirements\nPASS: S09_S10 records causal, state, time, visual and audio handoff requirements\nPASS: S10_S11 records causal, state, time, visual and audio handoff requirements\nPASS: S11_S12 records causal, state, time, visual and audio handoff requirements\nPASS: S01 -> S02 preserves body and nose state at the boundary\nPASS: S02 -> S03 preserves body and nose state at the boundary\nPASS: S03 -> S04 preserves body and nose state at the boundary\nPASS: S04 -> S05 preserves body and nose state at the boundary\nPASS: S05 -> S06 preserves body and nose state at the boundary\nPASS: S06 -> S07 preserves body and nose state at the boundary\nPASS: S07 -> S08 preserves body and nose state at the boundary\nPASS: S08 -> S09 preserves body and nose state at the boundary\nPASS: S09 -> S10 preserves body and nose state at the boundary\nPASS: S10 -> S11 preserves body and nose state at the boundary\nPASS: S11 -> S12 preserves body and nose state at the boundary\nPASS: causal motifs have unique IDs\nPASS: PROMISE refers to existing later scenes\nPASS: MUSIC refers to existing later scenes\nPASS: SCHOOLBOOK refers to existing later scenes\nPASS: HELP refers to existing later scenes\nPASS: TRUTH_AND_BLUE_LIGHT refers to existing later scenes\nPASS: HAT_BAG_IDENTITY refers to existing later scenes\nPASS: both immediate S05 handoffs have explicit contracts\nPASS: S04_S05 preserves the exact canonical exit/entry spoken lines\nPASS: S04_S05 is a populated review contract, not a rendered match claim\nPASS: S05_S06 preserves the exact canonical exit/entry spoken lines\nPASS: S05_S06 is a populated review contract, not a rendered match claim\nPASS: boundary shot references point to the authored S04/S05 and canonical S06\nPASS: book's current closed state is distinct from S03 viewing and later nonuse\nPASS: S06 first puppet observation has two visible unnamed targets without opening the curtain or introducing Pip\nPASS: S05 retains dry shoes, delays the reveal and leaves S06 curtain/Pip/consequence events pending\nPASS: S05's two boundary contracts preserve day, body, nose, hat and schoolbook\nPASS: authored S04/S05 endpoints match the continuity contract\nPASS: S05 canonical entry/exit lines are assigned to the actual boundary shots\nPASS: music and stage discovery each have a distinct legacy gate\nPASS: I08 continuity gate matches the authored interaction\nPASS: I09 continuity gate matches the authored interaction\nPASS: readable continuity document covers all twelve scenes and eleven boundary IDs\nPASS: S01 preservation and unfinished production status remain explicit\nCONTINUITY_DATA_PASS: 12 scenes / 11 links / S04-S05-S06 references. Naturalness REVIEW_REQUIRED; rendered continuity and audio NOT_RUN.\nNEGATIVE_CHECK_PASS: missing S05-S06 link rejected (eleven unique consecutive transitions connect S01 through S12 without an orphan)\nNEGATIVE_CHECK_PASS: reordered transition rejected (eleven unique consecutive transitions connect S01 through S12 without an orphan)\nNEGATIVE_CHECK_PASS: premature curtain opening rejected (S05 retains dry shoes, delays the reveal and leaves S06 curtain/Pip/consequence events pending)\nNEGATIVE_CHECK_PASS: wrong canonical entry line rejected (S04_S05 preserves the exact canonical exit/entry spoken lines)\n",
+      "stderr": ""
+    },
+    {
+      "id": "s03_voice_preflight_export",
+      "command": [
+        "python",
+        "scripts/s03_approved_voice_tts.py",
+        "--json",
+        "scenes/S03/voice_preflight_report.json",
+        "--export-jobs",
+        "/workspace/scratch/4851b214300f/revision_test_logs/S03_jobs.json"
+      ],
+      "executed_utc": "2026-11-23T03:15:43.068033+00:00",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS_EXPECTED_RESULT",
+      "elapsed_seconds": 0.077,
+      "log_file": "/workspace/scratch/4851b214300f/revision_test_logs/s03_voice_preflight_export.log",
+      "stdout": "{\"scene\": \"S03\", \"audit_scope\": \"LOCKED_REFERENCES_AND_PER_LINE_DIRECTION_EXPORT_ONLY\", \"reference_integrity\": \"PASS\", \"direction_export_integrity\": \"PASS\", \"story_dialogue_count\": 114, \"model_example_count\": 10, \"first_pass_model_examples_required\": 10, \"optional_example_count\": 0, \"example_replays_optional\": true, \"story_speaker_counts\": {\"제페토\": 54, \"피노키오\": 59, \"내레이션\": 1}, \"model_example_speaker_counts\": {\"제페토\": 5, \"피노키오\": 5}, \"blocked_speakers\": [], \"full_scene_voice_gate\": \"REFERENCE_READY_AUDIO_NOT_RUN\", \"audio_synthesis\": \"NOT_RUN\", \"audio_duration_and_lipsync\": \"NOT_RUN\", \"direction_adapter_application\": \"NOT_RUN\", \"listening_review\": \"NOT_RUN\", \"voice_plan\": \"scenes/S03/voice_direction_plan.json\"}\n",
+      "stderr": ""
+    },
+    {
+      "id": "s04_voice_preflight_export",
+      "command": [
+        "python",
+        "scripts/s04_approved_voice_tts.py",
+        "--json",
+        "scenes/S04/voice_preflight_report.json",
+        "--export-jobs",
+        "/workspace/scratch/4851b214300f/revision_test_logs/S04_jobs.json"
+      ],
+      "executed_utc": "2026-11-23T03:15:43.112832+00:00",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS_EXPECTED_RESULT",
+      "elapsed_seconds": 0.079,
+      "log_file": "/workspace/scratch/4851b214300f/revision_test_logs/s04_voice_preflight_export.log",
+      "stdout": "{\"scene\": \"S04\", \"audit_scope\": \"LOCKED_REFERENCES_AND_PER_LINE_DIRECTION_EXPORT_ONLY\", \"reference_integrity\": \"PASS\", \"direction_export_integrity\": \"PASS\", \"story_dialogue_count\": 109, \"model_example_count\": 10, \"first_pass_model_examples_required\": 10, \"optional_example_count\": 0, \"example_replays_optional\": true, \"story_speaker_counts\": {\"제페토\": 13, \"피노키오\": 61, \"내레이션\": 8, \"귀뚜라미\": 27}, \"model_example_speaker_counts\": {\"제페토\": 2, \"피노키오\": 4, \"귀뚜라미\": 4}, \"blocked_speakers\": [\"귀뚜라미\"], \"full_scene_voice_gate\": \"BLOCKED_RESOURCE\", \"audio_synthesis\": \"NOT_RUN\", \"audio_duration_and_lipsync\": \"NOT_RUN\", \"direction_adapter_application\": \"NOT_RUN\", \"listening_review\": \"NOT_RUN\", \"voice_plan\": \"scenes/S04/voice_direction_plan.json\"}\n",
+      "stderr": ""
+    },
+    {
+      "id": "s05_voice_preflight_export",
+      "command": [
+        "python",
+        "scripts/s05_voice_preflight.py",
+        "--json",
+        "scenes/S05/voice_preflight_report.json",
+        "--export-jobs",
+        "/workspace/scratch/4851b214300f/revision_test_logs/S05_jobs.json"
+      ],
+      "executed_utc": "2026-11-23T03:15:43.144688+00:00",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS_EXPECTED_RESULT",
+      "elapsed_seconds": 0.048,
+      "log_file": "/workspace/scratch/4851b214300f/revision_test_logs/s05_voice_preflight_export.log",
+      "stdout": "{\"scene\": \"S05\", \"audit_scope\": \"LOCKED_REFERENCES_AND_PER_LINE_DIRECTION_EXPORT_ONLY\", \"reference_integrity\": \"PASS\", \"direction_export_integrity\": \"PASS\", \"story_dialogue_count\": 87, \"model_example_count\": 10, \"first_pass_model_examples_required\": 10, \"optional_example_count\": 0, \"example_replays_optional\": true, \"story_speaker_counts\": {\"피노키오\": 45, \"귀뚜라미\": 39, \"내레이션\": 3}, \"model_example_speaker_counts\": {\"피노키오\": 5, \"귀뚜라미\": 5}, \"blocked_speakers\": [\"귀뚜라미\"], \"full_scene_voice_gate\": \"BLOCKED_RESOURCE\", \"audio_synthesis\": \"NOT_RUN\", \"audio_duration_and_lipsync\": \"NOT_RUN\", \"direction_adapter_application\": \"NOT_RUN\", \"listening_review\": \"NOT_RUN\", \"voice_plan\": \"scenes/S05/voice_direction_plan.json\"}\n",
+      "stderr": ""
+    },
+    {
+      "id": "missing_cricket_final_voice_gate",
+      "command": [
+        "python",
+        "scripts/s05_voice_preflight.py",
+        "--require-ready"
+      ],
+      "executed_utc": "2026-11-23T03:15:43.155228+00:00",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "status": "PASS_EXPECTED_RESULT",
+      "elapsed_seconds": 0.047,
+      "log_file": "/workspace/scratch/4851b214300f/revision_test_logs/missing_cricket_final_voice_gate.log",
+      "stdout": "{\"scene\": \"S05\", \"audit_scope\": \"LOCKED_REFERENCES_AND_PER_LINE_DIRECTION_EXPORT_ONLY\", \"reference_integrity\": \"PASS\", \"direction_export_integrity\": \"PASS\", \"story_dialogue_count\": 87, \"model_example_count\": 10, \"first_pass_model_examples_required\": 10, \"optional_example_count\": 0, \"example_replays_optional\": true, \"story_speaker_counts\": {\"피노키오\": 45, \"귀뚜라미\": 39, \"내레이션\": 3}, \"model_example_speaker_counts\": {\"피노키오\": 5, \"귀뚜라미\": 5}, \"blocked_speakers\": [\"귀뚜라미\"], \"full_scene_voice_gate\": \"BLOCKED_RESOURCE\", \"audio_synthesis\": \"NOT_RUN\", \"audio_duration_and_lipsync\": \"NOT_RUN\", \"direction_adapter_application\": \"NOT_RUN\", \"listening_review\": \"NOT_RUN\", \"voice_plan\": \"scenes/S05/voice_direction_plan.json\"}\n",
+      "stderr": ""
+    },
+    {
+      "id": "legacy_flat_synthesis_guard",
+      "command": [
+        "python",
+        "scripts/s03_approved_voice_tts.py",
+        "--synthesize",
+        "--limit",
+        "1"
+      ],
+      "executed_utc": "2026-11-23T03:15:43.191693+00:00",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "status": "PASS_EXPECTED_RESULT",
+      "elapsed_seconds": 0.069,
+      "log_file": "/workspace/scratch/4851b214300f/revision_test_logs/legacy_flat_synthesis_guard.log",
+      "stdout": "{\"scene\": \"S03\", \"audit_scope\": \"LOCKED_REFERENCES_AND_PER_LINE_DIRECTION_EXPORT_ONLY\", \"reference_integrity\": \"PASS\", \"direction_export_integrity\": \"PASS\", \"story_dialogue_count\": 114, \"model_example_count\": 10, \"first_pass_model_examples_required\": 10, \"optional_example_count\": 0, \"example_replays_optional\": true, \"story_speaker_counts\": {\"제페토\": 54, \"피노키오\": 59, \"내레이션\": 1}, \"model_example_speaker_counts\": {\"제페토\": 5, \"피노키오\": 5}, \"blocked_speakers\": [], \"full_scene_voice_gate\": \"REFERENCE_READY_AUDIO_NOT_RUN\", \"audio_synthesis\": \"NOT_RUN\", \"audio_duration_and_lipsync\": \"NOT_RUN\", \"direction_adapter_application\": \"NOT_RUN\", \"listening_review\": \"NOT_RUN\", \"voice_plan\": \"scenes/S03/voice_direction_plan.json\"}\n",
+      "stderr": "DIRECTED_ADAPTER_REQUIRED: the previous generate(text, audio_prompt_path) route did not pass per-line acting instructions. Use the exported voice_direction_plan.json and CODEX_VOICE_ACTING_HANDOFF.md; map directions to real supported engine controls. No audio generated and no parameters invented.\n"
+    },
+    {
+      "id": "s03_validation_entry",
+      "command": [
+        "python",
+        "scripts/validate_s03_design.py"
+      ],
+      "executed_utc": "2026-11-23T03:15:43.192600+00:00",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS_EXPECTED_RESULT",
+      "elapsed_seconds": 0.058,
+      "log_file": "/workspace/scratch/4851b214300f/revision_test_logs/s03_validation_entry.log",
+      "stdout": "{\"scene\": \"S03\", \"original_lines\": 22, \"new_lines\": 92, \"directed_story_lines\": 114, \"directed_model_examples\": 10, \"shots\": 50, \"narrative_seconds_planned\": 598, \"largest_planning_budget_fraction\": 0.9995, \"status\": \"DIRECTED_DESIGN_PASS_ONLY\", \"audio_synthesis\": \"NOT_RUN\", \"listening_approval\": \"NOT_RUN\"}\n",
+      "stderr": ""
+    },
+    {
+      "id": "s04_validation_entry",
+      "command": [
+        "python",
+        "scripts/validate_s04_design.py"
+      ],
+      "executed_utc": "2026-11-23T03:15:43.202317+00:00",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS_EXPECTED_RESULT",
+      "elapsed_seconds": 0.046,
+      "log_file": "/workspace/scratch/4851b214300f/revision_test_logs/s04_validation_entry.log",
+      "stdout": "{\"scene\": \"S04\", \"original_lines\": 32, \"new_lines\": 77, \"directed_story_lines\": 109, \"directed_model_examples\": 10, \"shots\": 50, \"narrative_seconds_planned\": 527, \"largest_planning_budget_fraction\": 0.9962, \"status\": \"DIRECTED_DESIGN_PASS_ONLY\", \"audio_synthesis\": \"NOT_RUN\", \"listening_approval\": \"NOT_RUN\"}\n",
+      "stderr": ""
+    },
+    {
+      "id": "s05_validation_entry",
+      "command": [
+        "python",
+        "scripts/validate_s05_design.py"
+      ],
+      "executed_utc": "2026-11-23T03:15:43.248232+00:00",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS_EXPECTED_RESULT",
+      "elapsed_seconds": 0.044,
+      "log_file": "/workspace/scratch/4851b214300f/revision_test_logs/s05_validation_entry.log",
+      "stdout": "{\"scene\": \"S05\", \"original_lines\": 18, \"new_lines\": 69, \"directed_story_lines\": 87, \"directed_model_examples\": 10, \"shots\": 50, \"narrative_seconds_planned\": 472, \"largest_planning_budget_fraction\": 0.9863, \"status\": \"DIRECTED_DESIGN_PASS_ONLY\", \"audio_synthesis\": \"NOT_RUN\", \"listening_approval\": \"NOT_RUN\"}\n",
+      "stderr": ""
+    }
+  ],
+  "targeted_final_metadata_retest": {
+    "reason": "Final stale narrative-time wording correction in S05 shot acting",
+    "source_change": "432초 본편 시간 → 계획 본편 시간",
+    "results": [
+      {
+        "id": "s05_final_direction_validate",
+        "command": [
+          "python",
+          "scripts/voice_direction_tools.py",
+          "validate",
+          "--scenes",
+          "S05",
+          "--report",
+          "/workspace/scratch/4851b214300f/revision_test_logs/S05_final_validation.json"
+        ],
+        "executed_utc": "2026-11-23T03:22:15.267241+00:00",
+        "expected_exit": 0,
+        "actual_exit": 0,
+        "status": "PASS_EXPECTED_RESULT",
+        "stdout": "{\"scene\": \"S05\", \"original_lines\": 18, \"new_lines\": 69, \"directed_story_lines\": 87, \"directed_model_examples\": 10, \"shots\": 50, \"narrative_seconds_planned\": 472, \"largest_planning_budget_fraction\": 0.9863, \"status\": \"DIRECTED_DESIGN_PASS_ONLY\", \"audio_synthesis\": \"NOT_RUN\", \"listening_approval\": \"NOT_RUN\"}\n",
+        "stderr": ""
+      },
+      {
+        "id": "s05_final_preflight_export",
+        "command": [
+          "python",
+          "scripts/s05_voice_preflight.py",
+          "--json",
+          "scenes/S05/voice_preflight_report.json",
+          "--export-jobs",
+          "/workspace/scratch/4851b214300f/revision_test_logs/S05_jobs.json"
+        ],
+        "executed_utc": "2026-11-23T03:22:15.341503+00:00",
+        "expected_exit": 0,
+        "actual_exit": 0,
+        "status": "PASS_EXPECTED_RESULT",
+        "stdout": "{\"scene\": \"S05\", \"audit_scope\": \"LOCKED_REFERENCES_AND_PER_LINE_DIRECTION_EXPORT_ONLY\", \"reference_integrity\": \"PASS\", \"direction_export_integrity\": \"PASS\", \"story_dialogue_count\": 87, \"model_example_count\": 10, \"first_pass_model_examples_required\": 10, \"optional_example_count\": 0, \"example_replays_optional\": true, \"story_speaker_counts\": {\"피노키오\": 45, \"귀뚜라미\": 39, \"내레이션\": 3}, \"model_example_speaker_counts\": {\"피노키오\": 5, \"귀뚜라미\": 5}, \"blocked_speakers\": [\"귀뚜라미\"], \"full_scene_voice_gate\": \"BLOCKED_RESOURCE\", \"audio_synthesis\": \"NOT_RUN\", \"audio_duration_and_lipsync\": \"NOT_RUN\", \"direction_adapter_application\": \"NOT_RUN\", \"listening_review\": \"NOT_RUN\", \"voice_plan\": \"scenes/S05/voice_direction_plan.json\"}\n",
+        "stderr": ""
+      }
+    ]
+  },
+  "negative_cases": [
+    {
+      "case": "missing per-line direction",
+      "status": "REJECTED_EXPECTED",
+      "reason": "S03-U001 missing voice direction"
+    },
+    {
+      "case": "wrong character identity",
+      "status": "REJECTED_EXPECTED",
+      "reason": "S03-U001 wrong character profile"
+    },
+    {
+      "case": "canonical text polluted by acting note",
+      "status": "REJECTED_EXPECTED",
+      "reason": "Canonical speech changed"
+    },
+    {
+      "case": "narrative WAIT shot",
+      "status": "REJECTED_EXPECTED",
+      "reason": "Pure WAIT must be outside narrative clock"
+    },
+    {
+      "case": "speech overrun hidden in cut",
+      "status": "REJECTED_EXPECTED",
+      "reason": "Speech/action budget exceeds S03/B10-C05: 1035.14>36"
+    },
+    {
+      "case": "four-word learning cue",
+      "status": "REJECTED_EXPECTED",
+      "reason": "Cue must be exactly three words"
+    },
+    {
+      "case": "microphone opens before first model",
+      "status": "REJECTED_EXPECTED",
+      "reason": "Missing beginner/input rule first_model_before_listen"
+    },
+    {
+      "case": "Cricket landing after first greeting",
+      "status": "REJECTED_EXPECTED",
+      "reason": "First Cricket landing must precede greeting"
+    }
+  ],
+  "continuity_negative_case_count": 4,
+  "initial_failures_and_minimal_corrections": [
+    {
+      "initial_probe": {
+        "status": "FAIL_CHECKER_CONSTANT_TYPO",
+        "observed": "Storyboard SHA literal copied with 61 rather than 64 characters",
+        "source_file_changed": false,
+        "baseline_and_current_source_sha": "b5ff72a4e6d889006eacc669a7c15c68a739ca1805117b8c79d79d4ab5181610"
+      },
+      "minimal_fix": "Correct only new validator hash literal from existing approved source manifest and preserved baseline",
+      "retest": {
+        "status": "PASS",
+        "scope": "7 cast profiles; 4 original voice-reference hashes; 2 canonical source hashes"
+      }
+    },
+    {
+      "initial_probe": {
+        "executed_utc": "2026-11-23T03:09:56.250910+00:00",
+        "results": [
+          {
+            "scene": "S03",
+            "status": "FAIL",
+            "type": "KeyError",
+            "error": "'clock'"
+          },
+          {
+            "scene": "S04",
+            "status": "PASS_SOURCE_CONTRACT",
+            "result": {
+              "scene": "S04",
+              "original_lines": 32,
+              "new_lines": 77,
+              "directed_story_lines": 109,
+              "directed_model_examples": 10,
+              "shots": 50,
+              "narrative_seconds_planned": 527,
+              "largest_planning_budget_fraction": 0.9962,
+              "status": "DIRECTED_DESIGN_PASS_ONLY",
+              "audio_synthesis": "NOT_RUN",
+              "listening_approval": "NOT_RUN"
+            }
+          },
+          {
+            "scene": "S05",
+            "status": "PASS_SOURCE_CONTRACT",
+            "result": {
+              "scene": "S05",
+              "original_lines": 18,
+              "new_lines": 69,
+              "directed_story_lines": 87,
+              "directed_model_examples": 10,
+              "shots": 50,
+              "narrative_seconds_planned": 472,
+              "largest_planning_budget_fraction": 0.9863,
+              "status": "DIRECTED_DESIGN_PASS_ONLY",
+              "audio_synthesis": "NOT_RUN",
+              "listening_approval": "NOT_RUN"
+            }
+          }
+        ]
+      },
+      "minimal_fix": "Complete compatible S03 timing_contract.clock and narrative_seconds fields, then rerun same validator; final directed-design result PASS."
+    },
+    {
+      "issue": "New checker initially assumed every demonstration occurs in C03.",
+      "minimal_fix": "Validate actual same-beat C01-C03 demonstration before pause instead; preserve authored C02 demonstration locations.",
+      "final_status": "PASS"
+    }
+  ],
+  "semantic_crossreview_corrections": [
+    {
+      "id": "S03-N008",
+      "reason": "Independent cross-review found voice direction action timing differed from the cut",
+      "before": {
+        "delivery_ko": "something은 과장하지 않고 learn at school에 따뜻한 확신을 준다. 책을 덮는 손동작과 함께 말끝을 편안히 내린다.",
+        "direction_en": "Connect the new picture to what he can learn at school; finish with quiet confidence while helping settle the book."
+      },
+      "after": {
+        "delivery_ko": "something은 과장하지 않고 learn at school에 따뜻한 확신을 준다. 열린 책 그림과 피노키오를 보며 말끝을 편안히 내린다. 책을 닫는 손동작은 발화가 끝난 뒤에만 한다.",
+        "direction_en": "Connect the open picture to what he can learn at school, looking between the page and the child. Finish with quiet confidence; the book stays open throughout this line and is closed only after it ends."
+      },
+      "spoken_text_unchanged": "That's something you can learn at school.",
+      "timing_unchanged": true
+    },
+    {
+      "id": "S03-N045",
+      "reason": "Independent cross-review found voice direction action timing differed from the cut",
+      "before": {
+        "delivery_ko": "Not under는 손에 든 책 아래를 보며 짧게 확인한다. 책을 내려놓으며 목소리가 편안히 가라앉는다.",
+        "direction_en": "Report the empty space you have just checked, then let the line settle as the book returns to its place."
+      },
+      "after": {
+        "delivery_ko": "책을 제자리에 놓고 양손을 이미 뗀 상태에서 방금 확인한 빈 아래쪽의 결과를 제페토에게 짧게 전한다. Not under에 작은 아쉬움만 담고 탐색 의욕은 유지한다. 책을 다시 들거나 내려놓지 않는다.",
+        "direction_en": "Report the empty space you have just checked after the book is already back in place and both hands are off it. Give Not under a small disappointment while staying engaged in the search; do not perform another lifting or lowering action."
+      },
+      "spoken_text_unchanged": "Not under the book!",
+      "timing_unchanged": true
+    },
+    {
+      "id": "S05-N041",
+      "correction": "Eyes only on book corners in closed bag; fingertips poised without contact until reaction.",
+      "text_and_timing_unchanged": true
+    },
+    {
+      "id": "S04/B01-C01",
+      "correction": "Existing 1.5-second lead now explicitly shows final yard step and stop before still-closed garden gate; workshop-to-yard travel was a scene-cut ellipsis.",
+      "text_and_timing_unchanged": true
+    }
+  ],
+  "agent_ledgers_historical_snapshots": {
+    "S03": {
+      "scene": "S03",
+      "revision": "2.1_VOICE_DIRECTED_CORRECTION",
+      "baseline_revision": "e160f9bc10c3752706620f331034d40f0639a934",
+      "authorized_scope": "User requested actual correction and individual voice directions after review. Only the two assigned S03 JSON files edited.",
+      "edited_files": [
+        "scenes/S03/scene_design_v2.json",
+        "scenes/S03/interaction_map_v2.json"
+      ],
+      "counts": {
+        "original_lines": 22,
+        "new_lines": 92,
+        "spoken_lines": 114,
+        "voice_directions": 114,
+        "example_directions": 10,
+        "beats": 10,
+        "shots": 50,
+        "events": 10,
+        "legacy_events": 2
+      },
+      "old_duration_target_seconds": 456,
+      "new_duration_target_seconds": 598,
+      "duration_status": "PLANNED_NOT_MEASURED",
+      "external_wait_seconds_counted": 0,
+      "changes_to_new_text": [
+        {
+          "dialogue_id": "S03-N022",
+          "old_text": "Your head is still bare.",
+          "new_text": "Show me where your hat will go."
+        },
+        {
+          "dialogue_id": "S03-N023",
+          "old_text": "Bare? Oh, no hat!",
+          "new_text": "Right up here on top?"
+        },
+        {
+          "dialogue_id": "S03-N047",
+          "old_text": "Did something red move down there?",
+          "new_text": "Where should we look next?"
+        },
+        {
+          "dialogue_id": "S03-N077",
+          "old_text": "Now I can put the book in.",
+          "new_text": "Your book is inside the bag."
+        }
+      ],
+      "addressed": [
+        {
+          "id": "F01",
+          "resolution": "모든 발화를 실제 컷에 1회씩 배정하고 개별 계획 속도·쉼·선행/후행 실제 연기를 합산해 50컷을 다시 배정. B10-C04에 약속 안내를, C05에 기억/대답/애정/출구 이동을 분리."
+        },
+        {
+          "id": "F02",
+          "resolution": "10개 C03 모두 실제 시범·질문이 있는 PROMPT 컷이며 마지막 질문 종료 경계에서 외부 시계로 정지. 순수 WAIT 전용 컷 제거, 본편 WAIT 0초, 예시 0초."
+        },
+        {
+          "id": "F03",
+          "resolution": "B09 책 넣기 후 신규 문장을 Your book is inside the bag.으로 바꿔 완료된 물건 상태와 일치. 원본 제페토 책 넣기 주체·같은 책·1회 이동 유지."
+        },
+        {
+          "id": "R01",
+          "resolution": "B05 red move 대사를 Where should we look next?로 바꿈. 배우는 위치를 모르며 모자는 고정, 관객만 빨간 단서를 봄."
+        },
+        {
+          "id": "R02",
+          "resolution": "B10-C05 실제 어깨끈 착용과 손→어깨 지지 전환, 제페토와 실내 출구 앞까지 이동을 내레이션/대화 중 배정. 집 앞 대문과 실내문은 열지 않음."
+        },
+        {
+          "id": "R04_S03",
+          "resolution": "B03 사전 bare/no hat 대사 대신 머리 위치 질문을 사용. 참여 뒤는 촉감 확인으로 연기하며 이미 아는 결과를 큰 발견처럼 과장하지 않음."
+        },
+        {
+          "id": "R07_S03",
+          "resolution": "10개 모두 본편 외부 예시를 첫 입력 전에 기본 1회 재생, 예시 종료 뒤 VAD. 보호자 즉시 진행과 5초 뒤 재청취 경로 유지."
+        },
+        {
+          "id": "F09_S03_FACTS",
+          "resolution": "동일한 학교책의 B01 열람→닫기→B09 가방 삽입→이후 미개봉 이력을 handoff에 정확히 명시. 전역 인계문서의 용어 수정은 root 담당."
+        }
+      ],
+      "original_preservation": "22 exact source-index/speaker/text tuples unchanged; I03/I04 id/kind/cue/speaker/prompt/react/resume preserved; relative order and adjacent question→marker→resume unchanged.",
+      "beat_timing": [
+        {
+          "beat": "B01",
+          "start_seconds": 0,
+          "end_seconds": 64,
+          "seconds": 64,
+          "shots": [
+            {
+              "id": "B01-C01",
+              "seconds": 17,
+              "dialogue_ids": [
+                "S03-U001",
+                "S03-U002",
+                "S03-U003",
+                "S03-U004"
+              ],
+              "budget": {
+                "planned_speech_seconds": 11.9123,
+                "planned_voice_pause_seconds": 2.22,
+                "planned_voice_total_seconds": 14.1323,
+                "planned_action_seconds": 2.0,
+                "required_seconds": 16.1323,
+                "allocated_seconds": 17,
+                "rounding_reserve_seconds": 0.8677,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B01-C02",
+              "seconds": 19,
+              "dialogue_ids": [
+                "S03-N001",
+                "S03-N002",
+                "S03-N003",
+                "S03-N004"
+              ],
+              "budget": {
+                "planned_speech_seconds": 14.2648,
+                "planned_voice_pause_seconds": 2.17,
+                "planned_voice_total_seconds": 16.4348,
+                "planned_action_seconds": 2.0,
+                "required_seconds": 18.4348,
+                "allocated_seconds": 19,
+                "rounding_reserve_seconds": 0.5652,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B01-C03",
+              "seconds": 10,
+              "dialogue_ids": [
+                "S03-N005",
+                "S03-N006"
+              ],
+              "budget": {
+                "planned_speech_seconds": 7.2464,
+                "planned_voice_pause_seconds": 1.03,
+                "planned_voice_total_seconds": 8.2764,
+                "planned_action_seconds": 1.2,
+                "required_seconds": 9.4764,
+                "allocated_seconds": 10,
+                "rounding_reserve_seconds": 0.5236,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B01-C04",
+              "seconds": 9,
+              "dialogue_ids": [
+                "S03-N007"
+              ],
+              "budget": {
+                "planned_speech_seconds": 3.7838,
+                "planned_voice_pause_seconds": 0.71,
+                "planned_voice_total_seconds": 4.4938,
+                "planned_action_seconds": 4.5,
+                "required_seconds": 8.9938,
+                "allocated_seconds": 9,
+                "rounding_reserve_seconds": 0.0062,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B01-C05",
+              "seconds": 9,
+              "dialogue_ids": [
+                "S03-N008"
+              ],
+              "budget": {
+                "planned_speech_seconds": 4.4681,
+                "planned_voice_pause_seconds": 0.56,
+                "planned_voice_total_seconds": 5.0281,
+                "planned_action_seconds": 3.0,
+                "required_seconds": 8.0281,
+                "allocated_seconds": 9,
+                "rounding_reserve_seconds": 0.9719,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            }
+          ]
+        },
+        {
+          "beat": "B02",
+          "start_seconds": 64,
+          "end_seconds": 130,
+          "seconds": 66,
+          "shots": [
+            {
+              "id": "B02-C01",
+              "seconds": 14,
+              "dialogue_ids": [
+                "S03-N009",
+                "S03-N010",
+                "S03-N011"
+              ],
+              "budget": {
+                "planned_speech_seconds": 9.9842,
+                "planned_voice_pause_seconds": 1.57,
+                "planned_voice_total_seconds": 11.5542,
+                "planned_action_seconds": 2.0,
+                "required_seconds": 13.5542,
+                "allocated_seconds": 14,
+                "rounding_reserve_seconds": 0.4458,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B02-C02",
+              "seconds": 17,
+              "dialogue_ids": [
+                "S03-N012",
+                "S03-N013",
+                "S03-N014"
+              ],
+              "budget": {
+                "planned_speech_seconds": 11.3298,
+                "planned_voice_pause_seconds": 1.69,
+                "planned_voice_total_seconds": 13.0198,
+                "planned_action_seconds": 3.5,
+                "required_seconds": 16.5198,
+                "allocated_seconds": 17,
+                "rounding_reserve_seconds": 0.4802,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B02-C03",
+              "seconds": 11,
+              "dialogue_ids": [
+                "S03-N015",
+                "S03-N016"
+              ],
+              "budget": {
+                "planned_speech_seconds": 8.1877,
+                "planned_voice_pause_seconds": 1.19,
+                "planned_voice_total_seconds": 9.3777,
+                "planned_action_seconds": 1.2,
+                "required_seconds": 10.5777,
+                "allocated_seconds": 11,
+                "rounding_reserve_seconds": 0.4223,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B02-C04",
+              "seconds": 13,
+              "dialogue_ids": [
+                "S03-N017",
+                "S03-N018"
+              ],
+              "budget": {
+                "planned_speech_seconds": 6.801,
+                "planned_voice_pause_seconds": 1.24,
+                "planned_voice_total_seconds": 8.041,
+                "planned_action_seconds": 4.5,
+                "required_seconds": 12.541,
+                "allocated_seconds": 13,
+                "rounding_reserve_seconds": 0.459,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B02-C05",
+              "seconds": 11,
+              "dialogue_ids": [
+                "S03-N019",
+                "S03-N020"
+              ],
+              "budget": {
+                "planned_speech_seconds": 6.6864,
+                "planned_voice_pause_seconds": 1.18,
+                "planned_voice_total_seconds": 7.8664,
+                "planned_action_seconds": 2.5,
+                "required_seconds": 10.3664,
+                "allocated_seconds": 11,
+                "rounding_reserve_seconds": 0.6336,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            }
+          ]
+        },
+        {
+          "beat": "B03",
+          "start_seconds": 130,
+          "end_seconds": 185,
+          "seconds": 55,
+          "shots": [
+            {
+              "id": "B03-C01",
+              "seconds": 16,
+              "dialogue_ids": [
+                "S03-U005",
+                "S03-U006",
+                "S03-U007",
+                "S03-U008"
+              ],
+              "budget": {
+                "planned_speech_seconds": 11.5347,
+                "planned_voice_pause_seconds": 2.25,
+                "planned_voice_total_seconds": 13.7847,
+                "planned_action_seconds": 1.3,
+                "required_seconds": 15.0847,
+                "allocated_seconds": 16,
+                "rounding_reserve_seconds": 0.9153,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B03-C02",
+              "seconds": 14,
+              "dialogue_ids": [
+                "S03-N021",
+                "S03-N022",
+                "S03-N023"
+              ],
+              "budget": {
+                "planned_speech_seconds": 10.7005,
+                "planned_voice_pause_seconds": 1.54,
+                "planned_voice_total_seconds": 12.2405,
+                "planned_action_seconds": 1.3,
+                "required_seconds": 13.5405,
+                "allocated_seconds": 14,
+                "rounding_reserve_seconds": 0.4595,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B03-C03",
+              "seconds": 9,
+              "dialogue_ids": [
+                "S03-N024",
+                "S03-N025"
+              ],
+              "budget": {
+                "planned_speech_seconds": 6.7949,
+                "planned_voice_pause_seconds": 1.17,
+                "planned_voice_total_seconds": 7.9649,
+                "planned_action_seconds": 0.8,
+                "required_seconds": 8.7649,
+                "allocated_seconds": 9,
+                "rounding_reserve_seconds": 0.2351,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B03-C04",
+              "seconds": 7,
+              "dialogue_ids": [
+                "S03-N026"
+              ],
+              "budget": {
+                "planned_speech_seconds": 2.3301,
+                "planned_voice_pause_seconds": 0.48,
+                "planned_voice_total_seconds": 2.8101,
+                "planned_action_seconds": 3.3,
+                "required_seconds": 6.1101,
+                "allocated_seconds": 7,
+                "rounding_reserve_seconds": 0.8899,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B03-C05",
+              "seconds": 9,
+              "dialogue_ids": [
+                "S03-N027",
+                "S03-N028"
+              ],
+              "budget": {
+                "planned_speech_seconds": 5.4965,
+                "planned_voice_pause_seconds": 0.92,
+                "planned_voice_total_seconds": 6.4165,
+                "planned_action_seconds": 2.3,
+                "required_seconds": 8.7165,
+                "allocated_seconds": 9,
+                "rounding_reserve_seconds": 0.2835,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            }
+          ]
+        },
+        {
+          "beat": "B04",
+          "start_seconds": 185,
+          "end_seconds": 241,
+          "seconds": 56,
+          "shots": [
+            {
+              "id": "B04-C01",
+              "seconds": 11,
+              "dialogue_ids": [
+                "S03-N029",
+                "S03-N030"
+              ],
+              "budget": {
+                "planned_speech_seconds": 7.3677,
+                "planned_voice_pause_seconds": 0.96,
+                "planned_voice_total_seconds": 8.3277,
+                "planned_action_seconds": 2.0,
+                "required_seconds": 10.3277,
+                "allocated_seconds": 11,
+                "rounding_reserve_seconds": 0.6723,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B04-C02",
+              "seconds": 14,
+              "dialogue_ids": [
+                "S03-N031",
+                "S03-N032",
+                "S03-N033"
+              ],
+              "budget": {
+                "planned_speech_seconds": 9.1515,
+                "planned_voice_pause_seconds": 1.52,
+                "planned_voice_total_seconds": 10.6715,
+                "planned_action_seconds": 2.5,
+                "required_seconds": 13.1715,
+                "allocated_seconds": 14,
+                "rounding_reserve_seconds": 0.8285,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B04-C03",
+              "seconds": 5,
+              "dialogue_ids": [
+                "S03-N034"
+              ],
+              "budget": {
+                "planned_speech_seconds": 2.8571,
+                "planned_voice_pause_seconds": 0.7,
+                "planned_voice_total_seconds": 3.5571,
+                "planned_action_seconds": 0.8,
+                "required_seconds": 4.3571,
+                "allocated_seconds": 5,
+                "rounding_reserve_seconds": 0.6429,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B04-C04",
+              "seconds": 15,
+              "dialogue_ids": [
+                "S03-N035",
+                "S03-N036",
+                "S03-U009"
+              ],
+              "budget": {
+                "planned_speech_seconds": 8.4142,
+                "planned_voice_pause_seconds": 1.76,
+                "planned_voice_total_seconds": 10.1742,
+                "planned_action_seconds": 4.8,
+                "required_seconds": 14.9742,
+                "allocated_seconds": 15,
+                "rounding_reserve_seconds": 0.0258,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B04-C05",
+              "seconds": 11,
+              "dialogue_ids": [
+                "S03-N037",
+                "S03-N038"
+              ],
+              "budget": {
+                "planned_speech_seconds": 7.1861,
+                "planned_voice_pause_seconds": 1.0,
+                "planned_voice_total_seconds": 8.1861,
+                "planned_action_seconds": 2.5,
+                "required_seconds": 10.6861,
+                "allocated_seconds": 11,
+                "rounding_reserve_seconds": 0.3139,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            }
+          ]
+        },
+        {
+          "beat": "B05",
+          "start_seconds": 241,
+          "end_seconds": 295,
+          "seconds": 54,
+          "shots": [
+            {
+              "id": "B05-C01",
+              "seconds": 8,
+              "dialogue_ids": [
+                "S03-N039",
+                "S03-N040"
+              ],
+              "budget": {
+                "planned_speech_seconds": 4.8728,
+                "planned_voice_pause_seconds": 0.89,
+                "planned_voice_total_seconds": 5.7628,
+                "planned_action_seconds": 1.7,
+                "required_seconds": 7.4628,
+                "allocated_seconds": 8,
+                "rounding_reserve_seconds": 0.5372,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B05-C02",
+              "seconds": 15,
+              "dialogue_ids": [
+                "S03-N041",
+                "S03-N042",
+                "S03-N043"
+              ],
+              "budget": {
+                "planned_speech_seconds": 11.0492,
+                "planned_voice_pause_seconds": 1.65,
+                "planned_voice_total_seconds": 12.6992,
+                "planned_action_seconds": 1.8,
+                "required_seconds": 14.4992,
+                "allocated_seconds": 15,
+                "rounding_reserve_seconds": 0.5008,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B05-C03",
+              "seconds": 6,
+              "dialogue_ids": [
+                "S03-N044"
+              ],
+              "budget": {
+                "planned_speech_seconds": 4.1176,
+                "planned_voice_pause_seconds": 0.71,
+                "planned_voice_total_seconds": 4.8276,
+                "planned_action_seconds": 0.8,
+                "required_seconds": 5.6276,
+                "allocated_seconds": 6,
+                "rounding_reserve_seconds": 0.3724,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B05-C04",
+              "seconds": 11,
+              "dialogue_ids": [
+                "S03-N045",
+                "S03-N046"
+              ],
+              "budget": {
+                "planned_speech_seconds": 4.9388,
+                "planned_voice_pause_seconds": 1.0,
+                "planned_voice_total_seconds": 5.9388,
+                "planned_action_seconds": 4.5,
+                "required_seconds": 10.4388,
+                "allocated_seconds": 11,
+                "rounding_reserve_seconds": 0.5612,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B05-C05",
+              "seconds": 14,
+              "dialogue_ids": [
+                "S03-N047",
+                "S03-N048",
+                "S03-N049"
+              ],
+              "budget": {
+                "planned_speech_seconds": 10.1201,
+                "planned_voice_pause_seconds": 1.49,
+                "planned_voice_total_seconds": 11.6101,
+                "planned_action_seconds": 1.7,
+                "required_seconds": 13.3101,
+                "allocated_seconds": 14,
+                "rounding_reserve_seconds": 0.6899,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            }
+          ]
+        },
+        {
+          "beat": "B06",
+          "start_seconds": 295,
+          "end_seconds": 347,
+          "seconds": 52,
+          "shots": [
+            {
+              "id": "B06-C01",
+              "seconds": 10,
+              "dialogue_ids": [
+                "S03-N050",
+                "S03-N051"
+              ],
+              "budget": {
+                "planned_speech_seconds": 7.3807,
+                "planned_voice_pause_seconds": 1.04,
+                "planned_voice_total_seconds": 8.4207,
+                "planned_action_seconds": 1.5,
+                "required_seconds": 9.9207,
+                "allocated_seconds": 10,
+                "rounding_reserve_seconds": 0.0793,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B06-C02",
+              "seconds": 7,
+              "dialogue_ids": [
+                "S03-U010"
+              ],
+              "budget": {
+                "planned_speech_seconds": 4.6154,
+                "planned_voice_pause_seconds": 0.8,
+                "planned_voice_total_seconds": 5.4154,
+                "planned_action_seconds": 1.3,
+                "required_seconds": 6.7154,
+                "allocated_seconds": 7,
+                "rounding_reserve_seconds": 0.2846,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B06-C03",
+              "seconds": 5,
+              "dialogue_ids": [
+                "S03-U011"
+              ],
+              "budget": {
+                "planned_speech_seconds": 3.3708,
+                "planned_voice_pause_seconds": 0.8,
+                "planned_voice_total_seconds": 4.1708,
+                "planned_action_seconds": 0.8,
+                "required_seconds": 4.9708,
+                "allocated_seconds": 5,
+                "rounding_reserve_seconds": 0.0292,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B06-C04",
+              "seconds": 15,
+              "dialogue_ids": [
+                "S03-U012",
+                "S03-U013",
+                "S03-N052"
+              ],
+              "budget": {
+                "planned_speech_seconds": 5.8128,
+                "planned_voice_pause_seconds": 1.68,
+                "planned_voice_total_seconds": 7.4928,
+                "planned_action_seconds": 7.5,
+                "required_seconds": 14.9928,
+                "allocated_seconds": 15,
+                "rounding_reserve_seconds": 0.0072,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B06-C05",
+              "seconds": 15,
+              "dialogue_ids": [
+                "S03-N053",
+                "S03-N054",
+                "S03-N055"
+              ],
+              "budget": {
+                "planned_speech_seconds": 11.3987,
+                "planned_voice_pause_seconds": 1.61,
+                "planned_voice_total_seconds": 13.0087,
+                "planned_action_seconds": 1.5,
+                "required_seconds": 14.5087,
+                "allocated_seconds": 15,
+                "rounding_reserve_seconds": 0.4913,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            }
+          ]
+        },
+        {
+          "beat": "B07",
+          "start_seconds": 347,
+          "end_seconds": 401,
+          "seconds": 54,
+          "shots": [
+            {
+              "id": "B07-C01",
+              "seconds": 9,
+              "dialogue_ids": [
+                "S03-N056",
+                "S03-N057"
+              ],
+              "budget": {
+                "planned_speech_seconds": 6.6894,
+                "planned_voice_pause_seconds": 0.97,
+                "planned_voice_total_seconds": 7.6594,
+                "planned_action_seconds": 1.3,
+                "required_seconds": 8.9594,
+                "allocated_seconds": 9,
+                "rounding_reserve_seconds": 0.0406,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B07-C02",
+              "seconds": 12,
+              "dialogue_ids": [
+                "S03-N058",
+                "S03-N059"
+              ],
+              "budget": {
+                "planned_speech_seconds": 8.9412,
+                "planned_voice_pause_seconds": 1.25,
+                "planned_voice_total_seconds": 10.1912,
+                "planned_action_seconds": 1.6,
+                "required_seconds": 11.7912,
+                "allocated_seconds": 12,
+                "rounding_reserve_seconds": 0.2088,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B07-C03",
+              "seconds": 6,
+              "dialogue_ids": [
+                "S03-N060"
+              ],
+              "budget": {
+                "planned_speech_seconds": 4.0777,
+                "planned_voice_pause_seconds": 0.71,
+                "planned_voice_total_seconds": 4.7877,
+                "planned_action_seconds": 0.8,
+                "required_seconds": 5.5877,
+                "allocated_seconds": 6,
+                "rounding_reserve_seconds": 0.4123,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B07-C04",
+              "seconds": 12,
+              "dialogue_ids": [
+                "S03-N061",
+                "S03-N062"
+              ],
+              "budget": {
+                "planned_speech_seconds": 6.0728,
+                "planned_voice_pause_seconds": 1.21,
+                "planned_voice_total_seconds": 7.2828,
+                "planned_action_seconds": 4.5,
+                "required_seconds": 11.7828,
+                "allocated_seconds": 12,
+                "rounding_reserve_seconds": 0.2172,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B07-C05",
+              "seconds": 15,
+              "dialogue_ids": [
+                "S03-U014",
+                "S03-U015",
+                "S03-N063",
+                "S03-N064"
+              ],
+              "budget": {
+                "planned_speech_seconds": 10.8038,
+                "planned_voice_pause_seconds": 2.6,
+                "planned_voice_total_seconds": 13.4038,
+                "planned_action_seconds": 1.3,
+                "required_seconds": 14.7038,
+                "allocated_seconds": 15,
+                "rounding_reserve_seconds": 0.2962,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            }
+          ]
+        },
+        {
+          "beat": "B08",
+          "start_seconds": 401,
+          "end_seconds": 452,
+          "seconds": 51,
+          "shots": [
+            {
+              "id": "B08-C01",
+              "seconds": 6,
+              "dialogue_ids": [
+                "S03-N065"
+              ],
+              "budget": {
+                "planned_speech_seconds": 4.1176,
+                "planned_voice_pause_seconds": 0.53,
+                "planned_voice_total_seconds": 4.6476,
+                "planned_action_seconds": 1.3,
+                "required_seconds": 5.9476,
+                "allocated_seconds": 6,
+                "rounding_reserve_seconds": 0.0524,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B08-C02",
+              "seconds": 6,
+              "dialogue_ids": [
+                "S03-N066"
+              ],
+              "budget": {
+                "planned_speech_seconds": 3.3333,
+                "planned_voice_pause_seconds": 0.53,
+                "planned_voice_total_seconds": 3.8633,
+                "planned_action_seconds": 1.7,
+                "required_seconds": 5.5633,
+                "allocated_seconds": 6,
+                "rounding_reserve_seconds": 0.4367,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B08-C03",
+              "seconds": 7,
+              "dialogue_ids": [
+                "S03-U016"
+              ],
+              "budget": {
+                "planned_speech_seconds": 4.7059,
+                "planned_voice_pause_seconds": 0.8,
+                "planned_voice_total_seconds": 5.5059,
+                "planned_action_seconds": 0.6,
+                "required_seconds": 6.1059,
+                "allocated_seconds": 7,
+                "rounding_reserve_seconds": 0.8941,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B08-C04",
+              "seconds": 14,
+              "dialogue_ids": [
+                "S03-U017",
+                "S03-U018"
+              ],
+              "budget": {
+                "planned_speech_seconds": 4.9405,
+                "planned_voice_pause_seconds": 1.39,
+                "planned_voice_total_seconds": 6.3305,
+                "planned_action_seconds": 7.5,
+                "required_seconds": 13.8305,
+                "allocated_seconds": 14,
+                "rounding_reserve_seconds": 0.1695,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B08-C05",
+              "seconds": 18,
+              "dialogue_ids": [
+                "S03-N067",
+                "S03-N068",
+                "S03-N069"
+              ],
+              "budget": {
+                "planned_speech_seconds": 13.0395,
+                "planned_voice_pause_seconds": 1.72,
+                "planned_voice_total_seconds": 14.7595,
+                "planned_action_seconds": 2.5,
+                "required_seconds": 17.2595,
+                "allocated_seconds": 18,
+                "rounding_reserve_seconds": 0.7405,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            }
+          ]
+        },
+        {
+          "beat": "B09",
+          "start_seconds": 452,
+          "end_seconds": 505,
+          "seconds": 53,
+          "shots": [
+            {
+              "id": "B09-C01",
+              "seconds": 9,
+              "dialogue_ids": [
+                "S03-N070",
+                "S03-N071"
+              ],
+              "budget": {
+                "planned_speech_seconds": 6.0932,
+                "planned_voice_pause_seconds": 0.99,
+                "planned_voice_total_seconds": 7.0832,
+                "planned_action_seconds": 1.5,
+                "required_seconds": 8.5832,
+                "allocated_seconds": 9,
+                "rounding_reserve_seconds": 0.4168,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B09-C02",
+              "seconds": 10,
+              "dialogue_ids": [
+                "S03-N072",
+                "S03-N073"
+              ],
+              "budget": {
+                "planned_speech_seconds": 6.7582,
+                "planned_voice_pause_seconds": 1.18,
+                "planned_voice_total_seconds": 7.9382,
+                "planned_action_seconds": 1.3,
+                "required_seconds": 9.2382,
+                "allocated_seconds": 10,
+                "rounding_reserve_seconds": 0.7618,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B09-C03",
+              "seconds": 10,
+              "dialogue_ids": [
+                "S03-N074",
+                "S03-N075"
+              ],
+              "budget": {
+                "planned_speech_seconds": 6.8687,
+                "planned_voice_pause_seconds": 1.27,
+                "planned_voice_total_seconds": 8.1387,
+                "planned_action_seconds": 1.2,
+                "required_seconds": 9.3387,
+                "allocated_seconds": 10,
+                "rounding_reserve_seconds": 0.6613,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B09-C04",
+              "seconds": 13,
+              "dialogue_ids": [
+                "S03-N076",
+                "S03-N077"
+              ],
+              "budget": {
+                "planned_speech_seconds": 5.0242,
+                "planned_voice_pause_seconds": 0.99,
+                "planned_voice_total_seconds": 6.0142,
+                "planned_action_seconds": 6.0,
+                "required_seconds": 12.0142,
+                "allocated_seconds": 13,
+                "rounding_reserve_seconds": 0.9858,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B09-C05",
+              "seconds": 11,
+              "dialogue_ids": [
+                "S03-N078",
+                "S03-N079",
+                "S03-N080"
+              ],
+              "budget": {
+                "planned_speech_seconds": 7.3451,
+                "planned_voice_pause_seconds": 1.53,
+                "planned_voice_total_seconds": 8.8751,
+                "planned_action_seconds": 1.5,
+                "required_seconds": 10.3751,
+                "allocated_seconds": 11,
+                "rounding_reserve_seconds": 0.6249,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            }
+          ]
+        },
+        {
+          "beat": "B10",
+          "start_seconds": 505,
+          "end_seconds": 598,
+          "seconds": 93,
+          "shots": [
+            {
+              "id": "B10-C01",
+              "seconds": 11,
+              "dialogue_ids": [
+                "S03-N081",
+                "S03-N082"
+              ],
+              "budget": {
+                "planned_speech_seconds": 8.1105,
+                "planned_voice_pause_seconds": 1.23,
+                "planned_voice_total_seconds": 9.3405,
+                "planned_action_seconds": 1.3,
+                "required_seconds": 10.6405,
+                "allocated_seconds": 11,
+                "rounding_reserve_seconds": 0.3595,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B10-C02",
+              "seconds": 12,
+              "dialogue_ids": [
+                "S03-N083",
+                "S03-N084"
+              ],
+              "budget": {
+                "planned_speech_seconds": 8.8302,
+                "planned_voice_pause_seconds": 1.28,
+                "planned_voice_total_seconds": 10.1102,
+                "planned_action_seconds": 1.8,
+                "required_seconds": 11.9102,
+                "allocated_seconds": 12,
+                "rounding_reserve_seconds": 0.0898,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B10-C03",
+              "seconds": 6,
+              "dialogue_ids": [
+                "S03-N085"
+              ],
+              "budget": {
+                "planned_speech_seconds": 4.0,
+                "planned_voice_pause_seconds": 0.79,
+                "planned_voice_total_seconds": 4.79,
+                "planned_action_seconds": 0.7,
+                "required_seconds": 5.49,
+                "allocated_seconds": 6,
+                "rounding_reserve_seconds": 0.51,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B10-C04",
+              "seconds": 28,
+              "dialogue_ids": [
+                "S03-N086",
+                "S03-N087",
+                "S03-N088",
+                "S03-U019",
+                "S03-U020"
+              ],
+              "budget": {
+                "planned_speech_seconds": 17.1189,
+                "planned_voice_pause_seconds": 4.03,
+                "planned_voice_total_seconds": 21.1489,
+                "planned_action_seconds": 6.3,
+                "required_seconds": 27.4489,
+                "allocated_seconds": 28,
+                "rounding_reserve_seconds": 0.5511,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            },
+            {
+              "id": "B10-C05",
+              "seconds": 36,
+              "dialogue_ids": [
+                "S03-N089",
+                "S03-N090",
+                "S03-U021",
+                "S03-N091",
+                "S03-N092",
+                "S03-U022"
+              ],
+              "budget": {
+                "planned_speech_seconds": 28.067,
+                "planned_voice_pause_seconds": 5.07,
+                "planned_voice_total_seconds": 33.137,
+                "planned_action_seconds": 2.6,
+                "required_seconds": 35.737,
+                "allocated_seconds": 36,
+                "rounding_reserve_seconds": 0.263,
+                "basis": "PLANNED_NOT_MEASURED"
+              }
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "prewrite_static_checks": "PASS",
+        "voice_direction_unique_ko": 114,
+        "voice_direction_unique_en": 114,
+        "all_spoken_once_in_shot_order": true,
+        "all_shot_budgets_covered": true,
+        "all10_cues_three_words": true,
+        "all10_first_example_before_input": true,
+        "all10_example_microphone_disabled": true,
+        "score_or_word_recognition": false,
+        "postwrite_independent_check": "PASS_STATIC_ONLY",
+        "postwrite_evidence": "/workspace/scratch/4851b214300f/s03_revision_static_verification.json",
+        "canonical_source_direct_comparison": 22,
+        "max_budget_ratio": 0.999519,
+        "demo_mapping_review": "시범 실제 위치 확인: I03 시각 단서는 의자가 보이는 B06-C03, 실제 시범이 앞 컷에 있는 P04/P05/P06/I04/P08은 C02."
+      },
+      "production": {
+        "audio_generated": "NOT_RUN",
+        "actual_audio_timing": "NOT_RUN",
+        "rendered_video": "NOT_RUN",
+        "actual_mp4_duration": "NOT_RUN",
+        "actual_player": "NOT_RUN",
+        "rendered_boundary_match": "NOT_RUN"
+      },
+      "remaining": [
+        "실제 승인 음색으로 생성한 길이·쉼·감정·일관성 청감 확인 필요",
+        "실제 3D 접촉·가방 착용·장면 경계 렌더 확인 필요",
+        "root가 동기화할 Markdown·전역 문서·음성 작업표·검사기는 이 담당 범위에서 수정하지 않음"
+      ],
+      "sha256": {
+        "scenes/S03/scene_design_v2.json": "7c2c4183029cd108d0a49c9bfc9301735bad07a5ef094c39899a5ac9bc990952",
+        "scenes/S03/interaction_map_v2.json": "920dab12f2c249545b29349d07bb4e302f111cdd65442c34e94796914fb6a7a8"
+      },
+      "final_shot_blocking": "B10-C05 36 seconds; 6 dialogue-linked blocking cues, continuous camera reframing, visible hand-to-shoulder bag transfer and actual indoor exit approach. Final 2 seconds are foot placement and strap release, not an idle hold."
+    },
+    "S04": {
+      "scene": "S04",
+      "baseline_revision": "e160f9bc10c3752706620f331034d40f0639a934",
+      "revision": "2.1_VOICE_DIRECTED_CORRECTION",
+      "edited_files": [
+        "scenes/S04/scene_design_v2.json",
+        "scenes/S04/interaction_map_v2.json"
+      ],
+      "count": {
+        "beats": 10,
+        "shots": 50,
+        "original": 32,
+        "new": 77,
+        "spoken": 109,
+        "examples": 10,
+        "interactions": 10
+      },
+      "old_planned_seconds": 479,
+      "new_planned_seconds": 527,
+      "narrative_frames": 12648,
+      "external_wait_seconds_counted": 0,
+      "changed_new_lines": [
+        {
+          "old": "Can you come down here?",
+          "new": "That loose leaf is wobbling."
+        },
+        {
+          "old": "I can hop, but this leaf is high.",
+          "new": "I need a steady place to stand."
+        },
+        {
+          "old": "Yoonsu, help me hop to the ground!",
+          "new": "Yoonsu, help me stand on firm ground!"
+        },
+        {
+          "old": "Wow! You jumped so far!",
+          "new": "There! Now you're standing steady."
+        },
+        {
+          "old": "One has a school, and one has trees.",
+          "new": "The pictures look different to me."
+        },
+        {
+          "old": "I'll stay beside the school sign.",
+          "new": "I'll follow the school path."
+        },
+        {
+          "old": "And there is a little green frog.",
+          "new": "That little frog landed softly."
+        },
+        {
+          "old": "What is the frog going to do?",
+          "new": "Can we see how he lands?"
+        },
+        {
+          "old": "He can hop!",
+          "new": "He landed softly!"
+        },
+        {
+          "old": "Watch his knees bend first.",
+          "new": "His legs bend when he lands."
+        },
+        {
+          "old": "The school is getting closer!",
+          "new": "The houses are hiding the school."
+        },
+        {
+          "old": "Can you see the roof again?",
+          "new": "Can you find the roof again?"
+        },
+        {
+          "old": "I can see the tall little bell.",
+          "new": "I can see rooftops, but which one?"
+        }
+      ],
+      "changed_cues": [
+        {
+          "id": "S04-P02",
+          "old": "Look at the flower!",
+          "new": "Watch the flower!"
+        },
+        {
+          "id": "S04-P04",
+          "old": "Hop down, cricket!",
+          "new": "Find firm ground!"
+        }
+      ],
+      "legacy_prompt_resume_preserved": true,
+      "originals_unchanged": true,
+      "voice_fields_include_listener_reaction": true,
+      "addressed": {
+        "F02": "전50컷 dialogue_ids와 발화속도·쉼+행동 예산을 지정하고 ceil로 재산정. 순수 WAIT 컷 제거, 10개 C03 종료에서 외부 시계 정지. 모든 예시도 본편 밖.",
+        "F04": "B05-C01 CRICKET_FIRST_LANDING 2.5s lead가 U015보다 먼저. P04는 지면 중앙 낮은 잎→단단한 흙자리 균형 사건, 경로 선택 없음.",
+        "F05": "I07 wait_pose UPRIGHT_FEET_ON_DRY_GROUND, before_input_knee_bend false. B09-C04 PINOCCHIO_PUDDLE_JUMP 입력 뒤 무릎 굽힘 시작.",
+        "F06": "S04-P02 cue/example_text Watch the flower! 정확3단어.",
+        "F07": "NEW I'll follow the school path.로 이동 의미 수정.",
+        "F08": "B08-C01 U023 뒤 FROG_FIRST_HOP 2s, 다음 컷 U024 전. P06은 같은 쪽 물가 두 번째10cm점프·완충 관찰.",
+        "R03": "B06 입력 전 pictures look different, 양쪽 비교만. 학교 이름 식별/특정 손짓 제거, I06 뒤 U020에서 확정.",
+        "R04": "B10 사전발화를 집에 가린 학교/여러지붕 미식별로 수정. P07뒤 시야조정으로 학교종탑 첫명확식별.",
+        "R05": "B09-C05 CRICKET_PUDDLE_CROSSING 3s lead로 실제 연속도약·마른착지·피노키오옆도착 명시.",
+        "R06": "B06-C05 중립상공 경로굽음과 축A→B 연결. B07부터화면오른쪽전진, S04끝→S05첫컷축유지.",
+        "R07": "10이벤트모두질문종료→외부첫예시1회→예시종료후VAD/보호자터치, 무응답5초에는재생/터치선택. 예시중마이크잠금, 서사상태변경금지."
+      },
+      "validation": {
+        "status": "PASS_STATIC_SCOPE_ONLY",
+        "command": "python3 /workspace/scratch/4851b214300f/revise_s04.py",
+        "checks": [
+          "109+10 모든 voice_direction 필수필드와 실제문구 강세/쉼 앵커",
+          "원본32 화자/문구/상대순서",
+          "legacy질문·즉시재개",
+          "10beat/50shot/10event",
+          "109발화 정확한순서로1회 shot배정",
+          "모든cue3단어",
+          "10 external pause·resume경계",
+          "50shot음성+쉼+행동예산 충족",
+          "서사계획>=360초"
+        ],
+        "s01_s02_tests": "NOT_RUN_NOT_IN_SCOPE"
+      },
+      "unresolved": [
+        {
+          "item": "실제 합성 음성 길이·청감·립싱크·3D실행·어린이 사용성",
+          "status": "NOT_RUN"
+        },
+        {
+          "item": "귀뚜라미 승인 기준음색",
+          "status": "BLOCKED_RESOURCE"
+        },
+        {
+          "item": "동기화MD/global/validator/voiceplan 출력",
+          "status": "PARENT_OWNED_PENDING"
+        }
+      ],
+      "per_beat": [
+        {
+          "id": "B01",
+          "start_seconds": 0,
+          "end_seconds": 62,
+          "duration_seconds": 62
+        },
+        {
+          "id": "B02",
+          "start_seconds": 62,
+          "end_seconds": 116,
+          "duration_seconds": 54
+        },
+        {
+          "id": "B03",
+          "start_seconds": 116,
+          "end_seconds": 162,
+          "duration_seconds": 46
+        },
+        {
+          "id": "B04",
+          "start_seconds": 162,
+          "end_seconds": 214,
+          "duration_seconds": 52
+        },
+        {
+          "id": "B05",
+          "start_seconds": 214,
+          "end_seconds": 265,
+          "duration_seconds": 51
+        },
+        {
+          "id": "B06",
+          "start_seconds": 265,
+          "end_seconds": 310,
+          "duration_seconds": 45
+        },
+        {
+          "id": "B07",
+          "start_seconds": 310,
+          "end_seconds": 361,
+          "duration_seconds": 51
+        },
+        {
+          "id": "B08",
+          "start_seconds": 361,
+          "end_seconds": 418,
+          "duration_seconds": 57
+        },
+        {
+          "id": "B09",
+          "start_seconds": 418,
+          "end_seconds": 471,
+          "duration_seconds": 53
+        },
+        {
+          "id": "B10",
+          "start_seconds": 471,
+          "end_seconds": 527,
+          "duration_seconds": 56
+        }
+      ],
+      "independent_validation": {
+        "status": "PASS_STATIC_DESIGN_ONLY",
+        "checks": 123,
+        "planned_seconds": 527,
+        "shot_min_seconds": 5,
+        "shot_max_seconds": 19,
+        "spoken_directions": 109,
+        "example_directions": 10,
+        "actual_audio_render_player": "NOT_RUN",
+        "cricket_reference": "BLOCKED_RESOURCE",
+        "s01_s02_tests": "NOT_RUN_NOT_IN_SCOPE",
+        "sha256": {
+          "scenes/S04/scene_design_v2.json": "6789f09c3d6e4f52a5eec09837f22cd3f49005e439c905d2bfd930e495a893bf",
+          "scenes/S04/interaction_map_v2.json": "d103269d2ac5012648f847f7954559b7f8aa7d27f12d5ebab1cc428734c972c1"
+        }
+      },
+      "validation_log": "/workspace/scratch/4851b214300f/s04_revision_validation.log",
+      "authoring_syntax_failure": {
+        "status": "RESOLVED_BEFORE_PRODUCTION_WRITE",
+        "log": "/workspace/scratch/4851b214300f/s04_revision_authoring_failure.log",
+        "fix": "한국어 연기지시 내 영문 축약형 따옴표3곳을 한국어 표현으로 변경; 실제 발화는 변경 없음."
+      }
+    },
+    "S05": {
+      "scene": "S05",
+      "revision": "2.1_VOICE_DIRECTED_CORRECTION",
+      "scope": "ONLY scenes/S05/scene_design_v2.json and interaction_map_v2.json edited; scratch script/ledger outside repo",
+      "old_duration_seconds": 432,
+      "new_duration_seconds": 472,
+      "new_frames_24fps": 11328,
+      "counts": {
+        "beats": 10,
+        "shots": 50,
+        "original_lines": 18,
+        "new_lines": 69,
+        "main_voice_directions": 87,
+        "external_examples": 10,
+        "example_voice_directions": 10
+      },
+      "source_hashes_before": {
+        "scenes/S05/scene_design_v2.json": "d3ef0c7608dc3a4f2a455db84568a57eb80205051ebf0aefada24d7141c58b91",
+        "scenes/S05/interaction_map_v2.json": "b25c2c1bc4314b19f5f13e9818948ba8ff822512532ca19884df3ea0b00eb3ee"
+      },
+      "source_hashes_after": {
+        "scenes/S05/scene_design_v2.json": "51971dea5ad2acc120fc19021439859cc7427664df9fe6c65b45799625f259a5",
+        "scenes/S05/interaction_map_v2.json": "8a2645133fecad0f5b4582f9b2cd10e76c82e6dcc5589752b5fffe28a746f757"
+      },
+      "resolved_items": [
+        {
+          "id": "R07",
+          "change": "All10 events use question end→external model once with mic off→first VAD/tap; first model is no longer optional timeout-only. Guardian can cancel model and progress. All10 examples have individual acting directions at75–90wpm.",
+          "evidence": [
+            "interaction_map.rules",
+            "events[*].trigger",
+            "events[*].example_voice_direction",
+            "events[*].model_example_first_pass_required"
+          ]
+        },
+        {
+          "id": "R08",
+          "change": "Two anonymous preview puppets visibly walk to audience-right front ledge, outside side screen and closed curtain. Both stay visible through S06-U003; no Pip introduction or main opening.",
+          "evidence": [
+            "B06-C05",
+            "B10-C05",
+            "continuity_contract.exit.preview_puppets",
+            "continuity_contract.reveal_gates.moving_puppets"
+          ]
+        },
+        {
+          "id": "R09",
+          "change": "NEW S05-N052 changed from Now they can pass. to You made room for them., after both visitors fully pass.",
+          "evidence": [
+            "S05-N052",
+            "B08-C04",
+            "S05-P06.react"
+          ]
+        },
+        {
+          "id": "R10",
+          "change": "Grounded Cricket demonstrates with a separate leaf at/below his body height; Pinocchio face-level leaf remains untouched until event reaction.",
+          "evidence": [
+            "B05-C02",
+            "B05-C03",
+            "S05-P04.demo",
+            "S05-P04.demo_constraints"
+          ]
+        },
+        {
+          "id": "F09",
+          "change": "State distinguishes S03 picture-book viewing before packing from no subsequent removal/opening and no school use. No claim of never having opened the book.",
+          "evidence": [
+            "continuity_contract.entry.schoolbook_state",
+            "continuity_contract.exit.schoolbook_state",
+            "B03/B07/B09.continuity"
+          ]
+        },
+        {
+          "id": "B08_B10_SPATIAL_HANDOFF",
+          "change": "Tree discovery→rear approach→step right to clear central path→walk right outer aisle to front corner in B08-C05→same position through B09 and B10 until step-back reaction.",
+          "evidence": [
+            "continuity_contract.staging_path",
+            "B08-C01/C04/C05",
+            "B09-C01/C05",
+            "B10-C01/C02/C04"
+          ]
+        },
+        {
+          "id": "VOICE_DIRECTION_ALL_LINES",
+          "change": "Every87 main line and10 external model has speaker profile, listener, specific intention, emotional turn, Korean and English acting directions, pace/energy/emphasis, exact pause anchors and avoid instructions. Original words remain untouched.",
+          "evidence": [
+            "scenes[*].dialogue[*].voice_direction",
+            "events[*].example_voice_direction"
+          ]
+        },
+        {
+          "id": "VOICE_ACTION_BUDGET",
+          "change": "Every50 shot has action lead/tail and a summed planning budget including all line pauses. Reaction leads complete before designated first resume; C03 has no post-question action tail. Existing meaningful durations kept except required extensions.",
+          "evidence": [
+            "shots[*].timing_budget",
+            "shots[*].action_lead_seconds",
+            "timing_contract",
+            "events[*].question_end_boundary_seconds"
+          ]
+        },
+        {
+          "id": "LANDMARK_WORDING",
+          "change": "NEW S05-N017 now says There! Beside the bell tower. to match the school tower visual. Same ID and five-word count; S05-P02 resume updated.",
+          "evidence": [
+            "S05-N017",
+            "S05-P02.resume"
+          ]
+        },
+        {
+          "id": "POST_REVIEW_N041_PRECONTACT",
+          "change": "Root review clarified N041 KO/EN direction: visually recognize the closed-bag book outline while fingertips remain poised without contact. Text, ID, pace and all pauses unchanged. Touch still occurs only after S05-P05 input.",
+          "evidence": [
+            "S05-N041.voice_direction.delivery_ko",
+            "S05-N041.voice_direction.direction_en"
+          ],
+          "verification": "Targeted check of text/ID/speaker/pace/all pause values unchanged; no timing recalculation needed."
+        }
+      ],
+      "main_text_changes": [
+        {
+          "id": "S05-N017",
+          "old": "There! Beside the tall bell.",
+          "new": "There! Beside the bell tower."
+        },
+        {
+          "id": "S05-N052",
+          "old": "Now they can pass.",
+          "new": "You made room for them."
+        }
+      ],
+      "retimed_shots": [
+        {
+          "shot": "B01-C02",
+          "old_duration_seconds": 7,
+          "new_duration_seconds": 8,
+          "planned_voice_seconds": 5.155,
+          "action_lead_seconds": 0.5,
+          "action_tail_seconds": 1.4,
+          "minimum_seconds_planned": 7.055
+        },
+        {
+          "shot": "B01-C04",
+          "old_duration_seconds": 10,
+          "new_duration_seconds": 11,
+          "planned_voice_seconds": 6.681,
+          "action_lead_seconds": 2.8,
+          "action_tail_seconds": 1.0,
+          "minimum_seconds_planned": 10.481
+        },
+        {
+          "shot": "B02-C02",
+          "old_duration_seconds": 7,
+          "new_duration_seconds": 10,
+          "planned_voice_seconds": 6.286,
+          "action_lead_seconds": 0.3,
+          "action_tail_seconds": 3.0,
+          "minimum_seconds_planned": 9.586
+        },
+        {
+          "shot": "B03-C05",
+          "old_duration_seconds": 7,
+          "new_duration_seconds": 8,
+          "planned_voice_seconds": 5.384,
+          "action_lead_seconds": 0.5,
+          "action_tail_seconds": 1.2,
+          "minimum_seconds_planned": 7.084
+        },
+        {
+          "shot": "B04-C04",
+          "old_duration_seconds": 10,
+          "new_duration_seconds": 12,
+          "planned_voice_seconds": 5.644,
+          "action_lead_seconds": 5.5,
+          "action_tail_seconds": 0.6,
+          "minimum_seconds_planned": 11.744
+        },
+        {
+          "shot": "B04-C05",
+          "old_duration_seconds": 8,
+          "new_duration_seconds": 9,
+          "planned_voice_seconds": 6.206,
+          "action_lead_seconds": 0.8,
+          "action_tail_seconds": 1.2,
+          "minimum_seconds_planned": 8.206
+        },
+        {
+          "shot": "B05-C04",
+          "old_duration_seconds": 10,
+          "new_duration_seconds": 12,
+          "planned_voice_seconds": 5.827,
+          "action_lead_seconds": 5.0,
+          "action_tail_seconds": 0.7,
+          "minimum_seconds_planned": 11.527
+        },
+        {
+          "shot": "B06-C01",
+          "old_duration_seconds": 9,
+          "new_duration_seconds": 12,
+          "planned_voice_seconds": 10.531,
+          "action_lead_seconds": 0.6,
+          "action_tail_seconds": 0.7,
+          "minimum_seconds_planned": 11.831
+        },
+        {
+          "shot": "B06-C05",
+          "old_duration_seconds": 9,
+          "new_duration_seconds": 11,
+          "planned_voice_seconds": 7.21,
+          "action_lead_seconds": 1.0,
+          "action_tail_seconds": 2.5,
+          "minimum_seconds_planned": 10.71
+        },
+        {
+          "shot": "B07-C02",
+          "old_duration_seconds": 9,
+          "new_duration_seconds": 10,
+          "planned_voice_seconds": 6.437,
+          "action_lead_seconds": 1.4,
+          "action_tail_seconds": 1.2,
+          "minimum_seconds_planned": 9.037
+        },
+        {
+          "shot": "B07-C04",
+          "old_duration_seconds": 10,
+          "new_duration_seconds": 11,
+          "planned_voice_seconds": 6.249,
+          "action_lead_seconds": 4.0,
+          "action_tail_seconds": 0.6,
+          "minimum_seconds_planned": 10.849
+        },
+        {
+          "shot": "B08-C01",
+          "old_duration_seconds": 8,
+          "new_duration_seconds": 9,
+          "planned_voice_seconds": 5.767,
+          "action_lead_seconds": 1.8,
+          "action_tail_seconds": 0.6,
+          "minimum_seconds_planned": 8.167
+        },
+        {
+          "shot": "B08-C02",
+          "old_duration_seconds": 8,
+          "new_duration_seconds": 9,
+          "planned_voice_seconds": 6.878,
+          "action_lead_seconds": 0.6,
+          "action_tail_seconds": 1.0,
+          "minimum_seconds_planned": 8.478
+        },
+        {
+          "shot": "B08-C04",
+          "old_duration_seconds": 10,
+          "new_duration_seconds": 12,
+          "planned_voice_seconds": 5.225,
+          "action_lead_seconds": 5.5,
+          "action_tail_seconds": 0.7,
+          "minimum_seconds_planned": 11.425
+        },
+        {
+          "shot": "B08-C05",
+          "old_duration_seconds": 7,
+          "new_duration_seconds": 13,
+          "planned_voice_seconds": 6.475,
+          "action_lead_seconds": 5.0,
+          "action_tail_seconds": 1.0,
+          "minimum_seconds_planned": 12.475
+        },
+        {
+          "shot": "B09-C01",
+          "old_duration_seconds": 8,
+          "new_duration_seconds": 9,
+          "planned_voice_seconds": 6.352,
+          "action_lead_seconds": 1.0,
+          "action_tail_seconds": 0.7,
+          "minimum_seconds_planned": 8.052
+        },
+        {
+          "shot": "B09-C04",
+          "old_duration_seconds": 10,
+          "new_duration_seconds": 14,
+          "planned_voice_seconds": 7.179,
+          "action_lead_seconds": 5.5,
+          "action_tail_seconds": 0.6,
+          "minimum_seconds_planned": 13.279
+        },
+        {
+          "shot": "B09-C05",
+          "old_duration_seconds": 7,
+          "new_duration_seconds": 10,
+          "planned_voice_seconds": 6.595,
+          "action_lead_seconds": 0.7,
+          "action_tail_seconds": 2.0,
+          "minimum_seconds_planned": 9.295
+        },
+        {
+          "shot": "B10-C01",
+          "old_duration_seconds": 8,
+          "new_duration_seconds": 11,
+          "planned_voice_seconds": 8.55,
+          "action_lead_seconds": 0.8,
+          "action_tail_seconds": 0.7,
+          "minimum_seconds_planned": 10.05
+        },
+        {
+          "shot": "B10-C05",
+          "old_duration_seconds": 9,
+          "new_duration_seconds": 10,
+          "planned_voice_seconds": 7.632,
+          "action_lead_seconds": 0.4,
+          "action_tail_seconds": 1.0,
+          "minimum_seconds_planned": 9.032
+        }
+      ],
+      "all_shot_budgets": [
+        {
+          "shot": "B01-C01",
+          "start_seconds": 0,
+          "end_seconds": 7,
+          "word_count": 6,
+          "voice_seconds_planned": 4.293131,
+          "action_seconds_planned": 1.4,
+          "minimum_seconds_planned": 5.693131,
+          "allocated_seconds": 7,
+          "reserve_seconds": 1.306869,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B01-C02",
+          "start_seconds": 7,
+          "end_seconds": 15,
+          "word_count": 8,
+          "voice_seconds_planned": 5.154675,
+          "action_seconds_planned": 1.9,
+          "minimum_seconds_planned": 7.054675,
+          "allocated_seconds": 8,
+          "reserve_seconds": 0.945325,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B01-C03",
+          "start_seconds": 15,
+          "end_seconds": 24,
+          "word_count": 12,
+          "voice_seconds_planned": 7.61591,
+          "action_seconds_planned": 1.0,
+          "minimum_seconds_planned": 8.61591,
+          "allocated_seconds": 9,
+          "reserve_seconds": 0.38409,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B01-C04",
+          "start_seconds": 24,
+          "end_seconds": 35,
+          "word_count": 11,
+          "voice_seconds_planned": 6.681226,
+          "action_seconds_planned": 3.8,
+          "minimum_seconds_planned": 10.481226,
+          "allocated_seconds": 11,
+          "reserve_seconds": 0.518774,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B01-C05",
+          "start_seconds": 35,
+          "end_seconds": 42,
+          "word_count": 4,
+          "voice_seconds_planned": 2.732991,
+          "action_seconds_planned": 2.8,
+          "minimum_seconds_planned": 5.532991,
+          "allocated_seconds": 7,
+          "reserve_seconds": 1.467009,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B02-C01",
+          "start_seconds": 42,
+          "end_seconds": 49,
+          "word_count": 7,
+          "voice_seconds_planned": 4.738462,
+          "action_seconds_planned": 1.6,
+          "minimum_seconds_planned": 6.338462,
+          "allocated_seconds": 7,
+          "reserve_seconds": 0.661538,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B02-C02",
+          "start_seconds": 49,
+          "end_seconds": 59,
+          "word_count": 10,
+          "voice_seconds_planned": 6.285556,
+          "action_seconds_planned": 3.3,
+          "minimum_seconds_planned": 9.585556,
+          "allocated_seconds": 10,
+          "reserve_seconds": 0.414444,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B02-C03",
+          "start_seconds": 59,
+          "end_seconds": 69,
+          "word_count": 10,
+          "voice_seconds_planned": 6.164949,
+          "action_seconds_planned": 2.2,
+          "minimum_seconds_planned": 8.364949,
+          "allocated_seconds": 10,
+          "reserve_seconds": 1.635051,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B02-C04",
+          "start_seconds": 69,
+          "end_seconds": 81,
+          "word_count": 10,
+          "voice_seconds_planned": 6.359549,
+          "action_seconds_planned": 4.1,
+          "minimum_seconds_planned": 10.459549,
+          "allocated_seconds": 12,
+          "reserve_seconds": 1.540451,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B02-C05",
+          "start_seconds": 81,
+          "end_seconds": 89,
+          "word_count": 7,
+          "voice_seconds_planned": 4.21,
+          "action_seconds_planned": 2.6,
+          "minimum_seconds_planned": 6.81,
+          "allocated_seconds": 8,
+          "reserve_seconds": 1.19,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B03-C01",
+          "start_seconds": 89,
+          "end_seconds": 97,
+          "word_count": 10,
+          "voice_seconds_planned": 6.364545,
+          "action_seconds_planned": 1.4,
+          "minimum_seconds_planned": 7.764545,
+          "allocated_seconds": 8,
+          "reserve_seconds": 0.235455,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B03-C02",
+          "start_seconds": 97,
+          "end_seconds": 106,
+          "word_count": 10,
+          "voice_seconds_planned": 6.461978,
+          "action_seconds_planned": 2.2,
+          "minimum_seconds_planned": 8.661978,
+          "allocated_seconds": 9,
+          "reserve_seconds": 0.338022,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B03-C03",
+          "start_seconds": 106,
+          "end_seconds": 114,
+          "word_count": 5,
+          "voice_seconds_planned": 2.997273,
+          "action_seconds_planned": 2.6,
+          "minimum_seconds_planned": 5.597273,
+          "allocated_seconds": 8,
+          "reserve_seconds": 2.402727,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B03-C04",
+          "start_seconds": 114,
+          "end_seconds": 124,
+          "word_count": 8,
+          "voice_seconds_planned": 5.354416,
+          "action_seconds_planned": 3.8,
+          "minimum_seconds_planned": 9.154416,
+          "allocated_seconds": 10,
+          "reserve_seconds": 0.845584,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B03-C05",
+          "start_seconds": 124,
+          "end_seconds": 132,
+          "word_count": 8,
+          "voice_seconds_planned": 5.38404,
+          "action_seconds_planned": 1.7,
+          "minimum_seconds_planned": 7.08404,
+          "allocated_seconds": 8,
+          "reserve_seconds": 0.91596,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B04-C01",
+          "start_seconds": 132,
+          "end_seconds": 140,
+          "word_count": 9,
+          "voice_seconds_planned": 5.708025,
+          "action_seconds_planned": 1.6,
+          "minimum_seconds_planned": 7.308025,
+          "allocated_seconds": 8,
+          "reserve_seconds": 0.691975,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B04-C02",
+          "start_seconds": 140,
+          "end_seconds": 148,
+          "word_count": 5,
+          "voice_seconds_planned": 3.280189,
+          "action_seconds_planned": 3.2,
+          "minimum_seconds_planned": 6.480189,
+          "allocated_seconds": 8,
+          "reserve_seconds": 1.519811,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B04-C03",
+          "start_seconds": 148,
+          "end_seconds": 156,
+          "word_count": 11,
+          "voice_seconds_planned": 6.714798,
+          "action_seconds_planned": 1.0,
+          "minimum_seconds_planned": 7.714798,
+          "allocated_seconds": 8,
+          "reserve_seconds": 0.285202,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B04-C04",
+          "start_seconds": 156,
+          "end_seconds": 168,
+          "word_count": 9,
+          "voice_seconds_planned": 5.644436,
+          "action_seconds_planned": 6.1,
+          "minimum_seconds_planned": 11.744436,
+          "allocated_seconds": 12,
+          "reserve_seconds": 0.255564,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B04-C05",
+          "start_seconds": 168,
+          "end_seconds": 177,
+          "word_count": 10,
+          "voice_seconds_planned": 6.205556,
+          "action_seconds_planned": 2.0,
+          "minimum_seconds_planned": 8.205556,
+          "allocated_seconds": 9,
+          "reserve_seconds": 0.794444,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B05-C01",
+          "start_seconds": 177,
+          "end_seconds": 185,
+          "word_count": 9,
+          "voice_seconds_planned": 5.689154,
+          "action_seconds_planned": 1.4,
+          "minimum_seconds_planned": 7.089154,
+          "allocated_seconds": 8,
+          "reserve_seconds": 0.910846,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B05-C02",
+          "start_seconds": 185,
+          "end_seconds": 193,
+          "word_count": 8,
+          "voice_seconds_planned": 5.434444,
+          "action_seconds_planned": 2.0,
+          "minimum_seconds_planned": 7.434444,
+          "allocated_seconds": 8,
+          "reserve_seconds": 0.565556,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B05-C03",
+          "start_seconds": 193,
+          "end_seconds": 201,
+          "word_count": 7,
+          "voice_seconds_planned": 4.27,
+          "action_seconds_planned": 2.2,
+          "minimum_seconds_planned": 6.47,
+          "allocated_seconds": 8,
+          "reserve_seconds": 1.53,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B05-C04",
+          "start_seconds": 201,
+          "end_seconds": 213,
+          "word_count": 9,
+          "voice_seconds_planned": 5.826595,
+          "action_seconds_planned": 5.7,
+          "minimum_seconds_planned": 11.526595,
+          "allocated_seconds": 12,
+          "reserve_seconds": 0.473405,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B05-C05",
+          "start_seconds": 213,
+          "end_seconds": 221,
+          "word_count": 7,
+          "voice_seconds_planned": 4.462264,
+          "action_seconds_planned": 2.8,
+          "minimum_seconds_planned": 7.262264,
+          "allocated_seconds": 8,
+          "reserve_seconds": 0.737736,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B06-C01",
+          "start_seconds": 221,
+          "end_seconds": 233,
+          "word_count": 17,
+          "voice_seconds_planned": 10.530952,
+          "action_seconds_planned": 1.3,
+          "minimum_seconds_planned": 11.830952,
+          "allocated_seconds": 12,
+          "reserve_seconds": 0.169048,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B06-C02",
+          "start_seconds": 233,
+          "end_seconds": 242,
+          "word_count": 11,
+          "voice_seconds_planned": 6.666466,
+          "action_seconds_planned": 1.8,
+          "minimum_seconds_planned": 8.466466,
+          "allocated_seconds": 9,
+          "reserve_seconds": 0.533534,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B06-C03",
+          "start_seconds": 242,
+          "end_seconds": 251,
+          "word_count": 5,
+          "voice_seconds_planned": 3.007273,
+          "action_seconds_planned": 2.2,
+          "minimum_seconds_planned": 5.207273,
+          "allocated_seconds": 9,
+          "reserve_seconds": 3.792727,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B06-C04",
+          "start_seconds": 251,
+          "end_seconds": 263,
+          "word_count": 7,
+          "voice_seconds_planned": 4.79,
+          "action_seconds_planned": 5.3,
+          "minimum_seconds_planned": 10.09,
+          "allocated_seconds": 12,
+          "reserve_seconds": 1.91,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B06-C05",
+          "start_seconds": 263,
+          "end_seconds": 274,
+          "word_count": 11,
+          "voice_seconds_planned": 7.209895,
+          "action_seconds_planned": 3.5,
+          "minimum_seconds_planned": 10.709895,
+          "allocated_seconds": 11,
+          "reserve_seconds": 0.290105,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B07-C01",
+          "start_seconds": 274,
+          "end_seconds": 282,
+          "word_count": 8,
+          "voice_seconds_planned": 5.802319,
+          "action_seconds_planned": 1.4,
+          "minimum_seconds_planned": 7.202319,
+          "allocated_seconds": 8,
+          "reserve_seconds": 0.797681,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B07-C02",
+          "start_seconds": 282,
+          "end_seconds": 292,
+          "word_count": 10,
+          "voice_seconds_planned": 6.437461,
+          "action_seconds_planned": 2.6,
+          "minimum_seconds_planned": 9.037461,
+          "allocated_seconds": 10,
+          "reserve_seconds": 0.962539,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B07-C03",
+          "start_seconds": 292,
+          "end_seconds": 301,
+          "word_count": 6,
+          "voice_seconds_planned": 3.643333,
+          "action_seconds_planned": 3.8,
+          "minimum_seconds_planned": 7.443333,
+          "allocated_seconds": 9,
+          "reserve_seconds": 1.556667,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B07-C04",
+          "start_seconds": 301,
+          "end_seconds": 312,
+          "word_count": 9,
+          "voice_seconds_planned": 6.248766,
+          "action_seconds_planned": 4.6,
+          "minimum_seconds_planned": 10.848766,
+          "allocated_seconds": 11,
+          "reserve_seconds": 0.151234,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B07-C05",
+          "start_seconds": 312,
+          "end_seconds": 320,
+          "word_count": 9,
+          "voice_seconds_planned": 6.191929,
+          "action_seconds_planned": 1.4,
+          "minimum_seconds_planned": 7.591929,
+          "allocated_seconds": 8,
+          "reserve_seconds": 0.408071,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B08-C01",
+          "start_seconds": 320,
+          "end_seconds": 329,
+          "word_count": 9,
+          "voice_seconds_planned": 5.767029,
+          "action_seconds_planned": 2.4,
+          "minimum_seconds_planned": 8.167029,
+          "allocated_seconds": 9,
+          "reserve_seconds": 0.832971,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B08-C02",
+          "start_seconds": 329,
+          "end_seconds": 338,
+          "word_count": 11,
+          "voice_seconds_planned": 6.878201,
+          "action_seconds_planned": 1.6,
+          "minimum_seconds_planned": 8.478201,
+          "allocated_seconds": 9,
+          "reserve_seconds": 0.521799,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B08-C03",
+          "start_seconds": 338,
+          "end_seconds": 347,
+          "word_count": 6,
+          "voice_seconds_planned": 3.634486,
+          "action_seconds_planned": 3.0,
+          "minimum_seconds_planned": 6.634486,
+          "allocated_seconds": 9,
+          "reserve_seconds": 2.365514,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B08-C04",
+          "start_seconds": 347,
+          "end_seconds": 359,
+          "word_count": 8,
+          "voice_seconds_planned": 5.225238,
+          "action_seconds_planned": 6.2,
+          "minimum_seconds_planned": 11.425238,
+          "allocated_seconds": 12,
+          "reserve_seconds": 0.574762,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B08-C05",
+          "start_seconds": 359,
+          "end_seconds": 372,
+          "word_count": 10,
+          "voice_seconds_planned": 6.474587,
+          "action_seconds_planned": 6.0,
+          "minimum_seconds_planned": 12.474587,
+          "allocated_seconds": 13,
+          "reserve_seconds": 0.525413,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B09-C01",
+          "start_seconds": 372,
+          "end_seconds": 381,
+          "word_count": 10,
+          "voice_seconds_planned": 6.35231,
+          "action_seconds_planned": 1.7,
+          "minimum_seconds_planned": 8.05231,
+          "allocated_seconds": 9,
+          "reserve_seconds": 0.94769,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B09-C02",
+          "start_seconds": 381,
+          "end_seconds": 389,
+          "word_count": 9,
+          "voice_seconds_planned": 5.672536,
+          "action_seconds_planned": 1.8,
+          "minimum_seconds_planned": 7.472536,
+          "allocated_seconds": 8,
+          "reserve_seconds": 0.527464,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B09-C03",
+          "start_seconds": 389,
+          "end_seconds": 398,
+          "word_count": 7,
+          "voice_seconds_planned": 4.242264,
+          "action_seconds_planned": 2.2,
+          "minimum_seconds_planned": 6.442264,
+          "allocated_seconds": 9,
+          "reserve_seconds": 2.557736,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B09-C04",
+          "start_seconds": 398,
+          "end_seconds": 412,
+          "word_count": 11,
+          "voice_seconds_planned": 7.178929,
+          "action_seconds_planned": 6.1,
+          "minimum_seconds_planned": 13.278929,
+          "allocated_seconds": 14,
+          "reserve_seconds": 0.721071,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B09-C05",
+          "start_seconds": 412,
+          "end_seconds": 422,
+          "word_count": 10,
+          "voice_seconds_planned": 6.595168,
+          "action_seconds_planned": 2.7,
+          "minimum_seconds_planned": 9.295168,
+          "allocated_seconds": 10,
+          "reserve_seconds": 0.704832,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B10-C01",
+          "start_seconds": 422,
+          "end_seconds": 433,
+          "word_count": 13,
+          "voice_seconds_planned": 8.54972,
+          "action_seconds_planned": 1.5,
+          "minimum_seconds_planned": 10.04972,
+          "allocated_seconds": 11,
+          "reserve_seconds": 0.95028,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B10-C02",
+          "start_seconds": 433,
+          "end_seconds": 442,
+          "word_count": 11,
+          "voice_seconds_planned": 6.974798,
+          "action_seconds_planned": 1.8,
+          "minimum_seconds_planned": 8.774798,
+          "allocated_seconds": 9,
+          "reserve_seconds": 0.225202,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B10-C03",
+          "start_seconds": 442,
+          "end_seconds": 450,
+          "word_count": 7,
+          "voice_seconds_planned": 4.178889,
+          "action_seconds_planned": 3.2,
+          "minimum_seconds_planned": 7.378889,
+          "allocated_seconds": 8,
+          "reserve_seconds": 0.621111,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B10-C04",
+          "start_seconds": 450,
+          "end_seconds": 462,
+          "word_count": 8,
+          "voice_seconds_planned": 5.578705,
+          "action_seconds_planned": 5.7,
+          "minimum_seconds_planned": 11.278705,
+          "allocated_seconds": 12,
+          "reserve_seconds": 0.721295,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        },
+        {
+          "shot": "B10-C05",
+          "start_seconds": 462,
+          "end_seconds": 472,
+          "word_count": 12,
+          "voice_seconds_planned": 7.632453,
+          "action_seconds_planned": 1.4,
+          "minimum_seconds_planned": 9.032453,
+          "allocated_seconds": 10,
+          "reserve_seconds": 0.967547,
+          "basis": "PLANNED_NOT_MEASURED",
+          "allocation_policy": "KEEP_EXISTING_MEANINGFUL_SHOT_LENGTH_OR_EXTEND_TO_CEIL_VOICE_PLUS_PAUSES_PLUS_ACTION",
+          "reserve_use": "실제 음성 길이와 컷 안 자율 시선·체중이동의 제작 여유. 최종 음성에 맞춰 재편집하며 정지·대기·루프를 추가하지 않음. 질문 컷의 여유는 마지막 질문 전에만 배치."
+        }
+      ],
+      "verification": {
+        "result": "PASS_DESIGN_CORRECTION_AND_PLANNING_CHECKS_ONLY",
+        "issues": [],
+        "original18_exact_vs_canonical": true,
+        "existing87_ids_preserved": true,
+        "every_line_assigned_once_in_order": true,
+        "all50_voice_and_action_budgets_fit": true,
+        "all10_prompt_model_input_react_contracts": true,
+        "all10_three_word_cues": true,
+        "voice_direction_coverage": "87/87 +10/10",
+        "individually_distinct_directions": true,
+        "S01_S02_validators_run": false,
+        "repository_validators_run": false
+      },
+      "remaining_status": {
+        "stage": "G1_DESIGN_COMPLETE_REVIEW_REQUIRED",
+        "cricket_voice": "BLOCKED_RESOURCE",
+        "actual_audio_timing": "NOT_RUN",
+        "actual_mp4_duration": "NOT_RUN",
+        "actual_3d_contact_and_boundaries": "NOT_RUN",
+        "runtime_vad_and_model_route": "NOT_RUN"
+      },
+      "parent_handoff": [
+        "Regenerate synchronized S05 Markdown and voice plan/CSV from these two JSON files.",
+        "Update global continuity and handoff with visible audience-right preview puppets through S06-U003, precise book history, new duration/frame counts and beginner model route.",
+        "Update validators for new voice/pause budget and model policy; do not run S01/S02 validators."
+      ],
+      "checker": "/workspace/scratch/4851b214300f/revise_s05_voice.py",
+      "independent_postwrite_verification": {
+        "status": "PASS_POSTWRITE_DESIGN_ONLY",
+        "main_lines": 87,
+        "main_directions": 87,
+        "example_directions": 10,
+        "shot_budgets_passed": 50,
+        "duration_seconds": 472,
+        "duration_hhmmss": "00:07:52",
+        "frames24fps": 11328,
+        "original_count": 18,
+        "new_count": 69,
+        "original_and_new_id_assignment": "87/87 once in sequence",
+        "failures": [],
+        "audio_or_render_executed": false,
+        "S01_S02_retested": false,
+        "last_refinement": "S05-N041 KO/EN precontact direction clarified after root review; all text/ID/speaker/pace/pause values unchanged."
+      },
+      "independent_postwrite_budget_evidence": [
+        {
+          "shot": "B01-C01",
+          "minimum_seconds_independently_recalculated": 5.693131,
+          "allocated_seconds": 7
+        },
+        {
+          "shot": "B01-C02",
+          "minimum_seconds_independently_recalculated": 7.054675,
+          "allocated_seconds": 8
+        },
+        {
+          "shot": "B01-C03",
+          "minimum_seconds_independently_recalculated": 8.61591,
+          "allocated_seconds": 9
+        },
+        {
+          "shot": "B01-C04",
+          "minimum_seconds_independently_recalculated": 10.481226,
+          "allocated_seconds": 11
+        },
+        {
+          "shot": "B01-C05",
+          "minimum_seconds_independently_recalculated": 5.532991,
+          "allocated_seconds": 7
+        },
+        {
+          "shot": "B02-C01",
+          "minimum_seconds_independently_recalculated": 6.338462,
+          "allocated_seconds": 7
+        },
+        {
+          "shot": "B02-C02",
+          "minimum_seconds_independently_recalculated": 9.585556,
+          "allocated_seconds": 10
+        },
+        {
+          "shot": "B02-C03",
+          "minimum_seconds_independently_recalculated": 8.364949,
+          "allocated_seconds": 10
+        },
+        {
+          "shot": "B02-C04",
+          "minimum_seconds_independently_recalculated": 10.459549,
+          "allocated_seconds": 12
+        },
+        {
+          "shot": "B02-C05",
+          "minimum_seconds_independently_recalculated": 6.81,
+          "allocated_seconds": 8
+        },
+        {
+          "shot": "B03-C01",
+          "minimum_seconds_independently_recalculated": 7.764545,
+          "allocated_seconds": 8
+        },
+        {
+          "shot": "B03-C02",
+          "minimum_seconds_independently_recalculated": 8.661978,
+          "allocated_seconds": 9
+        },
+        {
+          "shot": "B03-C03",
+          "minimum_seconds_independently_recalculated": 5.597273,
+          "allocated_seconds": 8
+        },
+        {
+          "shot": "B03-C04",
+          "minimum_seconds_independently_recalculated": 9.154416,
+          "allocated_seconds": 10
+        },
+        {
+          "shot": "B03-C05",
+          "minimum_seconds_independently_recalculated": 7.08404,
+          "allocated_seconds": 8
+        },
+        {
+          "shot": "B04-C01",
+          "minimum_seconds_independently_recalculated": 7.308025,
+          "allocated_seconds": 8
+        },
+        {
+          "shot": "B04-C02",
+          "minimum_seconds_independently_recalculated": 6.480189,
+          "allocated_seconds": 8
+        },
+        {
+          "shot": "B04-C03",
+          "minimum_seconds_independently_recalculated": 7.714798,
+          "allocated_seconds": 8
+        },
+        {
+          "shot": "B04-C04",
+          "minimum_seconds_independently_recalculated": 11.744436,
+          "allocated_seconds": 12
+        },
+        {
+          "shot": "B04-C05",
+          "minimum_seconds_independently_recalculated": 8.205556,
+          "allocated_seconds": 9
+        },
+        {
+          "shot": "B05-C01",
+          "minimum_seconds_independently_recalculated": 7.089154,
+          "allocated_seconds": 8
+        },
+        {
+          "shot": "B05-C02",
+          "minimum_seconds_independently_recalculated": 7.434444,
+          "allocated_seconds": 8
+        },
+        {
+          "shot": "B05-C03",
+          "minimum_seconds_independently_recalculated": 6.47,
+          "allocated_seconds": 8
+        },
+        {
+          "shot": "B05-C04",
+          "minimum_seconds_independently_recalculated": 11.526595,
+          "allocated_seconds": 12
+        },
+        {
+          "shot": "B05-C05",
+          "minimum_seconds_independently_recalculated": 7.262264,
+          "allocated_seconds": 8
+        },
+        {
+          "shot": "B06-C01",
+          "minimum_seconds_independently_recalculated": 11.830952,
+          "allocated_seconds": 12
+        },
+        {
+          "shot": "B06-C02",
+          "minimum_seconds_independently_recalculated": 8.466466,
+          "allocated_seconds": 9
+        },
+        {
+          "shot": "B06-C03",
+          "minimum_seconds_independently_recalculated": 5.207273,
+          "allocated_seconds": 9
+        },
+        {
+          "shot": "B06-C04",
+          "minimum_seconds_independently_recalculated": 10.09,
+          "allocated_seconds": 12
+        },
+        {
+          "shot": "B06-C05",
+          "minimum_seconds_independently_recalculated": 10.709895,
+          "allocated_seconds": 11
+        },
+        {
+          "shot": "B07-C01",
+          "minimum_seconds_independently_recalculated": 7.202319,
+          "allocated_seconds": 8
+        },
+        {
+          "shot": "B07-C02",
+          "minimum_seconds_independently_recalculated": 9.037461,
+          "allocated_seconds": 10
+        },
+        {
+          "shot": "B07-C03",
+          "minimum_seconds_independently_recalculated": 7.443333,
+          "allocated_seconds": 9
+        },
+        {
+          "shot": "B07-C04",
+          "minimum_seconds_independently_recalculated": 10.848766,
+          "allocated_seconds": 11
+        },
+        {
+          "shot": "B07-C05",
+          "minimum_seconds_independently_recalculated": 7.591929,
+          "allocated_seconds": 8
+        },
+        {
+          "shot": "B08-C01",
+          "minimum_seconds_independently_recalculated": 8.167029,
+          "allocated_seconds": 9
+        },
+        {
+          "shot": "B08-C02",
+          "minimum_seconds_independently_recalculated": 8.478201,
+          "allocated_seconds": 9
+        },
+        {
+          "shot": "B08-C03",
+          "minimum_seconds_independently_recalculated": 6.634486,
+          "allocated_seconds": 9
+        },
+        {
+          "shot": "B08-C04",
+          "minimum_seconds_independently_recalculated": 11.425238,
+          "allocated_seconds": 12
+        },
+        {
+          "shot": "B08-C05",
+          "minimum_seconds_independently_recalculated": 12.474587,
+          "allocated_seconds": 13
+        },
+        {
+          "shot": "B09-C01",
+          "minimum_seconds_independently_recalculated": 8.05231,
+          "allocated_seconds": 9
+        },
+        {
+          "shot": "B09-C02",
+          "minimum_seconds_independently_recalculated": 7.472536,
+          "allocated_seconds": 8
+        },
+        {
+          "shot": "B09-C03",
+          "minimum_seconds_independently_recalculated": 6.442264,
+          "allocated_seconds": 9
+        },
+        {
+          "shot": "B09-C04",
+          "minimum_seconds_independently_recalculated": 13.278929,
+          "allocated_seconds": 14
+        },
+        {
+          "shot": "B09-C05",
+          "minimum_seconds_independently_recalculated": 9.295168,
+          "allocated_seconds": 10
+        },
+        {
+          "shot": "B10-C01",
+          "minimum_seconds_independently_recalculated": 10.04972,
+          "allocated_seconds": 11
+        },
+        {
+          "shot": "B10-C02",
+          "minimum_seconds_independently_recalculated": 8.774798,
+          "allocated_seconds": 9
+        },
+        {
+          "shot": "B10-C03",
+          "minimum_seconds_independently_recalculated": 7.378889,
+          "allocated_seconds": 8
+        },
+        {
+          "shot": "B10-C04",
+          "minimum_seconds_independently_recalculated": 11.278705,
+          "allocated_seconds": 12
+        },
+        {
+          "shot": "B10-C05",
+          "minimum_seconds_independently_recalculated": 9.032453,
+          "allocated_seconds": 10
+        }
+      ],
+      "authoring_attempts": [
+        {
+          "status": "FAIL_SCRATCH_SCRIPT_PARSE_ONLY",
+          "cause": "Embedded English apostrophes inside single-quoted Python direction strings",
+          "production_files_written": false,
+          "fix": "Escaped 11 embedded apostrophes in the scratch authoring script."
+        },
+        {
+          "status": "PASS_AFTER_MINIMAL_FIX",
+          "result": "Authoring script wrote only the two assigned S05 JSON files; separate postwrite checker independently recalculated all50 budgets."
+        }
+      ]
+    }
+  },
+  "agent_ledger_hash_note": "Agent ledgers preserve their own checkpoints. Root later refined S03 N008/N045, S04 opening blocking, and synchronized all exports. scene_results.sha256 is authoritative for this final delivery.",
+  "s04_semantic_crossreview": {
+    "reviewer": "audit_s05_and_flow",
+    "scope": "Read-only semantic cross-review of revised S04; all109 main voice directions and relevant shot actions, plus P04/P06/I07 event contracts.",
+    "status": "DESIGN_REVIEW_NO_NEW_MATERIAL_SEMANTIC_DEFECT_FOUND",
+    "reviewed_sha256": {
+      "scenes/S04/scene_design_v2.json": "6789f09c3d6e4f52a5eec09837f22cd3f49005e439c905d2bfd930e495a893bf",
+      "scenes/S04/interaction_map_v2.json": "d103269d2ac5012648f847f7954559b7f8aa7d27f12d5ebab1cc428734c972c1"
+    },
+    "new_findings": [],
+    "observations": [
+      {
+        "topic": "P04 firm ground",
+        "evidence": [
+          "B05-C01 first landing before U015",
+          "B05-C03 a separate loose leaf rolls under one grounded foot",
+          "B05-C04 two small ground steps within junction center",
+          "U018/N036 refer to whole sign/road, without choosing branch"
+        ],
+        "conclusion": "The new footing event occurs after the preserved first arrival and does not preempt I06."
+      },
+      {
+        "topic": "Frog and Pinocchio sequence",
+        "evidence": [
+          "B08-C01 first autonomous frog hop after U023 and before U024",
+          "N057 describes the completed first landing",
+          "N058 asks how it lands next time",
+          "P06 triggers a second10cm hop on the same bank",
+          "N061 listener reaction keeps Pinocchio knees straight",
+          "B09-C02 only Cricket demonstrates",
+          "I07 initiates Pinocchio knee bend and crossing"
+        ],
+        "conclusion": "First discovery, closer observation and Pinocchio crossing have distinct causal roles and gates."
+      },
+      {
+        "topic": "Cricket bank location",
+        "evidence": [
+          "U028 listener reaction keeps Cricket on original bank",
+          "U029 direction projects across puddle without shouting",
+          "B09-C05 crossing lead precedes N067",
+          "N067 listener reaction refers to Cricket already beside Pinocchio"
+        ],
+        "conclusion": "Voice/listener directions agree with the visible crossing and do not require teleportation."
+      },
+      {
+        "topic": "Voice intention and relationship",
+        "evidence": [
+          "B01/B02 GEPPETTO_A elderly warm reassurance and secure-home farewell",
+          "B03 solitary Pinocchio addresses Yoonsu/flower while Cricket is absent",
+          "B05 first meeting and friendly contrast maintain identities",
+          "B06 opens route knowledge only after I06",
+          "B10 search acknowledges rooftops obstructing the remembered destination",
+          "U032 remains unknown sound with raised-step handoff to S05"
+        ],
+        "conclusion": "Read all109 KO/EN directions, listeners and listener_reaction fields. No new actor/meaning/emotion mismatch requiring correction was found."
+      }
+    ],
+    "production_files_edited": false,
+    "numerical_tests_rerun": false,
+    "canonical_tests_rerun": false,
+    "S01_S02_retested": false,
+    "limits": "Semantic design review only; actual voice identity, performance, animation, duration and device playback were not auditioned or rendered."
+  },
+  "not_run": [
+    "audio_synthesis",
+    "engine_instruction_adapter_application",
+    "human_audio_listening",
+    "lipsync",
+    "new_video_render",
+    "device_input_end_to_end"
+  ],
+  "engine_instruction_adapter": "REQUIRED_NOT_IMPLEMENTED_BY_THIS_EXPORT",
+  "planning_limits": "Durations and words-per-minute are planning estimates. Generated WAV durations and expressive delivery must be measured/listened to; retime cuts rather than force voice speed."
+}
