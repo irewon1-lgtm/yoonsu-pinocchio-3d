@@ -1,0 +1,89 @@
+{
+  "status": "AUTHORING_ONLY",
+  "files": {
+    "README_S12_KO.md": {
+      "bytes": 2749,
+      "sha256": "230b8b27eddd1a510b93dba37b298fcd4d0e5883b01e2a02583c9088feda398a"
+    },
+    "S12_EXECUTION_PROMPT_KO.md": {
+      "bytes": 5524,
+      "sha256": "e45a8a4bd0af9aa623f18c99f794a97a6790dbb586f0bb7c36501c9f41d780e5"
+    },
+    "assets/S12_SPRITE_AND_MOTION_SPEC.md": {
+      "bytes": 5486,
+      "sha256": "d541ce95cadffb289d8076139a0fe5ebe454e61e3f700ba9e2da1c52bbe307ee"
+    },
+    "evidence/AUTHORING_VALIDATION.json": {
+      "bytes": 5322,
+      "sha256": "4b0582db5f6f3e725010d7118cb0a7b304f960746893a5e9a22e8210221c2dc0"
+    },
+    "sources/01_STEP2_PRODUCTION_STORYBOARD_SPEC.md": {
+      "bytes": 37270,
+      "sha256": "b5ff72a4e6d889006eacc669a7c15c68a739ca1805117b8c79d79d4ab5181610"
+    },
+    "sources/01_STORY_MASTER_V1_1.md": {
+      "bytes": 34256,
+      "sha256": "eb5ca04f5e4302d4a71726f1a24b6cead5cec682b96baee600f6eef8ee951d3e"
+    },
+    "sources/PRODUCTION_PRD_V2_0.md": {
+      "bytes": 6886,
+      "sha256": "de79a6428b88c678751097e71e8b6228f57ab959f558d98721a57873d9c5bd35"
+    },
+    "sources/S11_CONTINUITY_AND_MOTION.md": {
+      "bytes": 7082,
+      "sha256": "dbe7f437fc629b05a3328275eeedcae56e318fcde3c9528bd60f10784c41a42f"
+    },
+    "sources/S11_EXIT_STATE.json": {
+      "bytes": 865,
+      "sha256": "78f93fb8ff83134eb7a97913521ff1271d839042f6b14bbd5cdb79c53221aa8c"
+    },
+    "sources/S11_interaction_policy.json": {
+      "bytes": 1920,
+      "sha256": "aac182873309ebc860735c3c6c61a7f9d13f350d3c346a2d59b6d0bc0e4abeb5"
+    },
+    "sources/STORY_CONTINUITY_S01_S12.md": {
+      "bytes": 20134,
+      "sha256": "1228d96a0e2b04023add5b2dd0149e835f674d7b144efc2598ba99e15dfe17a2"
+    },
+    "story/S12_ACTING_SCRIPT.md": {
+      "bytes": 84443,
+      "sha256": "1749b2731a195bbeffa921de733a61d68ea0c88fea760a4c2f94a93e64e37551"
+    },
+    "story/S12_AUTHORING_SOURCE.txt": {
+      "bytes": 47262,
+      "sha256": "7e6f5ea78f026c042372b7e4b25ad4c83b97f1c0843ee5c4dcfa732725f75a17"
+    },
+    "story/S12_CANONICAL_LINES.json": {
+      "bytes": 4996,
+      "sha256": "c88529f9a0763d6a14b55367539ff3956b9f8d29a0671aba778f72c9783a9fa5"
+    },
+    "story/S12_DIALOGUE_AND_ACTING.csv": {
+      "bytes": 40110,
+      "sha256": "0ae21391eb94210fd3fd1c2a6f940805890ff04ea3abc0f244dcb409e2cd0935"
+    },
+    "story/S12_VOICE_JOBS.json": {
+      "bytes": 113387,
+      "sha256": "d36a0d7f3c30127a01cbc287a304f0aedc1bb782d71f98c0a1f381e8aadca086"
+    },
+    "story/S12_YOONSU_CUES.md": {
+      "bytes": 890,
+      "sha256": "1d2caa722d532d1b8d05e215db1f21353df8ff76923c424819c8c4728335477d"
+    },
+    "story/interaction_map_v2.json": {
+      "bytes": 21866,
+      "sha256": "a97eb4cdc624ed83288c883faa1acdb4b8628464d356685d8c834552cd0b4f0c"
+    },
+    "story/scene_design_v2.json": {
+      "bytes": 178614,
+      "sha256": "92c935b74643c7baee349a2aebcfd3a0c0d7700e34e7f2ff982de9b8320aaaad"
+    },
+    "tools/build_s12.py": {
+      "bytes": 32599,
+      "sha256": "aec5209016d8eaa670c9445bd545ea0f7821ebb9064fc08c0807dc2694fac070"
+    },
+    "voice/S12_CHARACTER_VOICE_PROFILES.json": {
+      "bytes": 1564,
+      "sha256": "c4eac92eccc7c78afa963fa7c97cb9bc885271c4633c881a593f3b5248af7337"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "피노키오": {
+    "id": "PINOCCHIO_S03_USER_LOCKED",
+    "lock": "최종 승인 S03 음색·이야기 속 이름 유지. 목각→인간형 변신 후에도 화자 교체 금지.",
+    "reference_status": "BLOCKED_REFERENCE",
+    "arc": "등교 기대→친구 걱정→자발적 결심→솔직한 두려움 인정→신기함→폭발적인 기쁨→다정한 작별",
+    "reference_path": null,
+    "reference_sha256": null,
+    "synthesis_status": "NOT_RUN",
+    "listening_status": "NOT_RUN"
+  },
+  "제페토": {
+    "id": "GEPPETTO_S03_USER_LOCKED",
+    "lock": "최종 사용자 고정 S03. 젊은 대체 프리셋 금지.",
+    "reference_status": "BLOCKED_REFERENCE",
+    "arc": "기대→침착한 도움→아이에 대한 자랑→감격→변함없는 사랑",
+    "reference_path": null,
+    "reference_sha256": null,
+    "synthesis_status": "NOT_RUN",
+    "listening_status": "NOT_RUN"
+  },
+  "귀뚜라미": {
+    "id": "CRICKET_EXISTING_IDENTITY",
+    "lock": "기존 고정 음색. 새로운 고음 희화화 금지.",
+    "reference_status": "BLOCKED_REFERENCE",
+    "arc": "동행→놀람과 답답함→안도와 감사→회복→친구의 성장에 대한 기쁨",
+    "reference_path": null,
+    "reference_sha256": null,
+    "synthesis_status": "NOT_RUN",
+    "listening_status": "NOT_RUN"
+  },
+  "파란 요정": {
+    "id": "BLUE_FAIRY_EXISTING_C",
+    "lock": "기존 승인 C 음색. 마법과 무관하게 캐스트 고정.",
+    "reference_status": "REFERENCE_BYTES_AVAILABLE",
+    "arc": "따뜻한 인정→경이로운 선물→멀어지는 축복",
+    "reference_path": "voice/references/blue_fairy_V6_APPROVED.mp3",
+    "reference_sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+    "reference_bytes": 98925,
+    "synthesis_status": "NOT_RUN",
+    "listening_status": "NOT_RUN",
+    "legacy_aliases": [
+      "FAIRY_EXISTING_APPROVED_C"
+    ],
+    "alias_rule": "Resolve legacy S12 alias to BLUE_FAIRY_EXISTING_C and its exact approved C reference bytes; do not choose a fallback voice."
+  },
+  "내레이션": {
+    "id": "NARRATOR_EXISTING_A",
+    "lock": "기존 승인 A. 평서문 낭독조 금지.",
+    "reference_status": "REFERENCE_BYTES_AVAILABLE",
+    "arc": "기대→갑작스러운 변화→경이로움→따뜻한 미래와 완결",
+    "reference_path": "voice/references/narrator_V6_APPROVED.mp3",
+    "reference_sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+    "reference_bytes": 112365,
+    "synthesis_status": "NOT_RUN",
+    "listening_status": "NOT_RUN"
+  }
+}

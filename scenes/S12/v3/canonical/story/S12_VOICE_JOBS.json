@@ -1,0 +1,3178 @@
+{
+  "scene": "S12",
+  "narrative_jobs": 71,
+  "external_model_jobs": 10,
+  "status": "NOT_RUN",
+  "profiles": {
+    "피노키오": {
+      "id": "PINOCCHIO_S03_USER_LOCKED",
+      "lock": "최종 승인 S03 음색·이야기 속 이름 유지. 목각→인간형 변신 후에도 화자 교체 금지.",
+      "reference_status": "BLOCKED_REFERENCE",
+      "arc": "등교 기대→친구 걱정→자발적 결심→솔직한 두려움 인정→신기함→폭발적인 기쁨→다정한 작별",
+      "reference_path": null,
+      "reference_sha256": null,
+      "synthesis_status": "NOT_RUN",
+      "listening_status": "NOT_RUN"
+    },
+    "제페토": {
+      "id": "GEPPETTO_S03_USER_LOCKED",
+      "lock": "최종 사용자 고정 S03. 젊은 대체 프리셋 금지.",
+      "reference_status": "BLOCKED_REFERENCE",
+      "arc": "기대→침착한 도움→아이에 대한 자랑→감격→변함없는 사랑",
+      "reference_path": null,
+      "reference_sha256": null,
+      "synthesis_status": "NOT_RUN",
+      "listening_status": "NOT_RUN"
+    },
+    "귀뚜라미": {
+      "id": "CRICKET_EXISTING_IDENTITY",
+      "lock": "기존 고정 음색. 새로운 고음 희화화 금지.",
+      "reference_status": "BLOCKED_REFERENCE",
+      "arc": "동행→놀람과 답답함→안도와 감사→회복→친구의 성장에 대한 기쁨",
+      "reference_path": null,
+      "reference_sha256": null,
+      "synthesis_status": "NOT_RUN",
+      "listening_status": "NOT_RUN"
+    },
+    "파란 요정": {
+      "id": "BLUE_FAIRY_EXISTING_C",
+      "lock": "기존 승인 C 음색. 마법과 무관하게 캐스트 고정.",
+      "reference_status": "REFERENCE_BYTES_AVAILABLE",
+      "arc": "따뜻한 인정→경이로운 선물→멀어지는 축복",
+      "reference_path": "voice/references/blue_fairy_V6_APPROVED.mp3",
+      "reference_sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+      "reference_bytes": 98925,
+      "synthesis_status": "NOT_RUN",
+      "listening_status": "NOT_RUN",
+      "legacy_aliases": [
+        "FAIRY_EXISTING_APPROVED_C"
+      ],
+      "alias_rule": "Resolve legacy S12 alias to BLUE_FAIRY_EXISTING_C and its exact approved C reference bytes; do not choose a fallback voice."
+    },
+    "내레이션": {
+      "id": "NARRATOR_EXISTING_A",
+      "lock": "기존 승인 A. 평서문 낭독조 금지.",
+      "reference_status": "REFERENCE_BYTES_AVAILABLE",
+      "arc": "기대→갑작스러운 변화→경이로움→따뜻한 미래와 완결",
+      "reference_path": "voice/references/narrator_V6_APPROVED.mp3",
+      "reference_sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+      "reference_bytes": 112365,
+      "synthesis_status": "NOT_RUN",
+      "listening_status": "NOT_RUN"
+    }
+  },
+  "required_trace": [
+    "job_id",
+    "exact_spoken_text",
+    "approved_reference_sha256",
+    "engine_version_and_model_sha256",
+    "supported_acting_controls_and_actual_arguments",
+    "output_sha256",
+    "actual_sample_count",
+    "asr_for_word_check_only",
+    "blind_listening_result",
+    "app_loaded_asset_sha256"
+  ],
+  "jobs": [
+    {
+      "dialogue_id": "S12-U001",
+      "job_id": "S12-U001",
+      "kind": "ORIGINAL",
+      "speaker": "내레이션",
+      "profile_id": "NARRATOR_EXISTING_A",
+      "spoken_text": "Pinocchio was almost inside the school.",
+      "shot_id": "S12-C01",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수와 관객",
+        "emotion_target": "따뜻한 기대",
+        "delivery_ko": "관객을 문 앞의 설렘으로 데려간다. almost에서 이제 한 걸음 남았다는 친근한 기대를 주고 school은 아직 안으로 들어가지 않은 여유로 마친다.",
+        "direction_en": "Bring the audience right to the open doorway. Lift almost with quiet anticipation, then ease into school; he has not crossed the threshold yet.",
+        "emphasis": [
+          "almost",
+          "school"
+        ],
+        "pronunciation_note": "almost의 끝과 school의 /l/을 살린다.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": null,
+        "context_after": {
+          "dialogue_id": "S12-N001",
+          "speaker": "제페토",
+          "spoken_text": "Look, the door is open."
+        },
+        "visible_action": "11화 마지막 프레임에서 연결. 같은 손인사가 자연스럽게 끝난 뒤 피노키오가 손을 내리고 열린 문으로 시선을 옮긴다. 제페토의 안경, 가방, 모자, 신발, 귀뚜라미와 서 있는 안내판 위치를 그대로 잇는다. 교사는 문 안쪽에서 조용히 기다린다.",
+        "reference_sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "reference_path": "voice/references/narrator_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N001",
+      "job_id": "S12-N001",
+      "kind": "NEW",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Look, the door is open.",
+      "shot_id": "S12-C02",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "따뜻한 환영",
+        "delivery_ko": "따뜻한 안내. Look으로 시선을 문에 데려오고 open에서 환하게 초대한다. 이미 열려 있는 문을 새로 열라는 말투가 아니다.",
+        "direction_en": "Invite his gaze toward the already open door. Brighten open as a welcoming discovery, not an instruction to open it.",
+        "emphasis": [
+          "Look",
+          "open"
+        ],
+        "pronunciation_note": "door와 is를 매끄럽게 연결한다.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U001",
+          "speaker": "내레이션",
+          "spoken_text": "Pinocchio was almost inside the school."
+        },
+        "context_after": {
+          "dialogue_id": "S12-N002",
+          "speaker": "제페토",
+          "spoken_text": "Yoonsu, can you help him look inside?"
+        },
+        "visible_action": "제페토가 열린 문 안쪽을 손바닥으로 가리킨다. 문턱 너머 복도만 보이고 교실이나 친구들을 새로 만들지 않는다. 피노키오는 문 밖에 두 발을 둔 채 눈을 옮긴다. 윤수 쪽으로 얼굴을 돌리는 제페토.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N002",
+      "job_id": "S12-N002",
+      "kind": "NEW",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Yoonsu, can you help him look inside?",
+      "shot_id": "S12-C02",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "기대 어린 초대",
+        "delivery_ko": "윤수에게 미소를 건네고 손짓으로 안쪽을 보여 준다. look inside에 관심을 모아 질문을 열린 채 마친다.",
+        "direction_en": "Address Yoonsu warmly, then gently invite him to help Pinocchio look inside. Let the last words ask for a response rather than demand one.",
+        "emphasis": [
+          "Yoonsu",
+          "look inside"
+        ],
+        "pronunciation_note": "이름은 기존 승인 발음. inside 끝 /d/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N001",
+          "speaker": "제페토",
+          "spoken_text": "Look, the door is open."
+        },
+        "context_after": {
+          "dialogue_id": "S12-N003",
+          "speaker": "피노키오",
+          "spoken_text": "I can see inside!"
+        },
+        "visible_action": "제페토가 열린 문 안쪽을 손바닥으로 가리킨다. 문턱 너머 복도만 보이고 교실이나 친구들을 새로 만들지 않는다. 피노키오는 문 밖에 두 발을 둔 채 눈을 옮긴다. 윤수 쪽으로 얼굴을 돌리는 제페토.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N003",
+      "job_id": "S12-N003",
+      "kind": "NEW",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "I can see inside!",
+      "shot_id": "S12-C03",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "제페토",
+        "emotion_target": "신기함",
+        "delivery_ko": "실제로 문 안쪽을 본 뒤 조용히 들뜬다. see에서 발견이 피어나고 inside를 환하게 마쳐 할아버지와 나눈다.",
+        "direction_en": "Let the little discovery brighten his face as he speaks. Spring gently into see, then open inside with delighted recognition.",
+        "emphasis": [
+          "see",
+          "inside"
+        ],
+        "pronunciation_note": "I can을 붙이고 inside를 늘여 다른 단어로 만들지 않는다.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N002",
+          "speaker": "제페토",
+          "spoken_text": "Yoonsu, can you help him look inside?"
+        },
+        "context_after": {
+          "dialogue_id": "S12-N004",
+          "speaker": "귀뚜라미",
+          "spoken_text": "I'm right here."
+        },
+        "visible_action": "P01 수용 후 머리와 몸통을 작은 범위로 돌려 문 안을 살핀다. 신발은 문턱 밖에 고정. 제페토의 얼굴로 다시 시선을 돌리고 귀뚜라미도 같은 방향을 바라본다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N004",
+      "job_id": "S12-N004",
+      "kind": "NEW",
+      "speaker": "귀뚜라미",
+      "profile_id": "CRICKET_EXISTING_IDENTITY",
+      "spoken_text": "I'm right here.",
+      "shot_id": "S12-C03",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "친근한 안심",
+        "delivery_ko": "발치에서 든든하게 함께 있음을 알린다. right here를 친한 친구에게 작고 확실하게 보낸다.",
+        "direction_en": "From his safe place by Pinocchio's feet, reassure him with a small, warm, confident reply.",
+        "emphasis": [
+          "right here"
+        ],
+        "pronunciation_note": "I'm을 정확히 연결한다.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N003",
+          "speaker": "피노키오",
+          "spoken_text": "I can see inside!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-N005",
+          "speaker": "제페토",
+          "spoken_text": "A little breeze!"
+        },
+        "visible_action": "P01 수용 후 머리와 몸통을 작은 범위로 돌려 문 안을 살핀다. 신발은 문턱 밖에 고정. 제페토의 얼굴로 다시 시선을 돌리고 귀뚜라미도 같은 방향을 바라본다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N005",
+      "job_id": "S12-N005",
+      "kind": "NEW",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "A little breeze!",
+      "shot_id": "S12-C04",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "가벼운 놀람",
+        "delivery_ko": "작은 바람을 반갑게 알아챈다. little은 가벼운 미소, breeze는 바람결을 따라 부드럽게 흐른다. 위험을 예고하는 공포 연기 금지.",
+        "direction_en": "Notice a playful little breeze. Keep this pleasantly surprised, not ominous; let breeze flutter lightly.",
+        "emphasis": [
+          "little breeze"
+        ],
+        "pronunciation_note": "breeze의 /z/ 끝 유지.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N004",
+          "speaker": "귀뚜라미",
+          "spoken_text": "I'm right here."
+        },
+        "context_after": {
+          "dialogue_id": "S12-N006",
+          "speaker": "제페토",
+          "spoken_text": "Yoonsu, what should he hold?"
+        },
+        "visible_action": "잎 하나가 바닥을 지나가고 모자 가장자리가 약하게 들린다. 안내판은 아직 완전히 서 있다. 피노키오가 손을 모자 쪽으로 준비하되 닿지는 않는다. 제페토가 모자를 가리킨다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N006",
+      "job_id": "S12-N006",
+      "kind": "NEW",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Yoonsu, what should he hold?",
+      "shot_id": "S12-C04",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "다정한 질문",
+        "delivery_ko": "모자 쪽 손짓으로 대상이 무엇인지 먼저 보여 준다. hold에 주의를 모아 윤수에게 간결하게 묻는다.",
+        "direction_en": "Point toward the hat and invite Yoonsu to help. Make hold the purposeful word; finish with a real question.",
+        "emphasis": [
+          "Yoonsu",
+          "hold"
+        ],
+        "pronunciation_note": "should he 연결, hold의 /d/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N005",
+          "speaker": "제페토",
+          "spoken_text": "A little breeze!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-N007",
+          "speaker": "피노키오",
+          "spoken_text": "I've got my hat!"
+        },
+        "visible_action": "잎 하나가 바닥을 지나가고 모자 가장자리가 약하게 들린다. 안내판은 아직 완전히 서 있다. 피노키오가 손을 모자 쪽으로 준비하되 닿지는 않는다. 제페토가 모자를 가리킨다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N007",
+      "job_id": "S12-N007",
+      "kind": "NEW",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "I've got my hat!",
+      "shot_id": "S12-C05",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "제페토",
+        "emotion_target": "밝은 안도",
+        "delivery_ko": "손으로 모자를 붙잡은 뒤 밝은 안도. got에 손으로 잡았다는 확신, hat은 장난스러운 미소. 모자를 벗지 않는다.",
+        "direction_en": "Smile with relief once his fingers actually secure the brim. Make got confident and hat playful, not a shouted victory.",
+        "emphasis": [
+          "got",
+          "hat"
+        ],
+        "pronunciation_note": "I've와 got의 자음 및 hat의 /t/ 유지.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N006",
+          "speaker": "제페토",
+          "spoken_text": "Yoonsu, what should he hold?"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U002",
+          "speaker": "내레이션",
+          "spoken_text": "But something unexpected happened."
+        },
+        "visible_action": "P02 수용 후 피노키오가 모자 테두리에 손을 실제로 대고 바람이 잦을 때까지 잡는다. 모자는 머리 위 그대로. 손을 내린 뒤 돌풍으로 주변 잎이 빨라지고 안내판 쪽으로 시선이 움직인다. 판은 컷 끝까지 서 있는 채 흔들리기만 한다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U002",
+      "job_id": "S12-U002",
+      "kind": "ORIGINAL",
+      "speaker": "내레이션",
+      "profile_id": "NARRATOR_EXISTING_A",
+      "spoken_text": "But something unexpected happened.",
+      "shot_id": "S12-C05",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수와 관객",
+        "emotion_target": "기대에서 긴장으로 급전환",
+        "delivery_ko": "바람결이 달라지는 것을 함께 알아챈다. But에서 기대를 끊고 unexpected에 긴장감을 모으며 happened를 짧게 마쳐 다음 사건의 공간을 준다.",
+        "direction_en": "Interrupt the pleasant morning with a sudden change of attention. Tighten unexpected, then release the sentence into the visible event without melodramatic horror.",
+        "emphasis": [
+          "But",
+          "unexpected",
+          "happened"
+        ],
+        "pronunciation_note": "unexpected의 각 음절과 happened의 끝을 또렷하게.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N007",
+          "speaker": "피노키오",
+          "spoken_text": "I've got my hat!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U003",
+          "speaker": "귀뚜라미",
+          "spoken_text": "Oh! Help!"
+        },
+        "visible_action": "P02 수용 후 피노키오가 모자 테두리에 손을 실제로 대고 바람이 잦을 때까지 잡는다. 모자는 머리 위 그대로. 손을 내린 뒤 돌풍으로 주변 잎이 빨라지고 안내판 쪽으로 시선이 움직인다. 판은 컷 끝까지 서 있는 채 흔들리기만 한다.",
+        "reference_sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "reference_path": "voice/references/narrator_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U003",
+      "job_id": "S12-U003",
+      "kind": "ORIGINAL",
+      "speaker": "귀뚜라미",
+      "profile_id": "CRICKET_EXISTING_IDENTITY",
+      "spoken_text": "Oh! Help!",
+      "shot_id": "S12-C06",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오와 제페토",
+        "emotion_target": "갑작스러운 놀람·다급한 요청",
+        "delivery_ko": "놀람이 Oh에서 저절로 튀어나온다. Help!에는 친구에게 바로 닿으려는 힘을 싣는다. 아프거나 다쳤다는 울음은 없다.",
+        "direction_en": "React instantly to the exit being blocked. Let Oh burst out in surprise, then throw Help toward his friends with urgent clarity, not pain.",
+        "emphasis": [
+          "Oh",
+          "Help"
+        ],
+        "pronunciation_note": "Help의 /h/와 끝 /p/를 남긴다.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U002",
+          "speaker": "내레이션",
+          "spoken_text": "But something unexpected happened."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U004",
+          "speaker": "귀뚜라미",
+          "spoken_text": "I'm stuck!"
+        },
+        "visible_action": "조건부 승인 배경의 기존 문틀·벽·받침이 실제로 이 배치를 허용할 때, 한 와이드 구도에서 같은 작은 판의 밑면 회전과 귀뚜라미의 안전 공간 이동을 함께 보인다. 판이 실제 기존 받침에 걸려 멈추며 귀뚜라미와 충돌하지 않는다. 머리 위 여유와 낮게 막힌 가장자리를 같은 구도에서 보여 준다. 승인 배경에 지지 구조가 없으면 BLOCKED_LAYOUT.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U004",
+      "job_id": "S12-U004",
+      "kind": "ORIGINAL",
+      "speaker": "귀뚜라미",
+      "profile_id": "CRICKET_EXISTING_IDENTITY",
+      "spoken_text": "I'm stuck!",
+      "shot_id": "S12-C07",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오와 제페토",
+        "emotion_target": "당황과 답답함",
+        "delivery_ko": "I'm은 상황을 깨달은 짧은 시작, stuck은 길이 막힌 답답함으로 단단하게 닫는다. 겁을 주는 고함보다 실제 도움 요청이다.",
+        "direction_en": "Start with startled recognition, then land stuck with frustrated urgency. Call for help, not a comic scream or an injury cry.",
+        "emphasis": [
+          "stuck"
+        ],
+        "pronunciation_note": "I'm의 /m/, stuck의 /k/를 살린다.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U003",
+          "speaker": "귀뚜라미",
+          "spoken_text": "Oh! Help!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U005",
+          "speaker": "피노키오",
+          "spoken_text": "Cricket! Are you okay?"
+        },
+        "visible_action": "귀뚜라미는 기존 구조 면과 비스듬한 판이 만드는 안전 여유 공간에 있다. 낮은 앞 모서리와 몸보다 작은 옆 틈이 출구를 막았음을 보인다. 몸을 누르거나 다치게 하지 않으며, 좌우 확인과 작은 자세 변화만으로 도움 필요를 보여 준다. 반복 점프 실패나 공포 루프 없음.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U005",
+      "job_id": "S12-U005",
+      "kind": "ORIGINAL",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "Cricket! Are you okay?",
+      "shot_id": "S12-C08",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "귀뚜라미",
+        "emotion_target": "강한 걱정→다정한 확인",
+        "delivery_ko": "Cricket!은 친구를 알아챈 순간 걱정이 확 튀어 나오는 호출. Are you okay?에서는 가까이 살피려는 마음으로 소리를 낮추고 okay를 진짜 질문으로 열어 둔다.",
+        "direction_en": "Call Cricket with an immediate jolt of concern. Then pull the energy inward to check on him; are you okay must sound like a real question awaiting an answer.",
+        "emphasis": [
+          "Cricket",
+          "okay"
+        ],
+        "pronunciation_note": "Cricket 이름·okay 발음 유지. 질문 끝을 자르지 않는다.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U004",
+          "speaker": "귀뚜라미",
+          "spoken_text": "I'm stuck!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U006",
+          "speaker": "귀뚜라미",
+          "spoken_text": "I'm okay, but I can't get out!"
+        },
+        "visible_action": "피노키오가 판 쪽으로 몸을 돌리고 눈높이를 낮춰 귀뚜라미를 확인한다. 손은 안내판에 닿지 않는다. 귀뚜라미가 고개를 들어 괜찮다는 표시를 하고 막힌 쪽을 본다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U006",
+      "job_id": "S12-U006",
+      "kind": "ORIGINAL",
+      "speaker": "귀뚜라미",
+      "profile_id": "CRICKET_EXISTING_IDENTITY",
+      "spoken_text": "I'm okay, but I can't get out!",
+      "shot_id": "S12-C08",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "안심→막힌 답답함",
+        "delivery_ko": "I'm okay에서 다치지 않았음을 먼저 안심시킨다. but에서 답답함으로 급격히 돌아서고 can't get out을 붙여 도움의 필요를 분명하게 전달한다.",
+        "direction_en": "Reassure him sincerely on I'm okay, then pivot sharply at but into the practical frustration of being unable to get out. He is safe but blocked.",
+        "emphasis": [
+          "okay",
+          "can't",
+          "out"
+        ],
+        "pronunciation_note": "can't의 부정이 can으로 들리지 않게 끝 자음과 모음 유지.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U005",
+          "speaker": "피노키오",
+          "spoken_text": "Cricket! Are you okay?"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U007",
+          "speaker": "피노키오",
+          "spoken_text": "School is starting!"
+        },
+        "visible_action": "피노키오가 판 쪽으로 몸을 돌리고 눈높이를 낮춰 귀뚜라미를 확인한다. 손은 안내판에 닿지 않는다. 귀뚜라미가 고개를 들어 괜찮다는 표시를 하고 막힌 쪽을 본다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U007",
+      "job_id": "S12-U007",
+      "kind": "ORIGINAL",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "School is starting!",
+      "shot_id": "S12-C09",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "자기 자신과 제페토",
+        "emotion_target": "급한 깨달음",
+        "delivery_ko": "종을 듣고 학교 시간이 떠오른 순간 School이 튀어나온다. starting에서 급한 마음을 드러내되 친구를 비난하지 않는다.",
+        "direction_en": "React to the bell with a sudden reminder of his promise. Sound genuinely rushed on starting, without blaming Cricket.",
+        "emphasis": [
+          "School",
+          "starting"
+        ],
+        "pronunciation_note": "school /l/과 starting의 끝 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U006",
+          "speaker": "귀뚜라미",
+          "spoken_text": "I'm okay, but I can't get out!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U008",
+          "speaker": "피노키오",
+          "spoken_text": "But my friend needs help."
+        },
+        "visible_action": "두 번째 아침 종이 울린다. 피노키오가 문 쪽으로 고개를 돌렸다가 귀뚜라미 쪽으로 돌아본다. 발은 두 방향 중 어디에도 아직 달리지 않는다. 같은 책 든 가방의 무게를 어깨에 느낀다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U008",
+      "job_id": "S12-U008",
+      "kind": "ORIGINAL",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "But my friend needs help.",
+      "shot_id": "S12-C10",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "자기 자신과 제페토",
+        "emotion_target": "친구 걱정→결심",
+        "delivery_ko": "But에서 자신의 급한 마음을 멈추고 friend에 따뜻한 걱정을 싣는다. needs help에서 결심이 선명해진다. 교훈을 외우는 말이 아니라 눈앞의 친구를 향한다.",
+        "direction_en": "Turn away from the pull of the bell toward the friend who needs him. Let friend carry affection and needs help gather resolve; this is his own realization.",
+        "emphasis": [
+          "friend",
+          "needs help"
+        ],
+        "pronunciation_note": "needs의 /dz/, help의 /p/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U007",
+          "speaker": "피노키오",
+          "spoken_text": "School is starting!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U009",
+          "speaker": "제페토",
+          "spoken_text": "Pinocchio, your friend needs you."
+        },
+        "visible_action": "피노키오가 열린 문에서 귀뚜라미에게 시선을 돌려 자발적인 결심을 보인다. 같은 와이드 공간에서 제페토는 문틀 옆면 반대쪽 현재 위치에서 한 번 손을 뻗지만 직선 손 경로가 그 기존 면에 가림을 보인다. 힘이나 팔 길이 부족 설정이 아니다. 피노키오는 판의 접근 가능한 열린 면에 있다. 제페토는 반복 시도 대신 아이와 침착하게 눈을 맞춘다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U009",
+      "job_id": "S12-U009",
+      "kind": "ORIGINAL",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Pinocchio, your friend needs you.",
+      "shot_id": "S12-C10",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "침착한 신뢰",
+        "delivery_ko": "이미 친구를 걱정하는 아이에게 짧고 믿음 있게 말을 건넨다. 이름은 다정하게, your friend needs you는 책임을 겁주지 않고 할 수 있다는 신뢰를 담는다.",
+        "direction_en": "Acknowledge the child's own concern. Speak his name warmly and give your friend needs you quiet conviction, not guilt or an order shouted across the yard.",
+        "emphasis": [
+          "friend",
+          "needs you"
+        ],
+        "pronunciation_note": "needs you를 자연스럽게 연결하되 끝 자음 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U008",
+          "speaker": "피노키오",
+          "spoken_text": "But my friend needs help."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U010",
+          "speaker": "제페토",
+          "spoken_text": "Yoonsu, what should Pinocchio do?"
+        },
+        "visible_action": "피노키오가 열린 문에서 귀뚜라미에게 시선을 돌려 자발적인 결심을 보인다. 같은 와이드 공간에서 제페토는 문틀 옆면 반대쪽 현재 위치에서 한 번 손을 뻗지만 직선 손 경로가 그 기존 면에 가림을 보인다. 힘이나 팔 길이 부족 설정이 아니다. 피노키오는 판의 접근 가능한 열린 면에 있다. 제페토는 반복 시도 대신 아이와 침착하게 눈을 맞춘다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U010",
+      "job_id": "S12-U010",
+      "kind": "ORIGINAL",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Yoonsu, what should Pinocchio do?",
+      "shot_id": "S12-C11",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "진심 어린 부탁",
+        "delivery_ko": "윤수에게 차분하고 간절하게 묻는다. Yoonsu를 분명히 부르고 what should Pinocchio do를 짧고 알아듣기 쉽게 연결한다. 조급하게 재촉하지 말고 마지막 do에 답을 기다리는 공간을 남긴다.",
+        "direction_en": "Address Yoonsu directly with caring urgency, not panic. Invite one simple next action and genuinely wait for a response.",
+        "emphasis": [
+          "Yoonsu",
+          "what",
+          "do"
+        ],
+        "pronunciation_note": "두 이름의 승인 발음과 끝까지 이어진 질문 유지.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U009",
+          "speaker": "제페토",
+          "spoken_text": "Pinocchio, your friend needs you."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U011",
+          "speaker": "귀뚜라미",
+          "spoken_text": "Thank you, Pinocchio!"
+        },
+        "visible_action": "제페토가 윤수 쪽으로 시선을 옮긴다. 귀뚜라미는 안전 공간에서 안정된 자세를 유지하며, 피노키오는 아직 판과 문 사이에 있다. 판을 들어 올리는 사전 프레임은 금지한다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U011",
+      "job_id": "S12-U011",
+      "kind": "ORIGINAL",
+      "speaker": "귀뚜라미",
+      "profile_id": "CRICKET_EXISTING_IDENTITY",
+      "spoken_text": "Thank you, Pinocchio!",
+      "shot_id": "S12-C15",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "강한 안도와 감사",
+        "delivery_ko": "Thank you는 버티던 긴장이 풀리며 한꺼번에 나온 감사. Pinocchio에 자신을 도와준 친구를 향한 깊은 반가움을 담는다.",
+        "direction_en": "Let relief break through into heartfelt gratitude. Aim his name at the friend who actually helped him, not at the audience.",
+        "emphasis": [
+          "Thank you",
+          "Pinocchio"
+        ],
+        "pronunciation_note": "Thank의 /θ/와 이름의 마지막 음절 유지.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U010",
+          "speaker": "제페토",
+          "spoken_text": "Yoonsu, what should Pinocchio do?"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U012",
+          "speaker": "귀뚜라미",
+          "spoken_text": "You helped me!"
+        },
+        "visible_action": "귀뚜라미가 피노키오 발 앞 안전 지점에 선다. 놀란 어깨가 풀리고 얼굴이 환해진다. 피노키오는 손을 내리고 친구가 정말 괜찮은지 살핀다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U012",
+      "job_id": "S12-U012",
+      "kind": "ORIGINAL",
+      "speaker": "귀뚜라미",
+      "profile_id": "CRICKET_EXISTING_IDENTITY",
+      "spoken_text": "You helped me!",
+      "shot_id": "S12-C15",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "기쁜 감사",
+        "delivery_ko": "You에서 친구에게 바로 시선을 붙이고 helped me를 기쁘게 확신한다. 첫 감사보다 조금 더 가벼워지며 친구가 한 행동을 인정한다.",
+        "direction_en": "Look straight at him and celebrate what he did. Put a joyful, grateful emphasis on helped, with a warmer and lighter finish than the previous line.",
+        "emphasis": [
+          "You",
+          "helped me"
+        ],
+        "pronunciation_note": "helped의 /t/를 잃지 않는다.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U011",
+          "speaker": "귀뚜라미",
+          "spoken_text": "Thank you, Pinocchio!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U013",
+          "speaker": "피노키오",
+          "spoken_text": "You're my friend."
+        },
+        "visible_action": "귀뚜라미가 피노키오 발 앞 안전 지점에 선다. 놀란 어깨가 풀리고 얼굴이 환해진다. 피노키오는 손을 내리고 친구가 정말 괜찮은지 살핀다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U013",
+      "job_id": "S12-U013",
+      "kind": "ORIGINAL",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "You're my friend.",
+      "shot_id": "S12-C16",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "귀뚜라미",
+        "emotion_target": "다정한 확신",
+        "delivery_ko": "You're my friend는 너무 당연한 사실을 다정하게 건넨다. my friend에 친근함을 담고 작은 확신으로 마친다.",
+        "direction_en": "Say it as something obvious and precious between friends. Keep the intimacy of my friend instead of announcing a heroic moral.",
+        "emphasis": [
+          "my friend"
+        ],
+        "pronunciation_note": "You're my를 부드럽게 이어 friend 끝 /d/ 유지.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U012",
+          "speaker": "귀뚜라미",
+          "spoken_text": "You helped me!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U014",
+          "speaker": "피노키오",
+          "spoken_text": "I couldn't leave you there."
+        },
+        "visible_action": "피노키오가 무릎을 조금 굽혀 귀뚜라미와 눈높이를 맞춘다. 처음부터 영웅처럼 가슴을 펴지 않고 친구에게 손바닥을 열어 보인다. 귀뚜라미가 미소로 받는다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U014",
+      "job_id": "S12-U014",
+      "kind": "ORIGINAL",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "I couldn't leave you there.",
+      "shot_id": "S12-C16",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "귀뚜라미",
+        "emotion_target": "솔직한 우정",
+        "delivery_ko": "I couldn't에서 단호함을 보여 주되 과시하지 않는다. leave you there에는 친구를 두고 갈 수 없었던 솔직한 마음이 내려앉는다.",
+        "direction_en": "Explain why leaving was never a choice for him. Make couldn't quietly firm, then soften into leave you there with genuine care.",
+        "emphasis": [
+          "couldn't",
+          "leave you there"
+        ],
+        "pronunciation_note": "couldn't 부정과 there의 자연스러운 끝.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U013",
+          "speaker": "피노키오",
+          "spoken_text": "You're my friend."
+        },
+        "context_after": {
+          "dialogue_id": "S12-N008",
+          "speaker": "제페토",
+          "spoken_text": "Were you scared, Pinocchio?"
+        },
+        "visible_action": "피노키오가 무릎을 조금 굽혀 귀뚜라미와 눈높이를 맞춘다. 처음부터 영웅처럼 가슴을 펴지 않고 친구에게 손바닥을 열어 보인다. 귀뚜라미가 미소로 받는다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N008",
+      "job_id": "S12-N008",
+      "kind": "NEW",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Were you scared, Pinocchio?",
+      "shot_id": "S12-C17",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "공감",
+        "delivery_ko": "겁을 내도 괜찮다는 다정한 질문이다. scared에서 공감의 온기를 주고 이름은 판단하지 않는 낮은 확신으로 부른다.",
+        "direction_en": "Ask gently, making it safe to admit fear. Put sympathy into scared and leave an honest answer open.",
+        "emphasis": [
+          "scared",
+          "Pinocchio"
+        ],
+        "pronunciation_note": "Were you의 자연스러운 연결, scared 끝 /d/.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U014",
+          "speaker": "피노키오",
+          "spoken_text": "I couldn't leave you there."
+        },
+        "context_after": {
+          "dialogue_id": "S12-N009",
+          "speaker": "피노키오",
+          "spoken_text": "Yes. I was scared."
+        },
+        "visible_action": "제페토가 아이 곁에 눈높이를 낮추고 방금 무서웠는지 묻는다. 피노키오는 잠깐 자신을 돌아보며 겁났던 사실을 숨기지 않고 말한다. 귀뚜라미는 안전하게 곁에서 듣는다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N009",
+      "job_id": "S12-N009",
+      "kind": "NEW",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "Yes. I was scared.",
+      "shot_id": "S12-C17",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "제페토",
+        "emotion_target": "솔직한 두려움 인정",
+        "delivery_ko": "Yes는 망설이다 진실을 선택한 짧은 응답. I was scared에서는 목소리를 조금 낮춰 솔직히 인정하고 scared를 흐리지 않는다. 부끄럽게 꾸짖는 내면 독백 금지.",
+        "direction_en": "Admit the fear without hiding it. Give Yes a small honest beat, then let I was scared emerge plainly with vulnerable courage, not shame.",
+        "emphasis": [
+          "Yes",
+          "scared"
+        ],
+        "pronunciation_note": "Yes의 /s/와 scared 끝 /d/ 보존. 두 문장 사이 짧은 자연 쉼.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N008",
+          "speaker": "제페토",
+          "spoken_text": "Were you scared, Pinocchio?"
+        },
+        "context_after": {
+          "dialogue_id": "S12-N010",
+          "speaker": "제페토",
+          "spoken_text": "Thank you for telling me."
+        },
+        "visible_action": "제페토가 아이 곁에 눈높이를 낮추고 방금 무서웠는지 묻는다. 피노키오는 잠깐 자신을 돌아보며 겁났던 사실을 숨기지 않고 말한다. 귀뚜라미는 안전하게 곁에서 듣는다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N010",
+      "job_id": "S12-N010",
+      "kind": "NEW",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Thank you for telling me.",
+      "shot_id": "S12-C17",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "다정한 감사",
+        "delivery_ko": "어제의 고백을 기억하는 할아버지가 오늘의 솔직함을 따뜻하게 받아 준다. telling me에 감사의 무게를 싣고 훈계 없이 마친다.",
+        "direction_en": "Receive his honest answer with tenderness. Thank him for telling you, without turning the moment into a lecture.",
+        "emphasis": [
+          "Thank you",
+          "telling me"
+        ],
+        "pronunciation_note": "Thank와 telling의 자음을 흐리지 않는다.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N009",
+          "speaker": "피노키오",
+          "spoken_text": "Yes. I was scared."
+        },
+        "context_after": {
+          "dialogue_id": "S12-N011",
+          "speaker": "피노키오",
+          "spoken_text": "Yoonsu, shall I check on Cricket?"
+        },
+        "visible_action": "제페토가 아이 곁에 눈높이를 낮추고 방금 무서웠는지 묻는다. 피노키오는 잠깐 자신을 돌아보며 겁났던 사실을 숨기지 않고 말한다. 귀뚜라미는 안전하게 곁에서 듣는다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N011",
+      "job_id": "S12-N011",
+      "kind": "NEW",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "Yoonsu, shall I check on Cricket?",
+      "shot_id": "S12-C18",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "배려",
+        "delivery_ko": "이미 안전해진 친구를 한 번 더 살피고 싶다. Yoonsu를 믿고 부른 뒤 check on Cricket에 배려의 마음을 모은다.",
+        "direction_en": "Invite Yoonsu to help him check how his rescued friend feels. Be caring and curious, not urgently afraid again.",
+        "emphasis": [
+          "Yoonsu",
+          "check on Cricket"
+        ],
+        "pronunciation_note": "check on 연결, Cricket 이름 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N010",
+          "speaker": "제페토",
+          "spoken_text": "Thank you for telling me."
+        },
+        "context_after": {
+          "dialogue_id": "S12-N012",
+          "speaker": "귀뚜라미",
+          "spoken_text": "I'm not hurt. I'm all right!"
+        },
+        "visible_action": "안전한 귀뚜라미를 향해 제페토가 먼저 짧게 눈높이를 낮추고 얼굴과 두 발을 살피는 시범을 보인다. 피노키오는 그 행동을 보고 윤수에게 질문하며 자신의 전체 확인 동작은 아직 하지 않는다. 친구는 이미 구조 완료, 자유롭게 서 있는 상태다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N012",
+      "job_id": "S12-N012",
+      "kind": "NEW",
+      "speaker": "귀뚜라미",
+      "profile_id": "CRICKET_EXISTING_IDENTITY",
+      "spoken_text": "I'm not hurt. I'm all right!",
+      "shot_id": "S12-C19",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "안심→밝은 회복",
+        "delivery_ko": "not hurt는 안심시키려는 차분한 확인. 두 번째 문장은 두 발로 서서 다시 기운이 돌아온 밝은 확신이다.",
+        "direction_en": "First reassure him that there is no injury. Then brighten into I'm all right as his posture recovers; show relief through the words.",
+        "emphasis": [
+          "not hurt",
+          "all right"
+        ],
+        "pronunciation_note": "not의 /t/, hurt와 right 끝을 선명히.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N011",
+          "speaker": "피노키오",
+          "spoken_text": "Yoonsu, shall I check on Cricket?"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U015",
+          "speaker": "제페토",
+          "spoken_text": "I'm proud of you, Pinocchio."
+        },
+        "visible_action": "P03 후 피노키오가 고개를 숙이고 손바닥을 바닥 가까이에 열어 상태를 살핀다. 귀뚜라미가 두 발을 번갈아 디디며 괜찮음을 보여 준다. 피노키오가 고개를 들고 제페토는 흐뭇한 표정으로 대답한다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U015",
+      "job_id": "S12-U015",
+      "kind": "ORIGINAL",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "I'm proud of you, Pinocchio.",
+      "shot_id": "S12-C19",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "깊은 자랑스러움",
+        "delivery_ko": "I'm proud of you는 그 아이를 바라보며 깊은 마음을 담는다. Pinocchio에는 가족의 자랑스러움이 가까이 전달된다. 크게 선포하지 않는다.",
+        "direction_en": "Let pride rise from the quiet relief of seeing him choose kindness. Make his name intimate and affectionate, not an award announcement.",
+        "emphasis": [
+          "proud of you",
+          "Pinocchio"
+        ],
+        "pronunciation_note": "proud의 /d/ 유지, of you 자연 연결.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N012",
+          "speaker": "귀뚜라미",
+          "spoken_text": "I'm not hurt. I'm all right!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U016",
+          "speaker": "제페토",
+          "spoken_text": "You did the right thing."
+        },
+        "visible_action": "P03 후 피노키오가 고개를 숙이고 손바닥을 바닥 가까이에 열어 상태를 살핀다. 귀뚜라미가 두 발을 번갈아 디디며 괜찮음을 보여 준다. 피노키오가 고개를 들고 제페토는 흐뭇한 표정으로 대답한다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U016",
+      "job_id": "S12-U016",
+      "kind": "ORIGINAL",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "You did the right thing.",
+      "shot_id": "S12-C19",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "온화한 인정",
+        "delivery_ko": "You did the right thing에서 did와 right에 아이의 실제 행동을 인정하는 힘을 준다. thing은 온화하고 확실하게 닫는다.",
+        "direction_en": "Affirm the choice, not the child's worth. Put steady conviction into right thing, with a tender, settled ending.",
+        "emphasis": [
+          "did",
+          "right thing"
+        ],
+        "pronunciation_note": "right의 /t/와 thing의 /ŋ/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U015",
+          "speaker": "제페토",
+          "spoken_text": "I'm proud of you, Pinocchio."
+        },
+        "context_after": {
+          "dialogue_id": "S12-N013",
+          "speaker": "제페토",
+          "spoken_text": "Yoonsu, where should he stand?"
+        },
+        "visible_action": "P03 후 피노키오가 고개를 숙이고 손바닥을 바닥 가까이에 열어 상태를 살핀다. 귀뚜라미가 두 발을 번갈아 디디며 괜찮음을 보여 준다. 피노키오가 고개를 들고 제페토는 흐뭇한 표정으로 대답한다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N013",
+      "job_id": "S12-N013",
+      "kind": "NEW",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Yoonsu, where should he stand?",
+      "shot_id": "S12-C20",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "안전한 안내",
+        "delivery_ko": "안전한 위치를 보여 주고 윤수의 말을 기다린다. stand에 지시 대상이 분명해지도록 따뜻한 질문을 건넨다.",
+        "direction_en": "Invite Yoonsu to help Pinocchio join him in the clear space beside the doorway. Ask gently and leave room for the answer.",
+        "emphasis": [
+          "where",
+          "stand"
+        ],
+        "pronunciation_note": "stand 끝 /d/와 이름 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U016",
+          "speaker": "제페토",
+          "spoken_text": "You did the right thing."
+        },
+        "context_after": {
+          "dialogue_id": "S12-N014",
+          "speaker": "피노키오",
+          "spoken_text": "Here we are."
+        },
+        "visible_action": "제페토가 안내판의 회전 경로가 아닌 문 옆 안전한 발 디딤 위치를 가리킨다. 피노키오와 귀뚜라미는 이미 자유롭고 판은 지지점에 안정되어 있다. 제페토가 손바닥으로 자기 옆 위치를 보여 준다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N014",
+      "job_id": "S12-N014",
+      "kind": "NEW",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "Here we are.",
+      "shot_id": "S12-C21",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "제페토와 귀뚜라미",
+        "emotion_target": "정착한 만족",
+        "delivery_ko": "제페토 옆에 자리를 잡은 뒤 친구까지 함께 있다는 작은 만족을 건넨다. here에 정착감, are에 편한 미소.",
+        "direction_en": "Settle beside Grandpa and acknowledge that they are together in the clear spot. Make the line quiet and content.",
+        "emphasis": [
+          "Here"
+        ],
+        "pronunciation_note": "Here we are를 세 단어 낱독으로 끊지 않는다.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N013",
+          "speaker": "제페토",
+          "spoken_text": "Yoonsu, where should he stand?"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U017",
+          "speaker": "내레이션",
+          "spoken_text": "Then, a familiar blue light filled the air."
+        },
+        "visible_action": "P04 후 피노키오가 제페토 옆의 실제 안전 지점까지 몇 걸음 이동하고 멈춘다. 귀뚜라미가 발치로 따라온다. 셋이 정착한 뒤에만 학교 문 위쪽에 익숙한 푸른빛이 생기고 모두가 자연스럽게 고개를 든다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U017",
+      "job_id": "S12-U017",
+      "kind": "ORIGINAL",
+      "speaker": "내레이션",
+      "profile_id": "NARRATOR_EXISTING_A",
+      "spoken_text": "Then, a familiar blue light filled the air.",
+      "shot_id": "S12-C21",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수와 관객",
+        "emotion_target": "익숙한 경이로움",
+        "delivery_ko": "Then에서 다음 변화에 귀를 열고 familiar blue light에 기억과 놀라움을 함께 싣는다. filled the air는 따뜻한 빛이 주변으로 번지듯 넓어진다.",
+        "direction_en": "Notice a familiar magic returning. Make familiar tender and blue light luminous in the voice, then gently widen filled the air without shouting.",
+        "emphasis": [
+          "familiar",
+          "blue light"
+        ],
+        "pronunciation_note": "familiar의 자연 강세, filled의 /d/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N014",
+          "speaker": "피노키오",
+          "spoken_text": "Here we are."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U018",
+          "speaker": "파란 요정",
+          "spoken_text": "Pinocchio, I have watched you grow."
+        },
+        "visible_action": "P04 후 피노키오가 제페토 옆의 실제 안전 지점까지 몇 걸음 이동하고 멈춘다. 귀뚜라미가 발치로 따라온다. 셋이 정착한 뒤에만 학교 문 위쪽에 익숙한 푸른빛이 생기고 모두가 자연스럽게 고개를 든다.",
+        "reference_sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "reference_path": "voice/references/narrator_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U018",
+      "job_id": "S12-U018",
+      "kind": "ORIGINAL",
+      "speaker": "파란 요정",
+      "profile_id": "BLUE_FAIRY_EXISTING_C",
+      "spoken_text": "Pinocchio, I have watched you grow.",
+      "shot_id": "S12-C23",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "애정과 인정",
+        "delivery_ko": "이름을 오랜 시간 지켜본 아이에게 건네듯 다정하게 부른다. I have watched you grow에서 오래 쌓인 경험을 인정하는 따뜻한 확신이 커진다.",
+        "direction_en": "Speak his name with recognition. Let I have watched you grow carry the warmth of having seen his choices over time, rather than ceremonial grandeur.",
+        "emphasis": [
+          "watched you grow"
+        ],
+        "pronunciation_note": "watched의 /t/와 grow의 자연 연결.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U017",
+          "speaker": "내레이션",
+          "spoken_text": "Then, a familiar blue light filled the air."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U019",
+          "speaker": "파란 요정",
+          "spoken_text": "You told Grandpa the truth."
+        },
+        "visible_action": "요정이 적정 높이에서 안정되게 떠 있고 피노키오에게 따뜻하게 시선을 맞춘다. 피노키오는 호기심과 기억을 담아 듣는다. 제페토는 옆에서 미소를 되찾는다.",
+        "reference_sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "reference_path": "voice/references/blue_fairy_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U019",
+      "job_id": "S12-U019",
+      "kind": "ORIGINAL",
+      "speaker": "파란 요정",
+      "profile_id": "BLUE_FAIRY_EXISTING_C",
+      "spoken_text": "You told Grandpa the truth.",
+      "shot_id": "S12-C23",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "진실에 대한 존중",
+        "delivery_ko": "told Grandpa the truth에는 10화의 힘든 고백을 기억하는 이해를 담는다. 오늘의 솔직한 말도 들은 듯 작은 미소. truth는 단단하고 부드럽게 닫는다.",
+        "direction_en": "Remember the difficult honesty he showed Grandpa. Give truth warm conviction, never the sound of a judge listing a score.",
+        "emphasis": [
+          "Grandpa",
+          "truth"
+        ],
+        "pronunciation_note": "truth /θ/ 마찰을 살린다.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U018",
+          "speaker": "파란 요정",
+          "spoken_text": "Pinocchio, I have watched you grow."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U020",
+          "speaker": "파란 요정",
+          "spoken_text": "You said you were sorry."
+        },
+        "visible_action": "요정이 적정 높이에서 안정되게 떠 있고 피노키오에게 따뜻하게 시선을 맞춘다. 피노키오는 호기심과 기억을 담아 듣는다. 제페토는 옆에서 미소를 되찾는다.",
+        "reference_sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "reference_path": "voice/references/blue_fairy_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U020",
+      "job_id": "S12-U020",
+      "kind": "ORIGINAL",
+      "speaker": "파란 요정",
+      "profile_id": "BLUE_FAIRY_EXISTING_C",
+      "spoken_text": "You said you were sorry.",
+      "shot_id": "S12-C24",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "용기 인정",
+        "delivery_ko": "You said you were sorry는 용기 내어 사과한 마음을 인정한다. sorry에서 다정하게 내려오며 아이가 안심할 수 있게 한다.",
+        "direction_en": "Acknowledge the courage of his apology. Soften sorry with understanding, not pity or judgment.",
+        "emphasis": [
+          "said",
+          "sorry"
+        ],
+        "pronunciation_note": "said의 끝 /d/와 sorry의 자연 발음.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U019",
+          "speaker": "파란 요정",
+          "spoken_text": "You told Grandpa the truth."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U021",
+          "speaker": "파란 요정",
+          "spoken_text": "You kept your promise."
+        },
+        "visible_action": "요정이 한 손을 천천히 펼친다. 피노키오는 사과의 기억에 고개를 살짝 낮췄다가 약속을 지킨 오늘을 떠올리며 시선을 올린다. 가방과 책이 그대로 어깨에 있다.",
+        "reference_sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "reference_path": "voice/references/blue_fairy_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U021",
+      "job_id": "S12-U021",
+      "kind": "ORIGINAL",
+      "speaker": "파란 요정",
+      "profile_id": "BLUE_FAIRY_EXISTING_C",
+      "spoken_text": "You kept your promise.",
+      "shot_id": "S12-C24",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "따뜻한 만족",
+        "delivery_ko": "kept your promise에 오늘 실제로 학교에 온 행동을 기뻐하는 확신을 준다. promise 끝에 작게 반짝이는 미소를 남긴다.",
+        "direction_en": "Celebrate that he followed through on his promise today. Make kept firm and promise warmly satisfied.",
+        "emphasis": [
+          "kept",
+          "promise"
+        ],
+        "pronunciation_note": "kept /pt/, promise 끝 /s/ 유지.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U020",
+          "speaker": "파란 요정",
+          "spoken_text": "You said you were sorry."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U022",
+          "speaker": "파란 요정",
+          "spoken_text": "And today, you helped a friend."
+        },
+        "visible_action": "요정이 한 손을 천천히 펼친다. 피노키오는 사과의 기억에 고개를 살짝 낮췄다가 약속을 지킨 오늘을 떠올리며 시선을 올린다. 가방과 책이 그대로 어깨에 있다.",
+        "reference_sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "reference_path": "voice/references/blue_fairy_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U022",
+      "job_id": "S12-U022",
+      "kind": "ORIGINAL",
+      "speaker": "파란 요정",
+      "profile_id": "BLUE_FAIRY_EXISTING_C",
+      "spoken_text": "And today, you helped a friend.",
+      "shot_id": "S12-C25",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "오늘의 행동에 대한 자부심",
+        "delivery_ko": "And today에서 지금 있었던 행동을 발견한 기쁨이 살아난다. helped a friend에 진심 어린 자랑스러움을 모아 넉넉하게 끝낸다.",
+        "direction_en": "Move from remembered choices to what just happened. Let today brighten and helped a friend become the warm emotional peak of the recognition.",
+        "emphasis": [
+          "today",
+          "helped a friend"
+        ],
+        "pronunciation_note": "helped /t/와 friend /d/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U021",
+          "speaker": "파란 요정",
+          "spoken_text": "You kept your promise."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U023",
+          "speaker": "피노키오",
+          "spoken_text": "I only wanted to help him."
+        },
+        "visible_action": "요정이 귀뚜라미 쪽을 바라봤다가 피노키오에게 돌아온다. 피노키오는 친구를 한 번 보고 겸손한 표정으로 대답한다. 목각 정상 코 유지.",
+        "reference_sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "reference_path": "voice/references/blue_fairy_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U023",
+      "job_id": "S12-U023",
+      "kind": "ORIGINAL",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "I only wanted to help him.",
+      "shot_id": "S12-C25",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "파란 요정",
+        "emotion_target": "겸손한 솔직함",
+        "delivery_ko": "I only wanted to는 겸손한 솔직함. help him에서 친구 쪽에 시선을 주며 자기에게 상이 필요해서 한 일이 아니라는 따뜻한 확신을 전한다.",
+        "direction_en": "Answer simply and honestly, almost surprised by the praise. Let help him carry his real motive, without false modesty or boasting.",
+        "emphasis": [
+          "only",
+          "help him"
+        ],
+        "pronunciation_note": "wanted to 연결, him /m/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U022",
+          "speaker": "파란 요정",
+          "spoken_text": "And today, you helped a friend."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U024",
+          "speaker": "파란 요정",
+          "spoken_text": "That is what makes you kind."
+        },
+        "visible_action": "요정이 귀뚜라미 쪽을 바라봤다가 피노키오에게 돌아온다. 피노키오는 친구를 한 번 보고 겸손한 표정으로 대답한다. 목각 정상 코 유지.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U024",
+      "job_id": "S12-U024",
+      "kind": "ORIGINAL",
+      "speaker": "파란 요정",
+      "profile_id": "BLUE_FAIRY_EXISTING_C",
+      "spoken_text": "That is what makes you kind.",
+      "shot_id": "S12-C26",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "다정한 긍정",
+        "delivery_ko": "That is what에서 바로 피노키오가 방금 말한 이유를 받아 준다. kind에는 작지만 깊은 긍정이 깃든다.",
+        "direction_en": "Respond directly to his motive. Put the whole tenderness of the moment into kind, rather than sounding like a definition in a lesson.",
+        "emphasis": [
+          "kind"
+        ],
+        "pronunciation_note": "kind의 /d/를 유지.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U023",
+          "speaker": "피노키오",
+          "spoken_text": "I only wanted to help him."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U025",
+          "speaker": "파란 요정",
+          "spoken_text": "You have a brave and caring heart."
+        },
+        "visible_action": "요정의 표정이 부드러워지고 지팡이를 쥐지 않은 손을 가슴 앞으로 가져온다. 피노키오는 눈을 맞추고 귀뚜라미는 고개를 들어 조용히 듣는다.",
+        "reference_sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "reference_path": "voice/references/blue_fairy_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U025",
+      "job_id": "S12-U025",
+      "kind": "ORIGINAL",
+      "speaker": "파란 요정",
+      "profile_id": "BLUE_FAIRY_EXISTING_C",
+      "spoken_text": "You have a brave and caring heart.",
+      "shot_id": "S12-C26",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "존중→배려",
+        "delivery_ko": "brave와 caring을 서로 다른 감정으로 표현한다. brave는 두려워도 도운 선택을 존중하고 caring은 친구를 향한 부드러움으로 마친다.",
+        "direction_en": "Honor the courage of acting despite fear, then soften caring into affection. Let heart finish with calm, heartfelt conviction.",
+        "emphasis": [
+          "brave",
+          "caring heart"
+        ],
+        "pronunciation_note": "brave의 /v/, heart의 /t/ 명료하게.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U024",
+          "speaker": "파란 요정",
+          "spoken_text": "That is what makes you kind."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U026",
+          "speaker": "파란 요정",
+          "spoken_text": "Now, it's time for one last bit of magic."
+        },
+        "visible_action": "요정의 표정이 부드러워지고 지팡이를 쥐지 않은 손을 가슴 앞으로 가져온다. 피노키오는 눈을 맞추고 귀뚜라미는 고개를 들어 조용히 듣는다.",
+        "reference_sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "reference_path": "voice/references/blue_fairy_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U026",
+      "job_id": "S12-U026",
+      "kind": "ORIGINAL",
+      "speaker": "파란 요정",
+      "profile_id": "BLUE_FAIRY_EXISTING_C",
+      "spoken_text": "Now, it's time for one last bit of magic.",
+      "shot_id": "S12-C27",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "선물을 앞둔 기대",
+        "delivery_ko": "Now는 조용한 전환, one last bit에는 오래 간직한 선물을 열어 보이는 기대를 준다. magic에서 환하게 펼치되 경박한 진행자 말투를 쓰지 않는다.",
+        "direction_en": "Reveal that something special is about to happen. Gather affectionate anticipation through one last bit, then let magic shine with wonder.",
+        "emphasis": [
+          "Now",
+          "one last bit",
+          "magic"
+        ],
+        "pronunciation_note": "last bit의 /st b/와 magic /k/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U025",
+          "speaker": "파란 요정",
+          "spoken_text": "You have a brave and caring heart."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U027",
+          "speaker": "파란 요정",
+          "spoken_text": "Pinocchio, you can become a real boy!"
+        },
+        "visible_action": "요정이 피노키오를 안심시키는 미소와 함께 지팡이를 천천히 준비한다. 피노키오가 고개를 살짝 갸웃하며 다음 일을 기다린다. 모두의 시선은 같은 지팡이로 이동한다. 목각·정상 코.",
+        "reference_sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "reference_path": "voice/references/blue_fairy_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U027",
+      "job_id": "S12-U027",
+      "kind": "ORIGINAL",
+      "speaker": "파란 요정",
+      "profile_id": "BLUE_FAIRY_EXISTING_C",
+      "spoken_text": "Pinocchio, you can become a real boy!",
+      "shot_id": "S12-C29",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "깊은 기쁨과 경이로운 약속",
+        "delivery_ko": "Pinocchio에서 이 아이에게 선물을 직접 건넨다. you can에 깊은 확신, become a real boy에는 희망이 열리는 놀라움을 풍성하게 모아 끝맺는다. 소리를 키우는 것만으로 마법을 표현하지 않는다.",
+        "direction_en": "Make this a personal, deeply joyful promise. Build certainty through you can and open into wonder on a real boy, with the tenderness of a gift rather than a command.",
+        "emphasis": [
+          "you can",
+          "real boy"
+        ],
+        "pronunciation_note": "real과 boy의 모음을 명확히, 이름은 기존 승인 발음.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U026",
+          "speaker": "파란 요정",
+          "spoken_text": "Now, it's time for one last bit of magic."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U028",
+          "speaker": "내레이션",
+          "spoken_text": "And just like that, the wooden puppet became a real little boy."
+        },
+        "visible_action": "요정이 아이에게 지팡이를 향하되 직접 닿지 않는다. 피노키오는 눈을 감고 목각 모습으로 기다린다. 빛이 몸을 감싸고 마지막 약속을 전달한다.",
+        "reference_sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "reference_path": "voice/references/blue_fairy_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U028",
+      "job_id": "S12-U028",
+      "kind": "ORIGINAL",
+      "speaker": "내레이션",
+      "profile_id": "NARRATOR_EXISTING_A",
+      "spoken_text": "And just like that, the wooden puppet became a real little boy.",
+      "shot_id": "S12-C30",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수와 관객",
+        "emotion_target": "경이로움→감동",
+        "delivery_ko": "And just like that은 긴 마법이 실제로 이루어진 순간의 경이로움. wooden puppet에서 지난 모습을 짚고 became a real little boy에 따뜻한 감동이 크게 열린다. 마지막은 아이를 만난 미소처럼 마친다.",
+        "direction_en": "Witness the change as it finishes. Carry the memory of the wooden puppet into the wonder of became a real little boy. Open with awe and finish with intimate joy.",
+        "emphasis": [
+          "wooden puppet",
+          "became",
+          "real little boy"
+        ],
+        "pronunciation_note": "wooden의 모음, became의 끝 /m/, little boy의 자연 연결.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U027",
+          "speaker": "파란 요정",
+          "spoken_text": "Pinocchio, you can become a real boy!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U029",
+          "speaker": "피노키오",
+          "spoken_text": "Grandpa! Look at me!"
+        },
+        "visible_action": "U027 종료 후에만 발끝→다리→몸통→팔·손→얼굴 순으로 목재 색·관절·나뭇결이 단계적으로 사라진다. 동일 시점의 승인 CHAR_YOONSU_HUMAN 포즈를 정렬하고 같은 발 접지·팔끝·모자 위치·가방 접촉점으로 사람형이 완성된다. 새 얼굴은 승인 윤수 원화와 일치해야 한다. 얼굴·손·몸을 모두 사람형으로 정착시키고 빛을 걷어낸다.",
+        "reference_sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "reference_path": "voice/references/narrator_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U029",
+      "job_id": "S12-U029",
+      "kind": "ORIGINAL",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "Grandpa! Look at me!",
+      "shot_id": "S12-C31",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "제페토",
+        "emotion_target": "폭발적 기쁨",
+        "delivery_ko": "Grandpa!는 가장 먼저 사랑하는 사람에게 소식을 전하고 싶은 폭발적인 기쁨. Look at me!에서 몸을 보여 주는 들뜸을 크게 펼친다.",
+        "direction_en": "Burst out toward the person he loves most. Throw Grandpa with joyful urgency, then open Look at me into a child's amazed delight.",
+        "emphasis": [
+          "Grandpa",
+          "Look",
+          "me"
+        ],
+        "pronunciation_note": "두 문장의 끝을 삼키지 않고 Look at 연결.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U028",
+          "speaker": "내레이션",
+          "spoken_text": "And just like that, the wooden puppet became a real little boy."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U030",
+          "speaker": "피노키오",
+          "spoken_text": "I'm a real boy!"
+        },
+        "visible_action": "인간형으로 안정된 피노키오가 눈을 뜨고 자기 몸을 짧게 내려다본 뒤 가장 먼저 제페토를 바라본다. 즉시 얼굴이 환해지고 팔을 조금 벌려 자기를 보여 준다. 제페토는 처음 보는 인간형 모습에 놀라며 감격한다. 손 탐색 시범이나 윤수 질문을 끼우지 않는다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U030",
+      "job_id": "S12-U030",
+      "kind": "ORIGINAL",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "I'm a real boy!",
+      "shot_id": "S12-C31",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "제페토",
+        "emotion_target": "믿기 어려운 감격과 환희",
+        "delivery_ko": "I'm에서 자기 자신을 새롭게 발견한 놀람이 시작된다. real boy에서 믿기 어려운 감격과 기쁨을 정점으로 만들고 boy는 환하게 열린다. U029와 같은 억양을 복제하지 않는다.",
+        "direction_en": "Discover the reality of it in his own voice. Let real become the emotional revelation and boy release it into exuberant joy; make this different from the call before it.",
+        "emphasis": [
+          "real",
+          "boy"
+        ],
+        "pronunciation_note": "I'm의 /m/, real의 /l/, boy의 이중모음 유지.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U029",
+          "speaker": "피노키오",
+          "spoken_text": "Grandpa! Look at me!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U031",
+          "speaker": "제페토",
+          "spoken_text": "Pinocchio! My dear boy!"
+        },
+        "visible_action": "인간형으로 안정된 피노키오가 눈을 뜨고 자기 몸을 짧게 내려다본 뒤 가장 먼저 제페토를 바라본다. 즉시 얼굴이 환해지고 팔을 조금 벌려 자기를 보여 준다. 제페토는 처음 보는 인간형 모습에 놀라며 감격한다. 손 탐색 시범이나 윤수 질문을 끼우지 않는다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U031",
+      "job_id": "S12-U031",
+      "kind": "ORIGINAL",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Pinocchio! My dear boy!",
+      "shot_id": "S12-C32",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "놀라움→벅찬 애정",
+        "delivery_ko": "Pinocchio!에서는 놀라움과 사랑이 한꺼번에 솟는다. My dear boy!는 가슴 깊은 곳에서 따뜻하게 떨리는 애정. 같은 크기의 두 감탄사를 기계적으로 이어 읽지 않는다.",
+        "direction_en": "The name should escape him in astonished joy. Then My dear boy is an intimate surge of love; soften the projection and let the warmth tremble naturally.",
+        "emphasis": [
+          "Pinocchio",
+          "my dear boy"
+        ],
+        "pronunciation_note": "기존 고정 음색. dear boy 연결과 이름 끝 유지.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U030",
+          "speaker": "피노키오",
+          "spoken_text": "I'm a real boy!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U032",
+          "speaker": "제페토",
+          "spoken_text": "You are real!"
+        },
+        "visible_action": "제페토의 눈이 커지고 안경 아래 표정이 놀라움에서 벅찬 애정으로 바뀐다. 손을 입 가까이 가져갔다가 아이를 안으려 천천히 연다. 아이는 제페토의 눈을 바라본다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U032",
+      "job_id": "S12-U032",
+      "kind": "ORIGINAL",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "You are real!",
+      "shot_id": "S12-C32",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "감격과 기쁨",
+        "delivery_ko": "You are real!에서 눈앞의 변화가 믿기지 않는 기쁨을 다시 확인한다. real에 감격을 모으고 아이를 바라보는 미소로 마친다. 사랑의 조건이 인간이 되는 것이 아니라는 흐름을 유지한다.",
+        "direction_en": "Let him realize what he sees, with quiet astonishment swelling into joy on real. This is wonder at a change, never a condition for his love.",
+        "emphasis": [
+          "real"
+        ],
+        "pronunciation_note": "are를 없애지 않고 real /l/ 명료하게.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U031",
+          "speaker": "제페토",
+          "spoken_text": "Pinocchio! My dear boy!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-N020",
+          "speaker": "제페토",
+          "spoken_text": "I love you, just the same."
+        },
+        "visible_action": "제페토의 눈이 커지고 안경 아래 표정이 놀라움에서 벅찬 애정으로 바뀐다. 손을 입 가까이 가져갔다가 아이를 안으려 천천히 연다. 아이는 제페토의 눈을 바라본다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N020",
+      "job_id": "S12-N020",
+      "kind": "NEW",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "I love you, just the same.",
+      "shot_id": "S12-C33",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "변하지 않는 사랑",
+        "delivery_ko": "아이를 안은 상태에서 목각이든 인간이든 변하지 않는 사랑을 진심으로 전한다. love you는 가깝고 낮게, just the same에는 오래 지켜온 확신을 싣는다.",
+        "direction_en": "Hold the child and reassure him that the love has not changed. Make just the same a tender certainty, not a moral speech.",
+        "emphasis": [
+          "love you",
+          "just the same"
+        ],
+        "pronunciation_note": "love의 /v/, same의 /m/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U032",
+          "speaker": "제페토",
+          "spoken_text": "You are real!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-N021",
+          "speaker": "피노키오",
+          "spoken_text": "I love you too, Grandpa."
+        },
+        "visible_action": "제페토가 팔을 실제로 벌리고 피노키오가 한 발 다가간다. 제페토가 무릎을 굽혀 키 차이를 맞추고 둘의 손과 팔이 서로의 등·어깨 옆 안전 접촉점에 닿는다. 아이도 양팔로 할아버지를 안는다. 가방은 등 뒤 그대로이며 손이 가방을 관통하지 않는다. 모자는 떨어지지 않고 약간 기울 뿐이다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N021",
+      "job_id": "S12-N021",
+      "kind": "NEW",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "I love you too, Grandpa.",
+      "shot_id": "S12-C33",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "제페토",
+        "emotion_target": "안온한 행복",
+        "delivery_ko": "품에 기대어 말하는 작은 행복이다. too에서 마음이 즉시 되돌아오고 Grandpa를 안심하고 부른다. 환호와 다른 가까운 목소리.",
+        "direction_en": "Answer from the comfort of the embrace. Let too return the affection naturally and Grandpa finish with safe, quiet happiness.",
+        "emphasis": [
+          "too",
+          "Grandpa"
+        ],
+        "pronunciation_note": "too와 이름을 끊어 읽지 않는다.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N020",
+          "speaker": "제페토",
+          "spoken_text": "I love you, just the same."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U033",
+          "speaker": "귀뚜라미",
+          "spoken_text": "You did it, Pinocchio!"
+        },
+        "visible_action": "제페토가 팔을 실제로 벌리고 피노키오가 한 발 다가간다. 제페토가 무릎을 굽혀 키 차이를 맞추고 둘의 손과 팔이 서로의 등·어깨 옆 안전 접촉점에 닿는다. 아이도 양팔로 할아버지를 안는다. 가방은 등 뒤 그대로이며 손이 가방을 관통하지 않는다. 모자는 떨어지지 않고 약간 기울 뿐이다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U033",
+      "job_id": "S12-U033",
+      "kind": "ORIGINAL",
+      "speaker": "귀뚜라미",
+      "profile_id": "CRICKET_EXISTING_IDENTITY",
+      "spoken_text": "You did it, Pinocchio!",
+      "shot_id": "S12-C34",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "친구의 성장에 대한 축하",
+        "delivery_ko": "You did it은 함께한 친구가 성장한 것이 기뻐 터지는 축하. Pinocchio에 친구다운 친근함을 더한다. 인간형이 돼서 이제야 친구가 된다는 의미가 아니다.",
+        "direction_en": "Celebrate his journey with a bright little burst of shared pride. Say his name with familiar friendship; he was already your friend before the magic.",
+        "emphasis": [
+          "did it",
+          "Pinocchio"
+        ],
+        "pronunciation_note": "did it 연결, 이름 끝 유지.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N021",
+          "speaker": "피노키오",
+          "spoken_text": "I love you too, Grandpa."
+        },
+        "context_after": {
+          "dialogue_id": "S12-N015",
+          "speaker": "피노키오",
+          "spoken_text": "My hands feel different!"
+        },
+        "visible_action": "귀뚜라미가 준비·도약·착지가 보이는 작은 축하 점프를 한다. U033을 들으며 피노키오와 제페토가 서로의 팔과 손을 천천히 풀어 안정된 두 발로 선다. 눈맞춤과 미소가 이어지고 요정은 따뜻하게 지켜본다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N015",
+      "job_id": "S12-N015",
+      "kind": "NEW",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "My hands feel different!",
+      "shot_id": "S12-C35",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "자기 자신과 제페토",
+        "emotion_target": "포옹 후 촉감에 대한 세밀한 호기심",
+        "delivery_ko": "포옹과 첫 환희를 나눈 뒤 자기 손의 촉감을 자세히 알아본다. 손으로 느끼는 different에 부드럽고 생생한 호기심을 준다. 사람이 됐다는 사실을 처음 발견하거나 가족에게 재발표하는 연기가 아니다.",
+        "direction_en": "After the first joyful reunion and embrace, explore the tactile difference in his hands. Let different reveal close, delighted curiosity about the texture, not a second discovery that he has become human.",
+        "emphasis": [
+          "hands",
+          "different"
+        ],
+        "pronunciation_note": "hands의 /dz/, different의 마지막 자음 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U033",
+          "speaker": "귀뚜라미",
+          "spoken_text": "You did it, Pinocchio!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-N016",
+          "speaker": "제페토",
+          "spoken_text": "Yoonsu, can he show me his hands?"
+        },
+        "visible_action": "포옹 후 피노키오가 자기 손의 낯선 촉감을 느끼며 손바닥과 손등을 천천히 살핀다. 손가락을 일부러 굽히는 과제는 아직 하지 않는다. 제페토가 자기 두 손바닥을 보이도록 펴서 보여 주기 동작을 먼저 시범 보인다. 피노키오는 손을 자기 쪽에 둔 채 관찰하고, 제페토가 윤수를 본다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N016",
+      "job_id": "S12-N016",
+      "kind": "NEW",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Yoonsu, can he show me his hands?",
+      "shot_id": "S12-C35",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "편안한 호기심과 다정한 부탁",
+        "delivery_ko": "첫 감격이 지나간 뒤 아이의 손을 가까이 보고 싶어 하는 다정한 부탁. 윤수에게 손바닥을 보여 주는 시범을 먼저 건네고 show me his hands를 편안하게 연결한다. 변신 승인이나 가족의 사랑을 기다리는 질문처럼 들리지 않는다.",
+        "direction_en": "After their joyful embrace, warmly invite a closer look at his hands. This is relaxed shared curiosity, never a condition for the magic or the family reunion.",
+        "emphasis": [
+          "Yoonsu",
+          "show",
+          "hands"
+        ],
+        "pronunciation_note": "show me 자연 연결, hands 끝 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N015",
+          "speaker": "피노키오",
+          "spoken_text": "My hands feel different!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-N017",
+          "speaker": "제페토",
+          "spoken_text": "Look at those little hands!"
+        },
+        "visible_action": "포옹 후 피노키오가 자기 손의 낯선 촉감을 느끼며 손바닥과 손등을 천천히 살핀다. 손가락을 일부러 굽히는 과제는 아직 하지 않는다. 제페토가 자기 두 손바닥을 보이도록 펴서 보여 주기 동작을 먼저 시범 보인다. 피노키오는 손을 자기 쪽에 둔 채 관찰하고, 제페토가 윤수를 본다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N017",
+      "job_id": "S12-N017",
+      "kind": "NEW",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Look at those little hands!",
+      "shot_id": "S12-C36",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "가까이서 살펴보는 애정",
+        "delivery_ko": "손을 실제로 보여 준 데 대한 다정한 반응. little hands에 가까이서 발견한 섬세함과 애정을 싣는다. 첫 인간형 발견의 큰 놀라움은 앞서 끝났으므로 같은 감탄을 재연하지 않는다.",
+        "direction_en": "Respond to the hands now being shown up close. Give little hands tender, intimate appreciation; the first astonished discovery of his human form has already happened.",
+        "emphasis": [
+          "Look",
+          "little hands"
+        ],
+        "pronunciation_note": "Look의 /k/, hands의 끝 자음 유지.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N016",
+          "speaker": "제페토",
+          "spoken_text": "Yoonsu, can he show me his hands?"
+        },
+        "context_after": {
+          "dialogue_id": "S12-N018",
+          "speaker": "피노키오",
+          "spoken_text": "Yoonsu, shall I bend my fingers?"
+        },
+        "visible_action": "P05 수용 후 피노키오가 어깨·팔꿈치·손목으로 두 손을 제페토 쪽에 펼친다. 제페토는 잡아당기지 않고 눈높이를 낮춰 손을 바라본다. 아이의 손 자세와 제페토 시선이 안정된 뒤 다정하게 반응한다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N018",
+      "job_id": "S12-N018",
+      "kind": "NEW",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "Yoonsu, shall I bend my fingers?",
+      "shot_id": "S12-C37",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "신기함과 기대",
+        "delivery_ko": "자기 손가락을 보며 궁금증이 살아난다. bend my fingers를 손가락 쪽 시선과 맞추고 실제 동작을 기다리는 질문으로 마친다.",
+        "direction_en": "Invite Yoonsu to explore this new feeling with him. Sound eager and curious, with a true questioning finish.",
+        "emphasis": [
+          "bend",
+          "fingers"
+        ],
+        "pronunciation_note": "bend의 /d/, fingers의 /z/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N017",
+          "speaker": "제페토",
+          "spoken_text": "Look at those little hands!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-N019",
+          "speaker": "피노키오",
+          "spoken_text": "They feel so soft!"
+        },
+        "visible_action": "제페토가 자기 손을 들어 자기 손가락을 천천히 굽혔다 펴는 시범을 한 번 보인다. 피노키오는 그 손과 자기 손을 번갈아 보고 자기 손가락은 과제 동작 전 자세로 유지한다. 제페토 시범이 끝난 뒤 피노키오가 윤수를 바라본다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N019",
+      "job_id": "S12-N019",
+      "kind": "NEW",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "They feel so soft!",
+      "shot_id": "S12-C38",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "제페토",
+        "emotion_target": "촉감의 경이로움",
+        "delivery_ko": "자기 손바닥을 만진 순간 부드러움을 발견한다. so soft를 정말 신기한 촉감처럼 따뜻하게 펼치고 기쁜 표정으로 마친다.",
+        "direction_en": "React to the texture he has just felt. Let soft carry genuine tactile amazement rather than a flat description.",
+        "emphasis": [
+          "feel",
+          "so soft"
+        ],
+        "pronunciation_note": "soft /ft/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N018",
+          "speaker": "피노키오",
+          "spoken_text": "Yoonsu, shall I bend my fingers?"
+        },
+        "context_after": {
+          "dialogue_id": "S12-N022",
+          "speaker": "제페토",
+          "spoken_text": "Yoonsu, can he take my hand?"
+        },
+        "visible_action": "P06 수용 후 피노키오가 자기 손가락을 실제 관절대로 굽혔다 펴고 다른 손으로 손바닥을 가볍게 만진다. 목각 때도 움직였던 손이므로 움직임 능력이 새로 생긴 연기가 아니라 부드러운 촉감에 대한 발견이다. 동작이 끝나면 팔을 편히 낮춘다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N022",
+      "job_id": "S12-N022",
+      "kind": "NEW",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Yoonsu, can he take my hand?",
+      "shot_id": "S12-C39",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "포옹 이후의 편안한 초대",
+        "delivery_ko": "따뜻한 포옹을 나눈 뒤 아이에게 손을 내미는 조용한 초대. take my hand를 가까운 상대에게 편안하게 건네며, 처음 접촉하는 순간처럼 새로 놀라지 않는다.",
+        "direction_en": "Offer a quiet, affectionate hand after the embrace they have already shared. Make take my hand an easy invitation, without replaying the first emotional reunion.",
+        "emphasis": [
+          "take my hand"
+        ],
+        "pronunciation_note": "take /k/와 hand /d/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N019",
+          "speaker": "피노키오",
+          "spoken_text": "They feel so soft!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-N023",
+          "speaker": "제페토",
+          "spoken_text": "Your hand is warm."
+        },
+        "visible_action": "제페토가 손바닥을 위로 열어 아이에게 내민다. 피노키오는 제페토의 얼굴에서 내민 손으로 시선을 옮기고 자기 손을 준비하되 아직 닿지 않는다. 제페토가 윤수를 바라본다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N023",
+      "job_id": "S12-N023",
+      "kind": "NEW",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Your hand is warm.",
+      "shot_id": "S12-C40",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "따뜻한 발견",
+        "delivery_ko": "작은 손을 잡고 느낀 감동을 속삭이듯 가까이 전한다. warm에서 따뜻한 감격이 부풀었다가 잔잔해진다.",
+        "direction_en": "Discover the warmth of the hand he is holding. Let warm carry a quiet, emotional realization, with clear speech rather than a whisper that loses words.",
+        "emphasis": [
+          "hand",
+          "warm"
+        ],
+        "pronunciation_note": "hand is 연결, warm /m/ 유지.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N022",
+          "speaker": "제페토",
+          "spoken_text": "Yoonsu, can he take my hand?"
+        },
+        "context_after": {
+          "dialogue_id": "S12-N024",
+          "speaker": "피노키오",
+          "spoken_text": "So is yours!"
+        },
+        "visible_action": "P07 수용 뒤 피노키오의 손이 제페토 손에 실제로 닿고 자연스럽게 감싼다. 서로의 온기를 느끼며 눈을 맞춘다. N023과 N024가 끝난 뒤 양쪽 손가락을 풀고 실제로 손을 떨어뜨린다. 손 해제를 완료한 상태로 다음 컷에 넘긴다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N024",
+      "job_id": "S12-N024",
+      "kind": "NEW",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "So is yours!",
+      "shot_id": "S12-C40",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "제페토",
+        "emotion_target": "장난스러운 반가움",
+        "delivery_ko": "할아버지의 손에서도 따뜻함을 느낀 아이의 즐거운 응답. So에서 즉시 반응하고 yours에 친근한 확신을 준다.",
+        "direction_en": "Reply with a small delighted discovery that Grandpa's hand is warm too. Keep the conversational bounce and affection.",
+        "emphasis": [
+          "So",
+          "yours"
+        ],
+        "pronunciation_note": "yours /z/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N023",
+          "speaker": "제페토",
+          "spoken_text": "Your hand is warm."
+        },
+        "context_after": {
+          "dialogue_id": "S12-N025",
+          "speaker": "제페토",
+          "spoken_text": "Yoonsu, can you help with his hat?"
+        },
+        "visible_action": "P07 수용 뒤 피노키오의 손이 제페토 손에 실제로 닿고 자연스럽게 감싼다. 서로의 온기를 느끼며 눈을 맞춘다. N023과 N024가 끝난 뒤 양쪽 손가락을 풀고 실제로 손을 떨어뜨린다. 손 해제를 완료한 상태로 다음 컷에 넘긴다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N025",
+      "job_id": "S12-N025",
+      "kind": "NEW",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Yoonsu, can you help with his hat?",
+      "shot_id": "S12-C41",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "다정한 미소",
+        "delivery_ko": "모자 가장자리를 가리키며 흐뭇하게 웃는다. help with his hat에 사소한 준비를 함께 돕는 친근함을 준다.",
+        "direction_en": "Point to the slightly tilted hat and invite a simple finishing adjustment. Be gently amused and affectionate, not urgent.",
+        "emphasis": [
+          "help",
+          "hat"
+        ],
+        "pronunciation_note": "help /p/, hat /t/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N024",
+          "speaker": "피노키오",
+          "spoken_text": "So is yours!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-N026",
+          "speaker": "피노키오",
+          "spoken_text": "There. I'm ready."
+        },
+        "visible_action": "포옹 때 조금 기울어진 같은 빨간 모자가 보인다. 제페토가 모자의 기울기를 가리킨 뒤 자기 빈 손바닥을 기운 각도에서 수평으로 바꾸어 바로 맞추기의 뜻을 보여 준다. 제페토에게 새 모자를 만들지 않는다. 피노키오는 아직 모자에 손을 대지 않는다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N026",
+      "job_id": "S12-N026",
+      "kind": "NEW",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "There. I'm ready.",
+      "shot_id": "S12-C42",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "제페토",
+        "emotion_target": "만족→기대",
+        "delivery_ko": "There는 모자가 제대로 놓인 것을 확인한 작은 만족. I'm ready에서 다시 학교에 갈 기대가 밝고 단단하게 돌아온다.",
+        "direction_en": "Finish the adjustment with a satisfied There, then become ready for school again with a calm, bright determination.",
+        "emphasis": [
+          "There",
+          "ready"
+        ],
+        "pronunciation_note": "두 문장 사이 짧은 자연 쉼, I'm /m/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N025",
+          "speaker": "제페토",
+          "spoken_text": "Yoonsu, can you help with his hat?"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U034",
+          "speaker": "파란 요정",
+          "spoken_text": "Stay kind, and keep telling the truth."
+        },
+        "visible_action": "P08 수용 뒤 피노키오가 양손으로 같은 모자 테두리에 실제 접촉하고 모자의 기울기를 바로잡는다. 안정된 모자를 놓고 가방끈을 가볍게 확인한 뒤 열린 학교 문을 바라본다. 모자·책·가방 교체나 입장 없음.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U034",
+      "job_id": "S12-U034",
+      "kind": "ORIGINAL",
+      "speaker": "파란 요정",
+      "profile_id": "BLUE_FAIRY_EXISTING_C",
+      "spoken_text": "Stay kind, and keep telling the truth.",
+      "shot_id": "S12-C43",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오",
+        "emotion_target": "따뜻한 축복",
+        "delivery_ko": "Stay kind는 앞으로도 지금처럼 살아가길 바라는 따뜻한 축복. keep telling the truth에는 어려워도 솔직할 수 있다는 믿음을 싣는다. 벌을 암시하지 않는다.",
+        "direction_en": "Offer a loving farewell blessing, not a rule backed by punishment. Keep kind warm and telling the truth quietly steadfast.",
+        "emphasis": [
+          "kind",
+          "keep telling the truth"
+        ],
+        "pronunciation_note": "kind /d/ 및 truth /θ/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N026",
+          "speaker": "피노키오",
+          "spoken_text": "There. I'm ready."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U035",
+          "speaker": "피노키오",
+          "spoken_text": "I will. Thank you!"
+        },
+        "visible_action": "요정이 가까운 안정 위치에서 마지막 축복을 건네고 피노키오는 몸을 돌려 올려다본다. U034를 들은 뒤 아이가 고개를 끄덕이고 가슴 가까이에 손을 잠깐 올렸다가 감사하며 내린다. 제페토와 귀뚜라미는 곁에서 듣는다.",
+        "reference_sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "reference_path": "voice/references/blue_fairy_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U035",
+      "job_id": "S12-U035",
+      "kind": "ORIGINAL",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "I will. Thank you!",
+      "shot_id": "S12-C43",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "파란 요정",
+        "emotion_target": "다짐→감사",
+        "delivery_ko": "I will은 자신이 계속 배워 나가겠다는 또렷한 다짐. Thank you!에서는 요정을 향한 감사가 환하게 번진다. 기계적인 응답이 아닌 따뜻한 진심이다.",
+        "direction_en": "Answer with his own sincere commitment on I will, then let gratitude brighten Thank you. Keep a clear emotional shift between the two sentences.",
+        "emphasis": [
+          "I will",
+          "Thank you"
+        ],
+        "pronunciation_note": "will /l/, Thank /θ/ 명확히.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U034",
+          "speaker": "파란 요정",
+          "spoken_text": "Stay kind, and keep telling the truth."
+        },
+        "context_after": {
+          "dialogue_id": "S12-N027",
+          "speaker": "피노키오",
+          "spoken_text": "Yoonsu, shall we wave to the fairy?"
+        },
+        "visible_action": "요정이 가까운 안정 위치에서 마지막 축복을 건네고 피노키오는 몸을 돌려 올려다본다. U034를 들은 뒤 아이가 고개를 끄덕이고 가슴 가까이에 손을 잠깐 올렸다가 감사하며 내린다. 제페토와 귀뚜라미는 곁에서 듣는다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-N027",
+      "job_id": "S12-N027",
+      "kind": "NEW",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "Yoonsu, shall we wave to the fairy?",
+      "shot_id": "S12-C44",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "애틋한 초대",
+        "delivery_ko": "윤수와 함께 고마운 요정을 보내고 싶다는 밝고 애틋한 초대. wave to the fairy가 부드럽게 이어지며 진짜 대답을 기다린다.",
+        "direction_en": "Invite Yoonsu to share a warm farewell. Let wave to the fairy be affectionate and a little wistful, with a genuine open question.",
+        "emphasis": [
+          "Yoonsu",
+          "wave",
+          "fairy"
+        ],
+        "pronunciation_note": "wave /v/와 fairy의 끝 음절 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U035",
+          "speaker": "피노키오",
+          "spoken_text": "I will. Thank you!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U036",
+          "speaker": "피노키오",
+          "spoken_text": "See you later, Yoonsu!"
+        },
+        "visible_action": "요정이 지팡이를 낮추며 작별 준비를 한다. 피노키오가 그녀를 향해 시선을 두고 손을 들기 직전 윤수에게 고개를 돌린다. 요정은 아직 사라지거나 손인사를 먼저 하지 않는다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U036",
+      "job_id": "S12-U036",
+      "kind": "ORIGINAL",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "See you later, Yoonsu!",
+      "shot_id": "S12-C45",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "밝고 애틋한 작별",
+        "delivery_ko": "윤수를 정말 함께한 친구처럼 바라본다. See you later는 다시 만날 기쁜 약속의 느낌, Yoonsu에는 지금까지 함께해 준 마음을 담아 밝고 다정하게 마친다.",
+        "direction_en": "Say goodbye directly to the friend who has shared the journey. Let see you later sound hopeful and Yoonsu feel personal, with a warm wave in the voice.",
+        "emphasis": [
+          "See you later",
+          "Yoonsu"
+        ],
+        "pronunciation_note": "see you later를 끊지 않고 이름은 기존 승인 발음.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-N027",
+          "speaker": "피노키오",
+          "spoken_text": "Yoonsu, shall we wave to the fairy?"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U037",
+          "speaker": "내레이션",
+          "spoken_text": "Pinocchio was still learning."
+        },
+        "visible_action": "P09 수용 뒤 피노키오가 실제 손목과 팔을 움직여 요정에게 손을 흔든다. 요정이 손인사를 되돌려 주고 천천히 학교 지붕 위로 물러난다. U042가 멀리서 들릴 만큼 화면상 거리 확보. 피노키오가 손을 내린 뒤 윤수를 바라보고 별도의 작은 손인사를 건넨다.",
+        "reference_sha256": null,
+        "reference_path": null
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U037",
+      "job_id": "S12-U037",
+      "kind": "ORIGINAL",
+      "speaker": "내레이션",
+      "profile_id": "NARRATOR_EXISTING_A",
+      "spoken_text": "Pinocchio was still learning.",
+      "shot_id": "S12-C46",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수와 관객",
+        "emotion_target": "부드러운 희망",
+        "delivery_ko": "still learning에 아이의 앞으로 남은 많은 시간을 따뜻하게 발견한다. 완벽해졌다고 선언하는 승리의 말투가 아니다.",
+        "direction_en": "Look at a child who is only beginning to learn. Warm still learning with hope rather than declaring that the journey is perfect or finished.",
+        "emphasis": [
+          "still learning"
+        ],
+        "pronunciation_note": "still /l/과 learning /ŋ/ 유지.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U036",
+          "speaker": "피노키오",
+          "spoken_text": "See you later, Yoonsu!"
+        },
+        "context_after": {
+          "dialogue_id": "S12-U038",
+          "speaker": "내레이션",
+          "spoken_text": "He would make more mistakes."
+        },
+        "visible_action": "윤수에게 마지막 인사를 한 뒤 피노키오가 문 안쪽을 바라본다. 제페토는 가까이서 배웅하고 귀뚜라미는 안전하게 곁에 있다. 교사는 말 없이 문 안쪽에서 아이가 지나갈 공간을 마련한다. 피노키오가 자세를 바로 잡는다.",
+        "reference_sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "reference_path": "voice/references/narrator_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U038",
+      "job_id": "S12-U038",
+      "kind": "ORIGINAL",
+      "speaker": "내레이션",
+      "profile_id": "NARRATOR_EXISTING_A",
+      "spoken_text": "He would make more mistakes.",
+      "shot_id": "S12-C46",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수와 관객",
+        "emotion_target": "편안한 인정",
+        "delivery_ko": "more mistakes를 무겁게 비난하지 않고 자연스럽게 예상한다. 실수할 수 있어도 사랑과 배움이 계속된다는 편안한 확신.",
+        "direction_en": "Acknowledge future mistakes without disappointment or threat. Let the words sound like a gentle truth about growing up.",
+        "emphasis": [
+          "more mistakes"
+        ],
+        "pronunciation_note": "mistakes 끝 /ks/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U037",
+          "speaker": "내레이션",
+          "spoken_text": "Pinocchio was still learning."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U039",
+          "speaker": "내레이션",
+          "spoken_text": "And he would learn many new things."
+        },
+        "visible_action": "윤수에게 마지막 인사를 한 뒤 피노키오가 문 안쪽을 바라본다. 제페토는 가까이서 배웅하고 귀뚜라미는 안전하게 곁에 있다. 교사는 말 없이 문 안쪽에서 아이가 지나갈 공간을 마련한다. 피노키오가 자세를 바로 잡는다.",
+        "reference_sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "reference_path": "voice/references/narrator_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U039",
+      "job_id": "S12-U039",
+      "kind": "ORIGINAL",
+      "speaker": "내레이션",
+      "profile_id": "NARRATOR_EXISTING_A",
+      "spoken_text": "And he would learn many new things.",
+      "shot_id": "S12-C47",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수와 관객",
+        "emotion_target": "미래에 대한 기대",
+        "delivery_ko": "learn many new things에서 학교 안의 미래에 대한 기대가 조금씩 넓어진다. 끝을 환하게 열되 급하지 않다.",
+        "direction_en": "Open the horizon toward all the new things he will discover. Let new things expand in quiet excitement.",
+        "emphasis": [
+          "learn",
+          "new things"
+        ],
+        "pronunciation_note": "things의 /ŋz/ 끝과 learn 연결.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U038",
+          "speaker": "내레이션",
+          "spoken_text": "He would make more mistakes."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U040",
+          "speaker": "내레이션",
+          "spoken_text": "But today, he chose to tell the truth."
+        },
+        "visible_action": "아이의 눈이 문 안쪽을 살피고 가방끈에 손을 가볍게 댄다. 제페토는 옆에서 미소 짓는다. 화면 안 행동만으로 새 배움의 기대를 전달하며 회상 삽입 없음.",
+        "reference_sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "reference_path": "voice/references/narrator_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U040",
+      "job_id": "S12-U040",
+      "kind": "ORIGINAL",
+      "speaker": "내레이션",
+      "profile_id": "NARRATOR_EXISTING_A",
+      "spoken_text": "But today, he chose to tell the truth.",
+      "shot_id": "S12-C47",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수와 관객",
+        "emotion_target": "솔직함에 대한 확신",
+        "delivery_ko": "But today에서 지금 이 아침의 선택으로 돌아온다. chose to tell the truth에는 오늘 겁났다고 솔직하게 말한 장면을 기억하는 따뜻한 확신을 준다.",
+        "direction_en": "Return to this particular morning. Recognize the honesty he showed when he admitted being scared; put gentle conviction into chose and truth.",
+        "emphasis": [
+          "today",
+          "chose",
+          "truth"
+        ],
+        "pronunciation_note": "chose /z/와 truth /θ/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U039",
+          "speaker": "내레이션",
+          "spoken_text": "And he would learn many new things."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U041",
+          "speaker": "내레이션",
+          "spoken_text": "And he kept his promise."
+        },
+        "visible_action": "아이의 눈이 문 안쪽을 살피고 가방끈에 손을 가볍게 댄다. 제페토는 옆에서 미소 짓는다. 화면 안 행동만으로 새 배움의 기대를 전달하며 회상 삽입 없음.",
+        "reference_sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "reference_path": "voice/references/narrator_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U041",
+      "job_id": "S12-U041",
+      "kind": "ORIGINAL",
+      "speaker": "내레이션",
+      "profile_id": "NARRATOR_EXISTING_A",
+      "spoken_text": "And he kept his promise.",
+      "shot_id": "S12-C48",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수와 관객",
+        "emotion_target": "깊은 만족",
+        "delivery_ko": "kept his promise에 11화에서 다시 학교를 선택하고 이곳까지 온 이야기가 닿는다. promise에는 안도와 인정이 따뜻하게 정착된다.",
+        "direction_en": "Recognize the promise he has followed through on by coming to school. Put quiet satisfaction into kept and promise, not a triumphant announcement.",
+        "emphasis": [
+          "kept",
+          "promise"
+        ],
+        "pronunciation_note": "kept /pt/, promise /s/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U040",
+          "speaker": "내레이션",
+          "spoken_text": "But today, he chose to tell the truth."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U042",
+          "speaker": "파란 요정",
+          "spoken_text": "Every good choice is a new beginning."
+        },
+        "visible_action": "피노키오가 학교 쪽으로 몸을 돌려 발을 내딛을 준비를 한다. 같은 책 든 가방을 유지한다. 지붕 위로 물러난 요정은 작은 모습으로 마지막 축복을 건넨다. 제페토와 귀뚜라미가 조용히 듣는다.",
+        "reference_sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "reference_path": "voice/references/narrator_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U042",
+      "job_id": "S12-U042",
+      "kind": "ORIGINAL",
+      "speaker": "파란 요정",
+      "profile_id": "BLUE_FAIRY_EXISTING_C",
+      "spoken_text": "Every good choice is a new beginning.",
+      "shot_id": "S12-C48",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "피노키오와 일행",
+        "emotion_target": "먼 곳에서의 따뜻한 희망",
+        "delivery_ko": "멀어지며 마지막 축복을 건넨다. Every good choice에는 넓은 따뜻함, a new beginning에는 끝이 아니라 앞으로 열릴 하루라는 희망을 담는다. 먼 거리 효과를 낭독의 속삭임으로 대신하지 않는다.",
+        "direction_en": "From farther away, offer one last tender blessing. Let every good choice carry affection and a new beginning open into hope; retain intelligible, close enough articulation.",
+        "emphasis": [
+          "good choice",
+          "new beginning"
+        ],
+        "pronunciation_note": "choice /s/, beginning /ŋ/ 유지. 공간 믹스는 별도.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U041",
+          "speaker": "내레이션",
+          "spoken_text": "And he kept his promise."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U043",
+          "speaker": "내레이션",
+          "spoken_text": "And so, Pinocchio's wonderful adventure continued."
+        },
+        "visible_action": "피노키오가 학교 쪽으로 몸을 돌려 발을 내딛을 준비를 한다. 같은 책 든 가방을 유지한다. 지붕 위로 물러난 요정은 작은 모습으로 마지막 축복을 건넨다. 제페토와 귀뚜라미가 조용히 듣는다.",
+        "reference_sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "reference_path": "voice/references/blue_fairy_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U043",
+      "job_id": "S12-U043",
+      "kind": "ORIGINAL",
+      "speaker": "내레이션",
+      "profile_id": "NARRATOR_EXISTING_A",
+      "spoken_text": "And so, Pinocchio's wonderful adventure continued.",
+      "shot_id": "S12-C49",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수와 관객",
+        "emotion_target": "충만한 여운",
+        "delivery_ko": "And so에서 긴 여행을 따뜻하게 돌아본다. wonderful adventure continued에는 더 배울 미래가 남았다는 즐거운 믿음이 넓게 퍼진다. 완결이지만 앞날의 여운.",
+        "direction_en": "Bring the long journey gently to its closing image while leaving the child's future open. Let wonderful adventure continued feel warm, expansive, and hopeful.",
+        "emphasis": [
+          "wonderful adventure",
+          "continued"
+        ],
+        "pronunciation_note": "adventure와 continued의 마지막 음절·/d/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U042",
+          "speaker": "파란 요정",
+          "spoken_text": "Every good choice is a new beginning."
+        },
+        "context_after": {
+          "dialogue_id": "S12-U044",
+          "speaker": "내레이션",
+          "spoken_text": "The end."
+        },
+        "visible_action": "피노키오가 학교 쪽으로 실제 발걸음을 내딛고 문턱을 한 번 넘는다. 교사가 옆으로 비켜 공간을 내주고 피노키오는 문 안으로 들어간다. 제페토와 귀뚜라미는 문 밖 안전 위치에서 배웅한다. 모자·가방·책·신발을 유지하며 학교 안으로 이어지는 한 방향 이동.",
+        "reference_sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "reference_path": "voice/references/narrator_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "dialogue_id": "S12-U044",
+      "job_id": "S12-U044",
+      "kind": "ORIGINAL",
+      "speaker": "내레이션",
+      "profile_id": "NARRATOR_EXISTING_A",
+      "spoken_text": "The end.",
+      "shot_id": "S12-C50",
+      "delivery_mode": "NARRATIVE_ACTING",
+      "voice_direction": {
+        "listener": "윤수와 관객",
+        "emotion_target": "따뜻한 완결",
+        "delivery_ko": "The end를 따뜻한 동화를 덮어 주는 목소리로 짧고 충만하게 말한다. end에 편안하게 내려앉으며 과장된 슬픔이나 다음 편 예고를 넣지 않는다.",
+        "direction_en": "Close the story as gently as closing a beloved picture book. Give end a full, warm resolution, without sadness or a sequel announcement.",
+        "emphasis": [
+          "end"
+        ],
+        "pronunciation_note": "The와 end 자연 연결, end의 /d/ 보존.",
+        "performance_contract": "Speak only spoken_text. Follow scene action and listener; do not read directions or add words. No flat read or global pitch/speed substitution. Natural within-line emotional transition, keep fixed identity and consonants.",
+        "actual_supported_controls": null,
+        "actual_audio_sha256": null,
+        "listening_status": "NOT_RUN",
+        "context_before": {
+          "dialogue_id": "S12-U043",
+          "speaker": "내레이션",
+          "spoken_text": "And so, Pinocchio's wonderful adventure continued."
+        },
+        "context_after": null,
+        "visible_action": "문 안으로 들어간 인간형 피노키오의 이동이 완료되고 제페토와 귀뚜라미가 배웅을 마친다. 학교와 같은 마을 배경이 차츰 넓게 보인다. 구름이 흐르고 햇빛이 부드럽게 비친다. 짧은 엔딩 표시는 U044 뒤, 이야기 완료 상태를 한 번만 기록한다.",
+        "reference_sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "reference_path": "voice/references/narrator_V6_APPROVED.mp3"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "job_id": "S12-M001",
+      "kind": "EXTERNAL_MODEL",
+      "event_id": "S12-P01",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Look inside, please.",
+      "delivery_mode": "EXTERNAL_MODEL_CLEAR_WARM",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "따뜻한 발화 예시",
+        "delivery_ko": "화면의 행동(열린 문 안쪽을 바라보기)과 연결되는 가까운 목소리. 세 단어를 자연스럽게 연결하고 핵심 동사를 또렷하게. 본편의 위기·환호 강도를 그대로 쓰지 않으며 따라 하기 편한 명료한 문장으로 말한다.",
+        "direction_en": "Model only the exact phrase \"Look inside, please.\" in a warm, clear connected manner for a beginning learner. Make the action word clear and allow time to imitate. No instructions, extra words, or dramatic fear.",
+        "performance_contract": "외부 모델 전용. 캐릭터 입모양 없음. 마이크 OFF.",
+        "listening_status": "NOT_RUN"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "job_id": "S12-M002",
+      "kind": "EXTERNAL_MODEL",
+      "event_id": "S12-P02",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Hold your hat.",
+      "delivery_mode": "EXTERNAL_MODEL_CLEAR_WARM",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "따뜻한 발화 예시",
+        "delivery_ko": "화면의 행동(바람에 움직이는 모자를 잡기)과 연결되는 가까운 목소리. 세 단어를 자연스럽게 연결하고 핵심 동사를 또렷하게. 본편의 위기·환호 강도를 그대로 쓰지 않으며 따라 하기 편한 명료한 문장으로 말한다.",
+        "direction_en": "Model only the exact phrase \"Hold your hat.\" in a warm, clear connected manner for a beginning learner. Make the action word clear and allow time to imitate. No instructions, extra words, or dramatic fear.",
+        "performance_contract": "외부 모델 전용. 캐릭터 입모양 없음. 마이크 OFF.",
+        "listening_status": "NOT_RUN"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "job_id": "S12-M003",
+      "kind": "EXTERNAL_MODEL",
+      "event_id": "I21",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Help the cricket!",
+      "delivery_mode": "EXTERNAL_MODEL_CLEAR_WARM",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "따뜻한 발화 예시",
+        "delivery_ko": "화면의 행동(막힌 친구를 안전하게 도와주기)과 연결되는 가까운 목소리. 세 단어를 자연스럽게 연결하고 핵심 동사를 또렷하게. 본편의 위기·환호 강도를 그대로 쓰지 않으며 따라 하기 편한 명료한 문장으로 말한다.",
+        "direction_en": "Model only the exact phrase \"Help the cricket!\" in a warm, clear connected manner for a beginning learner. Make the action word clear and allow time to imitate. No instructions, extra words, or dramatic fear.",
+        "performance_contract": "외부 모델 전용. 캐릭터 입모양 없음. 마이크 OFF.",
+        "listening_status": "NOT_RUN"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "job_id": "S12-M004",
+      "kind": "EXTERNAL_MODEL",
+      "event_id": "S12-P03",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "Check on Cricket.",
+      "delivery_mode": "EXTERNAL_MODEL_CLEAR_WARM",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "따뜻한 발화 예시",
+        "delivery_ko": "화면의 행동(구조 뒤 친구의 상태 살피기)과 연결되는 가까운 목소리. 세 단어를 자연스럽게 연결하고 핵심 동사를 또렷하게. 본편의 위기·환호 강도를 그대로 쓰지 않으며 따라 하기 편한 명료한 문장으로 말한다.",
+        "direction_en": "Model only the exact phrase \"Check on Cricket.\" in a warm, clear connected manner for a beginning learner. Make the action word clear and allow time to imitate. No instructions, extra words, or dramatic fear.",
+        "performance_contract": "외부 모델 전용. 캐릭터 입모양 없음. 마이크 OFF.",
+        "listening_status": "NOT_RUN"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "job_id": "S12-M005",
+      "kind": "EXTERNAL_MODEL",
+      "event_id": "S12-P04",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Stand beside Grandpa.",
+      "delivery_mode": "EXTERNAL_MODEL_CLEAR_WARM",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "따뜻한 발화 예시",
+        "delivery_ko": "화면의 행동(할아버지 옆 안전한 곳에 서기)과 연결되는 가까운 목소리. 세 단어를 자연스럽게 연결하고 핵심 동사를 또렷하게. 본편의 위기·환호 강도를 그대로 쓰지 않으며 따라 하기 편한 명료한 문장으로 말한다.",
+        "direction_en": "Model only the exact phrase \"Stand beside Grandpa.\" in a warm, clear connected manner for a beginning learner. Make the action word clear and allow time to imitate. No instructions, extra words, or dramatic fear.",
+        "performance_contract": "외부 모델 전용. 캐릭터 입모양 없음. 마이크 OFF.",
+        "listening_status": "NOT_RUN"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "job_id": "S12-M006",
+      "kind": "EXTERNAL_MODEL",
+      "event_id": "S12-P05",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Show your hands.",
+      "delivery_mode": "EXTERNAL_MODEL_CLEAR_WARM",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "따뜻한 발화 예시",
+        "delivery_ko": "화면의 행동(사람이 된 손을 보여 주기)과 연결되는 가까운 목소리. 세 단어를 자연스럽게 연결하고 핵심 동사를 또렷하게. 본편의 위기·환호 강도를 그대로 쓰지 않으며 따라 하기 편한 명료한 문장으로 말한다.",
+        "direction_en": "Model only the exact phrase \"Show your hands.\" in a warm, clear connected manner for a beginning learner. Make the action word clear and allow time to imitate. No instructions, extra words, or dramatic fear.",
+        "performance_contract": "외부 모델 전용. 캐릭터 입모양 없음. 마이크 OFF.",
+        "listening_status": "NOT_RUN"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "job_id": "S12-M007",
+      "kind": "EXTERNAL_MODEL",
+      "event_id": "S12-P06",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "Bend your fingers.",
+      "delivery_mode": "EXTERNAL_MODEL_CLEAR_WARM",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "따뜻한 발화 예시",
+        "delivery_ko": "화면의 행동(손가락을 굽혀 새로운 촉감 느끼기)과 연결되는 가까운 목소리. 세 단어를 자연스럽게 연결하고 핵심 동사를 또렷하게. 본편의 위기·환호 강도를 그대로 쓰지 않으며 따라 하기 편한 명료한 문장으로 말한다.",
+        "direction_en": "Model only the exact phrase \"Bend your fingers.\" in a warm, clear connected manner for a beginning learner. Make the action word clear and allow time to imitate. No instructions, extra words, or dramatic fear.",
+        "performance_contract": "외부 모델 전용. 캐릭터 입모양 없음. 마이크 OFF.",
+        "listening_status": "NOT_RUN"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "job_id": "S12-M008",
+      "kind": "EXTERNAL_MODEL",
+      "event_id": "S12-P07",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Take Grandpa's hand.",
+      "delivery_mode": "EXTERNAL_MODEL_CLEAR_WARM",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "따뜻한 발화 예시",
+        "delivery_ko": "화면의 행동(할아버지의 손을 잡기)과 연결되는 가까운 목소리. 세 단어를 자연스럽게 연결하고 핵심 동사를 또렷하게. 본편의 위기·환호 강도를 그대로 쓰지 않으며 따라 하기 편한 명료한 문장으로 말한다.",
+        "direction_en": "Model only the exact phrase \"Take Grandpa's hand.\" in a warm, clear connected manner for a beginning learner. Make the action word clear and allow time to imitate. No instructions, extra words, or dramatic fear.",
+        "performance_contract": "외부 모델 전용. 캐릭터 입모양 없음. 마이크 OFF.",
+        "listening_status": "NOT_RUN"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "job_id": "S12-M009",
+      "kind": "EXTERNAL_MODEL",
+      "event_id": "S12-P08",
+      "speaker": "제페토",
+      "profile_id": "GEPPETTO_S03_USER_LOCKED",
+      "spoken_text": "Straighten your hat.",
+      "delivery_mode": "EXTERNAL_MODEL_CLEAR_WARM",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "따뜻한 발화 예시",
+        "delivery_ko": "화면의 행동(기울어진 모자 바로 쓰기)과 연결되는 가까운 목소리. 세 단어를 자연스럽게 연결하고 핵심 동사를 또렷하게. 본편의 위기·환호 강도를 그대로 쓰지 않으며 따라 하기 편한 명료한 문장으로 말한다.",
+        "direction_en": "Model only the exact phrase \"Straighten your hat.\" in a warm, clear connected manner for a beginning learner. Make the action word clear and allow time to imitate. No instructions, extra words, or dramatic fear.",
+        "performance_contract": "외부 모델 전용. 캐릭터 입모양 없음. 마이크 OFF.",
+        "listening_status": "NOT_RUN"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "job_id": "S12-M010",
+      "kind": "EXTERNAL_MODEL",
+      "event_id": "S12-P09",
+      "speaker": "피노키오",
+      "profile_id": "PINOCCHIO_S03_USER_LOCKED",
+      "spoken_text": "Wave goodbye, please.",
+      "delivery_mode": "EXTERNAL_MODEL_CLEAR_WARM",
+      "voice_direction": {
+        "listener": "윤수",
+        "emotion_target": "따뜻한 발화 예시",
+        "delivery_ko": "화면의 행동(요정에게 마지막 손인사하기)과 연결되는 가까운 목소리. 세 단어를 자연스럽게 연결하고 핵심 동사를 또렷하게. 본편의 위기·환호 강도를 그대로 쓰지 않으며 따라 하기 편한 명료한 문장으로 말한다.",
+        "direction_en": "Model only the exact phrase \"Wave goodbye, please.\" in a warm, clear connected manner for a beginning learner. Make the action word clear and allow time to imitate. No instructions, extra words, or dramatic fear.",
+        "performance_contract": "외부 모델 전용. 캐릭터 입모양 없음. 마이크 OFF.",
+        "listening_status": "NOT_RUN"
+      },
+      "actual_audio_path": null,
+      "actual_duration_seconds": null,
+      "status": "NOT_RUN"
+    }
+  ]
+}

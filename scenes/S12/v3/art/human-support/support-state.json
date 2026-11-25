@@ -1,0 +1,469 @@
+{
+  "scope": "SUPPORT_ONLY_HUMAN_COMPOSITE_BLOCKED_RESOURCE",
+  "plate": "S11L-school-open.png",
+  "plate_size": [
+    1280,
+    720
+  ],
+  "stage": {
+    "geppetto": [
+      667,
+      629
+    ],
+    "cricket": [
+      515,
+      636
+    ],
+    "fairy": [
+      831,
+      442
+    ],
+    "teacher": [
+      739,
+      559
+    ],
+    "human": null
+  },
+  "state": {
+    "geppetto_glasses": "ON_FACE",
+    "school_door": "OPEN",
+    "signboard": "UPRIGHT_STABLE",
+    "cricket": "SAFE_FREE",
+    "fairy": "PRESENT"
+  },
+  "cuts": {
+    "S12-C32": {
+      "level": "S12H-gep-surprise-open",
+      "fps": 24,
+      "xy": [
+        667,
+        629
+      ],
+      "height": 315,
+      "poses": [
+        {
+          "index": 0,
+          "frames": 4,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "listening"
+        },
+        {
+          "index": 1,
+          "frames": 3,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "eyes widen"
+        },
+        {
+          "index": 2,
+          "frames": 3,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "forearm rises"
+        },
+        {
+          "index": 3,
+          "frames": 5,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "hand near mouth"
+        },
+        {
+          "index": 4,
+          "frames": 4,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "uncovering face"
+        },
+        {
+          "index": 5,
+          "frames": 4,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "opens arms"
+        },
+        {
+          "index": 6,
+          "frames": 4,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "open invitation"
+        },
+        {
+          "index": 7,
+          "frames": 7,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "holds invitation"
+        }
+      ],
+      "sync": "Recognition before U031; open arms into C33 once U032 completes.",
+      "pending": "Human eyeline and reverse frame; align actual U031/U032 readings to mouth variants."
+    },
+    "S12-C34": {
+      "level": "S12H-cricket-celebration",
+      "fps": 24,
+      "xy": [
+        515,
+        636
+      ],
+      "height": 84,
+      "poses": [
+        {
+          "index": 0,
+          "frames": 5,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "ready"
+        },
+        {
+          "index": 1,
+          "frames": 2,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "anticipation"
+        },
+        {
+          "index": 2,
+          "frames": 2,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "lowers hips"
+        },
+        {
+          "index": 3,
+          "frames": 2,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "weight loads"
+        },
+        {
+          "index": 4,
+          "frames": 2,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "push"
+        },
+        {
+          "index": 5,
+          "frames": 1,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "toe-off"
+        },
+        {
+          "index": 6,
+          "frames": 1,
+          "stage_offset": [
+            -2,
+            -10
+          ],
+          "phase": "extension"
+        },
+        {
+          "index": 7,
+          "frames": 1,
+          "stage_offset": [
+            -4,
+            -23
+          ],
+          "phase": "lift"
+        },
+        {
+          "index": 8,
+          "frames": 1,
+          "stage_offset": [
+            -6,
+            -34
+          ],
+          "phase": "tuck"
+        },
+        {
+          "index": 9,
+          "frames": 1,
+          "stage_offset": [
+            -8,
+            -42
+          ],
+          "phase": "ascent"
+        },
+        {
+          "index": 10,
+          "frames": 2,
+          "stage_offset": [
+            -10,
+            -47
+          ],
+          "phase": "apex"
+        },
+        {
+          "index": 11,
+          "frames": 1,
+          "stage_offset": [
+            -12,
+            -44
+          ],
+          "phase": "descent"
+        },
+        {
+          "index": 12,
+          "frames": 1,
+          "stage_offset": [
+            -14,
+            -35
+          ],
+          "phase": "untucks"
+        },
+        {
+          "index": 13,
+          "frames": 1,
+          "stage_offset": [
+            -16,
+            -23
+          ],
+          "phase": "reaches for ground"
+        },
+        {
+          "index": 14,
+          "frames": 1,
+          "stage_offset": [
+            -17,
+            -10
+          ],
+          "phase": "approaches landing"
+        },
+        {
+          "index": 15,
+          "frames": 1,
+          "stage_offset": [
+            -18,
+            0
+          ],
+          "phase": "toe contact"
+        },
+        {
+          "index": 16,
+          "frames": 2,
+          "stage_offset": [
+            -18,
+            0
+          ],
+          "phase": "absorbs weight"
+        },
+        {
+          "index": 17,
+          "frames": 2,
+          "stage_offset": [
+            -18,
+            0
+          ],
+          "phase": "all feet loaded"
+        },
+        {
+          "index": 18,
+          "frames": 2,
+          "stage_offset": [
+            -18,
+            0
+          ],
+          "phase": "unloads"
+        },
+        {
+          "index": 19,
+          "frames": 2,
+          "stage_offset": [
+            -18,
+            0
+          ],
+          "phase": "settles"
+        },
+        {
+          "index": 20,
+          "frames": 2,
+          "stage_offset": [
+            -18,
+            0
+          ],
+          "phase": "settles"
+        },
+        {
+          "index": 21,
+          "frames": 6,
+          "stage_offset": [
+            -18,
+            0
+          ],
+          "phase": "feet planted"
+        }
+      ],
+      "sync": "One jump only. U033 requires cricket viseme exposure; final ground stage offset persists in C35 onward.",
+      "end_stage": [
+        497,
+        636
+      ],
+      "pending": "Human/Geppetto hug release, U033 lip shapes, Fairy reaction."
+    },
+    "S12-C35": {
+      "level": "S12H-gep-palms-demo",
+      "fps": 24,
+      "xy": [
+        667,
+        629
+      ],
+      "height": 315,
+      "poses": [
+        {
+          "index": 0,
+          "frames": 5,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "rests"
+        },
+        {
+          "index": 1,
+          "frames": 5,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "elbows lead"
+        },
+        {
+          "index": 2,
+          "frames": 5,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "wrists turn"
+        },
+        {
+          "index": 3,
+          "frames": 11,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "shows palms"
+        }
+      ],
+      "sync": "N015 then finish both palms, N016 actual end then P05. Hold finale during waiting.",
+      "pending": "Human examines hands; human performs own P05 response in C36."
+    },
+    "S12-C37": {
+      "level": "S12H-gep-flex-demo",
+      "fps": 24,
+      "xy": [
+        667,
+        629
+      ],
+      "height": 315,
+      "poses": [
+        {
+          "index": 0,
+          "frames": 4,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "rests"
+        },
+        {
+          "index": 1,
+          "frames": 4,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "lifts wrist"
+        },
+        {
+          "index": 2,
+          "frames": 7,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "shows one open palm"
+        },
+        {
+          "index": 3,
+          "frames": 5,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "bends fingers"
+        },
+        {
+          "index": 4,
+          "frames": 7,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "fingers curled"
+        },
+        {
+          "index": 5,
+          "frames": 5,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "releases tension"
+        },
+        {
+          "index": 6,
+          "frames": 10,
+          "stage_offset": [
+            0,
+            0
+          ],
+          "phase": "opens same palm"
+        }
+      ],
+      "sync": "One Geppetto flex only before N018. P06 opens after N018 actual end.",
+      "pending": "Human keeps fingers inert until C38 response."
+    }
+  },
+  "blocked": {
+    "source": "CHAR_YOONSU_HUMAN",
+    "range": "S12-C30–S12-C50",
+    "C33": "Requires counterweight, torso/arm contact and child’s bag clearance.",
+    "C36": "Requires approved human palms and Geppetto eyeline",
+    "C38": "Requires approved human hand articulation after P06",
+    "C39": "Requires actual hand-in-hand contact after question gate."
+  }
+}

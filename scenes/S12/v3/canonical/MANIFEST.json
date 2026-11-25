@@ -1,0 +1,197 @@
+{
+  "package": "S12_PRODUCTION_HANDOFF_v2",
+  "version": "2.0_AUTHORING_REVISED",
+  "date_kst": "2026-11-25",
+  "status": "AUTHORING_REVISED_ACTUAL_MEDIA_NOT_RUN",
+  "planned_narrative_seconds": 468,
+  "canonical_dialogues": 44,
+  "new_dialogues": 27,
+  "external_models": 10,
+  "actual_new_media": {
+    "audio": 0,
+    "sprites": 0,
+    "video": 0
+  },
+  "authoring_validation": {
+    "passed": 41,
+    "failed": 0
+  },
+  "files": [
+    {
+      "path": "ISSUE_CLOSURE_V2.json",
+      "bytes": 7390,
+      "sha256": "7d30550513b9f8126febbdd7de32bc7246edeb29ac8db4ffae1fb3b1ae0580eb"
+    },
+    {
+      "path": "README_S12_KO.md",
+      "bytes": 8381,
+      "sha256": "635695ab815be0ddc0e11de8df5e3d5df625bd01837693b8e8b0ba01fa8bb029"
+    },
+    {
+      "path": "REVISION_NOTES_V2.md",
+      "bytes": 7444,
+      "sha256": "fcaab0d937848b843eeb55513844488b96c5fb9340f3108346d7a302800021d8"
+    },
+    {
+      "path": "S12_EXECUTION_PROMPT_KO.md",
+      "bytes": 7589,
+      "sha256": "56a29944334c3379e6ffc2fd317a350056bf82f66dca3d160f19332053d0a1e5"
+    },
+    {
+      "path": "assets/S12_RESCUE_LAYOUT_V2.json",
+      "bytes": 18864,
+      "sha256": "048ec97c857403524e25ec4e192302ffaa093b573229652263b6c418a993bf22"
+    },
+    {
+      "path": "assets/S12_RESCUE_LAYOUT_V2.md",
+      "bytes": 11884,
+      "sha256": "965017ff750afd5bde8fdab99e66ea5a19322a09d4e974244ea9175d618031df"
+    },
+    {
+      "path": "assets/S12_SPRITE_AND_MOTION_SPEC.md",
+      "bytes": 6289,
+      "sha256": "cfaa4ae72858f1e00c120ca243e853b3f3cc4e3f3f0dec6cfad4745edda25af1"
+    },
+    {
+      "path": "evidence/AUTHORING_VALIDATION.json",
+      "bytes": 8023,
+      "sha256": "bd0bafda4367099b99c1fb2e8b4c15fede0051996fa9ddf514c5517700940f96"
+    },
+    {
+      "path": "evidence/INTEGRATED_PORTABLE_REBUILD_V2.json",
+      "bytes": 3322,
+      "sha256": "fca1d6a2ff6cf11850f413ed06befa0b89d43640141c070088657e42159d02a8"
+    },
+    {
+      "path": "evidence/RESCUE_ABSTRACT_FIXTURE_RECHECK_V2.json",
+      "bytes": 1342,
+      "sha256": "d7c79dc805fbd11420bb7ff08e1e69faa431dddebe3f52ecf8a03f56c4755110"
+    },
+    {
+      "path": "evidence/S11_SOURCE_LINK_V2.json",
+      "bytes": 312,
+      "sha256": "e1c101cce434530b753b933c6137eb047ccc36be276b88840500d8860f2f938b"
+    },
+    {
+      "path": "evidence/historical_v1/AUTHORING_VALIDATION.json",
+      "bytes": 5322,
+      "sha256": "4b0582db5f6f3e725010d7118cb0a7b304f960746893a5e9a22e8210221c2dc0"
+    },
+    {
+      "path": "evidence/historical_v1/MANIFEST_V1.json",
+      "bytes": 3233,
+      "sha256": "5d7b5b63052b351d209e4442f83388e4ea3d2b12418d7ef94ae832813f36e7da"
+    },
+    {
+      "path": "sources/01_STEP2_PRODUCTION_STORYBOARD_SPEC.md",
+      "bytes": 37270,
+      "sha256": "b5ff72a4e6d889006eacc669a7c15c68a739ca1805117b8c79d79d4ab5181610"
+    },
+    {
+      "path": "sources/01_STORY_MASTER_V1_1.md",
+      "bytes": 34256,
+      "sha256": "eb5ca04f5e4302d4a71726f1a24b6cead5cec682b96baee600f6eef8ee951d3e"
+    },
+    {
+      "path": "sources/PRODUCTION_PRD_V2_0.md",
+      "bytes": 6886,
+      "sha256": "de79a6428b88c678751097e71e8b6228f57ab959f558d98721a57873d9c5bd35"
+    },
+    {
+      "path": "sources/S11_CONTINUITY_AND_MOTION.md",
+      "bytes": 8212,
+      "sha256": "ac315de8423a6bdd661d6c22d7374ee1e56dc597d1c0c4f47f703f551e5d1b3c"
+    },
+    {
+      "path": "sources/S11_EXIT_STATE.json",
+      "bytes": 865,
+      "sha256": "78f93fb8ff83134eb7a97913521ff1271d839042f6b14bbd5cdb79c53221aa8c"
+    },
+    {
+      "path": "sources/S11_interaction_policy.json",
+      "bytes": 1920,
+      "sha256": "aac182873309ebc860735c3c6c61a7f9d13f350d3c346a2d59b6d0bc0e4abeb5"
+    },
+    {
+      "path": "sources/STORY_CONTINUITY_S01_S12.md",
+      "bytes": 20134,
+      "sha256": "1228d96a0e2b04023add5b2dd0149e835f674d7b144efc2598ba99e15dfe17a2"
+    },
+    {
+      "path": "sources/historical_v1/S11_CONTINUITY_AND_MOTION.md",
+      "bytes": 7082,
+      "sha256": "dbe7f437fc629b05a3328275eeedcae56e318fcde3c9528bd60f10784c41a42f"
+    },
+    {
+      "path": "story/S12_ACTING_SCRIPT.md",
+      "bytes": 89323,
+      "sha256": "d60f095e9c7bed078d96f90014baa0fd5525c7f9e53a163c0ff0a7d309e8d83c"
+    },
+    {
+      "path": "story/S12_AUTHORING_METADATA_V2.json",
+      "bytes": 2065,
+      "sha256": "c8c566814fcf5ef07659ea8b56bb84f5270196068d507a57c5eef9929cd3b8cf"
+    },
+    {
+      "path": "story/S12_AUTHORING_SOURCE.txt",
+      "bytes": 50675,
+      "sha256": "561d46eb7b8641951d50deb9b671aef1db12e57204521e36595e70adf5ad479a"
+    },
+    {
+      "path": "story/S12_CANONICAL_LINES.json",
+      "bytes": 4996,
+      "sha256": "c88529f9a0763d6a14b55367539ff3956b9f8d29a0671aba778f72c9783a9fa5"
+    },
+    {
+      "path": "story/S12_DIALOGUE_AND_ACTING.csv",
+      "bytes": 40738,
+      "sha256": "35f7f7b4710c483e15b6b80737f0fc7ce44705cc7c721008805e5cda71a993cf"
+    },
+    {
+      "path": "story/S12_VOICE_JOBS.json",
+      "bytes": 166806,
+      "sha256": "722135c7e67074648b31445d05fbd4c400a48ee47567477f3628ae7089656382"
+    },
+    {
+      "path": "story/S12_YOONSU_CUES.md",
+      "bytes": 890,
+      "sha256": "54735c8ba747aa2a7af8470212359295ba002d44a28b886c06f4e06aaf13a740"
+    },
+    {
+      "path": "story/interaction_map_v2.json",
+      "bytes": 24719,
+      "sha256": "472773d0ad3c495fd0a16e9e67c2a18733c613d419f19d942c07f19e03a04f28"
+    },
+    {
+      "path": "story/scene_design_v2.json",
+      "bytes": 268853,
+      "sha256": "2f630c4ea529a62eecf16f6bbfac786cbb86fdbfcdbe4be15d6ef39713a72afd"
+    },
+    {
+      "path": "tools/build_s12.py",
+      "bytes": 39991,
+      "sha256": "9daa83fbc464cd52e7e21f5d1bb8003c42d25b963efb1d32cc30f38ca7ac8919"
+    },
+    {
+      "path": "voice/S12_CHARACTER_VOICE_PROFILES.json",
+      "bytes": 2591,
+      "sha256": "d5c6e91bc04d5561429acb59355fecec5a3073b84321dbe3450776cbe97f72df"
+    },
+    {
+      "path": "voice/reference_registry_v2.json",
+      "bytes": 2854,
+      "sha256": "90b5ed58f1e9a6917f7736577ea5087f76322290e3502999b5467bf78209a2a5"
+    },
+    {
+      "path": "voice/references/blue_fairy_V6_APPROVED.mp3",
+      "bytes": 98925,
+      "sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b"
+    },
+    {
+      "path": "voice/references/narrator_V6_APPROVED.mp3",
+      "bytes": 112365,
+      "sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf"
+    }
+  ],
+  "manifest_rule": "SHA-256 excludes this manifest itself; historical V1 evidence is retained as history only."
+}

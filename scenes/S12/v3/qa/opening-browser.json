@@ -1,0 +1,22 @@
+{
+  "excerpt": [
+    "S12-C01",
+    "S12-C05"
+  ],
+  "chromium_clips_decoded": 3,
+  "gates": [
+    {
+      "id": "S12-P01",
+      "example_ended_seconds": 2.588667,
+      "guardian": "PASS"
+    },
+    {
+      "id": "S12-P02",
+      "example_ended_seconds": 1.134208,
+      "guardian": "PASS"
+    }
+  ],
+  "transport": "self-contained HTML served on loopback, then browser offline",
+  "android_device_microphone": "NOT_RUN",
+  "method": "Decoded every chapter, positioned near each prompt end, played the real model and reaction, and exercised guardian input"
+}

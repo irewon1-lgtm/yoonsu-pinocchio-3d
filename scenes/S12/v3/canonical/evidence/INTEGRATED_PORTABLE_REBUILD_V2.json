@@ -1,0 +1,38 @@
+{
+  "episode": "S12",
+  "scope": "INTEGRATED_AUTHORING_REBUILD_IN_SEPARATE_DIRECTORY_ONLY",
+  "status": "PASS",
+  "generated_files_compared": 9,
+  "mismatches": [],
+  "expected_sha256": {
+    "story/S12_CANONICAL_LINES.json": "c88529f9a0763d6a14b55367539ff3956b9f8d29a0671aba778f72c9783a9fa5",
+    "story/scene_design_v2.json": "2f630c4ea529a62eecf16f6bbfac786cbb86fdbfcdbe4be15d6ef39713a72afd",
+    "story/interaction_map_v2.json": "472773d0ad3c495fd0a16e9e67c2a18733c613d419f19d942c07f19e03a04f28",
+    "story/S12_VOICE_JOBS.json": "722135c7e67074648b31445d05fbd4c400a48ee47567477f3628ae7089656382",
+    "story/S12_DIALOGUE_AND_ACTING.csv": "35f7f7b4710c483e15b6b80737f0fc7ce44705cc7c721008805e5cda71a993cf",
+    "story/S12_ACTING_SCRIPT.md": "d60f095e9c7bed078d96f90014baa0fd5525c7f9e53a163c0ff0a7d309e8d83c",
+    "story/S12_YOONSU_CUES.md": "54735c8ba747aa2a7af8470212359295ba002d44a28b886c06f4e06aaf13a740",
+    "voice/S12_CHARACTER_VOICE_PROFILES.json": "d5c6e91bc04d5561429acb59355fecec5a3073b84321dbe3450776cbe97f72df",
+    "voice/reference_registry_v2.json": "90b5ed58f1e9a6917f7736577ea5087f76322290e3502999b5467bf78209a2a5"
+  },
+  "rebuilt_sha256": {
+    "story/S12_CANONICAL_LINES.json": "c88529f9a0763d6a14b55367539ff3956b9f8d29a0671aba778f72c9783a9fa5",
+    "story/scene_design_v2.json": "2f630c4ea529a62eecf16f6bbfac786cbb86fdbfcdbe4be15d6ef39713a72afd",
+    "story/interaction_map_v2.json": "472773d0ad3c495fd0a16e9e67c2a18733c613d419f19d942c07f19e03a04f28",
+    "story/S12_VOICE_JOBS.json": "722135c7e67074648b31445d05fbd4c400a48ee47567477f3628ae7089656382",
+    "story/S12_DIALOGUE_AND_ACTING.csv": "35f7f7b4710c483e15b6b80737f0fc7ce44705cc7c721008805e5cda71a993cf",
+    "story/S12_ACTING_SCRIPT.md": "d60f095e9c7bed078d96f90014baa0fd5525c7f9e53a163c0ff0a7d309e8d83c",
+    "story/S12_YOONSU_CUES.md": "54735c8ba747aa2a7af8470212359295ba002d44a28b886c06f4e06aaf13a740",
+    "voice/S12_CHARACTER_VOICE_PROFILES.json": "d5c6e91bc04d5561429acb59355fecec5a3073b84321dbe3450776cbe97f72df",
+    "voice/reference_registry_v2.json": "90b5ed58f1e9a6917f7736577ea5087f76322290e3502999b5467bf78209a2a5"
+  },
+  "commands": [
+    {
+      "script": "tools/build_s12.py",
+      "returncode": 0,
+      "stdout": "{\n  \"original\": 44,\n  \"new\": 27,\n  \"narrative\": 71,\n  \"models\": 10,\n  \"total_jobs\": 81,\n  \"seconds\": 468,\n  \"frames\": 11232,\n  \"shots\": 50,\n  \"passes\": 41,\n  \"events\": [\n    [\n      \"S12-P01\",\n      \"00:18\",\n      \"Look inside, please.\"\n    ],\n    [\n      \"S12-P02\",\n      \"00:34\",\n      \"Hold your hat.\"\n    ],\n    [\n      \"I21\",\n      \"01:32\",\n      \"Help the cricket!\"\n    ],\n    [\n      \"S12-P03\",\n      \"02:34\",\n      \"Check on Cricket.\"\n    ],\n    [\n      \"S12-P04\",\n      \"02:56\",\n      \"Stand beside Grandpa.\"\n    ],\n    [\n      \"S12-P05\",\n      \"05:22\",\n      \"Show your hands.\"\n    ],\n    [\n      \"S12-P06\",\n      \"05:40\",\n      \"Bend your fingers.\"\n    ],\n    [\n      \"S12-P07\",\n      \"05:59\",\n      \"Take Grandpa's hand.\"\n    ],\n    [\n      \"S12-P08\",\n      \"06:18\",\n      \"Straighten your hat.\"\n    ],\n    [\n      \"S12-P09\",\n      \"06:46\",\n      \"Wave goodbye, please.\"\n    ]\n  ]\n}\n",
+      "stderr": ""
+    }
+  ],
+  "actual_media_status": "NOT_RUN"
+}

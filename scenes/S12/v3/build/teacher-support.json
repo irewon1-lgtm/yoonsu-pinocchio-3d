@@ -1,0 +1,219 @@
+{
+  "id": "S12-C49",
+  "scope": "SUPPORT_ONLY_HUMAN_AND_FULL_ENTRY_UNVERIFIED",
+  "fps": 24,
+  "lead_frames": 96,
+  "plate": "S11L-school-open.png",
+  "door": {
+    "track": "door",
+    "level": "S11L-school-door",
+    "root": [
+      0,
+      0
+    ],
+    "height": 720,
+    "anchor": "stage",
+    "first_cel": 0,
+    "last_cel": 0,
+    "motion": "hold",
+    "start": 0,
+    "end": 1
+  },
+  "teacher_layers": [
+    {
+      "track": "teacher",
+      "level": "S12RL-teacher-yield",
+      "root": [
+        739,
+        559
+      ],
+      "height": 193,
+      "anchor": "stage",
+      "first_cel": 0,
+      "last_cel": 0,
+      "motion": "hold",
+      "during": [
+        "lead@0.000000000000",
+        "lead@0.135416666667"
+      ]
+    },
+    {
+      "track": "teacher",
+      "level": "S12RL-teacher-yield",
+      "root": [
+        752,
+        555
+      ],
+      "height": 193,
+      "anchor": "support",
+      "first_cel": 1,
+      "last_cel": 1,
+      "motion": "hold",
+      "during": [
+        "lead@0.135416666667",
+        "lead@0.218750000000"
+      ]
+    },
+    {
+      "track": "teacher",
+      "level": "S12RL-teacher-yield",
+      "root": [
+        752,
+        555
+      ],
+      "height": 193,
+      "anchor": "support",
+      "first_cel": 2,
+      "last_cel": 2,
+      "motion": "hold",
+      "during": [
+        "lead@0.218750000000",
+        "lead@0.291666666667"
+      ]
+    },
+    {
+      "track": "teacher",
+      "level": "S12RL-teacher-yield",
+      "root": [
+        752,
+        555
+      ],
+      "height": 193,
+      "anchor": "support",
+      "first_cel": 3,
+      "last_cel": 3,
+      "motion": "hold",
+      "during": [
+        "lead@0.291666666667",
+        "lead@0.385416666667"
+      ]
+    },
+    {
+      "track": "teacher",
+      "level": "S12RL-teacher-yield",
+      "root": [
+        710,
+        565
+      ],
+      "height": 193,
+      "anchor": "support",
+      "first_cel": 4,
+      "last_cel": 4,
+      "motion": "hold",
+      "during": [
+        "lead@0.385416666667",
+        "lead@0.447916666667"
+      ]
+    },
+    {
+      "track": "teacher",
+      "level": "S12RL-teacher-yield",
+      "root": [
+        710,
+        565
+      ],
+      "height": 193,
+      "anchor": "support",
+      "first_cel": 5,
+      "last_cel": 5,
+      "motion": "hold",
+      "during": [
+        "lead@0.447916666667",
+        1
+      ]
+    }
+  ],
+  "floor_pins": [
+    {
+      "pose": 0,
+      "source_pose": 7,
+      "phase": "looks at the passage",
+      "range": [
+        0,
+        13
+      ],
+      "floor_pin": [
+        752,
+        555
+      ],
+      "support_foot": "front"
+    },
+    {
+      "pose": 1,
+      "source_pose": 0,
+      "phase": "sets weight on the front foot",
+      "range": [
+        13,
+        21
+      ],
+      "floor_pin": [
+        752,
+        555
+      ],
+      "support_foot": "front"
+    },
+    {
+      "pose": 2,
+      "source_pose": 4,
+      "phase": "left boot withdraws",
+      "range": [
+        21,
+        28
+      ],
+      "floor_pin": [
+        752,
+        555
+      ],
+      "support_foot": "front"
+    },
+    {
+      "pose": 3,
+      "source_pose": 3,
+      "phase": "rear boot reaches the sill",
+      "range": [
+        28,
+        37
+      ],
+      "floor_pin": [
+        752,
+        555
+      ],
+      "support_foot": "front"
+    },
+    {
+      "pose": 4,
+      "source_pose": 5,
+      "phase": "rear sole takes the weight",
+      "range": [
+        37,
+        43
+      ],
+      "floor_pin": [
+        710,
+        565
+      ],
+      "support_foot": "rear"
+    },
+    {
+      "pose": 5,
+      "source_pose": 6,
+      "phase": "leaves the passage and looks on",
+      "range": [
+        43,
+        96
+      ],
+      "floor_pin": [
+        710,
+        565
+      ],
+      "support_foot": "rear"
+    }
+  ],
+  "visible_door_slit": {
+    "approx_stage_x": [
+      760,
+      779
+    ],
+    "widest_approved_pose": 0
+  }
+}

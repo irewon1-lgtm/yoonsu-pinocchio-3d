@@ -1,0 +1,22 @@
+{
+  "story_day": "D2",
+  "time": "학교 문밖의 같은 순간",
+  "location": "OUTSIDE_OPEN_SCHOOL_DOOR",
+  "pinocchio_form": "WOODEN",
+  "nose_state": "NORMAL",
+  "pinocchio_pose": "STANDING_OUTSIDE_THRESHOLD_AFTER_GOODBYE_WAVE",
+  "pinocchio_hat": "RED_ON_HEAD",
+  "footwear": "SAME_SHOES_ON",
+  "bag": "CLOSED_ON_PIN_WITH_SAME_BOOK_INSIDE",
+  "book": "INSIDE_CLOSED_BAG",
+  "geppetto_glasses": "ON_FACE",
+  "geppetto_location": "NEARBY_OUTSIDE_WAVING",
+  "cricket_location": "SAFE_AT_PIN_FEET_OUTSIDE",
+  "hands_joined": false,
+  "school_door": "OPEN_BY_EXISTING_S07_SILENT_TEACHER",
+  "school_signboard": "SMALL_WOODEN_BOARD_STANDING",
+  "fairy": "ABSENT",
+  "human_transformation": false,
+  "next": "S12 same moment: wind, board falls, Cricket trapped safely, help/rescue, Fairy, approved human transformation, school entry.",
+  "no_final_end_card": true
+}

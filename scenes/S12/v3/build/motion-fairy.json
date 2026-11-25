@@ -1,0 +1,48 @@
+{
+  "cuts": {
+    "S12-C20": {
+      "lead_frames": 48,
+      "tail_frames": 0
+    },
+    "S12-C21": {
+      "lead_frames": 72,
+      "tail_frames": 24,
+      "between_frames": {
+        "S12-N014": 14
+      }
+    },
+    "S12-C22": {
+      "silent_frames": 192
+    },
+    "S12-C23": {
+      "lead_frames": 30,
+      "tail_frames": 12
+    },
+    "S12-C24": {
+      "lead_frames": 24,
+      "tail_frames": 18
+    },
+    "S12-C25": {
+      "lead_frames": 24,
+      "tail_frames": 12,
+      "between_frames": {
+        "S12-U022": 20
+      }
+    },
+    "S12-C26": {
+      "lead_frames": 24,
+      "tail_frames": 12
+    },
+    "S12-C27": {
+      "lead_frames": 24,
+      "tail_frames": 24
+    },
+    "S12-C28": {
+      "silent_frames": 144
+    },
+    "S12-C29": {
+      "lead_frames": 36,
+      "tail_frames": 12
+    }
+  }
+}

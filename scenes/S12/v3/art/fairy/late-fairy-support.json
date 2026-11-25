@@ -1,0 +1,320 @@
+{
+  "scope": "Fairy actor only. These are support layers and not complete shots.",
+  "stage": {
+    "plate": "S11L-school-open.png",
+    "width": 1280,
+    "height": 720,
+    "intended_near_root": [
+      831,
+      442
+    ],
+    "far_root": [
+      903,
+      143
+    ]
+  },
+  "approved_art": [
+    {
+      "path": "S10/production/art/fairy/fairy-s10-poses/registration.json",
+      "sha256": "bf14946c9d991a02ef4127655426f747bad5cde5eedf5caa59827b358170b6d6"
+    },
+    {
+      "path": "S10/v2/build/art/resolution/v2-fairy-farewell/registration.json",
+      "sha256": "3c40359a4c1bf23acee97a4dd540cc9bcb01009897fe1aa610a38e4532890c5d"
+    }
+  ],
+  "layers": {
+    "S12-C43": {
+      "level": "S12FL-talking",
+      "root": [
+        831,
+        442
+      ],
+      "height": 122,
+      "cel": 0,
+      "flip": true,
+      "mouth": {
+        "speaker": "파란 요정"
+      },
+      "cue": "S12-U034"
+    },
+    "S12-C44": {
+      "level": "S12FL-lower",
+      "root": [
+        831,
+        442
+      ],
+      "height": 122,
+      "first_cel": 0,
+      "last_cel": 7,
+      "flip": true,
+      "exposure_frames": [
+        3,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        7
+      ],
+      "then": "Hold cel 7 throughout P09.",
+      "hold_predicate": "No wave or departure while awaiting S12-P09 acceptance."
+    },
+    "S12-C45": {
+      "predicate": "S12-P09 consumed and child has begun the approved wave.",
+      "prelude": {
+        "hold_level": "S12FL-lower",
+        "hold_cel": 7,
+        "minimum_scene_local_frames_before_fairy_reply": 16
+      },
+      "wave": {
+        "level": "S12FL-wave",
+        "first_cel": 0,
+        "last_cel": 6,
+        "flip": true,
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "exposure_frames": [
+          2,
+          4,
+          5,
+          5,
+          4,
+          4,
+          3
+        ]
+      },
+      "retreat": {
+        "level": "S12FL-retreat",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "flip": false,
+        "first_cel": 0,
+        "last_cel": 31,
+        "root_offsets": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            3,
+            -2
+          ],
+          [
+            6,
+            -4
+          ],
+          [
+            9,
+            -8
+          ],
+          [
+            13,
+            -12
+          ],
+          [
+            17,
+            -18
+          ],
+          [
+            22,
+            -25
+          ],
+          [
+            27,
+            -34
+          ],
+          [
+            33,
+            -45
+          ],
+          [
+            39,
+            -58
+          ],
+          [
+            45,
+            -72
+          ],
+          [
+            51,
+            -88
+          ],
+          [
+            56,
+            -104
+          ],
+          [
+            62,
+            -122
+          ],
+          [
+            67,
+            -140
+          ],
+          [
+            71,
+            -159
+          ],
+          [
+            75,
+            -177
+          ],
+          [
+            78,
+            -194
+          ],
+          [
+            80,
+            -211
+          ],
+          [
+            81,
+            -227
+          ],
+          [
+            82,
+            -241
+          ],
+          [
+            82,
+            -254
+          ],
+          [
+            81,
+            -265
+          ],
+          [
+            79,
+            -274
+          ],
+          [
+            78,
+            -282
+          ],
+          [
+            76,
+            -288
+          ],
+          [
+            75,
+            -293
+          ],
+          [
+            73,
+            -296
+          ],
+          [
+            72,
+            -298
+          ],
+          [
+            72,
+            -299
+          ]
+        ],
+        "flight": [
+          0,
+          31
+        ],
+        "exposure_frames": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          5
+        ],
+        "last_root": [
+          903,
+          143
+        ]
+      },
+      "min_lead_frames_for_fairy_only": 120,
+      "resume_after": "Retreat and child's independent post-wave action have both completed."
+    },
+    "S12-C46": {
+      "level": "S12FL-talking",
+      "root": [
+        903,
+        143
+      ],
+      "height": 64,
+      "cel": 0,
+      "flip": true,
+      "hidden_only_if_outside_approved_crop": true
+    },
+    "S12-C47": {
+      "level": "S12FL-talking",
+      "root": [
+        903,
+        143
+      ],
+      "height": 64,
+      "cel": 0,
+      "flip": true,
+      "hidden_only_if_outside_approved_crop": true
+    },
+    "S12-C48": {
+      "level": "S12FL-talking",
+      "root": [
+        903,
+        143
+      ],
+      "height": 64,
+      "cel": 0,
+      "flip": true,
+      "mouth": {
+        "speaker": "파란 요정"
+      },
+      "cue": "S12-U042",
+      "requires_roof_and_door_crop": true
+    }
+  },
+  "evidence": {
+    "contact_sheet": "late-fairy-contact.jpg",
+    "complete_late_shots": "BLOCKED_RESOURCE",
+    "audible_u042_in_finished_cut": "NOT_RUN"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "exit_state_exact_equal": true,
+  "interaction_policy_exact_equal": true,
+  "continuity_sha256": "ac315de8423a6bdd661d6c22d7374ee1e56dc597d1c0c4f47f703f551e5d1b3c",
+  "scene_source_sha256": "4583530697fc4fd438dfea35243c5c81edc603483fb1a07a74e79a7f795f2412",
+  "scope": "CURRENT_AUTHORING_SOURCE_LINK_ONLY"
+}

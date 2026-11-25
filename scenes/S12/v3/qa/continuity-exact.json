@@ -1,0 +1,10 @@
+{
+  "check": "S11 closing stage against S12 C01 source stage",
+  "result": "PASS",
+  "size": [
+    1280,
+    720
+  ],
+  "exact_rgb_bytes": 2764800,
+  "source_frame": 9305
+}

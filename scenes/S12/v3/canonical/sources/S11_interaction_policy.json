@@ -1,0 +1,31 @@
+{
+  "sequence": [
+    "QUESTION_AUDIO_ENDED",
+    "STORY_PAUSED",
+    "MODEL_ONCE_MIC_OFF",
+    "ACTUAL_MODEL_ENDED",
+    "AUTO_ARM_LISTEN",
+    "ACCEPT_VOICE_ACTIVITY_OR_GUARDIAN_ONCE",
+    "REACT",
+    "ACTUAL_REACTION_COMPLETE",
+    "RESUME_NARRATIVE"
+  ],
+  "exact_phrase_matching": false,
+  "pronunciation_scoring": false,
+  "model_clock": "OUTSIDE_NARRATIVE",
+  "wait_clock": "OUTSIDE_NARRATIVE",
+  "replay_clock": "OUTSIDE_NARRATIVE",
+  "microphone_permission": "Respect OS permission and browser gesture rules; within the allowed session arm automatically after actual model end. Show truthful denied/unavailable state and guardian advance.",
+  "early_child_voice_during_question": "Does not advance. Preserve dialogue and show listen state clearly.",
+  "parent_tap_during_model": "Cancel current model and invalidate its completion callback before one REACT.",
+  "simultaneous_tap_vad": "Atomic once guard per event_id and run_generation_id; discard stale callbacks after seek, replay or reset.",
+  "narrator_or_character_output_detection": "Detection disabled during question/model output; use verified echo/tail handling, not an invented fixed delay.",
+  "vad_acceptance": "Calibrated speech activity start/end and noise rejection; no arbitrary loud sound as completed speech.",
+  "no_response": "Never punish, auto-succeed, or demand an exact phrase. Keep replay and guardian controls.",
+  "timeout_hint_seconds": null,
+  "repeat_example_after_no_response_seconds": null,
+  "unresolved_timing_semantics": "UNRESOLVED_NOT_ZERO",
+  "profile_source": "Use the verified existing engine profile and verified Star Album comparison only if available; do not claim it has been implemented here.",
+  "learner_causality": "윤수는 준비·동행을 돕는다. 음악 앞 학교 선택은 피노키오가 스스로 하며 영어 정확도·음량은 서사의 자격이 아니다.",
+  "no_extraneous_rewards": true
+}

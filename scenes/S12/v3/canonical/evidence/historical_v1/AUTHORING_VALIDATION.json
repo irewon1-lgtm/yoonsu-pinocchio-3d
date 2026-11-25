@@ -1,0 +1,256 @@
+{
+  "scope": "STRUCTURAL_AUTHORING_ONLY",
+  "pass_count": 32,
+  "fail_count": 0,
+  "tests": [
+    {
+      "test": "source_original_44_exact_and_ordered",
+      "status": "PASS",
+      "detail": 44
+    },
+    {
+      "test": "new_ids_contiguous",
+      "status": "PASS",
+      "detail": 27
+    },
+    {
+      "test": "unique_dialogue_ids",
+      "status": "PASS",
+      "detail": 71
+    },
+    {
+      "test": "50_cuts_10_beats",
+      "status": "PASS",
+      "detail": 50
+    },
+    {
+      "test": "all_19_original_cuts_mapped",
+      "status": "PASS",
+      "detail": 19
+    },
+    {
+      "test": "canonical_source_cut_association",
+      "status": "PASS",
+      "detail": 44
+    },
+    {
+      "test": "contiguous_narrative_clock",
+      "status": "PASS",
+      "detail": 446
+    },
+    {
+      "test": "minimum_360_seconds_planned",
+      "status": "PASS",
+      "detail": {
+        "planned": 446,
+        "actual": null
+      }
+    },
+    {
+      "test": "dialogue_shot_coverage",
+      "status": "PASS",
+      "detail": 71
+    },
+    {
+      "test": "10_unique_events_one_legacy_I21",
+      "status": "PASS",
+      "detail": 10
+    },
+    {
+      "test": "10_three_word_models",
+      "status": "PASS",
+      "detail": [
+        "Look inside, please.",
+        "Hold your hat.",
+        "Help the cricket!",
+        "Check on Cricket.",
+        "Stand beside Grandpa.",
+        "Show your hands.",
+        "Bend your fingers.",
+        "Take Grandpa's hand.",
+        "Straighten your hat.",
+        "Wave goodbye, please."
+      ]
+    },
+    {
+      "test": "S12-P01_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-N002",
+        "react": [
+          "S12-C03"
+        ],
+        "resume": "S12-N003"
+      }
+    },
+    {
+      "test": "S12-P02_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-N006",
+        "react": [
+          "S12-C05"
+        ],
+        "resume": "S12-N007"
+      }
+    },
+    {
+      "test": "I21_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-U010",
+        "react": [
+          "S12-C12",
+          "S12-C13",
+          "S12-C14"
+        ],
+        "resume": "S12-U011"
+      }
+    },
+    {
+      "test": "S12-P03_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-N011",
+        "react": [
+          "S12-C19"
+        ],
+        "resume": "S12-N012"
+      }
+    },
+    {
+      "test": "S12-P04_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-N013",
+        "react": [
+          "S12-C21"
+        ],
+        "resume": "S12-N014"
+      }
+    },
+    {
+      "test": "S12-P05_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-N016",
+        "react": [
+          "S12-C33"
+        ],
+        "resume": "S12-N017"
+      }
+    },
+    {
+      "test": "S12-P06_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-N018",
+        "react": [
+          "S12-C34"
+        ],
+        "resume": "S12-N019"
+      }
+    },
+    {
+      "test": "S12-P07_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-N022",
+        "react": [
+          "S12-C40"
+        ],
+        "resume": "S12-N023"
+      }
+    },
+    {
+      "test": "S12-P08_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-N025",
+        "react": [
+          "S12-C41"
+        ],
+        "resume": "S12-N026"
+      }
+    },
+    {
+      "test": "S12-P09_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-N027",
+        "react": [
+          "S12-C45"
+        ],
+        "resume": "S12-U036"
+      }
+    },
+    {
+      "test": "legacy_I21_lock",
+      "status": "PASS",
+      "detail": [
+        "S12-C12",
+        "S12-C13",
+        "S12-C14"
+      ]
+    },
+    {
+      "test": "magic_after_U027",
+      "status": "PASS",
+      "detail": "C30 transition"
+    },
+    {
+      "test": "form_identity_locked",
+      "status": "PASS",
+      "detail": "one profile"
+    },
+    {
+      "test": "rescue_wait_states",
+      "status": "PASS",
+      "detail": "I21"
+    },
+    {
+      "test": "protected_question_ranges",
+      "status": "PASS",
+      "detail": "choice, rescue, magic, hug, blessing, ending"
+    },
+    {
+      "test": "honesty_today_addition",
+      "status": "PASS",
+      "detail": "D2 confession"
+    },
+    {
+      "test": "entry_exit_continuity",
+      "status": "PASS",
+      "detail": "S11 exact state copied"
+    },
+    {
+      "test": "ending_after_entry",
+      "status": "PASS",
+      "detail": "final entry before last line"
+    },
+    {
+      "test": "voice_direction_all_jobs",
+      "status": "PASS",
+      "detail": 81
+    },
+    {
+      "test": "original_sources_sha256",
+      "status": "PASS",
+      "detail": "source bytes copied"
+    },
+    {
+      "test": "no_actual_media_claim",
+      "status": "PASS",
+      "detail": "all synthesis/render/runtime NOT_RUN"
+    }
+  ],
+  "media_status": {
+    "voice": "NOT_RUN",
+    "listening": "NOT_RUN",
+    "approved_human_art": "REQUIRE_RESOURCE_VERIFICATION",
+    "sprites": "NOT_RUN",
+    "video": "NOT_RUN",
+    "app": "NOT_RUN",
+    "device": "NOT_RUN"
+  }
+}

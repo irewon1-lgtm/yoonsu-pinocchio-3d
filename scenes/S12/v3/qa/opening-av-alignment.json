@@ -1,0 +1,231 @@
+{
+  "target": "/workspace/shared/downloads/S12-V3-C01-C05.mp4",
+  "sha256": "d2c3743c5758559f8125ec519be8f4071db9c047eb381ee8fcc77df34a868081",
+  "source_edit": "/workspace/scratch/s12-v3/editor-opening/edit.json",
+  "story_line_count": 9,
+  "in_world_lip_cue_count": 7,
+  "native_rate": 24000,
+  "narrative_end_sample": 843000,
+  "decoded_aac_sample_count": 843776,
+  "max_absolute_lag_samples": 0,
+  "lowest_aac_pcm_correlation": 0.999812,
+  "clip_sync": [
+    {
+      "id": "S12-U001",
+      "speaker": "내레이션",
+      "clip_start_sample": 36000,
+      "clip_end_sample_exclusive": 104636,
+      "aac_offset_samples": 0,
+      "aac_to_source_pcm_correlation": 0.999934
+    },
+    {
+      "id": "S12-N001",
+      "speaker": "제페토",
+      "clip_start_sample": 165231,
+      "clip_end_sample_exclusive": 225954,
+      "aac_offset_samples": 0,
+      "aac_to_source_pcm_correlation": 0.999971,
+      "registered_voice_span_frames": [
+        165,
+        226
+      ],
+      "active_viseme_span_frames": [
+        168,
+        224
+      ],
+      "first_active_viseme_relative_to_audible_start_ms": 10.25,
+      "last_active_viseme_relative_to_audible_release_ms": -29.12,
+      "rendered_visemes": {
+        "closed": 16,
+        "small": 13,
+        "wide": 14,
+        "pressed": 10,
+        "round": 7,
+        "teeth": 1
+      }
+    },
+    {
+      "id": "S12-N002",
+      "speaker": "제페토",
+      "clip_start_sample": 230954,
+      "clip_end_sample_exclusive": 311000,
+      "aac_offset_samples": 0,
+      "aac_to_source_pcm_correlation": 0.999824,
+      "registered_voice_span_frames": [
+        230,
+        311
+      ],
+      "active_viseme_span_frames": [
+        234,
+        310
+      ],
+      "first_active_viseme_relative_to_audible_start_ms": 21.63,
+      "last_active_viseme_relative_to_audible_release_ms": 11.71,
+      "rendered_visemes": {
+        "closed": 22,
+        "round": 9,
+        "small": 20,
+        "wide": 18,
+        "teeth": 8,
+        "pressed": 4
+      }
+    },
+    {
+      "id": "S12-N003",
+      "speaker": "피노키오",
+      "clip_start_sample": 359000,
+      "clip_end_sample_exclusive": 418072,
+      "aac_offset_samples": 0,
+      "aac_to_source_pcm_correlation": 0.999981,
+      "registered_voice_span_frames": [
+        359,
+        419
+      ],
+      "active_viseme_span_frames": [
+        367,
+        416
+      ],
+      "first_active_viseme_relative_to_audible_start_ms": 223.12,
+      "last_active_viseme_relative_to_audible_release_ms": -32.83,
+      "rendered_visemes": {
+        "closed": 15,
+        "wide": 15,
+        "round": 11,
+        "small": 13,
+        "pressed": 4,
+        "teeth": 2
+      }
+    },
+    {
+      "id": "S12-N004",
+      "speaker": "귀뚜라미",
+      "clip_start_sample": 423072,
+      "clip_end_sample_exclusive": 449586,
+      "aac_offset_samples": 0,
+      "aac_to_source_pcm_correlation": 0.999885,
+      "registered_voice_span_frames": [
+        423,
+        450
+      ],
+      "active_viseme_span_frames": [
+        425,
+        447
+      ],
+      "first_active_viseme_relative_to_audible_start_ms": -24.75,
+      "last_active_viseme_relative_to_audible_release_ms": -55.71,
+      "rendered_visemes": {
+        "closed": 6,
+        "small": 8,
+        "wide": 6,
+        "round": 3,
+        "pressed": 4
+      }
+    },
+    {
+      "id": "S12-N005",
+      "speaker": "제페토",
+      "clip_start_sample": 510510,
+      "clip_end_sample_exclusive": 567929,
+      "aac_offset_samples": 0,
+      "aac_to_source_pcm_correlation": 0.999812,
+      "registered_voice_span_frames": [
+        510,
+        568
+      ],
+      "active_viseme_span_frames": [
+        513,
+        564
+      ],
+      "first_active_viseme_relative_to_audible_start_ms": -1.25,
+      "last_active_viseme_relative_to_audible_release_ms": -111.63,
+      "rendered_visemes": {
+        "closed": 12,
+        "small": 14,
+        "round": 11,
+        "wide": 16,
+        "teeth": 4,
+        "pressed": 1
+      }
+    },
+    {
+      "id": "S12-N006",
+      "speaker": "제페토",
+      "clip_start_sample": 572929,
+      "clip_end_sample_exclusive": 640000,
+      "aac_offset_samples": 0,
+      "aac_to_source_pcm_correlation": 0.99985,
+      "registered_voice_span_frames": [
+        572,
+        640
+      ],
+      "active_viseme_span_frames": [
+        575,
+        635
+      ],
+      "first_active_viseme_relative_to_audible_start_ms": -18.79,
+      "last_active_viseme_relative_to_audible_release_ms": -155.04,
+      "rendered_visemes": {
+        "closed": 18,
+        "small": 13,
+        "round": 17,
+        "wide": 13,
+        "teeth": 5,
+        "pressed": 2
+      }
+    },
+    {
+      "id": "S12-N007",
+      "speaker": "피노키오",
+      "clip_start_sample": 688000,
+      "clip_end_sample_exclusive": 735660,
+      "aac_offset_samples": 0,
+      "aac_to_source_pcm_correlation": 0.999984,
+      "registered_voice_span_frames": [
+        688,
+        736
+      ],
+      "active_viseme_span_frames": [
+        691,
+        732
+      ],
+      "first_active_viseme_relative_to_audible_start_ms": 11.46,
+      "last_active_viseme_relative_to_audible_release_ms": -36.12,
+      "rendered_visemes": {
+        "closed": 15,
+        "small": 13,
+        "round": 5,
+        "pressed": 4,
+        "wide": 11
+      }
+    },
+    {
+      "id": "S12-U002",
+      "speaker": "내레이션",
+      "clip_start_sample": 759660,
+      "clip_end_sample_exclusive": 830071,
+      "aac_offset_samples": 0,
+      "aac_to_source_pcm_correlation": 0.999914
+    }
+  ],
+  "gates": [
+    {
+      "id": "S12-P01",
+      "question_id": "S12-N002",
+      "question_audio_end_sample": 311000,
+      "gate_frame": 311,
+      "gate_seconds": 12.958333333333334,
+      "aac_offset_samples": 0,
+      "last_nonclosed_mouth_frame_exclusive": 310
+    },
+    {
+      "id": "S12-P02",
+      "question_id": "S12-N006",
+      "question_audio_end_sample": 640000,
+      "gate_frame": 640,
+      "gate_seconds": 26.666666666666668,
+      "aac_offset_samples": 0,
+      "last_nonclosed_mouth_frame_exclusive": 635
+    }
+  ],
+  "human_listening_and_phoneme_shape_review": "NOT_RUN"
+}

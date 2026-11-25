@@ -1,0 +1,24 @@
+{
+  "cuts": {
+    "S12-C15": {
+      "lead_frames": 24,
+      "tail_frames": 12
+    },
+    "S12-C16": {
+      "lead_frames": 36,
+      "tail_frames": 12
+    },
+    "S12-C17": {
+      "lead_frames": 36,
+      "tail_frames": 12
+    },
+    "S12-C18": {
+      "lead_frames": 96,
+      "tail_frames": 0
+    },
+    "S12-C19": {
+      "lead_frames": 72,
+      "tail_frames": 24
+    }
+  }
+}

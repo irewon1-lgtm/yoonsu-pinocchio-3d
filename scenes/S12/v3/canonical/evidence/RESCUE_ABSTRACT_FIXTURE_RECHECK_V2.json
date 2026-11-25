@@ -1,0 +1,23 @@
+{
+  "scope": "ABSTRACT_FIXTURE_ONLY_NOT_APPROVED_ASSET_OR_VIDEO_TEST",
+  "matches_embedded_result": true,
+  "passed": 8,
+  "total": 8,
+  "checks": {
+    "closed_fixture_has_no_escape_on_3d_grid": true,
+    "lifted_fixture_has_side_escape_on_3d_grid": true,
+    "open_path_does_not_require_jump": true,
+    "sampled_fall_does_not_hit_static_safe_cricket_proxy": true,
+    "board_fits_between_side_returns": true,
+    "closed_side_margin_smaller_than_cricket_diameter": true,
+    "adult_current_hand_ray_is_occluded_despite_sufficient_length": true,
+    "child_current_hand_ray_is_clear_and_within_length": true
+  },
+  "limitations": [
+    "Finite-grid path finding is an illustrative discrete test, not proof for arbitrary character anatomy or all continuous trajectories.",
+    "The geometric proxy says nothing about actual character jump ability; blocked jumping follows the fixture enclosure rather than a new no-jump character rule.",
+    "Body reach, gravity, mass, friction, structural stability, finger grip, foot contact, and board restoration are not physically simulated.",
+    "Approved background, sprite/rig proportions and real camera must be measured before using this layout.",
+    "A current-pose occluded hand ray is not permanent adult incapacity; Geppetto can change position after the child's safe opening action."
+  ]
+}

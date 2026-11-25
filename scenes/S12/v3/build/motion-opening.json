@@ -1,0 +1,25 @@
+{
+  "cuts": {
+    "S12-C01": {
+      "lead_frames": 36,
+      "tail_frames": 12
+    },
+    "S12-C02": {
+      "lead_frames": 48
+    },
+    "S12-C03": {
+      "lead_frames": 48,
+      "tail_frames": 12
+    },
+    "S12-C04": {
+      "lead_frames": 48
+    },
+    "S12-C05": {
+      "lead_frames": 48,
+      "tail_frames": 12,
+      "between_frames": {
+        "S12-N007": 24
+      }
+    }
+  }
+}

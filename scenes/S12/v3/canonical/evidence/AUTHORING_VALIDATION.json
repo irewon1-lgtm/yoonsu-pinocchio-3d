@@ -1,0 +1,350 @@
+{
+  "scope": "STRUCTURAL_AUTHORING_ONLY",
+  "pass_count": 41,
+  "fail_count": 0,
+  "tests": [
+    {
+      "test": "source_original_44_exact_and_ordered",
+      "status": "PASS",
+      "detail": 44
+    },
+    {
+      "test": "new_ids_complete_and_unique",
+      "status": "PASS",
+      "detail": {
+        "count": 27,
+        "stable_ids_reordered_for_unbroken_reunion": true
+      }
+    },
+    {
+      "test": "unique_dialogue_ids",
+      "status": "PASS",
+      "detail": 71
+    },
+    {
+      "test": "50_cuts_10_beats",
+      "status": "PASS",
+      "detail": 50
+    },
+    {
+      "test": "all_19_original_cuts_mapped",
+      "status": "PASS",
+      "detail": 19
+    },
+    {
+      "test": "canonical_source_cut_association",
+      "status": "PASS",
+      "detail": 44
+    },
+    {
+      "test": "contiguous_narrative_clock",
+      "status": "PASS",
+      "detail": 468
+    },
+    {
+      "test": "minimum_360_seconds_planned",
+      "status": "PASS",
+      "detail": {
+        "planned": 468,
+        "actual": null
+      }
+    },
+    {
+      "test": "dialogue_shot_coverage",
+      "status": "PASS",
+      "detail": 71
+    },
+    {
+      "test": "10_unique_events_one_legacy_I21",
+      "status": "PASS",
+      "detail": 10
+    },
+    {
+      "test": "10_three_word_models",
+      "status": "PASS",
+      "detail": [
+        "Look inside, please.",
+        "Hold your hat.",
+        "Help the cricket!",
+        "Check on Cricket.",
+        "Stand beside Grandpa.",
+        "Show your hands.",
+        "Bend your fingers.",
+        "Take Grandpa's hand.",
+        "Straighten your hat.",
+        "Wave goodbye, please."
+      ]
+    },
+    {
+      "test": "S12-P01_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-N002",
+        "react": [
+          "S12-C03"
+        ],
+        "resume": "S12-N003"
+      }
+    },
+    {
+      "test": "S12-P02_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-N006",
+        "react": [
+          "S12-C05"
+        ],
+        "resume": "S12-N007"
+      }
+    },
+    {
+      "test": "I21_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-U010",
+        "react": [
+          "S12-C12",
+          "S12-C13",
+          "S12-C14"
+        ],
+        "resume": "S12-U011"
+      }
+    },
+    {
+      "test": "S12-P03_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-N011",
+        "react": [
+          "S12-C19"
+        ],
+        "resume": "S12-N012"
+      }
+    },
+    {
+      "test": "S12-P04_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-N013",
+        "react": [
+          "S12-C21"
+        ],
+        "resume": "S12-N014"
+      }
+    },
+    {
+      "test": "S12-P05_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-N016",
+        "react": [
+          "S12-C36"
+        ],
+        "resume": "S12-N017"
+      }
+    },
+    {
+      "test": "S12-P06_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-N018",
+        "react": [
+          "S12-C38"
+        ],
+        "resume": "S12-N019"
+      }
+    },
+    {
+      "test": "S12-P07_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-N022",
+        "react": [
+          "S12-C40"
+        ],
+        "resume": "S12-N023"
+      }
+    },
+    {
+      "test": "S12-P08_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-N025",
+        "react": [
+          "S12-C42"
+        ],
+        "resume": "S12-N026"
+      }
+    },
+    {
+      "test": "S12-P09_question_react_resume",
+      "status": "PASS",
+      "detail": {
+        "question": "S12-N027",
+        "react": [
+          "S12-C45"
+        ],
+        "resume": "S12-U036"
+      }
+    },
+    {
+      "test": "legacy_I21_lock",
+      "status": "PASS",
+      "detail": [
+        "S12-C12",
+        "S12-C13",
+        "S12-C14"
+      ]
+    },
+    {
+      "test": "magic_after_U027",
+      "status": "PASS",
+      "detail": "C30 transition"
+    },
+    {
+      "test": "form_identity_locked",
+      "status": "PASS",
+      "detail": "one profile"
+    },
+    {
+      "test": "rescue_wait_states",
+      "status": "PASS",
+      "detail": "I21"
+    },
+    {
+      "test": "protected_question_ranges",
+      "status": "PASS",
+      "detail": "choice, rescue, unbroken recognition/magic/reunion, blessing, ending"
+    },
+    {
+      "test": "F01_joy_immediately_after_transformation",
+      "status": "PASS",
+      "detail": "no model or participation inside first family reunion"
+    },
+    {
+      "test": "F01_hand_exploration_after_family_reunion",
+      "status": "PASS",
+      "detail": "P05 first possible after U033 and actual hug release"
+    },
+    {
+      "test": "F05_fairy_reference_resolved",
+      "status": "PASS",
+      "detail": "same approved C bytes as S10; no synthesis/listening claim"
+    },
+    {
+      "test": "F09_concrete_helper_demonstrations",
+      "status": "PASS",
+      "detail": "helper demonstrates; Pinocchio result stays after acceptance"
+    },
+    {
+      "test": "F09_hand_release_before_hat_question",
+      "status": "PASS",
+      "detail": "separate release and next demonstration/question"
+    },
+    {
+      "test": "planning_speech_budget_positive",
+      "status": "PASS",
+      "detail": {
+        "S12-C01": 2.727,
+        "S12-C02": 1.205,
+        "S12-C03": 1.432,
+        "S12-C04": 1.386,
+        "S12-C05": 0.886,
+        "S12-C06": 3.409,
+        "S12-C07": 4.409,
+        "S12-C08": 1.75,
+        "S12-C09": 3.864,
+        "S12-C10": 1.295,
+        "S12-C11": 3.773,
+        "S12-C15": 2.977,
+        "S12-C16": 2.386,
+        "S12-C17": 1.409,
+        "S12-C18": 1.727,
+        "S12-C19": 0.773,
+        "S12-C20": 2.773,
+        "S12-C21": 0.75,
+        "S12-C23": 2.75,
+        "S12-C24": 2.841,
+        "S12-C25": 1.205,
+        "S12-C26": 1.159,
+        "S12-C27": 1.091,
+        "S12-C29": 2.182,
+        "S12-C30": 1.205,
+        "S12-C31": 2.836,
+        "S12-C32": 3.932,
+        "S12-C33": 0.75,
+        "S12-C34": 1.818,
+        "S12-C35": 2.25,
+        "S12-C36": 1.773,
+        "S12-C37": 2.227,
+        "S12-C38": 1.818,
+        "S12-C39": 2.727,
+        "S12-C40": 0.932,
+        "S12-C41": 1.182,
+        "S12-C42": 1.364,
+        "S12-C43": 3.75,
+        "S12-C44": 1.682,
+        "S12-C45": 1.318,
+        "S12-C46": 2.341,
+        "S12-C47": 1.068,
+        "S12-C48": 0.705,
+        "S12-C49": 1.727,
+        "S12-C50": 1.909
+      }
+    },
+    {
+      "test": "question_cut_has_no_forced_post_question_tail",
+      "status": "PASS",
+      "detail": "question audio ended is the boundary, not planned timer"
+    },
+    {
+      "test": "F09_event_preconditions_explicit",
+      "status": "PASS",
+      "detail": "authoring contract; not runtime test"
+    },
+    {
+      "test": "F10_layout_contract_is_conditional",
+      "status": "PASS",
+      "detail": "concrete layout is not approved art or rendered motion evidence"
+    },
+    {
+      "test": "honesty_today_addition",
+      "status": "PASS",
+      "detail": "D2 confession"
+    },
+    {
+      "test": "entry_exit_continuity",
+      "status": "PASS",
+      "detail": "S11 exact state copied"
+    },
+    {
+      "test": "ending_after_entry",
+      "status": "PASS",
+      "detail": "final entry before last line"
+    },
+    {
+      "test": "voice_direction_all_jobs",
+      "status": "PASS",
+      "detail": 81
+    },
+    {
+      "test": "original_sources_sha256",
+      "status": "PASS",
+      "detail": "source bytes copied"
+    },
+    {
+      "test": "no_actual_media_claim",
+      "status": "PASS",
+      "detail": "all synthesis/render/runtime NOT_RUN"
+    }
+  ],
+  "media_status": {
+    "voice": "NOT_RUN",
+    "listening": "NOT_RUN",
+    "approved_human_art": "REQUIRE_RESOURCE_VERIFICATION",
+    "sprites": "NOT_RUN",
+    "video": "NOT_RUN",
+    "app": "NOT_RUN",
+    "device": "NOT_RUN"
+  }
+}

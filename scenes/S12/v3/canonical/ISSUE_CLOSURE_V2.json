@@ -1,0 +1,173 @@
+{
+  "document": "S12_ISSUE_CLOSURE_V2",
+  "date": "2026-11-25",
+  "version": "2.0_AUTHORING_REVISED",
+  "scope": "AUTHORING_AND_REFERENCE_LINKAGE_ONLY_NOT_SYNTHESIS_LISTENING_RENDER_OR_APP",
+  "counts": {
+    "canonical_dialogue": 44,
+    "existing_added_dialogue": 27,
+    "narrative_dialogue": 71,
+    "external_models": 10,
+    "voice_jobs": 81,
+    "shots": 50,
+    "beats": 10,
+    "participations": 10,
+    "narrative_seconds_planned": 468,
+    "actual_narrative_seconds": null
+  },
+  "preservation": {
+    "comparison": "V1 and V2 voice jobs keyed by stable job_id",
+    "all_81_spoken_text_and_speaker_unchanged": true,
+    "original_U001_U044_order_preserved": true,
+    "new_ids_stable": true,
+    "intentional_non_numeric_order": "N020/N021 are played before N015-N019 to preserve the first family reunion. Use scene order, never numeric ID sorting."
+  },
+  "issues": [
+    {
+      "id": "F01",
+      "status": "AUTHORING_FIXED_MEDIA_NOT_RUN",
+      "problem": "Two hand tasks delayed the first family joy after transformation.",
+      "change": "C30 transformation, C31 U029/U030, C32 U031/U032, C33 N020/N021 mutual embrace, C34 U033 and actual release; P05 begins at C35. U017-U033 plus hug release protected as one unbroken sequence.",
+      "evidence": [
+        "story/S12_AUTHORING_SOURCE.txt",
+        "story/scene_design_v2.json",
+        "story/interaction_map_v2.json",
+        "evidence/AUTHORING_VALIDATION.json"
+      ],
+      "remaining": "Validate actual emotional performance, natural joins and animation with final audio."
+    },
+    {
+      "id": "F05",
+      "status": "AUTHORING_REFERENCE_MAPPING_FIXED_RUNTIME_NOT_RUN",
+      "problem": "S12 fairy profile ID differed from the prior approved C identity and lacked explicit reference linkage.",
+      "change": {
+        "canonical_id": "BLUE_FAIRY_EXISTING_C",
+        "legacy_alias": "FAIRY_EXISTING_APPROVED_C",
+        "same_approved_C_bytes": true,
+        "new_casting": false
+      },
+      "evidence": [
+        "voice/S12_CHARACTER_VOICE_PROFILES.json",
+        "voice/reference_registry_v2.json",
+        "voice/references/blue_fairy_V6_APPROVED.mp3",
+        "voice/references/narrator_V6_APPROVED.mp3",
+        "evidence/AUTHORING_VALIDATION.json"
+      ],
+      "remaining": "Connect actual locked S03 Pinocchio/Geppetto and existing Cricket references. Verify actual synthesis lookup, returned audio and app playback."
+    },
+    {
+      "id": "F09",
+      "status": "AUTHORING_FIXED_CHILD_AND_RUNTIME_NOT_RUN",
+      "problem": "Some models showed an object without a clear meaning demonstration; hand release and the next hat question were compressed.",
+      "change": [
+        "P03 Grandpa demonstrates checking Cricket; Pinocchio checks after acceptance.",
+        "P05 Grandpa shows his own palms; Pinocchio shows his hands after acceptance.",
+        "P06 Grandpa bends his own fingers; Pinocchio bends his own fingers after acceptance.",
+        "C40 completes N023/N024 and actual hand release before C41 hat demonstration and P08.",
+        "P08 uses the visibly tilted existing hat and Grandpa's empty-palm tilt-to-level demonstration."
+      ],
+      "hand_prompt_planned_intervals_seconds": [
+        18,
+        19,
+        19
+      ],
+      "model_wait_and_retry_included": false,
+      "model_words_changed": false,
+      "evidence": [
+        "story/interaction_map_v2.json",
+        "story/S12_YOONSU_CUES.md",
+        "story/scene_design_v2.json",
+        "evidence/AUTHORING_VALIDATION.json"
+      ],
+      "remaining": "Observe actual visible meaning, child-facing pacing and question/model/listen/reaction boundaries in the app."
+    },
+    {
+      "id": "F10",
+      "status": "CONDITIONAL_DESIGN_DEFINED_ACTUAL_ASSET_FIT_UNVERIFIED",
+      "problem": "The physical reason Cricket cannot exit and Grandpa cannot directly reach was underspecified.",
+      "change": "Conditional existing-school recess/side returns and diagonal same-board placement, current-pose reach occlusion, nearest side exit, explicit supported grip and restoration requirements. No new villain, trap, approved artwork or permanent character disability is asserted.",
+      "abstract_fixture": {
+        "status": "EXECUTED_ABSTRACT_ONLY",
+        "passed": 8,
+        "total": 8,
+        "evidence": "evidence/RESCUE_ABSTRACT_FIXTURE_RECHECK_V2.json"
+      },
+      "evidence": [
+        "assets/S12_RESCUE_LAYOUT_V2.md",
+        "assets/S12_RESCUE_LAYOUT_V2.json",
+        "assets/S12_SPRITE_AND_MOTION_SPEC.md",
+        "story/S12_AUTHORING_SOURCE.txt"
+      ],
+      "actual_layout_status": "BLOCKED_LAYOUT_UNTIL_APPROVED_BACKGROUND_AND_RIG_FIT_VERIFIED",
+      "remaining": [
+        "Approved background surfaces and stable existing board support",
+        "Actual Cricket body and movement clearance",
+        "Grounded two-hand Pinocchio grip and safe load",
+        "Geppetto current-pose occlusion and accessible child approach shown together",
+        "Fall, escape and restoration swept volumes",
+        "Physical support/contact transfer during restoring the signboard"
+      ],
+      "not_proven": [
+        "actual animation",
+        "mass or friction simulation",
+        "actual child safety or body reach",
+        "all continuous geometric paths",
+        "rendered contact or app behavior"
+      ]
+    }
+  ],
+  "reference_state": {
+    "available_approved_reference_bytes": {
+      "파란 요정": {
+        "profile_id": "BLUE_FAIRY_EXISTING_C",
+        "reference_path": "voice/references/blue_fairy_V6_APPROVED.mp3",
+        "sha256": "c65e44b9c4d221c1fe9052ff201a3d3a0f5bc867c29460130fe2944f59c5965b",
+        "bytes": 98925,
+        "matches_profile": true
+      },
+      "내레이션": {
+        "profile_id": "NARRATOR_EXISTING_A",
+        "reference_path": "voice/references/narrator_V6_APPROVED.mp3",
+        "sha256": "ec7234237b687246af302db312994c6b9ddc46411c82085a5b1f3884bcfcbddf",
+        "bytes": 112365,
+        "matches_profile": true
+      }
+    },
+    "blocked_fixed_references": {
+      "피노키오": "PINOCCHIO_S03_USER_LOCKED",
+      "제페토": "GEPPETTO_S03_USER_LOCKED",
+      "귀뚜라미": "CRICKET_EXISTING_IDENTITY"
+    },
+    "synthesis_status": "NOT_RUN",
+    "listening_status": "NOT_RUN"
+  },
+  "verification": {
+    "authoring_structure": {
+      "passed": 41,
+      "failed": 0,
+      "scope": "STRUCTURAL_AUTHORING_ONLY",
+      "evidence": "evidence/AUTHORING_VALIDATION.json"
+    },
+    "abstract_geometry": {
+      "passed": 8,
+      "total": 8,
+      "scope": "ABSTRACT_FIXTURE_ONLY_NOT_APPROVED_ASSET_OR_VIDEO_TEST",
+      "evidence": "evidence/RESCUE_ABSTRACT_FIXTURE_RECHECK_V2.json"
+    },
+    "portable_regeneration": {
+      "status": "REFER_TO_FINAL_INTEGRATED_VALIDATION",
+      "pass_claimed_here": false,
+      "note": "Parent integration owns a fresh-location regeneration/reproducibility test. This file does not predeclare its result."
+    }
+  },
+  "actual_media_status": {
+    "synthesis": "NOT_RUN",
+    "listening": "NOT_RUN",
+    "approved_human_art_fit": "REQUIRE_RESOURCE_VERIFICATION",
+    "sprites": "NOT_RUN",
+    "video": "NOT_RUN",
+    "app": "NOT_RUN",
+    "device": "NOT_RUN"
+  },
+  "approval_handling": "These requested authoring revisions are already applied. Do not insert a new approval request for the same edits. Continue only within the existing authorization and verified available resources."
+}

@@ -1,0 +1,493 @@
+{
+  "document": "S12_RESCUE_LAYOUT_V2",
+  "version": "2.0_CONDITIONAL_LAYOUT",
+  "status": "CONDITIONAL_DESIGN_REQUIRES_APPROVED_ART",
+  "source_scope": "C06-C14, I21; canonical spoken dialogue unchanged",
+  "canon_invariants": [
+    "Same small wooden school signboard, school door, Pinocchio, Geppetto, Cricket.",
+    "No injury; Cricket waits in a clear volume.",
+    "Geppetto approaches but his current direct reach is blocked.",
+    "Pinocchio starts lifting only after I21 acceptance.",
+    "Cricket leaves through the nearest newly cleared side gap.",
+    "The signboard is stabilized before hands release; thanks follow rescue completion."
+  ],
+  "conditional_environment": [
+    "Existing school facade/door-step return shapes must provide a genuine backed recess and two side returns at the shown scale. These are assumed geometric surfaces, not newly approved art.",
+    "An existing stable ledge/base must support the fallen sign without it resting on Cricket or on an invisible hinge.",
+    "If these surfaces do not exist in the approved background, do not insert them silently; this layout remains BLOCKED_LAYOUT until a compatible layout is supplied."
+  ],
+  "blocking_explanation": {
+    "cricket": "The rear and side returns plus the diagonal sign make a clear but enclosed volume. The side margins and low front corner are too small for the measured body, so walking or jumping cannot pass through a solid surface. This does not revoke Cricket's established ability to jump.",
+    "geppetto": "His current side is separated from the accessible low edge by the existing right return. A direct reach ray hits the return. He is not injured, weak, immobilized, or permanently unable to help.",
+    "pinocchio": "He stands on the open approach face, can grip the exposed side edges without entering the trapped volume, and lifts only the small opening needed while Geppetto supervises.",
+    "side_exit": "Exit uses the closest newly opened lateral corner. Do not route Cricket newly under the board centre or through its front fall path. Existing wording that forbids every instant under the board projection is incompatible with this recess solution and must not be claimed satisfied."
+  },
+  "shot_contracts": [
+    {
+      "shot": "C06",
+      "phase": "fall",
+      "action": "Show one common wide view: Cricket moves into the marked safe volume before the board reaches its resting pose. Existing base is the initial pivot; panel is received by a real existing support. No collision, invisible clamp, or suspense scream.",
+      "required_check": "Full swept panel against measured Cricket silhouette and supports."
+    },
+    {
+      "shot": "C07-C08",
+      "phase": "blocked",
+      "action": "Show the closed front corner and side margins in the same geography. Cricket looks at the blocked nearest route; not repeated failed jumping or panic.",
+      "required_check": "Visible reason for U006 I cannot get out; clear safe headroom."
+    },
+    {
+      "shot": "C09-C10",
+      "phase": "choice",
+      "action": "School remains visibly behind Pinocchio. Geppetto reaches once from the side, stops when the return blocks the direct line, and makes calm eye contact. Pinocchio is visibly on the accessible face.",
+      "required_check": "Audience can identify who is on which side without a cut hiding a position swap."
+    },
+    {
+      "shot": "C11",
+      "phase": "I21_wait",
+      "action": "Keep the board and all structural contacts fixed; Cricket is safe. Geppetto does not endlessly reach in vain. Pinocchio's hands do not grip or lift yet.",
+      "required_check": "No rescue progress before accepted event; no simulated real-time danger while the app waits."
+    },
+    {
+      "shot": "C12",
+      "phase": "approach",
+      "action": "After accepted event, Pinocchio moves along the already shown clear face, slows, bends knees, reaches two visible side grips. No limb passes through the door return.",
+      "required_check": "Two real grip contacts, supported feet, low mass/load compatible with the approved character."
+    },
+    {
+      "shot": "C13",
+      "phase": "open_and_exit",
+      "action": "Hold the rear contact on its stable support and lift the accessible edge only enough to open the nearest lateral gap. Keep the board motionless while Cricket walks sideways to the visible safe mark.",
+      "required_check": "Measured full body clearance; no jump required; no route beneath the centre or along the falling edge sweep."
+    },
+    {
+      "shot": "C14",
+      "phase": "stabilize",
+      "action": "Only after Cricket clears the entire restoration sweep, reset the same panel into its original approved base. Any hand change or contact transfer is shown with at least one secure support maintained. Geppetto may move to the open side to guard the stable placement; no second rescue.",
+      "required_check": "Restoration pivot/contact transfer and real weight are not validated by the abstract fixture; final shot cannot pass until they are staged and checked."
+    }
+  ],
+  "runtime_blockers": [
+    "Approved existing background geometry and camera match",
+    "Approved Cricket body width, height, and locomotion silhouette",
+    "Approved Pinocchio two-hand grip and grounded safe lift",
+    "One unobstructed common wide shot showing temporary Geppetto reach occlusion",
+    "Board mass, thickness, existing ledge/base stability and controlled contact transfer",
+    "Frame-by-frame fall/hold/exit/restoration clearances in rendered animatic"
+  ],
+  "validation_status": {
+    "abstract_geometry": "EXECUTED",
+    "approved_art_fit": "NOT_RUN_BLOCKED_RESOURCE",
+    "animatic": "NOT_RUN",
+    "actual_animation": "NOT_RUN",
+    "audio_and_app": "NOT_RUN"
+  },
+  "fixture": {
+    "units": "DIMENSIONLESS_LAYOUT_FIXTURE_NOT_APPROVED_ART_DIMENSIONS",
+    "board": {
+      "rear_support": [
+        -0.69,
+        0.0,
+        0.34
+      ],
+      "closed_front": [
+        0.18,
+        0.0,
+        0.015
+      ],
+      "width": 0.56,
+      "thickness": 0.03,
+      "lift_angle_degrees": 10.0,
+      "identity": "EXISTING_SMALL_WOODEN_SCHOOL_SIGNBOARD"
+    },
+    "cricket": {
+      "collision_proxy": "SPHERE_FOR_CLEARANCE_ONLY_NOT_CHARACTER_ANATOMY",
+      "radius": 0.06,
+      "start": [
+        -0.4,
+        0.0,
+        0.08
+      ],
+      "safe_goal": [
+        0.04,
+        -0.5,
+        0.08
+      ]
+    },
+    "walls": [
+      {
+        "id": "existing_back_face_if_available",
+        "min": [
+          -0.9,
+          -0.8,
+          0.0
+        ],
+        "max": [
+          -0.7,
+          0.8,
+          1.8
+        ]
+      },
+      {
+        "id": "existing_left_return_if_available",
+        "min": [
+          -0.7,
+          -0.5,
+          0.0
+        ],
+        "max": [
+          -0.04,
+          -0.3,
+          1.8
+        ]
+      },
+      {
+        "id": "existing_right_return_if_available",
+        "min": [
+          -0.7,
+          0.3,
+          0.0
+        ],
+        "max": [
+          -0.04,
+          0.5,
+          1.8
+        ]
+      }
+    ],
+    "grid": {
+      "step": 0.02,
+      "min": [
+        -0.64,
+        -0.7,
+        0.06
+      ],
+      "max": [
+        0.6,
+        0.7,
+        0.8
+      ]
+    },
+    "reach_fixture": {
+      "geppetto_shoulder": [
+        -0.35,
+        0.9,
+        0.65
+      ],
+      "geppetto_reach": 1.25,
+      "pinocchio_shoulder": [
+        0.55,
+        0.0,
+        0.45
+      ],
+      "pinocchio_reach": 0.72,
+      "grip_x": 0.08,
+      "grip_y": 0.0,
+      "explanation": "Illustrative hand-ray endpoint only; final two-hand grip, finger clearance, body posture and approved rig must be checked separately."
+    }
+  },
+  "validation_runner_source_python": "def validate(f):\n    from math import atan2, cos, sin, hypot, radians, degrees, sqrt, pi\n    from collections import deque\n    b=f[\"board\"]; rear=b[\"rear_support\"]; front=b[\"closed_front\"]\n    length=hypot(front[0]-rear[0],front[2]-rear[2])\n    closed=atan2(front[2]-rear[2],front[0]-rear[0]); lifted=closed+radians(b[\"lift_angle_degrees\"])\n    radius=f[\"cricket\"][\"radius\"]\n    def box_d2(p,lo,hi): return sum(max(lo[k]-p[k],0,p[k]-hi[k])**2 for k in range(3))\n    def plank_d2(p,origin,angle):\n        dx=p[0]-origin[0];dz=p[2]-origin[2]\n        q=[dx*cos(angle)+dz*sin(angle),p[1]-origin[1],-dx*sin(angle)+dz*cos(angle)]\n        return box_d2(q,[0,-b[\"width\"]/2,-b[\"thickness\"]/2],[length,b[\"width\"]/2,b[\"thickness\"]/2])\n    def search(angle):\n        lo=f[\"grid\"][\"min\"]; step=f[\"grid\"][\"step\"]\n        size=[round((f[\"grid\"][\"max\"][k]-lo[k])/step)+1 for k in range(3)]\n        def index(p):return tuple(round((p[k]-lo[k])/step) for k in range(3))\n        def point(i):return [round(lo[k]+i[k]*step,8) for k in range(3)]\n        def free(i):\n            p=point(i)\n            return not(any(box_d2(p,w[\"min\"],w[\"max\"])<=radius*radius for w in f[\"walls\"]) or plank_d2(p,rear,angle)<=radius*radius)\n        start=index(f[\"cricket\"][\"start\"]); goal=index(f[\"cricket\"][\"safe_goal\"])\n        if not free(start): return {\"start_free\":False,\"reachable\":False,\"visited\":0,\"path\":[]}\n        todo=deque([start]);seen={start};prev={};found=False\n        while todo:\n            here=todo.popleft()\n            if here==goal:found=True;break\n            for axis in range(3):\n                for delta in (-1,1):\n                    nxt=list(here);nxt[axis]+=delta;nxt=tuple(nxt)\n                    if 0<=nxt[axis]<size[axis] and nxt not in seen and free(nxt):\n                        seen.add(nxt);prev[nxt]=here;todo.append(nxt)\n        path=[]\n        if found:\n            here=goal\n            while here!=start:path.append(point(here));here=prev[here]\n            path.append(point(start));path.reverse()\n        return {\"start_free\":True,\"reachable\":found,\"visited\":len(seen),\"path\":path}\n    def segment_hits_box(a,z,lo,hi):\n        entry=0.;leave=1.\n        for k in range(3):\n            d=z[k]-a[k]\n            if abs(d)<1e-12:\n                if a[k]<lo[k] or a[k]>hi[k]:return False\n            else:\n                t1=(lo[k]-a[k])/d;t2=(hi[k]-a[k])/d\n                entry=max(entry,min(t1,t2));leave=min(leave,max(t1,t2))\n                if entry>leave:return False\n        return True\n    closed_search=search(closed);open_search=search(lifted)\n    rf=f[\"reach_fixture\"]; x=rf[\"grip_x\"]\n    target=[x,rf[\"grip_y\"],rear[2]+(x-rear[0])*sin(closed)/cos(closed)+b[\"thickness\"]/2]\n    reach={}\n    for who in (\"geppetto\",\"pinocchio\"):\n        start=rf[who+\"_shoulder\"];reach[who]={\"target_distance\":sqrt(sum((start[k]-target[k])**2 for k in range(3))),\"reach_limit\":rf[who+\"_reach\"],\"blocked_by\":[w[\"id\"] for w in f[\"walls\"] if segment_hits_box(start,target,w[\"min\"],w[\"max\"])]}\n    fall_angles=[pi/2+(closed+pi-pi/2)*n/120 for n in range(121)]\n    fall_clearance=min(sqrt(plank_d2(f[\"cricket\"][\"start\"],front,angle))-radius for angle in fall_angles)\n    front_open=[rear[0]+length*cos(lifted),0.,rear[2]+length*sin(lifted)]\n    outcomes={\n      \"closed_fixture_has_no_escape_on_3d_grid\":not closed_search[\"reachable\"],\n      \"lifted_fixture_has_side_escape_on_3d_grid\":open_search[\"reachable\"],\n      \"open_path_does_not_require_jump\":bool(open_search[\"path\"]) and max(p[2] for p in open_search[\"path\"])<=f[\"cricket\"][\"start\"][2]+1e-8,\n      \"sampled_fall_does_not_hit_static_safe_cricket_proxy\":fall_clearance>0,\n      \"board_fits_between_side_returns\":b[\"width\"]<0.60,\n      \"closed_side_margin_smaller_than_cricket_diameter\":(0.60-b[\"width\"])/2<2*radius,\n      \"adult_current_hand_ray_is_occluded_despite_sufficient_length\":bool(reach[\"geppetto\"][\"blocked_by\"]) and reach[\"geppetto\"][\"target_distance\"]<reach[\"geppetto\"][\"reach_limit\"],\n      \"child_current_hand_ray_is_clear_and_within_length\":not reach[\"pinocchio\"][\"blocked_by\"] and reach[\"pinocchio\"][\"target_distance\"]<reach[\"pinocchio\"][\"reach_limit\"]\n    }\n    return {\"scope\":\"ABSTRACT_FIXTURE_ONLY_NOT_VIDEO_OR_APPROVED_LAYOUT_PASS\",\"checks\":outcomes,\"passed\":sum(outcomes.values()),\"total\":len(outcomes),\"closed_angle_degrees\":degrees(closed),\"lifted_angle_degrees\":degrees(lifted),\"board_length\":length,\"open_front\":front_open,\"closed_search\":closed_search,\"open_search\":open_search,\"reach\":reach,\"grip_proxy\":target,\"sampled_fall_min_proxy_clearance\":fall_clearance,\"fall_sample_count\":len(fall_angles),\"limits\":[\"Finite-grid path finding is an illustrative discrete test, not proof for arbitrary character anatomy or all continuous trajectories.\",\"The geometric proxy says nothing about actual character jump ability; blocked jumping follows the fixture enclosure rather than a new no-jump character rule.\",\"Body reach, gravity, mass, friction, structural stability, finger grip, foot contact, and board restoration are not physically simulated.\",\"Approved background, sprite/rig proportions and real camera must be measured before using this layout.\",\"A current-pose occluded hand ray is not permanent adult incapacity; Geppetto can change position after the child's safe opening action.\"]}\n",
+  "validation_result": {
+    "scope": "ABSTRACT_FIXTURE_ONLY_NOT_VIDEO_OR_APPROVED_LAYOUT_PASS",
+    "checks": {
+      "closed_fixture_has_no_escape_on_3d_grid": true,
+      "lifted_fixture_has_side_escape_on_3d_grid": true,
+      "open_path_does_not_require_jump": true,
+      "sampled_fall_does_not_hit_static_safe_cricket_proxy": true,
+      "board_fits_between_side_returns": true,
+      "closed_side_margin_smaller_than_cricket_diameter": true,
+      "adult_current_hand_ray_is_occluded_despite_sufficient_length": true,
+      "child_current_hand_ray_is_clear_and_within_length": true
+    },
+    "passed": 8,
+    "total": 8,
+    "closed_angle_degrees": -20.483838856406834,
+    "lifted_angle_degrees": -10.483838856406834,
+    "board_length": 0.9287222405003553,
+    "open_front": [
+      0.22321840286237338,
+      0.0,
+      0.17101139484126177
+    ],
+    "closed_search": {
+      "start_free": true,
+      "reachable": false,
+      "visited": 2691,
+      "path": []
+    },
+    "open_search": {
+      "start_free": true,
+      "reachable": true,
+      "visited": 8455,
+      "path": [
+        [
+          -0.4,
+          0.0,
+          0.08
+        ],
+        [
+          -0.38,
+          0.0,
+          0.08
+        ],
+        [
+          -0.36,
+          0.0,
+          0.08
+        ],
+        [
+          -0.34,
+          0.0,
+          0.08
+        ],
+        [
+          -0.32,
+          0.0,
+          0.08
+        ],
+        [
+          -0.3,
+          0.0,
+          0.08
+        ],
+        [
+          -0.28,
+          0.0,
+          0.08
+        ],
+        [
+          -0.26,
+          0.0,
+          0.08
+        ],
+        [
+          -0.24,
+          0.0,
+          0.08
+        ],
+        [
+          -0.22,
+          0.0,
+          0.08
+        ],
+        [
+          -0.2,
+          0.0,
+          0.08
+        ],
+        [
+          -0.18,
+          0.0,
+          0.08
+        ],
+        [
+          -0.16,
+          0.0,
+          0.08
+        ],
+        [
+          -0.14,
+          0.0,
+          0.08
+        ],
+        [
+          -0.12,
+          0.0,
+          0.08
+        ],
+        [
+          -0.1,
+          0.0,
+          0.08
+        ],
+        [
+          -0.08,
+          0.0,
+          0.08
+        ],
+        [
+          -0.06,
+          0.0,
+          0.08
+        ],
+        [
+          -0.04,
+          0.0,
+          0.08
+        ],
+        [
+          -0.02,
+          0.0,
+          0.08
+        ],
+        [
+          0.0,
+          0.0,
+          0.08
+        ],
+        [
+          0.02,
+          0.0,
+          0.08
+        ],
+        [
+          0.04,
+          0.0,
+          0.08
+        ],
+        [
+          0.04,
+          -0.02,
+          0.08
+        ],
+        [
+          0.04,
+          -0.04,
+          0.08
+        ],
+        [
+          0.04,
+          -0.06,
+          0.08
+        ],
+        [
+          0.04,
+          -0.08,
+          0.08
+        ],
+        [
+          0.04,
+          -0.1,
+          0.08
+        ],
+        [
+          0.04,
+          -0.12,
+          0.08
+        ],
+        [
+          0.04,
+          -0.14,
+          0.08
+        ],
+        [
+          0.04,
+          -0.16,
+          0.08
+        ],
+        [
+          0.04,
+          -0.18,
+          0.08
+        ],
+        [
+          0.04,
+          -0.2,
+          0.08
+        ],
+        [
+          0.04,
+          -0.22,
+          0.08
+        ],
+        [
+          0.04,
+          -0.24,
+          0.08
+        ],
+        [
+          0.04,
+          -0.26,
+          0.08
+        ],
+        [
+          0.04,
+          -0.28,
+          0.08
+        ],
+        [
+          0.04,
+          -0.3,
+          0.08
+        ],
+        [
+          0.04,
+          -0.32,
+          0.08
+        ],
+        [
+          0.04,
+          -0.34,
+          0.08
+        ],
+        [
+          0.04,
+          -0.36,
+          0.08
+        ],
+        [
+          0.04,
+          -0.38,
+          0.08
+        ],
+        [
+          0.04,
+          -0.4,
+          0.08
+        ],
+        [
+          0.04,
+          -0.42,
+          0.08
+        ],
+        [
+          0.04,
+          -0.44,
+          0.08
+        ],
+        [
+          0.04,
+          -0.46,
+          0.08
+        ],
+        [
+          0.04,
+          -0.48,
+          0.08
+        ],
+        [
+          0.04,
+          -0.5,
+          0.08
+        ]
+      ]
+    },
+    "reach": {
+      "geppetto": {
+        "target_distance": 1.1551509233433028,
+        "reach_limit": 1.25,
+        "blocked_by": [
+          "existing_right_return_if_available"
+        ]
+      },
+      "pinocchio": {
+        "target_distance": 0.606066155165026,
+        "reach_limit": 0.72,
+        "blocked_by": []
+      }
+    },
+    "grip_proxy": [
+      0.08,
+      0.0,
+      0.06735632183908051
+    ],
+    "sampled_fall_min_proxy_clearance": 0.06707692488220274,
+    "fall_sample_count": 121,
+    "limits": [
+      "Finite-grid path finding is an illustrative discrete test, not proof for arbitrary character anatomy or all continuous trajectories.",
+      "The geometric proxy says nothing about actual character jump ability; blocked jumping follows the fixture enclosure rather than a new no-jump character rule.",
+      "Body reach, gravity, mass, friction, structural stability, finger grip, foot contact, and board restoration are not physically simulated.",
+      "Approved background, sprite/rig proportions and real camera must be measured before using this layout.",
+      "A current-pose occluded hand ray is not permanent adult incapacity; Geppetto can change position after the child's safe opening action."
+    ]
+  }
+}
