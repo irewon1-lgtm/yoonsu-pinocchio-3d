@@ -1,0 +1,39 @@
+{
+  "cuts": {
+    "S12-C43": {
+      "lead_frames": 36,
+      "tail_frames": 12,
+      "between_frames": {
+        "S12-U034": 22
+      }
+    },
+    "S12-C44": {
+      "lead_frames": 60,
+      "tail_frames": 0
+    },
+    "S12-C45": {
+      "lead_frames": 168,
+      "tail_frames": 12
+    },
+    "S12-C46": {
+      "lead_frames": 84,
+      "tail_frames": 24
+    },
+    "S12-C47": {
+      "lead_frames": 24,
+      "tail_frames": 12
+    },
+    "S12-C48": {
+      "lead_frames": 36,
+      "tail_frames": 24
+    },
+    "S12-C49": {
+      "lead_frames": 148,
+      "tail_frames": 48
+    },
+    "S12-C50": {
+      "lead_frames": 48,
+      "tail_frames": 120
+    }
+  }
+}

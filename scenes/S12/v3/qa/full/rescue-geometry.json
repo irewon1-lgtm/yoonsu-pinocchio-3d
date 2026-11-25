@@ -1,0 +1,19 @@
+{
+  "exact_c14_to_c15_body_pixels": {
+    "standing_original_sign": true,
+    "planted_pin": true,
+    "geppetto_home": true,
+    "cricket_home": true
+  },
+  "c05_to_c06_upright_sign_bounds_matched": true,
+  "c05_to_c06_solid_sign_mean_rgb_channel_delta": 0.0019068049100226434,
+  "existing_door_region_pixels_matched": true,
+  "raster_rear_pivot_drift_pixels": 5.684341886080802e-14,
+  "free_end_lift_pixels": 13.50022280894325,
+  "cricket_entry_pose_frame": 46,
+  "board_first_tilt_pose_frame": 52,
+  "open_sign_hold_begins_cut13_frame": 68,
+  "cricket_first_exit_pose_frame": 84,
+  "cricket_reaches_safe_pose_frame": 172,
+  "proof_limit": "2D registration, authored screen-space bounds and timing; not a volume or force simulation"
+}

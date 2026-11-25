@@ -1,0 +1,40 @@
+{
+  "cuts": {
+    "S12-C06": {
+      "lead_frames": 96,
+      "tail_frames": 12,
+      "marks": {
+        "board_contact": 83
+      }
+    },
+    "S12-C07": {
+      "lead_frames": 24,
+      "tail_frames": 12
+    },
+    "S12-C08": {
+      "lead_frames": 60,
+      "tail_frames": 12
+    },
+    "S12-C09": {
+      "lead_frames": 48,
+      "tail_frames": 12
+    },
+    "S12-C10": {
+      "lead_frames": 72,
+      "tail_frames": 12
+    },
+    "S12-C11": {
+      "lead_frames": 36,
+      "tail_frames": 0
+    },
+    "S12-C12": {
+      "silent_frames": 192
+    },
+    "S12-C13": {
+      "silent_frames": 192
+    },
+    "S12-C14": {
+      "silent_frames": 216
+    }
+  }
+}

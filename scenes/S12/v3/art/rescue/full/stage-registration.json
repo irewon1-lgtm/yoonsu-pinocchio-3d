@@ -1,0 +1,43 @@
+{
+  "source": "school-niche-source.png",
+  "origin": [
+    317,
+    516
+  ],
+  "size": [
+    130,
+    72
+  ],
+  "plate": "S12X-school-recess.png",
+  "socket": [
+    417.14928649835343,
+    585.1053787047201
+  ],
+  "rear_pivot": [
+    347.6760980182734,
+    537.5254633546657
+  ],
+  "trapped": [
+    377,
+    580
+  ],
+  "side_exit": [
+    440,
+    654
+  ],
+  "safe_goal": [
+    479,
+    636
+  ],
+  "close_lean_deg": 61.0,
+  "lift_lean_deg": 81.0,
+  "cricket_clear_before_fall_frame": 46,
+  "fall_first_frame": 49,
+  "lift_settled_before_exit_frame": 68,
+  "lead_per_cut": {
+    "C06": 96,
+    "C08": 60,
+    "C10": 72
+  },
+  "silent_i21_frames": 600
+}

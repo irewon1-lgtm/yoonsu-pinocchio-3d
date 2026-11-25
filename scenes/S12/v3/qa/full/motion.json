@@ -1,0 +1,223 @@
+{
+  "cuts": {
+    "S12-C01": {
+      "lead_frames": 36,
+      "tail_frames": 12
+    },
+    "S12-C02": {
+      "lead_frames": 48
+    },
+    "S12-C03": {
+      "lead_frames": 48,
+      "tail_frames": 12
+    },
+    "S12-C04": {
+      "lead_frames": 48
+    },
+    "S12-C05": {
+      "lead_frames": 48,
+      "tail_frames": 12,
+      "between_frames": {
+        "S12-N007": 24
+      }
+    },
+    "S12-C06": {
+      "lead_frames": 96,
+      "tail_frames": 12,
+      "marks": {
+        "board_contact": 83
+      }
+    },
+    "S12-C07": {
+      "lead_frames": 24,
+      "tail_frames": 12
+    },
+    "S12-C08": {
+      "lead_frames": 60,
+      "tail_frames": 12
+    },
+    "S12-C09": {
+      "lead_frames": 48,
+      "tail_frames": 12
+    },
+    "S12-C10": {
+      "lead_frames": 72,
+      "tail_frames": 12
+    },
+    "S12-C11": {
+      "lead_frames": 36,
+      "tail_frames": 0
+    },
+    "S12-C12": {
+      "silent_frames": 192
+    },
+    "S12-C13": {
+      "silent_frames": 192
+    },
+    "S12-C14": {
+      "silent_frames": 216
+    },
+    "S12-C15": {
+      "lead_frames": 24,
+      "tail_frames": 12
+    },
+    "S12-C16": {
+      "lead_frames": 36,
+      "tail_frames": 12
+    },
+    "S12-C17": {
+      "lead_frames": 36,
+      "tail_frames": 12
+    },
+    "S12-C18": {
+      "lead_frames": 96,
+      "tail_frames": 0
+    },
+    "S12-C19": {
+      "lead_frames": 72,
+      "tail_frames": 24
+    },
+    "S12-C20": {
+      "lead_frames": 48,
+      "tail_frames": 0
+    },
+    "S12-C21": {
+      "lead_frames": 72,
+      "tail_frames": 24,
+      "between_frames": {
+        "S12-N014": 14
+      }
+    },
+    "S12-C22": {
+      "silent_frames": 192
+    },
+    "S12-C23": {
+      "lead_frames": 30,
+      "tail_frames": 12
+    },
+    "S12-C24": {
+      "lead_frames": 24,
+      "tail_frames": 18
+    },
+    "S12-C25": {
+      "lead_frames": 24,
+      "tail_frames": 12,
+      "between_frames": {
+        "S12-U022": 20
+      }
+    },
+    "S12-C26": {
+      "lead_frames": 24,
+      "tail_frames": 12
+    },
+    "S12-C27": {
+      "lead_frames": 24,
+      "tail_frames": 24
+    },
+    "S12-C28": {
+      "silent_frames": 144
+    },
+    "S12-C29": {
+      "lead_frames": 36,
+      "tail_frames": 12
+    },
+    "S12-C30": {
+      "lead_frames": 144,
+      "tail_frames": 6
+    },
+    "S12-C31": {
+      "lead_frames": 7,
+      "tail_frames": 6
+    },
+    "S12-C32": {
+      "lead_frames": 12,
+      "tail_frames": 12
+    },
+    "S12-C33": {
+      "lead_frames": 108,
+      "tail_frames": 12,
+      "marks": {
+        "hug_hand_contact": 70,
+        "hug_joint_settle": 98
+      }
+    },
+    "S12-C34": {
+      "lead_frames": 24,
+      "tail_frames": 84,
+      "marks": {
+        "cricket_landed": 28,
+        "hug_release_complete": 135
+      }
+    },
+    "S12-C35": {
+      "lead_frames": 13,
+      "tail_frames": 0,
+      "between_frames": {
+        "S12-N015": 72
+      }
+    },
+    "S12-C36": {
+      "lead_frames": 84,
+      "tail_frames": 24
+    },
+    "S12-C37": {
+      "lead_frames": 84,
+      "tail_frames": 0
+    },
+    "S12-C38": {
+      "lead_frames": 108,
+      "tail_frames": 36
+    },
+    "S12-C39": {
+      "lead_frames": 72,
+      "tail_frames": 0
+    },
+    "S12-C40": {
+      "lead_frames": 60,
+      "tail_frames": 60
+    },
+    "S12-C41": {
+      "lead_frames": 96,
+      "tail_frames": 0
+    },
+    "S12-C42": {
+      "lead_frames": 96,
+      "tail_frames": 24
+    },
+    "S12-C43": {
+      "lead_frames": 36,
+      "tail_frames": 12,
+      "between_frames": {
+        "S12-U034": 22
+      }
+    },
+    "S12-C44": {
+      "lead_frames": 60,
+      "tail_frames": 0
+    },
+    "S12-C45": {
+      "lead_frames": 168,
+      "tail_frames": 12
+    },
+    "S12-C46": {
+      "lead_frames": 84,
+      "tail_frames": 24
+    },
+    "S12-C47": {
+      "lead_frames": 24,
+      "tail_frames": 12
+    },
+    "S12-C48": {
+      "lead_frames": 36,
+      "tail_frames": 24
+    },
+    "S12-C49": {
+      "lead_frames": 148,
+      "tail_frames": 48
+    },
+    "S12-C50": {
+      "lead_frames": 48,
+      "tail_frames": 120
+    }
+  }
+}

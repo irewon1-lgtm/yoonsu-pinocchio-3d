@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "path": "art/first_hug/post-hug-open.png",
+    "stage": [
+      561,
+      643
+    ],
+    "height": 236,
+    "anchor": [
+      223,
+      665
+    ],
+    "cap_tilt_degrees": -3.2
+  },
+  "geppetto": {
+    "level": "S12H-gep-palms-demo",
+    "cel": 0,
+    "stage": [
+      667,
+      629
+    ],
+    "height": 315
+  },
+  "cricket": {
+    "level": "S12G-cricket-jump",
+    "cel": 21,
+    "stage": [
+      492,
+      649
+    ],
+    "height": 84
+  },
+  "fairy": {
+    "level": "S12F-wand",
+    "cel": 14,
+    "stage": [
+      831,
+      442
+    ],
+    "height": 122
+  },
+  "last_pair_level": "S12G-embrace-release",
+  "last_pair_cel": 25
+}

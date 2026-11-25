@@ -1,0 +1,28 @@
+{
+  "cuts": {
+    "S12-C31": {
+      "lead_frames": 7,
+      "tail_frames": 6
+    },
+    "S12-C32": {
+      "lead_frames": 12,
+      "tail_frames": 12
+    },
+    "S12-C33": {
+      "lead_frames": 108,
+      "tail_frames": 12,
+      "marks": {
+        "hug_hand_contact": 70,
+        "hug_joint_settle": 98
+      }
+    },
+    "S12-C34": {
+      "lead_frames": 24,
+      "tail_frames": 84,
+      "marks": {
+        "cricket_landed": 28,
+        "hug_release_complete": 135
+      }
+    }
+  }
+}

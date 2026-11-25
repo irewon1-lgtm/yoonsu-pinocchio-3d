@@ -1,0 +1,33 @@
+{
+  "cut": "S12-C30",
+  "output": "/workspace/scratch/s12-full/s12-c30-motion-review.mp4",
+  "output_sha256": "13382c8f76765f8dd56ee9852cc918792e89eab351c232b0b2f282352b3b3fe9",
+  "decoded_video": {
+    "codec_name": "h264",
+    "width": 1920,
+    "height": 1080,
+    "r_frame_rate": "24/1",
+    "nb_read_frames": "244"
+  },
+  "exact_original_first_and_final_cel_pixels": true,
+  "preserved_child_stage_root_all_frames": [
+    561,
+    643
+  ],
+  "opening_reuses_c29_crop": [
+    420,
+    271,
+    694
+  ],
+  "end_hands_face_crop": [
+    440,
+    399,
+    297
+  ],
+  "distinct_camera_crops": 70,
+  "prior_last_vs_first_decoded_rgb_mean_absolute_error_0_255": 0.7703,
+  "human_form_complete_frame": 136,
+  "narration_starts_frame": 144,
+  "narration_id": "S12-U028",
+  "stage_cells": 96
+}

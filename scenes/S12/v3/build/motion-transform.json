@@ -1,0 +1,8 @@
+{
+  "cuts": {
+    "S12-C30": {
+      "lead_frames": 144,
+      "tail_frames": 6
+    }
+  }
+}

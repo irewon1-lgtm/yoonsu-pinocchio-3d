@@ -98,7 +98,7 @@ def arrange(edit, dry, quiet_gates, excerpt_offset):
     if "S12-C50" in cuts:
         cut = cuts["S12-C50"]
         motif_path = SCENES / "S05/production/drum-flute-motif.wav"
-        phrase = helper["read_pcm"](motif_path)
+        phrase = prior["read_pcm"](motif_path)
         end_voice = cut["audio"][-1]["sample_end_exclusive"]
         if len(phrase) != 3*RATE:
             raise ValueError("S12 needs the existing three-second closing motif")

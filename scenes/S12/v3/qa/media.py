@@ -48,14 +48,18 @@ def examine(mp4, edit_path):
     with mp4.open("rb") as media:
         checksum=file_digest(media,"sha256").hexdigest()
     require(report["output_sha256"]==checksum,"Media SHA differs from the photographic receipt")
-    # A single decode pass on each new delivered movie detects stream corruption.
-    subprocess.run(["ffmpeg","-hide_banner","-v","error","-xerror","-threads","2","-i",str(mp4),
-                    "-map","0:v:0","-map","0:a:0","-f","null","-"],check=True)
+    # Detect black frames in the same decode pass used to check stream integrity.
+    decoded = subprocess.run(
+        ["ffmpeg","-hide_banner","-nostats","-v","info","-xerror","-threads","2","-i",str(mp4),
+         "-map","0:v:0","-map","0:a:0","-vf","blackdetect=d=0.04:pic_th=0.99:pix_th=0.10",
+         "-f","null","-"], stdout=subprocess.DEVNULL, stderr=subprocess.PIPE, text=True)
+    require(decoded.returncode==0, decoded.stderr)
+    require("black_start:" not in decoded.stderr, "Movie contains a fully black frame")
     return {"status":"PASS","video":{"width":1920,"height":1080,"fps":FPS,"frames":edit["frames"],
             "codec":"h264","duration_seconds":length},"audio":{"codec":"aac","sample_rate":int(audio["sample_rate"])},
             "srt":"mov_text","sha256":checksum,"shot_ids":report["cuts"],
             "spoken_lines":sum(len(cut["audio"]) for cut in edit["cuts"]),
-            "model_cues":len(edit.get("events",[])),"chapters_outside_story_clock":True,
+            "model_cues":len(edit.get("events",[])),"chapters_outside_story_clock":True,"black_frames":0,
             "listening":"NOT_RUN","android_microphone":"NOT_RUN"}
 
 

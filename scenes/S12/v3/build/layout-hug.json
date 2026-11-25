@@ -1,0 +1,572 @@
+[
+  {
+    "id": "S12-C31",
+    "plate": "S11L-school-open.png@454,299,550",
+    "layout": [
+      {
+        "track": "open-door",
+        "level": "S12F-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "flip": false
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "flip": false
+      },
+      {
+        "track": "upright-guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "flip": false
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          510,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "flip": true
+      },
+      {
+        "track": "Fairy",
+        "level": "S12F-wand",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 14,
+        "motion": "hold",
+        "flip": false
+      },
+      {
+        "track": "Geppetto-fairy-look",
+        "level": "S12F-gep-up",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 5,
+        "motion": "hold",
+        "flip": false,
+        "span": [
+          "start",
+          "lead-point:1.0"
+        ]
+      },
+      {
+        "track": "Geppetto-to-child",
+        "level": "S12H-gep-surprise-open",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "span": [
+          "lead-point:1.0",
+          "end"
+        ]
+      },
+      {
+        "track": "Pinocchio",
+        "level": "S12G-first-revelation",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 16,
+        "motion": "story",
+        "flip": false,
+        "exposure_frames": [
+          2,
+          2,
+          3,
+          3,
+          4,
+          6,
+          8,
+          10,
+          13,
+          12,
+          9,
+          10,
+          8,
+          15,
+          12,
+          12,
+          11
+        ],
+        "mouth": {
+          "speaker": "피노키오"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S12-C32",
+    "plate": "S11L-school-open.png@477,292,505",
+    "layout": [
+      {
+        "track": "open-door",
+        "level": "S12F-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "flip": false
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "flip": false
+      },
+      {
+        "track": "upright-guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "flip": false
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          510,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "flip": true
+      },
+      {
+        "track": "Fairy",
+        "level": "S12F-wand",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 14,
+        "motion": "hold",
+        "flip": false
+      },
+      {
+        "track": "Geppetto",
+        "level": "S12G-grandpa-recognition",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 7,
+        "motion": "story",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          7,
+          18,
+          47,
+          33,
+          31,
+          15
+        ],
+        "mouth": {
+          "speaker": "제페토"
+        }
+      },
+      {
+        "track": "Pinocchio",
+        "level": "S12G-first-revelation",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 16,
+        "motion": "hold",
+        "flip": false
+      }
+    ]
+  },
+  {
+    "id": "S12-C33",
+    "plate": "S11L-school-open.png@415,272,713",
+    "layout": [
+      {
+        "track": "open-door",
+        "level": "S12F-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "flip": false
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "flip": false
+      },
+      {
+        "track": "upright-guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "flip": false
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          510,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "flip": true
+      },
+      {
+        "track": "Fairy",
+        "level": "S12F-wand",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 14,
+        "motion": "hold",
+        "flip": false
+      },
+      {
+        "track": "paired-approach",
+        "level": "S12G-embrace-approach",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 25,
+        "motion": "lead",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          4,
+          5,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          4,
+          4,
+          3,
+          4,
+          3,
+          4,
+          4,
+          3,
+          4,
+          4,
+          5,
+          5,
+          6,
+          5,
+          5,
+          5
+        ],
+        "span": [
+          "start",
+          "before:S12-N020"
+        ]
+      },
+      {
+        "track": "paired-hold-adult-cue",
+        "level": "S12G-embrace-adult-talk",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 7,
+        "motion": "story",
+        "flip": false,
+        "exposure_frames": [
+          2,
+          1,
+          6,
+          9,
+          11,
+          14,
+          12,
+          13
+        ],
+        "span": [
+          "before:S12-N020",
+          "before:S12-N021"
+        ],
+        "mouth": {
+          "speaker": "제페토"
+        }
+      },
+      {
+        "track": "paired-hold-child-cue",
+        "level": "S12G-embrace-child-talk",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 5,
+        "motion": "story",
+        "flip": false,
+        "exposure_frames": [
+          7,
+          9,
+          10,
+          9,
+          6,
+          5
+        ],
+        "span": [
+          "before:S12-N021",
+          "end"
+        ],
+        "mouth": {
+          "speaker": "피노키오"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S12-C34",
+    "plate": "S11L-school-open.png@383,239,845",
+    "layout": [
+      {
+        "track": "open-door",
+        "level": "S12F-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "flip": false
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "flip": false
+      },
+      {
+        "track": "upright-guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "flip": false
+      },
+      {
+        "track": "Fairy",
+        "level": "S12F-wand",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 14,
+        "motion": "hold",
+        "flip": false
+      },
+      {
+        "track": "Cricket",
+        "level": "S12G-cricket-jump",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 21,
+        "motion": "story",
+        "flip": false,
+        "exposure_frames": [
+          5,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          6
+        ],
+        "mouth": {
+          "speaker": "귀뚜라미"
+        }
+      },
+      {
+        "track": "paired-release",
+        "level": "S12G-embrace-release",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 25,
+        "motion": "story",
+        "flip": false,
+        "exposure_frames": [
+          5,
+          5,
+          6,
+          5,
+          5,
+          5,
+          6,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          6,
+          5,
+          5,
+          6,
+          5,
+          5,
+          5
+        ]
+      }
+    ]
+  }
+]

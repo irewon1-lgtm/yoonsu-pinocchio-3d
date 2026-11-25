@@ -1,0 +1,2039 @@
+[
+  {
+    "id": "S12-C43",
+    "plate": "S11L-school-open.png@423,277,700",
+    "layout": [
+      {
+        "track": "door",
+        "level": "S12F-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold"
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold"
+      },
+      {
+        "track": "guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold"
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12H-gep-palms-demo",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "during": [
+          0,
+          "lead@0.277777777778"
+        ]
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12F-gep-quiet",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "during": [
+          "lead@0.277777777778",
+          1
+        ]
+      },
+      {
+        "track": "Cricket",
+        "level": "S12G-cricket-jump",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 21,
+        "motion": "hold",
+        "during": [
+          0,
+          "lead@0.277777777778"
+        ]
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          492,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "flip": true,
+        "during": [
+          "lead@0.277777777778",
+          1
+        ]
+      },
+      {
+        "track": "Fairy",
+        "level": "S12F-wand",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 14,
+        "motion": "hold",
+        "during": [
+          0,
+          "lead@0.250000000000"
+        ]
+      },
+      {
+        "track": "Fairy",
+        "level": "S12FL-talking",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "mouth": {
+          "speaker": "파란 요정"
+        },
+        "during": [
+          "lead@0.250000000000",
+          1
+        ]
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "during": [
+          0,
+          "lead@0.305555555556"
+        ]
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 1,
+        "motion": "hold",
+        "during": [
+          "lead@0.305555555556",
+          "lead@0.611111111111"
+        ]
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "span": [
+          "lead-point:0.6111111111111112",
+          "after:S12-U034"
+        ]
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 3,
+        "motion": "hold",
+        "span": [
+          "after:S12-U034",
+          "before:S12-U035"
+        ]
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "span": [
+          "before:S12-U035",
+          "end"
+        ],
+        "mouth": {
+          "speaker": "피노키오"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S12-C44",
+    "plate": "S11L-school-open.png@434,265,722",
+    "layout": [
+      {
+        "track": "door",
+        "level": "S12F-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold"
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold"
+      },
+      {
+        "track": "guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold"
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12F-gep-quiet",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold"
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          492,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "flip": true
+      },
+      {
+        "track": "Fairy",
+        "level": "S12FL-lower",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 7,
+        "motion": "story",
+        "exposure_frames": [
+          3,
+          4,
+          4,
+          5,
+          5,
+          5,
+          6,
+          7
+        ],
+        "flip": true
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "during": [
+          0,
+          "lead@0.216666666667"
+        ],
+        "mouth": {
+          "speaker": "피노키오"
+        }
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 1,
+        "motion": "hold",
+        "during": [
+          "lead@0.216666666667",
+          "lead@0.516666666667"
+        ],
+        "mouth": {
+          "speaker": "피노키오"
+        }
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 9,
+        "motion": "hold",
+        "during": [
+          "lead@0.516666666667",
+          1
+        ],
+        "mouth": {
+          "speaker": "피노키오"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S12-C45",
+    "plate": "S11L-school-open.png",
+    "layout": [
+      {
+        "track": "door",
+        "level": "S12F-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold"
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold"
+      },
+      {
+        "track": "guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold"
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12F-gep-quiet",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold"
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          492,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "flip": true
+      },
+      {
+        "track": "Fairy",
+        "level": "S12FL-lower",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "flip": true,
+        "during": [
+          0,
+          "lead@0.190476190476"
+        ]
+      },
+      {
+        "track": "Fairy",
+        "level": "S12FL-wave",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 6,
+        "motion": "story",
+        "exposure_frames": [
+          2,
+          4,
+          5,
+          5,
+          4,
+          4,
+          3
+        ],
+        "flip": true,
+        "during": [
+          "lead@0.190476190476",
+          "lead@0.351190476190"
+        ]
+      },
+      {
+        "track": "Fairy",
+        "level": "S12FL-retreat",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 31,
+        "motion": "story",
+        "exposure_frames": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          5
+        ],
+        "root_offsets": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            3,
+            -2
+          ],
+          [
+            6,
+            -4
+          ],
+          [
+            9,
+            -8
+          ],
+          [
+            13,
+            -12
+          ],
+          [
+            17,
+            -18
+          ],
+          [
+            22,
+            -25
+          ],
+          [
+            27,
+            -34
+          ],
+          [
+            33,
+            -45
+          ],
+          [
+            39,
+            -58
+          ],
+          [
+            45,
+            -72
+          ],
+          [
+            51,
+            -88
+          ],
+          [
+            56,
+            -104
+          ],
+          [
+            62,
+            -122
+          ],
+          [
+            67,
+            -140
+          ],
+          [
+            71,
+            -159
+          ],
+          [
+            75,
+            -177
+          ],
+          [
+            78,
+            -194
+          ],
+          [
+            80,
+            -211
+          ],
+          [
+            81,
+            -227
+          ],
+          [
+            82,
+            -241
+          ],
+          [
+            82,
+            -254
+          ],
+          [
+            81,
+            -265
+          ],
+          [
+            79,
+            -274
+          ],
+          [
+            78,
+            -282
+          ],
+          [
+            76,
+            -288
+          ],
+          [
+            75,
+            -293
+          ],
+          [
+            73,
+            -296
+          ],
+          [
+            72,
+            -298
+          ],
+          [
+            72,
+            -299
+          ]
+        ],
+        "flight": [
+          0,
+          31
+        ],
+        "during": [
+          "lead@0.351190476190",
+          "lead@0.809523809524"
+        ]
+      },
+      {
+        "track": "Fairy",
+        "level": "S12FL-talking",
+        "root": [
+          903,
+          143
+        ],
+        "height": 64,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "during": [
+          "lead@0.809523809524",
+          1
+        ]
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 9,
+        "motion": "hold",
+        "during": [
+          "lead@0.000000000000",
+          "lead@0.041666666667"
+        ],
+        "mouth": {
+          "speaker": "피노키오"
+        }
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 1,
+        "motion": "hold",
+        "during": [
+          "lead@0.041666666667",
+          "lead@0.101190476190"
+        ],
+        "mouth": {
+          "speaker": "피노키오"
+        }
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 4,
+        "motion": "hold",
+        "during": [
+          "lead@0.101190476190",
+          "lead@0.160714285714"
+        ],
+        "mouth": {
+          "speaker": "피노키오"
+        }
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 5,
+        "motion": "hold",
+        "during": [
+          "lead@0.160714285714",
+          "lead@0.220238095238"
+        ],
+        "mouth": {
+          "speaker": "피노키오"
+        }
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 6,
+        "motion": "hold",
+        "during": [
+          "lead@0.220238095238",
+          "lead@0.285714285714"
+        ],
+        "mouth": {
+          "speaker": "피노키오"
+        }
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 5,
+        "motion": "hold",
+        "during": [
+          "lead@0.285714285714",
+          "lead@0.357142857143"
+        ],
+        "mouth": {
+          "speaker": "피노키오"
+        }
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 6,
+        "motion": "hold",
+        "during": [
+          "lead@0.357142857143",
+          "lead@0.428571428571"
+        ],
+        "mouth": {
+          "speaker": "피노키오"
+        }
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 5,
+        "motion": "hold",
+        "during": [
+          "lead@0.428571428571",
+          "lead@0.505952380952"
+        ],
+        "mouth": {
+          "speaker": "피노키오"
+        }
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 4,
+        "motion": "hold",
+        "during": [
+          "lead@0.505952380952",
+          "lead@0.583333333333"
+        ],
+        "mouth": {
+          "speaker": "피노키오"
+        }
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 1,
+        "motion": "hold",
+        "during": [
+          "lead@0.583333333333",
+          "lead@0.684523809524"
+        ],
+        "mouth": {
+          "speaker": "피노키오"
+        }
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 9,
+        "motion": "hold",
+        "during": [
+          "lead@0.684523809524",
+          "lead@0.845238095238"
+        ],
+        "mouth": {
+          "speaker": "피노키오"
+        }
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "during": [
+          "lead@0.845238095238",
+          1
+        ],
+        "mouth": {
+          "speaker": "피노키오"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S12-C46",
+    "plate": "S11L-school-open.png@309,171,927",
+    "layout": [
+      {
+        "track": "door",
+        "level": "S12K-opening-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 12,
+        "motion": "story",
+        "exposure_frames": [
+          7,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold"
+      },
+      {
+        "track": "guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold"
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          492,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "flip": true
+      },
+      {
+        "track": "Fairy",
+        "level": "S12FL-talking",
+        "root": [
+          903,
+          143
+        ],
+        "height": 64,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "flip": true
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12F-gep-quiet",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "during": [
+          0,
+          "lead@0.047619047619"
+        ]
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12K-gep-walk",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "during": [
+          "lead@0.047619047619",
+          "lead@0.130952380952"
+        ]
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12K-gep-walk",
+        "root": [
+          683,
+          630
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 1,
+        "motion": "hold",
+        "during": [
+          "lead@0.130952380952",
+          "lead@0.202380952381"
+        ]
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12K-gep-walk",
+        "root": [
+          700,
+          628
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "during": [
+          "lead@0.202380952381",
+          "lead@0.273809523810"
+        ]
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12K-gep-walk",
+        "root": [
+          720,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 3,
+        "motion": "hold",
+        "during": [
+          "lead@0.273809523810",
+          "lead@0.345238095238"
+        ]
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12K-gep-walk",
+        "root": [
+          741,
+          628
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 4,
+        "motion": "hold",
+        "during": [
+          "lead@0.345238095238",
+          "lead@0.416666666667"
+        ]
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12K-gep-walk",
+        "root": [
+          760,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 5,
+        "motion": "hold",
+        "during": [
+          "lead@0.416666666667",
+          "lead@0.488095238095"
+        ]
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12K-gep-walk",
+        "root": [
+          782,
+          627
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 6,
+        "motion": "hold",
+        "during": [
+          "lead@0.488095238095",
+          "lead@0.559523809524"
+        ]
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12K-gep-walk",
+        "root": [
+          801,
+          628
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 1,
+        "motion": "hold",
+        "during": [
+          "lead@0.559523809524",
+          "lead@0.630952380952"
+        ]
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12K-gep-walk",
+        "root": [
+          821,
+          627
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "during": [
+          "lead@0.630952380952",
+          "lead@0.702380952381"
+        ]
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12K-gep-walk",
+        "root": [
+          840,
+          628
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 3,
+        "motion": "hold",
+        "during": [
+          "lead@0.702380952381",
+          "lead@0.761904761905"
+        ]
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12K-gep-walk",
+        "root": [
+          857,
+          628
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 4,
+        "motion": "hold",
+        "during": [
+          "lead@0.761904761905",
+          "lead@0.821428571429"
+        ]
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12K-gep-walk",
+        "root": [
+          872,
+          628
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "during": [
+          "lead@0.821428571429",
+          "lead@0.880952380952"
+        ]
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12K-gep-end-wave",
+        "root": [
+          872,
+          628
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "during": [
+          "lead@0.880952380952",
+          1
+        ]
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "during": [
+          0,
+          "lead@0.166666666667"
+        ]
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 9,
+        "motion": "hold",
+        "during": [
+          "lead@0.166666666667",
+          "lead@0.297619047619"
+        ]
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 1,
+        "motion": "hold",
+        "during": [
+          "lead@0.297619047619",
+          "lead@0.523809523810"
+        ]
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "during": [
+          "lead@0.523809523810",
+          "lead@0.869047619048"
+        ]
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 1,
+        "motion": "hold",
+        "during": [
+          "lead@0.869047619048",
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S12-C47",
+    "plate": "S11L-school-open.png@456,272,750",
+    "layout": [
+      {
+        "track": "door",
+        "level": "S12K-opening-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 12,
+        "motion": "hold"
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold"
+      },
+      {
+        "track": "guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold"
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12K-gep-end-wave",
+        "root": [
+          872,
+          628
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold"
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          492,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "flip": true
+      },
+      {
+        "track": "Fairy",
+        "level": "S12FL-talking",
+        "root": [
+          903,
+          143
+        ],
+        "height": 64,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "flip": true
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 1,
+        "motion": "hold",
+        "during": [
+          0,
+          "lead@0.500000000000"
+        ]
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 8,
+        "motion": "hold",
+        "during": [
+          "lead@0.500000000000",
+          "lead@1.000000000000"
+        ]
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 8,
+        "motion": "hold",
+        "during": [
+          "lead@1.000000000000",
+          "story@0.5800000000"
+        ]
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 1,
+        "motion": "hold",
+        "during": [
+          "story@0.5800000000",
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S12-C48",
+    "plate": "S11L-school-open.png@211,68,1050",
+    "layout": [
+      {
+        "track": "door",
+        "level": "S12K-opening-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 12,
+        "motion": "hold"
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold"
+      },
+      {
+        "track": "guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold"
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12K-gep-end-wave",
+        "root": [
+          872,
+          628
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold"
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          492,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "flip": true
+      },
+      {
+        "track": "Fairy",
+        "level": "S12FL-talking",
+        "root": [
+          903,
+          143
+        ],
+        "height": 64,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "mouth": {
+          "speaker": "파란 요정"
+        }
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 1,
+        "motion": "hold",
+        "during": [
+          0,
+          "lead@0.305555555556"
+        ]
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "during": [
+          "lead@0.305555555556",
+          "lead@0.805555555556"
+        ]
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 1,
+        "motion": "hold",
+        "during": [
+          "lead@0.805555555556",
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S12-C49",
+    "plate": "S11L-school-open.png",
+    "layout": [
+      {
+        "track": "door",
+        "level": "S12K-opening-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 12,
+        "motion": "hold"
+      },
+      {
+        "track": "guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold"
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12K-gep-end-wave",
+        "root": [
+          872,
+          628
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold"
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          492,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "flip": true
+      },
+      {
+        "track": "Fairy",
+        "level": "S12FL-talking",
+        "root": [
+          903,
+          143
+        ],
+        "height": 64,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "flip": true
+      },
+      {
+        "track": "child",
+        "level": "S12K-walking-child",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 13,
+        "last_cel": 24,
+        "motion": "story",
+        "exposure_frames": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          10,
+          10,
+          11,
+          12
+        ],
+        "during": [
+          "lead@0.797297297297",
+          1
+        ]
+      },
+      {
+        "track": "teacher",
+        "level": "S12RL-teacher-yield",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "during": [
+          "lead@0.000000000000",
+          "lead@0.087837837838"
+        ]
+      },
+      {
+        "track": "teacher",
+        "level": "S12RL-teacher-yield",
+        "root": [
+          752,
+          555
+        ],
+        "height": 193,
+        "anchor": "support",
+        "first_cel": 1,
+        "last_cel": 1,
+        "motion": "hold",
+        "during": [
+          "lead@0.087837837838",
+          "lead@0.141891891892"
+        ]
+      },
+      {
+        "track": "teacher",
+        "level": "S12RL-teacher-yield",
+        "root": [
+          752,
+          555
+        ],
+        "height": 193,
+        "anchor": "support",
+        "first_cel": 2,
+        "last_cel": 2,
+        "motion": "hold",
+        "during": [
+          "lead@0.141891891892",
+          "lead@0.189189189189"
+        ]
+      },
+      {
+        "track": "teacher",
+        "level": "S12RL-teacher-yield",
+        "root": [
+          752,
+          555
+        ],
+        "height": 193,
+        "anchor": "support",
+        "first_cel": 3,
+        "last_cel": 3,
+        "motion": "hold",
+        "during": [
+          "lead@0.189189189189",
+          "lead@0.250000000000"
+        ]
+      },
+      {
+        "track": "teacher",
+        "level": "S12RL-teacher-yield",
+        "root": [
+          710,
+          565
+        ],
+        "height": 193,
+        "anchor": "support",
+        "first_cel": 4,
+        "last_cel": 4,
+        "motion": "hold",
+        "during": [
+          "lead@0.250000000000",
+          "lead@0.290540540541"
+        ]
+      },
+      {
+        "track": "teacher",
+        "level": "S12RL-teacher-yield",
+        "root": [
+          710,
+          565
+        ],
+        "height": 193,
+        "anchor": "support",
+        "first_cel": 5,
+        "last_cel": 5,
+        "motion": "hold",
+        "during": [
+          "lead@0.290540540541",
+          1
+        ]
+      },
+      {
+        "track": "child",
+        "level": "S12K-human-acting",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 1,
+        "motion": "hold",
+        "during": [
+          0,
+          "lead@0.081081081081"
+        ]
+      },
+      {
+        "track": "child",
+        "level": "S12K-walking-child",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 12,
+        "motion": "story",
+        "exposure_frames": [
+          10,
+          7,
+          8,
+          8,
+          9,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "during": [
+          "lead@0.081081081081",
+          "lead@0.797297297297"
+        ]
+      }
+    ],
+    "camera_cues": [
+      {
+        "frame": 0,
+        "crop": [
+          387,
+          211,
+          830
+        ]
+      },
+      {
+        "frame": 55,
+        "crop": [
+          421,
+          225,
+          815
+        ],
+        "interpolate": true
+      },
+      {
+        "frame": 134,
+        "crop": [
+          438,
+          210,
+          825
+        ],
+        "interpolate": true
+      }
+    ]
+  },
+  {
+    "id": "S12-C50",
+    "plate": "S11L-school-open.png",
+    "layout": [
+      {
+        "track": "sky-cloud",
+        "level": "S12K-cloud",
+        "root": [
+          465,
+          35
+        ],
+        "height": 42,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 8,
+        "motion": "story",
+        "exposure_frames": [
+          10,
+          10,
+          10,
+          11,
+          11,
+          11,
+          11,
+          11,
+          12
+        ],
+        "drift_x": 36,
+        "drift_y": -4,
+        "flight": [
+          0,
+          8
+        ]
+      },
+      {
+        "track": "door",
+        "level": "S12K-opening-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 12,
+        "motion": "hold"
+      },
+      {
+        "track": "child-inside",
+        "level": "S12K-walking-child",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 24,
+        "last_cel": 28,
+        "motion": "story",
+        "exposure_frames": [
+          4,
+          8,
+          8,
+          8,
+          9
+        ],
+        "during": [
+          0,
+          "lead@0.770833333333"
+        ]
+      },
+      {
+        "track": "teacher",
+        "level": "S12RL-teacher-yield",
+        "root": [
+          710,
+          565
+        ],
+        "height": 193,
+        "anchor": "support",
+        "first_cel": 5,
+        "motion": "hold"
+      },
+      {
+        "track": "guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold"
+      },
+      {
+        "track": "Grandpa",
+        "level": "S12K-gep-end-wave",
+        "root": [
+          872,
+          628
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 3,
+        "motion": "story",
+        "exposure_frames": [
+          12,
+          12,
+          14,
+          16
+        ],
+        "flip": false
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          492,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "last_cel": 4,
+        "motion": "story",
+        "exposure_frames": [
+          12,
+          7,
+          10
+        ],
+        "flip": true
+      },
+      {
+        "track": "end-title",
+        "level": "S12K-end-title",
+        "root": [
+          640,
+          176
+        ],
+        "height": 130,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 8,
+        "motion": "story",
+        "exposure_frames": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "span": [
+          "after:S12-U044",
+          "end"
+        ]
+      }
+    ],
+    "camera_cues": [
+      {
+        "frame": 0,
+        "crop": [
+          338,
+          175,
+          918
+        ]
+      },
+      {
+        "frame": 84,
+        "crop": [
+          0,
+          0,
+          1280
+        ],
+        "interpolate": true
+      }
+    ]
+  }
+]

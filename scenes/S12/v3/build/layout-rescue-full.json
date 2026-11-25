@@ -1,0 +1,2008 @@
+[
+  {
+    "id": "S12-C06",
+    "plate": "S12X-school-recess.png@243,275,768",
+    "layout": [
+      {
+        "track": "door",
+        "level": "S11L-school-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "teacher",
+        "level": "S11L-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "last_cel": 7,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "gep",
+        "level": "S12R-gep-talk",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "gust",
+        "level": "S12O-leaf",
+        "root": [
+          482,
+          596
+        ],
+        "height": 12,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 15,
+        "motion": "story",
+        "flip": false,
+        "active_frames": 33,
+        "start": 0.01,
+        "end": 0.3,
+        "drift_x": -154,
+        "drift_y": -18
+      },
+      {
+        "track": "cricket",
+        "level": "S12X-cricket-entry",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 28,
+        "motion": "lead",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          1,
+          3,
+          4,
+          4,
+          4,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          2,
+          2,
+          4,
+          1,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "during": [
+          "lead@0",
+          "lead@1"
+        ]
+      },
+      {
+        "track": "cricket",
+        "level": "S12R-cricket-talk",
+        "root": [
+          377,
+          580
+        ],
+        "height": 72,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "mouth": {
+          "speaker": "귀뚜라미"
+        },
+        "during": [
+          "lead@1",
+          1
+        ]
+      },
+      {
+        "track": "sign",
+        "level": "S12X-sign-06",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 26,
+        "motion": "lead",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          1,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1,
+          4,
+          4,
+          3,
+          1
+        ],
+        "during": [
+          "lead@0",
+          "lead@1"
+        ]
+      },
+      {
+        "track": "sign",
+        "level": "S12X-sign-settled",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1,
+        "during": [
+          "lead@1",
+          1
+        ]
+      },
+      {
+        "track": "jamb",
+        "level": "S12X-recess-foreground",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "pin",
+        "level": "S12X-pin-sees-tilt",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 28,
+        "motion": "lead",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          1,
+          4,
+          4,
+          4,
+          4,
+          4,
+          1,
+          3,
+          3,
+          1,
+          4,
+          1,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "during": [
+          "lead@0",
+          "lead@1"
+        ]
+      },
+      {
+        "track": "pin",
+        "level": "S12R-pin-listen-left",
+        "root": [
+          541,
+          630
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "during": [
+          "lead@1",
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S12-C07",
+    "plate": "S12X-school-recess.png@288,328,625",
+    "layout": [
+      {
+        "track": "door",
+        "level": "S11L-school-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "teacher",
+        "level": "S11L-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "last_cel": 7,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "gep",
+        "level": "S12R-gep-talk",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "cricket",
+        "level": "S12R-cricket-talk",
+        "root": [
+          377,
+          580
+        ],
+        "height": 72,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "mouth": {
+          "speaker": "귀뚜라미"
+        },
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "sign",
+        "level": "S12X-sign-settled",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "jamb",
+        "level": "S12X-recess-foreground",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "pin",
+        "level": "S12R-pin-listen-left",
+        "root": [
+          541,
+          630
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      }
+    ]
+  },
+  {
+    "id": "S12-C08",
+    "plate": "S12X-school-recess.png@286,306,680",
+    "layout": [
+      {
+        "track": "door",
+        "level": "S11L-school-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "teacher",
+        "level": "S11L-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "last_cel": 7,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "gep",
+        "level": "S12X-gep-travel-08",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 15,
+        "motion": "lead",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "during": [
+          "lead@0",
+          "lead@1"
+        ]
+      },
+      {
+        "track": "gep",
+        "level": "S12R-gep-talk",
+        "root": [
+          596,
+          594
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "during": [
+          "lead@1",
+          1
+        ]
+      },
+      {
+        "track": "cricket",
+        "level": "S12R-cricket-talk",
+        "root": [
+          377,
+          580
+        ],
+        "height": 72,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "mouth": {
+          "speaker": "귀뚜라미"
+        },
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "sign",
+        "level": "S12X-sign-settled",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "jamb",
+        "level": "S12X-recess-foreground",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "pin",
+        "level": "S12X-pin-action-08",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 15,
+        "motion": "lead",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "during": [
+          "lead@0",
+          "lead@1"
+        ]
+      },
+      {
+        "track": "pin",
+        "level": "S12R-pin-seat-talk",
+        "root": [
+          509,
+          625
+        ],
+        "height": 222,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "mouth": {
+          "speaker": "피노키오"
+        },
+        "during": [
+          "lead@1",
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S12-C09",
+    "plate": "S12X-school-recess.png@285,253,790",
+    "layout": [
+      {
+        "track": "door",
+        "level": "S11L-school-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "teacher",
+        "level": "S11L-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "last_cel": 7,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "gep",
+        "level": "S12X-gep-travel-09",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 12,
+        "motion": "lead",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "during": [
+          "lead@0",
+          "lead@1"
+        ]
+      },
+      {
+        "track": "gep",
+        "level": "S12R-gep-talk",
+        "root": [
+          533,
+          574
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "during": [
+          "lead@1",
+          1
+        ]
+      },
+      {
+        "track": "cricket",
+        "level": "S12R-cricket-talk",
+        "root": [
+          377,
+          580
+        ],
+        "height": 72,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "sign",
+        "level": "S12X-sign-settled",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "jamb",
+        "level": "S12X-recess-foreground",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "pin",
+        "level": "S12X-pin-action-09",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 14,
+        "motion": "lead",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1,
+          4,
+          4,
+          4,
+          2,
+          2,
+          3,
+          1
+        ],
+        "during": [
+          "lead@0",
+          "lead@1"
+        ]
+      },
+      {
+        "track": "pin",
+        "level": "S12R-pin-back-talk",
+        "root": [
+          509,
+          625
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "mouth": {
+          "speaker": "피노키오"
+        },
+        "during": [
+          "lead@1",
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S12-C10",
+    "plate": "S12X-school-recess.png@238,260,800",
+    "layout": [
+      {
+        "track": "door",
+        "level": "S11L-school-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "teacher",
+        "level": "S11L-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "last_cel": 7,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "gep",
+        "level": "S12X-gep-blocked-reach",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 24,
+        "motion": "lead",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          3,
+          1,
+          4,
+          4,
+          4,
+          3,
+          1,
+          4,
+          2,
+          2,
+          4,
+          1,
+          3,
+          4,
+          4,
+          4,
+          3,
+          1,
+          4,
+          4,
+          1,
+          2,
+          1
+        ],
+        "during": [
+          "lead@0",
+          "lead@1"
+        ]
+      },
+      {
+        "track": "gep",
+        "level": "S12R-gep-talk",
+        "root": [
+          533,
+          574
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "mouth": {
+          "speaker": "제페토"
+        },
+        "during": [
+          "lead@1",
+          1
+        ]
+      },
+      {
+        "track": "cricket",
+        "level": "S12R-cricket-talk",
+        "root": [
+          377,
+          580
+        ],
+        "height": 72,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "sign",
+        "level": "S12X-sign-settled",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "jamb",
+        "level": "S12X-recess-foreground",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "pin",
+        "level": "S12X-pin-action-10",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 19,
+        "motion": "lead",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "during": [
+          "lead@0",
+          "lead@1"
+        ]
+      },
+      {
+        "track": "pin",
+        "level": "S12R-pin-listen-left",
+        "root": [
+          509,
+          625
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "mouth": {
+          "speaker": "피노키오"
+        },
+        "during": [
+          "lead@1",
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S12-C11",
+    "plate": "S12X-school-recess.png@255,284,768",
+    "layout": [
+      {
+        "track": "door",
+        "level": "S11L-school-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "teacher",
+        "level": "S11L-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "last_cel": 7,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "gep",
+        "level": "S12R-gep-talk",
+        "root": [
+          533,
+          574
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "mouth": {
+          "speaker": "제페토"
+        },
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "cricket",
+        "level": "S12R-cricket-talk",
+        "root": [
+          377,
+          580
+        ],
+        "height": 72,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "sign",
+        "level": "S12X-sign-settled",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "jamb",
+        "level": "S12X-recess-foreground",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "pin",
+        "level": "S12R-pin-listen-left",
+        "root": [
+          509,
+          625
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 0.16
+      },
+      {
+        "track": "pin",
+        "level": "S12R-pin-listen-left",
+        "root": [
+          509,
+          625
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 6,
+        "last_cel": 6,
+        "motion": "hold",
+        "flip": false,
+        "start": 0.16,
+        "end": 0.193
+      },
+      {
+        "track": "pin",
+        "level": "S12R-pin-listen-left",
+        "root": [
+          509,
+          625
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0.193,
+        "end": 1
+      }
+    ]
+  },
+  {
+    "id": "S12-C12",
+    "plate": "S12X-school-recess.png@266,279,770",
+    "layout": [
+      {
+        "track": "door",
+        "level": "S11L-school-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "teacher",
+        "level": "S11L-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "last_cel": 7,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "gep",
+        "level": "S12R-gep-talk",
+        "root": [
+          533,
+          574
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "cricket",
+        "level": "S12R-cricket-talk",
+        "root": [
+          377,
+          580
+        ],
+        "height": 72,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "sign",
+        "level": "S12X-sign-settled",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "jamb",
+        "level": "S12X-recess-foreground",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "pin",
+        "level": "S12X-pin-action-12",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 54,
+        "motion": "story",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          1,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          1,
+          3,
+          4,
+          4,
+          3,
+          1,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "start": 0,
+        "end": 1
+      }
+    ]
+  },
+  {
+    "id": "S12-C13",
+    "plate": "S12X-school-recess.png@265,292,740",
+    "layout": [
+      {
+        "track": "door",
+        "level": "S11L-school-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "teacher",
+        "level": "S11L-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "last_cel": 7,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "gep",
+        "level": "S12R-gep-talk",
+        "root": [
+          533,
+          574
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": true,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "cricket",
+        "level": "S12X-cricket-escape",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 37,
+        "motion": "story",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          4,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1,
+          4,
+          4,
+          4
+        ],
+        "start": 0.0,
+        "end": 0.7291666666666666
+      },
+      {
+        "track": "sign",
+        "level": "S12X-sign-13",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 51,
+        "motion": "story",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          1,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          1,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "jamb",
+        "level": "S12X-recess-foreground",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "pin",
+        "level": "S12X-pin-action-13",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 51,
+        "motion": "story",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          1,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          1,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "cricket",
+        "level": "S12X-cricket-escape",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 38,
+        "last_cel": 51,
+        "motion": "story",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "start": 0.7291666666666666,
+        "end": 1.0
+      }
+    ]
+  },
+  {
+    "id": "S12-C14",
+    "plate": "S12X-school-recess.png@254,273,780",
+    "layout": [
+      {
+        "track": "door",
+        "level": "S11L-school-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "teacher",
+        "level": "S11L-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "last_cel": 7,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "gep",
+        "level": "S12X-gep-travel-14",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 54,
+        "motion": "story",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "sign",
+        "level": "S12X-sign-14",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 58,
+        "motion": "story",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          1,
+          1,
+          2,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "jamb",
+        "level": "S12X-recess-foreground",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 0,
+        "motion": "hold",
+        "flip": false,
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "pin",
+        "level": "S12X-pin-action-14",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 61,
+        "motion": "story",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          1,
+          1,
+          2,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          4,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1,
+          4,
+          4,
+          3,
+          1
+        ],
+        "start": 0,
+        "end": 1
+      },
+      {
+        "track": "cricket",
+        "level": "S12X-cricket-clear",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 57,
+        "motion": "story",
+        "flip": false,
+        "exposure_frames": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          1,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          1,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "start": 0,
+        "end": 1
+      }
+    ]
+  }
+]

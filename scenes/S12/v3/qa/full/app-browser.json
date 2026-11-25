@@ -1,0 +1,68 @@
+{
+  "result": "PASS",
+  "version": 19,
+  "verified_catalog_sha256": "676d52db8c1a9d7e3b8c91a93bf5409f1e7d31c9f04223aacd4471456317c210",
+  "routes": [
+    {
+      "route": "s11/index.html"
+    },
+    {
+      "route": "s12/index.html"
+    }
+  ],
+  "chapters_decoded": 11,
+  "gates": [
+    {
+      "id": "S12-P01",
+      "model_playback": "PASS",
+      "guardian": "PASS"
+    },
+    {
+      "id": "S12-P02",
+      "model_playback": "PASS",
+      "guardian": "PASS"
+    },
+    {
+      "id": "I21",
+      "model_playback": "PASS",
+      "guardian": "PASS"
+    },
+    {
+      "id": "S12-P03",
+      "model_playback": "PASS",
+      "guardian": "PASS"
+    },
+    {
+      "id": "S12-P04",
+      "model_playback": "PASS",
+      "guardian": "PASS"
+    },
+    {
+      "id": "S12-P05",
+      "model_playback": "PASS",
+      "guardian": "PASS"
+    },
+    {
+      "id": "S12-P06",
+      "model_playback": "PASS",
+      "guardian": "PASS"
+    },
+    {
+      "id": "S12-P07",
+      "model_playback": "PASS",
+      "guardian": "PASS"
+    },
+    {
+      "id": "S12-P08",
+      "model_playback": "PASS",
+      "guardian": "PASS"
+    },
+    {
+      "id": "S12-P09",
+      "model_playback": "PASS",
+      "guardian": "PASS"
+    }
+  ],
+  "playback": "decoded each actual chapter, sought to the prompt, observed model playback end, ran each reaction",
+  "android_device_microphone": "NOT_RUN"
+}

@@ -1,0 +1,27 @@
+{
+  "awaiting_input": {
+    "min_distance_stage_pixels": 13.601470508735444,
+    "opaque_overlap_pixels": 0
+  },
+  "accepted": {
+    "min_distance_stage_pixels": 0.0,
+    "opaque_overlap_pixels": 39
+  },
+  "C42": {
+    "tilted_cap_contact": {
+      "hand_opaque_overlap_at_red_cap": {
+        "near": 109,
+        "far": 11
+      },
+      "cap_rotation_degrees": -3.2
+    },
+    "straight_cap_contact": {
+      "hand_opaque_overlap_at_red_cap": {
+        "near": 70,
+        "far": 5
+      },
+      "cap_rotation_degrees": 0
+    }
+  },
+  "same_hug_end_cel_at_C35": true
+}

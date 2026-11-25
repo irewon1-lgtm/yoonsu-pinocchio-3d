@@ -1,0 +1,249 @@
+{
+  "character": "CHAR_YOONSU_HUMAN",
+  "angle": "three-quarter right",
+  "size": [
+    453,
+    755
+  ],
+  "reference_height": 583,
+  "stage": {
+    "root": [
+      561,
+      643
+    ],
+    "height": 236
+  },
+  "anchors": {
+    "stage": [
+      223,
+      665
+    ],
+    "left_heel": [
+      151,
+      651
+    ],
+    "left_toe": [
+      220,
+      653
+    ],
+    "right_heel": [
+      236,
+      642
+    ],
+    "right_toe": [
+      344,
+      651
+    ],
+    "near_ankle": [
+      168,
+      587
+    ],
+    "far_ankle": [
+      261,
+      585
+    ],
+    "near_knee": [
+      181,
+      540
+    ],
+    "far_knee": [
+      260,
+      541
+    ],
+    "near_hip": [
+      194,
+      471
+    ],
+    "far_hip": [
+      258,
+      470
+    ],
+    "neck": [
+      230,
+      297
+    ],
+    "hat": [
+      235,
+      143
+    ],
+    "bag": [
+      165,
+      365
+    ],
+    "near_shoulder": [
+      206,
+      331
+    ],
+    "near_cuff": [
+      181,
+      356
+    ],
+    "near_elbow": [
+      153,
+      397
+    ],
+    "near_wrist": [
+      143,
+      423
+    ],
+    "near_palm": [
+      137,
+      438
+    ],
+    "far_shoulder": [
+      294,
+      338
+    ],
+    "far_cuff": [
+      311,
+      360
+    ],
+    "far_elbow": [
+      335,
+      389
+    ],
+    "far_wrist": [
+      370,
+      424
+    ],
+    "far_palm": [
+      386,
+      438
+    ],
+    "near_eye": [
+      270,
+      240
+    ],
+    "far_eye": [
+      312,
+      230
+    ],
+    "mouth": [
+      300,
+      267
+    ]
+  },
+  "mouth_box": [
+    281,
+    248,
+    314,
+    279
+  ],
+  "alpha_bbox": [
+    86,
+    86,
+    413,
+    669
+  ],
+  "closed": "closed.png",
+  "closed_sha256": "e9858a450521a2dbd449d88c0d95e3d98a6f0744c66c8a8e66ae3b01c665ca1a",
+  "source": "imagegen-closed.png",
+  "source_sha256": "829ba0f4d1e02735bd2a0e5e72883973bd175a21e1114266035a1356d4b1fbbb",
+  "open": "open.png",
+  "open_sha256": "df5f849da9e5e9798eccc5c3ee4615874200ea474307b237f83ad1cf50f43a9c",
+  "eye_source": "imagegen-open.png",
+  "eye_source_sha256": "12024fd1f0dab1051efecd61d4b6e40cb1c34c7a0830ac45ce5e6cae98e69de1",
+  "visemes": {
+    "wide": {
+      "file": "speech-wide.png",
+      "sha256": "3fd39cf261368d79aa144017122f8835137dd518dfab792e1835a1e1f51fd8a3",
+      "source": "imagegen-ah.png",
+      "source_sha256": "a927ebece1a4fb7b3c2b1da791577d476b534bf57cb131cdcd609b041c3b7a65"
+    },
+    "small": {
+      "file": "speech-small.png",
+      "sha256": "83d10957014b23c1c316f67bc00f70c5650c3427307adc32cd7b40e884b7b9c3",
+      "source": "imagegen-oo.png",
+      "source_sha256": "53bd460150749b5db82ce2ceecca79733e56af3cd9a4312c226ab7607ee35a88"
+    }
+  },
+  "back_right": {
+    "file": "back-right.png",
+    "sha256": "21b482ba6e692940ab56f8e6be365cc4fac9c2ccd6a8f3c3b99d918962a2f9ac",
+    "source": "imagegen-back.png",
+    "source_sha256": "5eef4bd256be68a0080bf24a52f2cd45748b5cb7247b315324f038e2f404b9a2",
+    "angle": "three-quarter rear toward viewer right",
+    "stage": [
+      223,
+      665
+    ],
+    "anchors": {
+      "planted_left": [
+        166,
+        665
+      ],
+      "left_heel": [
+        120,
+        648
+      ],
+      "left_toe": [
+        205,
+        655
+      ],
+      "right_heel": [
+        253,
+        631
+      ],
+      "right_toe": [
+        337,
+        599
+      ],
+      "near_ankle": [
+        150,
+        589
+      ],
+      "far_ankle": [
+        270,
+        581
+      ],
+      "near_knee": [
+        178,
+        545
+      ],
+      "far_knee": [
+        251,
+        534
+      ],
+      "near_hip": [
+        202,
+        496
+      ],
+      "far_hip": [
+        243,
+        485
+      ],
+      "neck": [
+        227,
+        287
+      ],
+      "bag": [
+        184,
+        399
+      ],
+      "near_shoulder": [
+        266,
+        324
+      ],
+      "far_shoulder": [
+        164,
+        335
+      ],
+      "near_wrist": [
+        321,
+        446
+      ],
+      "far_wrist": [
+        113,
+        456
+      ],
+      "near_palm": [
+        328,
+        462
+      ],
+      "far_palm": [
+        110,
+        475
+      ]
+    }
+  }
+}
