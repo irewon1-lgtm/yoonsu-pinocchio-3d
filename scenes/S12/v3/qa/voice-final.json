@@ -1,0 +1,4152 @@
+{
+  "voice_input_authority": "S12_FINAL_PRODUCTION_READY_V3",
+  "verified_recordings": 81,
+  "expected": 81,
+  "available_kinds": {
+    "ORIGINAL": 44,
+    "NEW": 27,
+    "EXTERNAL_MODEL": 10
+  },
+  "dual_exact_word_matches": 77,
+  "missing": [],
+  "approved_actor_references": "PASS",
+  "direct_pronunciation_emotion_and_mix_listening": "NOT_RUN",
+  "direct_listening_limit": "The environment has no assistant audio input.",
+  "signals": [
+    {
+      "id": "S12-U001",
+      "speaker": "내레이션",
+      "text": "Pinocchio was almost inside the school.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "a23f093f96572d0d4270d62479aa2ac750e93d86bd26ae119ac38e4fd0280d64",
+      "frames": 63059,
+      "rate": 22050,
+      "seconds": 2.8598185941043086,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 24218,
+      "rms_dbfs": -19.7,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Pinocchio was almost inside the school.",
+          "tokenizer_text": "Pinocchio was almost inside the school.",
+          "seed": 9510093,
+          "emo_vector": [
+            0.283,
+            0.0,
+            0.016,
+            0.009,
+            0.0,
+            0.049,
+            0.095,
+            0.33
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.7390516996383667,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "503d7469910a35b78b221efe3e90066d7b68a28dc51d5815d861bfd852141ef6",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2609788775444031,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N001",
+      "speaker": "제페토",
+      "text": "Look, the door is open.",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "f39b5d2acb87674dbb1d9ed710f169904eb6ae24dd482e0f4a0047a2ca3b0346",
+      "frames": 55789,
+      "rate": 22050,
+      "seconds": 2.530113378684807,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 22558,
+      "rms_dbfs": -20.32,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Look, the door is open.",
+          "tokenizer_text": "Look, the door is open.",
+          "seed": 18457133,
+          "emo_vector": [
+            0.283,
+            0.0,
+            0.016,
+            0.009,
+            0.0,
+            0.049,
+            0.095,
+            0.33
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.6884035468101501,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.28611886501312256,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N002",
+      "speaker": "제페토",
+      "text": "Yoonsu, can you help him look inside?",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "348b9dbf839149f12436a9dbf0d3c775971791d984cd7f9ca78f8ac5202e3421",
+      "frames": 73542,
+      "rate": 22050,
+      "seconds": 3.335238095238095,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 22507,
+      "rms_dbfs": -19.1,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Yoonsu, can you help him look inside?",
+          "tokenizer_text": "Yoon Soo, can you help him look inside?",
+          "seed": 18387277,
+          "emo_vector": [
+            0.205,
+            0.0,
+            0.021,
+            0.019,
+            0.0,
+            0.07,
+            0.108,
+            0.365
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.6868762969970703,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2884843945503235,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N003",
+      "speaker": "피노키오",
+      "text": "I can see inside!",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "2009f798fc96077239b605b52e44f0551c7f26af90e3ee0aa9b078acfe76f40c",
+      "frames": 54272,
+      "rate": 22050,
+      "seconds": 2.461315192743764,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28835,
+      "rms_dbfs": -21.11,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "I can see inside!",
+          "tokenizer_text": "I can see inside!",
+          "seed": 15864675,
+          "emo_vector": [
+            0.245,
+            0.0,
+            0.018,
+            0.013,
+            0.0,
+            0.06,
+            0.151,
+            0.3
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.8945372104644775,
+          "vocoder_linear_gain": 0.9837489035733581
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.40442168712615967,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N004",
+      "speaker": "귀뚜라미",
+      "text": "I'm right here.",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "4449ca51c13e6579b0dfe770efaef470d2d233ce2f685b6a47f7f63b7b7d5029",
+      "frames": 24359,
+      "rate": 22050,
+      "seconds": 1.104716553287982,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28835,
+      "rms_dbfs": -17.89,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "I'm right here.",
+          "tokenizer_text": "I'm right here.",
+          "seed": 8365248,
+          "emo_vector": [
+            0.22,
+            0.0,
+            0.026,
+            0.026,
+            0.0,
+            0.077,
+            0.063,
+            0.375
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 1.033909559249878,
+          "vocoder_linear_gain": 0.851138276193575
+        }
+      ],
+      "reference_sha256": "67bcfacbbc0786df4bcb2526f493ce9ed3b6fd97ef051ad3d05220c3d46d4316",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.17542564868927002,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N005",
+      "speaker": "제페토",
+      "text": "A little breeze!",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "35ce6eafc9f986f095a60eedb2a74351fb23a8de0292cd43094abe25a00d88c6",
+      "frames": 52753,
+      "rate": 22050,
+      "seconds": 2.3924263038548754,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28836,
+      "rms_dbfs": -18.55,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "A little breeze!",
+          "tokenizer_text": "A little breeze!",
+          "seed": 3868911,
+          "emo_vector": [
+            0.219,
+            0.0,
+            0.017,
+            0.018,
+            0.0,
+            0.071,
+            0.165,
+            0.283
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 1.0262426137924194,
+          "vocoder_linear_gain": 0.8574970364444442
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.24414002895355225,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N006",
+      "speaker": "제페토",
+      "text": "Yoonsu, what should he hold?",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "7509844ef02280fb08308b3469a585c2a80d043805ad23625b61b729ad042b51",
+      "frames": 61621,
+      "rate": 22050,
+      "seconds": 2.7946031746031745,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 23064,
+      "rms_dbfs": -18.68,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Yoonsu, what should he hold?",
+          "tokenizer_text": "Yoon Soo, what should he hold?",
+          "seed": 19763004,
+          "emo_vector": [
+            0.205,
+            0.0,
+            0.021,
+            0.019,
+            0.0,
+            0.07,
+            0.108,
+            0.365
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.7038875222206116,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "small.en"
+      ],
+      "cast_margin": 0.28592127561569214,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N007",
+      "speaker": "피노키오",
+      "text": "I've got my hat!",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "29925208673b9c8cebbc40669c70d92ab7f2562a93f304643ab8d9e6d8b51a90",
+      "frames": 43787,
+      "rate": 22050,
+      "seconds": 1.9858049886621316,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.11560090702947846,
+      "peak_pcm": 21263,
+      "rms_dbfs": -20.0,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "I've got my hat!",
+          "tokenizer_text": "I've got my hat!",
+          "seed": 16049801,
+          "emo_vector": [
+            0.375,
+            0.0,
+            0.025,
+            0.038,
+            0.0,
+            0.069,
+            0.124,
+            0.152
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.6488767266273499,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.249251127243042,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U002",
+      "speaker": "내레이션",
+      "text": "But something unexpected happened.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "ff203c1cce3881e00ebbbfe5d89b48f19a2263a35c573173eb29f5c57ef92840",
+      "frames": 64690,
+      "rate": 22050,
+      "seconds": 2.9337868480725624,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28835,
+      "rms_dbfs": -19.87,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "But something unexpected happened.",
+          "tokenizer_text": "But something unexpected happened.",
+          "seed": 16947781,
+          "emo_vector": [
+            0.081,
+            0.0,
+            0.035,
+            0.098,
+            0.0,
+            0.09,
+            0.264,
+            0.21
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 1.0193158388137817,
+          "vocoder_linear_gain": 0.8633241694979359
+        }
+      ],
+      "reference_sha256": "503d7469910a35b78b221efe3e90066d7b68a28dc51d5815d861bfd852141ef6",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.29356613755226135,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U003",
+      "speaker": "귀뚜라미",
+      "text": "Oh! Help!",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "93b57bb033e7e83880551351842ba8f1476cc80e886d06493f38253d967c90a2",
+      "frames": 29120,
+      "rate": 22050,
+      "seconds": 1.3206349206349206,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28836,
+      "rms_dbfs": -14.49,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Oh!",
+          "tokenizer_text": "Oh!",
+          "seed": 15351904,
+          "emo_vector": [
+            0.219,
+            0.0,
+            0.017,
+            0.018,
+            0.0,
+            0.071,
+            0.165,
+            0.283
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.9351614713668823,
+          "vocoder_linear_gain": 0.9410139606305045
+        },
+        {
+          "spoken_text": "Help!",
+          "tokenizer_text": "Help!",
+          "seed": 15351905,
+          "emo_vector": [
+            0.067,
+            0.0,
+            0.031,
+            0.272,
+            0.0,
+            0.041,
+            0.274,
+            0.085
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 1.0463833808898926,
+          "vocoder_linear_gain": 0.8409919500552536
+        }
+      ],
+      "reference_sha256": "67bcfacbbc0786df4bcb2526f493ce9ed3b6fd97ef051ad3d05220c3d46d4316",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.15344655513763428,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U004",
+      "speaker": "귀뚜라미",
+      "text": "I'm stuck!",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "c66b56a6242fbab72303c0503559865c05e0f8fe77b1a4b0383ffd0720642226",
+      "frames": 18939,
+      "rate": 22050,
+      "seconds": 0.8589115646258504,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28836,
+      "rms_dbfs": -18.92,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "I'm stuck!",
+          "tokenizer_text": "I'm stuck!",
+          "seed": 5546849,
+          "emo_vector": [
+            0.056,
+            0.0,
+            0.1,
+            0.235,
+            0.0,
+            0.059,
+            0.141,
+            0.186
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.9736738204956055,
+          "vocoder_linear_gain": 0.9037934280209722
+        }
+      ],
+      "reference_sha256": "67bcfacbbc0786df4bcb2526f493ce9ed3b6fd97ef051ad3d05220c3d46d4316",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.07360601425170898,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U005",
+      "speaker": "피노키오",
+      "text": "Cricket! Are you okay?",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "0e7ca1722a88dded2d7e7a80bb982f09c19610a680f0914ae3a0fe5a21a64bcb",
+      "frames": 69582,
+      "rate": 22050,
+      "seconds": 3.1556462585034013,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28084,
+      "rms_dbfs": -18.02,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Cricket!",
+          "tokenizer_text": "Cricket!",
+          "seed": 8691187,
+          "emo_vector": [
+            0.067,
+            0.0,
+            0.031,
+            0.272,
+            0.0,
+            0.041,
+            0.274,
+            0.085
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.8570833206176758,
+          "vocoder_linear_gain": 1.0
+        },
+        {
+          "spoken_text": "Are you okay?",
+          "tokenizer_text": "Are you okay?",
+          "seed": 8691188,
+          "emo_vector": [
+            0.135,
+            0.0,
+            0.056,
+            0.108,
+            0.0,
+            0.09,
+            0.117,
+            0.277
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.480707585811615,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.32336410880088806,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U006",
+      "speaker": "귀뚜라미",
+      "text": "I'm okay, but I can't get out!",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "e03634b1d122d511d751aaed03345cdcb97b455dd56cc8096d70d7aefa2cade2",
+      "frames": 63513,
+      "rate": 22050,
+      "seconds": 2.8804081632653062,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28836,
+      "rms_dbfs": -17.0,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "I'm okay,",
+          "tokenizer_text": "I'm okay,",
+          "seed": 11816149,
+          "emo_vector": [
+            0.22,
+            0.0,
+            0.026,
+            0.026,
+            0.0,
+            0.077,
+            0.063,
+            0.375
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 1.0496766567230225,
+          "vocoder_linear_gain": 0.838353405654714
+        },
+        {
+          "spoken_text": "but I can't get out!",
+          "tokenizer_text": "but I can't get out!",
+          "seed": 11816150,
+          "emo_vector": [
+            0.056,
+            0.0,
+            0.1,
+            0.235,
+            0.0,
+            0.059,
+            0.141,
+            0.186
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 1.036749243736267,
+          "vocoder_linear_gain": 0.8488069852152778
+        }
+      ],
+      "reference_sha256": "67bcfacbbc0786df4bcb2526f493ce9ed3b6fd97ef051ad3d05220c3d46d4316",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.1778983473777771,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U007",
+      "speaker": "피노키오",
+      "text": "School is starting!",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "2e52cbdd1dec74069807fe5ac52b4da0f9d69c170ad0f156114d8d927931194b",
+      "frames": 57320,
+      "rate": 22050,
+      "seconds": 2.599546485260771,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 18137,
+      "rms_dbfs": -20.16,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "School is starting!",
+          "tokenizer_text": "School is starting!",
+          "seed": 13505742,
+          "emo_vector": [
+            0.104,
+            0.0,
+            0.041,
+            0.235,
+            0.0,
+            0.053,
+            0.192,
+            0.148
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.5535025596618652,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.3267223536968231,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U008",
+      "speaker": "피노키오",
+      "text": "But my friend needs help.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "a1febff542a5c00baef64ed42179da54c55b50dc63e2bb36fefe27b28c50b3bd",
+      "frames": 51941,
+      "rate": 22050,
+      "seconds": 2.3556009070294786,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.053061224489795916,
+      "peak_pcm": 15933,
+      "rms_dbfs": -22.74,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "But my friend needs help.",
+          "tokenizer_text": "But my friend needs help.",
+          "seed": 9714102,
+          "emo_vector": [
+            0.159,
+            0.0,
+            0.039,
+            0.077,
+            0.0,
+            0.08,
+            0.037,
+            0.398
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.48624032735824585,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.3306819200515747,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U009",
+      "speaker": "제페토",
+      "text": "Pinocchio, your friend needs you.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "51631deda9c74a4aa7771563637e0731512e5532aecf188c18421b394bcac53f",
+      "frames": 56203,
+      "rate": 22050,
+      "seconds": 2.548888888888889,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28836,
+      "rms_dbfs": -20.84,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Pinocchio, your friend needs you.",
+          "tokenizer_text": "Pinocchio, your friend needs you.",
+          "seed": 8241670,
+          "emo_vector": [
+            0.22,
+            0.0,
+            0.026,
+            0.026,
+            0.0,
+            0.077,
+            0.063,
+            0.375
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 1.0548796653747559,
+          "vocoder_linear_gain": 0.8342183747445466
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.27742213010787964,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U010",
+      "speaker": "제페토",
+      "text": "Yoonsu, what should Pinocchio do?",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "c48f5910c1b9503d6b331d303adac5369eac5df8640a5767dc290b680be33c8a",
+      "frames": 82708,
+      "rate": 22050,
+      "seconds": 3.7509297052154196,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28836,
+      "rms_dbfs": -20.61,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Yoonsu, what should Pinocchio do?",
+          "tokenizer_text": "Yoon Soo, what should Pinocchio do?",
+          "seed": 7524844,
+          "emo_vector": [
+            0.135,
+            0.0,
+            0.056,
+            0.108,
+            0.0,
+            0.09,
+            0.117,
+            0.277
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 1.021644949913025,
+          "vocoder_linear_gain": 0.861355992681133
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2566527724266052,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U011",
+      "speaker": "귀뚜라미",
+      "text": "Thank you, Pinocchio!",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "364ef19ce7a7dee5be256fde0ec26728ec66d12e8e575b0fb680573999939cf1",
+      "frames": 34140,
+      "rate": 22050,
+      "seconds": 1.5482993197278911,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28836,
+      "rms_dbfs": -15.01,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Thank you, Pinocchio!",
+          "tokenizer_text": "Thank you, Pinocchio!",
+          "seed": 15069888,
+          "emo_vector": [
+            0.375,
+            0.0,
+            0.025,
+            0.038,
+            0.0,
+            0.069,
+            0.124,
+            0.152
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 1.0712122917175293,
+          "vocoder_linear_gain": 0.8214991620279591
+        }
+      ],
+      "reference_sha256": "67bcfacbbc0786df4bcb2526f493ce9ed3b6fd97ef051ad3d05220c3d46d4316",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.16586065292358398,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U012",
+      "speaker": "귀뚜라미",
+      "text": "You helped me!",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "0ceaf2a724160833136fb94746f9f0d1b7cd5a9330789473241bac8d874e5efb",
+      "frames": 20251,
+      "rate": 22050,
+      "seconds": 0.9184126984126985,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 27614,
+      "rms_dbfs": -15.66,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "You helped me!",
+          "tokenizer_text": "You helped me!",
+          "seed": 4917876,
+          "emo_vector": [
+            0.491,
+            0.0,
+            0.012,
+            0.022,
+            0.0,
+            0.04,
+            0.16,
+            0.067
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.8427104353904724,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "67bcfacbbc0786df4bcb2526f493ce9ed3b6fd97ef051ad3d05220c3d46d4316",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "small.en"
+      ],
+      "cast_margin": 0.2617592215538025,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U013",
+      "speaker": "피노키오",
+      "text": "You're my friend.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "dd39650433690d69bc0c68bb77dbf806692d05624f90cad183f3f8b679795703",
+      "frames": 40433,
+      "rate": 22050,
+      "seconds": 1.8336961451247165,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.10834467120181406,
+      "peak_pcm": 13112,
+      "rms_dbfs": -22.52,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "You're my friend.",
+          "tokenizer_text": "You're my friend.",
+          "seed": 20065485,
+          "emo_vector": [
+            0.208,
+            0.0,
+            0.02,
+            0.014,
+            0.0,
+            0.051,
+            0.062,
+            0.43
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.4001685082912445,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.26445579528808594,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U014",
+      "speaker": "피노키오",
+      "text": "I couldn't leave you there.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "cf67c984952d77de1fe64214eb56f93cbfbb357e9ddf705e08d1d02be891409e",
+      "frames": 35725,
+      "rate": 22050,
+      "seconds": 1.6201814058956916,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 21019,
+      "rms_dbfs": -20.44,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "I couldn't leave you there.",
+          "tokenizer_text": "I couldn't leave you there.",
+          "seed": 5188810,
+          "emo_vector": [
+            0.294,
+            0.0,
+            0.067,
+            0.023,
+            0.0,
+            0.093,
+            0.091,
+            0.216
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.6414440870285034,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.16310197114944458,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N008",
+      "speaker": "제페토",
+      "text": "Were you scared, Pinocchio?",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "2fe9f612473cd57a30c9a416ab91632c9c48e9cc544c0f793e79f1ba91d41d93",
+      "frames": 61059,
+      "rate": 22050,
+      "seconds": 2.7691156462585034,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 22259,
+      "rms_dbfs": -18.84,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Were you scared, Pinocchio?",
+          "tokenizer_text": "Were you scared, Pinocchio?",
+          "seed": 16925124,
+          "emo_vector": [
+            0.135,
+            0.0,
+            0.056,
+            0.108,
+            0.0,
+            0.09,
+            0.117,
+            0.277
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.6792846918106079,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.19691866636276245,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N009",
+      "speaker": "피노키오",
+      "text": "Yes. I was scared.",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "fafbe5532ef58697c31ca441fed9e36dc6d42b8194977c3310101480876bb90f",
+      "frames": 56972,
+      "rate": 22050,
+      "seconds": 2.583764172335601,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 19841,
+      "rms_dbfs": -21.32,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Yes.",
+          "tokenizer_text": "Yes.",
+          "seed": 15621630,
+          "emo_vector": [
+            0.208,
+            0.0,
+            0.02,
+            0.014,
+            0.0,
+            0.051,
+            0.062,
+            0.43
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.605524480342865,
+          "vocoder_linear_gain": 1.0
+        },
+        {
+          "spoken_text": "I was scared.",
+          "tokenizer_text": "I was scared.",
+          "seed": 15621631,
+          "emo_vector": [
+            0.124,
+            0.0,
+            0.123,
+            0.082,
+            0.0,
+            0.109,
+            0.051,
+            0.29
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.5502110719680786,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.31559789180755615,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N010",
+      "speaker": "제페토",
+      "text": "Thank you for telling me.",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "f9e65d692f3677b054502ecfe4bd7b33ba557cdb70c12d53e2d2eb4e5109d835",
+      "frames": 41934,
+      "rate": 22050,
+      "seconds": 1.9017687074829932,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 27813,
+      "rms_dbfs": -20.68,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Thank you for telling me.",
+          "tokenizer_text": "Thank you for telling me.",
+          "seed": 9049389,
+          "emo_vector": [
+            0.294,
+            0.0,
+            0.067,
+            0.023,
+            0.0,
+            0.093,
+            0.091,
+            0.216
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.8488048315048218,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2472214698791504,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N011",
+      "speaker": "피노키오",
+      "text": "Yoonsu, shall I check on Cricket?",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "65b57843ed52fd67580e596187c9806759d6c370bd5150298fb63db81739c408",
+      "frames": 61796,
+      "rate": 22050,
+      "seconds": 2.8025396825396824,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.08458049886621315,
+      "peak_pcm": 22355,
+      "rms_dbfs": -20.96,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Yoonsu, shall I check on Cricket?",
+          "tokenizer_text": "Yoon Soo, shall I check on Cricket?",
+          "seed": 17757771,
+          "emo_vector": [
+            0.135,
+            0.0,
+            0.056,
+            0.108,
+            0.0,
+            0.09,
+            0.117,
+            0.277
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.682194709777832,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.33092427253723145,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N012",
+      "speaker": "귀뚜라미",
+      "text": "I'm not hurt. I'm all right!",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "a4e0cf0ed02bd6abd90eba5ba4678d0385647ade78933e51023db2167f22855a",
+      "frames": 54158,
+      "rate": 22050,
+      "seconds": 2.4561451247165533,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28835,
+      "rms_dbfs": -17.19,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "I'm not hurt.",
+          "tokenizer_text": "I'm not hurt.",
+          "seed": 16063169,
+          "emo_vector": [
+            0.22,
+            0.0,
+            0.026,
+            0.026,
+            0.0,
+            0.077,
+            0.063,
+            0.375
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650,
+            "temperature": 0.72,
+            "top_p": 0.84
+          },
+          "vocoder_raw_peak": 1.0175206661224365,
+          "vocoder_linear_gain": 0.8648472992234156
+        },
+        {
+          "spoken_text": "I'm all right!",
+          "tokenizer_text": "I'm all right!",
+          "seed": 16063170,
+          "emo_vector": [
+            0.375,
+            0.0,
+            0.025,
+            0.038,
+            0.0,
+            0.069,
+            0.124,
+            0.152
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650,
+            "temperature": 0.72,
+            "top_p": 0.84
+          },
+          "vocoder_raw_peak": 1.021830439567566,
+          "vocoder_linear_gain": 0.8611996334464376
+        }
+      ],
+      "reference_sha256": "67bcfacbbc0786df4bcb2526f493ce9ed3b6fd97ef051ad3d05220c3d46d4316",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.17991429567337036,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U015",
+      "speaker": "제페토",
+      "text": "I'm proud of you, Pinocchio.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "dc9e70db7a3341eeb1c6c5ea6740c988d69f801c2860fb454bff90eacef3286f",
+      "frames": 53137,
+      "rate": 22050,
+      "seconds": 2.40984126984127,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28836,
+      "rms_dbfs": -19.26,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "I'm proud of you, Pinocchio.",
+          "tokenizer_text": "I'm proud of you, Pinocchio.",
+          "seed": 16570315,
+          "emo_vector": [
+            0.323,
+            0.0,
+            0.034,
+            0.018,
+            0.0,
+            0.078,
+            0.095,
+            0.233
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.9357210993766785,
+          "vocoder_linear_gain": 0.9404511671118707
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.4026387929916382,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U016",
+      "speaker": "제페토",
+      "text": "You did the right thing.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "65b9a656444e48a17eec4ae9a9db64bb44af25328cea525d721b2d043c124c90",
+      "frames": 38107,
+      "rate": 22050,
+      "seconds": 1.7282086167800454,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 14890,
+      "rms_dbfs": -22.73,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "You did the right thing.",
+          "tokenizer_text": "You did the right thing.",
+          "seed": 13160681,
+          "emo_vector": [
+            0.159,
+            0.0,
+            0.039,
+            0.077,
+            0.0,
+            0.08,
+            0.037,
+            0.398
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.45438718795776367,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.320204496383667,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N013",
+      "speaker": "제페토",
+      "text": "Yoonsu, where should he stand?",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "065a89ab1e4063dbd1b043b360f2b2eb44d320f4f5420730b32aebec3cbe6e71",
+      "frames": 70457,
+      "rate": 22050,
+      "seconds": 3.195328798185941,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 24922,
+      "rms_dbfs": -18.82,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Yoonsu, where should he stand?",
+          "tokenizer_text": "Yoon Soo, where should he stand?",
+          "seed": 13250607,
+          "emo_vector": [
+            0.205,
+            0.0,
+            0.021,
+            0.019,
+            0.0,
+            0.07,
+            0.108,
+            0.365
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.7605881094932556,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2547767758369446,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N014",
+      "speaker": "피노키오",
+      "text": "Here we are.",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "611f4cc4a25360cfcbbeb8ce37e0577512c67540dc3ab110049447abe0c314c3",
+      "frames": 28544,
+      "rate": 22050,
+      "seconds": 1.294512471655329,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.06303854875283446,
+      "peak_pcm": 12928,
+      "rms_dbfs": -21.37,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Here we are.",
+          "tokenizer_text": "Here we are.",
+          "seed": 13187814,
+          "emo_vector": [
+            0.208,
+            0.0,
+            0.02,
+            0.014,
+            0.0,
+            0.051,
+            0.062,
+            0.43
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.394559770822525,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.27046889066696167,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U017",
+      "speaker": "내레이션",
+      "text": "Then, a familiar blue light filled the air.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "e70256d8338165021034ee51c23d8101ca60bb859c667a28d375a4280428bda1",
+      "frames": 75286,
+      "rate": 22050,
+      "seconds": 3.414331065759637,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.060090702947845805,
+      "peak_pcm": 24559,
+      "rms_dbfs": -19.61,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Then, a familiar blue light filled the air.",
+          "tokenizer_text": "Then, a familiar blue light filled the air.",
+          "seed": 19655924,
+          "emo_vector": [
+            0.245,
+            0.0,
+            0.018,
+            0.013,
+            0.0,
+            0.06,
+            0.151,
+            0.3
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.749457597732544,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "503d7469910a35b78b221efe3e90066d7b68a28dc51d5815d861bfd852141ef6",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2502340078353882,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U018",
+      "speaker": "파란 요정",
+      "text": "Pinocchio, I have watched you grow.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "d8814b3fe0394484d66b0161851e2b7c2cbe7a2f20f00d46e24ccb1562cac82c",
+      "frames": 54056,
+      "rate": 22050,
+      "seconds": 2.4515192743764174,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 24295,
+      "rms_dbfs": -19.59,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Pinocchio, I have watched you grow.",
+          "tokenizer_text": "Pinocchio, I have watched you grow.",
+          "seed": 12966700,
+          "emo_vector": [
+            0.294,
+            0.0,
+            0.067,
+            0.023,
+            0.0,
+            0.093,
+            0.091,
+            0.216
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.7414014935493469,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "b75c1e97bd48f42615e8d30b5fba240a494370992a8e9615a28103b158d35904",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.3398827314376831,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U019",
+      "speaker": "파란 요정",
+      "text": "You told Grandpa the truth.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "6835cc808aacdca23dd5a7d1a71f36007f0dca6ea16f050924708fd60be150e3",
+      "frames": 40358,
+      "rate": 22050,
+      "seconds": 1.8302947845804989,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 18981,
+      "rms_dbfs": -20.58,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "You told Grandpa the truth.",
+          "tokenizer_text": "You told Grandpa the truth.",
+          "seed": 10783154,
+          "emo_vector": [
+            0.159,
+            0.0,
+            0.039,
+            0.077,
+            0.0,
+            0.08,
+            0.037,
+            0.398
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.5792559385299683,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "b75c1e97bd48f42615e8d30b5fba240a494370992a8e9615a28103b158d35904",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.245754212141037,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U020",
+      "speaker": "파란 요정",
+      "text": "You said you were sorry.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "5f2947a0e9575b6281ea3b3c82373b391a62d553275e60a400825ae3788aeda8",
+      "frames": 39090,
+      "rate": 22050,
+      "seconds": 1.7727891156462585,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 17241,
+      "rms_dbfs": -20.29,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "You said you were sorry.",
+          "tokenizer_text": "You said you were sorry.",
+          "seed": 19488223,
+          "emo_vector": [
+            0.22,
+            0.0,
+            0.026,
+            0.026,
+            0.0,
+            0.077,
+            0.063,
+            0.375
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.5261563062667847,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "b75c1e97bd48f42615e8d30b5fba240a494370992a8e9615a28103b158d35904",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.18805891275405884,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U021",
+      "speaker": "파란 요정",
+      "text": "You kept your promise.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "4277954740ebcf35925790b1cbcf9154a154596bf60de4012fa67fc18d3e26ab",
+      "frames": 30417,
+      "rate": 22050,
+      "seconds": 1.3794557823129252,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.07945578231292517,
+      "peak_pcm": 20854,
+      "rms_dbfs": -21.12,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "You kept your promise.",
+          "tokenizer_text": "You kept your promise.",
+          "seed": 6636111,
+          "emo_vector": [
+            0.208,
+            0.0,
+            0.02,
+            0.014,
+            0.0,
+            0.051,
+            0.062,
+            0.43
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.6364122629165649,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "b75c1e97bd48f42615e8d30b5fba240a494370992a8e9615a28103b158d35904",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.277914822101593,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U022",
+      "speaker": "파란 요정",
+      "text": "And today, you helped a friend.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "2f552a8bc0e15998e96887f0fd1e8890be0b3d112012fdc77b3487f5478217d2",
+      "frames": 42179,
+      "rate": 22050,
+      "seconds": 1.9128798185941043,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 22306,
+      "rms_dbfs": -18.54,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "And today, you helped a friend.",
+          "tokenizer_text": "And today, you helped a friend.",
+          "seed": 3910047,
+          "emo_vector": [
+            0.323,
+            0.0,
+            0.034,
+            0.018,
+            0.0,
+            0.078,
+            0.095,
+            0.233
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.6807193756103516,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "b75c1e97bd48f42615e8d30b5fba240a494370992a8e9615a28103b158d35904",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2409214973449707,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U023",
+      "speaker": "피노키오",
+      "text": "I only wanted to help him.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "a7e47f7e14484bd5acd9e8ded32c060c3b42f6e37aed962042acab937934df30",
+      "frames": 45168,
+      "rate": 22050,
+      "seconds": 2.0484353741496597,
+      "first_signal_seconds": 0.10938775510204081,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 18287,
+      "rms_dbfs": -20.76,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "I only wanted to help him.",
+          "tokenizer_text": "I only wanted to help him.",
+          "seed": 7727233,
+          "emo_vector": [
+            0.208,
+            0.0,
+            0.02,
+            0.014,
+            0.0,
+            0.051,
+            0.062,
+            0.43
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.5580753087997437,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.35998642444610596,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U024",
+      "speaker": "파란 요정",
+      "text": "That is what makes you kind.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "3614cfe8b04f600a6cef9372e3dd3262a66f81c4e51e9516836bd65c630fbd19",
+      "frames": 46900,
+      "rate": 22050,
+      "seconds": 2.126984126984127,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 26088,
+      "rms_dbfs": -18.84,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "That is what makes you kind.",
+          "tokenizer_text": "That is what makes you kind.",
+          "seed": 12673896,
+          "emo_vector": [
+            0.294,
+            0.0,
+            0.067,
+            0.023,
+            0.0,
+            0.093,
+            0.091,
+            0.216
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.7961605191230774,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "b75c1e97bd48f42615e8d30b5fba240a494370992a8e9615a28103b158d35904",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2769247889518738,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U025",
+      "speaker": "파란 요정",
+      "text": "You have a brave and caring heart.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "994fba43cae49656bf028e1866accb31f2cc6c0439b5f5db756f15e8c196e6e4",
+      "frames": 46286,
+      "rate": 22050,
+      "seconds": 2.099138321995465,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 20603,
+      "rms_dbfs": -19.51,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "You have a brave and caring heart.",
+          "tokenizer_text": "You have a brave and caring heart.",
+          "seed": 20546905,
+          "emo_vector": [
+            0.22,
+            0.0,
+            0.026,
+            0.026,
+            0.0,
+            0.077,
+            0.063,
+            0.375
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.6287254095077515,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "b75c1e97bd48f42615e8d30b5fba240a494370992a8e9615a28103b158d35904",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2714853882789612,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U026",
+      "speaker": "파란 요정",
+      "text": "Now, it's time for one last bit of magic.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "bbc62db360df017477ee72fb88aaa70dcf9b59b8f4ce4d7a36b5d4bc0db72bdd",
+      "frames": 69210,
+      "rate": 22050,
+      "seconds": 3.1387755102040815,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 22920,
+      "rms_dbfs": -19.27,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Now, it's time for one last bit of magic.",
+          "tokenizer_text": "Now, it's time for one last bit of magic.",
+          "seed": 10166720,
+          "emo_vector": [
+            0.245,
+            0.0,
+            0.018,
+            0.013,
+            0.0,
+            0.06,
+            0.151,
+            0.3
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.6994500160217285,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "b75c1e97bd48f42615e8d30b5fba240a494370992a8e9615a28103b158d35904",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.19813579320907593,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U027",
+      "speaker": "파란 요정",
+      "text": "Pinocchio, you can become a real boy!",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "a9eb8165216847ba584453da5d6bf0f634964589424e5007b733c74acbc92bf1",
+      "frames": 56654,
+      "rate": 22050,
+      "seconds": 2.569342403628118,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28836,
+      "rms_dbfs": -14.41,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Pinocchio, you can become a real boy!",
+          "tokenizer_text": "Pinocchio, you can become a real boy!",
+          "seed": 10937955,
+          "emo_vector": [
+            0.33,
+            0.0,
+            0.024,
+            0.04,
+            0.0,
+            0.099,
+            0.238,
+            0.049
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.9988667964935303,
+          "vocoder_linear_gain": 0.8809983504198898
+        }
+      ],
+      "reference_sha256": "b75c1e97bd48f42615e8d30b5fba240a494370992a8e9615a28103b158d35904",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.33020973205566406,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U028",
+      "speaker": "내레이션",
+      "text": "And just like that, the wooden puppet became a real little boy.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "74c613a7940228e7bcd23a485eb72dbb705fd60fa1aafa235c3e4fdd6105a12d",
+      "frames": 86176,
+      "rate": 22050,
+      "seconds": 3.9082086167800454,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28835,
+      "rms_dbfs": -18.19,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "And just like that, the wooden puppet became a real little boy.",
+          "tokenizer_text": "And just like that, the wooden puppet became a real little boy.",
+          "seed": 15329317,
+          "emo_vector": [
+            0.33,
+            0.0,
+            0.024,
+            0.04,
+            0.0,
+            0.099,
+            0.238,
+            0.049
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 1.0730652809143066,
+          "vocoder_linear_gain": 0.820080581910352
+        }
+      ],
+      "reference_sha256": "503d7469910a35b78b221efe3e90066d7b68a28dc51d5815d861bfd852141ef6",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2405315637588501,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U029",
+      "speaker": "피노키오",
+      "text": "Grandpa! Look at me!",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "c05bede5bd75bff991033042320567253e0e724b4f26c3115e65178a381e1192",
+      "frames": 74946,
+      "rate": 22050,
+      "seconds": 3.3989115646258505,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.1306122448979592,
+      "peak_pcm": 23769,
+      "rms_dbfs": -17.84,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Grandpa!",
+          "tokenizer_text": "Grandpa!",
+          "seed": 6678927,
+          "emo_vector": [
+            0.33,
+            0.0,
+            0.024,
+            0.04,
+            0.0,
+            0.099,
+            0.238,
+            0.049
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.7253984212875366,
+          "vocoder_linear_gain": 1.0
+        },
+        {
+          "spoken_text": "Look at me!",
+          "tokenizer_text": "Look at me!",
+          "seed": 6678928,
+          "emo_vector": [
+            0.491,
+            0.0,
+            0.012,
+            0.022,
+            0.0,
+            0.04,
+            0.16,
+            0.067
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.7236990928649902,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.1824229657649994,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U030",
+      "speaker": "피노키오",
+      "text": "I'm a real boy!",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "e5ae7ce303cde0dfab73a982f2218fc0908dd6d75c6336ccf269be6b63466ebb",
+      "frames": 43561,
+      "rate": 22050,
+      "seconds": 1.9755555555555555,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.07950113378684807,
+      "peak_pcm": 23617,
+      "rms_dbfs": -17.86,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "I'm a real boy!",
+          "tokenizer_text": "I'm a real boy!",
+          "seed": 12521150,
+          "emo_vector": [
+            0.33,
+            0.0,
+            0.024,
+            0.04,
+            0.0,
+            0.099,
+            0.238,
+            0.049
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.7207053303718567,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.18704986572265625,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U031",
+      "speaker": "제페토",
+      "text": "Pinocchio! My dear boy!",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "432331309aba168f77dd25254c892a8b297f0760d15761ee425d5ae982a60445",
+      "frames": 78106,
+      "rate": 22050,
+      "seconds": 3.542222222222222,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28836,
+      "rms_dbfs": -16.99,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Pinocchio!",
+          "tokenizer_text": "Pinocchio!",
+          "seed": 5564291,
+          "emo_vector": [
+            0.33,
+            0.0,
+            0.024,
+            0.04,
+            0.0,
+            0.099,
+            0.238,
+            0.049
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650,
+            "temperature": 0.72,
+            "top_p": 0.84
+          },
+          "vocoder_raw_peak": 1.3863983154296875,
+          "vocoder_linear_gain": 0.6347382207596386
+        },
+        {
+          "spoken_text": "My dear boy!",
+          "tokenizer_text": "My dear boy!",
+          "seed": 5564292,
+          "emo_vector": [
+            0.294,
+            0.0,
+            0.067,
+            0.023,
+            0.0,
+            0.093,
+            0.091,
+            0.216
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650,
+            "temperature": 0.72,
+            "top_p": 0.84
+          },
+          "vocoder_raw_peak": 0.7124820351600647,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.3000555634498596,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U032",
+      "speaker": "제페토",
+      "text": "You are real!",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "ed6067f752331f1d350055dc83a7b8765b5943eade45008e06479b24ab800373",
+      "frames": 43425,
+      "rate": 22050,
+      "seconds": 1.969387755102041,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28836,
+      "rms_dbfs": -14.94,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "You are real!",
+          "tokenizer_text": "You are real!",
+          "seed": 12582844,
+          "emo_vector": [
+            0.33,
+            0.0,
+            0.024,
+            0.04,
+            0.0,
+            0.099,
+            0.238,
+            0.049
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 1.206129550933838,
+          "vocoder_linear_gain": 0.7296065329952871
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.25926321744918823,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N020",
+      "speaker": "제페토",
+      "text": "I love you, just the same.",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "efe50d20c8d5d8fee7d275ca8f481e26aded2cea120f7809ab06abe4bb7ab4c4",
+      "frames": 63812,
+      "rate": 22050,
+      "seconds": 2.893968253968254,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28835,
+      "rms_dbfs": -21.19,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "I love you, just the same.",
+          "tokenizer_text": "I love you, just the same.",
+          "seed": 18257700,
+          "emo_vector": [
+            0.294,
+            0.0,
+            0.067,
+            0.023,
+            0.0,
+            0.093,
+            0.091,
+            0.216
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 1.054510474205017,
+          "vocoder_linear_gain": 0.8345104401769187
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.3876071572303772,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N021",
+      "speaker": "피노키오",
+      "text": "I love you too, Grandpa.",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "cb003ded2fed1909bd5f5c30abf746c200653d6416f7b8050494286f2893f893",
+      "frames": 43555,
+      "rate": 22050,
+      "seconds": 1.9752834467120182,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.06099773242630385,
+      "peak_pcm": 16875,
+      "rms_dbfs": -20.3,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "I love you too, Grandpa.",
+          "tokenizer_text": "I love you too, Grandpa.",
+          "seed": 13210468,
+          "emo_vector": [
+            0.208,
+            0.0,
+            0.02,
+            0.014,
+            0.0,
+            0.051,
+            0.062,
+            0.43
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.5149563550949097,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.26761171221733093,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U033",
+      "speaker": "귀뚜라미",
+      "text": "You did it, Pinocchio!",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "51fb76225c6ad7dfd736634784fb1678e8348a7682ed1f57f4dc712fb4f4073a",
+      "frames": 29417,
+      "rate": 22050,
+      "seconds": 1.3341043083900226,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28836,
+      "rms_dbfs": -16.0,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "You did it, Pinocchio!",
+          "tokenizer_text": "You did it, Pinocchio!",
+          "seed": 18845402,
+          "emo_vector": [
+            0.323,
+            0.0,
+            0.034,
+            0.018,
+            0.0,
+            0.078,
+            0.095,
+            0.233
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 1.103519082069397,
+          "vocoder_linear_gain": 0.7974488292035348
+        }
+      ],
+      "reference_sha256": "67bcfacbbc0786df4bcb2526f493ce9ed3b6fd97ef051ad3d05220c3d46d4316",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.1949041187763214,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N015",
+      "speaker": "피노키오",
+      "text": "My hands feel different!",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "d0dd38ddd98a567dd05a1a21c6132180dea9eaa2d3ae57451c88b17364be9a2b",
+      "frames": 61465,
+      "rate": 22050,
+      "seconds": 2.787528344671202,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 17496,
+      "rms_dbfs": -20.62,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "My hands feel different!",
+          "tokenizer_text": "My hands feel different!",
+          "seed": 20300545,
+          "emo_vector": [
+            0.245,
+            0.0,
+            0.018,
+            0.013,
+            0.0,
+            0.06,
+            0.151,
+            0.3
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.5339164137840271,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.3207598030567169,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N016",
+      "speaker": "제페토",
+      "text": "Yoonsu, can he show me his hands?",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "c1243fa59eb58e5803fed99c77d83c0989b50edde7d9327fb87378989d0e0811",
+      "frames": 82080,
+      "rate": 22050,
+      "seconds": 3.7224489795918365,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28836,
+      "rms_dbfs": -16.05,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Yoonsu, can he show me his hands?",
+          "tokenizer_text": "Yoon Soo, can he show me his hands?",
+          "seed": 17383809,
+          "emo_vector": [
+            0.205,
+            0.0,
+            0.021,
+            0.019,
+            0.0,
+            0.07,
+            0.108,
+            0.365
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.943442165851593,
+          "vocoder_linear_gain": 0.9327545787670755
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2436760663986206,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N017",
+      "speaker": "제페토",
+      "text": "Look at those little hands!",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "658686449c32ca886b2d9c41e2006562b6375e3c2d8358aae8d47567b72baf51",
+      "frames": 49923,
+      "rate": 22050,
+      "seconds": 2.264081632653061,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28836,
+      "rms_dbfs": -19.66,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Look at those little hands!",
+          "tokenizer_text": "Look at those little hands!",
+          "seed": 13484316,
+          "emo_vector": [
+            0.294,
+            0.0,
+            0.067,
+            0.023,
+            0.0,
+            0.093,
+            0.091,
+            0.216
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.9409987926483154,
+          "vocoder_linear_gain": 0.9351765452571491
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2359747290611267,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N018",
+      "speaker": "피노키오",
+      "text": "Yoonsu, shall I bend my fingers?",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "129eb7f39fc14d0ac8b99580c4ca92bfa74f30bb58df026739af26b81b92c1a7",
+      "frames": 86175,
+      "rate": 22050,
+      "seconds": 3.9081632653061225,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.06195011337868481,
+      "peak_pcm": 21640,
+      "rms_dbfs": -18.91,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Yoonsu, shall I bend my fingers?",
+          "tokenizer_text": "Yoon Soo, shall I bend my fingers?",
+          "seed": 11361089,
+          "emo_vector": [
+            0.245,
+            0.0,
+            0.018,
+            0.013,
+            0.0,
+            0.06,
+            0.151,
+            0.3
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.6603745222091675,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.31188902258872986,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N019",
+      "speaker": "피노키오",
+      "text": "They feel so soft!",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "85cf6d8ec1a9d73d44950bf6fa36baea3c8266386657410e89b9bfafee3403c1",
+      "frames": 55982,
+      "rate": 22050,
+      "seconds": 2.5388662131519273,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05251700680272109,
+      "peak_pcm": 28835,
+      "rms_dbfs": -17.25,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "They feel so soft!",
+          "tokenizer_text": "They feel so soft!",
+          "seed": 18815382,
+          "emo_vector": [
+            0.33,
+            0.0,
+            0.024,
+            0.04,
+            0.0,
+            0.099,
+            0.238,
+            0.049
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.9100476503372192,
+          "vocoder_linear_gain": 0.9669823329293966
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.281289279460907,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N022",
+      "speaker": "제페토",
+      "text": "Yoonsu, can he take my hand?",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "80065acfcef1ba21f5987ab949ade98fbcb5f248e941be99ed820d995f970296",
+      "frames": 60149,
+      "rate": 22050,
+      "seconds": 2.7278458049886622,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 24670,
+      "rms_dbfs": -20.46,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Yoonsu, can he take my hand?",
+          "tokenizer_text": "Yoon Soo, can he take my hand?",
+          "seed": 9298179,
+          "emo_vector": [
+            0.22,
+            0.0,
+            0.026,
+            0.026,
+            0.0,
+            0.077,
+            0.063,
+            0.375
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.7528390884399414,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.386168509721756,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N023",
+      "speaker": "제페토",
+      "text": "Your hand is warm.",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "0995e89ce34879e9633a2bbdfd92d327cc1fe5c64c7816e40cba8664ab852979",
+      "frames": 49985,
+      "rate": 22050,
+      "seconds": 2.2668934240362812,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 20984,
+      "rms_dbfs": -18.73,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Your hand is warm.",
+          "tokenizer_text": "Your hand is warm.",
+          "seed": 8615619,
+          "emo_vector": [
+            0.294,
+            0.0,
+            0.067,
+            0.023,
+            0.0,
+            0.093,
+            0.091,
+            0.216
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.6404029130935669,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.29485803842544556,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N024",
+      "speaker": "피노키오",
+      "text": "So is yours!",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "e0cd1b023a6153c4ba7fbf77657ab5b22363a55273fa6a1b24b7670b07ee1a6e",
+      "frames": 48046,
+      "rate": 22050,
+      "seconds": 2.1789569160997733,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.06997732426303854,
+      "peak_pcm": 25763,
+      "rms_dbfs": -16.62,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "So is yours!",
+          "tokenizer_text": "So is yours!",
+          "seed": 13613971,
+          "emo_vector": [
+            0.375,
+            0.0,
+            0.025,
+            0.038,
+            0.0,
+            0.069,
+            0.124,
+            0.152
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.7862341403961182,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.18616685271263123,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N025",
+      "speaker": "제페토",
+      "text": "Yoonsu, can you help with his hat?",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "29f36e16b28b09d44867c2b35ea6ad3903a3153ed48d153edfd274a72ee7793c",
+      "frames": 75425,
+      "rate": 22050,
+      "seconds": 3.4206349206349205,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28835,
+      "rms_dbfs": -20.41,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Yoonsu, can you help with his hat?",
+          "tokenizer_text": "Yoon Soo, can you help with his hat?",
+          "seed": 14682300,
+          "emo_vector": [
+            0.283,
+            0.0,
+            0.016,
+            0.009,
+            0.0,
+            0.049,
+            0.095,
+            0.33
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.9354661703109741,
+          "vocoder_linear_gain": 0.940707454666655
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.23536664247512817,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N026",
+      "speaker": "피노키오",
+      "text": "There. I'm ready.",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "7ecee68b618c7493d2feb316c72c625c93e434c6b81faa733ae03cd09f3ccee0",
+      "frames": 50712,
+      "rate": 22050,
+      "seconds": 2.2998639455782315,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 25063,
+      "rms_dbfs": -20.88,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "There.",
+          "tokenizer_text": "There.",
+          "seed": 15211916,
+          "emo_vector": [
+            0.208,
+            0.0,
+            0.02,
+            0.014,
+            0.0,
+            0.051,
+            0.062,
+            0.43
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.7648557424545288,
+          "vocoder_linear_gain": 1.0
+        },
+        {
+          "spoken_text": "I'm ready.",
+          "tokenizer_text": "I'm ready.",
+          "seed": 15211917,
+          "emo_vector": [
+            0.246,
+            0.0,
+            0.029,
+            0.018,
+            0.0,
+            0.108,
+            0.067,
+            0.31
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.5932360887527466,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2276066243648529,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U034",
+      "speaker": "파란 요정",
+      "text": "Stay kind, and keep telling the truth.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "b83969755f8cb93f62993a72049cce9a799df38b103296d50132b38319876c86",
+      "frames": 57504,
+      "rate": 22050,
+      "seconds": 2.607891156462585,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 23216,
+      "rms_dbfs": -18.64,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Stay kind, and keep telling the truth.",
+          "tokenizer_text": "Stay kind, and keep telling the truth.",
+          "seed": 14648666,
+          "emo_vector": [
+            0.246,
+            0.0,
+            0.029,
+            0.018,
+            0.0,
+            0.108,
+            0.067,
+            0.31
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.7084689140319824,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "b75c1e97bd48f42615e8d30b5fba240a494370992a8e9615a28103b158d35904",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.28072893619537354,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U035",
+      "speaker": "피노키오",
+      "text": "I will. Thank you!",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "978adbb656f06e2af8033b4e322ab5a903809dc26e96e28438efd49f937a4f64",
+      "frames": 60289,
+      "rate": 22050,
+      "seconds": 2.7341950113378686,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.0728798185941043,
+      "peak_pcm": 16616,
+      "rms_dbfs": -18.95,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "I will.",
+          "tokenizer_text": "I will.",
+          "seed": 16462208,
+          "emo_vector": [
+            0.159,
+            0.0,
+            0.039,
+            0.077,
+            0.0,
+            0.08,
+            0.037,
+            0.398
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.42543351650238037,
+          "vocoder_linear_gain": 1.0
+        },
+        {
+          "spoken_text": "Thank you!",
+          "tokenizer_text": "Thank you!",
+          "seed": 16462209,
+          "emo_vector": [
+            0.375,
+            0.0,
+            0.025,
+            0.038,
+            0.0,
+            0.069,
+            0.124,
+            0.152
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.5070971250534058,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.06798818707466125,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-N027",
+      "speaker": "피노키오",
+      "text": "Yoonsu, shall we wave to the fairy?",
+      "kind": "NEW",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "823172e35dcb05b7aa0aebbbf9e42bac9b768f6feaa90e9e46e23f0625f1f911",
+      "frames": 85585,
+      "rate": 22050,
+      "seconds": 3.8814058956916098,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 16908,
+      "rms_dbfs": -20.81,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Yoonsu, shall we wave to the fairy?",
+          "tokenizer_text": "Yoon Soo, shall we wave to the fairy?",
+          "seed": 18699031,
+          "emo_vector": [
+            0.242,
+            0.0,
+            0.067,
+            0.012,
+            0.0,
+            0.128,
+            0.065,
+            0.27
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.5159655213356018,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "small.en"
+      ],
+      "cast_margin": 0.2932201623916626,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U036",
+      "speaker": "피노키오",
+      "text": "See you later, Yoonsu!",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "ae52ca0a82b94c29821a1404a463c1648a1260f09c8444d5fbe01e7824894ea6",
+      "frames": 57152,
+      "rate": 22050,
+      "seconds": 2.5919274376417234,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 14656,
+      "rms_dbfs": -19.75,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "See you later, Yoonsu!",
+          "tokenizer_text": "See you later, Yoon Soo!",
+          "seed": 6227208,
+          "emo_vector": [
+            0.242,
+            0.0,
+            0.067,
+            0.012,
+            0.0,
+            0.128,
+            0.065,
+            0.27
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.4472882151603699,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.25008368492126465,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U037",
+      "speaker": "내레이션",
+      "text": "Pinocchio was still learning.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "27bd3c749a0288e66aa5390f56a0ab472c084c0a2b7fcf74833a7e025da45804",
+      "frames": 45768,
+      "rate": 22050,
+      "seconds": 2.0756462585034012,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.06689342403628118,
+      "peak_pcm": 17748,
+      "rms_dbfs": -20.52,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Pinocchio was still learning.",
+          "tokenizer_text": "Pinocchio was still learning.",
+          "seed": 17349929,
+          "emo_vector": [
+            0.246,
+            0.0,
+            0.029,
+            0.018,
+            0.0,
+            0.108,
+            0.067,
+            0.31
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.5416152477264404,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "503d7469910a35b78b221efe3e90066d7b68a28dc51d5815d861bfd852141ef6",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.26687854528427124,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U038",
+      "speaker": "내레이션",
+      "text": "He would make more mistakes.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "8132c6e63c1252d4611e80f6948ae8524162613378bb1cc95c8468f2b0d15fae",
+      "frames": 45905,
+      "rate": 22050,
+      "seconds": 2.081859410430839,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 17208,
+      "rms_dbfs": -21.02,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "He would make more mistakes.",
+          "tokenizer_text": "He would make more mistakes.",
+          "seed": 20229098,
+          "emo_vector": [
+            0.208,
+            0.0,
+            0.02,
+            0.014,
+            0.0,
+            0.051,
+            0.062,
+            0.43
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.5251399278640747,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "503d7469910a35b78b221efe3e90066d7b68a28dc51d5815d861bfd852141ef6",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2740210294723511,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U039",
+      "speaker": "내레이션",
+      "text": "And he would learn many new things.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "74d23287ab5ce919afe3b49394acb1fd35e97dff4db097c1072b08031222e362",
+      "frames": 69581,
+      "rate": 22050,
+      "seconds": 3.1556009070294784,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 26348,
+      "rms_dbfs": -19.45,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "And he would learn many new things.",
+          "tokenizer_text": "And he would learn many new things.",
+          "seed": 6678996,
+          "emo_vector": [
+            0.245,
+            0.0,
+            0.018,
+            0.013,
+            0.0,
+            0.06,
+            0.151,
+            0.3
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.8041030764579773,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "503d7469910a35b78b221efe3e90066d7b68a28dc51d5815d861bfd852141ef6",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.27467507123947144,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U040",
+      "speaker": "내레이션",
+      "text": "But today, he chose to tell the truth.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "b09a32a2c8b3050851786be6b5ceab30c8478c6e1237cb9b6fcbf633e0a0e85c",
+      "frames": 56352,
+      "rate": 22050,
+      "seconds": 2.555646258503401,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 26496,
+      "rms_dbfs": -19.89,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "But today, he chose to tell the truth.",
+          "tokenizer_text": "But today, he chose to tell the truth.",
+          "seed": 16731217,
+          "emo_vector": [
+            0.159,
+            0.0,
+            0.039,
+            0.077,
+            0.0,
+            0.08,
+            0.037,
+            0.398
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.8086217641830444,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "503d7469910a35b78b221efe3e90066d7b68a28dc51d5815d861bfd852141ef6",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2474043369293213,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U041",
+      "speaker": "내레이션",
+      "text": "And he kept his promise.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "8efd477dac992c961d2e4de4ccb48022a8510d756ae30d017805343e657ec805",
+      "frames": 62257,
+      "rate": 22050,
+      "seconds": 2.8234467120181406,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28835,
+      "rms_dbfs": -20.32,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "And he kept his promise.",
+          "tokenizer_text": "And he kept his promise.",
+          "seed": 14496954,
+          "emo_vector": [
+            0.208,
+            0.0,
+            0.02,
+            0.014,
+            0.0,
+            0.051,
+            0.062,
+            0.43
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.9311522841453552,
+          "vocoder_linear_gain": 0.9450656084763787
+        }
+      ],
+      "reference_sha256": "503d7469910a35b78b221efe3e90066d7b68a28dc51d5815d861bfd852141ef6",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2715938687324524,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U042",
+      "speaker": "파란 요정",
+      "text": "Every good choice is a new beginning.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "b09166727a0a2f8bcabdf005af3856e76bebf5bbe5a79da0196f4e4bd82a0316",
+      "frames": 61543,
+      "rate": 22050,
+      "seconds": 2.7910657596371884,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28835,
+      "rms_dbfs": -18.59,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Every good choice is a new beginning.",
+          "tokenizer_text": "Every good choice is a new beginning.",
+          "seed": 9024787,
+          "emo_vector": [
+            0.246,
+            0.0,
+            0.029,
+            0.018,
+            0.0,
+            0.108,
+            0.067,
+            0.31
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.9440078735351562,
+          "vocoder_linear_gain": 0.9321956147511173
+        }
+      ],
+      "reference_sha256": "b75c1e97bd48f42615e8d30b5fba240a494370992a8e9615a28103b158d35904",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.28881603479385376,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U043",
+      "speaker": "내레이션",
+      "text": "And so, Pinocchio's wonderful adventure continued.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "0bef71de62f6bda816373e040c276ea0fe7d3c560528c8aed942d9fbb07241fd",
+      "frames": 84610,
+      "rate": 22050,
+      "seconds": 3.83718820861678,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 20261,
+      "rms_dbfs": -20.13,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "And so, Pinocchio's wonderful adventure continued.",
+          "tokenizer_text": "And so, Pinocchio's wonderful adventure continued.",
+          "seed": 15700576,
+          "emo_vector": [
+            0.242,
+            0.0,
+            0.067,
+            0.012,
+            0.0,
+            0.128,
+            0.065,
+            0.27
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.6183329820632935,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "503d7469910a35b78b221efe3e90066d7b68a28dc51d5815d861bfd852141ef6",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.30778318643569946,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-U044",
+      "speaker": "내레이션",
+      "text": "The end.",
+      "kind": "ORIGINAL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "e6d4eb0e36c65d48883c2703e5e10c229e3f82bdd4fc545a9628c1c7c87f5ac7",
+      "frames": 18161,
+      "rate": 22050,
+      "seconds": 0.8236281179138322,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.10326530612244898,
+      "peak_pcm": 26000,
+      "rms_dbfs": -21.28,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "The end.",
+          "tokenizer_text": "The end.",
+          "seed": 4402296,
+          "emo_vector": [
+            0.179,
+            0.0,
+            0.033,
+            0.008,
+            0.0,
+            0.118,
+            0.035,
+            0.412
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.7934737205505371,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "503d7469910a35b78b221efe3e90066d7b68a28dc51d5815d861bfd852141ef6",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.26008716225624084,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-M001",
+      "speaker": "제페토",
+      "text": "Look inside, please.",
+      "kind": "EXTERNAL_MODEL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "4b041789dd5669a85e6d904f2c235710d7c1045a4cadecddeaf48c7eff54c3f8",
+      "frames": 57080,
+      "rate": 22050,
+      "seconds": 2.5886621315192744,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 22138,
+      "rms_dbfs": -21.39,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Look inside, please.",
+          "tokenizer_text": "Look inside, please.",
+          "seed": 17022116,
+          "emo_vector": [
+            0.183,
+            0.0,
+            0.013,
+            0.01,
+            0.0,
+            0.065,
+            0.054,
+            0.456
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.6756103038787842,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.3104819059371948,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-M002",
+      "speaker": "제페토",
+      "text": "Hold your hat.",
+      "kind": "EXTERNAL_MODEL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "7ac3d7b5084bbc5b0d054eacce20137656b26e1b91b3e6446d1e958f150704a8",
+      "frames": 25009,
+      "rate": 22050,
+      "seconds": 1.1341950113378685,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 19626,
+      "rms_dbfs": -20.66,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Hold your hat.",
+          "tokenizer_text": "Hold your hat.",
+          "seed": 4674605,
+          "emo_vector": [
+            0.183,
+            0.0,
+            0.013,
+            0.01,
+            0.0,
+            0.065,
+            0.054,
+            0.456
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.5989298820495605,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2507496774196625,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-M003",
+      "speaker": "제페토",
+      "text": "Help the cricket!",
+      "kind": "EXTERNAL_MODEL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "244a4482178ec33a690d9cc3d0a4d96f03b8542124c63ca56d388474e291054a",
+      "frames": 52837,
+      "rate": 22050,
+      "seconds": 2.396235827664399,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 22376,
+      "rms_dbfs": -22.32,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Help the cricket!",
+          "tokenizer_text": "Help the cricket!",
+          "seed": 7297755,
+          "emo_vector": [
+            0.183,
+            0.0,
+            0.013,
+            0.01,
+            0.0,
+            0.065,
+            0.054,
+            0.456
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.6828625798225403,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.27117541432380676,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-M004",
+      "speaker": "피노키오",
+      "text": "Check on Cricket.",
+      "kind": "EXTERNAL_MODEL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "4f6b96d7a849b176018b8973d3b243542c52dee34dd24ee2d4563d901816de91",
+      "frames": 38626,
+      "rate": 22050,
+      "seconds": 1.7517460317460318,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05238095238095238,
+      "peak_pcm": 16167,
+      "rms_dbfs": -23.27,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Check on Cricket.",
+          "tokenizer_text": "Check on Cricket.",
+          "seed": 4255172,
+          "emo_vector": [
+            0.183,
+            0.0,
+            0.013,
+            0.01,
+            0.0,
+            0.065,
+            0.054,
+            0.456
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.4933987557888031,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "small.en"
+      ],
+      "cast_margin": 0.22074288129806519,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-M005",
+      "speaker": "제페토",
+      "text": "Stand beside Grandpa.",
+      "kind": "EXTERNAL_MODEL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "9a04a78d610fca18bb2be6bbe5831b141ad106b48b3f20df6b7e6fcd3775ad65",
+      "frames": 45649,
+      "rate": 22050,
+      "seconds": 2.070249433106576,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 23360,
+      "rms_dbfs": -20.32,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Stand beside Grandpa.",
+          "tokenizer_text": "Stand beside Grandpa.",
+          "seed": 7859665,
+          "emo_vector": [
+            0.183,
+            0.0,
+            0.013,
+            0.01,
+            0.0,
+            0.065,
+            0.054,
+            0.456
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.7128667831420898,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.3242732882499695,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-M006",
+      "speaker": "제페토",
+      "text": "Show your hands.",
+      "kind": "EXTERNAL_MODEL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "8047da127e3ea952c2394e99498bac1543589e673bfa38da5fbac9d5b7d9b5a4",
+      "frames": 32652,
+      "rate": 22050,
+      "seconds": 1.4808163265306122,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 16257,
+      "rms_dbfs": -22.32,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Show your hands.",
+          "tokenizer_text": "Show your hands.",
+          "seed": 12112965,
+          "emo_vector": [
+            0.183,
+            0.0,
+            0.013,
+            0.01,
+            0.0,
+            0.065,
+            0.054,
+            0.456
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.49615344405174255,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.30067458748817444,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-M007",
+      "speaker": "피노키오",
+      "text": "Bend your fingers.",
+      "kind": "EXTERNAL_MODEL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "96fb46154dea27522bec6065b6ff88e56d9a3307bce78d2ec9ec79d772b6d33e",
+      "frames": 42927,
+      "rate": 22050,
+      "seconds": 1.9468027210884353,
+      "first_signal_seconds": 0.19428571428571428,
+      "tail_seconds": 0.07927437641723356,
+      "peak_pcm": 18656,
+      "rms_dbfs": -22.11,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Bend your fingers.",
+          "tokenizer_text": "Bend your fingers.",
+          "seed": 18031284,
+          "emo_vector": [
+            0.183,
+            0.0,
+            0.013,
+            0.01,
+            0.0,
+            0.065,
+            0.054,
+            0.456
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.5693343877792358,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.27251091599464417,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-M008",
+      "speaker": "제페토",
+      "text": "Take Grandpa's hand.",
+      "kind": "EXTERNAL_MODEL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "0416b371de57bc02b40b408f88816a083ea042fb055cdf84f168ef2279e897d3",
+      "frames": 56221,
+      "rate": 22050,
+      "seconds": 2.5497052154195012,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28836,
+      "rms_dbfs": -21.47,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Take Grandpa's hand.",
+          "tokenizer_text": "Take Grandpa's hand.",
+          "seed": 7950125,
+          "emo_vector": [
+            0.183,
+            0.0,
+            0.013,
+            0.01,
+            0.0,
+            0.065,
+            0.054,
+            0.456
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.9739006757736206,
+          "vocoder_linear_gain": 0.9035829031548517
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2620764374732971,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-M009",
+      "speaker": "제페토",
+      "text": "Straighten your hat.",
+      "kind": "EXTERNAL_MODEL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "4aa88ef03805c9fcdb3d7eef5aac1330af9222033b90bd1f1c2d5c0dc5f4fad5",
+      "frames": 30417,
+      "rate": 22050,
+      "seconds": 1.3794557823129252,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.05201814058956916,
+      "peak_pcm": 28334,
+      "rms_dbfs": -20.66,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Straighten your hat.",
+          "tokenizer_text": "Straighten your hat.",
+          "seed": 15763743,
+          "emo_vector": [
+            0.183,
+            0.0,
+            0.013,
+            0.01,
+            0.0,
+            0.065,
+            0.054,
+            0.456
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650,
+            "temperature": 0.72,
+            "top_p": 0.84
+          },
+          "vocoder_raw_peak": 0.8646775484085083,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "d1a2d4c237a6b622d96552f83e164a1c1a74d5f4e263ae8d208ecd688f65f1e0",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.27437281608581543,
+      "human_listening": "NOT_RUN"
+    },
+    {
+      "id": "S12-M010",
+      "speaker": "피노키오",
+      "text": "Wave goodbye, please.",
+      "kind": "EXTERNAL_MODEL",
+      "source": "V2 native IndexTTS2 performance",
+      "sha256": "1131dfdea7179c441f951758bddd69072ca8aaa30e3660c807f4635670e9d5cf",
+      "frames": 45336,
+      "rate": 22050,
+      "seconds": 2.0560544217687076,
+      "first_signal_seconds": 0.10498866213151928,
+      "tail_seconds": 0.1743764172335601,
+      "peak_pcm": 25466,
+      "rms_dbfs": -20.33,
+      "voice_activity_only": "PCM window. Does not infer pronunciation or visual mouth shape.",
+      "native_control": [
+        {
+          "spoken_text": "Wave goodbye, please.",
+          "tokenizer_text": "Wave goodbye, please.",
+          "seed": 18383448,
+          "emo_vector": [
+            0.183,
+            0.0,
+            0.013,
+            0.01,
+            0.0,
+            0.065,
+            0.054,
+            0.456
+          ],
+          "emo_alpha": 1.0,
+          "actual_supported_generation_options": {
+            "num_beams": 1,
+            "max_mel_tokens": 650
+          },
+          "vocoder_raw_peak": 0.7771756649017334,
+          "vocoder_linear_gain": 1.0
+        }
+      ],
+      "reference_sha256": "3895d4aced7614b37b7ea783a947c74f8db4d500f61900f3eef14656519f3745",
+      "engine_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "transcript_matches": [
+        "base.en",
+        "small.en"
+      ],
+      "cast_margin": 0.2696789503097534,
+      "human_listening": "NOT_RUN"
+    }
+  ],
+  "independent_word_review": {
+    "model": "torchaudio WAV2VEC2_ASR_BASE_960H",
+    "model_sha256": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+    "files": [
+      {
+        "cue": "S12-N012",
+        "file_sha256": "033998305b4022effce641d697147c5246b99009e178b872f59174094a2251c0",
+        "greedy_decode": "I'M NOT HEARD I'M ALL RIGHT",
+        "target_log_likelihoods": {
+          "I'M NOT HURT I'M ALL RIGHT": -30.4052,
+          "I'M NOT HURT I'M ALRIGHT": -41.5172,
+          "I'M NOT HEARD I'M ALL RIGHT": -25.8523,
+          "I'M NOT HEARD I'M ALRIGHT": -36.9643
+        },
+        "best_target": "I'M NOT HEARD I'M ALL RIGHT",
+        "best_target_matches_words": false,
+        "subjective_listening": "NOT_RUN",
+        "critical_consonant_ctc_margin": -4.552900000000001,
+        "source_word_review_sha256": "c702c4b2739e8041dae07efaa3eb58442dbcc2a8f023fc8104481ea0fa251278",
+        "orthographic_equivalence": "alright = all right",
+        "decision": "Retake if independent ASR does not confirm hurt."
+      },
+      {
+        "cue": "S12-N012",
+        "file_sha256": "a4e0cf0ed02bd6abd90eba5ba4678d0385647ade78933e51023db2167f22855a",
+        "greedy_decode": "I'M NOT HURT I'M ALL RIGHT",
+        "target_log_likelihoods": {
+          "I'M NOT HURT I'M ALL RIGHT": -28.0607,
+          "I'M NOT HURT I'M ALRIGHT": -42.5246,
+          "I'M NOT HEARD I'M ALL RIGHT": -62.8594,
+          "I'M NOT HEARD I'M ALRIGHT": -77.3233
+        },
+        "best_target": "I'M NOT HURT I'M ALL RIGHT",
+        "best_target_matches_words": true,
+        "subjective_listening": "NOT_RUN",
+        "version": "retake-913",
+        "critical_consonant_ctc_margin": 34.7987,
+        "source_word_review_sha256": "445fa71cea6707a0bec9dedf9e75671fb921bd68f8804db3583a780f23b71d0b",
+        "orthographic_equivalence": "alright = all right",
+        "decision": "Retake if independent ASR does not confirm hurt."
+      }
+    ]
+  }
+}

@@ -159,11 +159,11 @@
         "anchor": "stage",
         "first_cel": 0,
         "motion": "story",
-        "start": 0.625,
+        "start": 0.5357142857142857,
         "end": 1.0,
         "flip": false,
         "last_cel": 5,
-        "motion_start": 0.625,
+        "motion_start": 0.5357142857142857,
         "motion_end": 1.0,
         "exposure_frames": [
           2,
@@ -188,7 +188,7 @@
         "first_cel": 0,
         "motion": "hold",
         "start": 0.0,
-        "end": 0.6423611111111112,
+        "end": 0.5580357142857143,
         "flip": true
       },
       {
@@ -202,11 +202,11 @@
         "anchor": "stage",
         "first_cel": 0,
         "motion": "story",
-        "start": 0.6423611111111112,
+        "start": 0.5580357142857143,
         "end": 1.0,
         "flip": false,
         "last_cel": 5,
-        "motion_start": 0.6423611111111112,
+        "motion_start": 0.5580357142857143,
         "motion_end": 1.0,
         "exposure_frames": [
           2,
@@ -231,7 +231,7 @@
         "first_cel": 0,
         "motion": "hold",
         "start": 0.0,
-        "end": 0.020833333333333332,
+        "end": 0.026785714285714284,
         "flip": false
       },
       {
@@ -245,12 +245,12 @@
         "anchor": "stage",
         "first_cel": 0,
         "motion": "story",
-        "start": 0.020833333333333332,
-        "end": 0.1840277777777778,
+        "start": 0.026785714285714284,
+        "end": 0.23660714285714285,
         "flip": false,
         "last_cel": 7,
-        "motion_start": 0.020833333333333332,
-        "motion_end": 0.1840277777777778,
+        "motion_start": 0.026785714285714284,
+        "motion_end": 0.23660714285714285,
         "exposure_frames": [
           5,
           4,
@@ -275,8 +275,8 @@
         "anchor": "stage",
         "first_cel": 0,
         "motion": "hold",
-        "start": 0.1840277777777778,
-        "end": 0.6319444444444444,
+        "start": 0.23660714285714285,
+        "end": 0.5446428571428571,
         "flip": false,
         "mouth": {
           "speaker": "피노키오",
@@ -294,11 +294,11 @@
         "anchor": "stage",
         "first_cel": 0,
         "motion": "story",
-        "start": 0.6319444444444444,
+        "start": 0.5446428571428571,
         "end": 1.0,
         "flip": false,
         "last_cel": 6,
-        "motion_start": 0.6319444444444444,
+        "motion_start": 0.5446428571428571,
         "motion_end": 1.0,
         "exposure_frames": [
           2,
@@ -324,11 +324,11 @@
         "first_cel": 0,
         "motion": "story",
         "start": 0.0,
-        "end": 0.2465277777777778,
+        "end": 0.3080357142857143,
         "flip": true,
         "last_cel": 7,
-        "motion_start": 0.09722222222222222,
-        "motion_end": 0.2465277777777778,
+        "motion_start": 0.125,
+        "motion_end": 0.3080357142857143,
         "exposure_frames": [
           4,
           3,
@@ -353,8 +353,8 @@
         "anchor": "stage",
         "first_cel": 0,
         "motion": "hold",
-        "start": 0.2465277777777778,
-        "end": 0.6527777777777778,
+        "start": 0.3080357142857143,
+        "end": 0.5714285714285714,
         "flip": true
       },
       {
@@ -368,11 +368,11 @@
         "anchor": "stage",
         "first_cel": 0,
         "motion": "story",
-        "start": 0.6527777777777778,
+        "start": 0.5714285714285714,
         "end": 1.0,
         "flip": true,
         "last_cel": 2,
-        "motion_start": 0.6527777777777778,
+        "motion_start": 0.5714285714285714,
         "motion_end": 1.0,
         "exposure_frames": [
           3,
@@ -445,11 +445,11 @@
         "first_cel": 5,
         "motion": "story",
         "start": 0.0,
-        "end": 0.5833333333333334,
+        "end": 0.65625,
         "flip": false,
         "last_cel": 15,
         "motion_start": 0.0,
-        "motion_end": 0.5833333333333334,
+        "motion_end": 0.65625,
         "exposure_frames": [
           7,
           8,
@@ -522,12 +522,12 @@
         "anchor": "stage",
         "first_cel": 0,
         "motion": "story",
-        "start": 0.0787037037037037,
-        "end": 0.5648148148148148,
+        "start": 0.08854166666666667,
+        "end": 0.6354166666666666,
         "flip": false,
         "last_cel": 8,
-        "motion_start": 0.0787037037037037,
-        "motion_end": 0.5648148148148148,
+        "motion_start": 0.08854166666666667,
+        "motion_end": 0.6354166666666666,
         "exposure_frames": [
           6,
           7,
@@ -557,7 +557,7 @@
         "anchor": "stage",
         "first_cel": 4,
         "motion": "hold",
-        "start": 0.5648148148148148,
+        "start": 0.6354166666666666,
         "end": 1.0,
         "flip": false
       }
@@ -756,7 +756,7 @@
         "end": 1.0,
         "flip": false,
         "last_cel": 8,
-        "motion_start": 0.17916666666666667,
+        "motion_start": 0.2764227642276423,
         "motion_end": 1.0,
         "exposure_frames": [
           5,
@@ -802,7 +802,7 @@
         "end": 1.0,
         "flip": false,
         "last_cel": 7,
-        "motion_start": 0.125,
+        "motion_start": 0.17073170731707318,
         "motion_end": 1.0,
         "exposure_frames": [
           3,
@@ -898,7 +898,7 @@
         "first_cel": 6,
         "motion": "hold",
         "start": 0.0,
-        "end": 0.4666666666666667,
+        "end": 0.45394736842105265,
         "flip": false
       },
       {
@@ -912,8 +912,8 @@
         "anchor": "stage",
         "first_cel": 0,
         "motion": "hold",
-        "start": 0.4666666666666667,
-        "end": 0.55,
+        "start": 0.45394736842105265,
+        "end": 0.5855263157894737,
         "flip": true
       },
       {
@@ -927,7 +927,7 @@
         "anchor": "stage",
         "first_cel": 0,
         "motion": "hold",
-        "start": 0.55,
+        "start": 0.5855263157894737,
         "end": 1.0,
         "flip": false,
         "mouth": {
@@ -962,7 +962,7 @@
         "first_cel": 4,
         "motion": "hold",
         "start": 0.0,
-        "end": 0.55,
+        "end": 0.5855263157894737,
         "flip": false,
         "mouth": {
           "speaker": "파란 요정"
@@ -979,7 +979,7 @@
         "anchor": "stage",
         "first_cel": 4,
         "motion": "hold",
-        "start": 0.55,
+        "start": 0.5855263157894737,
         "end": 1.0,
         "flip": false,
         "mouth": {
@@ -1094,7 +1094,7 @@
         "first_cel": 4,
         "motion": "hold",
         "start": 0.0,
-        "end": 0.525,
+        "end": 0.5594405594405595,
         "flip": false,
         "mouth": {
           "speaker": "파란 요정"
@@ -1111,7 +1111,7 @@
         "anchor": "stage",
         "first_cel": 5,
         "motion": "hold",
-        "start": 0.525,
+        "start": 0.5594405594405595,
         "end": 1.0,
         "flip": true,
         "mouth": {
@@ -1229,7 +1229,7 @@
         "end": 1.0,
         "flip": false,
         "last_cel": 5,
-        "motion_start": 0.875,
+        "motion_start": 0.7983870967741935,
         "motion_end": 1.0,
         "exposure_frames": [
           2,

@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "frames": 2386,
+    "codec": "h264",
+    "duration_seconds": 99.41666666666667
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": 24000
+  },
+  "srt": "mov_text",
+  "sha256": "136db5ac902413ab90695c9fa4943e2b49bc1f6013aae7df58e6875489762abb",
+  "shot_ids": [
+    "S12-C15",
+    "S12-C16",
+    "S12-C17",
+    "S12-C18",
+    "S12-C19",
+    "S12-C20",
+    "S12-C21",
+    "S12-C22",
+    "S12-C23",
+    "S12-C24",
+    "S12-C25",
+    "S12-C26",
+    "S12-C27",
+    "S12-C28",
+    "S12-C29"
+  ],
+  "spoken_lines": 24,
+  "model_cues": 2,
+  "chapters_outside_story_clock": true,
+  "listening": "NOT_RUN",
+  "android_microphone": "NOT_RUN"
+}

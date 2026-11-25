@@ -1,0 +1,37 @@
+{
+  "excerpt": [
+    "S12-C15",
+    "S12-C29"
+  ],
+  "chromium_clips_decoded": 3,
+  "gates": [
+    {
+      "id": "S12-P03",
+      "example_ended_seconds": 1.75175,
+      "guardian": "NOT_RUN",
+      "simulated_microphone": "PASS",
+      "mic_ms_from_actual_model_end": {
+        "listening": 254,
+        "speaking": 1648,
+        "settling": 2639
+      },
+      "settling_to_reaction_ms": 1110
+    },
+    {
+      "id": "S12-P04",
+      "example_ended_seconds": 2.07025,
+      "guardian": "NOT_RUN",
+      "simulated_microphone": "PASS",
+      "mic_ms_from_actual_model_end": {
+        "listening": 218,
+        "speaking": 3704,
+        "settling": 4697
+      },
+      "settling_to_reaction_ms": 1351
+    }
+  ],
+  "transport": "self-contained HTML served on loopback, then browser offline",
+  "android_device_microphone": "NOT_RUN",
+  "method": "Decoded every chapter, positioned near each prompt end, played the real models and reactions",
+  "chromium_microphone": "fake PCM file in a scoped browser session"
+}

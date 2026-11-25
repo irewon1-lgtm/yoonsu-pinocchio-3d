@@ -1,0 +1,167 @@
+{
+  "episode": "S12",
+  "title": "친구를 구한 진짜 아이",
+  "edition": "V3",
+  "production_status": "PARTIAL",
+  "completed_picture_cuts": 20,
+  "required_picture_cuts": 50,
+  "excerpt_media": [
+    {
+      "status": "PASS",
+      "video": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 24,
+        "frames": 843,
+        "codec": "h264",
+        "duration_seconds": 35.125
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 24000
+      },
+      "srt": "mov_text",
+      "sha256": "d2c3743c5758559f8125ec519be8f4071db9c047eb381ee8fcc77df34a868081",
+      "shot_ids": [
+        "S12-C01",
+        "S12-C02",
+        "S12-C03",
+        "S12-C04",
+        "S12-C05"
+      ],
+      "spoken_lines": 9,
+      "model_cues": 2,
+      "chapters_outside_story_clock": true,
+      "listening": "NOT_RUN",
+      "android_microphone": "NOT_RUN"
+    },
+    {
+      "status": "PASS",
+      "video": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 24,
+        "frames": 2386,
+        "codec": "h264",
+        "duration_seconds": 99.41666666666667
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 24000
+      },
+      "srt": "mov_text",
+      "sha256": "136db5ac902413ab90695c9fa4943e2b49bc1f6013aae7df58e6875489762abb",
+      "shot_ids": [
+        "S12-C15",
+        "S12-C16",
+        "S12-C17",
+        "S12-C18",
+        "S12-C19",
+        "S12-C20",
+        "S12-C21",
+        "S12-C22",
+        "S12-C23",
+        "S12-C24",
+        "S12-C25",
+        "S12-C26",
+        "S12-C27",
+        "S12-C28",
+        "S12-C29"
+      ],
+      "spoken_lines": 24,
+      "model_cues": 2,
+      "chapters_outside_story_clock": true,
+      "listening": "NOT_RUN",
+      "android_microphone": "NOT_RUN"
+    }
+  ],
+  "chromium_interaction": [
+    {
+      "excerpt": [
+        "S12-C01",
+        "S12-C05"
+      ],
+      "chromium_clips_decoded": 3,
+      "gates": [
+        {
+          "id": "S12-P01",
+          "example_ended_seconds": 2.588667,
+          "guardian": "PASS"
+        },
+        {
+          "id": "S12-P02",
+          "example_ended_seconds": 1.134208,
+          "guardian": "PASS"
+        }
+      ],
+      "transport": "self-contained HTML served on loopback, then browser offline",
+      "android_device_microphone": "NOT_RUN",
+      "method": "Decoded every chapter, positioned near each prompt end, played the real model and reaction, and exercised guardian input"
+    },
+    {
+      "excerpt": [
+        "S12-C15",
+        "S12-C29"
+      ],
+      "chromium_clips_decoded": 3,
+      "gates": [
+        {
+          "id": "S12-P03",
+          "example_ended_seconds": 1.75175,
+          "guardian": "NOT_RUN",
+          "simulated_microphone": "PASS",
+          "mic_ms_from_actual_model_end": {
+            "listening": 254,
+            "speaking": 1648,
+            "settling": 2639
+          },
+          "settling_to_reaction_ms": 1110
+        },
+        {
+          "id": "S12-P04",
+          "example_ended_seconds": 2.07025,
+          "guardian": "NOT_RUN",
+          "simulated_microphone": "PASS",
+          "mic_ms_from_actual_model_end": {
+            "listening": 218,
+            "speaking": 3704,
+            "settling": 4697
+          },
+          "settling_to_reaction_ms": 1351
+        }
+      ],
+      "transport": "self-contained HTML served on loopback, then browser offline",
+      "android_device_microphone": "NOT_RUN",
+      "method": "Decoded every chapter, positioned near each prompt end, played the real models and reactions",
+      "chromium_microphone": "fake PCM file in a scoped browser session"
+    }
+  ],
+  "voice_files": 81,
+  "voice_story_files": 71,
+  "voice_model_files": 10,
+  "voice_recognizer_consensus": 77,
+  "actual_direct_voice_listening": "NOT_RUN",
+  "android_device_microphone": "NOT_RUN",
+  "published_episode_in_existing_app": false,
+  "art_archive": {
+    "artifact": "S12-V3-2D-Production.zip",
+    "file_count": 197,
+    "bytes": 81086074,
+    "rgba_cells": 996,
+    "sha256": "a5ced7bb4e7a0f2b62f7593b4810c91a2b3f8f3906ae7ed65d57529a624f58e3",
+    "zip_integrity": "PASS"
+  },
+  "blocked": [
+    {
+      "shots": "C06–C14",
+      "event": "I21",
+      "status": "BLOCKED_LAYOUT",
+      "needed": "승인 원화 속 낮은 구조 공간과 안전하게 안내판을 지지할 받침"
+    },
+    {
+      "shots": "C30–C50",
+      "status": "BLOCKED_RESOURCE",
+      "needed": "승인 인간형 윤수 원화 CHAR_YOONSU_HUMAN"
+    }
+  ]
+}
