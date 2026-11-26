@@ -1,0 +1,1621 @@
+[
+  {
+    "id": "S12-C20",
+    "plate": "S11L-school-open.png@280,208,780",
+    "layout": [
+      {
+        "track": "open-door",
+        "level": "S12F-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "upright-guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Geppetto",
+        "level": "S12F-gep-talk",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": true,
+        "mouth": {
+          "speaker": "제페토",
+          "level": "S12F-gep-talk"
+        }
+      },
+      {
+        "track": "Pinocchio",
+        "level": "S12F-pin-talk",
+        "root": [
+          541,
+          630
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket",
+        "root": [
+          479,
+          636
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": true
+      }
+    ]
+  },
+  {
+    "id": "S12-C21",
+    "plate": "S11L-school-open.png@270,206,816",
+    "layout": [
+      {
+        "track": "open-door",
+        "level": "S12F-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "upright-guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "blue-light",
+        "level": "S12F-glow",
+        "root": [
+          683,
+          182
+        ],
+        "height": 190,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "story",
+        "start": 0.5357142857142857,
+        "end": 1.0,
+        "flip": false,
+        "last_cel": 5,
+        "motion_start": 0.5357142857142857,
+        "motion_end": 1.0,
+        "exposure_frames": [
+          2,
+          2,
+          3,
+          3,
+          3,
+          3
+        ],
+        "drift_x": 0,
+        "drift_y": 0
+      },
+      {
+        "track": "Geppetto",
+        "level": "S12F-gep-quiet",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 0.5580357142857143,
+        "flip": true
+      },
+      {
+        "track": "Geppetto",
+        "level": "S12F-gep-up",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "story",
+        "start": 0.5580357142857143,
+        "end": 1.0,
+        "flip": false,
+        "last_cel": 5,
+        "motion_start": 0.5580357142857143,
+        "motion_end": 1.0,
+        "exposure_frames": [
+          2,
+          2,
+          2,
+          2,
+          3,
+          3
+        ],
+        "drift_x": 0,
+        "drift_y": 0
+      },
+      {
+        "track": "Pinocchio",
+        "level": "S12F-pin-talk",
+        "root": [
+          541,
+          630
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 0.026785714285714284,
+        "flip": false
+      },
+      {
+        "track": "Pinocchio",
+        "level": "S12F-walk",
+        "root": [
+          541,
+          630
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "story",
+        "start": 0.026785714285714284,
+        "end": 0.23660714285714285,
+        "flip": false,
+        "last_cel": 7,
+        "motion_start": 0.026785714285714284,
+        "motion_end": 0.23660714285714285,
+        "exposure_frames": [
+          5,
+          4,
+          4,
+          6,
+          5,
+          4,
+          4,
+          5
+        ],
+        "drift_x": 20,
+        "drift_y": 13
+      },
+      {
+        "track": "Pinocchio",
+        "level": "S12F-pin-talk",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.23660714285714285,
+        "end": 0.5446428571428571,
+        "flip": false,
+        "mouth": {
+          "speaker": "피노키오",
+          "level": "S12F-pin-talk"
+        }
+      },
+      {
+        "track": "Pinocchio",
+        "level": "S12F-pin-up",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "story",
+        "start": 0.5446428571428571,
+        "end": 1.0,
+        "flip": false,
+        "last_cel": 6,
+        "motion_start": 0.5446428571428571,
+        "motion_end": 1.0,
+        "exposure_frames": [
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3
+        ],
+        "drift_x": 0,
+        "drift_y": 0
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-walk",
+        "root": [
+          479,
+          636
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "story",
+        "start": 0.0,
+        "end": 0.3080357142857143,
+        "flip": true,
+        "last_cel": 7,
+        "motion_start": 0.125,
+        "motion_end": 0.3080357142857143,
+        "exposure_frames": [
+          4,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "drift_x": 31,
+        "drift_y": 13
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket",
+        "root": [
+          510,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.3080357142857143,
+        "end": 0.5714285714285714,
+        "flip": true
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          510,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "story",
+        "start": 0.5714285714285714,
+        "end": 1.0,
+        "flip": true,
+        "last_cel": 2,
+        "motion_start": 0.5714285714285714,
+        "motion_end": 1.0,
+        "exposure_frames": [
+          3,
+          3,
+          4
+        ],
+        "drift_x": 0,
+        "drift_y": 0
+      }
+    ]
+  },
+  {
+    "id": "S12-C22",
+    "plate": "S11L-school-open.png@246,163,895",
+    "layout": [
+      {
+        "track": "open-door",
+        "level": "S12F-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "upright-guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "blue-light",
+        "level": "S12F-glow",
+        "root": [
+          683,
+          182
+        ],
+        "height": 190,
+        "anchor": "stage",
+        "first_cel": 5,
+        "motion": "story",
+        "start": 0.0,
+        "end": 0.65625,
+        "flip": false,
+        "last_cel": 15,
+        "motion_start": 0.0,
+        "motion_end": 0.65625,
+        "exposure_frames": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          10,
+          8,
+          8,
+          13,
+          14
+        ],
+        "drift_x": 0,
+        "drift_y": 0
+      },
+      {
+        "track": "Geppetto",
+        "level": "S12F-gep-up",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 5,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Pinocchio",
+        "level": "S12F-pin-up",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 6,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          510,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": true
+      },
+      {
+        "track": "Fairy",
+        "level": "S12F-reveal",
+        "root": [
+          764,
+          336
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "story",
+        "start": 0.08854166666666667,
+        "end": 0.6354166666666666,
+        "flip": false,
+        "last_cel": 8,
+        "motion_start": 0.08854166666666667,
+        "motion_end": 0.6354166666666666,
+        "exposure_frames": [
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          14,
+          14,
+          16
+        ],
+        "drift_x": 67,
+        "drift_y": 106,
+        "flight": [
+          0,
+          8
+        ]
+      },
+      {
+        "track": "Fairy",
+        "level": "S12F-fairy",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 4,
+        "motion": "hold",
+        "start": 0.6354166666666666,
+        "end": 1.0,
+        "flip": false
+      }
+    ]
+  },
+  {
+    "id": "S12-C23",
+    "plate": "S11L-school-open.png@382,263,704",
+    "layout": [
+      {
+        "track": "open-door",
+        "level": "S12F-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "upright-guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Geppetto",
+        "level": "S12F-gep-up",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 5,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Pinocchio",
+        "level": "S12F-pin-up",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 6,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          510,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": true
+      },
+      {
+        "track": "Fairy",
+        "level": "S12F-fairy",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 4,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false,
+        "mouth": {
+          "speaker": "파란 요정"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S12-C24",
+    "plate": "S11L-school-open.png@442,290,656",
+    "layout": [
+      {
+        "track": "open-door",
+        "level": "S12F-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "upright-guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Geppetto",
+        "level": "S12F-gep-up",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 5,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Pinocchio",
+        "level": "S12F-pin-nod",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "story",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false,
+        "last_cel": 8,
+        "motion_start": 0.2764227642276423,
+        "motion_end": 1.0,
+        "exposure_frames": [
+          5,
+          4,
+          4,
+          6,
+          5,
+          6,
+          5,
+          6,
+          12
+        ],
+        "drift_x": 0,
+        "drift_y": 0
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          510,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": true
+      },
+      {
+        "track": "Fairy",
+        "level": "S12F-palm",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "story",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false,
+        "last_cel": 7,
+        "motion_start": 0.17073170731707318,
+        "motion_end": 1.0,
+        "exposure_frames": [
+          3,
+          3,
+          4,
+          5,
+          4,
+          5,
+          6,
+          10
+        ],
+        "drift_x": 0,
+        "drift_y": 0,
+        "mouth": {
+          "speaker": "파란 요정"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S12-C25",
+    "plate": "S11L-school-open.png@392,264,704",
+    "layout": [
+      {
+        "track": "open-door",
+        "level": "S12F-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "upright-guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Geppetto",
+        "level": "S12F-gep-up",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 5,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Pinocchio",
+        "level": "S12F-pin-up",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 6,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 0.45394736842105265,
+        "flip": false
+      },
+      {
+        "track": "Pinocchio",
+        "level": "S12F-listen",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.45394736842105265,
+        "end": 0.5855263157894737,
+        "flip": true
+      },
+      {
+        "track": "Pinocchio",
+        "level": "S12F-pin-talk",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.5855263157894737,
+        "end": 1.0,
+        "flip": false,
+        "mouth": {
+          "speaker": "피노키오",
+          "level": "S12F-pin-talk"
+        }
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          510,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": true
+      },
+      {
+        "track": "Fairy",
+        "level": "S12F-fairy",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 4,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 0.5855263157894737,
+        "flip": false,
+        "mouth": {
+          "speaker": "파란 요정"
+        }
+      },
+      {
+        "track": "Fairy",
+        "level": "S12F-fairy",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 4,
+        "motion": "hold",
+        "start": 0.5855263157894737,
+        "end": 1.0,
+        "flip": false,
+        "mouth": {
+          "speaker": "파란 요정"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S12-C26",
+    "plate": "S11L-school-open.png@422,267,704",
+    "layout": [
+      {
+        "track": "open-door",
+        "level": "S12F-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "upright-guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Geppetto",
+        "level": "S12F-gep-up",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 5,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Pinocchio",
+        "level": "S12F-pin-up",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 6,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          510,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": true
+      },
+      {
+        "track": "Fairy",
+        "level": "S12F-fairy",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 4,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 0.5594405594405595,
+        "flip": false,
+        "mouth": {
+          "speaker": "파란 요정"
+        }
+      },
+      {
+        "track": "Fairy",
+        "level": "S12F-fairy",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 5,
+        "motion": "hold",
+        "start": 0.5594405594405595,
+        "end": 1.0,
+        "flip": true,
+        "mouth": {
+          "speaker": "파란 요정"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S12-C27",
+    "plate": "S11L-school-open.png@418,250,736",
+    "layout": [
+      {
+        "track": "open-door",
+        "level": "S12F-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "upright-guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Geppetto",
+        "level": "S12F-gep-up",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 5,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Pinocchio",
+        "level": "S12F-pin-up",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 6,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          510,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": true
+      },
+      {
+        "track": "Fairy",
+        "level": "S12F-wand",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "story",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false,
+        "last_cel": 5,
+        "motion_start": 0.7983870967741935,
+        "motion_end": 1.0,
+        "exposure_frames": [
+          2,
+          3,
+          4,
+          4,
+          5,
+          5
+        ],
+        "drift_x": 0,
+        "drift_y": 0,
+        "mouth": {
+          "speaker": "파란 요정"
+        }
+      }
+    ]
+  },
+  {
+    "id": "S12-C28",
+    "plate": "S11L-school-open.png@360,244,752",
+    "layout": [
+      {
+        "track": "open-door",
+        "level": "S12F-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "upright-guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Geppetto",
+        "level": "S12F-gep-up",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 5,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Pinocchio",
+        "level": "S12F-pin-ready",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "story",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false,
+        "last_cel": 9,
+        "motion_start": 0.10416666666666667,
+        "motion_end": 1.0,
+        "exposure_frames": [
+          5,
+          4,
+          4,
+          6,
+          8,
+          9,
+          11,
+          12,
+          12,
+          17
+        ],
+        "drift_x": 0,
+        "drift_y": 0
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          510,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": true
+      },
+      {
+        "track": "Fairy",
+        "level": "S12F-wand",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 5,
+        "motion": "story",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false,
+        "last_cel": 14,
+        "motion_start": 0.0,
+        "motion_end": 1.0,
+        "exposure_frames": [
+          3,
+          3,
+          4,
+          4,
+          5,
+          6,
+          7,
+          7,
+          8,
+          10
+        ],
+        "drift_x": 0,
+        "drift_y": 0
+      },
+      {
+        "track": "shoe-to-shoulder-particles",
+        "level": "S12F-sparks",
+        "root": [
+          499,
+          378
+        ],
+        "height": 271,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "story",
+        "start": 0.034722222222222224,
+        "end": 1.0,
+        "flip": false,
+        "last_cel": 27,
+        "motion_start": 0.034722222222222224,
+        "motion_end": 1.0,
+        "exposure_frames": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "drift_x": 0,
+        "drift_y": 0
+      }
+    ]
+  },
+  {
+    "id": "S12-C29",
+    "plate": "S11L-school-open.png@420,271,694",
+    "layout": [
+      {
+        "track": "open-door",
+        "level": "S12F-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "upright-guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Geppetto",
+        "level": "S12F-gep-up",
+        "root": [
+          667,
+          629
+        ],
+        "height": 315,
+        "anchor": "stage",
+        "first_cel": 5,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Pinocchio",
+        "level": "S12F-pin-ready",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 9,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          510,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": true
+      },
+      {
+        "track": "Fairy",
+        "level": "S12F-wand",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 14,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false,
+        "mouth": {
+          "speaker": "파란 요정"
+        }
+      },
+      {
+        "track": "blue-reflection",
+        "level": "S12F-halo",
+        "root": [
+          506,
+          427
+        ],
+        "height": 97,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "story",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false,
+        "last_cel": 12,
+        "motion_start": 0.0,
+        "motion_end": 1.0,
+        "exposure_frames": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          11,
+          14,
+          9,
+          8,
+          7,
+          5,
+          7
+        ],
+        "drift_x": 0,
+        "drift_y": 0
+      },
+      {
+        "track": "rising-particles",
+        "level": "S12F-sparks",
+        "root": [
+          499,
+          378
+        ],
+        "height": 271,
+        "anchor": "stage",
+        "first_cel": 27,
+        "motion": "story",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false,
+        "last_cel": 31,
+        "motion_start": 0.0,
+        "motion_end": 1.0,
+        "exposure_frames": [
+          6,
+          6,
+          6,
+          6,
+          7
+        ],
+        "drift_x": 0,
+        "drift_y": 0
+      }
+    ]
+  }
+]

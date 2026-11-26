@@ -1,0 +1,211 @@
+{
+  "fps": 24,
+  "main_seconds": 367.5,
+  "seconds_through_last_story_line": 362.49033333333335,
+  "model_wait_retry_seconds_in_main": 0,
+  "question_time_source": "24 kHz exact original PCM, one thousand samples per frame",
+  "events": [
+    {
+      "id": "S12-P01",
+      "model": "Look inside, please.",
+      "question_id": "S12-N002",
+      "question_start_sec": 9.623083333333334,
+      "question_end_sec": 12.958333333333334,
+      "chapter_end_frame": 311,
+      "model_duration_sec": 2.5886666666666667,
+      "model_on_story_clock": false,
+      "microphone_enable": "after actual model ended",
+      "guardian_can_continue": true,
+      "reaction_cuts": [
+        "S12-C03"
+      ],
+      "reaction_starts_sec": 12.958333333333334,
+      "reaction_done_sec": 14.958333333333334,
+      "resume_id": "S12-N003",
+      "resume_sec": 14.958333333333334,
+      "trigger_count": "once"
+    },
+    {
+      "id": "S12-P02",
+      "model": "Hold your hat.",
+      "question_id": "S12-N006",
+      "question_start_sec": 23.872041666666668,
+      "question_end_sec": 26.666666666666668,
+      "chapter_end_frame": 640,
+      "model_duration_sec": 1.1342083333333333,
+      "model_on_story_clock": false,
+      "microphone_enable": "after actual model ended",
+      "guardian_can_continue": true,
+      "reaction_cuts": [
+        "S12-C05"
+      ],
+      "reaction_starts_sec": 26.666666666666668,
+      "reaction_done_sec": 28.666666666666668,
+      "resume_id": "S12-N007",
+      "resume_sec": 28.666666666666668,
+      "trigger_count": "once"
+    },
+    {
+      "id": "I21",
+      "model": "Help the cricket!",
+      "question_id": "S12-U010",
+      "question_start_sec": 67.87404166666667,
+      "question_end_sec": 71.625,
+      "chapter_end_frame": 1719,
+      "model_duration_sec": 2.39625,
+      "model_on_story_clock": false,
+      "microphone_enable": "after actual model ended",
+      "guardian_can_continue": true,
+      "reaction_cuts": [
+        "S12-C12",
+        "S12-C13",
+        "S12-C14"
+      ],
+      "reaction_starts_sec": 71.625,
+      "reaction_done_sec": 96.625,
+      "resume_id": "S12-U011",
+      "resume_sec": 97.625,
+      "trigger_count": "once"
+    },
+    {
+      "id": "S12-P03",
+      "model": "Check on Cricket.",
+      "question_id": "S12-N011",
+      "question_start_sec": 120.239125,
+      "question_end_sec": 123.04166666666667,
+      "chapter_end_frame": 2953,
+      "model_duration_sec": 1.75175,
+      "model_on_story_clock": false,
+      "microphone_enable": "after actual model ended",
+      "guardian_can_continue": true,
+      "reaction_cuts": [
+        "S12-C19"
+      ],
+      "reaction_starts_sec": 123.04166666666667,
+      "reaction_done_sec": 126.04166666666667,
+      "resume_id": "S12-N012",
+      "resume_sec": 126.04166666666667,
+      "trigger_count": "once"
+    },
+    {
+      "id": "S12-P04",
+      "model": "Stand beside Grandpa.",
+      "question_id": "S12-N013",
+      "question_start_sec": 136.09633333333332,
+      "question_end_sec": 139.29166666666666,
+      "chapter_end_frame": 3343,
+      "model_duration_sec": 2.07025,
+      "model_on_story_clock": false,
+      "microphone_enable": "after actual model ended",
+      "guardian_can_continue": true,
+      "reaction_cuts": [
+        "S12-C21"
+      ],
+      "reaction_starts_sec": 139.29166666666666,
+      "reaction_done_sec": 142.29166666666666,
+      "resume_id": "S12-N014",
+      "resume_sec": 142.29166666666666,
+      "trigger_count": "once"
+    },
+    {
+      "id": "S12-P05",
+      "model": "Show your hands.",
+      "question_id": "S12-N016",
+      "question_start_sec": 241.360875,
+      "question_end_sec": 245.08333333333334,
+      "chapter_end_frame": 5882,
+      "model_duration_sec": 1.4808333333333332,
+      "model_on_story_clock": false,
+      "microphone_enable": "after actual model ended",
+      "guardian_can_continue": true,
+      "reaction_cuts": [
+        "S12-C36"
+      ],
+      "reaction_starts_sec": 245.08333333333334,
+      "reaction_done_sec": 248.58333333333334,
+      "resume_id": "S12-N017",
+      "resume_sec": 248.58333333333334,
+      "trigger_count": "once"
+    },
+    {
+      "id": "S12-P06",
+      "model": "Bend your fingers.",
+      "question_id": "S12-N018",
+      "question_start_sec": 255.3835,
+      "question_end_sec": 259.2916666666667,
+      "chapter_end_frame": 6223,
+      "model_duration_sec": 1.9468333333333334,
+      "model_on_story_clock": false,
+      "microphone_enable": "after actual model ended",
+      "guardian_can_continue": true,
+      "reaction_cuts": [
+        "S12-C38"
+      ],
+      "reaction_starts_sec": 259.2916666666667,
+      "reaction_done_sec": 263.7916666666667,
+      "resume_id": "S12-N019",
+      "resume_sec": 263.7916666666667,
+      "trigger_count": "once"
+    },
+    {
+      "id": "S12-P07",
+      "model": "Take Grandpa's hand.",
+      "question_id": "S12-N022",
+      "question_start_sec": 270.85545833333333,
+      "question_end_sec": 273.5833333333333,
+      "chapter_end_frame": 6566,
+      "model_duration_sec": 2.5497083333333332,
+      "model_on_story_clock": false,
+      "microphone_enable": "after actual model ended",
+      "guardian_can_continue": true,
+      "reaction_cuts": [
+        "S12-C40"
+      ],
+      "reaction_starts_sec": 273.5833333333333,
+      "reaction_done_sec": 276.0833333333333,
+      "resume_id": "S12-N023",
+      "resume_sec": 276.0833333333333,
+      "trigger_count": "once"
+    },
+    {
+      "id": "S12-P08",
+      "model": "Straighten your hat.",
+      "question_id": "S12-N025",
+      "question_start_sec": 287.28766666666667,
+      "question_end_sec": 290.7083333333333,
+      "chapter_end_frame": 6977,
+      "model_duration_sec": 1.3794583333333332,
+      "model_on_story_clock": false,
+      "microphone_enable": "after actual model ended",
+      "guardian_can_continue": true,
+      "reaction_cuts": [
+        "S12-C42"
+      ],
+      "reaction_starts_sec": 290.7083333333333,
+      "reaction_done_sec": 294.7083333333333,
+      "resume_id": "S12-N026",
+      "resume_sec": 294.7083333333333,
+      "trigger_count": "once"
+    },
+    {
+      "id": "S12-P09",
+      "model": "Wave goodbye, please.",
+      "question_id": "S12-N027",
+      "question_start_sec": 308.86858333333333,
+      "question_end_sec": 312.75,
+      "chapter_end_frame": 7506,
+      "model_duration_sec": 2.0560833333333335,
+      "model_on_story_clock": false,
+      "microphone_enable": "after actual model ended",
+      "guardian_can_continue": true,
+      "reaction_cuts": [
+        "S12-C45"
+      ],
+      "reaction_starts_sec": 312.75,
+      "reaction_done_sec": 319.75,
+      "resume_id": "S12-U036",
+      "resume_sec": 319.75,
+      "trigger_count": "once"
+    }
+  ]
+}

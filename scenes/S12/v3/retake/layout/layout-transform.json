@@ -1,0 +1,343 @@
+[
+  {
+    "id": "S12-C30",
+    "plate": "S11L-school-open.png",
+    "camera_cues": [
+      {
+        "frame": 0,
+        "crop": [
+          420,
+          271,
+          694
+        ]
+      },
+      {
+        "frame": 84,
+        "crop": [
+          420,
+          271,
+          694
+        ]
+      },
+      {
+        "frame": 136,
+        "crop": [
+          451,
+          297,
+          580
+        ],
+        "interpolate": true
+      }
+    ],
+    "layout": [
+      {
+        "track": "open-door",
+        "level": "S12F-door",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "teacher",
+        "level": "S12F-teacher",
+        "root": [
+          739,
+          559
+        ],
+        "height": 193,
+        "anchor": "stage",
+        "first_cel": 7,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "upright-guideboard",
+        "level": "S12F-sign",
+        "root": [
+          413,
+          597
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false
+      },
+      {
+        "track": "Geppetto",
+        "level": "S12G-adult-first-response",
+        "root": [
+          0,
+          0
+        ],
+        "height": 720,
+        "anchor": "stage",
+        "first_cel": 0,
+        "motion": "story",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false,
+        "last_cel": 6,
+        "motion_start": 0,
+        "motion_end": 1,
+        "exposure_frames": [
+          78,
+          6,
+          9,
+          10,
+          12,
+          20,
+          109
+        ]
+      },
+      {
+        "track": "Pinocchio-transformation",
+        "level": "S12T-metamorph",
+        "root": [
+          561,
+          643
+        ],
+        "height": 236,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 72,
+        "motion": "story",
+        "start": 0,
+        "end": 1,
+        "motion_start": 0,
+        "motion_end": 1,
+        "exposure_frames": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          100
+        ]
+      },
+      {
+        "track": "Cricket",
+        "level": "S12F-cricket-acting",
+        "root": [
+          510,
+          649
+        ],
+        "height": 84,
+        "anchor": "stage",
+        "first_cel": 2,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": true
+      },
+      {
+        "track": "Fairy",
+        "level": "S12F-wand",
+        "root": [
+          831,
+          442
+        ],
+        "height": 122,
+        "anchor": "stage",
+        "first_cel": 14,
+        "motion": "hold",
+        "start": 0.0,
+        "end": 1.0,
+        "flip": false,
+        "mouth": {
+          "speaker": "파란 요정"
+        }
+      },
+      {
+        "track": "blue-reflection",
+        "level": "S12F-halo",
+        "root": [
+          506,
+          427
+        ],
+        "height": 97,
+        "anchor": "stage",
+        "flip": false,
+        "first_cel": 12,
+        "motion": "hold",
+        "start": 0,
+        "end": 0.01639344262295082
+      },
+      {
+        "track": "rising-particles",
+        "level": "S12F-sparks",
+        "root": [
+          499,
+          378
+        ],
+        "height": 271,
+        "anchor": "stage",
+        "flip": false,
+        "first_cel": 31,
+        "motion": "hold",
+        "start": 0,
+        "end": 0.01639344262295082
+      },
+      {
+        "track": "staged-magic-motes",
+        "level": "S12T-optics",
+        "root": [
+          446,
+          377
+        ],
+        "height": 300,
+        "anchor": "stage",
+        "first_cel": 0,
+        "last_cel": 61,
+        "motion": "story",
+        "start": 0.040983606557377046,
+        "end": 0.5491803278688525,
+        "motion_start": 0.040983606557377046,
+        "motion_end": 0.5491803278688525,
+        "exposure_frames": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    ]
+  }
+]

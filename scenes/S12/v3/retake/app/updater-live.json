@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "checked_at_utc": "2026-11-26T10:32:05.340093+00:00",
+  "version": 22,
+  "previous": 21,
+  "catalog_sha256": "63cf39ffd830cf3f4f147d96814a36dcda7ccf762e74914491caa2ecfc711da6",
+  "asset_count": 332,
+  "fixture": false,
+  "mode": "live",
+  "log": "/workspace/scratch/s12-finish/app-v22/updater-live.log",
+  "physical_android_microphone": "NOT_RUN",
+  "git_head": "773566def48af9e36924682747bbc3bf0942068d",
+  "bucket": 59856303
+}

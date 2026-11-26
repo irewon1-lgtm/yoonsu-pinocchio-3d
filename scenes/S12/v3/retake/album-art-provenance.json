@@ -1,0 +1,242 @@
+{
+  "status": "PASS",
+  "repository": "irewon1-lgtm/yoonsu-english-video",
+  "branch": "hello-officer-40s-20261118",
+  "commit": "ad6d535e74de27f799fb3f424e42de1abf3ff402",
+  "source_project_sha256": "c509ec78b7d441af20c74f6f2daac63bbbe6cb07d7359de026880f17e4e0093f",
+  "source_preview_sha256": "0037d3189c04e8c0ad1867b463b83d4f8e8489bd2b80799c8b9bf49b7f86a799",
+  "source_film_sha256": "73e06a6053fefdf073c5dffa021a3e074ad372c69207e5e9198e49f35acc5f3e",
+  "source_owner_ready_bundle_sha256_reported_by_inventory": "87037ac5be381147bc999d38e2cccab417384aa1c411cd63b9dba31ab79e3d09",
+  "original_owner_ready_bundle_locally_available": false,
+  "assets": [
+    {
+      "file": "yoonsu-alpha/Y01_neutral_front.png",
+      "archive_member": "HELLO_OFFICER_PROJECT/assets/characters/YOONSU/Y01_neutral_front.png",
+      "original_manifest_path": "READY/YOONSU/Y01_neutral_front.png",
+      "sha256": "0758a4d3667c4cf7c5ab3f241beea9b958147db4b3e0babf179517972ff2d34a",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "alpha_gt_64_box": [
+        215,
+        13,
+        807,
+        1523
+      ],
+      "pose": "Neutral front"
+    },
+    {
+      "file": "yoonsu-alpha/Y02_profile_left.png",
+      "archive_member": "HELLO_OFFICER_PROJECT/assets/characters/YOONSU/Y02_profile_left.png",
+      "original_manifest_path": "READY/YOONSU/Y02_profile_left.png",
+      "sha256": "8d71673e7267afcb174bab60cbf4215552f4a9d327e1e9e104321b880eeefd36",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "alpha_gt_64_box": [
+        317,
+        14,
+        731,
+        1509
+      ],
+      "pose": "Left profile"
+    },
+    {
+      "file": "yoonsu-alpha/Y03_back.png",
+      "archive_member": "HELLO_OFFICER_PROJECT/assets/characters/YOONSU/Y03_back.png",
+      "original_manifest_path": "READY/YOONSU/Y03_back.png",
+      "sha256": "7ec7b13149e6bd940460bd7352f7108f6241e5e1c623d40b0bc5ac9b002a78e9",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "alpha_gt_64_box": [
+        219,
+        15,
+        797,
+        1519
+      ],
+      "pose": "Back"
+    },
+    {
+      "file": "yoonsu-alpha/Y04_profile_left_alt.png",
+      "archive_member": "HELLO_OFFICER_PROJECT/assets/characters/YOONSU/Y04_profile_left_alt.png",
+      "original_manifest_path": "READY/YOONSU/Y04_profile_left_alt.png",
+      "sha256": "f75aff643e2d1e2effa3e502a396ca2849f4ab444e3f54dada3037efe29c0d0b",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "alpha_gt_64_box": [
+        330,
+        19,
+        734,
+        1506
+      ],
+      "pose": "Alternate left profile"
+    },
+    {
+      "file": "yoonsu-alpha/Y05_soft_smile_front.png",
+      "archive_member": "HELLO_OFFICER_PROJECT/assets/characters/YOONSU/Y05_soft_smile_front.png",
+      "original_manifest_path": "READY/YOONSU/Y05_soft_smile_front.png",
+      "sha256": "944efc79010baf9888a89e5e7ec741d449991d7e0c8896d48b2e51a5643dd925",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "alpha_gt_64_box": [
+        221,
+        26,
+        799,
+        1533
+      ],
+      "pose": "Front smile"
+    },
+    {
+      "file": "yoonsu-alpha/Y06_profile_right.png",
+      "archive_member": "HELLO_OFFICER_PROJECT/assets/characters/YOONSU/Y06_profile_right.png",
+      "original_manifest_path": "READY/YOONSU/Y06_profile_right.png",
+      "sha256": "13efea39b5f73e3db339ec6bbbe988915c6d12d88b8a0777db271686d1d5905f",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "alpha_gt_64_box": [
+        268,
+        18,
+        664,
+        1509
+      ],
+      "pose": "Right profile"
+    },
+    {
+      "file": "yoonsu-alpha/Y07_profile_right_alt.png",
+      "archive_member": "HELLO_OFFICER_PROJECT/assets/characters/YOONSU/Y07_profile_right_alt.png",
+      "original_manifest_path": "READY/YOONSU/Y07_profile_right_alt.png",
+      "sha256": "e2f4396134b30bb74f16020d0a955536b36fda7ed19b01a7092951e7703e6d65",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "alpha_gt_64_box": [
+        261,
+        22,
+        661,
+        1525
+      ],
+      "pose": "Alternate right profile"
+    },
+    {
+      "file": "yoonsu-alpha/Y08_neutral_front_alt.png",
+      "archive_member": "HELLO_OFFICER_PROJECT/assets/characters/YOONSU/Y08_neutral_front_alt.png",
+      "original_manifest_path": "READY/YOONSU/Y08_neutral_front_alt.png",
+      "sha256": "feaf0f6f1651e5463174b1699855740869dd7ca0c96b6d16291d36092a6b9ae2",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "alpha_gt_64_box": [
+        222,
+        13,
+        803,
+        1522
+      ],
+      "pose": "Alternate neutral front"
+    },
+    {
+      "file": "yoonsu-alpha/Y09_wave.png",
+      "archive_member": "HELLO_OFFICER_PROJECT/assets/characters/YOONSU/Y09_wave.png",
+      "original_manifest_path": "READY/YOONSU/Y09_wave.png",
+      "sha256": "0d8ef92794f4a7c8f54d1205399da321451800417882465e5536421212dc114a",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "alpha_gt_64_box": [
+        255,
+        19,
+        820,
+        1536
+      ],
+      "pose": "Smile and wave"
+    },
+    {
+      "file": "yoonsu-alpha/Y10_walk_pose.png",
+      "archive_member": "HELLO_OFFICER_PROJECT/assets/characters/YOONSU/Y10_walk_pose.png",
+      "original_manifest_path": "READY/YOONSU/Y10_walk_pose.png",
+      "sha256": "7ab081360c4930a2d7c3fad906205e4d104bbdf232768915e36e0edce2e5e28d",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "alpha_gt_64_box": [
+        234,
+        16,
+        851,
+        1524
+      ],
+      "pose": "Step pose"
+    }
+  ],
+  "sheet": {
+    "file": "yoongsu-reference-sheet.jpg",
+    "size": [
+      1740,
+      1255
+    ],
+    "sha256": "0e543d9a2ef28bffe28f0595314b806caec9e31358bf14eb943b53746ac66ec8"
+  },
+  "publication": "private S12 scratch copies"
+}
